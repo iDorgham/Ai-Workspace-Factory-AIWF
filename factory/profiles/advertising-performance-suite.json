@@ -1,9 +1,6 @@
 {
   "market_context": "global-industrial",
-  "voice_id": "Enterprise-Professional"
-}
----
-{
+  "voice_id": "Enterprise-Professional",
   "profile": "advertising-performance-suite",
   "display": "\ud83d\udce2 Ad Performance Suite",
   "sector": "07-marketing-seo/advertising",
@@ -19,5 +16,7 @@
   },
   "governance": {
     "rules": "factory/library/07-marketing-seo/advertising/commands/COMMANDS.md"
-  }
+  },
+  "name": "Advertising Performance Suite",
+  "profile_id": "advertising-performance-suite"
 }

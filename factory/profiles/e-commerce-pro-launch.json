@@ -1,9 +1,6 @@
 {
   "market_context": "global-industrial",
-  "voice_id": "Enterprise-Professional"
-}
----
-{
+  "voice_id": "Enterprise-Professional",
   "profile": "e-commerce-pro-launch",
   "display": "\ud83d\udecd\ufe0f E-commerce Pro Launch",
   "sector": "11-industry-verticals/ecommerce-retail",
@@ -19,5 +16,7 @@
   },
   "governance": {
     "rules": "factory/library/11-industry-verticals/ecommerce-retail/commands/COMMANDS.md"
-  }
+  },
+  "name": "E Commerce Pro Launch",
+  "profile_id": "e-commerce-pro-launch"
 }

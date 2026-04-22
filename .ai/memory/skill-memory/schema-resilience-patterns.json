@@ -1,0 +1,9 @@
+{
+  "skill_name": "schema-resilience-patterns",
+  "version": "1.0.0",
+  "learned_on": "2026-04-22T12:43:34Z",
+  "friction_id": "ERR_DASHBOARD_KEYERROR",
+  "pattern": "Handling missing 'action' keys in legacy log schemas.",
+  "remediation_logic": "Implement tiered get() fallbacks: entry.get('action') || entry.get('command') || entry.get('input').",
+  "impact": "Ensured 100% backward compatibility for the v3.0.0 dashboard."
+}

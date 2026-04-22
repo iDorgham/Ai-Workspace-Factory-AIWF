@@ -1,9 +1,6 @@
 {
   "market_context": "global-industrial",
-  "voice_id": "Enterprise-Professional"
-}
----
-{
+  "voice_id": "Enterprise-Professional",
   "profile": "growth-strategy-engine",
   "display": "\ud83d\udcc8 Growth Strategy Engine",
   "sector": "04-business-strategy/growth-strategy",
@@ -19,5 +16,7 @@
   },
   "governance": {
     "rules": "factory/library/04-business-strategy/growth-strategy/commands/COMMANDS.md"
-  }
+  },
+  "name": "Growth Strategy Engine",
+  "profile_id": "growth-strategy-engine"
 }

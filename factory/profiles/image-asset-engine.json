@@ -1,9 +1,6 @@
 {
   "market_context": "global-industrial",
-  "voice_id": "Enterprise-Professional"
-}
----
-{
+  "voice_id": "Enterprise-Professional",
   "profile": "image-asset-engine",
   "display": "\ud83d\uddbc\ufe0f Image Asset Engine",
   "sector": "08-media-production/image-production",
@@ -19,5 +16,7 @@
   },
   "governance": {
     "rules": "factory/library/08-media-production/image-production/commands/COMMANDS.md"
-  }
+  },
+  "name": "Image Asset Engine",
+  "profile_id": "image-asset-engine"
 }

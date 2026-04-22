@@ -4,7 +4,7 @@
     "voice_id": "Enterprise-Professional"
   },
   "profile": "content-machine-editorial",
-  "display": "✍️ Content Machine",
+  "display": "\u270d\ufe0f Content Machine",
   "sector": "06-branding-content/content-creation",
   "version": "5.0.0",
   "description": "Industrial-scale editorial and content strategy with sovereign isolation.",
@@ -35,5 +35,7 @@
   },
   "governance": {
     "rules": "factory/library/06-branding-content/content-creation/commands/COMMANDS.md"
-  }
+  },
+  "name": "Content Machine Editorial",
+  "profile_id": "content-machine-editorial"
 }

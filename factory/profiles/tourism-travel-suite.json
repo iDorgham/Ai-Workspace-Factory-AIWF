@@ -1,9 +1,6 @@
 {
   "market_context": "global-industrial",
-  "voice_id": "Enterprise-Professional"
-}
----
-{
+  "voice_id": "Enterprise-Professional",
   "profile": "tourism-travel-suite",
   "display": "\ud83c\udf0e Tourism & Excursion Engine",
   "sector": "11-industry-verticals/tourism-travel",
@@ -22,5 +19,7 @@
   },
   "governance": {
     "rules": "factory/library/11-industry-verticals/tourism-travel/commands/COMMANDS.md"
-  }
+  },
+  "name": "Tourism Travel Suite",
+  "profile_id": "tourism-travel-suite"
 }

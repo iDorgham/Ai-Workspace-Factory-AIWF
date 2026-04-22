@@ -1,9 +1,6 @@
 {
   "market_context": "global-industrial",
-  "voice_id": "Enterprise-Professional"
-}
----
-{
+  "voice_id": "Enterprise-Professional",
   "profile": "branding-agency",
   "display": "\ud83c\udfe2 Branding Agency",
   "sector": "06-branding-content/branding",
@@ -19,5 +16,7 @@
   },
   "governance": {
     "rules": "factory/library/06-branding-content/branding/commands/COMMANDS.md"
-  }
+  },
+  "name": "Branding Agency",
+  "profile_id": "branding-agency"
 }

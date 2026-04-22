@@ -1,9 +1,6 @@
 {
   "market_context": "global-industrial",
-  "voice_id": "Enterprise-Professional"
-}
----
-{
+  "voice_id": "Enterprise-Professional",
   "profile": "cloud-architecture",
   "display": "\u2601\ufe0f Cloud Architecture",
   "sector": "02-web-platforms/cloud-architecture",
@@ -19,5 +16,7 @@
   },
   "governance": {
     "rules": "factory/library/02-web-platforms/cloud-architecture/commands/COMMANDS.md"
-  }
+  },
+  "name": "Cloud Architecture",
+  "profile_id": "cloud-architecture"
 }

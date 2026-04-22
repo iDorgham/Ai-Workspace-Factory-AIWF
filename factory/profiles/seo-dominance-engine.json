@@ -1,9 +1,6 @@
 {
   "market_context": "global-industrial",
-  "voice_id": "Enterprise-Professional"
-}
----
-{
+  "voice_id": "Enterprise-Professional",
   "profile": "seo-dominance-engine",
   "display": "\ud83d\udd0d SEO Dominance Engine",
   "sector": "07-marketing-seo/seo",
@@ -19,5 +16,7 @@
   },
   "governance": {
     "rules": "factory/library/07-marketing-seo/seo/commands/COMMANDS.md"
-  }
+  },
+  "name": "Seo Dominance Engine",
+  "profile_id": "seo-dominance-engine"
 }

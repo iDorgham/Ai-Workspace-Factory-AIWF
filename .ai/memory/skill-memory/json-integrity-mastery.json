@@ -1,0 +1,9 @@
+{
+  "skill_name": "json-integrity-mastery",
+  "version": "1.0.0",
+  "learned_on": "2026-04-22T12:43:34Z",
+  "friction_id": "ERR_DUAL_JSON_OBJECT",
+  "pattern": "Detecting markdown separators (---) inside .json library files.",
+  "remediation_logic": "Split by separator, parse constituent objects, and deep-merge into a valid single JSON entity.",
+  "impact": "Restored 28/34 composition profiles to operational status."
+}

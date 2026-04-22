@@ -1,9 +1,6 @@
 {
   "market_context": "global-industrial",
-  "voice_id": "Enterprise-Professional"
-}
----
-{
+  "voice_id": "Enterprise-Professional",
   "profile": "lifestyle-fitness-gym",
   "display": "\ud83c\udfcb\ufe0f Fitness & Gym Management",
   "sector": "11-industry-verticals/fitness-wellness",
@@ -22,5 +19,7 @@
   },
   "governance": {
     "rules": "factory/library/11-industry-verticals/fitness-wellness/commands/COMMANDS.md"
-  }
+  },
+  "name": "Lifestyle Fitness Gym",
+  "profile_id": "lifestyle-fitness-gym"
 }

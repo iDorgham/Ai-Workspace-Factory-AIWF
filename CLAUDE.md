@@ -66,20 +66,40 @@ READ: master/docs/Product required document/AIWF-PRD.md ← strategic baseline
 ### 🏛️ Sovereign Isolation
 - ❌ NEVER write to a client workspace from the root factory without high-tier consensus.
 - ✅ ALWAYS respect the `.ai/` boundaries for local project intelligence.
+- ✅ **Hot-Sync Protocol**: Updates to managed agent personas must use `/update-agents --safe`.
 
 ---
 
-## COMMAND REFERENCE (v6.0.0)
+## 🏗️ SOVEREIGN PROVISIONING (Command Flow)
+Use these stateful, resumable commands to scaffold new antifragile workspaces.
 
-| Command | Agent | Tier | Description |
+### 🔄 `/personal project "{Name}"`
+### 🔄 `/client "{Client}" project "{Name}"`
+
+**The 6-Step Provisioning Protocol:**
+1. **Slug Generation**: Auto-incremented `001_slug` with collision check.
+2. **Vision Capture**: Description & core objective storage.
+3. **Context Injection**: Tech stack, brand, and constraints.
+4. **PRD Strategy**: Choose `[A] Direct [B] Generate [C] Brainstorm`.
+5. **Omega Gate**: Human-approval required for `docs/PRD.md` commitment.
+6. **Profile Provisioning**: Suggested profiles injected from `factory/profiles/`.
+
+---
+
+## 🛠️ CLI COMMAND REFERENCE (v6.0.0)
+
+| Command | Mode | Agent | Description |
 | :--- | :--- | :--- | :--- |
-| `/master learn` | Recursive Engine | T0 | Analyzes workflow logs and generates skill manifests. |
-| `/heal check` | Healing Bot | T0 | Audits structural drift and auto-remediates violations. |
-| `/route consensus` | Swarm Router | T0 | Multi-agent consensus routing for critical paths. |
-| `/chaos inject` | Chaos Validator | T1 | Injects stressors to verify isolation and recovery. |
-| `/dashboard --root` | Dashboard Renderer | T1 | Renders antifragile widgets (Stress/Learning). |
-| `/compose [slug]` | Factory Scaffolder | T2 | Assembles a new sovereign workspace from the library. |
-| `/master sync all` | Master Guide | T0 | Aggregates deltas and performs global memory sync. |
+| `/personal project` | T1 | Scaffolder | Stateful personal project provisioning. |
+| `/client project` | T1 | Scaffolder | Stateful client project provisioning. |
+| `/compose [slug]` | T1 | Scaffolder | Standard factory assembly. |
+| `/master learn` | T0 | Recursive Engine | Recursive skill evolution. |
+| `/heal check` | T0 | Healing Bot | Autonomous structural repair. |
+| `/route consensus` | T0 | Swarm Router | Swarm consensus validation. |
+| `/dashboard v2` | T1 | Dashboard | Antifragile dashboard render. |
+| `/update-agents` | T1 | Sync | Hot-Sync Protocol for managed assets. |
+| `/chaos inject` | T0 | Chaos Validator | Active resilience stress-testing engine. |
+| `/master sync all` | T0 | Master Guide | Global memory sync. |
 
 ---
 

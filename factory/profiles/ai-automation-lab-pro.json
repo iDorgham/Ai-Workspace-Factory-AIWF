@@ -1,9 +1,6 @@
 {
   "market_context": "global-industrial",
-  "voice_id": "Enterprise-Professional"
-}
----
-{
+  "voice_id": "Enterprise-Professional",
   "profile": "ai-automation-lab-pro",
   "display": "\ud83e\udd16 AI Automation Lab",
   "sector": "11-industry-verticals/ai-automation-lab",
@@ -22,5 +19,7 @@
   },
   "governance": {
     "rules": "factory/library/11-industry-verticals/ai-automation-lab/commands/COMMANDS.md"
-  }
+  },
+  "name": "Ai Automation Lab Pro",
+  "profile_id": "ai-automation-lab-pro"
 }

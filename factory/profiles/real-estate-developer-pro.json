@@ -1,9 +1,6 @@
 {
   "market_context": "global-industrial",
-  "voice_id": "Enterprise-Professional"
-}
----
-{
+  "voice_id": "Enterprise-Professional",
   "profile": "real-estate-developer-pro",
   "display": "\ud83c\udfd7\ufe0f Real Estate Developer",
   "sector": "11-industry-verticals/real-estate-dev",
@@ -22,5 +19,7 @@
   },
   "governance": {
     "rules": "factory/library/11-industry-verticals/real-estate-dev/commands/COMMANDS.md"
-  }
+  },
+  "name": "Real Estate Developer Pro",
+  "profile_id": "real-estate-developer-pro"
 }

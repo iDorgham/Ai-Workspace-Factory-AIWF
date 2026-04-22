@@ -1,9 +1,6 @@
 {
   "market_context": "global-industrial",
-  "voice_id": "Enterprise-Professional"
-}
----
-{
+  "voice_id": "Enterprise-Professional",
   "profile": "venture-design-blueprint",
   "display": "\ud83d\ude80 Venture Design",
   "sector": "04-business-strategy/venture-design",
@@ -19,5 +16,7 @@
   },
   "governance": {
     "rules": "factory/library/04-business-strategy/venture-design/commands/COMMANDS.md"
-  }
+  },
+  "name": "Venture Design Blueprint",
+  "profile_id": "venture-design-blueprint"
 }

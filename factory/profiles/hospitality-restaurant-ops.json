@@ -1,9 +1,6 @@
 {
   "market_context": "global-industrial",
-  "voice_id": "Enterprise-Professional"
-}
----
-{
+  "voice_id": "Enterprise-Professional",
   "profile": "hospitality-restaurant-ops",
   "display": "\ud83c\udf54 Restaurant Operations",
   "sector": "11-industry-verticals/f-and-b-ops",
@@ -22,5 +19,7 @@
   },
   "governance": {
     "rules": "factory/library/11-industry-verticals/f-and-b-ops/commands/COMMANDS.md"
-  }
+  },
+  "name": "Hospitality Restaurant Ops",
+  "profile_id": "hospitality-restaurant-ops"
 }

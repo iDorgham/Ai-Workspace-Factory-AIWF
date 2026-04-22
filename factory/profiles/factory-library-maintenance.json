@@ -1,9 +1,6 @@
 {
   "market_context": "global-industrial",
-  "voice_id": "Enterprise-Professional"
-}
----
-{
+  "voice_id": "Enterprise-Professional",
   "profile": "factory-library-maintenance",
   "display": "\ud83e\udde0 Factory Meta-Ops",
   "sector": "12-meta-engine/meta-orchestration",
@@ -19,5 +16,7 @@
   },
   "governance": {
     "rules": "factory/library/12-meta-engine/meta-orchestration/commands/COMMANDS.md"
-  }
+  },
+  "name": "Factory Library Maintenance",
+  "profile_id": "factory-library-maintenance"
 }

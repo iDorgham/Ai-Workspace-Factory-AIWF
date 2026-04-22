@@ -1,10 +1,25 @@
 {
   "name": "HealthTech Pro v11",
   "required": {
-    "agents": ["SentinelHealthtechPharma", "HealthConsultant", "LegalCounsel", "SentinelProjectManagement"],
-    "skills": ["healthtech-pharma-mastery", "health-data-privacy", "legal-brokerage-mastery"],
-    "commands": ["COMMANDS.md"],
-    "templates": ["PLAN_BLUEPRINT.md"],
-    "scripts": ["core.py"]
+    "agents": [
+      "SentinelHealthtechPharma",
+      "HealthConsultant",
+      "LegalCounsel",
+      "SentinelProjectManagement"
+    ],
+    "skills": [
+      "healthtech-pharma-mastery",
+      "health-data-privacy",
+      "legal-brokerage-mastery"
+    ],
+    "commands": [
+      "COMMANDS.md"
+    ],
+    "templates": [
+      "PLAN_BLUEPRINT.md"
+    ],
+    "scripts": [
+      "core.py"
+    ]
   }
 }

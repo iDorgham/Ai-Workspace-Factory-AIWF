@@ -1,9 +1,6 @@
 {
   "market_context": "global-industrial",
-  "voice_id": "Enterprise-Professional"
-}
----
-{
+  "voice_id": "Enterprise-Professional",
   "profile": "fintech-compliance-launch",
   "display": "\ud83c\udfe6 Fintech Compliance",
   "sector": "03-security-compliance/fintech-compliance",
@@ -19,5 +16,7 @@
   },
   "governance": {
     "rules": "factory/library/03-security-compliance/fintech-compliance/commands/COMMANDS.md"
-  }
+  },
+  "name": "Fintech Compliance Launch",
+  "profile_id": "fintech-compliance-launch"
 }

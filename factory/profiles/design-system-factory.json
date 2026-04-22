@@ -1,9 +1,6 @@
 {
   "market_context": "global-industrial",
-  "voice_id": "Enterprise-Professional"
-}
----
-{
+  "voice_id": "Enterprise-Professional",
   "profile": "design-system-factory",
   "display": "\ud83c\udfa8 Design System Factory",
   "sector": "08-media-production/visual-design",
@@ -19,5 +16,7 @@
   },
   "governance": {
     "rules": "factory/library/08-media-production/visual-design/commands/COMMANDS.md"
-  }
+  },
+  "name": "Design System Factory",
+  "profile_id": "design-system-factory"
 }

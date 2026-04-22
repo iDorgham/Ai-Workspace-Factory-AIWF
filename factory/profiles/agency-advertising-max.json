@@ -1,9 +1,6 @@
 {
   "market_context": "global-industrial",
-  "voice_id": "Enterprise-Professional"
-}
----
-{
+  "voice_id": "Enterprise-Professional",
   "profile": "agency-advertising-max",
   "display": "\ud83d\udce2 Advertising Performance Agency",
   "sector": "07-marketing-seo/advertising",
@@ -22,5 +19,7 @@
   },
   "governance": {
     "rules": "factory/library/07-marketing-seo/advertising/commands/COMMANDS.md"
-  }
+  },
+  "name": "Agency Advertising Max",
+  "profile_id": "agency-advertising-max"
 }

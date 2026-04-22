@@ -1,0 +1,53 @@
+name: 🏗️ AIWF Industrial Pipeline (v6.0.0)
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  health-audit:
+    name: 🛡️ Industrial Health Audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - name: Run Health Scorer
+        run: |
+          python3 factory/scripts/health_scorer.py
+          # Future: Add logic to fail if score < 85
+      - name: Archive Audit Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: health-audit-report
+          path: .ai/logs/health-audit-report.md
+
+  sovereign-verification:
+    name: 🔒 Sovereign Dry-Run
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Verify Provisioning Engine
+        run: |
+          python3 factory/scripts/workspace_init.py --init personal "CI-Test-Project"
+          # Check for .ai/ and docs/PRD.md
+          if [ ! -d "workspaces/01-Personal/001_ci-test-project/.ai" ]; then
+            echo "❌ Sovereign structure failed!"
+            exit 1
+          fi
+
+  chaos-regression:
+    name: ⚡ Chaos Stress-Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run Chaos Validator (Dry-Run)
+        run: |
+          # Create a dummy workspace for testing
+          python3 factory/scripts/workspace_init.py --init personal "Chaos-Test"
+          # Run validator
+          python3 factory/scripts/chaos_validator.py --target "workspaces/01-Personal/002_chaos-test" --mode all

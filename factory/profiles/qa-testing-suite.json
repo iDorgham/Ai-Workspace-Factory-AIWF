@@ -1,9 +1,6 @@
 {
   "market_context": "global-industrial",
-  "voice_id": "Enterprise-Professional"
-}
----
-{
+  "voice_id": "Enterprise-Professional",
   "profile": "qa-testing-suite",
   "display": "\u2699\ufe0f QA & Testing Suite",
   "sector": "10-operations-qa/quality-assurance",
@@ -19,5 +16,7 @@
   },
   "governance": {
     "rules": "factory/library/10-operations-qa/quality-assurance/commands/COMMANDS.md"
-  }
+  },
+  "name": "Qa Testing Suite",
+  "profile_id": "qa-testing-suite"
 }

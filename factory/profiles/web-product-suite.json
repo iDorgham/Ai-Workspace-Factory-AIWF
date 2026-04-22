@@ -1,9 +1,6 @@
 {
   "market_context": "global-industrial",
-  "voice_id": "Enterprise-Professional"
-}
----
-{
+  "voice_id": "Enterprise-Professional",
   "profile": "web-product-suite",
   "display": "\ud83c\udf10 Web Product Suite",
   "sector": "02-web-platforms/web-developing",
@@ -19,5 +16,7 @@
   },
   "governance": {
     "rules": "factory/library/02-web-platforms/web-developing/commands/COMMANDS.md"
-  }
+  },
+  "name": "Web Product Suite",
+  "profile_id": "web-product-suite"
 }
