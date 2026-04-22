@@ -4,94 +4,126 @@
 ---
 
 ## 1. 🎯 STRATEGIC CORE: THE ANTIFRAGILE MISSION
-The AI Workspace Factory (AIWF) is an **Antifragile Sovereign Composition Engine**. Unlike resilient systems that merely resist stress, AIWF is designed to **improve** through operational friction, user corrections, and environmental volatility.
-
-### Core Pillars:
-- **Library-First**: All workspaces are assembled from versioned, canonical components.
-- **Sovereign Isolation**: Client workspaces remain 100% independent; cross-project writes are forbidden.
-- **Fail-Forward**: Errors trigger repair branches and learning manifests, never hard stops.
-- **Omega Gate**: All autonomous structural/library mutations require human mediation and multi-agent consensus.
+The AI Workspace Factory (AIWF) is an **Antifragile Sovereign Composition Engine**. It learns from operational stressors, auto-remediates structural drift, and routes via swarm consensus.
 
 ---
 
-## 2. 🏛️ SYSTEM TOPOLOGY & BOUNDARIES
-- **Root/README.md**: Central entry point and architectural map.
-- **.ai/**: The Intelligence Layer (Agents, Memory, Global Logs, Skill manifests).
-- **factory/**: The Composition Engine (Library, Profiles, Scaffolding scripts).
-- **master/**: Strategic Planning, PRDs, and Governance documents.
-- **workspaces/**: Isolated, factory-generated client environments.
-- **scripts/**: Maintenance, backup, and emergency recovery utilities.
+## 2. 🤖 THE AGENT SWARM & COMMANDS
+### Core Orchestrators (Tier 0/1)
+- **Master Guide**: Root orchestrator; owns `WORKSPACE_MASTER_CONTEXT.md`.
+- **Healing Bot**: Monitors drift via `audit_path_integrity.py`; auto-fixes violations.
+- **Recursive Engine**: Processes feedback via `/master learn`; generates skill manifests.
+- **Swarm Router v3**: Multi-agent consensus routing with deterministic fallback.
+- **Chaos Validator**: Stress-tests recovery success rates (Target ≥95%).
+
+### Commands Manual
+- `/master learn`: Analyzes session friction → updates `skill-memory/`.
+- `/heal check`: Executes structural audit → triggers remediation.
+- `/route consensus`: Multi-agent validation for critical strategy paths.
+- `/chaos inject`: Injects stressors (latency, metadata gaps) for verification.
+- `/compose [slug]`: Standard factory assembly from profile + library.
 
 ---
 
-## 3. 🤖 THE AGENT SWARM (REGISTRY)
-AIWF operates via a hierarchical swarm of specialized agents.
-
-### Tier 0: The Orchestrators
-- **Master Guide**: High-level strategy, global memory, and cross-project coordination.
-- **Healing Bot**: Autonomous supervisor for structural integrity and remediation.
-- **Recursive Engine**: Analyzes workflow friction to generate new skill manifests.
-
-### Tier 1: The Mediators
-- **Swarm Router v3**: Consensus-based routing with deterministic fallback.
-- **Chaos Validator**: Stress-tester for verifying recovery and isolation.
-
-### Tier 2: The Specialists (168+ Sub-Agents)
-The factory library contains 168+ specialized sub-agents across 17 departments, including:
-- **Sentinel Agents**: Department guardians (e.g., `SentinelBackend`, `SentinelBranding`).
-- **Domain Experts**: Industry-specific logic (e.g., `LegalCounsel`, `MedicalDirector`, `ShariaReviewer`).
-- **Technical Specialists**: Tool-specific execution (e.g., `Devops`, `SEO`, `3DTechnicalArtist`).
-
----
-
-## 4. 📚 THE FACTORY LIBRARY (491 COMPONENTS)
-The library is structured into **17 core departments**:
-1. **01-Software-Engineering**: Core backend, frontend, and engineering logic.
-2. **02-Web-Platforms**: SaaS, API design, and cloud architecture.
-3. **03-Security-Compliance**: Cybersecurity, Fintech, and LegalTech.
-4. **04-Business-Strategy**: Venture design, sales, and finance operations.
-5. **05-Data-Analytics**: Market research, intel synthesis, and automation ops.
-6. **06-Branding**: Identity engine, brand governance, and strategic voice.
-7. **07-Visibility-Optimization**: SEO, LLM visibility (LLMO), and search intelligence.
-8. **08-Media-Production**: 3D, Video, and Image generative media.
-9. **09-Social-Engagement**: Community loops, viral engineering, and influencer ops.
-10. **10-Operations-QA**: Execution, supply chain, and quality assurance.
-11. **11-Industry-Verticals**: Targeted industry templates (Legal, Medical, Travel, etc.).
-12. **12-Meta-Engine**: Blueprints, library taxonomy, and meta-orchestration.
-13. **13-Gaming-Entertainment**: Game engines and metaverse narrative.
-14. **14-Ai-Intelligence**: Frontier models, fine-tuning, and automation workflows.
-15. **15-Music-Sound-Engineering**: Music production and sound design.
-16. **16-Content-Dominance**: Viral loops, storytelling, and written leadgen.
-17. **17-Performance-Marketing**: Ad production and growth economics.
-
----
-
-## 5. 📋 COMPOSITION PROFILES (29 CATALOGED)
-Profiles are blueprint configurations used to assemble workspaces:
-- **Industry Systems**: `healthcare-medical-system`, `legal-brokerage-hub`, `islamic-finance-hub`.
-- **Vertical Ops**: `hospitality-restaurant-ops`, `real-estate-developer-pro`, `tourism-travel-suite`.
-- **Creative Engines**: `3d-rendering-studio`, `cinematic-video-production`, `branding-agency`.
-- **Tech Stacks**: `ai-automation-lab-pro`, `cyber-security-hardening`, `web-product-suite`.
-
----
-
-## 🚀 COMMAND CENTER (CLI MANUAL)
-| Command | Owner | Description |
+## 🛠️ OPERATIONAL TOOLS (SCRIPTS)
+| Script | Path | Purpose |
 | :--- | :--- | :--- |
-| `/master learn` | Recursive Engine | Generates `skill-memory/` from user corrections. |
-| `/heal check` | Healing Bot | Audits structural drift and auto-remediates. |
-| `/route consensus` | Swarm Router | Multi-agent validation for routing strategy. |
-| `/chaos inject` | Chaos Validator | Verifies resilience under simulated failure. |
-| `/compose [slug]` | Scaffolder | Assembles workspace from profile + library. |
-| `/master sync all` | Master Guide | Global memory and delta synchronization. |
+| **Integrity Auditor** | `.ai/scripts/audit_path_integrity.py` | Validates sovereign boundaries and file placement. |
+| **Remediation Agent** | `.ai/scripts/healing_agent.py` | The logic behind the Healing Bot; auto-fixes drift. |
+| **Recursive Learning** | `.ai/scripts/recursive_engine.py` | The logic for `/master learn` and manifest generation. |
+| **Environment Shim** | `factory/scripts/init-v6-shims.py` | Initialized v6 memory layers and upgraded configs. |
+| **Safe Backup** | `scripts/backup-workspaces.sh` | Creates timestamped archives with SHA256 verification. |
+| **Emergency Rollback** | `scripts/emergency-rollback.sh` | Reverts the entire factory to the stable v5.0.0 baseline. |
 
 ---
 
-## 🛡️ GOVERNANCE & COMPLIANCE
-- **Omega Gate**: Human-mediated approval required for all library/structural changes.
-- **Traceability**: All autonomous edits must include Reasoning Hash + ISO-8601 timestamp.
-- **Compliance Gates**: SEO score ≥85%, Brand Voice ≥92%, MENA/Sharia Alignment 100%.
+## 📁 COMPLETE FILESYSTEM INVENTORY (.ai)
+The intelligence layer containing all agents, memory, and logs:
+- **.ai/agents/**: Agent personas and instruction sets.
+- **.ai/scripts/**: Core automation and evolution logic.
+- **.ai/memory/**:
+    - `workspace-index.json`: Global client tracking.
+    - `skill-memory/`: Cumulative learned skill manifests (JSON).
+- **.ai/logs/**:
+    - `healing-bot.md`: Audit and remediation history.
+    - `learning-engine.md`: History of generated skill manifests.
+    - `workflow.jsonl`: Append-only traceability log.
 
 ---
-**Version**: 6.0.0-alpha | **Industrialization Date**: 2026-04-22
+
+## 📁 COMPLETE LIBRARY INVENTORY (factory/library)
+The 491-component library structured by department:
+- **01-Software-Engineering**: Backend, Frontend, Engineering Core, Mobile.
+- **02-Web-Platforms**: SaaS Platforms, API Design, Cloud Architecture.
+- **03-Security-Compliance**: Cybersecurity, Fintech, Data Sovereignty, LegalTech.
+- **04-Business-Strategy**: Venture Design, Business Analysis, Finance Ops.
+- **05-Data-Analytics**: Market Research, Intel Synthesis, AI Automation.
+- **06-Branding**: Identity Engine, Brand Strategy, Agency Ops.
+- **07-Visibility-Optimization**: SEO, LLMO, Semantic Search.
+- **08-Media-Production**: 3D, Video, Image, Audio Tech.
+- **09-Social-Engagement**: Viral Loops, Community, Influencer Ops.
+- **10-Operations-QA**: Execution, Supply Chain, Training, Performance.
+- **11-Industry-Verticals**: (Legal, Medical, Hospitality, Real Estate, Travel, GovTech).
+- **12-Meta-Engine**: Blueprints, Library Taxonomy, Scripts.
+- **13-Gaming-Entertainment**: Game Engines, Metaverse Narrative.
+- **14-Ai-Intelligence**: Frontier Models, Fine-Tuning, Workflows.
+- **15-Music-Sound-Engineering**: Composition Theory, Sound Design.
+- **16-Content-Dominance**: Storytelling, Viral Loops, Copywriting.
+- **17-Performance-Marketing**: Ad Production, Growth Economics.
+
+---
+
+## 📁 COMPOSITION PROFILES (factory/profiles)
+- `3d-rendering-studio.json`
+- `ai-automation-lab-pro.json`
+- `healthcare-medical-system.json`
+- `legal-brokerage-hub.json`
+- `islamic-finance-hub.json`
+- `hospitality-restaurant-ops.json`
+- `real-estate-developer-pro.json`
+- `tourism-travel-suite.json`
+- `govtech-v11.json`
+- `cyber-security-hardening.json`
+- `branding-agency.json`
+- `seo-dominance-engine.json`
+- *(+ 17 additional profiles for all industry verticals)*
+
+---
+
+## 🛡️ GOVERNANCE: THE OMEGA GATE
+- **Multi-Agent Consensus**: Structural changes require 3-agent agreement.
+- **Dorgham-Approval**: Explicit human flag required for library mutations.
+- **Reasoning Hashes**: Every autonomous edit is stamped with a unique hash.
+- **ISO-8601 Traceability**: No truncation; all logs are append-only.
+
+---
+
+## 📄 THE PRD (STRATEGIC SPECIFICATIONS)
+### Problem Statement:
+v5.0.0 achieved deterministic routing and isolation, but v6.0.0 solves the "Static Library" and "Manual Remediation" bottlenecks through autonomous evolution.
+
+### Core Requirements:
+- **FR-1.1**: Healing Bot autonomous remediation (logs to `.ai/logs/healing-bot.md`).
+- **FR-2.1**: Recursive Learning (`/master learn`) via correction pattern analysis.
+- **FR-3.1**: Swarm Consensus Router (Multi-agent validation, fallback on timeout).
+- **FR-4.1**: Chaos Scaffolding (Verifies 95%+ recovery success).
+- **FR-5.1**: Adaptive Token Budgeting (<2.5% session cap).
+
+---
+
+## 🗺️ THE ROADMAP (PHASE-GATED EVOLUTION)
+### Phase 6: Full Antifragile Release (COMPLETE)
+- **Status**: Industrialized and Operational (2026-04-22).
+- **Achievements**: Documentation suite, core scripts, and operational engine verification.
+
+### Phase 7: Sovereign Scale (Q3 2026)
+- **Deliverables**: Hot-Sync Protocol (`/update-agents --safe`), Multi-machine orchestration.
+- **Goal**: Pull library-first updates into existing sovereign projects without state loss.
+
+### Phase 8: Autonomous Industrialization (Q4 2026)
+- **Deliverables**: CI/CD Workspace Generation, automated health scoring.
+- **Goal**: 100% autonomous provisioning and library maintenance.
+
+---
+**Version**: 6.0.0-alpha | **Status**: Industrialized
 **Developed by**: Antigravity (Advanced Agentic Coding)
