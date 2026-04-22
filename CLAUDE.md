@@ -31,8 +31,9 @@ READ: .ai/memory/state.json          ← session state + token budget
 READ: .ai/memory/skill-memory/       ← load learned skill manifests
 ```
 
-### Step 3 — Load governance context
+### Step 3 — Load governance & master context
 ```
+READ: master/docs/context/AIWF_MASTER_REFERENCE.md ← MASTER SOURCE OF TRUTH
 READ: docs/releases/v6.0.0-Antifragile-Factory.md ← v6 operational rules
 READ: master/docs/Product required document/AIWF-PRD.md ← strategic baseline
 ```
