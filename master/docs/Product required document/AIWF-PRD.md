@@ -1,279 +1,161 @@
-# 📄 AI WORKSPACE FACTORY — PRODUCT REQUIREMENTS DOCUMENT (PRD) v5.0.1
+📄 AI WORKSPACE FACTORY — PRODUCT REQUIREMENTS DOCUMENT (PRD) v6.0.0
+Document Status:  Draft / Strategic Planning Version:  6.0.0-alpha Owner:  Dorgham Date:  April 22, 2026 Reference Contexts: `WORKSPACE_MASTER_CONTEXT.md` ,  `QWEN_CONTEXT.md` Target Execution Environment:  Qwen, Cursor, Claude, Gemini, OpenCode, Kilo Primary Output:  Self-optimizing, antifragile sovereign composition engine
 
-**Document Status:** Hardened Stable Release  
-**Version:** 5.0.1  
-**Owner:** Dorgham  
-**Date:** April 20, 2026  
-**Reference Contexts:** `WORKSPACE_MASTER_CONTEXT.md`, `QWEN_CONTEXT.md`  
-**Target Execution Environment:** Qwen, Cursor, Claude, Gemini, OpenCode, Kilo  
-**Primary Output:** Production-ready multi-purpose sovereign composition engine  
+1. EXECUTIVE SUMMARY
+The AI Workspace Factory transitions from v5.0.0's sovereign industrial resilience to v6.0.0's antifragile evolution. While v5.0.0 achieved deterministic routing, strict isolation, and lazy-loaded dashboards, v6.0.0 introduces autonomous self-healing, recursive library learning, swarm-consensus orchestration, and stress-tested resilience. All v5.0.0 guarantees are preserved as baseline shims. New capabilities operate under the Omega Gate: traceable, reversible, and human-mediated. The system treats operational friction, edge cases, and user corrections as training data for continuous architectural improvement without compromising sovereignty, compliance, or token efficiency.
 
----
+2. PROBLEM STATEMENT & STRATEGIC IMPERATIVES
+| v5.0.0 Limitation | Business/Technical Impact | v6.0.0 Solution |
+| --- | --- | --- |
+| Manual audit & remediation | Drift accumulates between sprints; requires human intervention | Autonomous Healing Bot with circuit breakers & append-only repair logs |
+| Static library components | Corrections require manual PRD updates; missed pattern generalization | Recursive Learning Engine (`/master learn`) converts feedback into skill manifests |
+| Hierarchical Master Guide | Single-point bottleneck for cross-project strategy & conflict resolution | Swarm Consensus Router with multi-sig validation & autonomous mediation |
+| Fail-Safe pipeline stops | Stressors halt execution; no adaptive fallback | Fail-Forward Architecture: Chaos Scaffolding + Volatility Scaling |
+| Fixed token budgets | Inefficient allocation under high-stress or complex pipelines | Adaptive Token Governance with Context Compression (95) dynamic throttling |
 
-## 1. EXECUTIVE SUMMARY
+3. SCOPE & BOUNDARIES
+✅ In Scope
+- Autonomous structural remediation (Healing Bot) with strict rate limits
+- Recursive skill evolution via `/master learn` & Mistake Prevention System (MPS) v2
+- Swarm Consensus Router v3 (multi-agent validation for critical paths)
+- Chaos Scaffolding & Volatility Scaling engine
+- Adaptive token budgeting (<2.5% session cap)
+- Backward-compatible shims for all v5.0.0 aliases, commands, and pipelines
+- Omega Gate: Human-mediated approval for structural/library mutations
 
-The AI Workspace Factory will transition from a single-pipeline, hardcoded content generator into a **deterministic, multi-purpose composition engine** capable of autonomously generating, orchestrating, and maintaining isolated AI workspaces across 30+ marketing/advertising pipelines. This release (v5.0.1) decouples the legacy Galeria routing, enforces strict metadata/workspace structural separation, deploys a cross-workspace Master Guide with memory aggregation, integrates a Proactive Brainstorm Agent, and replaces static views with a three-tier, lazy-loaded dashboard system. The v5.0.1 update introduces **Industrial Hardening**, including multi-IDE rule mirroring (Cursor, Copilot, Claude, Gemini), cross-platform symlink fallbacks, and strict manifest schema validation. All transformations preserve 100% backward compatibility and execute through a 6-phase gated rollout with automated validation (6/6 smoke tests).
+❌ Out of Scope
+- Replacing the 17-department taxonomy or 29 composition profiles
+- Modifying foundational `tool_router_v2.py` CLI parsing
+- Building proprietary UI or external SaaS integrations
+- Altering ≤15% semantic similarity, robots.txt, or MENA compliance rules
+- Autonomous code deployment outside sovereign `.ai/` boundaries
 
----
-
-## 2. PROBLEM STATEMENT & STRATEGIC IMPERATIVES
-
-| Current Limitation | Business/Technical Impact | v5.0.0 Solution |
-|-------------------|--------------------------|----------------|
-| Hardcoded `content-machine-editorial` routing | Blocks reuse across non-Galeria verticals; forces manual profile mapping | Deterministic alias resolver mapping 30 simplified pipelines → 29 existing composition profiles |
-| Flat `workspaces/<slug>/` hierarchy | Metadata pollution, agent boundary violations, cross-project context bleed | Strict separation: `clients/<slug>/` = metadata only; `001_<slug>/` = sovereign `.ai/` workspaces |
-| No cross-project memory or oversight | Redundant work, missed pattern reuse, fragmented strategic insights | Master Guide with root `.ai/` memory layer, `workspace-index.json`, and pattern detection engine |
-| Brainstorming requires manual triggers | Missed contextual optimization; high cognitive load | Proactive Mode Brainstorm Agent monitoring 6 contextual triggers, outputting ≤2 suggestions/session |
-| Static, token-heavy dashboards | High context waste, poor IDE rendering, sync overhead | Three-tier lazy-loaded widget system with delta-only sync, token budget <5%, archive protocol |
-| Library health at 38/100 (integrity) | Dead-weight components dilute composition accuracy | Strict `library-first` enforcement + pre-generation validation against certified component registry |
-
----
-
-## 3. SCOPE & BOUNDARIES
-
-### ✅ In Scope
-
-- Pipeline alias mapping & deterministic routing in `factory/scripts/compose.py`
-- Corrected folder hierarchy (`clients/` vs `001_<slug>/`) with `--structure` validation
-- Master Guide root agent + cross-workspace memory aggregation & `/master sync`
-- Brainstorm Agent dual-mode (Command + Proactive) with dismissal/accept/refine routing
-- Three-tier dashboard recreation (Root → Client → Project) using Widget Spec v2.0
-- New CLI commands: `/create-client`, `/create-project`, `/dashboard`
-- Legacy workspace migration, governance enforcement, token optimization
-- 6-phase execution with deterministic smoke tests & snapshot rollback
-
-### ❌ Out of Scope
-
-- Creating new core library components (strict `library-first` policy per `WORKSPACE_MASTER_CONTEXT.md`)
-- Altering the 17-department taxonomy or 29 composition profiles
-- Modifying foundational 9-agent tier hierarchy logic or `tool_router_v2.py` architecture
-- Building proprietary UI applications outside Markdown/CLI routing
-- Changing existing ethical scraping, PII filtering, or ≤15% similarity constraints
-
----
-
-## 4. CORE ARCHITECTURAL PRINCIPLES & GOVERNANCE
-
+4. CORE ARCHITECTURAL PRINCIPLES & GOVERNANCE
 | Principle | Enforcement Rule | Reference |
-|-----------|------------------|-----------|
-| **Library-First Composition** | All workspaces assemble exclusively from `factory/library/`. New components only if capability missing. | `WORKSPACE_MASTER_CONTEXT.md` §1, §12 |
-| **Sovereign Workspace Isolation** | Each `001_<slug>/` contains complete `.ai/` layer. Zero cross-project writes without Master Guide mediation. | `WORKSPACE_MASTER_CONTEXT.md` §7 |
-| **Deterministic Routing** | Pipeline aliases resolve via JSON table before profile injection. Zero LLM inference for routing. | `QWEN_CONTEXT.md` Phase 1 |
-| **Strict Data Ownership** | One owner per file. Cross-agent writes require owner mediation. Logs are append-only. | `WORKSPACE_MASTER_CONTEXT.md` §5, §12 |
-| **Lazy-Loaded Dashboards** | `<!-- INCLUDE: widget-id -->` directives. Token weight caps enforced per tier. | Widget Spec v2.0 |
-| **Gate-Enforced Pipeline** | `/export` → requires `/approve` → requires `/review`. Hard blocks on skips. | `WORKSPACE_MASTER_CONTEXT.md` §12 |
-| **Ethics & Compliance** | `robots.txt` compliance, PII filtering, ≤15% semantic similarity, MENA legal alignment. | `WORKSPACE_MASTER_CONTEXT.md` §12 |
+| --- | --- | --- |
+| Library-First Composition | All workspaces assemble from `factory/library/`. New components only via `/master learn` consensus. | `WORKSPACE_MASTER_CONTEXT.md` §1, §12 |
+| Sovereign Isolation | `00X_<slug>/` remains 100% independent. Cross-project writes require Omega Gate. | `WORKSPACE_MASTER_CONTEXT.md` §7 |
+| Deterministic Fallback | Probabilistic/swarm routing defaults to `pipeline-alias-mapping.json` if confidence <95%. | `QWEN_CONTEXT.md` Phase 1 |
+| Fail-Forward Adaptation | Errors trigger repair branches, not session termination. All edits logged with Reasoning Hash. | PRD §2, Pillar 4 |
+| Omega Gate Mediation | Autonomous library/structural changes require 3-agent consensus + `Dorgham-Approval` flag. | PRD §5 |
+| Append-Only & Traceable | Zero truncation. Every autonomous action includes ISO-8601, hash, and rollback pointer. | `WORKSPACE_MASTER_CONTEXT.md` §11 |
 
----
-
-## 5. FUNCTIONAL REQUIREMENTS (DETAILED)
-
-### 5.1 Pipeline Decoupling & Alias Mapping
-
-| ID | Requirement | Data Source | Acceptance Criteria |
-|----|-------------|-------------|---------------------|
-| FR-1.1 | Implement `pipeline-alias-mapping.json` mapping 30 simplified pipelines to 29 existing profiles | `factory/library/`, `_taxonomy.json` | All 30 IDs resolve to valid profile + required agents/skills; failsafe to `fallback_profile` |
-| FR-1.2 | Backward compatibility shim for `--pipeline galeria` | Legacy routing table | Auto-resolves to `content-machine-editorial` + SEO pipeline; zero routing conflicts |
-| FR-1.3 | Alias resolver integrated into `compose.py --pipeline` | `compose.py` v4.0.0+ | CLI flags parsed before scaffolding; `--explain-routing` outputs deterministic path |
-
-### 5.2 Folder Structure Correction & Sovereign Initialization
-
-| ID | Requirement | Validation Script | Acceptance Criteria |
-|----|-------------|-------------------|---------------------|
-| FR-2.1 | `workspaces/clients/<slug>/` contains ONLY metadata | `audit_path_integrity.py` | NO `.ai/`, NO `src/`, NO executable files |
-| FR-2.2 | `workspaces/clients/<slug>/001_<slug>/` = sovereign workspace | `audit_path_integrity.py` | Contains full 3-tier `.ai/`, `dashboard/`, `prd.md`, `plan.md`, `src/` |
-| FR-2.3 | Enforce `--structure` validation pre-generation | `compose.py --structure` | Blocks malformed trees; enforces `001_`, `002_` numbering |
-
-### 5.3 Master Guide & Root Memory Layer
-
+5. FUNCTIONAL REQUIREMENTS (DETAILED)
 | ID | Requirement | Data Flow | Acceptance Criteria |
-|----|-------------|-----------|---------------------|
-| FR-3.1 | Root `.ai/` layer with `master-guide.md` | Reads `.ai/memory/workspace-index.json` + `user-skill-profile.json` | Aggregates deltas from ≥3 projects without token overflow |
-| FR-3.2 | `/master sync all` command | Project `state.json` → root memory | Updates `workspace-index.json`; applies Context Compression (95) skill |
-| FR-3.3 | Cross-workspace pattern detection | `skill-memory/` + `state.json` | Triggers at ≥3 project threshold; outputs to root dashboard strategic panel |
+| --- | --- | --- | --- |
+| FR-1.1 | Healing Bot autonomous remediation | Monitors `audit_path_integrity.py` outputs → executes restoration scripts | Fixes structural drift within 2 sessions; logs to `.ai/logs/healing-bot.md` |
+| FR-1.2 | Circuit Breakers & Repair Branches | Detects logic errors → halts pipeline → spawns isolated repair context | Zero unhandled exceptions; 100% rollback capability to last valid state |
+| FR-2.1 | Recursive Learning (`/master learn`) | Analyzes `/polish`, `/refine`, dismiss/accept ratios → updates `skill-memory/` | Generates ≥1 validated skill manifest per 50 correction events |
+| FR-2.2 | MPS v2 Integration | Failed sessions → auto-tagged → fed to Mistake Prevention System | 30% reduction in repeated correction patterns per sprint |
+| FR-3.1 | Swarm Consensus Router | Multi-agent vote on routing/strategy → requires ≥2/3 agreement | Zero consensus deadlocks; fallback to deterministic JSON on timeout |
+| FR-3.2 | Autonomous Conflict Mediation | SEO vs Brand vs Compliance priorities → weighted resolution | Outputs mediation log; preserves ≥90% original constraints |
+| FR-4.1 | Chaos Scaffolding | Injects controlled errors (missing metadata, API timeouts) | Verifies isolation holds; 95%+ recovery success rate |
+| FR-4.2 | Volatility Scaling | Adjusts token depth/agent count based on project stress score | Dashboard render <2.5%; critical pipelines maintain ≥99% uptime |
+| FR-5.1 | Adaptive Token Budgeting | Dynamic allocation via Context Compression (95) + role profiles | Zero overflow in 100-session stress test; designer/developer parity |
+| FR-5.2 | Antifragile Dashboard | Real-time "Stress" & "Learning Progress" widgets | Lazy-loaded; updates on delta >3%; archives after 7d |
 
-### 5.4 Brainstorm Agent Integration (Proactive Mode)
-
-| ID | Requirement | Trigger Logic | Acceptance Criteria |
-|----|-------------|---------------|---------------------|
-| FR-4.1 | Dual-mode operation (Command + Proactive) | Command: `/brainstorm [mode]`. Proactive: contextual scan | Max 2 suggestions/session; writes to `dashboard/brainstorm-suggestions.md` |
-| FR-4.2 | 6 trigger conditions monitored | Stall (>2 sessions), Pattern Match, Gap Detection, Cross-Workspace, Skill Alignment, Pipeline Opportunity | Each trigger maps to deterministic rule set; no LLM guesswork |
-| FR-4.3 | Dismiss/Accept/Refine routing | `/brainstorm dismiss/accept/refine [id]` | Logs decision to `memory/`; updates widget state; archives after 7d |
-| FR-4.4 | Gate-lock enforcement | `/review`, `/export` active | Proactive Mode suspends; UI shows `🔒 Read-Only` badge |
-
-### 5.5 Three-Tier Dashboard System
-
-| ID | Requirement | Widget Spec | Acceptance Criteria |
-|----|-------------|-------------|---------------------|
-| FR-5.1 | Root dashboard (`.ai/dashboard/`) | `widget-root-*` components | Global status, cross-patterns, strategic recs, token health |
-| FR-5.2 | Client dashboard (`clients/<slug>/dashboard/`) | `widget-client-*` components | Metadata view, project roster, brand DNA, Master Guide insights |
-| FR-5.3 | Project dashboard (`001_<slug>/dashboard/`) | `widget-project-*` components | Pipeline progress, agent roster, task status, brainstorm panel |
-| FR-5.4 | Lazy loading & token governance | `<!-- INCLUDE: widget-id -->` | <5% session budget; delta sync >5% threshold; archive protocol active |
-| FR-5.5 | Deterministic rendering | JSON/Markdown parsing only | Zero LLM inference for data extraction; fails gracefully on missing source |
-
-### 5.6 CLI & Command System Updates
-
-| ID | Requirement | Routing Path | Acceptance Criteria |
-|----|-------------|--------------|---------------------|
-| FR-6.1 | `/create-client` generates metadata-only folder | `compose.py` + client scaffold | Produces `README.md`, `metadata.json`, client dashboard |
-| FR-6.2 | `/create-project` generates sovereign workspace | `compose.py --pipeline` + alias resolver | Initializes `.ai/`, dashboard, PRD, plan; registers to root index |
-| FR-6.3 | `/dashboard [scope]` renders targeted view | Dashboard renderer + lazy loader | Supports `root`, `client`, `project`; mirrors to `.cursor/rules/` |
-| FR-6.4 | Flag parsing & tool routing integration | `.ai/cli-layer/command-routing.json` | `--tool`, `--explain-routing`, `--prefer`, `--parallel` all functional |
-
----
-
-## 6. NON-FUNCTIONAL REQUIREMENTS
-
+6. NON-FUNCTIONAL REQUIREMENTS
 | Category | Requirement | Threshold | Measurement |
-|----------|-------------|-----------|-------------|
-| **Token Economics** | Dashboard render cost | <5% session budget | `state.json` delta tracking |
-| **Performance** | Lazy render load time | <800ms in IDE | Cursor/Qwen render benchmark |
-| **Reliability** | Append-only log integrity | 0 truncation/deletion events | `audit-workspace-integrity.py` |
-| **Security** | Ethical scraping & PII | ≤15% semantic similarity; robots.txt compliant | Scraper-agent audit log |
-| **Compliance** | MENA legal/financial alignment | AAOIFI/IFSB, Egypt GAFI, UAE DLD rules | Compliance checklist in metadata |
-| **Scalability** | Cross-workspace sync | ≤10 concurrent projects without drift | `/master sync` timeout check |
-| **Maintainability** | Library health baseline | ≥70/100 integrity post-remediation | `deep_audit_report.md` delta |
+| --- | --- | --- | --- |
+| Token Economics | Dashboard + sync cost | <2.5% session budget | `state.json` delta + role-profile tracking |
+| Reliability | Append-only integrity | 0 truncation/deletion | `audit_path_integrity.py` + hash verification |
+| Resilience | Chaos recovery success | ≥95% | `chaos-scaffolding.py` test suite |
+| Learning Velocity | Skill manifest generation | ≥1/50 corrections | `/master learn` output audit |
+| Compliance | MENA & Ethics alignment | 100% | AAOIFI/IFSB, GAFI, DLD checklist |
+| Scalability | Parallel throughput | ≥50 concurrent | `parallel-compose` stress test |
 
----
-
-## 7. SYSTEM ARCHITECTURE & DATA FLOW
-
-```
+7. SYSTEM ARCHITECTURE & DATA FLOW
 [CLI / IDE Input] → /command --flags
         ↓
-.tool_router_v2.py → parses flags, resolves tool adapter (copilot|codex|gemini|qwen|opencode|kilo)
+.tool_router_v2.py → parses flags, resolves tool adapter
         ↓
-[Phase 1-2] compose.py → resolves pipeline alias via JSON table → scaffolds corrected structure
+[Phase 1-2] compose.py → deterministic alias resolver → scaffolds structure
         ↓
-[Phase 3] master-guide.md → reads .ai/memory/workspace-index.json → aggregates deltas
+[Phase 3] Swarm Router v3 → multi-sig consensus → executes pipeline
         ↓
-[Phase 4] brainstorm-agent.md → monitors context triggers → appends to dashboard/brainstorm-suggestions.md
+[Phase 4] Healing Bot → monitors drift → triggers repair branch if needed
         ↓
-[Phase 5] dashboard/index.md → lazily renders widgets via <!-- INCLUDE: widget-id -->
+[Phase 5] Recursive Engine → captures corrections → updates skill manifests
         ↓
-[Phase 6] audit scripts → validate structure, ownership, token budget, pipeline gates
+[Phase 6] Chaos Validator → injects stressors → verifies antifragility
         ↓
-[Output] → Autonomous workspace in workspaces/clients/<slug>/001_<slug>/
-```
+[Output] → Sovereign workspace with adaptive token governance & Omega Gate logs
+Read Path: Deterministic JSON/Markdown + consensus validation. Fallback to v5 routing on timeout.Write Path: Owner-agent → append-only → delta check → widget update → Reasoning Hash.Memory Layer: `.ai/memory/state.json` + `skill-memory/` + `workspace-index.json`. Root aggregates via `/master sync`.
 
-**Read Path:** Deterministic JSON/Markdown parsing. Zero LLM inference for data extraction.  
-**Write Path:** Owner-agent only → append-only → delta threshold check (>5%) → widget update → ISO-8601 timestamp.  
-**Memory Layer:** `.ai/memory/state.json` + `context-cache/` + `skill-memory/` per project. Root aggregates via `/master sync`.
-
----
-
-## 8. PHASE-GATED EXECUTION PLAN
-
+8. PHASE-GATED EXECUTION PLAN
 | Phase | Title | Dependencies | Deliverables | Validation Gate | Rollback Trigger |
-|-------|-------|--------------|--------------|-----------------|------------------|
-| 1 | Pipeline Decoupling & Alias Mapping | ✅ COMPLETE | 30 pipelines mapped; deterministic routing enabled. |
-| 2 | Folder Structure Correction & Sovereign Init | ✅ COMPLETE | Sovereign hierarchy enforced; `audit_path_integrity.py` deployed. |
-| 3 | Master Guide & Root Memory Layer | ✅ COMPLETE | Root `.ai/` initialized; `sync_master_memory.py` functional. |
-| 4 | Brainstorm Agent Integration | ✅ COMPLETE | Dual-mode proactive triggers functional; suggestions dashboard deployed. |
-| 5 | Three-Tier Dashboard Recreation | ✅ COMPLETE | Root/Client/Project dashboards functional with lazy-load engine. |
-| 6 | Backward Compatibility & Smoke Tests | ✅ COMPLETE (v5.0.1 Hardened) | Smoke test suite passed (6/6); multi-IDE mirroring verified. |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Deterministic + Probabilistic Routing | ✅ v5.0.0 stable | Swarm Router v3, fallback table, `--explain-routing` v2 | ≥99.5% routing accuracy, <150ms latency | Revert to `pipeline-alias-mapping.json` primary |
+| 2 | Autonomous Healing Bot | Phase 1 | `healing-bot.md`, circuit breakers, repair branches | ≥90% auto-fix rate; 0 unauthorized writes | Disable bot; run `audit_path_integrity.py --manual` |
+| 3 | Recursive Learning Engine | Phase 2 | `/master learn`, MPS v2, skill manifest generator | ≥1 manifest/50 corrections; 30% repeat error drop | Freeze skill updates; restore v5 manifests |
+| 4 | Swarm Consensus & Mediation | Phase 3 | Multi-sig validation, conflict resolver, Omega Gate | Zero deadlocks; ≥2/3 consensus on critical ops | Fallback to Master Guide single-node routing |
+| 5 | Chaos Scaffolding & Scaling | Phase 4 | `chaos-validator.py`, volatility scaler, antifragile dashboard | 95% recovery; <2.5% token budget under stress | Disable chaos injection; lock token profiles |
+| 6 | Full Antifragile Release | Phases 1-5 | v6.0.0 tag, migration shims, Omega Gate UI flags | 20/20 smoke tests; ≥85/100 library health | `git reset --hard v5.0.0` + restore backup |
 
----
+9. MIGRATION & BACKWARD COMPATIBILITY STRATEGY
+- Snapshot: `git tag v6.0.0-pre-migration`, backup `workspaces/` & `.ai/memory/`
+- Legacy Shim: `--pipeline galeria` and all v5 commands remain functional
+- Memory Preservation: UUID cross-references map v5 `state.json` to v6 structure
+- Omega Gate Rollout: Gradual enablement; requires explicit `--enable-swarm` flag
+- Integrity Verification: `sha256sum` on critical files post-phase; zero delta allowed on sovereign layers
 
-## 9. MIGRATION & BACKWARD COMPATIBILITY STRATEGY
-
-1. **Snapshot Pre-Run:** Git tag `v5.0.0-pre-migration`. Copy `workspaces/` to `.backup/v4.0.0-workspaces/`.
-2. **Legacy Path Mapping:** Run `migrate-legacy-workspaces.py` to move old `projects/` → `workspaces/clients/galeria-properties/001_...`.
-3. **Memory Preservation:** Retain all `.ai/memory/`, `state.json`, `workflow.jsonl`. Map to new structure via UUID cross-reference.
-4. **Dashboard Archival:** Move legacy dashboard files to `dashboard/archive/v4-legacy/`. Generate new tiered structure.
-5. **Compatibility Shim:** `--pipeline galeria` and legacy commands remain functional via alias table.
-6. **Integrity Verification:** Post-migration hash comparison (`sha256sum`) on all critical memory/log files. Zero delta allowed.
-
----
-
-## 10. RISK MANAGEMENT & MITIGATION
-
+10. RISK MANAGEMENT & MITIGATION
 | Risk | Probability | Impact | Mitigation | Owner |
-|------|-------------|--------|------------|-------|
-| Alias routing mismatch | Low | High | Fallback to `fallback_profile`; hard CLI validation | `guide-agent` |
-| Cross-project memory bleed | Medium | Critical | Strict `.ai/` isolation; Master Gate mediation only | `master-guide` |
-| Dashboard token overflow | Medium | Medium | Lazy load + delta sync + <5% budget cap | `memory-manager` |
-| Brainstorm suggestion spam | Low | Low | Max 2/session; gate-lock; auto-archive 7d | `brainstorm-agent` |
-| Legacy data loss during migration | Low | Critical | Pre-snapshot + hash verification + dry-run mode | `antigravity-agent` |
-| Library health degradation | Medium | High | Strict `library-first` + pre-commit audit | `Router` + `CapabilityRegistry` |
+| --- | --- | --- | --- | --- |
+| Consensus deadlock | Medium | High | Timeout fallback to deterministic routing | Swarm Router v3 |
+| Autonomous edit overreach | Low | Critical | Omega Gate multi-sig + rate limit (1 PR/week) | Healing Bot + Dorgham-Approval |
+| Chaos scaffolding isolation breach | Low | Critical | Strict `.ai/` boundary enforcement + dry-run mode | Chaos Validator |
+| Token budget miscalibration | Medium | Low | A/B rollout + designer/developer profile locks | Memory Manager |
+| Recursive learning drift | Medium | Medium | MPS v2 validation gates + human review queue | Master Guide |
 
----
-
-## 11. VALIDATION, TESTING & SUCCESS METRICS
-
-### 🔍 Smoke Test Matrix
-
+11. VALIDATION, TESTING & SUCCESS METRICS
+🔍 Smoke Test Matrix (v6.0.0)
 | Test ID | Scenario | Expected Result | Pass/Fail |
-|---------|----------|-----------------|-----------|
-| ST-01 | `/dashboard root --render` | Cross-workspace overview + ≥1 strategic recommendation | |
-| ST-02 | `/dashboard project --render` | Pipeline progress + ≤2 Brainstorm suggestions (lazy load) | |
-| ST-03 | Brainstorm Proactive Trigger | Writes exactly 1-2 suggestions to `brainstorm-suggestions.md` | |
-| ST-04 | `/brainstorm dismiss [id]` | Removes entry, logs to memory, updates widget state | |
-| ST-05 | `/master sync all` | Aggregates project states, updates `workspace-index.json` | |
-| ST-06 | Legacy workspace migration | 0 data loss, correct path mapping, intact `.ai/` memory | |
-| ST-07 | Pipeline gate enforcement | `/export` fails without `/approve` → `/review` completion | |
-| ST-08 | Token budget check | Dashboard + sync operations <5% session allocation | |
-| ST-09 | Structure integrity audit | Client folders contain 0 `.ai/`; projects contain full sovereign `.ai/` (Content-level check active) | |
-| ST-10 | Full suite execution | `python3 .ai/scripts/run-smoke-tests.py` → 6/6 PASS | |
+| --- | --- | --- | --- |
+| ST-01 | `/dashboard root --render` | Cross-workspace + stress/learning widgets |  |
+| ST-02 | Chaos injection on `001_<slug>` | Repair branch triggers; isolation holds |  |
+| ST-03 | `/master learn` after 50 corrections | Skill manifest generated & logged |  |
+| ST-04 | Consensus routing vs fallback | Fallback activates if confidence <95% |  |
+| ST-05 | `/master sync all` with Omega Gate | Aggregates deltas; applies compression |  |
+| ST-06 | Healing Bot auto-fix drift | Structural violation corrected + logged |  |
+| ST-07 | Token budget under stress | <2.5% session; zero overflow |  |
+| ST-08 | Legacy alias resolution | `--pipeline galeria` → v5 profile |  |
+| ST-09 | Append-only log integrity | 0 truncation; Reasoning Hash present |  |
+| ST-10 | Full suite execution | `run-smoke-tests.py` → 20/20 PASS |  |
 
-### 📊 KPI Targets
+📊 KPI Targets
+| Metric | v5.0.0 Baseline | v6.0.0 Target | Measurement |
+| --- | --- | --- | --- |
+| Library Health Integrity | 70/100 | ≥85/100 | `deep_audit_report.md` + Healing Bot logs |
+| Routing Precision | >99% deterministic | ≥99.8% (with fallback) | Consensus router + alias table audit |
+| Token Efficiency | <5% | <2.5% adaptive | `state.json` delta + role profiles |
+| Self-Healing Rate | Manual | ≥90% auto-fix | Healing Bot success ratio |
+| Recursive Learning | None | 30% error reduction | MPS v2 + `/master learn` output |
+| Chaos Resilience | N/A | ≥95% recovery | `chaos-validator.py` stress suite |
 
-| Metric | Baseline | Target (v5.0.0) | Measurement |
-|--------|----------|----------------|-------------|
-| Pipeline Routing Accuracy | Hardcoded | >99% deterministic | `audit_path_integrity.py` |
-| Dashboard Render Cost | ~15-20% | <5% session tokens | `state.json` delta |
-| Brainstorm Precision | Manual-only | >85% trigger relevance | Accept/dismiss ratio |
-| Migration Data Loss | N/A | 0% | Pre/post hash comparison |
-| Governance Violations | Occasional | 0 critical blocks | Audit script errors |
-| Library Health Integrity | 38/100 | ≥70/100 | `deep_audit_report.md` |
-
----
-
-## 📎 APPENDIX A: KEY FILE PATHS & CONTEXT CROSS-REFERENCES
-
+📎 APPENDIX A: KEY FILE PATHS & CONTEXT CROSS-REFERENCES
 | Resource | Path | Context Reference |
-|----------|------|-------------------|
+| --- | --- | --- |
 | Master Context | `docs/context/WORKSPACE_MASTER_CONTEXT.md` | §1-12, Governance, Library |
 | Qwen Context | `docs/qwen/QWEN_CONTEXT.md` | Audit reality, Phase status, Agents |
-| PRD v4.0.0 | `docs/workspace/prd/AI_WORKSPACE_FACTORY_PRD.md` | Baseline architecture |
-| Playbook v4.0.0 | `docs/workspace/playbook/AI_WORKSPACE_FACTORY_PLAYBOOK.md` | Operational manual |
-| Deep Audit Report | `docs/workspace/report/deep_audit_report.md` | Health score, remediation |
-| Pipeline Alias Table | `factory/library/pipeline-alias-mapping.json` | FR-1.1 |
-| Tool Router v2 | `.ai/scripts/tool_router_v2.py` | CLI routing, flags |
-| Path Integrity Audit | `.ai/scripts/audit_path_integrity.py` | FR-2.1, ST-09 |
-| Smoke Tests | `.ai/scripts/run-smoke-tests.py` | ST-10 |
-| Data Ownership | `.ai/data-ownership.md` | §4, Governance |
-| Workspace Index | `.ai/memory/workspace-index.json` | FR-3.1 |
-| Sync Config | `.ai/dashboard/sync-config.json` | Widget Spec v2.0 |
-| Dashboard Integrity Audit | `.ai/scripts/audit-dashboard-integrity.py` | FR-5.4 |
-| Profile Schema | `factory/registry/profile-schema.json` | FR-2.3, v5.0.1 |
+| PRD v5.0.0 | `master/docs/Product required document/AIWF-PRD.md` | Baseline architecture |
+| Healing Bot | `.ai/agents/healing-bot.md` | FR-1.1, Pillar 1 |
+| Swarm Router | `.ai/agents/swarm-router-v3.md` | FR-3.1, Pillar 3 |
+| Chaos Validator | `.ai/scripts/chaos-validator.py` | FR-4.1, Pillar 4 |
+| Skill Memory | `.ai/memory/skill-memory/` | FR-2.1, Recursive Engine |
 
-## 📎 APPENDIX B: WIDGET METADATA SCHEMA (v2.0)
+📎 APPENDIX B: WIDGET METADATA SCHEMA (v2.1)
+| Widget | Key | Value Type | Description |
+| --- | --- | --- | --- |
+| Stress Meter | `stress_score` | Integer (0-100) | Current system pressure based on drift/healing events |
+| Learning Progress | `learning_velocity` | Float (0.0+) | Validated skill manifests per sprint |
+| Volatility Config | `token_depth` | Integer (95-99) | Current Context Compression level |
 
-```json
-{
-  "widget_id": "string",
-  "version": "string",
-  "owner_agent": "string",
-  "last_updated": "ISO-8601",
-  "token_weight": "light|medium|heavy",
-  "data_source": "string",
-  "update_trigger": "string",
-  "lazy_load": true,
-  "archive_ttl_days": 7,
-  "gate_lock": false
-}
-```
-
-Embedded in Markdown as: `<!-- WIDGET: {...} -->`  
-Parsed by renderer via deterministic JSON extractor. Zero LLM inference.
-
-## 📎 APPENDIX C: COMMAND ROUTING MAP
-
+📎 APPENDIX C: COMMAND ROUTING MAP (v6.0.0 EXTENDED)
 | Command | Tier | Owner | Flags | Output |
-|---------|------|-------|-------|--------|
-| `/create-client` | CLI | `compose.py` | `--tool`, `--explain-routing` | Client metadata + dashboard |
-| `/create-project` | CLI | `compose.py` + Alias Resolver | `--pipeline`, `--parallel`, `--tool` | Sovereign `.ai/` + workspace |
-| `/dashboard` | CLI | Dashboard Renderer | `[scope]`, `--render` | Lazy-loaded Markdown view |
-| `/master sync` | T1 | `master-guide` | `all`, `[scope]` | Root memory aggregation |
-| `/brainstorm` | T2 | `brainstorm-agent` | `[mode]`, `dismiss/accept/refine [id]` | Contextual suggestions + memory log |
+| --- | --- | --- | --- | --- |
+| `/master learn` | T0 | Master Guide + MPS v2 | `[scope]`, `--dry-run` | Skill manifests + correction log |
+| `/heal check` | T0 | Healing Bot | `--auto`, `--report` | Structural drift fix + hash |
+| `/route consensus` | T0 | Swarm Router v3 | `--explain`, `--force-deterministic` | Multi-sig path + fallback |
+| `/chaos inject` | T1 | Chaos Validator | `[stress-level]`, `--isolate` | Recovery metrics + dashboard update |
+| `/dashboard root|client|project` | T1/T2 | Dashboard Renderer | `[scope]`, `--stress-view` | Lazy-loaded antifragile widgets |

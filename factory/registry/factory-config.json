@@ -1,5 +1,5 @@
 {
-  "version": "1.2.0",
+  "version": "6.0.0-alpha",
   "workspace_root_folder": "workspaces",
   "library_ingestion": "manual_copy_only",
   "generation_policy": {
@@ -12,5 +12,10 @@
     "signals_dir": "factory/evolution/signals",
     "backlog_path": "factory/evolution/BACKLOG.md",
     "enabled": true
+  },
+  "antifragile": {
+    "healing_enabled": true,
+    "recursive_learning_enabled": true,
+    "swarm_routing": "v3"
   }
 }
