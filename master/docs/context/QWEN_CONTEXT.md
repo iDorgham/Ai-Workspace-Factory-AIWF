@@ -3,7 +3,7 @@ Optimized for: Qwen AI (Alibaba Cloud)
 Version: 6.0.0-alpha (Antifragile Factory)
 
 ⚡ Quick Orientation
-v6.0.0 extends v5.0.0 with autonomous healing, swarm consensus, recursive learning, and chaos scaffolding. All v5 commands remain functional. New flags require explicit opt-in.
+v6.0.0 has completed its industrialization phase (2026-04-22). It extends v5.0.0 with autonomous healing, swarm consensus, recursive learning, and chaos scaffolding. All core shims are verified and operational.
 
 ⚡ Key CLI & Routing
 `/compose [slug] --pipeline [alias]` → Deterministic + consensus routing
