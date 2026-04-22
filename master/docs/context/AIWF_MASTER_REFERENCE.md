@@ -3,6 +3,20 @@
 
 ---
 
+## 0. 📜 PROJECT EVOLUTION (v1 — v6)
+The AI Workspace Factory has evolved through six major architectural generations to reach its current antifragile state.
+
+| Version | Era | Key Architectural Shift |
+| :--- | :--- | :--- |
+| **v1.0** | **Genesis** | Manual workspace scaffolding and basic context-sharing between AI tools. |
+| **v2.0** | **Sovereign Core** | Formalization of the `.ai/` intelligence layer and the separation of "Master" vs "Client" logic. |
+| **v3.0** | **Agentic Swarm** | Introduction of specialized sub-agents and the first iteration of the "Master Guide" orchestrator. |
+| **v4.0** | **Industrial Grade** | Taxonomy expansion to 17 departments and 327+ library nodes. Standardized composition profiles. |
+| **v5.0** | **Resilient Factory** | "Sovereign Isolation" protocol (zero cross-project writes) and deterministic JSON-based routing. |
+| **v6.0** | **Antifragile Factory** | **Current State**. Autonomous Healing, Recursive Learning, and Swarm Consensus Orchestration. |
+
+---
+
 ## 1. 🎯 STRATEGIC CORE: THE ANTIFRAGILE MISSION
 The AI Workspace Factory (AIWF) is an **Antifragile Sovereign Composition Engine**. It learns from operational stressors, auto-remediates structural drift, and routes via swarm consensus.
 
@@ -118,7 +132,7 @@ v5.0.0 achieved deterministic routing and isolation, but v6.0.0 solves the "Stat
 
 ### Phase 7: Sovereign Scale (Q3 2026)
 - **Deliverables**: Hot-Sync Protocol (`/update-agents --safe`), Multi-machine orchestration.
-- **Goal**: Pull library-first updates into existing sovereign projects without state loss.
+- **Goal**: Implement a mechanism to pull library-first updates into existing sovereign projects without state loss.
 
 ### Phase 8: Autonomous Industrialization (Q4 2026)
 - **Deliverables**: CI/CD Workspace Generation, automated health scoring.
