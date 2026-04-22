@@ -1,0 +1,7 @@
+name: Blameless Escalation Sbar
+description: "Standardized protocols for Blameless Escalation Sbar."
+metadata:
+  version: 10.0.0
+  tier: 💎 OMEGA
+  status: SYNCED
+  logic: operational-remediation

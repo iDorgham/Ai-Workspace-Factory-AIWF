@@ -1,0 +1,27 @@
+{
+  "id": "05-data-analytics/analysis/agents/scraper",
+  "type": "agent",
+  "name": "scraper-agent",
+  "version": "3.3.1",
+  "source": "sovereign",
+  "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/agents/scraper-agent.md",
+  "tags": [
+    "agents",
+    "sovereign"
+  ],
+  "dependencies": [],
+  "compatibility": [
+    "generic"
+  ],
+  "quality_status": "imported",
+  "last_synced_at": "2026-04-14T16:35:40+00:00",
+  "source_contributions": [
+    {
+      "source": "sovereign",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/agents/scraper-agent.md",
+      "synced_at": "2026-04-14T16:23:31+00:00"
+    }
+  ],
+  "category": "05-data-analytics/analysis",
+  "asset_type": "agents"
+}

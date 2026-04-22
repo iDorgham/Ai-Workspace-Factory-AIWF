@@ -1,0 +1,28 @@
+{
+  "id": "01-software-engineering/developing/scripts/check",
+  "type": "script",
+  "name": "check-changelog",
+  "version": "3.3.1",
+  "source": "local",
+  "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Gate-Access/scripts/check/check-changelog.js",
+  "tags": [
+    "gate-access",
+    "local",
+    "scripts"
+  ],
+  "dependencies": [],
+  "compatibility": [
+    "generic"
+  ],
+  "quality_status": "curated",
+  "last_synced_at": "2026-04-14T18:05:59+00:00",
+  "source_contributions": [
+    {
+      "source": "local",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Gate-Access/scripts/check/check-changelog.js",
+      "synced_at": "2026-04-14T18:05:59+00:00"
+    }
+  ],
+  "category": "01-software-engineering/developing",
+  "asset_type": "scripts"
+}

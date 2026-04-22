@@ -1,0 +1,24 @@
+{
+  "client_name": "Acme Labs",
+  "workspace_slug": "acme-labs",
+  "workspace_purpose": "fullstack-saas",
+  "team_level": "mixed",
+  "delivery_mode": "hybrid",
+  "required_modules": [
+    "billing",
+    "seo-lite"
+  ],
+  "compliance_level": "standard",
+  "language_support": [
+    "en"
+  ],
+  "deployment_target": "vercel",
+  "notes": "Example intake",
+  "client_contacts": [
+    "ops@acme.test"
+  ],
+  "website": "https://acme.test",
+  "social_media": [
+    "https://x.com/acme"
+  ]
+}

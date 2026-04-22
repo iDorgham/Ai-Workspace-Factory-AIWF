@@ -1,0 +1,11 @@
+{
+  "id": "tenant-isolation-auditor",
+  "name": "Tenant Isolation Auditor",
+  "description": "Audits multi-tenant SaaS architectures for data isolation violations, cross-tenant leaks, and permission boundary breaches.",
+  "capabilities": [
+    "row-level-security-validation",
+    "cross-tenant-query-detection",
+    "permission-boundary-testing",
+    "data-residency-verification"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "competitive-intel-scanner",
+  "name": "Competitive Intelligence Scanner",
+  "description": "Scans public data sources to build structured competitive profiles and market positioning maps.",
+  "capabilities": [
+    "competitor-feature-matrix-generation",
+    "pricing-model-extraction",
+    "market-share-estimation",
+    "positioning-gap-identification"
+  ]
+}

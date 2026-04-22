@@ -1,0 +1,25 @@
+name: Docs Health
+
+on:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 2 * * *"
+
+jobs:
+  docs-health:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate workspace index/status
+        run: python3 .ai/scripts/workspace_health.py
+
+      - name: Run docs quality gate
+        run: python3 .ai/scripts/docs_quality_gate.py

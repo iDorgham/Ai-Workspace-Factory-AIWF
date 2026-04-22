@@ -1,0 +1,7 @@
+name: Legal Review
+description: "Standardized protocols for Legal Review."
+metadata:
+  version: 10.0.0
+  tier: 💎 OMEGA
+  status: SYNCED
+  logic: operational-remediation

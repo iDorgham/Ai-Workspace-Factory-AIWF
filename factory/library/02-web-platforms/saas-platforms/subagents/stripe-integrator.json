@@ -1,0 +1,11 @@
+{
+  "id": "stripe-integrator",
+  "name": "Stripe & Billing Integrator",
+  "description": "Specialized tool for implementing Stripe Checkout, Subscriptions, and Billing Portals.",
+  "capabilities": [
+    "webhook-management",
+    "subscription-lifecycle",
+    "billing-portal-config",
+    "multi-currency-handling"
+  ]
+}

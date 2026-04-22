@@ -1,0 +1,11 @@
+{
+  "id": "sprint-velocity-tracker",
+  "name": "Sprint Velocity Tracker",
+  "description": "Tracks and forecasts team velocity across sprints using historical data and capacity adjustments.",
+  "capabilities": [
+    "velocity-trend-analysis",
+    "capacity-adjustment-modeling",
+    "sprint-burndown-generation",
+    "completion-date-forecasting"
+  ]
+}

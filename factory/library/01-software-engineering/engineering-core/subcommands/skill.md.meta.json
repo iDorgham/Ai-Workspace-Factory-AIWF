@@ -1,0 +1,28 @@
+{
+  "id": "01-software-engineering/engineering-core/subcommands",
+  "type": "subcommand",
+  "name": "skill",
+  "version": "3.3.1",
+  "source": "local",
+  "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Gate-Access/.cursor/commands-ref/skill.md",
+  "tags": [
+    "engineering",
+    "local",
+    "subcommands"
+  ],
+  "dependencies": [],
+  "compatibility": [
+    "generic"
+  ],
+  "quality_status": "curated",
+  "last_synced_at": "2026-04-14T18:05:59+00:00",
+  "source_contributions": [
+    {
+      "source": "local",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Gate-Access/.cursor/commands-ref/skill.md",
+      "synced_at": "2026-04-14T18:05:59+00:00"
+    }
+  ],
+  "category": "01-software-engineering/engineering-core",
+  "asset_type": "subcommands"
+}

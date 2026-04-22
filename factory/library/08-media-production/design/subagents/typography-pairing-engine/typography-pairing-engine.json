@@ -1,0 +1,11 @@
+{
+  "id": "typography-pairing-engine",
+  "name": "Typography Pairing Engine",
+  "description": "Recommends and validates typeface pairings based on brand personality, readability, and visual hierarchy rules.",
+  "capabilities": [
+    "font-harmony-scoring",
+    "readability-analysis",
+    "variable-font-optimization",
+    "cross-platform-fallback-mapping"
+  ]
+}

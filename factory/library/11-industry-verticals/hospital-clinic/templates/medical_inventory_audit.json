@@ -1,0 +1,26 @@
+{
+  "audit_id": "MED-INV-XXX-2026",
+  "facility_id": "",
+  "reporting_period": "2026-Q1",
+  "inventory_matrix": [
+    {
+      "item_id": "PH-001",
+      "drug_name": "Insulin Glargine",
+      "category": "Cold-Chain",
+      "thermal_integrity_status": "Verified",
+      "temperature_range": "2C-8C",
+      "current_stock": 0,
+      "expiry_watch": "2027-04-15"
+    },
+    {
+      "item_id": "PH-SCHEDULED-02",
+      "drug_name": "Morphine Sulfate",
+      "category": "Narcotic",
+      "registry_match": "COMPLIANT",
+      "vials_recorded": 0,
+      "hcp_biometric_lock": "ACTIVE"
+    }
+  ],
+  "overall_compliance_score": 100,
+  "sentinel_validation_hash": ""
+}

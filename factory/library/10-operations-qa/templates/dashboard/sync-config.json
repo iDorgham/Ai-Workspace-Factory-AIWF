@@ -1,0 +1,13 @@
+{
+  "sync_interval_minutes": 30,
+  "delta_threshold_percentage": 5,
+  "token_budgets": {
+    "root": 2000,
+    "client": 1500,
+    "project": 3000
+  },
+  "archive_policy": {
+    "stale_days": 7,
+    "archive_path": "dashboard/archive/"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "client": "05_green-suez",
+  "profile": "energy-infrastructure-v11",
+  "generated_at": "2026-04-21T11:33:59+00:00",
+  "components": {
+    "agents": [
+      "SentinelEnergyTech.md",
+      "SentinelLegalBrokerage.md",
+      "SentinelIslamicFinance.md",
+      "SentinelProjectManagement.md"
+    ],
+    "subagents": [],
+    "skills": [
+      "energy-renewables-mastery.md",
+      "legal-brokerage-mastery.md",
+      "islamic-finance-mastery.md"
+    ],
+    "commands": [
+      "commands.md"
+    ],
+    "subcommands": [],
+    "templates": [
+      "PLAN_BLUEPRINT.md"
+    ],
+    "scripts": [
+      "scripts-mastery.py"
+    ]
+  },
+  "output_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace Factory/workspaces/clients/05_green-suez/01_wind-farm-feasibility",
+  "validation": {
+    "status": "pending"
+  }
+}

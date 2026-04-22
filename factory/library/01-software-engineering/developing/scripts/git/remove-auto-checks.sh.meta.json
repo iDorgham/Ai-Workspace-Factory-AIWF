@@ -1,0 +1,23 @@
+{
+  "id": "01-software-engineering/developing/scripts/git",
+  "type": "script",
+  "name": "remove-auto-checks",
+  "version": "3.3.1",
+  "tags": [
+    "scripts"
+  ],
+  "dependencies": [],
+  "compatibility": [
+    "generic"
+  ],
+  "quality_status": "imported",
+  "last_synced_at": "2026-04-14T16:35:45+00:00",
+  "source_contributions": [
+    {
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace Factory/scripts/git/remove-auto-checks.sh",
+      "synced_at": "2026-04-14T16:35:45+00:00"
+    }
+  ],
+  "category": "01-software-engineering/developing",
+  "asset_type": "scripts"
+}

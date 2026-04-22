@@ -1,0 +1,11 @@
+{
+  "id": "cohort-analyzer",
+  "name": "Cohort Analyzer",
+  "description": "Segments user populations into behavioral cohorts and tracks retention, engagement, and conversion metrics over time.",
+  "capabilities": [
+    "behavioral-segmentation",
+    "retention-curve-generation",
+    "conversion-funnel-analysis",
+    "cohort-comparison-visualization"
+  ]
+}

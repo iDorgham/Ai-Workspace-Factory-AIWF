@@ -1,0 +1,11 @@
+{
+  "id": "color-system-architect",
+  "name": "Color System Architect",
+  "description": "Designs comprehensive color systems with semantic tokens, accessibility-verified palettes, and dark mode derivatives.",
+  "capabilities": [
+    "palette-generation-from-brand",
+    "wcag-contrast-verification",
+    "dark-mode-derivation",
+    "semantic-token-mapping"
+  ]
+}

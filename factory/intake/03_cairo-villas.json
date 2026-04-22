@@ -1,0 +1,8 @@
+{
+  "client_name": "Cairo Luxury Estates",
+  "client_slug": "03_cairo-villas",
+  "workspace_purpose": "real-estate-hub-v11",
+  "profiles": ["real-estate-hub-v11", "legal-brokerage-hub"],
+  "economic_context": "Egypt",
+  "currency": "EGP"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "logo-concept-explorer",
+  "purpose": "Generate logo concept directions and rationale before design lock.",
+  "inputs": [
+    "brand_keywords",
+    "market_context",
+    "constraints"
+  ],
+  "outputs": [
+    "concept_directions",
+    "style_references",
+    "selection_matrix"
+  ],
+  "description": "Specialized subagent for logo-concept-explorer tasks within the department field context."
+}

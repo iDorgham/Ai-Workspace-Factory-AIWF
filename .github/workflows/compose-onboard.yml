@@ -1,0 +1,49 @@
+name: Industrial Onboarding Pipeline (v5.1.0)
+
+on:
+  push:
+    paths:
+      - 'factory/intake/**.json'
+  workflow_dispatch:
+    inputs:
+      client:
+        description: 'Client Slug'
+        required: true
+      pipeline:
+        description: 'Pipeline Alias'
+        default: 'sovereign'
+        required: true
+
+jobs:
+  compose:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/python-versions@v3
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: pip install jsonschema # In case we want to use it later
+
+      - name: Execute Sovereign Composition
+        run: |
+          CLIENT_NAME="${{ github.event.inputs.client }}"
+          PIPELINE="${{ github.event.inputs.pipeline }}"
+          python3 factory/scripts/compose.py $CLIENT_NAME --pipeline $PIPELINE --verbose
+
+      - name: Audit Path Integrity
+        run: python3 .ai/scripts/audit_path_integrity.py --check-content
+
+      - name: Commit & Push Workspace
+        run: |
+          git config --global user.name "AIWF-Orchestrator"
+          git config --global user.email "orchestrator@ai-workspace-factory.local"
+          git add workspaces/
+          git commit -m "🚀 INDUSTRIAL-ONBOARDING: Created sovereign workspace for ${{ github.event.inputs.client }}"
+          git push origin main

@@ -1,0 +1,27 @@
+{
+  "id": "keyword-auditor",
+  "parent_agent": "seo-agent",
+  "trigger": "/polish content in content/",
+  "single_responsibility": "Keyword density, placement, and cannibalization checks",
+  "input": {
+    "required": {
+      "markdown_content": "string",
+      "target_keywords": "array<string>",
+      "all_content_files": "array<{file_path, keywords}> \u2014 for cannibalization check"
+    }
+  },
+  "output": {
+    "keyword_report": "object<{density: float, placement_valid: bool, cannibalization_flags: array<{keyword, files_conflicting: array<string>}>, gaps: array<string>}>"
+  },
+  "validation": {
+    "target_density_range": [
+      0.01,
+      0.02
+    ],
+    "primary_keyword_must_be_in_h1_and_meta": true,
+    "cannibalization_requires_human_review": true
+  },
+  "error_owner": "keyword-auditor",
+  "escalates_to": "seo-agent",
+  "description": "Specialized subagent for keyword auditor tasks within the department field context."
+}

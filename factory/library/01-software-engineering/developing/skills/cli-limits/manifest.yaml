@@ -1,0 +1,7 @@
+name: Cli Limits
+description: "Standardized protocols for Cli Limits."
+metadata:
+  version: 10.0.0
+  tier: 💎 OMEGA
+  status: SYNCED
+  logic: operational-remediation

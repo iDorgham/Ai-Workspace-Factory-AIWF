@@ -1,0 +1,7 @@
+name: Neon Postgres
+description: "Standardized protocols for Neon Postgres."
+metadata:
+  version: 10.0.0
+  tier: 💎 OMEGA
+  status: SYNCED
+  logic: operational-remediation

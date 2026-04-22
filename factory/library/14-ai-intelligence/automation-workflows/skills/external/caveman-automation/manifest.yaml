@@ -1,0 +1,15 @@
+name: Caveman Automation Physics
+description: "Standards for rugged, low-complexity automation favoring shell scripts and direct API calls."
+metadata:
+  version: 1.0.0
+  maker: various
+  tier: 💎 OMEGA
+  status: SYNCED
+  logic: idempotent-scripts
+inputs:
+  - shell_script: "The automation script (bash/python)"
+  - trigger: "Trigger type (cron/webhook/event)"
+outputs:
+  - reliability_score: "Assessment of idempotency and error logging"
+  - portability_check: "POSIX-compliance verification"
+dependencies: []

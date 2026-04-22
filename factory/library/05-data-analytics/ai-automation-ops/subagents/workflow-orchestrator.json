@@ -1,0 +1,11 @@
+{
+  "id": "workflow-orchestrator",
+  "name": "Workflow Orchestration Engine",
+  "description": "Coordinates multi-step AI automation pipelines with branching logic, retry policies, and observability hooks.",
+  "capabilities": [
+    "dag-execution-planning",
+    "retry-backoff-management",
+    "pipeline-observability-metrics",
+    "conditional-branching-logic"
+  ]
+}

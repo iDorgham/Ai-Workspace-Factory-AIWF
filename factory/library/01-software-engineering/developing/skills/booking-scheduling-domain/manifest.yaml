@@ -1,0 +1,7 @@
+name: Booking Scheduling Domain
+description: "Standardized operational protocols for Booking Scheduling Domain."
+metadata:
+  version: 10.0.0
+  tier: 💎 OMEGA
+  status: SYNCED
+  logic: engineering-optimization

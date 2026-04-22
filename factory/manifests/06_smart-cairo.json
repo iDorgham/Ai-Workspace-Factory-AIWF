@@ -1,0 +1,33 @@
+{
+  "client": "06_smart-cairo",
+  "profile": "govtech-v11",
+  "generated_at": "2026-04-21T11:37:10+00:00",
+  "components": {
+    "agents": [
+      "SentinelGovPublicSector.md",
+      "DigitalTransformationConsultant.md",
+      "SentinelLegalBrokerage.md",
+      "SentinelIslamicFinance.md"
+    ],
+    "subagents": [],
+    "skills": [
+      "gov-transformation-mastery.md",
+      "legal-brokerage-mastery.md",
+      "islamic-finance-mastery.md"
+    ],
+    "commands": [
+      "commands.md"
+    ],
+    "subcommands": [],
+    "templates": [
+      "Public_Sector_Web_Design_Tokens.json"
+    ],
+    "scripts": [
+      "scripts-mastery.py"
+    ]
+  },
+  "output_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace Factory/workspaces/clients/06_smart-cairo/01_digitization-feasibility",
+  "validation": {
+    "status": "pending"
+  }
+}

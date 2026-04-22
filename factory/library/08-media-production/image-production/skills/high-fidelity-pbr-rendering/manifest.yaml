@@ -1,0 +1,7 @@
+name: High Fidelity Pbr Rendering
+description: "Standardized protocols for High Fidelity Pbr Rendering."
+metadata:
+  version: 10.0.0
+  tier: 💎 OMEGA
+  status: SYNCED
+  logic: operational-remediation

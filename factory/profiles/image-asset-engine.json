@@ -1,0 +1,23 @@
+{
+  "market_context": "global-industrial",
+  "voice_id": "Enterprise-Professional"
+}
+---
+{
+  "profile": "image-asset-engine",
+  "display": "\ud83d\uddbc\ufe0f Image Asset Engine",
+  "sector": "08-media-production/image-production",
+  "version": "3.3.1",
+  "description": "AI-assisted visual asset production.",
+  "staffing": {
+    "strategy": [
+      "@Sentinel-Orchestrator"
+    ],
+    "execution": [
+      "@Sentinel-Operations"
+    ]
+  },
+  "governance": {
+    "rules": "factory/library/08-media-production/image-production/commands/COMMANDS.md"
+  }
+}

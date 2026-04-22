@@ -1,0 +1,26 @@
+{
+  "market_context": "global-industrial",
+  "voice_id": "Enterprise-Professional"
+}
+---
+{
+  "profile": "healthcare-medical-system",
+  "display": "\ud83c\udfe5 Medical Clinic System",
+  "sector": "11-industry-verticals/hospital-clinic",
+  "version": "3.3.1",
+  "description": "Clinical operations, patient booking, and regulatory compliance.",
+  "staffing": {
+    "strategy": [
+      "@Sentinel-Hospital-Clinic",
+      "@Sentinel-Compliance"
+    ],
+    "execution": [
+      "@Sentinel-Hospital-Clinic",
+      "@Sentinel-Compliance",
+      "@Sentinel-Operations"
+    ]
+  },
+  "governance": {
+    "rules": "factory/library/11-industry-verticals/hospital-clinic/commands/COMMANDS.md"
+  }
+}

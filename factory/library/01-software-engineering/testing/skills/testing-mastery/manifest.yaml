@@ -1,0 +1,15 @@
+name: Testing Mastery
+description: "High-density skill set for automating and optimizing Testing workflows, focused on unit testing, integration logic, and CI/CD quality gates."
+metadata:
+  version: 10.0.0
+  maker: various
+  tier: 💎 OMEGA
+  status: SYNCED
+  logic: testing-orchestration
+inputs:
+  - source_code_dir: "The path to the code being tested"
+  - test_framework: "The chosen runner (unittest, jest, etc.)"
+outputs:
+  - quality_gate_status: "Pass/Fail assessment of the test suite"
+  - coverage_analysis: "Detailed report of untested execution paths"
+dependencies: []

@@ -1,0 +1,28 @@
+{
+  "id": "asset-optimizer",
+  "parent_agent": "design-director",
+  "trigger": "/visualize * (after moodboard-draft)",
+  "single_responsibility": "Optimize and format media assets for the Cine-Serious aesthetic.",
+  "input": {
+    "required": {
+      "raw_assets": "array<file_path>",
+      "target_tier": "string enum[luxury, saas, govtech]"
+    }
+  },
+  "output": {
+    "optimized_assets": "array<file_path>",
+    "accessibility_report": "object<{alt_text: string, contrast_ratio: float}>",
+    "motion_spec": "object<{framerate: int, transition: string}>"
+  },
+  "validation": {
+    "max_file_size_kb": 500,
+    "format_preference": "webp/avif",
+    "aspect_ratio_consistency": true
+  },
+  "writes": [
+    "content/assets/optimized/[timestamp]/"
+  ],
+  "error_owner": "asset-optimizer",
+  "escalates_to": "design-director",
+  "description": "Specialized subagent for asset optimizer tasks within the department field context."
+}

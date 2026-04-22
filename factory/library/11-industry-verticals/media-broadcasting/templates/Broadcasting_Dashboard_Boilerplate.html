@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="dark">
+<!-- 🎬 Media & Broadcasting Dashboard (Omega-Tier Boilerplate) -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamControl | Broadcasting HUD</title>
+    <!-- Assuming Tailwind CSS is imported via build process. Use CDN for demo only. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'broadcast-red': '#E50914',
+                        'studio-dark': '#0B0B0E',
+                        'studio-panel': '#16161A',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-studio-dark text-white font-sans antialiased h-screen overflow-hidden flex flex-col">
+    <!-- Top Navigation Bar -->
+    <header class="h-16 bg-studio-panel border-b border-gray-800 flex items-center justify-between px-6">
+        <div class="flex items-center space-x-4">
+            <span class="text-broadcast-red font-black text-xl tracking-tighter">● LIVE</span>
+            <span class="text-sm font-medium text-gray-400">StreamControl V1.0</span>
+        </div>
+        <div class="flex space-x-6 text-sm font-semibold">
+            <div class="flex items-center space-x-2"><span class="w-2 h-2 rounded-full bg-green-500"></span><span>Ingest Stable</span></div>
+            <div class="flex items-center space-x-2"><span class="text-gray-400">Viewers:</span><span>142,501</span></div>
+        </div>
+    </header>
+
+    <!-- Main Workspace -->
+    <div class="flex-1 flex overflow-hidden p-4 space-x-4">
+        
+        <!-- Left Panel: Scene Selectors -->
+        <aside class="w-64 bg-studio-panel rounded-lg border border-gray-800 flex flex-col p-4">
+            <h2 class="text-gray-400 text-xs font-bold uppercase tracking-widest mb-4">Master Scenes</h2>
+            <div class="space-y-2 flex-1 overflow-y-auto">
+                <button class="w-full text-left bg-gray-800 hover:bg-gray-700 p-3 rounded-md border border-broadcast-red transition-colors">
+                    🎥 Cam 1 (Anchor)
+                </button>
+                <button class="w-full text-left bg-transparent hover:bg-gray-800 p-3 rounded-md transition-colors">
+                    🎥 Cam 2 (Wide)
+                </button>
+                <button class="w-full text-left bg-transparent hover:bg-gray-800 p-3 rounded-md transition-colors">
+                    📊 Graphic (Lower Third)
+                </button>
+            </div>
+        </aside>
+
+        <!-- Center: Program Monitor Feed -->
+        <main class="flex-1 bg-black rounded-lg border border-gray-800 relative flex items-center justify-center shadow-2xl">
+            <span class="text-gray-600 font-mono text-xl">NO SIGNAL - AWAITING INGEST</span>
+            <!-- Safe Zone Overlay -->
+            <div class="absolute inset-8 border border-dashed border-gray-600 pointer-events-none opacity-50"></div>
+            <!-- Timecode -->
+            <div class="absolute bottom-4 right-4 bg-black bg-opacity-80 px-3 py-1 font-mono text-sm border border-gray-700 rounded shadow-lg text-broadcast-red">
+                TC: 10:42:15:00
+            </div>
+        </main>
+
+        <!-- Right Panel: Audio Logic -->
+        <aside class="w-72 bg-studio-panel rounded-lg border border-gray-800 p-4">
+            <h2 class="text-gray-400 text-xs font-bold uppercase tracking-widest mb-4">Signal Chain (Audio)</h2>
+            <div class="space-y-4">
+                <!-- Channel Strip Example -->
+                <div>
+                    <div class="flex justify-between text-xs mb-1">
+                        <span>Mic 1 (Host)</span>
+                        <span class="text-green-400">-12 dB</span>
+                    </div>
+                    <div class="w-full bg-gray-900 rounded-full h-2 overflow-hidden">
+                        <div class="bg-gradient-to-r from-green-500 via-yellow-400 to-broadcast-red h-2 w-3/4"></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+{
+  "name": "Omega AI Router & Safe Lead Capture",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "omega-lead-capture",
+        "options": {}
+      },
+      "id": "e4b6c8d2-1234-4567-890a-1234567890ab",
+      "name": "Webhook: Lead In",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{$node[\"Webhook: Lead In\"].json[\"headers\"][\"x-omega-key\"]}}",
+              "operation": "equal",
+              "value2": "YOUR_SECRET_API_KEY"
+            }
+          ]
+        }
+      },
+      "id": "f5c7d9e3-2345-5678-901b-2345678901bc",
+      "name": "Auth Security Check",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "model": "gpt-4o",
+        "prompt": "Categorize this lead sentiment and urgency based on the input: {{$node[\"Webhook: Lead In\"].json[\"body\"][\"message\"]}}. Output JSON: { \"sentiment\": \"string\", \"urgency\": \"1-5\" }",
+        "options": {
+          "responseFormat": "json_object"
+        }
+      },
+      "id": "a1b2c3d4-3456-6789-012c-3456789012cd",
+      "name": "AI Intelligence Node",
+      "type": "n8n-nodes-base.openAi",
+      "typeVersion": 1,
+      "position": [650, 200]
+    },
+    {
+      "parameters": {
+        "errorMessage": "Omega Workflow Failure",
+        "errorDetails": "Node: {{$node[\"Error Trigger\"].name}} failed with message: {{$error.message}}",
+        "options": {}
+      },
+      "id": "b2c3d4e5-4567-7890-123d-4567890123de",
+      "name": "Global Error Handler",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 1,
+      "position": [650, 450],
+      "executeOnce": true
+    }
+  ],
+  "connections": {
+    "Webhook: Lead In": {
+      "main": [
+        [
+          {
+            "node": "Auth Security Check",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Auth Security Check": {
+      "main": [
+        [
+          {
+            "node": "AI Intelligence Node",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Global Error Handler",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionTimeout": 3600,
+    "saveManualExecutions": true
+  },
+  "staticData": null,
+  "pinData": null,
+  "active": false
+}

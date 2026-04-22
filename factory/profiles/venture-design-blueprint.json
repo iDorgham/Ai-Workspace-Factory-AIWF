@@ -1,0 +1,23 @@
+{
+  "market_context": "global-industrial",
+  "voice_id": "Enterprise-Professional"
+}
+---
+{
+  "profile": "venture-design-blueprint",
+  "display": "\ud83d\ude80 Venture Design",
+  "sector": "04-business-strategy/venture-design",
+  "version": "3.3.1",
+  "description": "Building new business models from scratch.",
+  "staffing": {
+    "strategy": [
+      "@Sentinel-Orchestrator"
+    ],
+    "execution": [
+      "@Sentinel-Operations"
+    ]
+  },
+  "governance": {
+    "rules": "factory/library/04-business-strategy/venture-design/commands/COMMANDS.md"
+  }
+}

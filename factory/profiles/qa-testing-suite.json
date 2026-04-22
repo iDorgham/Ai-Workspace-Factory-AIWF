@@ -1,0 +1,23 @@
+{
+  "market_context": "global-industrial",
+  "voice_id": "Enterprise-Professional"
+}
+---
+{
+  "profile": "qa-testing-suite",
+  "display": "\u2699\ufe0f QA & Testing Suite",
+  "sector": "10-operations-qa/quality-assurance",
+  "version": "3.3.1",
+  "description": "E2E testing and quality management.",
+  "staffing": {
+    "strategy": [
+      "@Sentinel-Orchestrator"
+    ],
+    "execution": [
+      "@Sentinel-Operations"
+    ]
+  },
+  "governance": {
+    "rules": "factory/library/10-operations-qa/quality-assurance/commands/COMMANDS.md"
+  }
+}

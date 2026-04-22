@@ -1,0 +1,7 @@
+name: Playwright E2E
+description: "Standardized protocols for Playwright E2E."
+metadata:
+  version: 10.0.0
+  tier: 💎 OMEGA
+  status: SYNCED
+  logic: operational-remediation

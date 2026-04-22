@@ -1,0 +1,27 @@
+{
+  "id": "01-software-engineering/developing/skills/docs-starter-kit",
+  "type": "skill",
+  "name": "docs-starter-kit",
+  "version": "3.3.1",
+  "source": "sovereign",
+  "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/skills/docs-starter-kit/RULE.md",
+  "tags": [
+    "sovereign",
+    "skills"
+  ],
+  "dependencies": [],
+  "compatibility": [
+    "generic"
+  ],
+  "quality_status": "imported",
+  "last_synced_at": "2026-04-14T16:35:40+00:00",
+  "source_contributions": [
+    {
+      "source": "sovereign",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/skills/docs-starter-kit/RULE.md",
+      "synced_at": "2026-04-14T16:23:31+00:00"
+    }
+  ],
+  "category": "01-software-engineering/developing",
+  "asset_type": "skills"
+}

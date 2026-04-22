@@ -1,0 +1,32 @@
+{
+  "project_name": "[Name]",
+  "date": "[YYYY-MM-DD]",
+  "blocks": {
+    "value_proposition": {
+      "core_benefit": "[Text]",
+      "differentiation": "[Text]"
+    },
+    "customer_segments": [
+      {
+        "segment": "[Name]",
+        "pains": [],
+        "gains": []
+      }
+    ],
+    "revenue_streams": [
+      {
+        "model": "SaaS / Transactional / Freemium",
+        "pricing": "[Value]"
+      }
+    ],
+    "cost_structure": {
+      "fixed_costs": [],
+      "variable_costs": []
+    },
+    "key_partners": [],
+    "key_activities": [],
+    "key_resources": [],
+    "channels": [],
+    "customer_relationships": []
+  }
+}

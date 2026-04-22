@@ -1,0 +1,26 @@
+{
+  "market_context": "global-industrial",
+  "voice_id": "Enterprise-Professional"
+}
+---
+{
+  "profile": "agency-advertising-max",
+  "display": "\ud83d\udce2 Advertising Performance Agency",
+  "sector": "07-marketing-seo/advertising",
+  "version": "3.3.1",
+  "description": "High-ROAS campaign management and creative ad-ops.",
+  "staffing": {
+    "strategy": [
+      "@Sentinel-Advertising",
+      "@Sentinel-Performance-Marketing"
+    ],
+    "execution": [
+      "@Sentinel-Advertising",
+      "@Sentinel-Performance-Marketing",
+      "@Sentinel-Operations"
+    ]
+  },
+  "governance": {
+    "rules": "factory/library/07-marketing-seo/advertising/commands/COMMANDS.md"
+  }
+}

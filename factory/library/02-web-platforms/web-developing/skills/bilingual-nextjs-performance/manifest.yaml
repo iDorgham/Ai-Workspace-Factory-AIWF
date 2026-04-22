@@ -1,0 +1,16 @@
+name: Bilingual Next.js Performance
+description: "Optimization standards for bilingual (AR/EN) Next.js applications, focused on RTL integrity, GCC mobile-first performance, and cultural calibration."
+metadata:
+  version: 10.0.0
+  maker: various
+  tier: 💎 OMEGA
+  status: SYNCED
+  logic: regional-calibration
+inputs:
+  - nextjs_config: "The Next.js configuration and font settings"
+  - rtl_css: "CSS files for RTL re-alignment"
+outputs:
+  - font_subset_report: "Optimization results for Arabic glyph loading"
+  - rtl_validation: "Verification of logical property usage (ps/pe)"
+dependencies:
+  - web-developing-mastery

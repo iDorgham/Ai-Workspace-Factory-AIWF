@@ -1,0 +1,29 @@
+{
+  "id": "archive-manager",
+  "parent_agent": "workflow-agent",
+  "trigger": "/archive old content",
+  "single_responsibility": "Compress files > 30 days old, update archive index with checksums",
+  "input": {
+    "required": {
+      "content_files": "array<{path, created_at}> \u2014 all files in content/ and content/sovereign/scraped/",
+      "cutoff_days": 30
+    }
+  },
+  "output": {
+    "archived_files": "array<{original_path, archive_path, checksum_sha256, archived_at: ISO8601}>",
+    "archive_index_entry": "object<{pointer: {original_path, archived_path, checksum, archived_at}}>"
+  },
+  "validation": {
+    "minimum_age_days": 30,
+    "checksum_verification_after_compression": true,
+    "rollback_if_checksum_fails": true,
+    "never_archive_active_content": true
+  },
+  "writes": [
+    "archive/[type]/*.md.gz",
+    "archive/archive-index.json (append)"
+  ],
+  "error_owner": "archive-manager",
+  "escalates_to": "workflow-agent",
+  "description": "Specialized subagent for archive manager tasks within the department field context."
+}

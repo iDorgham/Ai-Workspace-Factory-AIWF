@@ -1,0 +1,14 @@
+name: Backend Mastery
+description: "High-density skill set for automating and optimizing Backend workflows, focusing on API design, server-side performance, and database optimization."
+metadata:
+  version: 10.0.0
+  maker: various
+  tier: 💎 OMEGA
+  status: SYNCED
+  logic: backend-orchestration
+inputs:
+  - server_config: "The backend server configuration (framework, port, middleware)"
+outputs:
+  - latency_profile: "Server response time distribution audit"
+  - security_hardening_report: "Assessment of middleware and API protection layers"
+dependencies: []

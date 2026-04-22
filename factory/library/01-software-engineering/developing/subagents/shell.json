@@ -1,0 +1,6 @@
+{
+  "id": "shell",
+  "name": "Shell",
+  "description": "Safe, context-aware command line execution for builds, migrations, and workspace maintenance.",
+  "instructions_markdown": "# Shell Subagent — Workspace Factory Prompts\n\nCopy one of these prompts when invoking the **shell** subagent.\n\n---\n\n## Pre-PR checks\n\n```\nRun pnpm preflight and report any failure with file:line. Fix the first error and re-run.\n```\n\n---\n\n## Affected workspaces\n\n```\nRun lint + typecheck + tests for only the affected workspaces: [filters]. Return failures with file:line.\n```\n\n---\n\n## Build sanity\n\n```\nRun pnpm turbo build and report any workspace that fails with the first actionable error.\n```\n\n---\n\n## Migration\n\n```\nFrom packages/db: run prisma migrate dev --name [name], then pnpm turbo build from root.\n```\n\n---\n\n## Test failures\n\n```\nRun pnpm turbo test --filter=[workspace] and list failing tests with stack traces.\n```\n\n---\n\n## Database generate\n\n```\nRun pnpm db:generate, then pnpm turbo build.\n```"
+}

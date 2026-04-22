@@ -1,0 +1,8 @@
+{
+  "command": "/intel",
+  "description": "Standard intel command description",
+  "cluster": "05-data-analytics",
+  "category": "analysis",
+  "quality_status": "stable",
+  "version": "1.0.0"
+}

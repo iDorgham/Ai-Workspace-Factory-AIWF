@@ -1,0 +1,16 @@
+name: Claude 3.5 Sonnet Mastery
+description: "Universal standards for Anthropic's Claude 3.5 Sonnet, focused on XML-structured prompting, high-density reasoning, and systemic refactoring protocols."
+metadata:
+  version: 1.0.0
+  maker: anthropic
+  tier: 💎 OMEGA
+  status: SYNCED
+  logic: xml-reasoning
+inputs:
+  - context: "Code or system context tagged in <context>"
+  - instruction: "Task definition tagged in <instruction>"
+outputs:
+  - thinking: "Step-by-step logic in <thinking> block"
+  - resolution: "Final answer or artifact"
+dependencies:
+  - prompt-engineering-patterns

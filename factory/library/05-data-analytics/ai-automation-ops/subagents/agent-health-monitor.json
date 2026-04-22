@@ -1,0 +1,11 @@
+{
+  "id": "agent-health-monitor",
+  "name": "Agent Health Monitor",
+  "description": "Continuously monitors AI agent performance, detects regressions, and triggers automated remediation workflows.",
+  "capabilities": [
+    "latency-anomaly-detection",
+    "output-drift-monitoring",
+    "cost-per-run-tracking",
+    "auto-remediation-triggering"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "11-industry-verticals/real-estate-dev/skills/real-estate-modeling",
+  "type": "skill",
+  "cluster": "05-verticals",
+  "field": "real-estate-dev",
+  "name": "Real Estate Modeling & MENA Property Intelligence",
+  "category": "11-industry-verticals/real-estate-dev",
+  "version": "3.3.1",
+  "path": "05-verticals/real-estate-dev/real-estate-modeling/SKILL.md",
+  "source": "manual",
+  "tags": [
+    "05-verticals",
+    "real-estate",
+    "valuation",
+    "dld",
+    "rera",
+    "off-plan",
+    "cap-rate",
+    "noi",
+    "irr",
+    "mena"
+  ],
+  "role": "Production-grade real estate valuation engine with DLD/RERA compliance, off-plan transaction workflows, IRR/Cap Rate/NOI calculations, and MENA market intelligence",
+  "dependencies": [
+    "contract-first-development",
+    "mena-regulatory-compliance",
+    "islamic-finance-compliance"
+  ],
+  "compatibility": [
+    "generic",
+    "mena-gcc"
+  ],
+  "quality_status": "approved",
+  "power_score": 82,
+  "audit_tier": 1,
+  "created_at": "2026-04-14T22:57:00Z",
+  "updated_at": "2026-04-17T02:21:00Z",
+  "last_synced_at": "2026-04-17T02:21:00Z",
+  "asset_type": "skills"
+}

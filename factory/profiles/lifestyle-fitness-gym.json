@@ -1,0 +1,26 @@
+{
+  "market_context": "global-industrial",
+  "voice_id": "Enterprise-Professional"
+}
+---
+{
+  "profile": "lifestyle-fitness-gym",
+  "display": "\ud83c\udfcb\ufe0f Fitness & Gym Management",
+  "sector": "11-industry-verticals/fitness-wellness",
+  "version": "3.3.1",
+  "description": "Subscription management, class scheduling, and retention loops.",
+  "staffing": {
+    "strategy": [
+      "@Sentinel-Fitness-Wellness",
+      "@Sentinel-Social-Media"
+    ],
+    "execution": [
+      "@Sentinel-Fitness-Wellness",
+      "@Sentinel-Social-Media",
+      "@Sentinel-Operations"
+    ]
+  },
+  "governance": {
+    "rules": "factory/library/11-industry-verticals/fitness-wellness/commands/COMMANDS.md"
+  }
+}

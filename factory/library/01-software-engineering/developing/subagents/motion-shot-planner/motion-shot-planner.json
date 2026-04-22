@@ -1,0 +1,15 @@
+{
+  "name": "motion-shot-planner",
+  "purpose": "Break creative idea into shots, transitions, and timing for motion/video production.",
+  "inputs": [
+    "creative_brief",
+    "duration_target",
+    "aspect_ratios"
+  ],
+  "outputs": [
+    "shotlist",
+    "timing_map",
+    "transition_plan"
+  ],
+  "description": "Specialized subagent for motion-shot-planner tasks within the department field context."
+}

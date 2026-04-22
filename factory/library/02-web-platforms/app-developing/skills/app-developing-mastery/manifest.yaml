@@ -1,0 +1,14 @@
+name: App Developing Mastery
+description: "High-density skill set for automating and optimizing App Developing workflows, specifically targeting the Expo and React Native ecosystem."
+metadata:
+  version: 10.0.0
+  maker: various
+  tier: 💎 OMEGA
+  status: SYNCED
+  logic: mobile-optimization
+inputs:
+  - expo_config: "app.json or eas.json configuration"
+outputs:
+  - performance_score: "FPS and load-time assessment"
+  - eas_readiness: "Verification of build and OTA update configuration"
+dependencies: []

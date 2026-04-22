@@ -1,0 +1,15 @@
+{
+  "name": "video-montage-editor",
+  "purpose": "Assemble footage sequences with pacing, rhythm, and narrative continuity.",
+  "inputs": [
+    "clips",
+    "music_cues",
+    "story_arc"
+  ],
+  "outputs": [
+    "edit_decision_list",
+    "montage_versions",
+    "export_notes"
+  ],
+  "description": "Specialized subagent for video-montage-editor tasks within the department field context."
+}

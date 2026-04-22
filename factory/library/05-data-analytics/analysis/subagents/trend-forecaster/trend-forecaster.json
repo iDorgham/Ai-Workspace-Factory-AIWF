@@ -1,0 +1,11 @@
+{
+  "id": "trend-forecaster",
+  "name": "Trend Forecaster",
+  "description": "Identifies emerging market and consumer trends from search data, social signals, and industry reports.",
+  "capabilities": [
+    "search-volume-trend-analysis",
+    "social-signal-aggregation",
+    "trend-lifecycle-classification",
+    "early-adopter-pattern-detection"
+  ]
+}

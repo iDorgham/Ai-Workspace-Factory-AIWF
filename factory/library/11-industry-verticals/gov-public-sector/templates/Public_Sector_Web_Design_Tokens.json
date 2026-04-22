@@ -1,0 +1,52 @@
+{
+  "version": "1.0",
+  "domain": "gov-public-sector",
+  "description": "Omega-Tier W3C Design Tokens for MENA Government Web Portals (High Accessibility, High Trust).",
+  "color": {
+    "brand": {
+      "primary": {
+        "value": "#0A2540",
+        "type": "color",
+        "description": "Authority Navy - Used for Primary Headers and Trust elements."
+      },
+      "secondary": {
+        "value": "#009B77",
+        "type": "color",
+        "description": "Prosperity Green - Used for Primary Actions (Submit/Verify)."
+      }
+    },
+    "background": {
+      "base": {
+        "value": "#F8F9FA",
+        "type": "color",
+        "description": "Accessible Off-White to reduce glare for long-form reading."
+      }
+    },
+    "text": {
+      "high-contrast": {
+        "value": "#111827",
+        "type": "color",
+        "description": "Passes WCAG 2.1 AAA accessibility standards against bg-base."
+      }
+    }
+  },
+  "typography": {
+    "font-family": {
+      "arabic-primary": {
+        "value": "'IBM Plex Sans Arabic', sans-serif",
+        "type": "typography"
+      },
+      "english-primary": {
+        "value": "'Inter', -apple-system, sans-serif",
+        "type": "typography"
+      }
+    },
+    "font-size": {
+      "base": {
+        "value": "1.125rem",
+        "type": "typography",
+        "description": "18px base size to ensure immediate legibility for older demographics."
+      }
+    }
+  }
+}

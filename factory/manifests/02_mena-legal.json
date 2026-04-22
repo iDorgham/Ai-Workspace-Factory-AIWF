@@ -1,0 +1,34 @@
+{
+  "client": "02_mena-legal",
+  "profile": "legal-brokerage-hub",
+  "generated_at": "2026-04-21T10:48:06+00:00",
+  "components": {
+    "agents": [
+      "SentinelLegalBrokerage.md",
+      "LegalCounsel.md",
+      "SentinelProjectManagement.md",
+      "ComplianceOfficer.md"
+    ],
+    "subagents": [],
+    "skills": [
+      "legal-brokerage-mastery.md",
+      "uae-contract-drafting-physics.md",
+      "egypt-contract-drafting-physics.md"
+    ],
+    "commands": [
+      "commands.md"
+    ],
+    "subcommands": [],
+    "templates": [
+      "Bilingual_NDA_Template.md",
+      "PLAN_BLUEPRINT.md"
+    ],
+    "scripts": [
+      "scripts-mastery.py"
+    ]
+  },
+  "output_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace Factory/workspaces/clients/02_mena-legal/01_compliance-audit",
+  "validation": {
+    "status": "pending"
+  }
+}

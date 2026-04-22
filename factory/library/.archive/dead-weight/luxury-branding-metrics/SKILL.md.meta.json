@@ -1,0 +1,23 @@
+{
+  "id": "06-branding-content/branding/skills/luxury-branding-metrics",
+  "type": "skill",
+  "name": "luxury-branding-metrics",
+  "version": "3.3.1",
+  "tags": [
+    "skills"
+  ],
+  "dependencies": [],
+  "compatibility": [
+    "generic"
+  ],
+  "quality_status": "imported",
+  "last_synced_at": "2026-04-14T16:35:45+00:00",
+  "source_contributions": [
+    {
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace Factory/.ai/skills/luxury-branding-metrics.md",
+      "synced_at": "2026-04-14T16:30:52+00:00"
+    }
+  ],
+  "category": "06-branding-content/branding",
+  "asset_type": "skills"
+}

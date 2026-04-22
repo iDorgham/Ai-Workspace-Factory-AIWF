@@ -1,0 +1,26 @@
+{
+  "market_context": "global-industrial",
+  "voice_id": "Enterprise-Professional"
+}
+---
+{
+  "profile": "tourism-travel-suite",
+  "display": "\ud83c\udf0e Tourism & Excursion Engine",
+  "sector": "11-industry-verticals/tourism-travel",
+  "version": "3.3.1",
+  "description": "Itinerary planning, tour operations, and transport logistics.",
+  "staffing": {
+    "strategy": [
+      "@Sentinel-Tourism-Travel",
+      "@Sentinel-Operations"
+    ],
+    "execution": [
+      "@Sentinel-Tourism-Travel",
+      "@Sentinel-Operations",
+      "@Sentinel-Operations"
+    ]
+  },
+  "governance": {
+    "rules": "factory/library/11-industry-verticals/tourism-travel/commands/COMMANDS.md"
+  }
+}

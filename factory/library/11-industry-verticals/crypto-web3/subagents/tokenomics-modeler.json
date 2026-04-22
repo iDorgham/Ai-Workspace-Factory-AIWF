@@ -1,0 +1,11 @@
+{
+  "id": "tokenomics-modeler",
+  "name": "Tokenomics Modeler",
+  "description": "Models token supply dynamics, vesting schedules, and emission curves to evaluate long-term economic viability.",
+  "capabilities": [
+    "supply-emission-simulation",
+    "vesting-schedule-analysis",
+    "inflation-deflation-modeling",
+    "governance-weight-calculation"
+  ]
+}

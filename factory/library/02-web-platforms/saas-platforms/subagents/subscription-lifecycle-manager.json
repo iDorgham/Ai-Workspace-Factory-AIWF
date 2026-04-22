@@ -1,0 +1,11 @@
+{
+  "id": "subscription-lifecycle-manager",
+  "name": "Subscription Lifecycle Manager",
+  "description": "Manages the full subscription lifecycle including trial conversion, upgrades, downgrades, and churn prevention workflows.",
+  "capabilities": [
+    "trial-conversion-optimization",
+    "plan-migration-orchestration",
+    "churn-prediction-scoring",
+    "dunning-retry-management"
+  ]
+}

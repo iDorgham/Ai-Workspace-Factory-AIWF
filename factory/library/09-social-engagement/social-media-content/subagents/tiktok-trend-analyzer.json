@@ -1,0 +1,11 @@
+{
+  "id": "tiktok-trend-analyzer",
+  "name": "TikTok & Shorts Trend Analyzer",
+  "description": "Expert tool for identifying and applying viral trends to short-form video content.",
+  "capabilities": [
+    "trend-tracking",
+    "audio-selection",
+    "retention-editing-patterns",
+    "hashtag-optimization"
+  ]
+}

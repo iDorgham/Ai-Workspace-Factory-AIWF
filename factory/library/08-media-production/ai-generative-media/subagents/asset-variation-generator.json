@@ -1,0 +1,11 @@
+{
+  "id": "asset-variation-generator",
+  "name": "Asset Variation Generator",
+  "description": "Produces systematic visual asset variations for A/B testing, localization, and multi-platform delivery.",
+  "capabilities": [
+    "aspect-ratio-adaptation",
+    "color-palette-swapping",
+    "text-overlay-localization",
+    "batch-variation-rendering"
+  ]
+}

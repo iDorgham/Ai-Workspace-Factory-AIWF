@@ -1,0 +1,40 @@
+{
+  "id": "11-industry-verticals/healthtech-pharma/skills/health-data-privacy",
+  "type": "skill",
+  "cluster": "05-verticals",
+  "field": "healthtech-pharma",
+  "name": "Health Data Privacy & MENA Healthcare Compliance",
+  "category": "11-industry-verticals/healthtech-pharma",
+  "version": "3.3.1",
+  "path": "05-verticals/healthtech-pharma/health-data-privacy/SKILL.md",
+  "source": "manual",
+  "tags": [
+    "05-verticals",
+    "healthtech-pharma",
+    "phi",
+    "fhir",
+    "mohap",
+    "sfda",
+    "nabidh",
+    "mena",
+    "health-data",
+    "consent-management"
+  ],
+  "role": "Healthcare-grade data protection with PHI vault service, FHIR R4 integration, consent management, and MENA regulatory compliance (MOHAP, SFDA, Nabidh)",
+  "dependencies": [
+    "api-security-patterns",
+    "rbac-permission-system",
+    "mena-data-sovereignty"
+  ],
+  "compatibility": [
+    "generic",
+    "mena-gcc"
+  ],
+  "quality_status": "approved",
+  "power_score": 81,
+  "audit_tier": 1,
+  "created_at": "2026-04-14T22:57:00Z",
+  "updated_at": "2026-04-17T02:19:00Z",
+  "last_synced_at": "2026-04-17T02:19:00Z",
+  "asset_type": "skills"
+}

@@ -1,0 +1,15 @@
+name: Make.com Logic Optimization
+description: "Universal standards for designing high-efficiency scenarios in Make.com, focused on Instruction Bundling, Filter Efficiency, and operation-cost optimization."
+metadata:
+  version: 1.0.0
+  maker: make-com
+  tier: 💎 OMEGA
+  status: SYNCED
+  logic: operation-economy
+inputs:
+  - scenario_json: "The Make.com scenario blueprint"
+outputs:
+  - optimization_score: "Efficiency rating 0-100"
+  - recommendations: "List of operation-saving actions"
+dependencies:
+  - app-developing-mastery

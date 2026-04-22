@@ -1,0 +1,11 @@
+{
+  "id": "ab-test-evaluator",
+  "name": "A/B Test Evaluator",
+  "description": "Evaluates experiment results with statistical rigor, calculating significance, effect sizes, and practical impact.",
+  "capabilities": [
+    "bayesian-significance-testing",
+    "effect-size-calculation",
+    "sample-ratio-mismatch-detection",
+    "sequential-testing-support"
+  ]
+}

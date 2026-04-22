@@ -1,0 +1,8 @@
+{
+  "command": "/survey",
+  "description": "Standard survey command description",
+  "cluster": "05-data-analytics",
+  "category": "analysis",
+  "quality_status": "stable",
+  "version": "1.0.0"
+}

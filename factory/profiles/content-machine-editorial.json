@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "market_context": "global-industrial",
+    "voice_id": "Enterprise-Professional"
+  },
+  "profile": "content-machine-editorial",
+  "display": "✍️ Content Machine",
+  "sector": "06-branding-content/content-creation",
+  "version": "5.0.0",
+  "description": "Industrial-scale editorial and content strategy with sovereign isolation.",
+  "required": {
+    "agents": [
+      "Researcher",
+      "Creator",
+      "SEO",
+      "WorkflowAgent"
+    ],
+    "skills": [
+      "context-compression",
+      "mistake-prevention"
+    ],
+    "commands": [
+      "command-routing.json"
+    ],
+    "templates": [],
+    "subagents": []
+  },
+  "staffing": {
+    "strategy": [
+      "@Sentinel-Orchestrator"
+    ],
+    "execution": [
+      "@Sentinel-Operations"
+    ]
+  },
+  "governance": {
+    "rules": "factory/library/06-branding-content/content-creation/commands/COMMANDS.md"
+  }
+}

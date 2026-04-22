@@ -1,0 +1,28 @@
+{
+  "id": "01-software-engineering/engineering-core/subcommands/ide-commands",
+  "type": "subcommand",
+  "name": "intel",
+  "version": "3.3.1",
+  "source": "sovereign",
+  "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.cursor/commands/intel.md",
+  "tags": [
+    "cursor",
+    "sovereign",
+    "subcommands"
+  ],
+  "dependencies": [],
+  "compatibility": [
+    "generic"
+  ],
+  "quality_status": "imported",
+  "last_synced_at": "2026-04-14T16:35:40+00:00",
+  "source_contributions": [
+    {
+      "source": "sovereign",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.cursor/commands/intel.md",
+      "synced_at": "2026-04-14T16:23:31+00:00"
+    }
+  ],
+  "category": "01-software-engineering/engineering-core",
+  "asset_type": "subcommands"
+}

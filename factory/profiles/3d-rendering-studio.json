@@ -1,0 +1,23 @@
+{
+  "market_context": "global-industrial",
+  "voice_id": "Enterprise-Professional"
+}
+---
+{
+  "profile": "3d-rendering-studio",
+  "display": "\ud83c\udfac 3D Rendering Studio",
+  "sector": "08-media-production/3d-production",
+  "version": "3.3.1",
+  "description": "high-end 3D visualization and asset creation.",
+  "staffing": {
+    "strategy": [
+      "@Sentinel-Orchestrator"
+    ],
+    "execution": [
+      "@Sentinel-Operations"
+    ]
+  },
+  "governance": {
+    "rules": "factory/library/08-media-production/3d-production/commands/COMMANDS.md"
+  }
+}

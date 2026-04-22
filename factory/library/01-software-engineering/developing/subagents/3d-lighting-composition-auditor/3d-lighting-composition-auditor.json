@@ -1,0 +1,15 @@
+{
+  "name": "3d-lighting-composition-auditor",
+  "purpose": "Audit lighting and framing quality for 3D scenes and animations.",
+  "inputs": [
+    "scene_file",
+    "camera_setup",
+    "lighting_rig"
+  ],
+  "outputs": [
+    "lighting_findings",
+    "composition_findings",
+    "fix_actions"
+  ],
+  "description": "Specialized subagent for 3d-lighting-composition-auditor tasks within the department field context."
+}

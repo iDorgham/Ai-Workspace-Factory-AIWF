@@ -1,0 +1,16 @@
+{
+  "name": "ad-copy-variation-generator",
+  "purpose": "Generate platform-ready ad copy variants matched to creative concept and audience segment.",
+  "inputs": [
+    "campaign_goal",
+    "audience",
+    "offer",
+    "tone"
+  ],
+  "outputs": [
+    "headline_variants",
+    "body_variants",
+    "cta_variants"
+  ],
+  "description": "Specialized subagent for ad-copy-variation-generator tasks within the department field context."
+}

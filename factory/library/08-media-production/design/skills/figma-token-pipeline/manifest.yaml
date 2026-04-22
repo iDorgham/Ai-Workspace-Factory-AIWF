@@ -1,0 +1,7 @@
+name: Figma Token Pipeline
+description: "Standardized protocols for Figma Token Pipeline."
+metadata:
+  version: 10.0.0
+  tier: 💎 OMEGA
+  status: SYNCED
+  logic: operational-remediation

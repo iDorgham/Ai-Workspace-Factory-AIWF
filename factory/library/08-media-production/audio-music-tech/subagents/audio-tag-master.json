@@ -1,0 +1,11 @@
+{
+  "id": "audio-tag-master",
+  "name": "Audio Tag & Metadata Master",
+  "description": "Expert tool for batch processing ID3 tags, cover art, and metadata across MP3, WAV, and AIFF formats.",
+  "capabilities": [
+    "batch-tagging",
+    "cover-art-embedding",
+    "metadata-standardization",
+    "format-consistency-check"
+  ]
+}

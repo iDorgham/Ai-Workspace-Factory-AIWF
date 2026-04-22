@@ -1,0 +1,7 @@
+name: Multi Tenant Isolation
+description: "Standardized protocols for Multi Tenant Isolation."
+metadata:
+  version: 10.0.0
+  tier: 💎 OMEGA
+  status: SYNCED
+  logic: operational-remediation

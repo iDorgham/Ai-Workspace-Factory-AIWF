@@ -1,0 +1,29 @@
+{
+  "id": "trend-miner",
+  "parent_agent": "research-agent",
+  "trigger": "/intel market snapshot, /intel opportunities",
+  "single_responsibility": "Identify recurring market signals across competitor profiles and scraped content",
+  "input": {
+    "required": {
+      "competitor_profiles": "array<{slug, niche, services, markets, positioning_summary}>",
+      "scraped_summaries": "array<{slug, content_type, publish_date, topics, keywords}>"
+    }
+  },
+  "output": {
+    "trend_report": "object<{themes: array<{theme, frequency, evidence_count, confidence}>, emerging_topics: array<string>, declining_topics: array<string>}>"
+  },
+  "validation": {
+    "minimum_competitors_for_trend_inference": 2,
+    "minimum_evidence_per_theme": 2,
+    "confidence_range": [
+      0,
+      1
+    ]
+  },
+  "writes": [
+    ".ai/logs/intelligence-report.jsonl (append)"
+  ],
+  "error_owner": "trend-miner",
+  "escalates_to": "research-agent",
+  "description": "Specialized subagent for trend miner tasks within the department field context."
+}

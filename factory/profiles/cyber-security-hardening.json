@@ -1,0 +1,23 @@
+{
+  "market_context": "global-industrial",
+  "voice_id": "Enterprise-Professional"
+}
+---
+{
+  "profile": "cyber-security-hardening",
+  "display": "\ud83d\udee1\ufe0f Cyber Security Hardening",
+  "sector": "03-security-compliance/cyber-security",
+  "version": "3.3.1",
+  "description": "System hardening and security auditing.",
+  "staffing": {
+    "strategy": [
+      "@Sentinel-Orchestrator"
+    ],
+    "execution": [
+      "@Sentinel-Operations"
+    ]
+  },
+  "governance": {
+    "rules": "factory/library/03-security-compliance/cyber-security/commands/COMMANDS.md"
+  }
+}

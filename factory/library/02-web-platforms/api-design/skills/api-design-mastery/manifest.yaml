@@ -1,0 +1,14 @@
+name: API Design Mastery
+description: "High-density skill set for automating and optimizing API Design workflows, focused on REST/GraphQL standards, schema-first development, and security."
+metadata:
+  version: 10.0.0
+  maker: various
+  tier: 💎 OMEGA
+  status: SYNCED
+  logic: api-orchestration
+inputs:
+  - openapi_spec: "The swagger or OpenAPI YAML/JSON definition"
+outputs:
+  - lint_results: "Schema validation and standard compliance check"
+  - mock_server: "Stub generation for frontend consumption"
+dependencies: []

@@ -1,0 +1,11 @@
+{
+  "id": "defi-protocol-analyzer",
+  "name": "DeFi Protocol Analyzer",
+  "description": "Analyzes decentralized finance protocols for yield sustainability, liquidity risks, and smart contract dependencies.",
+  "capabilities": [
+    "yield-sustainability-modeling",
+    "impermanent-loss-calculation",
+    "liquidity-pool-risk-scoring",
+    "protocol-dependency-mapping"
+  ]
+}

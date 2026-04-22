@@ -1,0 +1,11 @@
+{
+  "id": "incident-classifier",
+  "name": "Incident Classifier",
+  "description": "Classifies production incidents by severity, impact radius, and root cause category for faster triage.",
+  "capabilities": [
+    "severity-auto-classification",
+    "impact-radius-estimation",
+    "root-cause-categorization",
+    "escalation-path-recommendation"
+  ]
+}

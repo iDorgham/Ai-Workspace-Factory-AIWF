@@ -1,0 +1,27 @@
+{
+  "report_id": "HOSP-REV-XXX-2026",
+  "property_id": "",
+  "reporting_period": "2026-Q1",
+  "yield_metrics": {
+    "occupancy_rate_total": 0.0,
+    "adr_average_daily_rate": 0.0,
+    "revpar_revenue_per_room": 0.0,
+    "gross_revenue": 0.0
+  },
+  "channel_performance": [
+    {
+      "channel": "Direct-Web",
+      "bookings": 0,
+      "revenue_share": "0%",
+      "cost_of_acquisition": "0%"
+    },
+    {
+      "channel": "OTA-Expedia",
+      "bookings": 0,
+      "revenue_share": "0%",
+      "cost_of_acquisition": "15%"
+    }
+  ],
+  "pms_sync_status": "SYNCHRONIZED",
+  "sentinel_validation_hash": ""
+}

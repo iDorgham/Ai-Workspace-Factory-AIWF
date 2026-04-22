@@ -1,0 +1,19 @@
+{
+  "id": "sovereign",
+  "label": "GALERIA Workspace",
+  "enabled": true,
+  "base_path": "../Sovereign Workspace",
+  "mappings": {
+    "agents": ".ai/agents",
+    "subagents": ".ai/subagents",
+    "skills": ".ai/skills",
+    "commands": ".ai/commands",
+    "subcommands": {
+      "cursor": ".cursor/commands",
+      "antigravity": ".antigravity/commands"
+    },
+    "templates": ".ai/templates",
+    "scripts": ".ai/scripts"
+  },
+  "quality_gate": "approved"
+}

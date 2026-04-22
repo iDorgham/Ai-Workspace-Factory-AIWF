@@ -1,0 +1,16 @@
+name: OpenAI & Codex Mastery
+description: "Universal standards for utilizing OpenAI GPT-4o and Codex-family models, focused on Function Calling, Structured Output (JSON Mode), and high-precision code generation."
+metadata:
+  version: 1.0.0
+  maker: openai
+  tier: 💎 OMEGA
+  status: SYNCED
+  logic: function-calling
+inputs:
+  - context_slice: "Specific code context < 1000 lines"
+  - schema: "JSON schema for tool definitions"
+outputs:
+  - function_call: "Structured tool call"
+  - json_object: "Valid JSON mode output"
+dependencies:
+  - prompt-engineering-patterns

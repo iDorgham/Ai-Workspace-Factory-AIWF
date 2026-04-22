@@ -1,0 +1,11 @@
+{
+  "id": "layout-grid-generator",
+  "name": "Layout Grid Generator",
+  "description": "Generates responsive grid systems and spacing scales tailored to specific design systems and viewport requirements.",
+  "capabilities": [
+    "responsive-breakpoint-calculation",
+    "modular-scale-generation",
+    "grid-overlay-export",
+    "spacing-token-derivation"
+  ]
+}

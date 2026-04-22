@@ -1,0 +1,11 @@
+{
+  "id": "image-prompt-engineer",
+  "name": "Image Prompt Engineer",
+  "description": "Crafts and iterates on text-to-image prompts for consistent brand-aligned visual output across generative models.",
+  "capabilities": [
+    "prompt-structure-optimization",
+    "style-consistency-enforcement",
+    "negative-prompt-engineering",
+    "model-specific-syntax-adaptation"
+  ]
+}

@@ -1,0 +1,19 @@
+---
+cluster: engineering-core
+category: subcommands
+display_category: Subcommands
+id: commands:engineering-core/subcommands/one-man-inspire
+version: 10.0.0
+domains: [engineering-core]
+sector_compliance: pending
+---
+# One Man — Inspiration Flow
+
+When user runs **`/man inspire`**, run this flow (chat-only; no execution).
+
+1. **Ask area:** What do you want to create? (product, feature, campaign, brand, copy, other)
+2. **Clarify:** 1–2 questions (audience, goal, constraints).
+3. **Propose:** 2–3 directions or prompts; user picks or refines.
+4. **Output:** Short "inspired idea" — title + 2–4 bullets.
+5. **Suggest:** Save to backlog (`/man tasks add "Title"`) or create `docs/development/initiatives/IDEA_<slug>.md`. If user agrees, do it.
+6. **Persist:** Append or summarize in `docs/development/learning/ONE_MAN_MEMORY.md` under **recentInspiration**.

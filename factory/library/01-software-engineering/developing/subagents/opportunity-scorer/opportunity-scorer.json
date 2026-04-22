@@ -1,0 +1,33 @@
+{
+  "id": "opportunity-scorer",
+  "parent_agent": "research-agent",
+  "trigger": "/intel opportunities",
+  "single_responsibility": "Score whitespace opportunities using market demand, competitor saturation, and strategic fit",
+  "input": {
+    "required": {
+      "trend_report": "object \u2014 from trend-miner",
+      "brand_positioning": "string \u2014 from content/sovereign/reference/market-positioning.md",
+      "competitor_coverage": "array<{topic, competitors_covering, content_volume_hint}>"
+    }
+  },
+  "output": {
+    "opportunity_scores": "array<{opportunity, score: float, confidence: float, rationale: string, suggested_command: string}>"
+  },
+  "validation": {
+    "score_range": [
+      0,
+      100
+    ],
+    "confidence_range": [
+      0,
+      1
+    ],
+    "must_include_rationale": true
+  },
+  "writes": [
+    "content/sovereign/comparisons/opportunity-map.md"
+  ],
+  "error_owner": "opportunity-scorer",
+  "escalates_to": "research-agent",
+  "description": "Specialized subagent for opportunity scorer tasks within the department field context."
+}

@@ -1,0 +1,23 @@
+{
+  "market_context": "global-industrial",
+  "voice_id": "Enterprise-Professional"
+}
+---
+{
+  "profile": "web-product-suite",
+  "display": "\ud83c\udf10 Web Product Suite",
+  "sector": "02-web-platforms/web-developing",
+  "version": "3.3.1",
+  "description": "Modern web application development.",
+  "staffing": {
+    "strategy": [
+      "@Sentinel-Orchestrator"
+    ],
+    "execution": [
+      "@Sentinel-Operations"
+    ]
+  },
+  "governance": {
+    "rules": "factory/library/02-web-platforms/web-developing/commands/COMMANDS.md"
+  }
+}

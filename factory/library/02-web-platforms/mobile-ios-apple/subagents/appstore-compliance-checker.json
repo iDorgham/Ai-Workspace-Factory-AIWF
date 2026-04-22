@@ -1,0 +1,11 @@
+{
+  "id": "appstore-compliance-checker",
+  "name": "App Store Compliance Checker",
+  "description": "Validates iOS app submissions against Apple's latest App Store Review Guidelines and metadata requirements.",
+  "capabilities": [
+    "guideline-violation-scanning",
+    "metadata-validation",
+    "privacy-label-verification",
+    "entitlement-audit"
+  ]
+}

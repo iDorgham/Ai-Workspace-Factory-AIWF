@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["client_name","workspace_slug","workspace_purpose","team_level","delivery_mode"],
+  "properties": {
+    "client_name": {"type":"string"},
+    "workspace_slug": {"type":"string"},
+    "workspace_purpose": {"type":"string"},
+    "team_level": {"enum":["non-dev","mixed","dev"]},
+    "delivery_mode": {"enum":["founder","pro","hybrid"]},
+    "required_modules": {"type":"array","items":{"type":"string"}},
+    "compliance_level": {"type":"string"},
+    "language_support": {"type":"array","items":{"type":"string"}},
+    "deployment_target": {"type":"string"},
+    "notes": {"type":"string"},
+    "client_contacts": {"type":"array","items":{"type":"string"}},
+    "website": {"type":"string"},
+    "social_media": {"type":"array","items":{"type":"string"}}
+  }
+}

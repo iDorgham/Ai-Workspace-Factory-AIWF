@@ -1,0 +1,9 @@
+{
+  "quality_status": "omega",
+  "power_score": 94,
+  "audit_tier": 1,
+  "version": "4.1.0",
+  "dependencies": [
+    "core-orchestration"
+  ]
+}

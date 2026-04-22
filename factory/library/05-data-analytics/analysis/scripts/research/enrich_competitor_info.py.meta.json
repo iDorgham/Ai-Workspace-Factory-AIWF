@@ -1,0 +1,27 @@
+{
+  "id": "05-data-analytics/analysis/scripts/research",
+  "type": "script",
+  "name": "enrich_competitor_info",
+  "version": "3.3.1",
+  "source": "sovereign",
+  "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/scripts/research/enrich_competitor_info.py",
+  "tags": [
+    "sovereign",
+    "scripts"
+  ],
+  "dependencies": [],
+  "compatibility": [
+    "generic"
+  ],
+  "quality_status": "imported",
+  "last_synced_at": "2026-04-14T16:35:41+00:00",
+  "source_contributions": [
+    {
+      "source": "sovereign",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/scripts/research/enrich_competitor_info.py",
+      "synced_at": "2026-04-14T16:23:31+00:00"
+    }
+  ],
+  "category": "05-data-analytics/analysis",
+  "asset_type": "scripts"
+}

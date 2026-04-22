@@ -1,0 +1,15 @@
+name: n8n Workflow Engineering
+description: "Universal standards for designing and maintaining complex automation workflows in n8n, focused on Self-Healing Logic, Recursive AI Nodes, and resource optimization."
+metadata:
+  version: 1.0.0
+  maker: n8n
+  tier: 💎 OMEGA
+  status: SYNCED
+  logic: self-healing-automation
+inputs:
+  - workflow_json: "The n8n workflow definition"
+outputs:
+  - reliability_report: "Assessment of error handling and self-healing paths"
+  - resource_optimization_hints: "Suggestions for node pruning and batching"
+dependencies:
+  - make-com-logic-optimization

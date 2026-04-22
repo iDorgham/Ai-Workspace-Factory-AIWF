@@ -1,0 +1,27 @@
+{
+  "id": "10-operations-qa/execution/scripts/workflow",
+  "type": "script",
+  "name": "export_packager",
+  "version": "3.3.1",
+  "source": "sovereign",
+  "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/scripts/workflow/export_packager.py",
+  "tags": [
+    "sovereign",
+    "scripts"
+  ],
+  "dependencies": [],
+  "compatibility": [
+    "generic"
+  ],
+  "quality_status": "imported",
+  "last_synced_at": "2026-04-14T16:35:41+00:00",
+  "source_contributions": [
+    {
+      "source": "sovereign",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/scripts/workflow/export_packager.py",
+      "synced_at": "2026-04-14T16:23:31+00:00"
+    }
+  ],
+  "category": "10-operations-qa/execution",
+  "asset_type": "scripts"
+}

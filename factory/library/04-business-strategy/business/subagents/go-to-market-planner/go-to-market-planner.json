@@ -1,0 +1,11 @@
+{
+  "id": "go-to-market-planner",
+  "name": "Go-to-Market Planner",
+  "description": "Structures channel strategies, launch timelines, and distribution plans for new product market entry.",
+  "capabilities": [
+    "channel-prioritization-scoring",
+    "launch-timeline-generation",
+    "partner-ecosystem-mapping",
+    "market-entry-sequencing"
+  ]
+}

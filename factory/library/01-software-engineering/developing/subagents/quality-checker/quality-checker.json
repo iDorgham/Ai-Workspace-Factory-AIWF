@@ -1,0 +1,30 @@
+{
+  "id": "quality-checker",
+  "parent_agent": "workflow-agent",
+  "trigger": "/review",
+  "single_responsibility": "Run all 5 quality gates IN PARALLEL. Never sequentially.",
+  "input": {
+    "required": {
+      "staged_content": "array<{file_path, markdown, metadata}> \u2014 files with status: 'draft'"
+    }
+  },
+  "output": {
+    "quality_report": "object<{reviewed_at: ISO8601, content_files: array<string>, gates: {seo: {passed, score, violations}, brand: {passed, score, violations}, readability: {passed, score, violations}, image_seo: {passed, coverage_percent, violations}, originality: {passed, score, violations}}, overall_pass: bool}>"
+  },
+  "validation": {
+    "execution_mode": "parallel \u2014 all 5 gates simultaneously",
+    "seo_threshold": 0.85,
+    "brand_threshold": 0.92,
+    "readability_threshold": 65,
+    "image_seo_threshold": 1.0,
+    "originality_threshold": 0.15,
+    "all_gates_must_run_even_if_one_fails": true
+  },
+  "writes": [
+    ".ai/logs/quality-report.json (overwrite)",
+    ".ai/logs/quality-report-[timestamp].json (backup)"
+  ],
+  "error_owner": "quality-checker",
+  "escalates_to": "workflow-agent",
+  "description": "Specialized subagent for quality checker tasks within the department field context."
+}

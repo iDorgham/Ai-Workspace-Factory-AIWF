@@ -1,0 +1,11 @@
+{
+  "id": "release-gate-checker",
+  "name": "Release Gate Checker",
+  "description": "Validates release readiness by checking quality gates, test coverage, documentation, and compliance requirements.",
+  "capabilities": [
+    "quality-gate-validation",
+    "test-coverage-threshold-check",
+    "changelog-completeness-audit",
+    "dependency-vulnerability-scan"
+  ]
+}

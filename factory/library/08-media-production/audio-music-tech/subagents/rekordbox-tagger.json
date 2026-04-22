@@ -1,0 +1,11 @@
+{
+  "id": "rekordbox-tagger",
+  "name": "Rekordbox & Metadata Auditor",
+  "description": "Specialized tool for batch auditing and tagging music libraries for professional DJ performance.",
+  "capabilities": [
+    "bpm-analysis",
+    "key-detection-verify",
+    "id3-tag-standardization",
+    "library-backup-ops"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["profile","version","required"],
+  "properties": {
+    "profile": {"type":"string"},
+    "version": {"type":"string"},
+    "required": {"type":"object"},
+    "optional_modules": {"type":"array","items":{"type":"string"}},
+    "exclusions": {"type":"array","items":{"type":"string"}},
+    "overrides": {"type":"object"}
+  }
+}

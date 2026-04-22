@@ -1,0 +1,1022 @@
+{
+  "version": "1.0.0",
+  "type": "subagents",
+  "generated_at": "2026-04-15T02:05:07+00:00",
+  "items": [
+    {
+      "id": "sovereign:subagents:creative-marketing/brand-consultant/brand-consultant.json",
+      "type": "subagent",
+      "name": "brand-consultant",
+      "version": "1.0.0",
+      "source": "sovereign",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/brand-consultant.json",
+      "tags": [
+        "sovereign",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "imported",
+      "last_synced_at": "2026-04-14T16:35:40+00:00",
+      "source_contributions": [
+        {
+          "source": "sovereign",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/brand-consultant.json",
+          "synced_at": "2026-04-14T16:23:31+00:00"
+        }
+      ]
+    },
+    {
+      "id": "sovereign:subagents:creative-marketing/brand-voice-applier/brand-voice-applier.json",
+      "type": "subagent",
+      "name": "brand-voice-applier",
+      "version": "1.0.0",
+      "source": "sovereign",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/brand-voice-applier.json",
+      "tags": [
+        "sovereign",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "imported",
+      "last_synced_at": "2026-04-14T16:35:40+00:00",
+      "source_contributions": [
+        {
+          "source": "sovereign",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/brand-voice-applier.json",
+          "synced_at": "2026-04-14T16:23:31+00:00"
+        }
+      ]
+    },
+    {
+      "id": "sovereign:subagents:creative-marketing/content-generator/content-generator.json",
+      "type": "subagent",
+      "name": "content-generator",
+      "version": "1.0.0",
+      "source": "sovereign",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/content-generator.json",
+      "tags": [
+        "sovereign",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "imported",
+      "last_synced_at": "2026-04-14T16:35:40+00:00",
+      "source_contributions": [
+        {
+          "source": "sovereign",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/content-generator.json",
+          "synced_at": "2026-04-14T16:23:31+00:00"
+        }
+      ]
+    },
+    {
+      "id": "sovereign:subagents:creative-marketing/content-parser/content-parser.json",
+      "type": "subagent",
+      "name": "content-parser",
+      "version": "1.0.0",
+      "source": "sovereign",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/content-parser.json",
+      "tags": [
+        "sovereign",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "imported",
+      "last_synced_at": "2026-04-14T16:35:40+00:00",
+      "source_contributions": [
+        {
+          "source": "sovereign",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/content-parser.json",
+          "synced_at": "2026-04-14T16:23:31+00:00"
+        }
+      ]
+    },
+    {
+      "id": "sovereign:subagents:creative-marketing/image-seo-auditor/image-seo-auditor.json",
+      "type": "subagent",
+      "name": "image-seo-auditor",
+      "version": "1.0.0",
+      "source": "sovereign",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/image-seo-auditor.json",
+      "tags": [
+        "sovereign",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "imported",
+      "last_synced_at": "2026-04-14T16:35:40+00:00",
+      "source_contributions": [
+        {
+          "source": "sovereign",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/image-seo-auditor.json",
+          "synced_at": "2026-04-14T16:23:31+00:00"
+        }
+      ]
+    },
+    {
+      "id": "sovereign:subagents:engineering/approval-gate/approval-gate.json",
+      "type": "subagent",
+      "name": "approval-gate",
+      "version": "1.0.0",
+      "source": "sovereign",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/approval-gate.json",
+      "tags": [
+        "sovereign",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "imported",
+      "last_synced_at": "2026-04-14T16:35:40+00:00",
+      "source_contributions": [
+        {
+          "source": "sovereign",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/approval-gate.json",
+          "synced_at": "2026-04-14T16:23:31+00:00"
+        }
+      ]
+    },
+    {
+      "id": "sovereign:subagents:engineering/archive-manager/archive-manager.json",
+      "type": "subagent",
+      "name": "archive-manager",
+      "version": "1.0.0",
+      "source": "sovereign",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/archive-manager.json",
+      "tags": [
+        "sovereign",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "imported",
+      "last_synced_at": "2026-04-14T16:35:40+00:00",
+      "source_contributions": [
+        {
+          "source": "sovereign",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/archive-manager.json",
+          "synced_at": "2026-04-14T16:23:31+00:00"
+        }
+      ]
+    },
+    {
+      "id": "sovereign:subagents:engineering/asset-handler/asset-handler.json",
+      "type": "subagent",
+      "name": "asset-handler",
+      "version": "1.0.0",
+      "source": "sovereign",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/asset-handler.json",
+      "tags": [
+        "sovereign",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "imported",
+      "last_synced_at": "2026-04-14T16:35:40+00:00",
+      "source_contributions": [
+        {
+          "source": "sovereign",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/asset-handler.json",
+          "synced_at": "2026-04-14T16:23:31+00:00"
+        }
+      ]
+    },
+    {
+      "id": "sovereign:subagents:engineering/blueprint-architect/blueprint-architect.json",
+      "type": "subagent",
+      "name": "blueprint-architect",
+      "version": "1.0.0",
+      "source": "sovereign",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/blueprint-architect.json",
+      "tags": [
+        "sovereign",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "imported",
+      "last_synced_at": "2026-04-14T16:35:40+00:00",
+      "source_contributions": [
+        {
+          "source": "sovereign",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/blueprint-architect.json",
+          "synced_at": "2026-04-14T16:23:31+00:00"
+        }
+      ]
+    },
+    {
+      "id": "sovereign:subagents:engineering/comparison-analyst/comparison-analyst.json",
+      "type": "subagent",
+      "name": "comparison-analyst",
+      "version": "1.0.0",
+      "source": "sovereign",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/comparison-analyst.json",
+      "tags": [
+        "sovereign",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "imported",
+      "last_synced_at": "2026-04-14T16:35:40+00:00",
+      "source_contributions": [
+        {
+          "source": "sovereign",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/comparison-analyst.json",
+          "synced_at": "2026-04-14T16:23:31+00:00"
+        }
+      ]
+    },
+    {
+      "id": "sovereign:subagents:engineering/delta-detector/delta-detector.json",
+      "type": "subagent",
+      "name": "delta-detector",
+      "version": "1.0.0",
+      "source": "sovereign",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/delta-detector.json",
+      "tags": [
+        "sovereign",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "imported",
+      "last_synced_at": "2026-04-14T16:35:40+00:00",
+      "source_contributions": [
+        {
+          "source": "sovereign",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/delta-detector.json",
+          "synced_at": "2026-04-14T16:23:31+00:00"
+        }
+      ]
+    },
+    {
+      "id": "sovereign:subagents:engineering/discovery-engine/discovery-engine.json",
+      "type": "subagent",
+      "name": "discovery-engine",
+      "version": "1.0.0",
+      "source": "sovereign",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/discovery-engine.json",
+      "tags": [
+        "sovereign",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "imported",
+      "last_synced_at": "2026-04-14T16:35:40+00:00",
+      "source_contributions": [
+        {
+          "source": "sovereign",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/discovery-engine.json",
+          "synced_at": "2026-04-14T16:23:31+00:00"
+        }
+      ]
+    },
+    {
+      "id": "sovereign:subagents:engineering/drift-detector/drift-detector.json",
+      "type": "subagent",
+      "name": "drift-detector",
+      "version": "1.0.0",
+      "source": "sovereign",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/drift-detector.json",
+      "tags": [
+        "sovereign",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "imported",
+      "last_synced_at": "2026-04-14T16:35:40+00:00",
+      "source_contributions": [
+        {
+          "source": "sovereign",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/drift-detector.json",
+          "synced_at": "2026-04-14T16:23:31+00:00"
+        }
+      ]
+    },
+    {
+      "id": "sovereign:subagents:engineering/ethical-crawler/ethical-crawler.json",
+      "type": "subagent",
+      "name": "ethical-crawler",
+      "version": "1.0.0",
+      "source": "sovereign",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/ethical-crawler.json",
+      "tags": [
+        "sovereign",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "imported",
+      "last_synced_at": "2026-04-14T16:35:40+00:00",
+      "source_contributions": [
+        {
+          "source": "sovereign",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/ethical-crawler.json",
+          "synced_at": "2026-04-14T16:23:31+00:00"
+        }
+      ]
+    },
+    {
+      "id": "sovereign:subagents:engineering/export-packager/export-packager.json",
+      "type": "subagent",
+      "name": "export-packager",
+      "version": "1.0.0",
+      "source": "sovereign",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/export-packager.json",
+      "tags": [
+        "sovereign",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "imported",
+      "last_synced_at": "2026-04-14T16:35:40+00:00",
+      "source_contributions": [
+        {
+          "source": "sovereign",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/export-packager.json",
+          "synced_at": "2026-04-14T16:23:31+00:00"
+        }
+      ]
+    },
+    {
+      "id": "sovereign:subagents:engineering/intel-synthesizer/intel-synthesizer.json",
+      "type": "subagent",
+      "name": "intel-synthesizer",
+      "version": "1.0.0",
+      "source": "sovereign",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/intel-synthesizer.json",
+      "tags": [
+        "sovereign",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "imported",
+      "last_synced_at": "2026-04-14T16:35:40+00:00",
+      "source_contributions": [
+        {
+          "source": "sovereign",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/intel-synthesizer.json",
+          "synced_at": "2026-04-14T16:23:31+00:00"
+        }
+      ]
+    },
+    {
+      "id": "sovereign:subagents:engineering/keyword-auditor/keyword-auditor.json",
+      "type": "subagent",
+      "name": "keyword-auditor",
+      "version": "1.0.0",
+      "source": "sovereign",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/keyword-auditor.json",
+      "tags": [
+        "sovereign",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "imported",
+      "last_synced_at": "2026-04-14T16:35:40+00:00",
+      "source_contributions": [
+        {
+          "source": "sovereign",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/keyword-auditor.json",
+          "synced_at": "2026-04-14T16:23:31+00:00"
+        }
+      ]
+    },
+    {
+      "id": "sovereign:subagents:engineering/opportunity-scorer/opportunity-scorer.json",
+      "type": "subagent",
+      "name": "opportunity-scorer",
+      "version": "1.0.0",
+      "source": "sovereign",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/opportunity-scorer.json",
+      "tags": [
+        "sovereign",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "imported",
+      "last_synced_at": "2026-04-14T16:35:40+00:00",
+      "source_contributions": [
+        {
+          "source": "sovereign",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/opportunity-scorer.json",
+          "synced_at": "2026-04-14T16:23:31+00:00"
+        }
+      ]
+    },
+    {
+      "id": "sovereign:subagents:engineering/profile-builder/profile-builder.json",
+      "type": "subagent",
+      "name": "profile-builder",
+      "version": "1.0.0",
+      "source": "sovereign",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/profile-builder.json",
+      "tags": [
+        "sovereign",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "imported",
+      "last_synced_at": "2026-04-14T16:35:40+00:00",
+      "source_contributions": [
+        {
+          "source": "sovereign",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/profile-builder.json",
+          "synced_at": "2026-04-14T16:23:31+00:00"
+        }
+      ]
+    },
+    {
+      "id": "sovereign:subagents:engineering/quality-checker/quality-checker.json",
+      "type": "subagent",
+      "name": "quality-checker",
+      "version": "1.0.0",
+      "source": "sovereign",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/quality-checker.json",
+      "tags": [
+        "sovereign",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "imported",
+      "last_synced_at": "2026-04-14T16:35:40+00:00",
+      "source_contributions": [
+        {
+          "source": "sovereign",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/quality-checker.json",
+          "synced_at": "2026-04-14T16:23:31+00:00"
+        }
+      ]
+    },
+    {
+      "id": "sovereign:subagents:engineering/rule-updater/rule-updater.json",
+      "type": "subagent",
+      "name": "rule-updater",
+      "version": "1.0.0",
+      "source": "sovereign",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/rule-updater.json",
+      "tags": [
+        "sovereign",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "imported",
+      "last_synced_at": "2026-04-14T16:35:40+00:00",
+      "source_contributions": [
+        {
+          "source": "sovereign",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/rule-updater.json",
+          "synced_at": "2026-04-14T16:23:31+00:00"
+        }
+      ]
+    },
+    {
+      "id": "sovereign:subagents:engineering/sync-state-writer/sync-state-writer.json",
+      "type": "subagent",
+      "name": "sync-state-writer",
+      "version": "1.0.0",
+      "source": "sovereign",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/sync-state-writer.json",
+      "tags": [
+        "sovereign",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "imported",
+      "last_synced_at": "2026-04-14T16:35:40+00:00",
+      "source_contributions": [
+        {
+          "source": "sovereign",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/sync-state-writer.json",
+          "synced_at": "2026-04-14T16:23:31+00:00"
+        }
+      ]
+    },
+    {
+      "id": "sovereign:subagents:engineering/technical-auditor/technical-auditor.json",
+      "type": "subagent",
+      "name": "technical-auditor",
+      "version": "1.0.0",
+      "source": "sovereign",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/technical-auditor.json",
+      "tags": [
+        "sovereign",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "imported",
+      "last_synced_at": "2026-04-14T16:35:40+00:00",
+      "source_contributions": [
+        {
+          "source": "sovereign",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/technical-auditor.json",
+          "synced_at": "2026-04-14T16:23:31+00:00"
+        }
+      ]
+    },
+    {
+      "id": "sovereign:subagents:engineering/tone-analyzer/tone-analyzer.json",
+      "type": "subagent",
+      "name": "tone-analyzer",
+      "version": "1.0.0",
+      "source": "sovereign",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/tone-analyzer.json",
+      "tags": [
+        "sovereign",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "imported",
+      "last_synced_at": "2026-04-14T16:35:40+00:00",
+      "source_contributions": [
+        {
+          "source": "sovereign",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/tone-analyzer.json",
+          "synced_at": "2026-04-14T16:23:31+00:00"
+        }
+      ]
+    },
+    {
+      "id": "sovereign:subagents:engineering/trend-miner/trend-miner.json",
+      "type": "subagent",
+      "name": "trend-miner",
+      "version": "1.0.0",
+      "source": "sovereign",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/trend-miner.json",
+      "tags": [
+        "sovereign",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "imported",
+      "last_synced_at": "2026-04-14T16:35:40+00:00",
+      "source_contributions": [
+        {
+          "source": "sovereign",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace/.ai/subagents/trend-miner.json",
+          "synced_at": "2026-04-14T16:23:31+00:00"
+        }
+      ]
+    },
+    {
+      "id": "local:subagents:creative-marketing/brand-guidelines-auditor/brand-guidelines-auditor.json",
+      "type": "subagent",
+      "name": "brand-guidelines-auditor",
+      "version": "1.0.0",
+      "source": "local",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace Factory/factory/library/subagents/brand-guidelines-auditor.json",
+      "tags": [
+        "creative-suite",
+        "local",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "curated",
+      "last_synced_at": "2026-04-14T17:08:57+00:00",
+      "source_contributions": [
+        {
+          "source": "local",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace Factory/factory/library/subagents/brand-guidelines-auditor.json",
+          "synced_at": "2026-04-14T17:08:57+00:00"
+        }
+      ]
+    },
+    {
+      "id": "local:subagents:creative-marketing/social-content-calendar-planner/social-content-calendar-planner.json",
+      "type": "subagent",
+      "name": "social-content-calendar-planner",
+      "version": "1.0.0",
+      "source": "local",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace Factory/factory/library/subagents/social-content-calendar-planner.json",
+      "tags": [
+        "creative-suite",
+        "local",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "curated",
+      "last_synced_at": "2026-04-14T17:08:57+00:00",
+      "source_contributions": [
+        {
+          "source": "local",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace Factory/factory/library/subagents/social-content-calendar-planner.json",
+          "synced_at": "2026-04-14T17:08:57+00:00"
+        }
+      ]
+    },
+    {
+      "id": "local:subagents:engineering/3d-lighting-composition-auditor/3d-lighting-composition-auditor.json",
+      "type": "subagent",
+      "name": "3d-lighting-composition-auditor",
+      "version": "1.0.0",
+      "source": "local",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace Factory/factory/library/subagents/3d-lighting-composition-auditor.json",
+      "tags": [
+        "creative-suite",
+        "local",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "curated",
+      "last_synced_at": "2026-04-14T17:08:57+00:00",
+      "source_contributions": [
+        {
+          "source": "local",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace Factory/factory/library/subagents/3d-lighting-composition-auditor.json",
+          "synced_at": "2026-04-14T17:08:57+00:00"
+        }
+      ]
+    },
+    {
+      "id": "local:subagents:engineering/3d-materials-lookdev-specialist/3d-materials-lookdev-specialist.json",
+      "type": "subagent",
+      "name": "3d-materials-lookdev-specialist",
+      "version": "1.0.0",
+      "source": "local",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace Factory/factory/library/subagents/3d-materials-lookdev-specialist.json",
+      "tags": [
+        "creative-suite",
+        "local",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "curated",
+      "last_synced_at": "2026-04-14T17:08:57+00:00",
+      "source_contributions": [
+        {
+          "source": "local",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace Factory/factory/library/subagents/3d-materials-lookdev-specialist.json",
+          "synced_at": "2026-04-14T17:08:57+00:00"
+        }
+      ]
+    },
+    {
+      "id": "local:subagents:engineering/README.json",
+      "type": "subagent",
+      "name": "README",
+      "version": "1.0.0",
+      "source": "local",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Gate-Access/.cursor/subagents/README.md",
+      "tags": [
+        "gate-access",
+        "local",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "curated",
+      "last_synced_at": "2026-04-14T18:14:38+00:00",
+      "source_contributions": [
+        {
+          "source": "local",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Gate-Access/.cursor/subagents/README.md",
+          "synced_at": "2026-04-14T18:05:59+00:00"
+        }
+      ]
+    },
+    {
+      "id": "local:subagents:engineering/ad-copy-variation-generator/ad-copy-variation-generator.json",
+      "type": "subagent",
+      "name": "ad-copy-variation-generator",
+      "version": "1.0.0",
+      "source": "local",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace Factory/factory/library/subagents/ad-copy-variation-generator.json",
+      "tags": [
+        "creative-suite",
+        "local",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "curated",
+      "last_synced_at": "2026-04-14T17:08:57+00:00",
+      "source_contributions": [
+        {
+          "source": "local",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace Factory/factory/library/subagents/ad-copy-variation-generator.json",
+          "synced_at": "2026-04-14T17:08:57+00:00"
+        }
+      ]
+    },
+    {
+      "id": "local:subagents:engineering/ads-animation-specialist.json",
+      "type": "subagent",
+      "name": "ads-animation-specialist",
+      "version": "1.0.0",
+      "source": "local",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Gate-Access/.cursor/subagents/ads-animation-specialist.md",
+      "tags": [
+        "gate-access",
+        "local",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "curated",
+      "last_synced_at": "2026-04-14T18:14:38+00:00",
+      "source_contributions": [
+        {
+          "source": "local",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Gate-Access/.cursor/subagents/ads-animation-specialist.md",
+          "synced_at": "2026-04-14T18:05:59+00:00"
+        }
+      ]
+    },
+    {
+      "id": "local:subagents:engineering/ads-ux-subagent.json",
+      "type": "subagent",
+      "name": "ads-ux-subagent",
+      "version": "1.0.0",
+      "source": "local",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Gate-Access/.cursor/subagents/ads-ux-subagent.md",
+      "tags": [
+        "gate-access",
+        "local",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "curated",
+      "last_synced_at": "2026-04-14T18:14:38+00:00",
+      "source_contributions": [
+        {
+          "source": "local",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Gate-Access/.cursor/subagents/ads-ux-subagent.md",
+          "synced_at": "2026-04-14T18:05:59+00:00"
+        }
+      ]
+    },
+    {
+      "id": "local:subagents:engineering/browser-use.json",
+      "type": "subagent",
+      "name": "browser-use",
+      "version": "1.0.0",
+      "source": "local",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Gate-Access/.cursor/subagents/browser-use.md",
+      "tags": [
+        "gate-access",
+        "local",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "curated",
+      "last_synced_at": "2026-04-14T18:14:38+00:00",
+      "source_contributions": [
+        {
+          "source": "local",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Gate-Access/.cursor/subagents/browser-use.md",
+          "synced_at": "2026-04-14T18:05:59+00:00"
+        }
+      ]
+    },
+    {
+      "id": "local:subagents:engineering/explore.json",
+      "type": "subagent",
+      "name": "explore",
+      "version": "1.0.0",
+      "source": "local",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Gate-Access/.cursor/subagents/explore.md",
+      "tags": [
+        "gate-access",
+        "local",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "curated",
+      "last_synced_at": "2026-04-14T18:14:38+00:00",
+      "source_contributions": [
+        {
+          "source": "local",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Gate-Access/.cursor/subagents/explore.md",
+          "synced_at": "2026-04-14T18:05:59+00:00"
+        }
+      ]
+    },
+    {
+      "id": "local:subagents:engineering/logo-concept-explorer/logo-concept-explorer.json",
+      "type": "subagent",
+      "name": "logo-concept-explorer",
+      "version": "1.0.0",
+      "source": "local",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace Factory/factory/library/subagents/logo-concept-explorer.json",
+      "tags": [
+        "creative-suite",
+        "local",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "curated",
+      "last_synced_at": "2026-04-14T17:08:57+00:00",
+      "source_contributions": [
+        {
+          "source": "local",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace Factory/factory/library/subagents/logo-concept-explorer.json",
+          "synced_at": "2026-04-14T17:08:57+00:00"
+        }
+      ]
+    },
+    {
+      "id": "local:subagents:engineering/motion-shot-planner/motion-shot-planner.json",
+      "type": "subagent",
+      "name": "motion-shot-planner",
+      "version": "1.0.0",
+      "source": "local",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace Factory/factory/library/subagents/motion-shot-planner.json",
+      "tags": [
+        "creative-suite",
+        "local",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "curated",
+      "last_synced_at": "2026-04-14T17:08:57+00:00",
+      "source_contributions": [
+        {
+          "source": "local",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace Factory/factory/library/subagents/motion-shot-planner.json",
+          "synced_at": "2026-04-14T17:08:57+00:00"
+        }
+      ]
+    },
+    {
+      "id": "local:subagents:engineering/shell.json",
+      "type": "subagent",
+      "name": "shell",
+      "version": "1.0.0",
+      "source": "local",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Gate-Access/.cursor/subagents/shell.md",
+      "tags": [
+        "gate-access",
+        "local",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "curated",
+      "last_synced_at": "2026-04-14T18:14:38+00:00",
+      "source_contributions": [
+        {
+          "source": "local",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Gate-Access/.cursor/subagents/shell.md",
+          "synced_at": "2026-04-14T18:05:59+00:00"
+        }
+      ]
+    },
+    {
+      "id": "local:subagents:engineering/video-montage-editor/video-montage-editor.json",
+      "type": "subagent",
+      "name": "video-montage-editor",
+      "version": "1.0.0",
+      "source": "local",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace Factory/factory/library/subagents/video-montage-editor.json",
+      "tags": [
+        "creative-suite",
+        "local",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "curated",
+      "last_synced_at": "2026-04-14T17:08:57+00:00",
+      "source_contributions": [
+        {
+          "source": "local",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace Factory/factory/library/subagents/video-montage-editor.json",
+          "synced_at": "2026-04-14T17:08:57+00:00"
+        }
+      ]
+    },
+    {
+      "id": "local:subagents:engineering/visual-storytelling.json",
+      "type": "subagent",
+      "name": "visual-storytelling",
+      "version": "1.0.0",
+      "source": "local",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Gate-Access/.cursor/subagents/visual-storytelling.md",
+      "tags": [
+        "gate-access",
+        "local",
+        "subagents"
+      ],
+      "dependencies": [],
+      "compatibility": [
+        "generic"
+      ],
+      "quality_status": "curated",
+      "last_synced_at": "2026-04-14T18:14:38+00:00",
+      "source_contributions": [
+        {
+          "source": "local",
+          "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Gate-Access/.cursor/subagents/visual-storytelling.md",
+          "synced_at": "2026-04-14T18:05:59+00:00"
+        }
+      ]
+    }
+  ]
+}

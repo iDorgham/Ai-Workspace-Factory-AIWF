@@ -1,0 +1,23 @@
+{
+  "id": "10-operations-qa/execution/skills/compound-engineering",
+  "type": "skill",
+  "name": "compound-engineering",
+  "version": "3.3.1",
+  "tags": [
+    "skills"
+  ],
+  "dependencies": [],
+  "compatibility": [
+    "generic"
+  ],
+  "quality_status": "imported",
+  "last_synced_at": "2026-04-14T16:35:45+00:00",
+  "source_contributions": [
+    {
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace Factory/.ai/skills/compound-engineering.md",
+      "synced_at": "2026-04-14T16:30:52+00:00"
+    }
+  ],
+  "category": "10-operations-qa/execution",
+  "asset_type": "skills"
+}

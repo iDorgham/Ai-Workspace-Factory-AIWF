@@ -1,0 +1,7 @@
+name: Mobile
+description: "Standardized protocols for Mobile."
+metadata:
+  version: 10.0.0
+  tier: 💎 OMEGA
+  status: SYNCED
+  logic: operational-remediation

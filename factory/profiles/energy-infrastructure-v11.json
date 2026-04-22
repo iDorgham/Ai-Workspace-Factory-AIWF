@@ -1,0 +1,10 @@
+{
+  "name": "Energy Infrastructure v11",
+  "required": {
+    "agents": ["SentinelEnergyTech", "SentinelLegalBrokerage", "SentinelIslamicFinance", "SentinelProjectManagement"],
+    "skills": ["energy-renewables-mastery", "legal-brokerage-mastery", "islamic-finance-mastery"],
+    "commands": ["COMMANDS.md"],
+    "templates": ["PLAN_BLUEPRINT.md"],
+    "scripts": ["core.py"]
+  }
+}

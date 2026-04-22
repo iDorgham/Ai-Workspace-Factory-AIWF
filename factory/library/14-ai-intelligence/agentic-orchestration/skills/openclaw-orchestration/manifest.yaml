@@ -1,0 +1,16 @@
+name: OpenClaw Orchestration
+description: "Direct the deployment of OpenClaw for autonomous web crawling, data synthesis, and agentic task execution."
+metadata:
+  version: 10.0.0
+  maker: openclaw-ai
+  tier: 💎 OMEGA
+  status: SYNCED
+  logic: stealth-crawling
+inputs:
+  - target_url: "Domain or specific URL to crawl"
+  - depth_limit: "Maximum crawl depth (default: 3)"
+outputs:
+  - structured_json: "Extracted and synthesized data"
+  - context_slicer: "Markdown fragment for reasoning agents"
+dependencies:
+  - n8n-workflow-engineering

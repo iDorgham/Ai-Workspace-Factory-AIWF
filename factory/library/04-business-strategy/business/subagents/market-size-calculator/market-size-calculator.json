@@ -1,0 +1,29 @@
+{
+  "id": "market-size-calculator",
+  "parent_agent": "venture-architect",
+  "trigger": "/pitch * (initial research phase)",
+  "single_responsibility": "Calculate TAM, SAM, and SOM based on industry data and local constraints.",
+  "input": {
+    "required": {
+      "industry": "string",
+      "region": "string",
+      "target_user_profile": "object"
+    }
+  },
+  "output": {
+    "total_addressable_market": "currency",
+    "serviceable_addressable_market": "currency",
+    "serviceable_obtainable_market": "currency",
+    "data_sources": "array<url>"
+  },
+  "validation": {
+    "cross_reference_mandatory": true,
+    "confidence_score_threshold": 0.7
+  },
+  "writes": [
+    "factory/reports/market-analysis/[timestamp]/"
+  ],
+  "error_owner": "market-size-calculator",
+  "escalates_to": "venture-architect",
+  "description": "Specialized subagent for market size calculator tasks within the department field context."
+}

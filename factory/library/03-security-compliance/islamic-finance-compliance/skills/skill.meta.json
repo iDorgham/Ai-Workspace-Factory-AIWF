@@ -1,0 +1,40 @@
+{
+  "id": "03-security-compliance/islamic-finance-compliance/skills",
+  "type": "skill",
+  "cluster": "05-verticals",
+  "field": "islamic-finance-compliance",
+  "name": "Islamic Finance & Sharia Compliance Engineering",
+  "category": "03-security-compliance/islamic-finance-compliance",
+  "version": "3.3.1",
+  "path": "05-verticals/islamic-finance-compliance/SKILL.md",
+  "source": "manual",
+  "tags": [
+    "05-verticals",
+    "islamic-finance",
+    "sharia",
+    "murabaha",
+    "mudarabah",
+    "sukuk",
+    "halal-screening",
+    "zakat",
+    "aaoifi",
+    "mena",
+    "compliance"
+  ],
+  "role": "Production-grade Islamic finance engineering with Murabaha/Mudarabah/Ijara calculators, AAOIFI halal screening algorithm, zakat engine, sukuk cash flow modeling, and Sharia governance workflow",
+  "dependencies": [
+    "payment-compliance",
+    "mena-regulatory-compliance"
+  ],
+  "compatibility": [
+    "generic",
+    "mena-gcc"
+  ],
+  "quality_status": "approved",
+  "power_score": 84,
+  "audit_tier": 1,
+  "created_at": "2026-04-14T22:57:00Z",
+  "updated_at": "2026-04-17T03:22:00Z",
+  "last_synced_at": "2026-04-17T03:22:00Z",
+  "asset_type": "skills"
+}

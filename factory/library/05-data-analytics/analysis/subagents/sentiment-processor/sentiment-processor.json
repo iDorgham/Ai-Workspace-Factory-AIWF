@@ -1,0 +1,31 @@
+{
+  "id": "sentiment-processor",
+  "parent_agent": "intel-synthesizer",
+  "trigger": "/intel * (social/feedback analysis)",
+  "single_responsibility": "Analyze text for emotional tone, urgency, and specific sentiment triggers.",
+  "input": {
+    "required": {
+      "raw_text": "string|array<string>",
+      "context": "string"
+    }
+  },
+  "output": {
+    "sentiment_score": "float (-1.0 to 1.0)",
+    "primary_emotions": "array<string>",
+    "urgency_level": "string enum[low, medium, high, critical]",
+    "key_triggers": "array<string>"
+  },
+  "validation": {
+    "bias_detection": true,
+    "multi_language_support": [
+      "en",
+      "ar"
+    ]
+  },
+  "writes": [
+    "factory/reports/sentiment/[timestamp].json"
+  ],
+  "error_owner": "sentiment-processor",
+  "escalates_to": "intel-synthesizer",
+  "description": "Specialized subagent for sentiment processor tasks within the department field context."
+}

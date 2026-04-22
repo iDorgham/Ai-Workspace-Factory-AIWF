@@ -1,0 +1,11 @@
+{
+  "id": "swift-performance-profiler",
+  "name": "Swift Performance Profiler",
+  "description": "Profiles Swift and SwiftUI code for memory leaks, CPU hotspots, and rendering performance bottlenecks.",
+  "capabilities": [
+    "instruments-trace-analysis",
+    "memory-leak-detection",
+    "swiftui-render-profiling",
+    "energy-impact-assessment"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "version": "1.2.0",
+  "workspace_root_folder": "workspaces",
+  "library_ingestion": "manual_copy_only",
+  "generation_policy": {
+    "prefer_reuse": true,
+    "allow_regeneration_when_missing": true,
+    "destructive_overwrite": false,
+    "forbid_projects_folder_in_factory_outputs": true
+  },
+  "evolution": {
+    "signals_dir": "factory/evolution/signals",
+    "backlog_path": "factory/evolution/BACKLOG.md",
+    "enabled": true
+  }
+}

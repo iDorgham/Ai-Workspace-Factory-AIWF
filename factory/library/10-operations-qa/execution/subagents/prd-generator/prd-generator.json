@@ -1,0 +1,28 @@
+{
+  "id": "prd-generator",
+  "parent_agent": "product-delivery",
+  "trigger": "/new project | /new feature",
+  "single_responsibility": "Transform loose vision notes into a structured, technical PRD (Product Requirements Document).",
+  "input": {
+    "required": {
+      "vision_notes": "string",
+      "target_users": "array<string>",
+      "priority_level": "string enum[P0, P1, P2]"
+    }
+  },
+  "output": {
+    "prd_markdown": "string (structured PRD)",
+    "technical_risks": "array<string>",
+    "suggested_phases": "array<{phase_name: string, tasks: array<string>}>"
+  },
+  "validation": {
+    "alignment_to_sdd": true,
+    "user_story_coverage": true
+  },
+  "writes": [
+    "factory/library/templates/product-delivery/project-prd/"
+  ],
+  "error_owner": "prd-generator",
+  "escalates_to": "product-delivery",
+  "description": "Specialized subagent for prd generator tasks within the department field context."
+}

@@ -1,0 +1,16 @@
+name: Vector Database Architecture
+description: "Universal standards for Vector Database design (Pinecone, Milvus, PGVector), focused on high-performance indexing, RAG optimization, and semantic retrieval loops."
+metadata:
+  version: 1.0.0
+  maker: various
+  tier: 💎 OMEGA
+  status: SYNCED
+  logic: rag-optimization
+inputs:
+  - query: "Semantic query string"
+  - top_k: "Number of nearest neighbors to retrieve (default: 5)"
+outputs:
+  - results: "List of retrieved vector matches with scores"
+  - metadata: "Associated record metadata"
+dependencies:
+  - frontier-models-mastery

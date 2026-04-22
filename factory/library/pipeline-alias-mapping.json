@@ -1,0 +1,190 @@
+{
+  "pipelines": {
+    "web-dev-rtl-first": {
+      "profile_target": "web-product-suite",
+      "required_agents": ["Frontend", "Backend", "UXDesigner"],
+      "required_skills": ["bilingual-rtl-first"],
+      "fallback_profile": "web-product-suite"
+    },
+    "saas-launchpad": {
+      "profile_target": "cloud-architecture",
+      "required_agents": ["CloudArchitect", "Backend", "Security"],
+      "required_skills": ["supabase-integration", "vercel-deployment"],
+      "fallback_profile": "web-product-suite"
+    },
+    "sovereign": {
+      "profile_target": "content-machine-editorial",
+      "required_agents": ["BrandDirector", "SEO", "WorkflowAgent", "Creator"],
+      "required_skills": ["brand-dna-ai-alignment", "egyptian-dialect-ad-hooks"],
+      "fallback_profile": "content-machine-editorial"
+    },
+    "real-estate-crm": {
+      "profile_target": "real-estate-developer-pro",
+      "required_agents": ["SalesAutomator", "DataAnalyst", "LeadGen"],
+      "required_skills": ["dld-transparency-protocol"],
+      "fallback_profile": "real-estate-hub-v11"
+    },
+    "ai-video-factory": {
+      "profile_target": "cinematic-video-production",
+      "required_agents": ["VideoFoundryDirector", "LatentDiffusionArtist"],
+      "required_skills": ["cinematic-video-upscaling", "brand-dna-ai-alignment"],
+      "fallback_profile": "creative-intelligence-hub"
+    },
+    "social-media-viral": {
+      "profile_target": "social-media-engagement-viral",
+      "required_agents": ["SocialMediaManager", "ContentCreator", "ViralAnalyst"],
+      "required_skills": ["tiktok-hooks", "instagram-reels-optimization"],
+      "fallback_profile": "content-machine-editorial"
+    },
+    "fintech-compliance": {
+      "profile_target": "fintech-compliance-launch",
+      "required_agents": ["ComplianceOfficer", "SecurityArchitect"],
+      "required_skills": ["anti-money-laundering", "kyc-protocols"],
+      "fallback_profile": "cyber-security-hardening"
+    },
+    "healthtech-app": {
+      "profile_target": "healthtech-pro-v11",
+      "required_agents": ["MobileDev", "HIPAACompliance", "UXResearcher"],
+      "required_skills": ["telemedicine-integration", "medical-data-security"],
+      "fallback_profile": "app-factory"
+    },
+    "e-commerce-scale": {
+      "profile_target": "e-commerce-pro-launch",
+      "required_agents": ["ShopifyExpert", "PerformanceMarketer", "CRO"],
+      "required_skills": ["abandoned-cart-recovery", "product-page-optimization"],
+      "fallback_profile": "growth-strategy-engine"
+    },
+    "agency-rebrand": {
+      "profile_target": "agency-branding-identity",
+      "required_agents": ["BrandStrategist", "ArtDirector", "Copywriter"],
+      "required_skills": ["brand-guideline-orchestration", "stationary-design"],
+      "fallback_profile": "branding-agency"
+    },
+    "ads-performance": {
+      "profile_target": "advertising-performance-suite",
+      "required_agents": ["AdStrategist", "PerformanceAnalyst"],
+      "required_skills": ["google-ads-mastery", "meta-ads-mastery"],
+      "fallback_profile": "advertising-performance-suite"
+    },
+    "3d-rendering": {
+      "profile_target": "3d-rendering-studio",
+      "required_agents": ["3DArtist", "LightingExpert"],
+      "required_skills": ["ray-tracing-optimization", "blender-automation"],
+      "fallback_profile": "3d-rendering-studio"
+    },
+    "branding-pro": {
+      "profile_target": "branding-agency",
+      "required_agents": ["BrandIdentityDesigner", "Copywriter"],
+      "required_skills": ["typography-mastery", "color-theory-expert"],
+      "fallback_profile": "branding-agency"
+    },
+    "cyber-security": {
+      "profile_target": "cyber-security-hardening",
+      "required_agents": ["SecurityAuditor", "HardeningExpert"],
+      "required_skills": ["penetration-testing", "firewall-config"],
+      "fallback_profile": "cyber-security-hardening"
+    },
+    "design-system": {
+      "profile_target": "design-system-factory",
+      "required_agents": ["DesignOps", "FrontendCore"],
+      "required_skills": ["atomic-design-architecture", "token-management"],
+      "fallback_profile": "design-system-factory"
+    },
+    "energy-infra": {
+      "profile_target": "energy-infrastructure-v11",
+      "required_agents": ["InfrastructurePlanner", "EnergyAnalyst"],
+      "required_skills": ["grid-resilience-protocol", "renewable-energy-sync"],
+      "fallback_profile": "energy-infrastructure-v11"
+    },
+    "enterprise-dev": {
+      "profile_target": "enterprise-developing",
+      "required_agents": ["SystemsArchitect", "DevOpsEngineer"],
+      "required_skills": ["kubernetes-orchestration", "ci-cd-enterprise"],
+      "fallback_profile": "enterprise-developing"
+    },
+    "factory-maint": {
+      "profile_target": "factory-library-maintenance.json",
+      "required_agents": ["LibraryManager", "RemediationBot"],
+      "required_skills": ["structural-self-healing", "integrity-auditing"],
+      "fallback_profile": "factory-library-maintenance"
+    },
+    "govtech": {
+      "profile_target": "govtech-v11",
+      "required_agents": ["PublicPolicyAnalyst", "SecurePortalDev"],
+      "required_skills": ["data-residency-compliance", "citizen-engagement-ux"],
+      "fallback_profile": "govtech-v11"
+    },
+    "growth-engine": {
+      "profile_target": "growth-strategy-engine",
+      "required_agents": ["GrowthHacker", "DataScientist"],
+      "required_skills": ["funnel-optimization", "a-b-testing-scale"],
+      "fallback_profile": "growth-strategy-engine"
+    },
+    "medical-system": {
+      "profile_target": "healthcare-medical-system",
+      "required_agents": ["MedicalInformaticsExpert", "ComplianceOfficer"],
+      "required_skills": ["hl7-fhir-integration", "patient-privacy-protection"],
+      "fallback_profile": "healthcare-medical-system"
+    },
+    "hospitality-ops": {
+      "profile_target": "hospitality-restaurant-ops",
+      "required_agents": ["OpsManager", "GuestExperienceDesigner"],
+      "required_skills": ["reservation-automation", "menu-optimization"],
+      "fallback_profile": "hospitality-restaurant-ops"
+    },
+    "image-factory": {
+      "profile_target": "image-asset-engine",
+      "required_agents": ["ImageAssetDirector", "LatentGenArtist"],
+      "required_skills": ["stable-diffusion-xl", "batch-processing"],
+      "fallback_profile": "image-asset-engine"
+    },
+    "islamic-finance": {
+      "profile_target": "islamic-finance-hub",
+      "required_agents": ["ShariaAdvisor", "FintechArchitect"],
+      "required_skills": ["aaoifi-compliance", "murabaha-logic"],
+      "fallback_profile": "islamic-finance-hub"
+    },
+    "legal-hub": {
+      "profile_target": "legal-brokerage-hub",
+      "required_agents": ["LegalAnalyst", "ContractAutomation"],
+      "required_skills": ["smart-contract-drafting", "legal-compliance-mena"],
+      "fallback_profile": "legal-brokerage-hub"
+    },
+    "fitness-wellness": {
+      "profile_target": "lifestyle-fitness-gym",
+      "required_agents": ["WellnessCoach", "CommunityManager"],
+      "required_skills": ["workout-personalization", "nutrition-sync"],
+      "fallback_profile": "lifestyle-fitness-gym"
+    },
+    "qa-testing": {
+      "profile_target": "qa-testing-suite",
+      "required_agents": ["QALead", "AutomationEngineer"],
+      "required_skills": ["e2e-testing-framework", "load-testing"],
+      "fallback_profile": "qa-testing-suite"
+    },
+    "seo-dominance": {
+      "profile_target": "seo-dominance-engine",
+      "required_agents": ["SEOSpecialist", "ContentStrategist"],
+      "required_skills": ["semantic-search-authority", "keyword-clustering"],
+      "fallback_profile": "seo-dominance-engine"
+    },
+    "tourism-travel": {
+      "profile_target": "tourism-travel-suite",
+      "required_agents": ["TravelPlanner", "DestinationMarketer"],
+      "required_skills": ["itinerary-generation", "multi-language-support"],
+      "fallback_profile": "tourism-travel-suite"
+    },
+    "venture-design": {
+      "profile_target": "venture-design-blueprint",
+      "required_agents": ["VentureArchitect", "BusinessModeler"],
+      "required_skills": ["market-fit-validation", "pitch-deck-automation"],
+      "fallback_profile": "venture-design-blueprint"
+    },
+    "galeria": {
+      "profile_target": "content-machine-editorial",
+      "required_agents": ["BrandDirector", "SEO", "Creator"],
+      "required_skills": ["brand-dna-ai-alignment"],
+      "fallback_profile": "content-machine-editorial"
+    }
+  }
+}

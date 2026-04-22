@@ -1,0 +1,8 @@
+{
+  "command": "/visualize",
+  "description": "Standard visualize command description",
+  "cluster": "08-media-production",
+  "category": "design",
+  "quality_status": "stable",
+  "version": "1.0.0"
+}

@@ -1,0 +1,14 @@
+name: Web Developing Mastery
+description: "High-density skill set for automating and optimizing Web Developing workflows, focused on performance, accessibility, and modern framework integration."
+metadata:
+  version: 10.0.0
+  maker: various
+  tier: 💎 OMEGA
+  status: SYNCED
+  logic: web-optimization
+inputs:
+  - web_project_root: "The path to the web application source code"
+outputs:
+  - performance_audit: "Lighthouse-based technical audit results"
+  - accessibility_report: "WCAG 2.1 compliance scorecard"
+dependencies: []

@@ -1,0 +1,11 @@
+{
+  "id": "xcode-builder",
+  "name": "Xcode Build & Deploy Tool",
+  "description": "Specialized tool for managing Xcode projects, provisioning profiles, and App Store Connect uploads.",
+  "capabilities": [
+    "project-configuration",
+    "certificate-management",
+    "testflight-distribution",
+    "swift-package-resolution"
+  ]
+}

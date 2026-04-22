@@ -1,0 +1,23 @@
+{
+  "market_context": "global-industrial",
+  "voice_id": "Enterprise-Professional"
+}
+---
+{
+  "profile": "fintech-compliance-launch",
+  "display": "\ud83c\udfe6 Fintech Compliance",
+  "sector": "03-security-compliance/fintech-compliance",
+  "version": "3.3.1",
+  "description": "Regulatory-first financial technology launch.",
+  "staffing": {
+    "strategy": [
+      "@Sentinel-Orchestrator"
+    ],
+    "execution": [
+      "@Sentinel-Operations"
+    ]
+  },
+  "governance": {
+    "rules": "factory/library/03-security-compliance/fintech-compliance/commands/COMMANDS.md"
+  }
+}

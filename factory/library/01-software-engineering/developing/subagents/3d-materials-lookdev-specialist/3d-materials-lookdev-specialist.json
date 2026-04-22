@@ -1,0 +1,15 @@
+{
+  "name": "3d-materials-lookdev-specialist",
+  "purpose": "Define and validate 3D materials for target visual style.",
+  "inputs": [
+    "model_assets",
+    "style_target",
+    "render_engine"
+  ],
+  "outputs": [
+    "material_set",
+    "shader_notes",
+    "lookdev_checks"
+  ],
+  "description": "Specialized subagent for 3d-materials-lookdev-specialist tasks within the department field context."
+}

@@ -1,0 +1,6 @@
+{
+  "id": "browser-use",
+  "name": "Browser-Use",
+  "description": "E2E verification, UI automation, and regression testing using high-level natural language browser commands.",
+  "instructions_markdown": "# Browser-Use Subagent — Workspace Factory Prompts\n\nCopy one of these prompts when invoking the **browser-use** subagent.\n\n---\n\n## Project flow\n\n```\nLogin to dashboard at localhost:3001, navigate to Workspaces, create a workspace, switch to it, then verify session cookie and nav state.\n```\n\n---\n\n## i18n / RTL check\n\n```\nToggle locale (AR/EN) on login page and verify RTL layout and labels.\n```\n\n---\n\n## Regression pass\n\n```\nLogin as [role], navigate to [pages], verify [behaviors], and capture screenshots for any broken states.\n```\n\n---\n\n## Data verification\n\n```\nLogin at localhost:3001, go to Records, apply filters, click Export CSV, verify file downloads.\n```\n\n---\n\n## Auth redirect\n\n```\nVisit protected route without auth, verify redirect to login. Login, verify redirect back.\n```"
+}

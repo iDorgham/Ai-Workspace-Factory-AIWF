@@ -1,0 +1,28 @@
+{
+  "id": "01-software-engineering/developing/subagents/motion-shot-planner",
+  "type": "subagent",
+  "name": "motion-shot-planner",
+  "version": "3.3.1",
+  "source": "local",
+  "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace Factory/factory/library/subagents/motion-shot-planner.json",
+  "tags": [
+    "creative-suite",
+    "local",
+    "subagents"
+  ],
+  "dependencies": [],
+  "compatibility": [
+    "generic"
+  ],
+  "quality_status": "curated",
+  "last_synced_at": "2026-04-14T17:08:57+00:00",
+  "source_contributions": [
+    {
+      "source": "local",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace Factory/factory/library/subagents/motion-shot-planner.json",
+      "synced_at": "2026-04-14T17:08:57+00:00"
+    }
+  ],
+  "category": "01-software-engineering/developing",
+  "asset_type": "subagents"
+}

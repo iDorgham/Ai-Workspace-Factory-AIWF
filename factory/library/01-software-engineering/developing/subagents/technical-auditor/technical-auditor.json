@@ -1,0 +1,32 @@
+{
+  "id": "technical-auditor",
+  "parent_agent": "seo-agent",
+  "trigger": "/polish content in content/",
+  "single_responsibility": "H-structure, meta generation, readability scoring",
+  "input": {
+    "required": {
+      "markdown_content": "string",
+      "target_keyword": "string"
+    }
+  },
+  "output": {
+    "seo_meta": "object<{title: string, meta_description: string, h_structure_valid: bool, heading_count: object<h1: int, h2: int, h3: int>, flesch_kincaid_score: float, word_count: int}>",
+    "readability_fixes": "array<{paragraph_index: int, issue: string, suggested_fix: string}>"
+  },
+  "validation": {
+    "flesch_kincaid_minimum": 65,
+    "h1_count_must_be_exactly_1": true,
+    "meta_description_length_range": [
+      120,
+      155
+    ],
+    "auto_simplify_on_readability_fail": true,
+    "max_auto_fix_passes": 2
+  },
+  "writes": [
+    "content/[type]/seo-meta.json"
+  ],
+  "error_owner": "technical-auditor",
+  "escalates_to": "seo-agent",
+  "description": "Specialized subagent for technical auditor tasks within the department field context."
+}

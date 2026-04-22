@@ -1,0 +1,11 @@
+{
+  "id": "solidity-auditor",
+  "name": "Solidity Security Auditor",
+  "description": "Specialized tool for auditing smart contracts for security vulnerabilities, gas efficiency, and logical flaws.",
+  "capabilities": [
+    "vulnerability-detection",
+    "gas-optimization-audit",
+    "slither-static-analysis",
+    "logical-flaw-verification"
+  ]
+}

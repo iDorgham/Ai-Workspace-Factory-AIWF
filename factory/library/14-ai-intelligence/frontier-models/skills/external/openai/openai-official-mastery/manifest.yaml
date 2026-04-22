@@ -1,0 +1,13 @@
+name: OpenAI Official Integration Mastery
+description: "Universal synchronization hub for all Official OpenAI agentic skills, including custom GPT protocols and specialized API toolsets."
+metadata:
+  version: 1.0.0
+  maker: openai
+  tier: 💎 OMEGA
+  status: SYNCED
+  logic: model-orchestration
+inputs:
+  - capability_node: "Target OpenAI capability node to invoke"
+outputs:
+  - sync_status: "Verification of parity with .ai/skills directory"
+dependencies: []

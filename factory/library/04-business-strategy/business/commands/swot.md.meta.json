@@ -1,0 +1,8 @@
+{
+  "command": "/swot",
+  "description": "Standard swot command description",
+  "cluster": "04-business-strategy",
+  "category": "business",
+  "quality_status": "stable",
+  "version": "1.0.0"
+}

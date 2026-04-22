@@ -1,0 +1,14 @@
+name: Anthropic Computer Use Mastery
+description: "Standards for letting AI agents interact directly with computer interfaces (GUI) via screenshot analysis and coordinate mapping."
+metadata:
+  version: 1.0.0
+  maker: anthropic
+  tier: 💎 OMEGA
+  status: SYNCED
+  logic: visual-interaction
+inputs:
+  - screenshot: "UI state captured as base64 or file path"
+outputs:
+  - coordinates: "Precise pixel mapping for mouse/keyboard actions"
+  - verification: "Post-action UI state confirmation"
+dependencies: []

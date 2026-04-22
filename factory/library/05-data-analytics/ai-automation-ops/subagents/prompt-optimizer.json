@@ -1,0 +1,11 @@
+{
+  "id": "prompt-optimizer",
+  "name": "Prompt Optimization Specialist",
+  "description": "Analyzes and refines LLM prompts for cost efficiency, latency reduction, and output quality improvement.",
+  "capabilities": [
+    "prompt-compression-analysis",
+    "token-budget-optimization",
+    "few-shot-example-curation",
+    "output-quality-scoring"
+  ]
+}

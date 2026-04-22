@@ -1,0 +1,26 @@
+{
+  "market_context": "global-industrial",
+  "voice_id": "Enterprise-Professional"
+}
+---
+{
+  "profile": "agency-branding-identity",
+  "display": "\ud83c\udfe2 Branding & Identity Firm",
+  "sector": "06-branding-content/branding",
+  "version": "3.3.1",
+  "description": "Brand voice, identity logic, and cinematic style-guides.",
+  "staffing": {
+    "strategy": [
+      "@Sentinel-Branding",
+      "@Sentinel-Brand-Voice"
+    ],
+    "execution": [
+      "@Sentinel-Branding",
+      "@Sentinel-Brand-Voice",
+      "@Sentinel-Operations"
+    ]
+  },
+  "governance": {
+    "rules": "factory/library/06-branding-content/branding/commands/COMMANDS.md"
+  }
+}

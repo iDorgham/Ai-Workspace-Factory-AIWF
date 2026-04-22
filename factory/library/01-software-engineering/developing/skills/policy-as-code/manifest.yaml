@@ -1,0 +1,7 @@
+name: Policy As Code
+description: "Standardized protocols for Policy As Code."
+metadata:
+  version: 10.0.0
+  tier: 💎 OMEGA
+  status: SYNCED
+  logic: operational-remediation

@@ -1,0 +1,11 @@
+{
+  "id": "stable-diffusion-prompter",
+  "name": "SDXL & Midjourney Prompter",
+  "description": "Expert tool for crafting and optimizing high-fidelity generative media prompts.",
+  "capabilities": [
+    "prompt-engineering",
+    "lora-optimization",
+    "image-to-video-strategy",
+    "stylization-control"
+  ]
+}

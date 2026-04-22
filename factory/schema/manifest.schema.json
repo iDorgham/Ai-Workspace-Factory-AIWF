@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["client","profile","generated_at","components","output_path"],
+  "properties": {
+    "client": {"type":"string"},
+    "profile": {"type":"string"},
+    "generated_at": {"type":"string"},
+    "components": {"type":"object"},
+    "output_path": {"type":"string"},
+    "validation": {"type":"object"}
+  }
+}

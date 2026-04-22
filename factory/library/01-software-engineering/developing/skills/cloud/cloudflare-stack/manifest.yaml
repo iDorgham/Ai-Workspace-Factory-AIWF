@@ -1,0 +1,7 @@
+name: Cloudflare Stack
+description: "Standardized protocols for Cloudflare Stack."
+metadata:
+  version: 10.0.0
+  tier: 💎 OMEGA
+  status: SYNCED
+  logic: operational-remediation

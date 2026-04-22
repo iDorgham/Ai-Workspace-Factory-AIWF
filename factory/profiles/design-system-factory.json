@@ -1,0 +1,23 @@
+{
+  "market_context": "global-industrial",
+  "voice_id": "Enterprise-Professional"
+}
+---
+{
+  "profile": "design-system-factory",
+  "display": "\ud83c\udfa8 Design System Factory",
+  "sector": "08-media-production/visual-design",
+  "version": "3.3.1",
+  "description": "Scalable UI/UX design systems.",
+  "staffing": {
+    "strategy": [
+      "@Sentinel-Orchestrator"
+    ],
+    "execution": [
+      "@Sentinel-Operations"
+    ]
+  },
+  "governance": {
+    "rules": "factory/library/08-media-production/visual-design/commands/COMMANDS.md"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "project_id": "LIT-XXX-2026",
+  "jurisdiction": "Dubai Courts / E-Litigation",
+  "client_slug": "",
+  "hashing_algorithm": "SHA-256",
+  "evidence_matrix": [
+    {
+      "node_id": "EVID-001",
+      "original_filename": "contract_draft_v1.pdf",
+      "sha256_hash": "",
+      "timestamp_omega": "",
+      "court_reference": "Exhibit P1",
+      "associated_paragraph": "Para 14 (Breach of Warranty)",
+      "status": "Verified"
+    }
+  ],
+  "verification_status": "PENDING",
+  "master_index_hash": ""
+}

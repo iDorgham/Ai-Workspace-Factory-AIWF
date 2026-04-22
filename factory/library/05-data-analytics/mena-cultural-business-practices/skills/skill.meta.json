@@ -1,0 +1,39 @@
+{
+  "id": "05-data-analytics/mena-cultural-business-practices/skills",
+  "type": "skill",
+  "cluster": "05-verticals",
+  "field": "mena-cultural-business-practices",
+  "name": "MENA Cultural & Business Intelligence",
+  "category": "05-data-analytics/mena-cultural-business-practices",
+  "version": "3.3.1",
+  "path": "05-verticals/mena-cultural-business-practices/SKILL.md",
+  "source": "manual",
+  "tags": [
+    "05-verticals",
+    "mena",
+    "cultural",
+    "ramadan",
+    "eid",
+    "whatsapp",
+    "negotiation",
+    "bilingual",
+    "ux-adaptation",
+    "content-calendar"
+  ],
+  "role": "Actionable cultural intelligence for MENA markets \u2014 cultural calendar engine, WhatsApp-first CRM, negotiation-aware deal pipelines, bilingual UX patterns, and seasonal content adaptation",
+  "dependencies": [
+    "mena-localization-payments",
+    "bilingual-rtl-first"
+  ],
+  "compatibility": [
+    "generic",
+    "mena-gcc"
+  ],
+  "quality_status": "approved",
+  "power_score": 80,
+  "audit_tier": 1,
+  "created_at": "2026-04-14T22:57:00Z",
+  "updated_at": "2026-04-17T03:15:00Z",
+  "last_synced_at": "2026-04-17T03:15:00Z",
+  "asset_type": "skills"
+}

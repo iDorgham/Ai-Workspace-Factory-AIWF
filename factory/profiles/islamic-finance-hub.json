@@ -1,0 +1,23 @@
+{
+  "market_context": "global-industrial",
+  "voice_id": "Enterprise-Professional"
+}
+---
+{
+  "profile": "islamic-finance-hub",
+  "display": "\ud83c\udf19 Islamic Finance Hub",
+  "sector": "11-industry-verticals/islamic-finance",
+  "version": "3.3.1",
+  "description": "Shari'ah compliant financial systems.",
+  "staffing": {
+    "strategy": [
+      "@Sentinel-Orchestrator"
+    ],
+    "execution": [
+      "@Sentinel-Operations"
+    ]
+  },
+  "governance": {
+    "rules": "factory/library/11-industry-verticals/islamic-finance/commands/COMMANDS.md"
+  }
+}

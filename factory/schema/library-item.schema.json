@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Library Item",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "name",
+    "version",
+    "source",
+    "source_path",
+    "tags",
+    "dependencies",
+    "compatibility",
+    "quality_status",
+    "last_synced_at"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "type": {
+      "enum": [
+        "agent",
+        "subagent",
+        "skill",
+        "command",
+        "subcommand",
+        "template",
+        "script"
+      ]
+    },
+    "name": { "type": "string" },
+    "version": { "type": "string" },
+    "source": { "enum": [, "sovereign", "local"] },
+    "source_path": { "type": "string" },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "dependencies": { "type": "array", "items": { "type": "string" } },
+    "compatibility": { "type": "array", "items": { "type": "string" } },
+    "quality_status": { "type": "string" },
+    "last_synced_at": { "type": "string" },
+    "source_contributions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source", "source_path", "synced_at"],
+        "properties": {
+          "source": { "type": "string" },
+          "source_path": { "type": "string" },
+          "synced_at": { "type": "string" }
+        }
+      }
+    }
+  }
+}

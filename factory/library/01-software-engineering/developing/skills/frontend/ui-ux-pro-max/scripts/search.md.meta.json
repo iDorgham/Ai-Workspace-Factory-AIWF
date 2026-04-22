@@ -1,0 +1,28 @@
+{
+  "id": "01-software-engineering/developing/skills/frontend/ui-ux-pro-max/scripts",
+  "type": "skill",
+  "name": "search",
+  "version": "3.3.1",
+  "source": "local",
+  "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Gate-Access/.cursor/skills/ui-ux-pro-max/scripts/search.py",
+  "tags": [
+    "gate-access",
+    "local",
+    "skills"
+  ],
+  "dependencies": [],
+  "compatibility": [
+    "generic"
+  ],
+  "quality_status": "curated",
+  "last_synced_at": "2026-04-14T18:14:38+00:00",
+  "source_contributions": [
+    {
+      "source": "local",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Gate-Access/.cursor/skills/ui-ux-pro-max/scripts/search.py",
+      "synced_at": "2026-04-14T18:05:59+00:00"
+    }
+  ],
+  "category": "01-software-engineering/developing",
+  "asset_type": "skills"
+}

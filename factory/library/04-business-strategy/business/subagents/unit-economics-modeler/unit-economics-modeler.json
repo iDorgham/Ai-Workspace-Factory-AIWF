@@ -1,0 +1,11 @@
+{
+  "id": "unit-economics-modeler",
+  "name": "Unit Economics Modeler",
+  "description": "Calculates and validates unit economics including CAC, LTV, payback period, and contribution margins.",
+  "capabilities": [
+    "cac-ltv-ratio-calculation",
+    "cohort-retention-analysis",
+    "contribution-margin-breakdown",
+    "payback-period-projection"
+  ]
+}

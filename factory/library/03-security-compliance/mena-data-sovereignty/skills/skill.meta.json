@@ -1,0 +1,40 @@
+{
+  "id": "03-security-compliance/mena-data-sovereignty/skills",
+  "type": "skill",
+  "cluster": "05-verticals",
+  "field": "mena-data-sovereignty",
+  "name": "MENA Data Sovereignty & Cloud Architecture",
+  "category": "03-security-compliance/mena-data-sovereignty",
+  "version": "3.3.1",
+  "path": "05-verticals/mena-data-sovereignty/SKILL.md",
+  "source": "manual",
+  "tags": [
+    "05-verticals",
+    "mena",
+    "data-sovereignty",
+    "cloud",
+    "terraform",
+    "pdpl",
+    "nca",
+    "nesa",
+    "encryption",
+    "kms",
+    "data-residency"
+  ],
+  "role": "Cloud infrastructure architecture with data classification engine, Terraform IaC for region-pinned deployment, Transfer Impact Assessments, compliance scanners, and MENA-specific residency rules",
+  "dependencies": [
+    "api-security-patterns",
+    "rbac-permission-system"
+  ],
+  "compatibility": [
+    "generic",
+    "mena-gcc"
+  ],
+  "quality_status": "approved",
+  "power_score": 83,
+  "audit_tier": 1,
+  "created_at": "2026-04-14T22:57:00Z",
+  "updated_at": "2026-04-17T03:17:00Z",
+  "last_synced_at": "2026-04-17T03:17:00Z",
+  "asset_type": "skills"
+}

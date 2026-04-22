@@ -1,0 +1,28 @@
+{
+  "id": "01-software-engineering/developing/templates",
+  "type": "template",
+  "name": "TEMPLATE_E2E_flow",
+  "version": "3.3.1",
+  "source": "local",
+  "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Gate-Access/.cursor/templates/TEMPLATE_E2E_flow.md",
+  "tags": [
+    "gate-access",
+    "local",
+    "templates"
+  ],
+  "dependencies": [],
+  "compatibility": [
+    "generic"
+  ],
+  "quality_status": "curated",
+  "last_synced_at": "2026-04-14T18:05:59+00:00",
+  "source_contributions": [
+    {
+      "source": "local",
+      "source_path": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Gate-Access/.cursor/templates/TEMPLATE_E2E_flow.md",
+      "synced_at": "2026-04-14T18:05:59+00:00"
+    }
+  ],
+  "category": "01-software-engineering/developing",
+  "asset_type": "templates"
+}

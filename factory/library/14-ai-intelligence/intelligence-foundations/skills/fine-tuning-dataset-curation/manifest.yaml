@@ -1,0 +1,15 @@
+name: Fine-Tuning & Dataset Curation
+description: "Universal standards for curating high-fidelity datasets and executing model fine-tuning (SFT/RLHF) pipelines."
+metadata:
+  version: 10.0.0
+  maker: various
+  tier: 💎 OMEGA
+  status: SYNCED
+  logic: dataset-purity
+inputs:
+  - raw_data: "Unstructured domain knowledge"
+outputs:
+  - dataset_jsonl: "Formatted training dataset"
+  - deduplication_report: "Cosine similarity results"
+dependencies:
+  - vector-database-architecture
