@@ -1,0 +1,69 @@
+{
+  "run_date": "2026-04-13T19:35:17.829993",
+  "tests_run": 10,
+  "tests_passed": 10,
+  "tests_failed": 0,
+  "test_results": [
+    {
+      "test_id": 1,
+      "name": "Normal Mode: Auto-select Rank 1",
+      "status": "PASS",
+      "message": "Test passed"
+    },
+    {
+      "test_id": 2,
+      "name": "Forced Mode: --tool qwen",
+      "status": "PASS",
+      "message": "Test passed"
+    },
+    {
+      "test_id": 3,
+      "name": "Explain Mode: --explain-routing",
+      "status": "PASS",
+      "message": "Test passed"
+    },
+    {
+      "test_id": 4,
+      "name": "Parallel Mode: --parallel",
+      "status": "PASS",
+      "message": "Test passed"
+    },
+    {
+      "test_id": 5,
+      "name": "Prefer Mode: --prefer gemini",
+      "status": "PASS",
+      "message": "Test passed"
+    },
+    {
+      "test_id": 6,
+      "name": "Error: Invalid Tool Name",
+      "status": "PASS",
+      "message": "Test passed"
+    },
+    {
+      "test_id": 7,
+      "name": "Error: Conflicting Flags",
+      "status": "PASS",
+      "message": "Test passed"
+    },
+    {
+      "test_id": 8,
+      "name": "Image Optimization: Gemini-Heavy Command",
+      "status": "PASS",
+      "message": "Test passed"
+    },
+    {
+      "test_id": 9,
+      "name": "Bulk Operation: Qwen-Heavy Command",
+      "status": "PASS",
+      "message": "Test passed"
+    },
+    {
+      "test_id": 10,
+      "name": "Fallback Chain: Rank 1 \u2192 Rank 2",
+      "status": "PASS",
+      "message": "Test passed"
+    }
+  ],
+  "logs_generated": []
+}

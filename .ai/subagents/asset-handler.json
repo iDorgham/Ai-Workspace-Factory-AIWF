@@ -1,0 +1,27 @@
+{
+  "id": "asset-handler",
+  "parent_agent": "scraper-agent",
+  "trigger": "/scrape *, /sync (after content-parser)",
+  "single_responsibility": "Download images, convert to WebP, deduplicate by MD5 hash",
+  "input": {
+    "required": {
+      "image_refs": "array<string> \u2014 image URLs from parsed content",
+      "competitor_slug": "string"
+    }
+  },
+  "output": {
+    "asset_manifest": "object<original_url, {local_path: string, format: 'webp', md5: string, size_kb: int, status: 'saved'|'duplicate'|'failed'>}"
+  },
+  "validation": {
+    "deduplicate_by_md5": true,
+    "target_format": "webp",
+    "skip_on_conversion_failure": true,
+    "log_all_failures": true
+  },
+  "writes": [
+    "content/sovereign/scraped/[slug]/scraped/images/",
+    "content/sovereign/scraped/[slug]/scraped/images/manifest.json"
+  ],
+  "error_owner": "asset-handler",
+  "escalates_to": "scraper-agent"
+}

@@ -1,0 +1,34 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "legacy_source": ".ai/sub-agent-contracts.json",
+    "registry_source": ".ai/registry/subagents.registry.json"
+  },
+  "legacy_key_to_subagent_file": {
+    "brand-consultant": ".ai/subagents/brand-consultant.json",
+    "discovery-engine": ".ai/subagents/discovery-engine.json",
+    "profile-builder": ".ai/subagents/profile-builder.json",
+    "delta-detector": ".ai/subagents/delta-detector.json",
+    "ethical-crawler": ".ai/subagents/ethical-crawler.json",
+    "content-parser": ".ai/subagents/content-parser.json",
+    "asset-handler": ".ai/subagents/asset-handler.json",
+    "sync-state-writer": ".ai/subagents/sync-state-writer.json",
+    "blueprint-architect": ".ai/subagents/blueprint-architect.json",
+    "content-generator": ".ai/subagents/content-generator.json",
+    "brand-voice-applier": ".ai/subagents/brand-voice-applier.json",
+    "comparison-analyst": ".ai/subagents/comparison-analyst.json",
+    "keyword-auditor": ".ai/subagents/keyword-auditor.json",
+    "technical-auditor": ".ai/subagents/technical-auditor.json",
+    "image-seo-auditor": ".ai/subagents/image-seo-auditor.json",
+    "tone-analyzer": ".ai/subagents/tone-analyzer.json",
+    "drift-detector": ".ai/subagents/drift-detector.json",
+    "rule-updater": ".ai/subagents/rule-updater.json",
+    "quality-checker": ".ai/subagents/quality-checker.json",
+    "approval-gate": ".ai/subagents/approval-gate.json",
+    "export-packager": ".ai/subagents/export-packager.json",
+    "archive-manager": ".ai/subagents/archive-manager.json",
+    "trend-miner": ".ai/subagents/trend-miner.json",
+    "opportunity-scorer": ".ai/subagents/opportunity-scorer.json",
+    "intel-synthesizer": ".ai/subagents/intel-synthesizer.json"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "sync-state-writer",
+  "parent_agent": "scraper-agent",
+  "trigger": "/sync, /scrape * (final step \u2014 ONLY after all scraping completes and validates)",
+  "single_responsibility": "SOLE writer of sync-status.json. Runs last.",
+  "input": {
+    "required": {
+      "delta_payload": "object \u2014 from delta-detector",
+      "scrape_results": "object<slug, {files_written: int, errors: array}>",
+      "competitor_slug": "string",
+      "timestamp": "ISO8601"
+    }
+  },
+  "output": {
+    "sync_status": "object<{last_sync: ISO8601, total_content: int, new_since_last: int, scrape_state: 'clean'|'partial'|'error', url_hashes: object<url, hash>, errors: array}>"
+  },
+  "validation": {
+    "timestamp_must_be_within_minutes": 5,
+    "counts_must_match_actual_files": true,
+    "rollback_if_write_fails_3x": true
+  },
+  "writes": [
+    "content/sovereign/scraped/[slug]/sync-status.json (AUTHORITATIVE \u2014 no other agent writes this)"
+  ],
+  "error_owner": "sync-state-writer",
+  "escalates_to": "scraper-agent",
+  "critical_note": "If write fails 3x: rollback all scraped files from this run, preserve old sync-status.json"
+}

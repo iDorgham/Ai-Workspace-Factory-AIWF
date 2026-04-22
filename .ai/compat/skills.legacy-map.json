@@ -1,0 +1,33 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "legacy_sources": [
+      ".ai/skill-integration.md",
+      ".ai/skill-integration-map.json"
+    ],
+    "registry_source": ".ai/registry/skills.registry.json"
+  },
+  "legacy_skill_to_registry_id": {
+    "multi-tool-orchestration": "multi-tool-orchestration",
+    "marketing:competitive-analysis": "marketing-competitive-analysis",
+    "marketing:competitive-brief": "marketing-competitive-brief",
+    "data:statistical-analysis": "data-statistical-analysis",
+    "data:data-visualization": "data-data-visualization",
+    "marketing:content-creation": "marketing-content-creation",
+    "marketing:campaign-planning": "marketing-campaign-planning",
+    "brand-voice:guideline-generation": "brand-voice-guideline-generation",
+    "brand-voice:brand-voice-enforcement": "brand-voice-enforcement",
+    "marketing:brand-voice": "marketing-brand-voice",
+    "marketing:brand-review": "marketing-brand-review",
+    "marketing:seo-audit": "marketing-seo-audit",
+    "productivity:memory-management": "productivity-memory-management",
+    "data:interactive-dashboard-builder": "data-interactive-dashboard-builder",
+    "engineering:documentation": "engineering-documentation",
+    "design:critique": "design-critique",
+    "design:ux-copy": "design-ux-copy",
+    "design:accessibility": "design-accessibility",
+    "design:design-system": "design-design-system",
+    "workspace:audit-orchestrator": "workspace-audit-orchestrator",
+    "docs:lint-link-check": "docs-lint-link-check"
+  }
+}

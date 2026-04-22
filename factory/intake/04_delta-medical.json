@@ -1,8 +1,0 @@
-{
-  "client_name": "Delta Medical Research",
-  "client_slug": "04_delta-medical",
-  "workspace_purpose": "healthtech-pro-v11",
-  "profiles": ["healthtech-pro-v11", "legal-brokerage-hub"],
-  "economic_context": "Egypt",
-  "currency": "EGP"
-}

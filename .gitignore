@@ -1,12 +1,20 @@
+# IDE & System
 .DS_Store
 **/__pycache__/
 *.py[cod]
-.ai/
+.venv/
+
+# AI Tool Metadata (Keep IDE-specific metadata local)
 .antigravity/
 .claude/
 .cursor/
 .kilocode/
 .kiro/
-.venv/
 .qwen/
 
+# Factory Outputs & Backups (Local only)
+.backup/
+workspaces/
+
+# AIWF Intelligence Layer (MUST BE TRACKED)
+# We remove .ai/ from the ignore list

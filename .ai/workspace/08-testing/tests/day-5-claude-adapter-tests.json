@@ -1,0 +1,99 @@
+[
+  {
+    "test_id": 1,
+    "name": "Simple Text Generation",
+    "category": "functional",
+    "input": "Write a 50-word description of modern interior design trends",
+    "expected": {
+      "status": "success",
+      "has_output": true,
+      "has_tokens": true,
+      "has_cost": true,
+      "has_latency": true
+    },
+    "validations": [
+      "status equals success",
+      "output length greater than 0",
+      "input_tokens greater than 0",
+      "output_tokens greater than 0",
+      "cost greater than 0",
+      "latency greater than 0",
+      "model equals claude-opus-4-6 or contains claude"
+    ]
+  },
+  {
+    "test_id": 2,
+    "name": "Long Context Processing",
+    "category": "functional",
+    "input": "Analyze this text (2000+ words provided): Lorem ipsum dolor sit amet... [LARGE TEXT]. Provide a 200-word summary of the key themes and concepts discussed. Focus on identifying the main arguments, supporting points, and any conclusions drawn. Structure your analysis as a coherent summary that captures the essence of the original text while being significantly more concise. Pay special attention to any repeated concepts or themes that appear throughout the text. Your summary should be suitable for someone who hasn't read the original material but needs to understand its core message and significance.",
+    "expected": {
+      "status": "success",
+      "has_large_input_tokens": true,
+      "has_substantial_output": true,
+      "cost_reflects_large_input": true
+    },
+    "validations": [
+      "status equals success",
+      "input_tokens greater than 300",
+      "output_tokens greater than 50",
+      "cost greater than 0.01",
+      "output length greater than 100",
+      "no truncation in output"
+    ]
+  },
+  {
+    "test_id": 3,
+    "name": "Cost Calculation Accuracy",
+    "category": "functional",
+    "input": "Simple test",
+    "expected": {
+      "status": "success",
+      "cost_calculated": true,
+      "cost_formula_correct": true
+    },
+    "validations": [
+      "status equals success",
+      "cost equals (input_tokens / 1000 * 0.003) + (output_tokens / 1000 * 0.009)",
+      "cost is not zero",
+      "cost is positive",
+      "cost is reasonable (less than 1.00)"
+    ]
+  },
+  {
+    "test_id": 4,
+    "name": "Performance Metrics Tracking",
+    "category": "functional",
+    "input": "What is 2+2?",
+    "expected": {
+      "status": "success",
+      "latency_tracked": true,
+      "metrics_valid": true
+    },
+    "validations": [
+      "status equals success",
+      "latency greater than 0",
+      "latency less than 30",
+      "latency in seconds reasonable",
+      "input_tokens greater than 0",
+      "output_tokens greater than 0"
+    ]
+  },
+  {
+    "test_id": 5,
+    "name": "Error Handling",
+    "category": "error_handling",
+    "input": null,
+    "expected": {
+      "status": "error",
+      "error_handled": true,
+      "recovery_suggested": true
+    },
+    "validations": [
+      "status equals error or error_type present",
+      "error message is non-empty",
+      "recovery strategy suggested or provided",
+      "user_message is helpful"
+    ],
+    "note": "This test validates the error handling path. It may require special setup (e.g., invalid API key or network interruption) to trigger a real error."
+  }
+]

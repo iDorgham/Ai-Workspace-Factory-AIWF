@@ -1,0 +1,17 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "legacy_source": ".ai/agents.md",
+    "registry_source": ".ai/registry/agents.registry.json"
+  },
+  "legacy_section_to_agent_file": {
+    "guide-agent": ".ai/agents/guide-agent.md",
+    "research-agent": ".ai/agents/research-agent.md",
+    "scraper-agent": ".ai/agents/scraper-agent.md",
+    "creator-agent": ".ai/agents/creator-agent.md",
+    "seo-agent": ".ai/agents/seo-agent.md",
+    "brand-agent": ".ai/agents/brand-agent.md",
+    "workflow-agent": ".ai/agents/workflow-agent.md",
+    "memory-manager": ".ai/agents/memory-manager.md"
+  }
+}

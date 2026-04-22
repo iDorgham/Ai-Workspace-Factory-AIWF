@@ -1,0 +1,37 @@
+[
+  {
+    "test_id": 1,
+    "name": "Code Generation",
+    "input": "Generate a Python function to calculate the factorial of a number",
+    "expected": {"status": "success", "has_code": true},
+    "validations": ["status equals success", "contains def or function keyword", "syntactically valid"]
+  },
+  {
+    "test_id": 2,
+    "name": "Code Review",
+    "input": "Review this Python code for bugs: def foo(x): return x*2",
+    "expected": {"status": "success", "analysis_provided": true},
+    "validations": ["status equals success", "analysis contains feedback"]
+  },
+  {
+    "test_id": 3,
+    "name": "Multi-Language Support",
+    "input": "Write a simple hello world in JavaScript",
+    "expected": {"status": "success", "javascript_code": true},
+    "validations": ["status equals success", "contains JavaScript syntax"]
+  },
+  {
+    "test_id": 4,
+    "name": "Bug Detection",
+    "input": "Find bugs in: def divide(a,b): return a/b",
+    "expected": {"status": "success", "issues_found": true},
+    "validations": ["status equals success", "mentions division by zero"]
+  },
+  {
+    "test_id": 5,
+    "name": "Documentation Generation",
+    "input": "Generate docstring for: def calculate_average(numbers): return sum(numbers)/len(numbers)",
+    "expected": {"status": "success", "docstring_provided": true},
+    "validations": ["status equals success", "docstring format valid"]
+  }
+]

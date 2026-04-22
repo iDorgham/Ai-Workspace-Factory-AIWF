@@ -1,0 +1,28 @@
+{
+  "id": "blueprint-architect",
+  "parent_agent": "creator-agent",
+  "trigger": "/create * (first step)",
+  "single_responsibility": "Select content structure based on competitor gap analysis and topic",
+  "input": {
+    "required": {
+      "topic": "string \u2014 from user command",
+      "content_type": "enum: website-pages | blog-posts | projects | landing-pages",
+      "brand_positioning": "string \u2014 from content/sovereign/reference/market-positioning.md"
+    },
+    "optional": {
+      "competitor_gap_analysis": "object \u2014 structural patterns from scraped competitor content",
+      "keyword_targets": "array<string> \u2014 from content/sovereign/_references/keyword-maps.md",
+      "template": "string \u2014 from .ai/templates/content-blueprints/[type].md"
+    }
+  },
+  "output": {
+    "outline": "object<{sections: array<{heading: string, purpose: string, keywords: array<string>, inspiration_source?: string}>, estimated_word_count: int, target_keywords: array<string>}>"
+  },
+  "validation": {
+    "outline_structural_similarity_to_any_competitor_maximum": 0.8,
+    "minimum_sections": 4,
+    "keywords_must_be_present": true
+  },
+  "error_owner": "blueprint-architect",
+  "escalates_to": "creator-agent"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "drift-detector",
+  "parent_agent": "brand-agent",
+  "trigger": "/refine brand voice",
+  "single_responsibility": "Scan recent content files for tone violations against current style rules",
+  "input": {
+    "required": {
+      "content_files": "array<{path, markdown}> \u2014 recent files from content/",
+      "style_rules": "string \u2014 from content/sovereign/reference/brand-voice/style-rules.md"
+    }
+  },
+  "output": {
+    "drift_report": "object<{violations: array<{file_path, line, rule_name, severity: 'minor'|'major', excerpt}>, false_positive_rate_estimate: float}>"
+  },
+  "validation": {
+    "false_positive_rate_maximum": 0.2,
+    "flag_for_manual_review_if_exceeded": true
+  },
+  "error_owner": "drift-detector",
+  "escalates_to": "brand-agent"
+}

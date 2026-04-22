@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CommandBinding",
+  "type": "object",
+  "required": ["id", "pattern_refs", "primary_agent", "subagent_pipeline", "skill_refs"],
+  "properties": {
+    "id": { "type": "string" },
+    "pattern_refs": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "primary_agent": { "type": "string" },
+    "subagent_pipeline": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "skill_refs": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "notes": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,34 @@
+================================================================================
+GALLERIA WORKSPACE ORGANIZATION SUMMARY
+================================================================================
+Generated (UTC): 2026-04-14T14:34:48.882882+00:00
+Status: ✅ HEALTHY
+
+Canonical status source: .ai/workspace/status.json
+Machine-readable index: .ai/workspace/index.json
+
+================================================================================
+CURRENT METRICS
+================================================================================
+Total files: 373
+Markdown files: 208
+JSON files: 75
+Projects: 4
+Required-path gaps: 0
+Projects missing README: none
+Projects missing contract: none
+
+================================================================================
+PROJECTS
+================================================================================
+- dorgham: owner=Dorgham, status=active, README=yes, missing_required=none
+- sovereign: owner=Dorgham, status=active, README=yes, missing_required=none
+- gateflow: owner=Dorgham, status=active, README=yes, missing_required=none
+- mediabubble: owner=Dorgham, status=active, README=yes, missing_required=none
+
+================================================================================
+NOTES
+================================================================================
+- This file is generated from workspace state; do not treat it as canonical truth.
+- Canonical status lives in .ai/workspace/status.json.
+- Regenerate with: python3 .ai/scripts/workspace_health.py

@@ -1,0 +1,332 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "title": "Sovereign Universal Tool Interface",
+    "description": "Canonical schema for all AI tool adapters. Every tool must implement this contract.",
+    "owner": "guide-agent",
+    "last_updated": "2026-04-13"
+  },
+
+  "adapter_schema": {
+    "tool_id": {
+      "type": "string",
+      "description": "Unique identifier: claude, claude-code, codex, gemini, copilot, kilo, qwen, antigravity, opencode",
+      "example": "claude"
+    },
+    "tool_name": {
+      "type": "string",
+      "description": "Human-readable name",
+      "example": "Claude (Claude.ai)"
+    },
+    "interface_version": {
+      "type": "string",
+      "description": "Version of this interface the adapter implements",
+      "example": "1.0.0"
+    },
+    "execution_mode": {
+      "type": "string",
+      "enum": ["interactive", "async", "batch", "cli"],
+      "description": "How the tool executes commands"
+    },
+    "capabilities": {
+      "type": "object",
+      "properties": {
+        "reasoning": {
+          "type": "boolean",
+          "description": "Supports logical reasoning and multi-step analysis"
+        },
+        "code_generation": {
+          "type": "boolean",
+          "description": "Can generate and modify code"
+        },
+        "code_execution": {
+          "type": "boolean",
+          "description": "Can execute code locally"
+        },
+        "file_io": {
+          "type": "boolean",
+          "description": "Can read/write files directly"
+        },
+        "api_calls": {
+          "type": "boolean",
+          "description": "Can make external API requests"
+        },
+        "multimodal": {
+          "type": "boolean",
+          "description": "Supports images, video, audio input"
+        },
+        "streaming": {
+          "type": "boolean",
+          "description": "Supports streaming output"
+        },
+        "function_calling": {
+          "type": "boolean",
+          "description": "Supports structured function/tool calling"
+        }
+      }
+    },
+    "constraints": {
+      "type": "object",
+      "properties": {
+        "context_window": {
+          "type": "integer",
+          "description": "Max tokens per request",
+          "example": 200000
+        },
+        "max_output_tokens": {
+          "type": "integer",
+          "description": "Max tokens in response",
+          "example": 4096
+        },
+        "rate_limit": {
+          "type": "string",
+          "description": "Rate limit (requests per minute or tokens per minute)",
+          "example": "requests_per_minute: 60"
+        },
+        "timeout_seconds": {
+          "type": "integer",
+          "description": "Max execution time before timeout",
+          "example": 300
+        },
+        "requires_authentication": {
+          "type": "boolean"
+        },
+        "requires_local_setup": {
+          "type": "boolean",
+          "description": "Must run on user's machine (vs cloud-hosted)"
+        }
+      }
+    },
+    "command_input_schema": {
+      "type": "object",
+      "description": "How this tool receives commands from guide-agent",
+      "properties": {
+        "format": {
+          "type": "string",
+          "enum": ["natural_language", "json", "cli_args", "http_json"],
+          "description": "Input format this tool accepts"
+        },
+        "transport": {
+          "type": "string",
+          "enum": ["conversation", "stdin", "api_post", "file_watch"],
+          "description": "How command is delivered to tool"
+        },
+        "example_input": {
+          "type": "object",
+          "description": "Concrete example of a command",
+          "properties": {
+            "command": { "type": "string" },
+            "context": { "type": "object" },
+            "parameters": { "type": "object" }
+          }
+        }
+      }
+    },
+    "command_output_schema": {
+      "type": "object",
+      "description": "What this tool outputs and how guide-agent receives it",
+      "properties": {
+        "format": {
+          "type": "string",
+          "enum": ["json", "markdown", "text", "yaml", "mixed"],
+          "description": "Output format"
+        },
+        "transport": {
+          "type": "string",
+          "enum": ["stdout", "file", "api_response", "callback_webhook"],
+          "description": "How output is delivered"
+        },
+        "required_fields": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Fields that must be present in every output",
+          "example": ["status", "data", "execution_time_ms", "tool_id"]
+        },
+        "example_output": {
+          "type": "object",
+          "description": "Concrete example of output"
+        }
+      }
+    },
+    "state_sync_protocol": {
+      "type": "object",
+      "description": "How this tool stays in sync with .ai/memory/multi-tool-state/",
+      "properties": {
+        "reads_state_before_command": {
+          "type": "boolean",
+          "description": "Must read state.json before executing"
+        },
+        "writes_state_after_command": {
+          "type": "boolean",
+          "description": "Must write session state after completion"
+        },
+        "state_file_path": {
+          "type": "string",
+          "description": "Where tool-specific state is stored",
+          "example": ".ai/memory/multi-tool-state/claude.session.json"
+        },
+        "lock_mechanism": {
+          "type": "string",
+          "enum": ["file_lock", "json_lock", "none"],
+          "description": "How concurrent access is prevented"
+        },
+        "conflict_resolution": {
+          "type": "string",
+          "enum": ["last_write_wins", "version_branch", "manual_merge"],
+          "description": "If two tools write simultaneously"
+        }
+      }
+    },
+    "file_ownership_rules": {
+      "type": "object",
+      "description": "How this tool respects data ownership",
+      "properties": {
+        "can_write_to_content": {
+          "type": "boolean",
+          "description": "Can write to content/ (creator-agent typically owns)"
+        },
+        "can_write_to_reference": {
+          "type": "boolean",
+          "description": "Can write to reference/ (brand-agent typically owns)"
+        },
+        "can_write_to_competitors": {
+          "type": "boolean",
+          "description": "Can write to content/sovereign/scraped/ (research/scraper agents own)"
+        },
+        "can_write_to_logs": {
+          "type": "boolean",
+          "description": "Can append to logs/"
+        },
+        "owned_files": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Files this tool is authoritative owner of",
+          "example": [".ai/memory/multi-tool-state/[tool].session.json"]
+        }
+      }
+    },
+    "error_handling": {
+      "type": "object",
+      "description": "How this tool reports and recovers from errors",
+      "properties": {
+        "error_format": {
+          "type": "string",
+          "enum": ["json_error", "exception_text", "structured_log"],
+          "description": "How errors are formatted"
+        },
+        "timeout_behavior": {
+          "type": "string",
+          "enum": ["return_partial", "abort_clean", "retry_auto"],
+          "description": "What happens if command times out"
+        },
+        "retry_logic": {
+          "type": "string",
+          "description": "Exponential backoff? Immediate retry? Manual?",
+          "example": "exponential_backoff_2s_10s_20s"
+        },
+        "fallback_enabled": {
+          "type": "boolean",
+          "description": "Can guide-agent fall back to another tool on failure"
+        }
+      }
+    },
+    "performance_profile": {
+      "type": "object",
+      "description": "Operational characteristics for routing decisions",
+      "properties": {
+        "latency_ms_p50": {
+          "type": "integer",
+          "description": "Median response time",
+          "example": 800
+        },
+        "latency_ms_p95": {
+          "type": "integer",
+          "description": "95th percentile response time",
+          "example": 3000
+        },
+        "cost_per_1k_tokens": {
+          "type": "number",
+          "description": "In USD if applicable",
+          "example": 0.01
+        },
+        "success_rate_percent": {
+          "type": "number",
+          "description": "Observed uptime/success",
+          "example": 99.5
+        },
+        "cold_start_ms": {
+          "type": "integer",
+          "description": "Time to initialize if not running",
+          "example": 0
+        }
+      }
+    },
+    "cli_integration": {
+      "type": "object",
+      "description": "If this tool has a CLI, how to invoke it",
+      "properties": {
+        "has_cli": {
+          "type": "boolean"
+        },
+        "cli_binary_path": {
+          "type": "string",
+          "description": "Path to executable (for local tools)",
+          "example": "/usr/local/bin/gemini"
+        },
+        "cli_example_command": {
+          "type": "string",
+          "description": "How to invoke the tool from command line",
+          "example": "sovereign-gemini /create blog-posts --topic ai --async"
+        },
+        "cli_stdin_mode": {
+          "type": "boolean",
+          "description": "Accepts input via stdin"
+        },
+        "cli_json_output": {
+          "type": "boolean",
+          "description": "Supports --json-output flag for structured output"
+        }
+      }
+    }
+  },
+
+  "command_routing_fields": {
+    "command": { "type": "string", "description": "Sovereign command (e.g., /create blog-posts)" },
+    "tool_ranking": {
+      "type": "array",
+      "description": "Ranked preference order for this command",
+      "items": {
+        "type": "object",
+        "properties": {
+          "tool_id": { "type": "string" },
+          "rank": { "type": "integer" },
+          "reason": { "type": "string" },
+          "required_capabilities": { "type": "array" },
+          "fallback_on": { "type": "string" }
+        }
+      }
+    }
+  },
+
+  "multi_tool_execution_modes": {
+    "sequential": {
+      "description": "Tool A finishes → Tool B starts. Safer, slower.",
+      "concurrency": 1
+    },
+    "parallel": {
+      "description": "Multiple tools run simultaneously. Must have merge logic.",
+      "concurrency": "n",
+      "requires": ["conflict_resolution", "state_sync"]
+    },
+    "fallback": {
+      "description": "Try Tool A; if fails, try Tool B. First success wins.",
+      "concurrency": 1,
+      "requires": ["error_detection", "state_rollback"]
+    },
+    "canary": {
+      "description": "Run on Tool A (primary); shadow run on Tool B. Compare outputs.",
+      "concurrency": "n",
+      "requires": ["output_comparison", "logging"]
+    }
+  }
+}

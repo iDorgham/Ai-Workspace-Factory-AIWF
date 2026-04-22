@@ -1,0 +1,235 @@
+{
+  "test_suite": "day-4-smoke-tests",
+  "date": "2026-04-13",
+  "total_tests": 10,
+  "description": "End-to-end smoke tests validating Phase 2a + Phase 1 integration",
+  "tests": [
+    {
+      "test_id": 1,
+      "name": "Normal Mode: Auto-select Rank 1",
+      "category": "integration",
+      "input": "/create blog-posts",
+      "expected": {
+        "status": "success",
+        "tool_selected": "copilot",
+        "tool_rank": 1,
+        "fallback_used": false,
+        "mode": "normal"
+      },
+      "validations": [
+        "Output is not empty",
+        "workflow.jsonl contains entry with command='/create blog-posts'",
+        "Entry has tool='copilot' and status='success'",
+        "tool-performance.jsonl contains latency measurement",
+        "Execution time < 5 seconds"
+      ],
+      "description": "Happy path: /create blog-posts with no flags should auto-select Copilot (Rank 1)"
+    },
+    {
+      "test_id": 2,
+      "name": "Forced Mode: --tool qwen",
+      "category": "integration",
+      "input": "/create blog-posts --tool qwen",
+      "expected": {
+        "status": "success",
+        "tool_selected": "qwen",
+        "tool_forced": true,
+        "fallback_used": false,
+        "mode": "forced"
+      },
+      "validations": [
+        "Output is not empty",
+        "workflow.jsonl entry has tool='qwen'",
+        "Entry has tool_forced=true",
+        "No fallback attempted (tool_rank != 2)"
+      ],
+      "description": "User forces Qwen execution with --tool qwen flag"
+    },
+    {
+      "test_id": 3,
+      "name": "Explain Mode: --explain-routing",
+      "category": "integration",
+      "input": "/create blog-posts --explain-routing",
+      "expected": {
+        "status": "explanation",
+        "no_execution": true,
+        "mode": "explain",
+        "contains_ranking": true
+      },
+      "validations": [
+        "Response status is 'explanation'",
+        "Output includes tool ranking",
+        "No actual tool execution occurred",
+        "workflow.jsonl has entry with status='explanation'",
+        "Latency < 500ms (no tool execution)"
+      ],
+      "description": "Show tool ranking explanation without executing any tool"
+    },
+    {
+      "test_id": 4,
+      "name": "Parallel Mode: --parallel",
+      "category": "integration",
+      "input": "/create blog-posts --parallel",
+      "expected": {
+        "status": "success_both",
+        "tools_executed": ["copilot", "codex"],
+        "mode": "parallel",
+        "both_outputs": true
+      },
+      "validations": [
+        "Both Copilot and Codex outputs generated",
+        "workflow.jsonl has 2 entries (one per tool)",
+        "First entry: tool='copilot'",
+        "Second entry: tool='codex'",
+        "Both have status='success'",
+        "Execution time < 10 seconds (concurrent)"
+      ],
+      "description": "Run Rank 1 (Copilot) and Rank 2 (Codex) simultaneously with --parallel"
+    },
+    {
+      "test_id": 5,
+      "name": "Prefer Mode: --prefer gemini",
+      "category": "integration",
+      "input": "/create blog-posts --prefer gemini",
+      "expected": {
+        "status": "success",
+        "tool_selected": "copilot",
+        "fallback_reason": "none",
+        "mode": "normal",
+        "prefer_honored": false
+      },
+      "validations": [
+        "Copilot (Rank 1) executes successfully",
+        "Prefer not needed (Rank 1 succeeded)",
+        "workflow.jsonl shows tool='copilot'",
+        "Entry shows prefer='gemini' in flags"
+      ],
+      "description": "Set preferred fallback with --prefer gemini (only used if Rank 1 fails)"
+    },
+    {
+      "test_id": 6,
+      "name": "Error: Invalid Tool Name",
+      "category": "error_handling",
+      "input": "/create blog-posts --tool invalid-tool-xyz",
+      "expected": {
+        "status": "error",
+        "error_type": "invalid_tool",
+        "no_execution": true,
+        "mode": "forced"
+      },
+      "validations": [
+        "Error message returned",
+        "Error includes list of available tools",
+        "workflow.jsonl has entry with status='error'",
+        "Entry has error_type='invalid_tool'",
+        "No tool actually executed"
+      ],
+      "description": "User specifies non-existent tool with --tool, should return error with suggestions"
+    },
+    {
+      "test_id": 7,
+      "name": "Error: Conflicting Flags",
+      "category": "error_handling",
+      "input": "/create blog-posts --tool gemini --explain-routing",
+      "expected": {
+        "status": "error",
+        "error_type": "conflicting_flags",
+        "no_execution": true
+      },
+      "validations": [
+        "Error message about conflicting flags",
+        "Explains why --tool and --explain-routing can't be used together",
+        "Suggests alternatives",
+        "workflow.jsonl has entry with error_type='conflicting_flags'"
+      ],
+      "description": "User tries to force tool AND see ranking explanation (mutually exclusive)"
+    },
+    {
+      "test_id": 8,
+      "name": "Image Optimization: Gemini-Heavy Command",
+      "category": "command_routing",
+      "input": "/optimize images",
+      "expected": {
+        "status": "success",
+        "tool_selected": "gemini",
+        "tool_rank": 1,
+        "reason": "multimodal_required"
+      },
+      "validations": [
+        "Gemini selected (Rank 1 for /optimize images)",
+        "workflow.jsonl has tool='gemini'",
+        "Command type routing worked correctly",
+        "Optimization strategy was 'multimodal_required'"
+      ],
+      "description": "/optimize images is multimodal, should prefer Gemini over Copilot"
+    },
+    {
+      "test_id": 9,
+      "name": "Bulk Operation: Qwen-Heavy Command",
+      "category": "command_routing",
+      "input": "/export",
+      "expected": {
+        "status": "success",
+        "tool_selected": "qwen",
+        "tool_rank": 1,
+        "reason": "speed_cost"
+      },
+      "validations": [
+        "Qwen selected (Rank 1 for /export)",
+        "workflow.jsonl has tool='qwen'",
+        "Optimization strategy was 'speed_cost'",
+        "Cost-optimized tool selected correctly"
+      ],
+      "description": "/export is bulk operation, should prefer Qwen (cheapest) over Copilot"
+    },
+    {
+      "test_id": 10,
+      "name": "Fallback Chain: Rank 1 → Rank 2",
+      "category": "fallback_logic",
+      "input": "/create blog-posts",
+      "setup": {
+        "rank_1_fails": true,
+        "rank_2_succeeds": true
+      },
+      "expected": {
+        "status": "success",
+        "tool_used_initial": "copilot",
+        "tool_used_final": "codex",
+        "tool_rank": 2,
+        "fallback_used": true,
+        "fallback_from": "copilot"
+      },
+      "validations": [
+        "Copilot attempted first (Rank 1)",
+        "Copilot failed (simulated)",
+        "Codex attempted as fallback (Rank 2)",
+        "Codex succeeded",
+        "workflow.jsonl shows both attempts",
+        "Entry has fallback_used=true and fallback_from='copilot'"
+      ],
+      "description": "Fallback chain: Rank 1 (Copilot) fails, Rank 2 (Codex) succeeds"
+    }
+  ],
+  "metadata": {
+    "phase": "2a + 1",
+    "day": "4",
+    "type": "smoke_tests",
+    "status": "ready_for_execution",
+    "expected_pass_rate": "10/10",
+    "owner": "guide-agent",
+    "dependencies": [
+      ".ai/scripts/tool-router.py",
+      ".ai/scripts/test-flag-parser.py",
+      ".ai/commands-multi-tool.md",
+      ".ai/tool-registry.json",
+      "logs/workflow.jsonl (will be appended)",
+      "logs/tool-performance.jsonl (will be appended)"
+    ],
+    "notes": [
+      "These are integration smoke tests, not unit tests",
+      "They exercise both Phase 2a and Phase 1 together",
+      "Test 10 requires mock tool failure simulation",
+      "All results logged to workflow.jsonl and tool-performance.jsonl"
+    ]
+  }
+}

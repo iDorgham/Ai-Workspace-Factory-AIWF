@@ -1,0 +1,25 @@
+{
+  "id": "brand-voice-applier",
+  "parent_agent": "creator-agent",
+  "trigger": "/create * (after content-generator), /polish (via seo-agent hand-off)",
+  "single_responsibility": "Apply and validate brand voice compliance. Block if < 92%.",
+  "input": {
+    "required": {
+      "draft_markdown": "string \u2014 from content-generator",
+      "style_rules": "string \u2014 from content/sovereign/reference/brand-voice/style-rules.md",
+      "glossary": "string \u2014 from content/sovereign/reference/brand-voice/glossary.md"
+    }
+  },
+  "output": {
+    "adjusted_markdown": "string \u2014 tone-adjusted Markdown",
+    "tone_report": "object<{compliance_score: float, drift_flags: array<{location, rule_violated, severity}>, applied_rules: array<string>}>"
+  },
+  "validation": {
+    "compliance_threshold": 0.92,
+    "max_retries_on_failure": 2,
+    "block_export_if_below_threshold": true,
+    "flag_for_review_after_max_retries": true
+  },
+  "error_owner": "brand-voice-applier",
+  "escalates_to": "creator-agent"
+}

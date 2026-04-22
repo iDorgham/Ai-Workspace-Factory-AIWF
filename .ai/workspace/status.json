@@ -1,0 +1,11 @@
+{
+  "generated_at_utc": "2026-04-14T14:34:48.882882+00:00",
+  "health": {
+    "status": "healthy",
+    "required_paths_missing_total": 0,
+    "projects_missing_readme": [],
+    "projects_missing_contract": []
+  },
+  "canonical_source": ".ai/workspace/status.json",
+  "index_source": ".ai/workspace/index.json"
+}

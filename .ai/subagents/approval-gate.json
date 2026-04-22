@@ -1,0 +1,25 @@
+{
+  "id": "approval-gate",
+  "parent_agent": "workflow-agent",
+  "trigger": "/approve",
+  "single_responsibility": "Check quality-report.json, lock approved content",
+  "input": {
+    "required": {
+      "quality_report": "object \u2014 from .ai/logs/quality-report.json",
+      "content_metadata": "object \u2014 YAML frontmatter from content files"
+    }
+  },
+  "output": {
+    "approval_result": "object<{approved: bool, approved_at: ISO8601|null, failed_gates: array<string>}>"
+  },
+  "validation": {
+    "all_gates_must_pass": true,
+    "quality_report_must_exist": true,
+    "block_if_any_gate_fails": true
+  },
+  "writes": [
+    "content/[type]/[slug].md frontmatter (status: 'approved', approved_at)"
+  ],
+  "error_owner": "approval-gate",
+  "escalates_to": "workflow-agent"
+}

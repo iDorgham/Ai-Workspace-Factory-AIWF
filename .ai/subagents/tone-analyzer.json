@@ -1,0 +1,23 @@
+{
+  "id": "tone-analyzer",
+  "parent_agent": "brand-agent",
+  "trigger": "/extract brand voice from [source]",
+  "single_responsibility": "Extract lexicon, pacing, CTA style from source text",
+  "input": {
+    "required": {
+      "source_text": "string \u2014 at least 10 sample passages"
+    }
+  },
+  "output": {
+    "voice_profile": "object<{lexicon: array<string>, sentence_avg_words: float, tone_intensity: 'formal'|'conversational'|'authoritative'|'warm', cta_style: string, adjective_density: float, examples: array<string>}>"
+  },
+  "validation": {
+    "minimum_samples_analyzed": 10,
+    "cluster_match_required": true
+  },
+  "writes": [
+    "content/sovereign/reference/brand-voice/voice-refinement.md"
+  ],
+  "error_owner": "tone-analyzer",
+  "escalates_to": "brand-agent"
+}

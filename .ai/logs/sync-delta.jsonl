@@ -1,0 +1,2 @@
+{"timestamp": "2026-04-13T07:05:25.183585+00:00", "event": "sync_completed", "scope": "projects", "competitors_checked": 6, "total_new_urls": 0, "total_files_written": 0, "total_errors": 0}
+{"timestamp": "2026-04-13T07:56:35.046634+00:00", "event": "sync_completed", "scope": "projects", "competitors_checked": 6, "total_new_urls": 0, "total_files_written": 1807, "total_errors": 12}

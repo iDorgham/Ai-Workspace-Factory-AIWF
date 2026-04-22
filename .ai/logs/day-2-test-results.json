@@ -1,0 +1,68 @@
+{
+  "run_date": "2026-04-13T19:35:17.792213",
+  "tests_run": 10,
+  "tests_passed": 10,
+  "tests_failed": 0,
+  "test_results": [
+    {
+      "test_id": 1,
+      "name": "Normal Command (No Flags)",
+      "status": "PASS",
+      "message": "All assertions passed"
+    },
+    {
+      "test_id": 2,
+      "name": "Force Tool (--tool qwen)",
+      "status": "PASS",
+      "message": "All assertions passed"
+    },
+    {
+      "test_id": 3,
+      "name": "Explain Routing (--explain-routing)",
+      "status": "PASS",
+      "message": "All assertions passed"
+    },
+    {
+      "test_id": 4,
+      "name": "Parallel Execution (--parallel)",
+      "status": "PASS",
+      "message": "All assertions passed"
+    },
+    {
+      "test_id": 5,
+      "name": "Prefer Fallback (--prefer gemini)",
+      "status": "PASS",
+      "message": "All assertions passed"
+    },
+    {
+      "test_id": 6,
+      "name": "Error: Invalid Tool Name",
+      "status": "PASS",
+      "message": "All assertions passed"
+    },
+    {
+      "test_id": 7,
+      "name": "Error: Unavailable Tool",
+      "status": "PASS",
+      "message": "All assertions passed"
+    },
+    {
+      "test_id": 8,
+      "name": "Error: Conflicting Flags (--tool + --explain-routing)",
+      "status": "PASS",
+      "message": "All assertions passed"
+    },
+    {
+      "test_id": 9,
+      "name": "Error: Conflicting Flags (--tool + --parallel)",
+      "status": "PASS",
+      "message": "All assertions passed"
+    },
+    {
+      "test_id": 10,
+      "name": "Error: Insufficient Tools for Parallel",
+      "status": "PASS",
+      "message": "All assertions passed"
+    }
+  ]
+}

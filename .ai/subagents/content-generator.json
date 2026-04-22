@@ -1,0 +1,33 @@
+{
+  "id": "content-generator",
+  "parent_agent": "creator-agent",
+  "trigger": "/create * (after blueprint-architect)",
+  "single_responsibility": "Write original Markdown body. Check originality only.",
+  "input": {
+    "required": {
+      "outline": "object \u2014 from blueprint-architect",
+      "brand_voice_rules": "string \u2014 from content/sovereign/reference/brand-voice/style-rules.md",
+      "keyword_targets": "array<string>"
+    }
+  },
+  "output": {
+    "draft_markdown": "string \u2014 full Markdown with YAML frontmatter",
+    "frontmatter": "object<{title, meta_description, keywords: array, author, created_at: ISO8601, version: 1, tone_score: null, originality_score: null, status: 'draft'}>",
+    "originality_report": "object<{score: float, flagged_passages: array<{text, similarity_source}>}>"
+  },
+  "validation": {
+    "semantic_similarity_maximum": 0.15,
+    "keyword_density_range": [
+      0.01,
+      0.02
+    ],
+    "retry_on_similarity_breach": true,
+    "max_retries": 2,
+    "retry_strategy": "structural_shift_with_new_examples"
+  },
+  "writes": [
+    "content/[type]/[slug].md (draft)"
+  ],
+  "error_owner": "content-generator",
+  "escalates_to": "creator-agent"
+}

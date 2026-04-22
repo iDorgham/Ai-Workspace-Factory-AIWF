@@ -1,0 +1,19 @@
+{
+  "skill_id": "responsive-design",
+  "last_updated": "2026-04-22T07:09:13Z",
+  "correction_patterns": [
+    {
+      "project": "001_learn_project",
+      "input": "Make the header more responsive",
+      "output_id": "header-v1",
+      "timestamp": "2026-04-22T08:00:00Z"
+    },
+    {
+      "project": "001_learn_project",
+      "input": "Fix padding on mobile view",
+      "output_id": "header-v2",
+      "timestamp": "2026-04-22T08:10:00Z"
+    }
+  ],
+  "status": "draft"
+}

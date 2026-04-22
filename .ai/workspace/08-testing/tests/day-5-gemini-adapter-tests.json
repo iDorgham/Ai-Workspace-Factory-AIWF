@@ -1,0 +1,39 @@
+[
+  {
+    "test_id": 1,
+    "name": "Text-Only Generation",
+    "input": "Write a 100-word summary of modern architecture styles",
+    "expected": {"status": "success", "has_output": true},
+    "validations": ["status equals success", "output length > 50", "cost < 0.01"]
+  },
+  {
+    "test_id": 2,
+    "name": "Image Analysis",
+    "input": "Analyze this interior design image and describe the style",
+    "images": ["/tmp/test-image.jpg"],
+    "expected": {"status": "success", "has_image_tokens": true},
+    "validations": ["status equals success", "output mentions design elements"]
+  },
+  {
+    "test_id": 3,
+    "name": "Multimodal Combined",
+    "input": "Compare these two room styles in the images",
+    "images": ["/tmp/image1.jpg", "/tmp/image2.jpg"],
+    "expected": {"status": "success", "multimodal": true},
+    "validations": ["status equals success", "comparison present"]
+  },
+  {
+    "test_id": 4,
+    "name": "Cost Efficiency Verification",
+    "input": "Test",
+    "expected": {"status": "success", "cost_cheaper_than_claude": true},
+    "validations": ["cost < 0.001", "cost calculation correct"]
+  },
+  {
+    "test_id": 5,
+    "name": "Performance - Fast Latency",
+    "input": "Quick response test",
+    "expected": {"status": "success", "latency_fast": true},
+    "validations": ["latency < 1.5", "latency reasonable"]
+  }
+]

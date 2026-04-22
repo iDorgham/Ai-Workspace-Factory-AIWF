@@ -1,0 +1,104 @@
+{
+  "run_date": "2026-04-13T19:35:17.248691",
+  "tests_run": 16,
+  "tests_passed": 16,
+  "tests_failed": 0,
+  "test_results": [
+    {
+      "test_id": 1,
+      "name": "Normal Mode: Rank 1 Succeeds",
+      "status": "PASS",
+      "message": "All assertions passed"
+    },
+    {
+      "test_id": 2,
+      "name": "Normal Mode: Rank 1 Fails, Rank 2 Succeeds",
+      "status": "PASS",
+      "message": "All assertions passed"
+    },
+    {
+      "test_id": 3,
+      "name": "Normal Mode: All Ranks Fail",
+      "status": "PASS",
+      "message": "All assertions passed"
+    },
+    {
+      "test_id": 4,
+      "name": "Explain Mode: Show Ranking",
+      "status": "PASS",
+      "message": "All assertions passed"
+    },
+    {
+      "test_id": 5,
+      "name": "Explain Mode: With Performance Metrics",
+      "status": "PASS",
+      "message": "All assertions passed"
+    },
+    {
+      "test_id": 6,
+      "name": "Forced Mode: Execute Specific Tool Success",
+      "status": "PASS",
+      "message": "All assertions passed"
+    },
+    {
+      "test_id": 7,
+      "name": "Forced Mode: Forced Tool Fails (No Fallback)",
+      "status": "PASS",
+      "message": "All assertions passed"
+    },
+    {
+      "test_id": 8,
+      "name": "Forced Mode: Forced Tool Unavailable",
+      "status": "PASS",
+      "message": "All assertions passed"
+    },
+    {
+      "test_id": 9,
+      "name": "Parallel Mode: Both Tools Succeed",
+      "status": "PASS",
+      "message": "All assertions passed"
+    },
+    {
+      "test_id": 10,
+      "name": "Parallel Mode: One Tool Fails, One Succeeds",
+      "status": "PASS",
+      "message": "All assertions passed"
+    },
+    {
+      "test_id": 11,
+      "name": "Parallel Mode: Both Tools Fail",
+      "status": "PASS",
+      "message": "All assertions passed"
+    },
+    {
+      "test_id": 12,
+      "name": "Parallel Mode: Insufficient Tools",
+      "status": "PASS",
+      "message": "All assertions passed"
+    },
+    {
+      "test_id": 13,
+      "name": "Research Command Uses Context Ranking",
+      "status": "PASS",
+      "message": "All assertions passed"
+    },
+    {
+      "test_id": 14,
+      "name": "Research Fails Without Citations",
+      "status": "PASS",
+      "message": "All assertions passed"
+    },
+    {
+      "test_id": 15,
+      "name": "Scrape Command Uses Speed-Cost Ranking",
+      "status": "PASS",
+      "message": "All assertions passed"
+    },
+    {
+      "test_id": 16,
+      "name": "Scrape Low Confidence Triggers Fallback",
+      "status": "PASS",
+      "message": "All assertions passed"
+    }
+  ]
+}

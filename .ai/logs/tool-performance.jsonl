@@ -1,0 +1,56 @@
+{"timestamp": "2026-04-13T11:54:47.759700", "command": "/create blog-posts", "tool": "copilot", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T11:54:47.765603", "command": "/create blog-posts", "tool": "copilot", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T11:54:47.771585", "command": "/optimize images", "tool": "gemini", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T11:54:47.774617", "command": "/export", "tool": "qwen", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T11:54:47.777951", "command": "/create blog-posts", "tool": "codex", "status": "success", "mode": "normal", "tool_rank": 2, "confidence": 0.9}
+{"timestamp": "2026-04-13T11:54:47.843795", "command": "/create blog-posts", "tool": "copilot", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T11:54:47.861381", "command": "/create blog-posts", "tool": "codex", "status": "success", "mode": "normal", "tool_rank": 2, "confidence": 0.9}
+{"timestamp": "2026-04-13T11:54:47.878779", "command": "/create blog-posts", "tool": "all", "status": "error", "mode": "normal", "failure_type": "timeout", "tools_tried": ["copilot", "codex"]}
+{"timestamp": "2026-04-13T11:54:48.004637", "command": "/research competitors", "tool": "gemini", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T11:54:48.006994", "command": "/scrape all competitors blog", "tool": "qwen", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T11:54:48.008435", "command": "/scrape all competitors projects", "tool": "codex", "status": "success", "mode": "normal", "tool_rank": 2, "confidence": 0.9}
+{"timestamp": "2026-04-13T14:17:00.846608", "command": "/create blog-posts", "tool": "copilot", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T14:17:00.859783", "command": "/create blog-posts", "tool": "copilot", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T14:17:00.861708", "command": "/optimize images", "tool": "gemini", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T14:17:00.862846", "command": "/export", "tool": "qwen", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T14:17:00.864393", "command": "/create blog-posts", "tool": "codex", "status": "success", "mode": "normal", "tool_rank": 2, "confidence": 0.9}
+{"timestamp": "2026-04-13T14:17:01.978854", "command": "/create blog-posts", "tool": "copilot", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T14:17:01.980097", "command": "/create blog-posts", "tool": "codex", "status": "success", "mode": "normal", "tool_rank": 2, "confidence": 0.9}
+{"timestamp": "2026-04-13T14:17:02.016301", "command": "/create blog-posts", "tool": "all", "status": "error", "mode": "normal", "failure_type": "timeout", "tools_tried": ["copilot", "codex"]}
+{"timestamp": "2026-04-13T14:17:02.060897", "command": "/research competitors", "tool": "gemini", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T14:17:02.062208", "command": "/scrape all competitors blog", "tool": "qwen", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T14:17:02.062965", "command": "/scrape all competitors projects", "tool": "codex", "status": "success", "mode": "normal", "tool_rank": 2, "confidence": 0.9}
+{"timestamp": "2026-04-13T18:27:50.687507", "command": "/create blog-posts", "tool": "copilot", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T18:27:50.690172", "command": "/create blog-posts", "tool": "codex", "status": "success", "mode": "normal", "tool_rank": 2, "confidence": 0.9}
+{"timestamp": "2026-04-13T18:27:50.690949", "command": "/create blog-posts", "tool": "all", "status": "error", "mode": "normal", "failure_type": "timeout", "tools_tried": ["copilot", "codex"]}
+{"timestamp": "2026-04-13T18:27:50.695957", "command": "/research competitors", "tool": "gemini", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T18:27:50.696651", "command": "/scrape all competitors blog", "tool": "qwen", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T18:27:50.697109", "command": "/scrape all competitors projects", "tool": "codex", "status": "success", "mode": "normal", "tool_rank": 2, "confidence": 0.9}
+{"timestamp": "2026-04-13T18:27:51.063441", "command": "/create blog-posts", "tool": "copilot", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T18:27:51.065538", "command": "/create blog-posts", "tool": "copilot", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T18:27:51.069799", "command": "/optimize images", "tool": "gemini", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T18:27:51.070641", "command": "/export", "tool": "qwen", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T18:27:51.071128", "command": "/create blog-posts", "tool": "codex", "status": "success", "mode": "normal", "tool_rank": 2, "confidence": 0.9}
+{"timestamp": "2026-04-13T19:10:02.613001", "command": "/create blog-posts", "tool": "copilot", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T19:10:02.614109", "command": "/create blog-posts", "tool": "codex", "status": "success", "mode": "normal", "tool_rank": 2, "confidence": 0.9}
+{"timestamp": "2026-04-13T19:10:02.614862", "command": "/create blog-posts", "tool": "all", "status": "error", "mode": "normal", "failure_type": "timeout", "tools_tried": ["copilot", "codex"]}
+{"timestamp": "2026-04-13T19:10:02.620531", "command": "/research competitors", "tool": "gemini", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T19:10:02.621225", "command": "/scrape all competitors blog", "tool": "qwen", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T19:10:02.621654", "command": "/scrape all competitors projects", "tool": "codex", "status": "success", "mode": "normal", "tool_rank": 2, "confidence": 0.9}
+{"timestamp": "2026-04-13T19:10:03.045351", "command": "/create blog-posts", "tool": "copilot", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T19:10:03.047329", "command": "/create blog-posts", "tool": "copilot", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T19:10:03.048207", "command": "/optimize images", "tool": "gemini", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T19:10:03.049334", "command": "/export", "tool": "qwen", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T19:10:03.050362", "command": "/create blog-posts", "tool": "codex", "status": "success", "mode": "normal", "tool_rank": 2, "confidence": 0.9}
+{"timestamp": "2026-04-13T19:35:17.252230", "command": "/create blog-posts", "tool": "copilot", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T19:35:17.253766", "command": "/create blog-posts", "tool": "codex", "status": "success", "mode": "normal", "tool_rank": 2, "confidence": 0.9}
+{"timestamp": "2026-04-13T19:35:17.254787", "command": "/create blog-posts", "tool": "all", "status": "error", "mode": "normal", "failure_type": "timeout", "tools_tried": ["copilot", "codex"]}
+{"timestamp": "2026-04-13T19:35:17.267128", "command": "/research competitors", "tool": "gemini", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T19:35:17.269933", "command": "/scrape all competitors blog", "tool": "qwen", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T19:35:17.272157", "command": "/scrape all competitors projects", "tool": "codex", "status": "success", "mode": "normal", "tool_rank": 2, "confidence": 0.9}
+{"timestamp": "2026-04-13T19:35:17.833322", "command": "/create blog-posts", "tool": "copilot", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T19:35:17.837933", "command": "/create blog-posts", "tool": "copilot", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T19:35:17.839478", "command": "/optimize images", "tool": "gemini", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T19:35:17.840476", "command": "/export", "tool": "qwen", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}
+{"timestamp": "2026-04-13T19:35:17.841962", "command": "/create blog-posts", "tool": "codex", "status": "success", "mode": "normal", "tool_rank": 2, "confidence": 0.9}
+{"timestamp": "2026-04-13T19:37:27.685157", "command": "/research competitors", "tool": "gemini", "status": "success", "mode": "normal", "tool_rank": 1, "confidence": 0.9}

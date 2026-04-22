@@ -1,0 +1,40 @@
+[
+  {
+    "test_id": 1,
+    "name": "Fast Code Completion",
+    "input": "Complete this Python function: def greet(name): print('Hello' + ",
+    "expected": {"status": "success", "completion_provided": true},
+    "validations": ["status equals success", "completion reasonable", "latency < 2"]
+  },
+  {
+    "test_id": 2,
+    "name": "Bulk Processing",
+    "input": "Generate 3 similar Python functions",
+    "batch_mode": true,
+    "expected": {"status": "success", "multiple_outputs": true},
+    "validations": ["status equals success", "3 functions generated"]
+  },
+  {
+    "test_id": 3,
+    "name": "Cost Efficiency - Budget Mode",
+    "input": "Test cost",
+    "mode": "fallback",
+    "expected": {"status": "success", "cost_minimal": true},
+    "validations": ["cost < 0.001", "latency < 2"]
+  },
+  {
+    "test_id": 4,
+    "name": "Timeout Resilience",
+    "input": "Quick task for fallback mode",
+    "timeout": 2,
+    "expected": {"status": "success", "fast_response": true},
+    "validations": ["latency < 2", "status equals success"]
+  },
+  {
+    "test_id": 5,
+    "name": "Performance - Fastest Tool",
+    "input": "Measure latency",
+    "expected": {"status": "success", "fastest": true},
+    "validations": ["latency < 1.5", "is fastest of all tools"]
+  }
+]

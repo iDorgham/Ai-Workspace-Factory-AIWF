@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "widgets": {
+    "root-global-metrics": {
+      "source": "memory/workspace-index.json",
+      "template": "## 📊 Global Metrics\n- Clients: {{metrics.total_clients}}\n- Projects: {{metrics.total_projects}}\n- Last Sync: {{last_synced}}",
+      "tier": "root"
+    },
+    "root-strategic-patterns": {
+      "source": "memory/workspace-index.json",
+      "template": "## 🧠 Strategic Patterns\n- Detected: {{metrics.cross_project_patterns_detected}}\n- Recommendation: Focus on industrial scaling.",
+      "tier": "root"
+    },
+    "brainstorm-suggestions": {
+      "source": "dashboard/brainstorm-suggestions.md",
+      "template": "<!-- INCLUDE_RAW -->",
+      "tier": "root"
+    },
+    "project-status": {
+      "source": "dashboard/memory.json",
+      "template": "## 🚀 Project Status\n- ID: {{project_id}}\n- Health: {{health}}%\n- Progress: {{progress_percentage}}%",
+      "tier": "project"
+    },
+    "project-tasks": {
+      "source": "dashboard/memory.json",
+      "template": "## ✅ Current Tasks\n{{#tasks}}- [{{#completed}}x{{/completed}}{{^completed}} {{/completed}}] {{description}}\n{{/tasks}}",
+      "tier": "project"
+    }
+  }
+}

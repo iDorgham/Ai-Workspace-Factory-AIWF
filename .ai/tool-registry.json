@@ -1,0 +1,137 @@
+{
+  "registry_initialized": true,
+  "last_registry_check": "2026-04-13T06:25:00+02:00",
+  "available_tools": [
+    "copilot",
+    "codex",
+    "gemini",
+    "qwen"
+  ],
+  "unavailable_tools": [
+    {
+      "tool": "opencode",
+      "reason": "not_installed",
+      "install_command": "pip install opencode-cli",
+      "status": "pending_setup"
+    },
+    {
+      "tool": "kilo",
+      "reason": "requires_api_key",
+      "fix": "Set KILO_API_KEY in .env",
+      "status": "pending_setup"
+    },
+    {
+      "tool": "antigravity",
+      "reason": "ide_only_no_cli",
+      "note": "Use IDE integration instead",
+      "status": "ide_only"
+    }
+  ],
+  "tool_specs": {
+    "copilot": {
+      "execution_mode": "cli",
+      "adapter_file": ".ai/tool-adapters/copilot-adapter.md",
+      "context_window": 8192,
+      "cost_per_1m_input": 0.003,
+      "cost_per_1m_output": 0.004,
+      "avg_latency_ms": 3500,
+      "success_rate": 0.97,
+      "priority": 1,
+      "status": "available",
+      "description": "Fast, moderate cost, good for general content"
+    },
+    "codex": {
+      "execution_mode": "cli",
+      "adapter_file": ".ai/tool-adapters/codex-adapter.md",
+      "context_window": 4096,
+      "cost_per_1m_input": 0.002,
+      "cost_per_1m_output": 0.0004,
+      "avg_latency_ms": 2500,
+      "success_rate": 0.96,
+      "priority": 2,
+      "status": "available",
+      "description": "Cheapest, fast, good for coding/analysis"
+    },
+    "gemini": {
+      "execution_mode": "cli",
+      "adapter_file": ".ai/tool-adapters/gemini-adapter.md",
+      "context_window": 1000000,
+      "cost_per_1m_input": 0.075,
+      "cost_per_1m_output": 0.6,
+      "avg_latency_ms": 3100,
+      "success_rate": 0.96,
+      "priority": 3,
+      "status": "available",
+      "description": "Largest context, multimodal, good for analysis"
+    },
+    "qwen": {
+      "execution_mode": "cli",
+      "adapter_file": ".ai/tool-adapters/qwen-adapter.md",
+      "context_window": 32000,
+      "cost_per_1m_input": 0.0001,
+      "cost_per_1m_output": 0.0002,
+      "avg_latency_ms": 4200,
+      "success_rate": 0.94,
+      "priority": 4,
+      "status": "available",
+      "description": "Very cheap, multilingual, good for bulk operations"
+    },
+    "opencode": {
+      "execution_mode": "cli",
+      "adapter_file": ".ai/tool-adapters/opencode-adapter.md",
+      "context_window": 16000,
+      "cost_per_1m_input": null,
+      "cost_per_1m_output": null,
+      "avg_latency_ms": null,
+      "success_rate": null,
+      "priority": 5,
+      "status": "unavailable",
+      "description": "Code-focused CLI tool (not yet installed)"
+    },
+    "kilo": {
+      "execution_mode": "cli",
+      "adapter_file": ".ai/tool-adapters/kilo-adapter.md",
+      "context_window": 8000,
+      "cost_per_1m_input": null,
+      "cost_per_1m_output": null,
+      "avg_latency_ms": null,
+      "success_rate": null,
+      "priority": 6,
+      "status": "unavailable",
+      "description": "Kilo code CLI tool (requires API key)"
+    },
+    "antigravity": {
+      "execution_mode": "ide",
+      "adapter_file": ".ai/tool-adapters/antigravity-adapter.md",
+      "context_window": "unlimited",
+      "cost_per_1m_input": null,
+      "cost_per_1m_output": null,
+      "avg_latency_ms": null,
+      "success_rate": null,
+      "priority": null,
+      "status": "ide_only",
+      "description": "IDE-integrated tool (not CLI-callable)"
+    }
+  },
+  "ranking_rules": {
+    "by_cost_sensitivity": {
+      "cost_optimized": ["qwen", "codex", "copilot", "gemini"],
+      "quality_optimized": ["copilot", "codex", "gemini", "qwen"],
+      "speed_optimized": ["codex", "copilot", "gemini", "qwen"]
+    },
+    "by_command_type": {
+      "create_blog_posts": ["copilot", "codex", "gemini", "qwen"],
+      "create_website_pages": ["copilot", "codex", "gemini", "qwen"],
+      "optimize_images": ["gemini", "codex", "copilot", "qwen"],
+      "polish_content": ["copilot", "gemini", "codex", "qwen"],
+      "compare": ["copilot", "codex", "gemini", "qwen"]
+    }
+  },
+  "metadata": {
+    "workspace": "Sovereign Interior Design Studio",
+    "initialized_by": "Claude (Phase 2a CLI Layer)",
+    "initialization_date": "2026-04-13T06:25:00+02:00",
+    "registry_version": "2.0",
+    "phase": "2a"
+  }
+}

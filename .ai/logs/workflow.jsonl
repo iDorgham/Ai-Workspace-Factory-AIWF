@@ -1,0 +1,41 @@
+{"timestamp": "2026-04-13T11:54:47.761139", "input": "/create blog-posts", "command": "/create blog-posts", "status": "success", "tool": "copilot", "tool_rank": 1, "error_type": null}
+{"timestamp": "2026-04-13T11:54:47.762000", "input": "/create blog-posts --tool qwen", "command": "/create blog-posts", "status": "success", "tool": "qwen", "tool_rank": null, "error_type": null}
+{"timestamp": "2026-04-13T11:54:47.762607", "input": "/create blog-posts --explain-routing", "command": "/create blog-posts", "status": "explanation", "tool": null, "tool_rank": null, "error_type": null}
+{"timestamp": "2026-04-13T11:54:47.764708", "input": "/create blog-posts --parallel", "command": "/create blog-posts", "status": "success_both", "tool": null, "tool_rank": null, "error_type": null}
+{"timestamp": "2026-04-13T11:54:47.766309", "input": "/create blog-posts --prefer gemini", "command": "/create blog-posts", "status": "success", "tool": "copilot", "tool_rank": 1, "error_type": null}
+{"timestamp": "2026-04-13T11:54:47.772426", "input": "/optimize images", "command": "/optimize images", "status": "success", "tool": "gemini", "tool_rank": 1, "error_type": null}
+{"timestamp": "2026-04-13T11:54:47.775449", "input": "/export", "command": "/export", "status": "success", "tool": "qwen", "tool_rank": 1, "error_type": null}
+{"timestamp": "2026-04-13T11:54:47.779842", "input": "/create blog-posts", "command": "/create blog-posts", "status": "success", "tool": "codex", "tool_rank": 2, "error_type": null}
+{"timestamp": "2026-04-13T14:17:00.854949", "input": "/create blog-posts", "command": "/create blog-posts", "status": "success", "tool": "copilot", "tool_rank": 1, "error_type": null}
+{"timestamp": "2026-04-13T14:17:00.855690", "input": "/create blog-posts --tool qwen", "command": "/create blog-posts", "status": "success", "tool": "qwen", "tool_rank": null, "error_type": null}
+{"timestamp": "2026-04-13T14:17:00.856728", "input": "/create blog-posts --explain-routing", "command": "/create blog-posts", "status": "explanation", "tool": null, "tool_rank": null, "error_type": null}
+{"timestamp": "2026-04-13T14:17:00.859069", "input": "/create blog-posts --parallel", "command": "/create blog-posts", "status": "success_both", "tool": null, "tool_rank": null, "error_type": null}
+{"timestamp": "2026-04-13T14:17:00.860264", "input": "/create blog-posts --prefer gemini", "command": "/create blog-posts", "status": "success", "tool": "copilot", "tool_rank": 1, "error_type": null}
+{"timestamp": "2026-04-13T14:17:00.862138", "input": "/optimize images", "command": "/optimize images", "status": "success", "tool": "gemini", "tool_rank": 1, "error_type": null}
+{"timestamp": "2026-04-13T14:17:00.863428", "input": "/export", "command": "/export", "status": "success", "tool": "qwen", "tool_rank": 1, "error_type": null}
+{"timestamp": "2026-04-13T14:17:00.864847", "input": "/create blog-posts", "command": "/create blog-posts", "status": "success", "tool": "codex", "tool_rank": 2, "error_type": null}
+{"timestamp": "2026-04-13T18:27:51.063761", "input": "/create blog-posts", "command": "/create blog-posts", "status": "success", "tool": "copilot", "tool_rank": 1, "error_type": null}
+{"timestamp": "2026-04-13T18:27:51.064037", "input": "/create blog-posts --tool qwen", "command": "/create blog-posts", "status": "success", "tool": "qwen", "tool_rank": null, "error_type": null}
+{"timestamp": "2026-04-13T18:27:51.064384", "input": "/create blog-posts --explain-routing", "command": "/create blog-posts", "status": "explanation", "tool": null, "tool_rank": null, "error_type": null}
+{"timestamp": "2026-04-13T18:27:51.065248", "input": "/create blog-posts --parallel", "command": "/create blog-posts", "status": "success_both", "tool": null, "tool_rank": null, "error_type": null}
+{"timestamp": "2026-04-13T18:27:51.069192", "input": "/create blog-posts --prefer gemini", "command": "/create blog-posts", "status": "success", "tool": "copilot", "tool_rank": 1, "error_type": null}
+{"timestamp": "2026-04-13T18:27:51.070133", "input": "/optimize images", "command": "/optimize images", "status": "success", "tool": "gemini", "tool_rank": 1, "error_type": null}
+{"timestamp": "2026-04-13T18:27:51.070852", "input": "/export", "command": "/export", "status": "success", "tool": "qwen", "tool_rank": 1, "error_type": null}
+{"timestamp": "2026-04-13T18:27:51.071302", "input": "/create blog-posts", "command": "/create blog-posts", "status": "success", "tool": "codex", "tool_rank": 2, "error_type": null}
+{"timestamp": "2026-04-13T19:10:03.045678", "input": "/create blog-posts", "command": "/create blog-posts", "status": "success", "tool": "copilot", "tool_rank": 1, "error_type": null}
+{"timestamp": "2026-04-13T19:10:03.045974", "input": "/create blog-posts --tool qwen", "command": "/create blog-posts", "status": "success", "tool": "qwen", "tool_rank": null, "error_type": null}
+{"timestamp": "2026-04-13T19:10:03.046244", "input": "/create blog-posts --explain-routing", "command": "/create blog-posts", "status": "explanation", "tool": null, "tool_rank": null, "error_type": null}
+{"timestamp": "2026-04-13T19:10:03.046974", "input": "/create blog-posts --parallel", "command": "/create blog-posts", "status": "success_both", "tool": null, "tool_rank": null, "error_type": null}
+{"timestamp": "2026-04-13T19:10:03.047594", "input": "/create blog-posts --prefer gemini", "command": "/create blog-posts", "status": "success", "tool": "copilot", "tool_rank": 1, "error_type": null}
+{"timestamp": "2026-04-13T19:10:03.048692", "input": "/optimize images", "command": "/optimize images", "status": "success", "tool": "gemini", "tool_rank": 1, "error_type": null}
+{"timestamp": "2026-04-13T19:10:03.049804", "input": "/export", "command": "/export", "status": "success", "tool": "qwen", "tool_rank": 1, "error_type": null}
+{"timestamp": "2026-04-13T19:10:03.050654", "input": "/create blog-posts", "command": "/create blog-posts", "status": "success", "tool": "codex", "tool_rank": 2, "error_type": null}
+{"timestamp": "2026-04-13T19:35:17.833924", "input": "/create blog-posts", "command": "/create blog-posts", "status": "success", "tool": "copilot", "tool_rank": 1, "error_type": null}
+{"timestamp": "2026-04-13T19:35:17.834491", "input": "/create blog-posts --tool qwen", "command": "/create blog-posts", "status": "success", "tool": "qwen", "tool_rank": null, "error_type": null}
+{"timestamp": "2026-04-13T19:35:17.835111", "input": "/create blog-posts --explain-routing", "command": "/create blog-posts", "status": "explanation", "tool": null, "tool_rank": null, "error_type": null}
+{"timestamp": "2026-04-13T19:35:17.836508", "input": "/create blog-posts --parallel", "command": "/create blog-posts", "status": "success_both", "tool": null, "tool_rank": null, "error_type": null}
+{"timestamp": "2026-04-13T19:35:17.838415", "input": "/create blog-posts --prefer gemini", "command": "/create blog-posts", "status": "success", "tool": "copilot", "tool_rank": 1, "error_type": null}
+{"timestamp": "2026-04-13T19:35:17.839901", "input": "/optimize images", "command": "/optimize images", "status": "success", "tool": "gemini", "tool_rank": 1, "error_type": null}
+{"timestamp": "2026-04-13T19:35:17.841283", "input": "/export", "command": "/export", "status": "success", "tool": "qwen", "tool_rank": 1, "error_type": null}
+{"timestamp": "2026-04-13T19:35:17.842395", "input": "/create blog-posts", "command": "/create blog-posts", "status": "success", "tool": "codex", "tool_rank": 2, "error_type": null}
+{"timestamp": "2026-04-13T21:50:00.000000", "input": "workspace cleanup inventory plan", "command": "workspace_cleanup", "status": "success", "tool": null, "tool_rank": null, "error_type": null}

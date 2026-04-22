@@ -1,0 +1,28 @@
+{
+  "id": "comparison-analyst",
+  "parent_agent": "creator-agent",
+  "trigger": "/compare sovereign vs competitor [name]",
+  "single_responsibility": "Generate structural, tonal, and keyword diff reports",
+  "input": {
+    "required": {
+      "sovereign_content": "string \u2014 Markdown from content/",
+      "competitor_content": "string \u2014 from content/sovereign/scraped/[slug]/scraped/content/ OR live fetch"
+    },
+    "optional": {
+      "brand_voice_matrix": "object \u2014 from content/sovereign/reference/brand-voice/"
+    }
+  },
+  "output": {
+    "diff_report": "object<{sections: array<{dimension: 'structure'|'tone'|'keywords'|'cta', sovereign: string, competitor: string, gap: string, recommendation: string}>, overall_alignment_percent: float}>"
+  },
+  "validation": {
+    "all_diffs_must_be_actionable": true,
+    "minimum_dimensions_analyzed": 4
+  },
+  "writes": [
+    "content/sovereign/comparisons/sovereign_vs_[slug].md",
+    "content/sovereign/comparisons/diff-logs.jsonl (append)"
+  ],
+  "error_owner": "comparison-analyst",
+  "escalates_to": "creator-agent"
+}

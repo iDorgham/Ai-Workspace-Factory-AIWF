@@ -1,0 +1,464 @@
+{
+  "test_suite": "day-3-tool-router",
+  "date": "2026-04-13",
+  "total_tests": 16,
+  "categories": ["normal_mode", "explain_mode", "forced_mode", "parallel_mode"],
+  "tests": [
+    {
+      "test_id": 1,
+      "name": "Normal Mode: Rank 1 Succeeds",
+      "category": "normal_mode",
+      "command": "/create blog-posts",
+      "flags": {
+        "tool": null,
+        "tool_forced": false,
+        "explain_routing": false,
+        "prefer": null,
+        "parallel": false
+      },
+      "setup": {
+        "available_tools": ["copilot", "codex", "gemini", "qwen"],
+        "rank_1_tool": "copilot",
+        "rank_1_result": "success"
+      },
+      "expected": {
+        "status": "success",
+        "tool_used": "copilot",
+        "tool_rank": 1,
+        "fallback_used": false,
+        "output": "generated_content"
+      },
+      "description": "Happy path: Rank 1 tool (Copilot) succeeds on first try"
+    },
+    {
+      "test_id": 2,
+      "name": "Normal Mode: Rank 1 Fails, Rank 2 Succeeds",
+      "category": "normal_mode",
+      "command": "/create blog-posts",
+      "flags": {
+        "tool": null,
+        "tool_forced": false,
+        "explain_routing": false,
+        "prefer": null,
+        "parallel": false
+      },
+      "setup": {
+        "available_tools": ["copilot", "codex", "gemini", "qwen"],
+        "rank_1_tool": "copilot",
+        "rank_1_result": "timeout",
+        "rank_2_tool": "codex",
+        "rank_2_result": "success"
+      },
+      "expected": {
+        "status": "success",
+        "tool_used": "codex",
+        "tool_rank": 2,
+        "fallback_used": true,
+        "fallback_from": "copilot",
+        "output": "generated_content"
+      },
+      "description": "Fallback chain: Rank 1 (Copilot) timeout, Rank 2 (Codex) succeeds"
+    },
+    {
+      "test_id": 3,
+      "name": "Normal Mode: All Ranks Fail",
+      "category": "normal_mode",
+      "command": "/create blog-posts",
+      "flags": {
+        "tool": null,
+        "tool_forced": false,
+        "explain_routing": false,
+        "prefer": null,
+        "parallel": false
+      },
+      "setup": {
+        "available_tools": ["copilot", "codex"],
+        "rank_1_result": "timeout",
+        "rank_2_result": "error"
+      },
+      "expected": {
+        "status": "error",
+        "error_message": "All tools failed",
+        "tools_tried": ["copilot", "codex"],
+        "suggestion": "Check logs or try with --tool"
+      },
+      "description": "Error case: All available tools fail, fallback chain exhausted"
+    },
+    {
+      "test_id": 4,
+      "name": "Explain Mode: Show Ranking",
+      "category": "explain_mode",
+      "command": "/create blog-posts",
+      "flags": {
+        "tool": null,
+        "tool_forced": false,
+        "explain_routing": true,
+        "prefer": null,
+        "parallel": false
+      },
+      "setup": {
+        "available_tools": ["copilot", "codex", "gemini", "qwen"],
+        "command_type": "create_blog_posts",
+        "preferred_ranking": ["copilot", "codex", "gemini", "qwen"]
+      },
+      "expected": {
+        "status": "explanation",
+        "ranking": [
+          {
+            "rank": 1,
+            "tool": "copilot",
+            "latency_ms": 3500,
+            "cost_usd": 0.003,
+            "success_rate": 0.97
+          },
+          {
+            "rank": 2,
+            "tool": "codex",
+            "latency_ms": 2500,
+            "cost_usd": 0.002,
+            "success_rate": 0.96
+          },
+          {
+            "rank": 3,
+            "tool": "gemini",
+            "latency_ms": 3100,
+            "cost_usd": 0.075,
+            "success_rate": 0.96
+          }
+        ],
+        "selected_tool": "copilot",
+        "available_tools": ["copilot", "codex", "gemini", "qwen"],
+        "no_execution": true
+      },
+      "description": "Explain mode: Show tool ranking with metrics, no execution"
+    },
+    {
+      "test_id": 5,
+      "name": "Explain Mode: With Performance Metrics",
+      "category": "explain_mode",
+      "command": "/optimize images",
+      "flags": {
+        "tool": null,
+        "tool_forced": false,
+        "explain_routing": true,
+        "prefer": null,
+        "parallel": false
+      },
+      "setup": {
+        "available_tools": ["gemini", "codex"],
+        "command_type": "optimize_images",
+        "preferred_ranking": ["gemini", "codex"]
+      },
+      "expected": {
+        "status": "explanation",
+        "selected_tool": "gemini",
+        "ranking_includes_metrics": true,
+        "no_execution": true
+      },
+      "description": "Explain mode: Show performance metrics from historical logs"
+    },
+    {
+      "test_id": 6,
+      "name": "Forced Mode: Execute Specific Tool Success",
+      "category": "forced_mode",
+      "command": "/create blog-posts",
+      "flags": {
+        "tool": "qwen",
+        "tool_forced": true,
+        "explain_routing": false,
+        "prefer": null,
+        "parallel": false
+      },
+      "setup": {
+        "available_tools": ["copilot", "codex", "gemini", "qwen"],
+        "forced_tool": "qwen",
+        "forced_tool_result": "success"
+      },
+      "expected": {
+        "status": "success",
+        "tool_used": "qwen",
+        "tool_forced": true,
+        "fallback_used": false,
+        "output": "generated_content"
+      },
+      "description": "Forced mode: User forces Qwen execution (--tool qwen), succeeds"
+    },
+    {
+      "test_id": 7,
+      "name": "Forced Mode: Forced Tool Fails (No Fallback)",
+      "category": "forced_mode",
+      "command": "/create blog-posts",
+      "flags": {
+        "tool": "gemini",
+        "tool_forced": true,
+        "explain_routing": false,
+        "prefer": null,
+        "parallel": false
+      },
+      "setup": {
+        "available_tools": ["copilot", "codex", "gemini"],
+        "forced_tool": "gemini",
+        "forced_tool_result": "timeout"
+      },
+      "expected": {
+        "status": "error",
+        "error_message": "Forced tool failed",
+        "tool_attempted": "gemini",
+        "fallback_used": false,
+        "suggestion": "Use --tool [other] to try different tool"
+      },
+      "description": "Forced mode: Gemini timeout, no fallback chain (user forced it)"
+    },
+    {
+      "test_id": 8,
+      "name": "Forced Mode: Forced Tool Unavailable",
+      "category": "forced_mode",
+      "command": "/create blog-posts",
+      "flags": {
+        "tool": "opencode",
+        "tool_forced": true,
+        "explain_routing": false,
+        "prefer": null,
+        "parallel": false
+      },
+      "setup": {
+        "available_tools": ["copilot", "codex"],
+        "forced_tool": "opencode",
+        "tool_status": "unavailable"
+      },
+      "expected": {
+        "status": "error",
+        "error_message": "Tool not available",
+        "tool_requested": "opencode",
+        "available_alternatives": ["copilot", "codex"]
+      },
+      "description": "Forced mode: User forces unavailable tool, error with suggestions"
+    },
+    {
+      "test_id": 9,
+      "name": "Parallel Mode: Both Tools Succeed",
+      "category": "parallel_mode",
+      "command": "/create blog-posts",
+      "flags": {
+        "tool": null,
+        "tool_forced": false,
+        "explain_routing": false,
+        "prefer": null,
+        "parallel": true
+      },
+      "setup": {
+        "available_tools": ["copilot", "codex", "gemini", "qwen"],
+        "rank_1_tool": "copilot",
+        "rank_1_result": "success",
+        "rank_2_tool": "codex",
+        "rank_2_result": "success",
+        "parallel_timeout": 300
+      },
+      "expected": {
+        "status": "success_both",
+        "execution_mode": "parallel",
+        "tools": ["copilot", "codex"],
+        "outputs": {
+          "copilot": "content_from_copilot",
+          "codex": "content_from_codex"
+        },
+        "comparison": "both_outputs_present"
+      },
+      "description": "Parallel mode: Both Rank 1 (Copilot) and Rank 2 (Codex) succeed"
+    },
+    {
+      "test_id": 10,
+      "name": "Parallel Mode: One Tool Fails, One Succeeds",
+      "category": "parallel_mode",
+      "command": "/create blog-posts",
+      "flags": {
+        "tool": null,
+        "tool_forced": false,
+        "explain_routing": false,
+        "prefer": null,
+        "parallel": true
+      },
+      "setup": {
+        "available_tools": ["copilot", "codex"],
+        "rank_1_tool": "copilot",
+        "rank_1_result": "timeout",
+        "rank_2_tool": "codex",
+        "rank_2_result": "success"
+      },
+      "expected": {
+        "status": "partial",
+        "tools": ["copilot", "codex"],
+        "outputs": {
+          "codex": "content_from_codex"
+        },
+        "errors": {
+          "copilot": "timeout"
+        }
+      },
+      "description": "Parallel mode: Copilot times out, Codex succeeds (partial result)"
+    },
+    {
+      "test_id": 11,
+      "name": "Parallel Mode: Both Tools Fail",
+      "category": "parallel_mode",
+      "command": "/create blog-posts",
+      "flags": {
+        "tool": null,
+        "tool_forced": false,
+        "explain_routing": false,
+        "prefer": null,
+        "parallel": true
+      },
+      "setup": {
+        "available_tools": ["copilot", "codex"],
+        "rank_1_tool": "copilot",
+        "rank_1_result": "timeout",
+        "rank_2_tool": "codex",
+        "rank_2_result": "error"
+      },
+      "expected": {
+        "status": "error",
+        "error_message": "All tools failed in parallel",
+        "tools": ["copilot", "codex"],
+        "errors": {
+          "copilot": "timeout",
+          "codex": "error"
+        }
+      },
+      "description": "Parallel mode: Both tools fail (timeout + error)"
+    },
+    {
+      "test_id": 12,
+      "name": "Parallel Mode: Insufficient Tools",
+      "category": "parallel_mode",
+      "command": "/create blog-posts",
+      "flags": {
+        "tool": null,
+        "tool_forced": false,
+        "explain_routing": false,
+        "prefer": null,
+        "parallel": true
+      },
+      "setup": {
+        "available_tools": ["copilot"]
+      },
+      "expected": {
+        "status": "error",
+        "error_message": "Parallel requires 2+ tools",
+        "available_tools": 1,
+        "required_tools": 2,
+        "suggestion": "Install more tools or use without --parallel"
+      },
+      "description": "Parallel mode: Only 1 tool available, --parallel requires 2+"
+    },
+    {
+      "test_id": 13,
+      "name": "Research Command Uses Context Ranking",
+      "category": "normal_mode",
+      "command": "/research competitors",
+      "flags": {
+        "tool": null,
+        "tool_forced": false,
+        "explain_routing": false,
+        "prefer": null,
+        "parallel": false
+      },
+      "setup": {
+        "available_tools": ["gemini", "copilot", "codex", "qwen"],
+        "rank_1_result": "success"
+      },
+      "expected": {
+        "status": "success",
+        "tool_used": "gemini",
+        "tool_rank": 1
+      },
+      "description": "Research prioritizes Gemini and passes confidence gate"
+    },
+    {
+      "test_id": 14,
+      "name": "Research Fails Without Citations",
+      "category": "forced_mode",
+      "command": "/research competitors",
+      "flags": {
+        "tool": "gemini",
+        "tool_forced": true,
+        "explain_routing": false,
+        "prefer": null,
+        "parallel": false
+      },
+      "setup": {
+        "forced_tool": "gemini",
+        "forced_tool_result": {
+          "status": "success",
+          "output": "research-draft",
+          "confidence": 0.91,
+          "citations_count": 0
+        }
+      },
+      "expected": {
+        "status": "error"
+      },
+      "description": "Forced research tool fails if quality gate requires citations"
+    },
+    {
+      "test_id": 15,
+      "name": "Scrape Command Uses Speed-Cost Ranking",
+      "category": "normal_mode",
+      "command": "/scrape all competitors blog",
+      "flags": {
+        "tool": null,
+        "tool_forced": false,
+        "explain_routing": false,
+        "prefer": null,
+        "parallel": false
+      },
+      "setup": {
+        "available_tools": ["qwen", "codex", "copilot", "gemini"],
+        "rank_1_result": "success"
+      },
+      "expected": {
+        "status": "success",
+        "tool_used": "qwen",
+        "tool_rank": 1
+      },
+      "description": "Scrape routes to Qwen first for bulk speed/cost profile"
+    },
+    {
+      "test_id": 16,
+      "name": "Scrape Low Confidence Triggers Fallback",
+      "category": "normal_mode",
+      "command": "/scrape all competitors projects",
+      "flags": {
+        "tool": null,
+        "tool_forced": false,
+        "explain_routing": false,
+        "prefer": null,
+        "parallel": false
+      },
+      "setup": {
+        "available_tools": ["qwen", "codex", "copilot"],
+        "rank_1_result": "partial",
+        "rank_2_result": "success"
+      },
+      "expected": {
+        "status": "success",
+        "tool_used": "codex",
+        "tool_rank": 2
+      },
+      "description": "Low-confidence scrape result falls back to next ranked tool"
+    }
+  ],
+  "metadata": {
+    "phase": "1",
+    "day": "3",
+    "version": "1.0",
+    "status": "ready_for_execution",
+    "expected_pass_rate": "12/12",
+    "owner": "guide-agent",
+    "depends_on": [
+      ".ai/tool-registry.json",
+      ".ai/commands-multi-tool.md",
+      ".ai/cli-layer/tool-router.md"
+    ]
+  }
+}

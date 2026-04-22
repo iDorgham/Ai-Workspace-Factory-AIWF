@@ -1,0 +1,10 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "description": "Archive pointer registry. workflow-agent/archive-manager is the sole owner. Append only.",
+    "owner": "workflow-agent",
+    "last_archived": null,
+    "total_archived_files": 0
+  },
+  "archives": []
+}

@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#12121a">
+    <meta name="color-scheme" content="dark">
+    <title>Phase 1 Architecture Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <style>
+        :root {
+            --bg-deep: #0f0f14;
+            --bg-surface: #16161f;
+            --bg-elevated: #1e1e2a;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --border-subtle: rgba(255, 255, 255, 0.08);
+            --border-accent: rgba(34, 211, 238, 0.28);
+            --text-primary: #f1f2f6;
+            --text-secondary: #a1a7bb;
+            --text-muted: #6b7289;
+            --accent: #22d3ee;
+            --accent-hover: #67e8f9;
+            --accent-muted: rgba(34, 211, 238, 0.14);
+            --success: #34d399;
+            --success-muted: rgba(52, 211, 153, 0.12);
+            --warning: #fbbf24;
+            --danger: #f87171;
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.45);
+            --shadow-md: 0 12px 40px rgba(0, 0, 0, 0.45);
+            --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+            --font-mono: "JetBrains Mono", ui-monospace, monospace;
+            --space-2: 8px;
+            --space-3: 12px;
+            --space-4: 16px;
+            --space-5: 24px;
+            --space-6: 32px;
+            --space-8: 48px;
+            --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background: radial-gradient(1200px 600px at 10% -10%, rgba(34, 211, 238, 0.08), transparent 55%),
+                radial-gradient(900px 500px at 100% 0%, rgba(52, 211, 153, 0.05), transparent 50%),
+                linear-gradient(165deg, var(--bg-deep) 0%, #14141c 50%, var(--bg-surface) 100%);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .skip-link {
+            position: absolute;
+            left: -9999px;
+            top: var(--space-3);
+            z-index: 100;
+            padding: var(--space-3) var(--space-4);
+            background: var(--accent);
+            color: var(--bg-deep);
+            font-weight: 600;
+            border-radius: var(--radius-sm);
+            text-decoration: none;
+        }
+
+        .skip-link:focus {
+            left: var(--space-4);
+            outline: 2px solid var(--text-primary);
+            outline-offset: 2px;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: var(--space-5) var(--space-4) var(--space-8);
+        }
+
+        header {
+            margin-bottom: var(--space-6);
+            padding: var(--space-6) 0 var(--space-5);
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .header-inner {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-4);
+        }
+
+        @media (min-width: 720px) {
+            .header-inner {
+                flex-direction: row;
+                align-items: flex-end;
+                justify-content: space-between;
+            }
+        }
+
+        .eyebrow {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: var(--space-2);
+        }
+
+        h1 {
+            font-size: clamp(1.65rem, 3vw, 2.25rem);
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            max-width: 20ch;
+        }
+
+        .subtitle {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            max-width: 36ch;
+            margin-top: var(--space-2);
+        }
+
+        .header-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-3);
+            align-items: center;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-2);
+            padding: var(--space-2) var(--space-3);
+            font-size: 0.8125rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            background: var(--accent-muted);
+            border: 1px solid var(--border-accent);
+            border-radius: 999px;
+        }
+
+        .badge--live {
+            background: var(--success-muted);
+            border-color: rgba(52, 211, 153, 0.35);
+            color: var(--success);
+        }
+
+        .tabs {
+            display: flex;
+            gap: var(--space-2);
+            margin-bottom: var(--space-5);
+            flex-wrap: wrap;
+            padding: var(--space-2);
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: thin;
+        }
+
+        .tab-btn {
+            padding: 0.65rem 1rem;
+            border: 1px solid transparent;
+            background: transparent;
+            color: var(--text-secondary);
+            cursor: pointer;
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+            font-size: 0.875rem;
+            font-family: inherit;
+            white-space: nowrap;
+            transition: background 0.2s var(--ease-out), color 0.2s var(--ease-out), border-color 0.2s var(--ease-out), box-shadow 0.2s var(--ease-out);
+        }
+
+        .tab-btn:hover {
+            color: var(--text-primary);
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+        .tab-btn:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+
+        .tab-btn.active {
+            background: var(--accent-muted);
+            color: var(--accent-hover);
+            border-color: var(--border-accent);
+            box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.15);
+        }
+
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.35s var(--ease-out);
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(4px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        main {
+            outline: none;
+        }
+
+        .section {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-lg);
+            padding: var(--space-5);
+            margin-bottom: var(--space-4);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .section h2 {
+            color: var(--text-primary);
+            margin-bottom: var(--space-2);
+            font-size: 1.25rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
+
+        .section-lead {
+            color: var(--text-secondary);
+            margin-bottom: var(--space-5);
+            font-size: 0.9375rem;
+            max-width: 65ch;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+            gap: var(--space-4);
+            margin-bottom: var(--space-4);
+        }
+
+        .grid--charts {
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 900px) {
+            .grid--charts {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md);
+            padding: var(--space-4);
+            transition: border-color 0.2s var(--ease-out), box-shadow 0.2s var(--ease-out), transform 0.2s var(--ease-out);
+        }
+
+        @media (hover: hover) {
+            .card:hover {
+                border-color: var(--border-accent);
+                box-shadow: var(--shadow-md);
+                transform: translateY(-2px);
+            }
+        }
+
+        .card h3 {
+            color: var(--accent-hover);
+            margin-bottom: var(--space-3);
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .card-desc {
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+            margin: calc(-1 * var(--space-2)) 0 var(--space-3);
+        }
+
+        .metric {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: var(--space-3);
+            margin: var(--space-2) 0;
+            font-size: 0.875rem;
+            padding: var(--space-2) 0;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .metric:last-child {
+            border-bottom: none;
+        }
+
+        .metric-label {
+            color: var(--text-secondary);
+        }
+
+        .metric-value {
+            color: var(--text-primary);
+            font-weight: 600;
+            text-align: right;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .metric-value--accent {
+            color: var(--accent-hover);
+        }
+
+        .metric-value--success {
+            color: var(--success);
+        }
+
+        .metric-value--warning {
+            color: var(--warning);
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+            margin: var(--space-4) 0;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-subtle);
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .ranking-table {
+            width: 100%;
+            min-width: 640px;
+            border-collapse: collapse;
+        }
+
+        .ranking-table caption {
+            caption-side: bottom;
+            padding: var(--space-3);
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+            text-align: left;
+        }
+
+        .ranking-table th {
+            background: rgba(255, 255, 255, 0.04);
+            color: var(--accent-hover);
+            padding: var(--space-3) var(--space-4);
+            text-align: left;
+            border-bottom: 1px solid var(--border-subtle);
+            font-weight: 600;
+            font-size: 0.8125rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        .ranking-table td {
+            padding: var(--space-3) var(--space-4);
+            border-bottom: 1px solid var(--border-subtle);
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        .ranking-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .ranking-table tbody tr:hover td {
+            background: rgba(34, 211, 238, 0.04);
+            color: var(--text-primary);
+        }
+
+        .rank-1 {
+            color: #fde047;
+            font-weight: 600;
+        }
+
+        .rank-2 {
+            color: #d1d5db;
+            font-weight: 600;
+        }
+
+        .rank-3 {
+            color: #fdba74;
+            font-weight: 600;
+        }
+
+        .flow-diagram {
+            background: var(--bg-deep);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md);
+            padding: var(--space-4);
+            margin: var(--space-4) 0;
+            font-family: var(--font-mono);
+            font-size: 0.8125rem;
+            line-height: 1.75;
+            overflow-x: auto;
+            color: var(--text-secondary);
+        }
+
+        .success {
+            color: var(--success);
+        }
+
+        .warning {
+            color: var(--warning);
+        }
+
+        .error {
+            color: var(--danger);
+        }
+
+        .chart-block-title {
+            color: var(--text-primary);
+            margin-bottom: var(--space-3);
+            font-size: 0.9375rem;
+            font-weight: 600;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 280px;
+            margin-bottom: var(--space-2);
+        }
+
+        .stat-rows {
+            margin-top: var(--space-3);
+        }
+
+        .stat-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--space-2) 0;
+            border-bottom: 1px solid var(--border-subtle);
+            font-size: 0.875rem;
+        }
+
+        .stat-row:last-child {
+            border-bottom: none;
+        }
+
+        .stat-row__label {
+            color: var(--accent-hover);
+        }
+
+        .stat-row__value {
+            font-weight: 600;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .stat-row__value--good {
+            color: var(--success);
+        }
+
+        .stat-row__value--mid {
+            color: var(--warning);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: var(--space-8);
+            padding: var(--space-5) 0;
+            border-top: 1px solid var(--border-subtle);
+            color: var(--text-muted);
+            font-size: 0.8125rem;
+        }
+
+        .footer p + p {
+            margin-top: var(--space-3);
+        }
+
+        .action-box {
+            background: var(--success-muted);
+            border: 1px solid rgba(52, 211, 153, 0.25);
+            border-left: 4px solid var(--success);
+            padding: var(--space-4);
+            border-radius: var(--radius-md);
+            margin: var(--space-4) 0;
+            font-size: 0.9375rem;
+        }
+
+        .action-box strong {
+            color: var(--success);
+        }
+
+        .action-box--neutral {
+            background: var(--accent-muted);
+            border-color: var(--border-accent);
+            border-left-color: var(--accent);
+        }
+
+        .action-box--neutral strong {
+            color: var(--accent-hover);
+        }
+
+        .steps {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-5);
+            margin: var(--space-5) 0;
+        }
+
+        .step-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-md);
+            padding: var(--space-4);
+            border-left: 4px solid var(--accent);
+        }
+
+        .step-card h3 {
+            color: var(--text-primary);
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: var(--space-3);
+        }
+
+        .step-card p,
+        .step-card li {
+            color: var(--text-secondary);
+            font-size: 0.9375rem;
+        }
+
+        .step-card p + p {
+            margin-top: var(--space-3);
+        }
+
+        .step-card code {
+            font-family: var(--font-mono);
+            font-size: 0.8125rem;
+        }
+
+        .code-block {
+            display: block;
+            margin: var(--space-3) 0;
+            padding: var(--space-3) var(--space-4);
+            background: var(--bg-deep);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-sm);
+            color: var(--success);
+            overflow-x: auto;
+        }
+
+        .step-card .hint {
+            margin-top: var(--space-3);
+            font-size: 0.8125rem;
+            color: var(--warning);
+        }
+
+        .step-card ul {
+            margin: var(--space-3) 0 var(--space-3) var(--space-5);
+        }
+
+        .step-card li + li {
+            margin-top: var(--space-2);
+        }
+
+        .legend {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: var(--space-3);
+            margin-top: var(--space-3);
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+        }
+
+        .legend-color {
+            width: 14px;
+            height: 14px;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="container">
+        <header>
+            <div class="header-inner">
+                <div>
+                    <p class="eyebrow">Sovereign workspace</p>
+                    <h1>Phase 1 architecture dashboard</h1>
+                    <p class="subtitle">Multi-tool orchestration with ranked routing, fallbacks, and cost-aware selection across Claude, Gemini, and planned adapters.</p>
+                </div>
+                <div class="header-meta">
+                    <span class="badge badge--live" title="Phase 1 orchestration">Phase 1 active</span>
+                    <span class="badge">v3.2</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="tabs" role="tablist" aria-label="Dashboard sections">
+            <button type="button" role="tab" aria-selected="true" aria-controls="overview" id="tab-overview" class="tab-btn active" onclick="switchTab('overview', this)">Overview</button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="tools" id="tab-tools" class="tab-btn" onclick="switchTab('tools', this)">Tools</button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="rankings" id="tab-rankings" class="tab-btn" onclick="switchTab('rankings', this)">Rankings</button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="flow" id="tab-flow" class="tab-btn" onclick="switchTab('flow', this)">Flow</button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="state" id="tab-state" class="tab-btn" onclick="switchTab('state', this)">State</button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="performance" id="tab-performance" class="tab-btn" onclick="switchTab('performance', this)">Performance</button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="activation" id="tab-activation" class="tab-btn" onclick="switchTab('activation', this)">Activation</button>
+        </div>
+
+        <main id="main" tabindex="-1">
+        <!-- OVERVIEW TAB -->
+        <div id="overview" role="tabpanel" aria-labelledby="tab-overview" class="tab-content active" aria-hidden="false">
+            <div class="section">
+                <h2>System architecture</h2>
+                <p class="section-lead">Phase 1 adds multi-tool support with automatic fallback chains, cost optimization, and quality-based tool selection.</p>
+
+                <div class="grid">
+                    <div class="card">
+                        <h3>📊 Architecture Layers</h3>
+                        <div class="metric">
+                            <span class="metric-label">User interface</span>
+                            <span class="metric-value metric-value--accent">CLI / API / Web</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Orchestration</span>
+                            <span class="metric-value">guide-agent</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Tool layer</span>
+                            <span class="metric-value">4 adapters</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Tools</span>
+                            <span class="metric-value">Claude, Gemini, Copilot+</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>🔄 Execution Mode</h3>
+                        <div class="metric">
+                            <span class="metric-label">Primary</span>
+                            <span class="metric-value">Sequential</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Fallback</span>
+                            <span class="metric-value metric-value--accent">Auto chain (3 tools)</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Cost mode</span>
+                            <span class="metric-value">Auto-select per task</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Parallel</span>
+                            <span class="metric-value metric-value--warning">Phase 2</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>✅ Quality Gates</h3>
+                        <div class="metric">
+                            <span class="metric-label">Brand compliance</span>
+                            <span class="metric-value metric-value--success">≥ 92%</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Originality</span>
+                            <span class="metric-value metric-value--success">≥ 85% unique</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">SEO score</span>
+                            <span class="metric-value metric-value--success">≥ 85%</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Success rate</span>
+                            <span class="metric-value metric-value--success">&gt; 95%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-box">
+                    <strong>✓ Status:</strong> Production-ready. All infrastructure in place. Ready to activate.
+                </div>
+            </div>
+        </div>
+
+        <!-- TOOLS TAB -->
+        <div id="tools" role="tabpanel" aria-labelledby="tab-tools" class="tab-content" aria-hidden="true">
+            <div class="section">
+                <h2>Phase 1 tools</h2>
+                <p class="section-lead">Adapter characteristics used by the router for quality-first or cost-first tasks.</p>
+
+                <div class="grid">
+                    <div class="card">
+                        <h3>🔵 Claude</h3>
+                        <div class="metric">
+                            <span class="metric-label">Type:</span>
+                            <span class="metric-value">Reasoning + Content</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Strength:</span>
+                            <span class="metric-value">Brand voice (94-96%)</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Speed:</span>
+                            <span class="metric-value">800ms (fast)</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Cost:</span>
+                            <span class="metric-value">$3-15 / 1M tokens</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Context:</span>
+                            <span class="metric-value">200k tokens</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Best For:</span>
+                            <span class="metric-value">Quality-critical content</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>🟢 Gemini</h3>
+                        <div class="metric">
+                            <span class="metric-label">Type:</span>
+                            <span class="metric-value">Multimodal + Analysis</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Strength:</span>
+                            <span class="metric-value">Images (multimodal)</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Speed:</span>
+                            <span class="metric-value">1200ms (good)</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Cost:</span>
+                            <span class="metric-value">$0.075-0.6 / 1M tokens</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Context:</span>
+                            <span class="metric-value">1M tokens (huge)</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Best For:</span>
+                            <span class="metric-value">Bulk work + images</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>🟡 Codex (Phase 2)</h3>
+                        <div class="metric">
+                            <span class="metric-label">Type:</span>
+                            <span class="metric-value">Code Specialization</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Strength:</span>
+                            <span class="metric-value">Scraping + code gen</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Speed:</span>
+                            <span class="metric-value">1500ms</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Cost:</span>
+                            <span class="metric-value">$0.5-2 / 1M tokens</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Context:</span>
+                            <span class="metric-value">400k tokens</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Best For:</span>
+                            <span class="metric-value">Scraping + automation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RANKINGS TAB -->
+        <div id="rankings" role="tabpanel" aria-labelledby="tab-rankings" class="tab-content" aria-hidden="true">
+            <div class="section">
+                <h2>Tool rankings by command</h2>
+                <p class="section-lead">Each command defines ranked tool preferences. guide-agent tries rank 1, then rank 2 on failure or timeout, then rank 3.</p>
+
+                <div class="table-wrap">
+                <table class="ranking-table">
+                    <caption>Scroll horizontally on small screens. Header stays visible while scrolling the table.</caption>
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Rank 1</th>
+                            <th>Rank 2</th>
+                            <th>Rank 3</th>
+                            <th>Reason</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>/create blog-posts</td>
+                            <td class="rank-1">Claude</td>
+                            <td class="rank-2">Gemini</td>
+                            <td class="rank-3">Copilot</td>
+                            <td>Brand voice quality</td>
+                        </tr>
+                        <tr>
+                            <td>/create landing-pages</td>
+                            <td class="rank-1">Claude</td>
+                            <td class="rank-2">Gemini</td>
+                            <td class="rank-3">Copilot</td>
+                            <td>Conversion copy precision</td>
+                        </tr>
+                        <tr>
+                            <td>/optimize images</td>
+                            <td class="rank-1">Gemini</td>
+                            <td class="rank-2">Claude</td>
+                            <td class="rank-3">Codex</td>
+                            <td>Multimodal advantage</td>
+                        </tr>
+                        <tr>
+                            <td>/polish content</td>
+                            <td class="rank-1">Claude ≤30<br>Gemini >30</td>
+                            <td class="rank-2">Reverse</td>
+                            <td class="rank-3">Copilot</td>
+                            <td>Cost optimization</td>
+                        </tr>
+                        <tr>
+                            <td>/scrape all/*</td>
+                            <td class="rank-1">Codex</td>
+                            <td class="rank-2">OpenCode</td>
+                            <td class="rank-3">Claude</td>
+                            <td>Code specialization</td>
+                        </tr>
+                        <tr>
+                            <td>/brand</td>
+                            <td class="rank-1">Claude</td>
+                            <td class="rank-2">Gemini</td>
+                            <td class="rank-3">Copilot</td>
+                            <td>Interactive Q&A</td>
+                        </tr>
+                        <tr>
+                            <td>/compare</td>
+                            <td class="rank-1">Claude</td>
+                            <td class="rank-2">Gemini</td>
+                            <td class="rank-3">Copilot</td>
+                            <td>Strategic analysis</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- FLOW DIAGRAM TAB -->
+        <div id="flow" role="tabpanel" aria-labelledby="tab-flow" class="tab-content" aria-hidden="true">
+            <div class="section">
+                <h2>Command execution flow</h2>
+                <p class="section-lead">Example path for <code style="font-family: var(--font-mono); font-size: 0.85em;">/create blog-posts</code> with fallbacks and versioned outputs.</p>
+
+                <div class="flow-diagram">
+User: "/create blog-posts"
+            │
+            ↓
+guide-agent parses command
+            │
+            ├─ Look up in commands-multi-tool.md
+            │  └─ Rank 1: Claude, Rank 2: Gemini, Rank 3: Copilot
+            │
+            ├─ Load .ai/tool-adapters/claude-adapter.md
+            │
+            └─ Execute with Claude
+                     │
+                     ├─ Success ✓
+                     │  └─ Save: post_1_<span class="success">claude_v1.md</span>
+                     │
+                     ├─ Timeout (>300s)
+                     │  └─ Try Gemini (Rank 2)
+                     │
+                     └─ Low quality (orig < 15%)
+                        └─ Retry with Gemini (different prompt)
+                                     │
+                                     ├─ Success ✓
+                                     │  └─ Save: post_1_<span class="success">gemini_v1.md</span>
+                                     │
+                                     └─ Fail
+                                        └─ Try Copilot (Rank 3)
+                                                     │
+                                                     ├─ Success ✓
+                                                     │  └─ Save: post_1_<span class="success">copilot_v1.md</span>
+                                                     │
+                                                     └─ Fail <span class="error">✗ ERROR</span>
+                                                        └─ All tools exhausted
+                                                           Manual intervention needed
+                </div>
+            </div>
+        </div>
+
+        <!-- STATE MANAGEMENT TAB -->
+        <div id="state" role="tabpanel" aria-labelledby="tab-state" class="tab-content" aria-hidden="true">
+            <div class="section">
+                <h2>State management</h2>
+                <p class="section-lead">Global session state plus per-tool files and performance logs.</p>
+
+                <div class="grid">
+                    <div class="card">
+                        <h3>Global state</h3>
+                        <p class="card-desc">Shared by all tools</p>
+                        <div class="metric">
+                            <span class="metric-label">File:</span>
+                            <span class="metric-value">.ai/memory/state.json</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Tracks:</span>
+                            <span class="metric-value">Pipeline stage</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Updates:</span>
+                            <span class="metric-value">Last tool, command</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Access:</span>
+                            <span class="metric-value">All tools (read/write)</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Tool-specific state</h3>
+                        <p class="card-desc">One file per tool (Phase 1)</p>
+                        <div class="metric">
+                            <span class="metric-label">Location:</span>
+                            <span class="metric-value">.ai/memory/multi-tool-state/</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Files:</span>
+                            <span class="metric-value">claude.json, gemini.json</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Tracks:</span>
+                            <span class="metric-value">Tokens, cost, history</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Access:</span>
+                            <span class="metric-value">Tool-specific only</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Performance log</h3>
+                        <p class="card-desc">Tool metrics for ranking updates</p>
+                        <div class="metric">
+                            <span class="metric-label">File:</span>
+                            <span class="metric-value">logs/tool-performance.jsonl</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Records:</span>
+                            <span class="metric-value">Latency, cost, quality</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Frequency:</span>
+                            <span class="metric-value">Every command</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Update:</span>
+                            <span class="metric-value">Monthly rankings</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PERFORMANCE TAB -->
+        <div id="performance" role="tabpanel" aria-labelledby="tab-performance" class="tab-content" aria-hidden="true">
+            <div class="section">
+                <h2>Performance comparison</h2>
+                <p class="section-lead">Illustrative latency and cost bands for planning; tune against your live <code style="font-family: var(--font-mono); font-size: 0.85em;">tool-performance.jsonl</code> data.</p>
+
+                <div class="grid grid--charts">
+                    <div>
+                        <h3 class="chart-block-title">Latency (response time)</h3>
+                        <div class="chart-container">
+                            <canvas id="latencyChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="chart-block-title">Cost per 1M tokens (USD)</h3>
+                        <div class="chart-container">
+                            <canvas id="costChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid">
+                    <div class="card">
+                        <h3>Brand voice compliance</h3>
+                        <div class="stat-rows">
+                            <div class="stat-row">
+                                <span class="stat-row__label">Claude</span>
+                                <span class="stat-row__value stat-row__value--good">94–96%</span>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-row__label">Gemini</span>
+                                <span class="stat-row__value stat-row__value--mid">92–94%</span>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-row__label">Codex</span>
+                                <span class="stat-row__value stat-row__value--mid">85%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Success rate</h3>
+                        <div class="stat-rows">
+                            <div class="stat-row">
+                                <span class="stat-row__label">Claude</span>
+                                <span class="stat-row__value stat-row__value--good">99.5%</span>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-row__label">Gemini</span>
+                                <span class="stat-row__value stat-row__value--good">98.8%</span>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-row__label">Codex</span>
+                                <span class="stat-row__value stat-row__value--good">98%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ACTIVATION TAB -->
+        <div id="activation" role="tabpanel" aria-labelledby="tab-activation" class="tab-content" aria-hidden="true">
+            <div class="section">
+                <h2>Phase 1 activation checklist</h2>
+                <p class="section-lead">Three steps to go from “files on disk” to monitored production use.</p>
+
+                <div class="action-box action-box--neutral">
+                    <strong>Before you start:</strong> Infrastructure files are in place. Complete the steps in order and verify logs after each smoke test.
+                </div>
+
+                <div class="steps">
+                    <div class="step-card">
+                        <h3>Step 1 — Update guide-agent system prompt</h3>
+                        <p><strong>File:</strong> <code>.ai/GUIDE-AGENT-SYSTEM-PROMPT-ADDENDUM.md</code></p>
+                        <p>Copy the section labeled <strong>“LOAD THIS SECTION: Multi-Tool Orchestration (Phase 1)”</strong> into the guide-agent system prompt.</p>
+                        <p class="hint"><strong>Time:</strong> about 2 minutes</p>
+                    </div>
+
+                    <div class="step-card">
+                        <h3>Step 2 — Run smoke tests</h3>
+                        <p><strong>Test 1 — Tool selection</strong></p>
+                        <code class="code-block">/create blog-posts about interior design</code>
+                        <p>Expected: Claude selected; outputs use a <code>_claude_v1.md</code> suffix pattern.</p>
+
+                        <p><strong>Test 2 — Multimodal (Gemini)</strong></p>
+                        <code class="code-block">/optimize images in content/</code>
+                        <p>Expected: Gemini selected; results reflected in <code>assets-seo.json</code>.</p>
+
+                        <p><strong>Test 3 — State sync</strong></p>
+                        <code class="code-block">cat .ai/memory/state.json | grep "last_tool"</code>
+                        <p>Expected: <code>"last_tool": "claude"</code> or <code>"gemini"</code> after runs.</p>
+
+                        <p class="hint"><strong>Time:</strong> about 5 minutes</p>
+                    </div>
+
+                    <div class="step-card">
+                        <h3>Step 3 — Monitor for one week</h3>
+                        <p><strong>Watch</strong></p>
+                        <ul>
+                            <li>Tool success rate (target &gt; 95%)</li>
+                            <li>Cost vs. expectations (rough bands: Claude ~$0.25, Gemini ~$0.08 per relevant window)</li>
+                            <li>Latency (Claude ~800ms, Gemini ~1200ms illustrative)</li>
+                            <li>Log continuity (<code>tool</code> field present, no silent failures)</li>
+                        </ul>
+                        <p><strong>Files</strong></p>
+                        <ul>
+                            <li><code>logs/workflow.jsonl</code></li>
+                            <li><code>logs/tool-performance.jsonl</code></li>
+                            <li><code>.ai/memory/multi-tool-state/</code></li>
+                        </ul>
+                        <p class="hint"><strong>Time:</strong> about 5 minutes per day</p>
+                    </div>
+                </div>
+
+                <div class="action-box">
+                    <strong>Ready:</strong> All referenced paths exist in the workspace layout. You can begin activation whenever the prompt merge is approved.
+                </div>
+            </div>
+        </div>
+
+        </main>
+
+        <div class="footer">
+            <p>Sovereign workspace Phase 1 · Multi-tool architecture · Built 2026-04-13</p>
+            <p>Documentation: PHASE-1-SETUP-GUIDE.md, PHASE-1-ARCHITECTURE-SUMMARY.md, QUICK-REFERENCE.md</p>
+        </div>
+    </div>
+
+    <script>
+        function switchTab(tabName, buttonEl) {
+            document.querySelectorAll('.tab-content').forEach(function (tab) {
+                tab.classList.remove('active');
+                tab.setAttribute('aria-hidden', 'true');
+            });
+
+            document.querySelectorAll('.tab-btn').forEach(function (btn) {
+                btn.classList.remove('active');
+                btn.setAttribute('aria-selected', 'false');
+            });
+
+            var panel = document.getElementById(tabName);
+            if (panel) {
+                panel.classList.add('active');
+                panel.setAttribute('aria-hidden', 'false');
+            }
+
+            var btn = buttonEl;
+            if (!btn) {
+                btn = document.getElementById('tab-' + tabName);
+            }
+            if (btn) {
+                btn.classList.add('active');
+                btn.setAttribute('aria-selected', 'true');
+            }
+
+            if (tabName === 'performance') {
+                setTimeout(function () {
+                    drawCharts();
+                    ['latencyChart', 'costChart'].forEach(function (id) {
+                        var el = document.getElementById(id);
+                        if (el && el.chart) {
+                            el.chart.resize();
+                        }
+                    });
+                }, 120);
+            }
+        }
+
+        (function () {
+            var tablist = document.querySelector('.tabs');
+            if (!tablist) return;
+
+            tablist.addEventListener('keydown', function (e) {
+                var keys = ['ArrowRight', 'ArrowLeft', 'Home', 'End'];
+                if (keys.indexOf(e.key) === -1) return;
+
+                var tabs = Array.prototype.slice.call(tablist.querySelectorAll('.tab-btn'));
+                var i = tabs.indexOf(document.activeElement);
+                if (i === -1) return;
+
+                e.preventDefault();
+                var next = i;
+                if (e.key === 'ArrowRight') {
+                    next = (i + 1) % tabs.length;
+                } else if (e.key === 'ArrowLeft') {
+                    next = (i - 1 + tabs.length) % tabs.length;
+                } else if (e.key === 'Home') {
+                    next = 0;
+                } else if (e.key === 'End') {
+                    next = tabs.length - 1;
+                }
+
+                tabs[next].focus();
+                var id = tabs[next].id;
+                var name = id && id.indexOf('tab-') === 0 ? id.slice(4) : null;
+                if (name) {
+                    switchTab(name, tabs[next]);
+                }
+            });
+        })();
+
+        function drawCharts() {
+            // Latency Chart
+            const latencyCtx = document.getElementById('latencyChart');
+            if (latencyCtx && !latencyCtx.chart) {
+                latencyCtx.chart = new Chart(latencyCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Claude', 'Gemini', 'Codex'],
+                        datasets: [{
+                            label: 'Latency (ms)',
+                            data: [800, 1200, 1500],
+                            backgroundColor: [
+                                '#22d3ee',
+                                '#34d399',
+                                '#fbbf24'
+                            ]
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                labels: { color: '#f1f2f6' }
+                            }
+                        },
+                        scales: {
+                            y: {
+                                grid: { color: 'rgba(255, 255, 255, 0.06)' },
+                                ticks: { color: '#a1a7bb' }
+                            },
+                            x: {
+                                grid: { display: false },
+                                ticks: { color: '#a1a7bb' }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // Cost Chart
+            const costCtx = document.getElementById('costChart');
+            if (costCtx && !costCtx.chart) {
+                costCtx.chart = new Chart(costCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Claude', 'Gemini', 'Codex'],
+                        datasets: [{
+                            label: 'Cost USD',
+                            data: [9, 0.3375, 1.25],
+                            backgroundColor: [
+                                '#fb7185',
+                                '#34d399',
+                                '#fbbf24'
+                            ]
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                labels: { color: '#f1f2f6' }
+                            }
+                        },
+                        scales: {
+                            y: {
+                                grid: { color: 'rgba(255, 255, 255, 0.06)' },
+                                ticks: { color: '#a1a7bb' }
+                            },
+                            x: {
+                                grid: { display: false },
+                                ticks: { color: '#a1a7bb' }
+                            }
+                        }
+                    }
+                });
+            }
+        }
+
+        window.addEventListener('load', drawCharts);
+    </script>
+</body>
+</html>

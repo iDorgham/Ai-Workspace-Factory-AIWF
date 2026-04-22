@@ -1,0 +1,25 @@
+{
+  "id": "discovery-engine",
+  "parent_agent": "research-agent",
+  "trigger": "/research competitors",
+  "single_responsibility": "Web discovery and relevance scoring of competitor candidates",
+  "input": {
+    "required": {
+      "brand_positioning": "string \u2014 Sovereign niche, tier, geo, services from market-positioning.md",
+      "existing_slugs": "array<string> \u2014 slugs already in index.json to avoid duplicates"
+    },
+    "optional": {
+      "seed_urls": "array<string> \u2014 manual competitor URLs provided by user"
+    }
+  },
+  "output": {
+    "candidate_competitors": "array<{name: string, url: string, niche: string, confidence_score: float, reason: string}>"
+  },
+  "validation": {
+    "confidence_score_minimum": 0.7,
+    "site_response_timeout_seconds": 5,
+    "minimum_candidates_before_user_prompt": 3
+  },
+  "error_owner": "discovery-engine",
+  "escalates_to": "research-agent"
+}

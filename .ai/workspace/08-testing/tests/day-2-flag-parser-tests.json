@@ -1,0 +1,239 @@
+{
+  "test_suite": "day-2-flag-parser",
+  "date": "2026-04-13",
+  "total_tests": 10,
+  "categories": ["flag_parser", "error_handling"],
+  "tests": [
+    {
+      "test_id": 1,
+      "name": "Normal Command (No Flags)",
+      "category": "flag_parser",
+      "input": "/create blog-posts",
+      "expected": {
+        "tokens": ["/create", "blog-posts"],
+        "command": "/create blog-posts",
+        "flags": {
+          "tool": null,
+          "tool_forced": false,
+          "explain_routing": false,
+          "prefer": null,
+          "parallel": false
+        },
+        "valid": true,
+        "errors": []
+      },
+      "description": "User sends command without any CLI flags. Should parse to command only, all flags null/false."
+    },
+    {
+      "test_id": 2,
+      "name": "Force Tool (--tool qwen)",
+      "category": "flag_parser",
+      "input": "/create blog-posts --tool qwen",
+      "expected": {
+        "tokens": ["/create", "blog-posts", "--tool", "qwen"],
+        "command": "/create blog-posts",
+        "flags": {
+          "tool": "qwen",
+          "tool_forced": true,
+          "explain_routing": false,
+          "prefer": null,
+          "parallel": false
+        },
+        "valid": true,
+        "errors": []
+      },
+      "description": "User forces execution with Qwen. Should set tool='qwen' and tool_forced=true."
+    },
+    {
+      "test_id": 3,
+      "name": "Explain Routing (--explain-routing)",
+      "category": "flag_parser",
+      "input": "/create blog-posts --explain-routing",
+      "expected": {
+        "tokens": ["/create", "blog-posts", "--explain-routing"],
+        "command": "/create blog-posts",
+        "flags": {
+          "tool": null,
+          "tool_forced": false,
+          "explain_routing": true,
+          "prefer": null,
+          "parallel": false
+        },
+        "valid": true,
+        "errors": []
+      },
+      "description": "User wants to see routing explanation. Should set explain_routing=true, no execution."
+    },
+    {
+      "test_id": 4,
+      "name": "Parallel Execution (--parallel)",
+      "category": "flag_parser",
+      "input": "/create blog-posts --parallel",
+      "expected": {
+        "tokens": ["/create", "blog-posts", "--parallel"],
+        "command": "/create blog-posts",
+        "flags": {
+          "tool": null,
+          "tool_forced": false,
+          "explain_routing": false,
+          "prefer": null,
+          "parallel": true
+        },
+        "valid": true,
+        "errors": []
+      },
+      "description": "User wants parallel execution. Should set parallel=true, run Rank 1 + Rank 2 tools."
+    },
+    {
+      "test_id": 5,
+      "name": "Prefer Fallback (--prefer gemini)",
+      "category": "flag_parser",
+      "input": "/create blog-posts --prefer gemini",
+      "expected": {
+        "tokens": ["/create", "blog-posts", "--prefer", "gemini"],
+        "command": "/create blog-posts",
+        "flags": {
+          "tool": null,
+          "tool_forced": false,
+          "explain_routing": false,
+          "prefer": "gemini",
+          "parallel": false
+        },
+        "valid": true,
+        "errors": []
+      },
+      "description": "User hints preference for fallback. Should set prefer='gemini', don't force."
+    },
+    {
+      "test_id": 6,
+      "name": "Error: Invalid Tool Name",
+      "category": "error_handling",
+      "input": "/create blog-posts --tool invalid-tool-name",
+      "expected": {
+        "tokens": ["/create", "blog-posts", "--tool", "invalid-tool-name"],
+        "command": "/create blog-posts",
+        "flags": {
+          "tool": "invalid-tool-name",
+          "tool_forced": true,
+          "explain_routing": false,
+          "prefer": null,
+          "parallel": false
+        },
+        "valid": false,
+        "errors": ["Tool 'invalid-tool-name' not found in registry"],
+        "error_type": "invalid_tool",
+        "handler": "error_invalid_tool()",
+        "response_includes": ["Available tools:", "copilot", "codex", "gemini", "qwen", "opencode", "kilo"]
+      },
+      "description": "User specifies non-existent tool. Should fail validation and suggest available tools."
+    },
+    {
+      "test_id": 7,
+      "name": "Error: Unavailable Tool",
+      "category": "error_handling",
+      "input": "/create blog-posts --tool opencode",
+      "setup": "Mark opencode status='unavailable' with reason='not_installed'",
+      "expected": {
+        "tokens": ["/create", "blog-posts", "--tool", "opencode"],
+        "command": "/create blog-posts",
+        "flags": {
+          "tool": "opencode",
+          "tool_forced": true,
+          "explain_routing": false,
+          "prefer": null,
+          "parallel": false
+        },
+        "valid": false,
+        "errors": ["Tool 'opencode' not available: not_installed"],
+        "error_type": "unavailable_tool",
+        "handler": "error_unavailable_tool()",
+        "response_includes": ["not available", "not_installed", "/tool-setup opencode"]
+      },
+      "description": "User forces tool that exists but is unavailable. Should suggest /tool-setup or use available alternatives."
+    },
+    {
+      "test_id": 8,
+      "name": "Error: Conflicting Flags (--tool + --explain-routing)",
+      "category": "error_handling",
+      "input": "/create blog-posts --tool gemini --explain-routing",
+      "expected": {
+        "tokens": ["/create", "blog-posts", "--tool", "gemini", "--explain-routing"],
+        "command": "/create blog-posts",
+        "flags": {
+          "tool": "gemini",
+          "tool_forced": true,
+          "explain_routing": true,
+          "prefer": null,
+          "parallel": false
+        },
+        "valid": false,
+        "errors": ["--tool and --explain-routing are mutually exclusive"],
+        "error_type": "conflicting_flags",
+        "conflict_type": "tool_explain",
+        "handler": "error_tool_explain_conflict()",
+        "response_includes": ["cannot be used together", "Option A:", "Option B:", "Option C:"]
+      },
+      "description": "User tries to force tool AND see ranking explanation. Should show these are mutually exclusive."
+    },
+    {
+      "test_id": 9,
+      "name": "Error: Conflicting Flags (--tool + --parallel)",
+      "category": "error_handling",
+      "input": "/create blog-posts --tool qwen --parallel",
+      "expected": {
+        "tokens": ["/create", "blog-posts", "--tool", "qwen", "--parallel"],
+        "command": "/create blog-posts",
+        "flags": {
+          "tool": "qwen",
+          "tool_forced": true,
+          "explain_routing": false,
+          "prefer": null,
+          "parallel": true
+        },
+        "valid": false,
+        "errors": ["--parallel and --tool conflict"],
+        "error_type": "conflicting_flags",
+        "conflict_type": "tool_parallel",
+        "handler": "error_tool_parallel_conflict()",
+        "response_includes": ["cannot be used together", "Option A:", "Option B:", "Option C:"]
+      },
+      "description": "User tries to force single tool AND run parallel. Should show these are incompatible."
+    },
+    {
+      "test_id": 10,
+      "name": "Error: Insufficient Tools for Parallel",
+      "category": "error_handling",
+      "input": "/create blog-posts --parallel",
+      "setup": "Set available_tools = ['copilot'] (only 1 tool available)",
+      "expected": {
+        "tokens": ["/create", "blog-posts", "--parallel"],
+        "command": "/create blog-posts",
+        "flags": {
+          "tool": null,
+          "tool_forced": false,
+          "explain_routing": false,
+          "prefer": null,
+          "parallel": true
+        },
+        "valid": false,
+        "errors": ["--parallel requires 2+ tools. Available: 1"],
+        "error_type": "insufficient_tools",
+        "handler": "error_insufficient_tools_parallel()",
+        "response_includes": ["requires 2+ available tools", "/tool-setup"]
+      },
+      "description": "User requests parallel but only 1 tool available. Should suggest setting up additional tools."
+    }
+  ],
+  "metadata": {
+    "phase": "2a",
+    "version": "1.0",
+    "status": "ready_for_execution",
+    "dependencies": [
+      ".ai/tool-registry.json",
+      ".ai/GUIDE-AGENT-SYSTEM-PROMPT-ADDENDUM-PHASE2A.md",
+      ".ai/cli-layer/error-handling.md"
+    ],
+    "expected_pass_rate": "10/10",
+    "owner": "guide-agent"
+  }
+}

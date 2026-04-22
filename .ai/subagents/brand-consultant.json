@@ -1,0 +1,55 @@
+{
+  "id": "brand-consultant",
+  "parent_agent": "brand-agent",
+  "trigger": "/brand",
+  "script": ".ai/scripts/brand/brand_consultant.py",
+  "protocol": ".ai/brand-discovery.md",
+  "single_responsibility": "Run structured brand discovery interview and generate all brand foundation files",
+  "input": {
+    "required": {
+      "questions_source": "path \u2014 .ai/templates/brand-discovery/questions.json",
+      "user_interaction": "interactive \u2014 CLI session with the workspace operator"
+    },
+    "optional": {
+      "existing_market_positioning": "path \u2014 content/sovereign/reference/market-positioning.md (versioned if present)"
+    }
+  },
+  "output": {
+    "market_positioning": "content/sovereign/reference/market-positioning.md \u2014 studio niche, clients, USPs, pricing, differentiators",
+    "style_rules": "content/sovereign/reference/brand-voice/style-rules.md \u2014 tone rules, spectrum scores, language rules",
+    "glossary": "content/sovereign/reference/brand-voice/glossary.md \u2014 preferred vocabulary, prohibited terms",
+    "tone_examples": "content/sovereign/reference/brand-voice/tone-examples.md \u2014 on-brand vs off-brand reference",
+    "voice_refinement": "content/sovereign/reference/brand-voice/voice-refinement.md \u2014 session 0 refinement log",
+    "session_log": ".ai/logs/brand-session.json \u2014 full answer record"
+  },
+  "interview_structure": {
+    "total_questions": 28,
+    "phases": 7,
+    "question_types": [
+      "single_choice",
+      "single_choice_with_other",
+      "multi_choice",
+      "multi_choice_with_other",
+      "open_text",
+      "spectrum_grid"
+    ],
+    "required_questions": 18,
+    "optional_questions": 10
+  },
+  "validation": {
+    "required_fields_enforced": true,
+    "max_selections_enforced": true,
+    "no_partial_file_writes": true,
+    "existing_files_versioned_before_overwrite": true,
+    "interruption_safe": true
+  },
+  "pipeline_rule": "MUST run before /create if market-positioning.md is empty or missing",
+  "error_owner": "brand-consultant",
+  "escalates_to": "brand-agent",
+  "error_modes": {
+    "questions_json_missing": "HALT \u2014 print path, sys.exit(1)",
+    "file_write_failure": "retry 3x \u2014 log to workflow.jsonl \u2014 skip file, continue session",
+    "user_interrupts": "exit cleanly \u2014 no partial files written",
+    "duplicate_run": "version existing files (_v2, _v3) before overwriting"
+  }
+}

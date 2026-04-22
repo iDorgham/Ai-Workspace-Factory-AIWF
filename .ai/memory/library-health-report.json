@@ -1,0 +1,3706 @@
+{
+  "version": "1.0.0",
+  "timestamp": "2026-04-22T02:30:17.086955",
+  "departments": {
+    "01-software-engineering": {
+      "score": 57,
+      "components": [
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "01-software-engineering/engineering-core/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "ErrorDetective",
+          "type": "AGENT",
+          "path": "01-software-engineering/engineering-core/agents/ErrorDetective/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "Frontend",
+          "type": "AGENT",
+          "path": "01-software-engineering/engineering-core/agents/Frontend/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "SentinelEngineeringCore",
+          "type": "AGENT",
+          "path": "01-software-engineering/engineering-core/agents/SentinelEngineeringCore/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "Architect",
+          "type": "AGENT",
+          "path": "01-software-engineering/engineering-core/agents/Architect/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "Backend",
+          "type": "AGENT",
+          "path": "01-software-engineering/engineering-core/agents/Backend/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "DBA",
+          "type": "AGENT",
+          "path": "01-software-engineering/engineering-core/agents/DBA/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "QA",
+          "type": "AGENT",
+          "path": "01-software-engineering/engineering-core/agents/QA/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "01-software-engineering/testing/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "playwright-e2e-mastery",
+          "type": "SKILL",
+          "path": "01-software-engineering/testing/skills/external/playwright-e2e/playwright-e2e-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "SentinelTesting",
+          "type": "AGENT",
+          "path": "01-software-engineering/testing/agents/SentinelTesting/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "01-software-engineering/backend/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "backend-dashboard-patterns",
+          "type": "SKILL",
+          "path": "01-software-engineering/backend/skills/backend-dashboard-patterns/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "nestjs-modular-architecture",
+          "type": "SKILL",
+          "path": "01-software-engineering/backend/skills/external/nestjs-architecture/nestjs-modular-architecture/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "SentinelBackend",
+          "type": "AGENT",
+          "path": "01-software-engineering/backend/agents/SentinelBackend/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "01-software-engineering/developing/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "strategist",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/strategist/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "self-healing-workflows",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/self-healing-workflows/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "risk-scoring-5x5",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/risk-scoring-5x5/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "safety-interaction",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/safety-interaction/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "accessibility-wcag",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/accessibility-wcag/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "dynamic-memory-protocol",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/dynamic-memory-protocol/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "pre-flight-checklist",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/pre-flight-checklist/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "distributed-system-architecture",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/distributed-system-architecture/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "style-transfer",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/style-transfer/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "context-compression",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/context-compression/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "qr-branding",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/qr-branding/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "zero-trust-validation",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/zero-trust-validation/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "policy-as-code",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/policy-as-code/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "auto-optimization-loop",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/auto-optimization-loop/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "creative-director",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/creative-director/SKILL.md",
+          "score": 70
+        },
+        {
+          "name": "pro-prd-writer",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/pro-prd-writer/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "gdpr-regional-compliance",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/gdpr-regional-compliance/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "swarm-coordination-patterns",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/swarm-coordination-patterns/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "pnpm-version-catalogs",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/pnpm-version-catalogs/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "docs-lint-link-check",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/docs-lint-link-check/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "core-web-vitals",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/core-web-vitals/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "security-devops-ops",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/security-devops-ops/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "stateless-auth",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/stateless-auth/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "property-domain",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/property-domain/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "qr-crypto",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/qr-crypto/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "runtime-automation-rules",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/runtime-automation-rules/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "workspace-audit-orchestrator",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/workspace-audit-orchestrator/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "rbac-permission-system",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/rbac-permission-system/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "edge-case-boundary-testing",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/edge-case-boundary-testing/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "testing",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/testing/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "architecture",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/architecture/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "multi-tool-orchestration",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/multi-tool-orchestration/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "lesson-injection",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/lesson-injection/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "design-guide",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/design-guide/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "mistake-prevention",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/mistake-prevention/SKILL.md",
+          "score": 20
+        },
+        {
+          "name": "legal-review",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/legal-review/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "playwright-e2e",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/playwright-e2e/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "metrics-driven-decisions",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/metrics-driven-decisions/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "data-viz",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/data-viz/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "owasp-zero-trust-architecture",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/owasp-zero-trust-architecture/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "mcp-guide",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/mcp-guide/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "cli-limits",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/cli-limits/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "service-selection-guide",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/service-selection-guide/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "programming-languages-mastery",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/programming-languages-mastery/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "booking-scheduling-domain",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/booking-scheduling-domain/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "edge-patterns",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/edge-patterns/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "api-security-patterns",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/api-security-patterns/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "cicd-automation",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/cicd-automation/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "hallucination-containment",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/hallucination-containment/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "sentry-observability",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/sentry-observability/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "cli-memory",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/cli-memory/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "real-time-observability-mastery",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/external/sentry-observability/real-time-observability-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "typescript-2026-physic",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/external/typescript-mastery/typescript-2026-physic/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "github-official-mastery",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/external/github/github-official-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "upstash-integration",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/cloud/upstash-integration/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "railway-deployment",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/cloud/railway-deployment/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "cloudflare-stack",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/cloud/cloudflare-stack/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "aws-services",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/cloud/aws-services/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "firebase-integration",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/cloud/firebase-integration/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "google-cloud",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/cloud/google-cloud/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "neon-postgres",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/cloud/neon-postgres/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "database",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/backend/database/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "excel-spreadsheets",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/backend/excel-spreadsheets/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "prisma-advanced",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/backend/prisma-advanced/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "structured-logging-tracing",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/backend/structured-logging-tracing/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "multi-tenant-isolation",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/backend/multi-tenant-isolation/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "api",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/backend/api/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "backend-engineering-playbook",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/backend/backend-engineering-playbook/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "ui-ux-pro-max",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/frontend/ui-ux-pro-max/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "asset-optimization",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/frontend/asset-optimization/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "motion-animation-system",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/frontend/motion-animation-system/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "frontend-architecture-system",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/frontend/frontend-architecture-system/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "i18n",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/frontend/i18n/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "multi-currency-localization",
+          "type": "SKILL",
+          "path": "01-software-engineering/developing/skills/frontend/multi-currency-localization/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "MlEngineer",
+          "type": "AGENT",
+          "path": "01-software-engineering/developing/agents/MlEngineer/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "Security",
+          "type": "AGENT",
+          "path": "01-software-engineering/developing/agents/Security/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "Mobile",
+          "type": "AGENT",
+          "path": "01-software-engineering/developing/agents/Mobile/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "SentinelDeveloping",
+          "type": "AGENT",
+          "path": "01-software-engineering/developing/agents/SentinelDeveloping/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "Frontend",
+          "type": "AGENT",
+          "path": "01-software-engineering/developing/agents/Frontend/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "MultiTenantArchitect",
+          "type": "AGENT",
+          "path": "01-software-engineering/developing/agents/MultiTenantArchitect/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "PerformanceEngineer",
+          "type": "AGENT",
+          "path": "01-software-engineering/developing/agents/PerformanceEngineer/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "Reviewer",
+          "type": "AGENT",
+          "path": "01-software-engineering/developing/agents/Reviewer/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "Backend",
+          "type": "AGENT",
+          "path": "01-software-engineering/developing/agents/Backend/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "GrowthEngineer",
+          "type": "AGENT",
+          "path": "01-software-engineering/developing/agents/GrowthEngineer/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "WorkspaceManager",
+          "type": "AGENT",
+          "path": "01-software-engineering/developing/agents/WorkspaceManager/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "Escalation",
+          "type": "AGENT",
+          "path": "01-software-engineering/developing/agents/Escalation/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "ContextSlicer",
+          "type": "AGENT",
+          "path": "01-software-engineering/developing/agents/ContextSlicer/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "DBA",
+          "type": "AGENT",
+          "path": "01-software-engineering/developing/agents/DBA/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "DataArchitect",
+          "type": "AGENT",
+          "path": "01-software-engineering/developing/agents/DataArchitect/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "IntegrationSpecialist",
+          "type": "AGENT",
+          "path": "01-software-engineering/developing/agents/IntegrationSpecialist/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "LegalReview",
+          "type": "AGENT",
+          "path": "01-software-engineering/developing/agents/LegalReview/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "ContractLock",
+          "type": "AGENT",
+          "path": "01-software-engineering/developing/agents/ContractLock/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "Risk",
+          "type": "AGENT",
+          "path": "01-software-engineering/developing/agents/Risk/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "I18n",
+          "type": "AGENT",
+          "path": "01-software-engineering/developing/agents/I18n/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "Devops",
+          "type": "AGENT",
+          "path": "01-software-engineering/developing/agents/Devops/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "QA",
+          "type": "AGENT",
+          "path": "01-software-engineering/developing/agents/QA/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "Cortex",
+          "type": "AGENT",
+          "path": "01-software-engineering/developing/agents/Cortex/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "ComplianceOfficer",
+          "type": "AGENT",
+          "path": "01-software-engineering/developing/agents/ComplianceOfficer/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "01-software-engineering/ios-apple/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "SentinelIosApple",
+          "type": "AGENT",
+          "path": "01-software-engineering/ios-apple/agents/SentinelIosApple/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "01-software-engineering/devops/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "SentinelDevops",
+          "type": "AGENT",
+          "path": "01-software-engineering/devops/agents/SentinelDevops/AGENT.md",
+          "score": 40
+        }
+      ]
+    },
+    "02-web-platforms": {
+      "score": 61,
+      "components": [
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "02-web-platforms/saas-platforms/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "SentinelSaasPlatforms",
+          "type": "AGENT",
+          "path": "02-web-platforms/saas-platforms/agents/SentinelSaasPlatforms/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "02-web-platforms/api-design/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "api-contracts",
+          "type": "SKILL",
+          "path": "02-web-platforms/api-design/skills/api-contracts/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "api-gateway-mastery",
+          "type": "SKILL",
+          "path": "02-web-platforms/api-design/skills/api-gateway-mastery/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "SentinelApiDesign",
+          "type": "AGENT",
+          "path": "02-web-platforms/api-design/agents/SentinelApiDesign/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "02-web-platforms/app-developing/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "app-developing-mastery",
+          "type": "SKILL",
+          "path": "02-web-platforms/app-developing/skills/app-developing-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "expo-mobile-optimization",
+          "type": "SKILL",
+          "path": "02-web-platforms/app-developing/skills/external/expo/expo-mobile-optimization/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "SentinelAppDeveloping",
+          "type": "AGENT",
+          "path": "02-web-platforms/app-developing/agents/SentinelAppDeveloping/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "02-web-platforms/web-developing/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "cms-mastery",
+          "type": "SKILL",
+          "path": "02-web-platforms/web-developing/skills/cms-mastery/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "framer-mastery",
+          "type": "SKILL",
+          "path": "02-web-platforms/web-developing/skills/framer-mastery/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "bilingual-nextjs-performance",
+          "type": "SKILL",
+          "path": "02-web-platforms/web-developing/skills/bilingual-nextjs-performance/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "front-end-website-builders",
+          "type": "SKILL",
+          "path": "02-web-platforms/web-developing/skills/front-end-website-builders/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "live-website-builders",
+          "type": "SKILL",
+          "path": "02-web-platforms/web-developing/skills/live-website-builders/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "responsive-grid-systems",
+          "type": "SKILL",
+          "path": "02-web-platforms/web-developing/skills/responsive-grid-systems/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "modern-frontend-frameworks",
+          "type": "SKILL",
+          "path": "02-web-platforms/web-developing/skills/modern-frontend-frameworks/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "animation-frameworks",
+          "type": "SKILL",
+          "path": "02-web-platforms/web-developing/skills/animation-frameworks/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "react-design-patterns",
+          "type": "SKILL",
+          "path": "02-web-platforms/web-developing/skills/external/patterns-dev/react-design-patterns/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "nextjs-2026-patterns",
+          "type": "SKILL",
+          "path": "02-web-platforms/web-developing/skills/external/nextjs-mastery/nextjs-2026-patterns/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "sleek-ui-design-protocols",
+          "type": "SKILL",
+          "path": "02-web-platforms/web-developing/skills/external/design-excellence/sleek-ui-design-protocols/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "vercel-official-mastery",
+          "type": "SKILL",
+          "path": "02-web-platforms/web-developing/skills/external/vercel/vercel-official-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "render-props-pattern",
+          "type": "SKILL",
+          "path": "02-web-platforms/web-developing/skills/react-patterns/render-props-pattern/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "react-composition-2026",
+          "type": "SKILL",
+          "path": "02-web-platforms/web-developing/skills/react-patterns/react-composition-2026/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "compound-pattern",
+          "type": "SKILL",
+          "path": "02-web-platforms/web-developing/skills/react-patterns/compound-pattern/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "static-rendering",
+          "type": "SKILL",
+          "path": "02-web-platforms/web-developing/skills/react-patterns/static-rendering/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "hooks-pattern",
+          "type": "SKILL",
+          "path": "02-web-platforms/web-developing/skills/react-patterns/hooks-pattern/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "client-side-rendering",
+          "type": "SKILL",
+          "path": "02-web-platforms/web-developing/skills/react-patterns/client-side-rendering/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "progressive-hydration",
+          "type": "SKILL",
+          "path": "02-web-platforms/web-developing/skills/react-patterns/progressive-hydration/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "server-side-rendering",
+          "type": "SKILL",
+          "path": "02-web-platforms/web-developing/skills/react-patterns/server-side-rendering/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "react-2026",
+          "type": "SKILL",
+          "path": "02-web-platforms/web-developing/skills/react-patterns/react-2026/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "ai-ui-patterns",
+          "type": "SKILL",
+          "path": "02-web-platforms/web-developing/skills/react-patterns/ai-ui-patterns/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "react-selective-hydration",
+          "type": "SKILL",
+          "path": "02-web-platforms/web-developing/skills/react-patterns/react-selective-hydration/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "react-server-components",
+          "type": "SKILL",
+          "path": "02-web-platforms/web-developing/skills/react-patterns/react-server-components/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "incremental-static-rendering",
+          "type": "SKILL",
+          "path": "02-web-platforms/web-developing/skills/react-patterns/incremental-static-rendering/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "react-render-optimization",
+          "type": "SKILL",
+          "path": "02-web-platforms/web-developing/skills/react-patterns/react-render-optimization/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "hoc-pattern",
+          "type": "SKILL",
+          "path": "02-web-platforms/web-developing/skills/react-patterns/hoc-pattern/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "react-data-fetching",
+          "type": "SKILL",
+          "path": "02-web-platforms/web-developing/skills/react-patterns/react-data-fetching/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "presentational-container-pattern",
+          "type": "SKILL",
+          "path": "02-web-platforms/web-developing/skills/react-patterns/presentational-container-pattern/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "SentinelWebDeveloping",
+          "type": "AGENT",
+          "path": "02-web-platforms/web-developing/agents/SentinelWebDeveloping/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "02-web-platforms/cloud-architecture/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "firebase-platform-mastery",
+          "type": "SKILL",
+          "path": "02-web-platforms/cloud-architecture/skills/external/firebase/firebase-platform-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "azure-cloud-physics",
+          "type": "SKILL",
+          "path": "02-web-platforms/cloud-architecture/skills/external/microsoft-azure/azure-cloud-physics/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "supabase-official-mastery",
+          "type": "SKILL",
+          "path": "02-web-platforms/cloud-architecture/skills/external/supabase/supabase-official-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "cloudflare-official-mastery",
+          "type": "SKILL",
+          "path": "02-web-platforms/cloud-architecture/skills/external/cloudflare/cloudflare-official-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "serverless-db-physics",
+          "type": "SKILL",
+          "path": "02-web-platforms/cloud-architecture/skills/external/serverless-databases/serverless-db-physics/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "SentinelCloudArchitecture",
+          "type": "AGENT",
+          "path": "02-web-platforms/cloud-architecture/agents/SentinelCloudArchitecture/AGENT.md",
+          "score": 40
+        }
+      ]
+    },
+    "03-security-compliance": {
+      "score": 46,
+      "components": [
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "03-security-compliance/legal-tech/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "SentinelLegalTech",
+          "type": "AGENT",
+          "path": "03-security-compliance/legal-tech/agents/SentinelLegalTech/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "skills",
+          "type": "SKILL",
+          "path": "03-security-compliance/mena-data-sovereignty/skills/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "03-security-compliance/data-sovereignty/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "SentinelDataSovereignty",
+          "type": "AGENT",
+          "path": "03-security-compliance/data-sovereignty/agents/SentinelDataSovereignty/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "03-security-compliance/cyber-security/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "advanced-security-audit",
+          "type": "SKILL",
+          "path": "03-security-compliance/cyber-security/skills/external/security-audits/advanced-security-audit/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "zero-trust-mastery",
+          "type": "SKILL",
+          "path": "03-security-compliance/cyber-security/skills/external/zero-trust-physics/zero-trust-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "Security",
+          "type": "AGENT",
+          "path": "03-security-compliance/cyber-security/agents/Security/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "SentinelCyberSecurity",
+          "type": "AGENT",
+          "path": "03-security-compliance/cyber-security/agents/SentinelCyberSecurity/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "03-security-compliance/fintech-compliance/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "SentinelFintechCompliance",
+          "type": "AGENT",
+          "path": "03-security-compliance/fintech-compliance/agents/SentinelFintechCompliance/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "skills",
+          "type": "SKILL",
+          "path": "03-security-compliance/mena-regulatory-compliance/skills/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "mena-constitutional-boundaries",
+          "type": "SKILL",
+          "path": "03-security-compliance/mena-regulatory-compliance/skills/mena-constitutional-boundaries/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "regulatory-authority-mapping",
+          "type": "SKILL",
+          "path": "03-security-compliance/mena-regulatory-compliance/skills/regulatory-authority-mapping/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "RiskAgent",
+          "type": "AGENT",
+          "path": "03-security-compliance/mena-regulatory-compliance/agents/RiskAgent/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "ContractLock",
+          "type": "AGENT",
+          "path": "03-security-compliance/mena-regulatory-compliance/agents/ContractLock/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "03-security-compliance/identity/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "clerk-official-mastery",
+          "type": "SKILL",
+          "path": "03-security-compliance/identity/skills/external/clerk/clerk-official-mastery/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "SentinelIdentity",
+          "type": "AGENT",
+          "path": "03-security-compliance/identity/agents/SentinelIdentity/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "skills",
+          "type": "SKILL",
+          "path": "03-security-compliance/islamic-finance-compliance/skills/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "payment-compliance",
+          "type": "SKILL",
+          "path": "03-security-compliance/fintech-banking/skills/payment-compliance/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "FintechStrategist",
+          "type": "AGENT",
+          "path": "03-security-compliance/fintech-banking/agents/FintechStrategist/AGENT.md",
+          "score": 60
+        }
+      ]
+    },
+    "04-business-strategy": {
+      "score": 50,
+      "components": [
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "04-business-strategy/finance-ops/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "finance-ops-mastery",
+          "type": "SKILL",
+          "path": "04-business-strategy/finance-ops/skills/finance-ops-mastery/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "stripe-official-mastery",
+          "type": "SKILL",
+          "path": "04-business-strategy/finance-ops/skills/external/stripe/stripe-official-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "turborepo-mastery",
+          "type": "SKILL",
+          "path": "04-business-strategy/finance-ops/skills/external/monorepo-physics/turborepo-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "SentinelFinanceOps",
+          "type": "AGENT",
+          "path": "04-business-strategy/finance-ops/agents/SentinelFinanceOps/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "account-manager",
+          "type": "AGENT",
+          "path": "04-business-strategy/agents/account-manager/AGENT.md",
+          "score": 90
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "04-business-strategy/business/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "business-incorporation-egypt",
+          "type": "SKILL",
+          "path": "04-business-strategy/business/skills/business-incorporation-egypt/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "mena-venture-scaling-logic",
+          "type": "SKILL",
+          "path": "04-business-strategy/business/skills/mena-venture-scaling-logic/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "business-incorporation-uae",
+          "type": "SKILL",
+          "path": "04-business-strategy/business/skills/business-incorporation-uae/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "Forecasting",
+          "type": "AGENT",
+          "path": "04-business-strategy/business/agents/Forecasting/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "Founder",
+          "type": "AGENT",
+          "path": "04-business-strategy/business/agents/Founder/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "TravelAgent",
+          "type": "AGENT",
+          "path": "04-business-strategy/business/agents/TravelAgent/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "HospitalityDomainExpert",
+          "type": "AGENT",
+          "path": "04-business-strategy/business/agents/HospitalityDomainExpert/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "BusinessAnalyst",
+          "type": "AGENT",
+          "path": "04-business-strategy/business/agents/BusinessAnalyst/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "VentureArchitect",
+          "type": "AGENT",
+          "path": "04-business-strategy/business/agents/VentureArchitect/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "SentinelBusiness",
+          "type": "AGENT",
+          "path": "04-business-strategy/business/agents/SentinelBusiness/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "Venture",
+          "type": "AGENT",
+          "path": "04-business-strategy/business/agents/Venture/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "04-business-strategy/venture-design/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "SentinelVentureDesign",
+          "type": "AGENT",
+          "path": "04-business-strategy/venture-design/agents/SentinelVentureDesign/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "04-business-strategy/growth-strategy/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "SentinelGrowthStrategy",
+          "type": "AGENT",
+          "path": "04-business-strategy/growth-strategy/agents/SentinelGrowthStrategy/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "04-business-strategy/sales-revenue/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "SentinelSalesRevenue",
+          "type": "AGENT",
+          "path": "04-business-strategy/sales-revenue/agents/SentinelSalesRevenue/AGENT.md",
+          "score": 40
+        }
+      ]
+    },
+    "05-data-analytics": {
+      "score": 44,
+      "components": [
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "05-data-analytics/cultural-intelligence/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "cultural-intelligence-mastery",
+          "type": "SKILL",
+          "path": "05-data-analytics/cultural-intelligence/skills/cultural-intelligence-mastery/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "SentinelCulturalIntelligence",
+          "type": "AGENT",
+          "path": "05-data-analytics/cultural-intelligence/agents/SentinelCulturalIntelligence/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "05-data-analytics/market-research/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "market-research-mastery",
+          "type": "SKILL",
+          "path": "05-data-analytics/market-research/skills/market-research-mastery/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "SentinelMarketResearch",
+          "type": "AGENT",
+          "path": "05-data-analytics/market-research/agents/SentinelMarketResearch/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "skills",
+          "type": "SKILL",
+          "path": "05-data-analytics/mena-cultural-business-practices/skills/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "05-data-analytics/analysis/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "analysis-mastery",
+          "type": "SKILL",
+          "path": "05-data-analytics/analysis/skills/analysis-mastery/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "predictive-unit-economics",
+          "type": "SKILL",
+          "path": "05-data-analytics/analysis/skills/predictive-unit-economics/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "qualitative-coding",
+          "type": "SKILL",
+          "path": "05-data-analytics/analysis/skills/qualitative-coding/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "Analytics",
+          "type": "AGENT",
+          "path": "05-data-analytics/analysis/agents/Analytics/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "Metrics",
+          "type": "AGENT",
+          "path": "05-data-analytics/analysis/agents/Metrics/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "Scraper",
+          "type": "AGENT",
+          "path": "05-data-analytics/analysis/agents/Scraper/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "UxResearcher",
+          "type": "AGENT",
+          "path": "05-data-analytics/analysis/agents/UxResearcher/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "Researcher",
+          "type": "AGENT",
+          "path": "05-data-analytics/analysis/agents/Researcher/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "KnowledgeSynthesizer",
+          "type": "AGENT",
+          "path": "05-data-analytics/analysis/agents/KnowledgeSynthesizer/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "IntelSynthesizer",
+          "type": "AGENT",
+          "path": "05-data-analytics/analysis/agents/IntelSynthesizer/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "SentinelAnalysis",
+          "type": "AGENT",
+          "path": "05-data-analytics/analysis/agents/SentinelAnalysis/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "Tutor",
+          "type": "AGENT",
+          "path": "05-data-analytics/analysis/agents/Tutor/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "05-data-analytics/ai-automation-ops/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "ai-automation-ops-mastery",
+          "type": "SKILL",
+          "path": "05-data-analytics/ai-automation-ops/skills/ai-automation-ops-mastery/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "SentinelAiAutomationOps",
+          "type": "AGENT",
+          "path": "05-data-analytics/ai-automation-ops/agents/SentinelAiAutomationOps/AGENT.md",
+          "score": 40
+        }
+      ]
+    },
+    "06-branding": {
+      "score": 58,
+      "components": [
+        {
+          "name": "arabic-typography-rtl-physics",
+          "type": "SKILL",
+          "path": "06-branding/visual-identity/skills/arabic-typography-rtl-physics/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "golden-ratio",
+          "type": "SKILL",
+          "path": "06-branding/visual-identity/skills/golden-ratio/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "visual-identity-design-mastery",
+          "type": "SKILL",
+          "path": "06-branding/visual-identity/skills/visual-identity-design-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "design-trends-2026",
+          "type": "SKILL",
+          "path": "06-branding/visual-identity/skills/design-trends-2026/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "w3c-brand-token-system",
+          "type": "SKILL",
+          "path": "06-branding/brand-governance/skills/w3c-brand-token-system/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "DesignSystem",
+          "type": "AGENT",
+          "path": "06-branding/brand-governance/agents/DesignSystem/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "BrandGuardian",
+          "type": "AGENT",
+          "path": "06-branding/brand-governance/agents/BrandGuardian/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "06-branding/agency-ops/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "SentinelAgencyOps",
+          "type": "AGENT",
+          "path": "06-branding/agency-ops/agents/SentinelAgencyOps/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "ai-avatar-branding-logic",
+          "type": "SKILL",
+          "path": "06-branding/modern-ai-branding/skills/ai-avatar-branding-logic/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "mena-strategic-brand-voice",
+          "type": "SKILL",
+          "path": "06-branding/brand-strategy/skills/mena-strategic-brand-voice/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "brand-grammar-emotional-intent",
+          "type": "SKILL",
+          "path": "06-branding/brand-strategy/skills/brand-grammar-emotional-intent/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "multi-persona-branding-mastery",
+          "type": "SKILL",
+          "path": "06-branding/brand-strategy/skills/multi-persona-branding-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "brand-identity-engine",
+          "type": "SKILL",
+          "path": "06-branding/brand-strategy/skills/brand-identity-engine/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "branding-mastery",
+          "type": "SKILL",
+          "path": "06-branding/brand-strategy/skills/branding-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "BrandDirector",
+          "type": "AGENT",
+          "path": "06-branding/brand-strategy/agents/BrandDirector/AGENT.md",
+          "score": 60
+        }
+      ]
+    },
+    "06-frontier": {
+      "score": 60,
+      "components": [
+        {
+          "name": "aerospace-satellite-mastery",
+          "type": "SKILL",
+          "path": "06-frontier/skills/aerospace-satellite-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "quantum-logic-engine",
+          "type": "SKILL",
+          "path": "06-frontier/skills/quantum-logic-engine/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "bio-tech-innovation",
+          "type": "SKILL",
+          "path": "06-frontier/skills/bio-tech-innovation/SKILL.md",
+          "score": 60
+        }
+      ]
+    },
+    "06-intel-data": {
+      "score": 60,
+      "components": [
+        {
+          "name": "intelligence-extraction-mastery",
+          "type": "SKILL",
+          "path": "06-intel-data/data-mining/skills/external/intel-extraction/intelligence-extraction-mastery/SKILL.md",
+          "score": 60
+        }
+      ]
+    },
+    "07-meta": {
+      "score": 60,
+      "components": [
+        {
+          "name": "meta-taxonomy-enforcer",
+          "type": "SKILL",
+          "path": "07-meta/skills/meta-taxonomy-enforcer/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "self-healing-registry",
+          "type": "SKILL",
+          "path": "07-meta/skills/self-healing-registry/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "symbolic-logic-orchestrator",
+          "type": "AGENT",
+          "path": "07-meta/agents/symbolic-logic-orchestrator/AGENT.md",
+          "score": 60
+        }
+      ]
+    },
+    "07-visibility-optimization": {
+      "score": 55,
+      "components": [
+        {
+          "name": "aeo-answer-engine-optimization",
+          "type": "SKILL",
+          "path": "07-visibility-optimization/aeo-voice-search/skills/aeo-answer-engine-optimization/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "07-visibility-optimization/seo/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "seo-mastery",
+          "type": "SKILL",
+          "path": "07-visibility-optimization/seo/skills/seo-mastery/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "bilingual-semantic-authority",
+          "type": "SKILL",
+          "path": "07-visibility-optimization/seo/skills/bilingual-semantic-authority/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "seo-metadata-strategy",
+          "type": "SKILL",
+          "path": "07-visibility-optimization/seo/skills/seo-metadata-strategy/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "awesome-seo-physics",
+          "type": "SKILL",
+          "path": "07-visibility-optimization/seo/skills/external/awesome-seo-physics/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "SEO",
+          "type": "AGENT",
+          "path": "07-visibility-optimization/seo/agents/SEO/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "SentinelSeo",
+          "type": "AGENT",
+          "path": "07-visibility-optimization/seo/agents/SentinelSeo/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "VisibilityArchitect",
+          "type": "AGENT",
+          "path": "07-visibility-optimization/traditional-seo/agents/VisibilityArchitect/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "visibility-intelligence-analytics",
+          "type": "SKILL",
+          "path": "07-visibility-optimization/visibility-analytics/skills/visibility-intelligence-analytics/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "llmo-model-visibility-citations",
+          "type": "SKILL",
+          "path": "07-visibility-optimization/llm-visibility-llmo/skills/llmo-model-visibility-citations/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "llmo-audit",
+          "type": "SKILL",
+          "path": "07-visibility-optimization/llm-visibility-llmo/skills/llmo-audit/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "llmo-semantic-mastery",
+          "type": "SKILL",
+          "path": "07-visibility-optimization/llm-visibility-llmo/skills/external/llmo-physics/llmo-semantic-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "geo-generative-engine-optimization",
+          "type": "SKILL",
+          "path": "07-visibility-optimization/geo-generative-search/skills/geo-generative-engine-optimization/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "technical-seo-mastery",
+          "type": "SKILL",
+          "path": "07-visibility-optimization/seo-technical/skills/external/next-seo-mastery/technical-seo-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "entity-knowledge-graph-management",
+          "type": "SKILL",
+          "path": "07-visibility-optimization/semantic-knowledge-graphs/skills/entity-knowledge-graph-management/SKILL.md",
+          "score": 60
+        }
+      ]
+    },
+    "08-media-production": {
+      "score": 64,
+      "components": [
+        {
+          "name": "agents",
+          "type": "AGENT",
+          "path": "08-media-production/video-production/agents/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "08-media-production/video-production/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "morphing-liquid-transitions",
+          "type": "SKILL",
+          "path": "08-media-production/video-production/skills/morphing-liquid-transitions/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "camera-lenses",
+          "type": "SKILL",
+          "path": "08-media-production/video-production/skills/camera-lenses/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "cinematic-color-grading",
+          "type": "SKILL",
+          "path": "08-media-production/video-production/skills/cinematic-color-grading/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "video-production-mastery",
+          "type": "SKILL",
+          "path": "08-media-production/video-production/skills/video-production-mastery/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "cinematic-transitions",
+          "type": "SKILL",
+          "path": "08-media-production/video-production/skills/cinematic-transitions/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "shot-types",
+          "type": "SKILL",
+          "path": "08-media-production/video-production/skills/shot-types/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "cinematic-motion-orchestration",
+          "type": "SKILL",
+          "path": "08-media-production/video-production/skills/cinematic-motion-orchestration/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "motion-graphics",
+          "type": "SKILL",
+          "path": "08-media-production/video-production/skills/motion-graphics/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "camera-movement",
+          "type": "SKILL",
+          "path": "08-media-production/video-production/skills/camera-movement/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "vfx-fundamentals",
+          "type": "SKILL",
+          "path": "08-media-production/video-production/skills/vfx-fundamentals/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "sound-effects",
+          "type": "SKILL",
+          "path": "08-media-production/video-production/skills/sound-effects/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "SentinelVideoProduction",
+          "type": "AGENT",
+          "path": "08-media-production/video-production/agents/SentinelVideoProduction/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "agents",
+          "type": "AGENT",
+          "path": "08-media-production/3d-production/agents/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "08-media-production/3d-production/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "3d-production-mastery",
+          "type": "SKILL",
+          "path": "08-media-production/3d-production/skills/3d-production-mastery/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "3d-illusion-prompts",
+          "type": "SKILL",
+          "path": "08-media-production/3d-production/skills/3d-illusion-prompts/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "spatial-geometry-standards",
+          "type": "SKILL",
+          "path": "08-media-production/3d-production/skills/spatial-geometry-standards/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "3DTechnicalArtist",
+          "type": "AGENT",
+          "path": "08-media-production/3d-production/agents/3DTechnicalArtist/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "Sentinel3dProduction",
+          "type": "AGENT",
+          "path": "08-media-production/3d-production/agents/Sentinel3dProduction/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "08-media-production/audio-tech/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "audio-tech-mastery",
+          "type": "SKILL",
+          "path": "08-media-production/audio-tech/skills/audio-tech-mastery/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "SentinelAudioTech",
+          "type": "AGENT",
+          "path": "08-media-production/audio-tech/agents/SentinelAudioTech/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "stylist",
+          "type": "AGENT",
+          "path": "08-media-production/agents/stylist/AGENT.md",
+          "score": 90
+        },
+        {
+          "name": "creative-director",
+          "type": "AGENT",
+          "path": "08-media-production/agents/creative-director/AGENT.md",
+          "score": 90
+        },
+        {
+          "name": "cinematographer",
+          "type": "AGENT",
+          "path": "08-media-production/agents/cinematographer/AGENT.md",
+          "score": 90
+        },
+        {
+          "name": "vfx-artist",
+          "type": "AGENT",
+          "path": "08-media-production/agents/vfx-artist/AGENT.md",
+          "score": 90
+        },
+        {
+          "name": "digital-artist",
+          "type": "AGENT",
+          "path": "08-media-production/agents/digital-artist/AGENT.md",
+          "score": 90
+        },
+        {
+          "name": "motion-designer",
+          "type": "AGENT",
+          "path": "08-media-production/agents/motion-designer/AGENT.md",
+          "score": 90
+        },
+        {
+          "name": "art-director",
+          "type": "AGENT",
+          "path": "08-media-production/agents/art-director/AGENT.md",
+          "score": 90
+        },
+        {
+          "name": "video-editor",
+          "type": "AGENT",
+          "path": "08-media-production/agents/video-editor/AGENT.md",
+          "score": 90
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "08-media-production/visual-design/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "visual-design-mastery",
+          "type": "SKILL",
+          "path": "08-media-production/visual-design/skills/visual-design-mastery/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "cinematic-motion-mastery",
+          "type": "SKILL",
+          "path": "08-media-production/visual-design/skills/external/gsap-motion/cinematic-motion-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "SentinelVisualDesign",
+          "type": "AGENT",
+          "path": "08-media-production/visual-design/agents/SentinelVisualDesign/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "08-media-production/ai-generative-media/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "ai-generative-media-mastery",
+          "type": "SKILL",
+          "path": "08-media-production/ai-generative-media/skills/ai-generative-media-mastery/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "SentinelAiGenerativeMedia",
+          "type": "AGENT",
+          "path": "08-media-production/ai-generative-media/agents/SentinelAiGenerativeMedia/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "figma-token-pipeline",
+          "type": "SKILL",
+          "path": "08-media-production/design/skills/figma-token-pipeline/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "cine-serious-design-language",
+          "type": "SKILL",
+          "path": "08-media-production/design/skills/cine-serious-design-language/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "design-token-governance",
+          "type": "SKILL",
+          "path": "08-media-production/design/skills/design-token-governance/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "cine-serious-visual-framework",
+          "type": "SKILL",
+          "path": "08-media-production/design/skills/cine-serious-visual-framework/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "shadcn-atomic-design",
+          "type": "SKILL",
+          "path": "08-media-production/design/skills/shadcn-atomic-design/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "token-extraction-mastery",
+          "type": "SKILL",
+          "path": "08-media-production/design/skills/external/extract-design-system/token-extraction-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "atomic-architecture-mastery",
+          "type": "SKILL",
+          "path": "08-media-production/design/skills/external/shadcn-ui/atomic-architecture-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "DesignDirector",
+          "type": "AGENT",
+          "path": "08-media-production/design/agents/DesignDirector/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "DesignSystem",
+          "type": "AGENT",
+          "path": "08-media-production/design/agents/DesignSystem/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "08-media-production/image-production/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "lighting-mood-systems",
+          "type": "SKILL",
+          "path": "08-media-production/image-production/skills/lighting-mood-systems/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "high-fidelity-pbr-rendering",
+          "type": "SKILL",
+          "path": "08-media-production/image-production/skills/high-fidelity-pbr-rendering/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "pattern-design",
+          "type": "SKILL",
+          "path": "08-media-production/image-production/skills/pattern-design/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "vector-illustration",
+          "type": "SKILL",
+          "path": "08-media-production/image-production/skills/vector-illustration/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "image-production-mastery",
+          "type": "SKILL",
+          "path": "08-media-production/image-production/skills/image-production-mastery/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "digital-art",
+          "type": "SKILL",
+          "path": "08-media-production/image-production/skills/digital-art/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "advanced-composition",
+          "type": "SKILL",
+          "path": "08-media-production/image-production/skills/advanced-composition/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "background-removal",
+          "type": "SKILL",
+          "path": "08-media-production/image-production/skills/background-removal/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "overlay-blending",
+          "type": "SKILL",
+          "path": "08-media-production/image-production/skills/overlay-blending/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "SentinelImageProduction",
+          "type": "AGENT",
+          "path": "08-media-production/image-production/agents/SentinelImageProduction/AGENT.md",
+          "score": 40
+        }
+      ]
+    },
+    "09-social-engagement": {
+      "score": 49,
+      "components": [
+        {
+          "name": "high-density-content-mastery",
+          "type": "SKILL",
+          "path": "09-social-engagement/content-strategy/skills/external/high-density-marketing/high-density-content-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "social-media-specialist",
+          "type": "AGENT",
+          "path": "09-social-engagement/agents/social-media-specialist/AGENT.md",
+          "score": 90
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "09-social-engagement/influencer-ops/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "SentinelInfluencerOps",
+          "type": "AGENT",
+          "path": "09-social-engagement/influencer-ops/agents/SentinelInfluencerOps/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "09-social-engagement/viral-loops/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "SentinelViralLoops",
+          "type": "AGENT",
+          "path": "09-social-engagement/viral-loops/agents/SentinelViralLoops/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "09-social-engagement/community-engagement/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "SentinelCommunityEngagement",
+          "type": "AGENT",
+          "path": "09-social-engagement/community-engagement/agents/SentinelCommunityEngagement/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "agents",
+          "type": "AGENT",
+          "path": "09-social-engagement/social-media/agents/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "09-social-engagement/social-media/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "social-media-sizes",
+          "type": "SKILL",
+          "path": "09-social-engagement/social-media/skills/social-media-sizes/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "viral-engagement-engineering",
+          "type": "SKILL",
+          "path": "09-social-engagement/social-media/skills/viral-engagement-engineering/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "SentinelSocialMedia",
+          "type": "AGENT",
+          "path": "09-social-engagement/social-media/agents/SentinelSocialMedia/AGENT.md",
+          "score": 40
+        }
+      ]
+    },
+    "10-operations-qa": {
+      "score": 49,
+      "components": [
+        {
+          "name": "Admin",
+          "type": "AGENT",
+          "path": "10-operations-qa/performance-ops/agents/Admin/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "VisualQa",
+          "type": "AGENT",
+          "path": "10-operations-qa/performance-ops/agents/VisualQa/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "EscalationHandler",
+          "type": "AGENT",
+          "path": "10-operations-qa/performance-ops/agents/EscalationHandler/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "Reviewer",
+          "type": "AGENT",
+          "path": "10-operations-qa/performance-ops/agents/Reviewer/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "RetroFacilitator",
+          "type": "AGENT",
+          "path": "10-operations-qa/performance-ops/agents/RetroFacilitator/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "MetricsAgent",
+          "type": "AGENT",
+          "path": "10-operations-qa/performance-ops/agents/MetricsAgent/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "Automation",
+          "type": "AGENT",
+          "path": "10-operations-qa/performance-ops/agents/Automation/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "10-operations-qa/supply-chain/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "SentinelSupplyChain",
+          "type": "AGENT",
+          "path": "10-operations-qa/supply-chain/agents/SentinelSupplyChain/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "10-operations-qa/quality-assurance/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "sentry-official-mastery",
+          "type": "SKILL",
+          "path": "10-operations-qa/quality-assurance/skills/external/sentry/sentry-official-mastery/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "grid-automation-mastery",
+          "type": "SKILL",
+          "path": "10-operations-qa/quality-assurance/skills/external/lambdatest-qa/grid-automation-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "high-density-web-quality",
+          "type": "SKILL",
+          "path": "10-operations-qa/quality-assurance/skills/external/web-quality/high-density-web-quality/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "SentinelQualityAssurance",
+          "type": "AGENT",
+          "path": "10-operations-qa/quality-assurance/agents/SentinelQualityAssurance/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "10-operations-qa/execution/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "contract-first-development",
+          "type": "SKILL",
+          "path": "10-operations-qa/execution/skills/contract-first-development/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "platform-agnostic-contracts",
+          "type": "SKILL",
+          "path": "10-operations-qa/execution/skills/platform-agnostic-contracts/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "blameless-escalation-sbar",
+          "type": "SKILL",
+          "path": "10-operations-qa/execution/skills/blameless-escalation-sbar/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "gherkin-acceptance-criteria",
+          "type": "SKILL",
+          "path": "10-operations-qa/execution/skills/gherkin-acceptance-criteria/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "execution-mastery",
+          "type": "SKILL",
+          "path": "10-operations-qa/execution/skills/execution-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "SentinelExecution",
+          "type": "AGENT",
+          "path": "10-operations-qa/execution/agents/SentinelExecution/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "Router",
+          "type": "AGENT",
+          "path": "10-operations-qa/execution/agents/Router/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "ErrorDetective",
+          "type": "AGENT",
+          "path": "10-operations-qa/execution/agents/ErrorDetective/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "DependencyManager",
+          "type": "AGENT",
+          "path": "10-operations-qa/execution/agents/DependencyManager/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "Guide",
+          "type": "AGENT",
+          "path": "10-operations-qa/execution/agents/Guide/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "AssetOptimizer",
+          "type": "AGENT",
+          "path": "10-operations-qa/execution/agents/AssetOptimizer/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "PromptOptimizer",
+          "type": "AGENT",
+          "path": "10-operations-qa/execution/agents/PromptOptimizer/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "WorkflowAgent",
+          "type": "AGENT",
+          "path": "10-operations-qa/execution/agents/WorkflowAgent/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "Automation",
+          "type": "AGENT",
+          "path": "10-operations-qa/execution/agents/Automation/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "Orchestrator",
+          "type": "AGENT",
+          "path": "10-operations-qa/execution/agents/Orchestrator/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "MemoryManager",
+          "type": "AGENT",
+          "path": "10-operations-qa/execution/agents/MemoryManager/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "Debugger",
+          "type": "AGENT",
+          "path": "10-operations-qa/execution/agents/Debugger/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "Optimizer",
+          "type": "AGENT",
+          "path": "10-operations-qa/execution/agents/Optimizer/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "ClientPreview",
+          "type": "AGENT",
+          "path": "10-operations-qa/execution/agents/ClientPreview/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "RuntimeOrchestrator",
+          "type": "AGENT",
+          "path": "10-operations-qa/execution/agents/RuntimeOrchestrator/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "Retro",
+          "type": "AGENT",
+          "path": "10-operations-qa/execution/agents/Retro/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "ProductManager",
+          "type": "AGENT",
+          "path": "10-operations-qa/execution/agents/ProductManager/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "10-operations-qa/project-management/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "SentinelProjectManagement",
+          "type": "AGENT",
+          "path": "10-operations-qa/project-management/agents/SentinelProjectManagement/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "10-operations-qa/training/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "SentinelTraining",
+          "type": "AGENT",
+          "path": "10-operations-qa/training/agents/SentinelTraining/AGENT.md",
+          "score": 40
+        }
+      ]
+    },
+    "11-industry-verticals": {
+      "score": 52,
+      "components": [
+        {
+          "name": "education-lms",
+          "type": "SKILL",
+          "path": "11-industry-verticals/education-lms/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "performance-media-buying",
+          "type": "SKILL",
+          "path": "11-industry-verticals/performance-media-buying/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "hospital-clinic",
+          "type": "SKILL",
+          "path": "11-industry-verticals/hospital-clinic/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "real-estate-dev",
+          "type": "SKILL",
+          "path": "11-industry-verticals/real-estate-dev/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "media-broadcasting",
+          "type": "SKILL",
+          "path": "11-industry-verticals/media-broadcasting/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "social-ecosystem-foundry",
+          "type": "SKILL",
+          "path": "11-industry-verticals/social-ecosystem-foundry/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "fitness-wellness",
+          "type": "SKILL",
+          "path": "11-industry-verticals/fitness-wellness/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "business-intelligence-hub",
+          "type": "SKILL",
+          "path": "11-industry-verticals/business-intelligence-hub/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "mena-localization-payments",
+          "type": "SKILL",
+          "path": "11-industry-verticals/mena-localization-payments/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "legal-brokerage",
+          "type": "SKILL",
+          "path": "11-industry-verticals/legal-brokerage/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "energy-renewables",
+          "type": "SKILL",
+          "path": "11-industry-verticals/energy-renewables/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "creative-intelligence-hub",
+          "type": "SKILL",
+          "path": "11-industry-verticals/creative-intelligence-hub/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "lodging-hotel",
+          "type": "SKILL",
+          "path": "11-industry-verticals/lodging-hotel/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "gov-public-sector",
+          "type": "SKILL",
+          "path": "11-industry-verticals/gov-public-sector/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "digital-growth-engineering",
+          "type": "SKILL",
+          "path": "11-industry-verticals/digital-growth-engineering/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "events-festivals-ops",
+          "type": "SKILL",
+          "path": "11-industry-verticals/events-festivals-ops/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "islamic-finance",
+          "type": "SKILL",
+          "path": "11-industry-verticals/islamic-finance/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "f-and-b-ops",
+          "type": "SKILL",
+          "path": "11-industry-verticals/f-and-b-ops/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "healthtech-pharma",
+          "type": "SKILL",
+          "path": "11-industry-verticals/healthtech-pharma/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "ai-production-foundry",
+          "type": "SKILL",
+          "path": "11-industry-verticals/ai-production-foundry/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "digital-performance-hub",
+          "type": "SKILL",
+          "path": "11-industry-verticals/digital-performance-hub/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "crypto-web3",
+          "type": "SKILL",
+          "path": "11-industry-verticals/crypto-web3/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "high-fidelity-branding-hub",
+          "type": "SKILL",
+          "path": "11-industry-verticals/high-fidelity-branding-hub/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "ecommerce-retail",
+          "type": "SKILL",
+          "path": "11-industry-verticals/ecommerce-retail/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "agency-creative",
+          "type": "SKILL",
+          "path": "11-industry-verticals/agency-creative/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "ai-automation-lab",
+          "type": "SKILL",
+          "path": "11-industry-verticals/ai-automation-lab/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "growth-marketing-lab",
+          "type": "SKILL",
+          "path": "11-industry-verticals/growth-marketing-lab/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "industrial-audit-compliance",
+          "type": "SKILL",
+          "path": "11-industry-verticals/industrial-audit-compliance/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "tourism-travel",
+          "type": "SKILL",
+          "path": "11-industry-verticals/tourism-travel/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "real-estate-brokerage",
+          "type": "SKILL",
+          "path": "11-industry-verticals/real-estate-brokerage/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "11-industry-verticals/real-estate-brokerage/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "skills",
+          "type": "SKILL",
+          "path": "11-industry-verticals/real-estate-brokerage/skills/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "real-estate-brokerage-mastery",
+          "type": "SKILL",
+          "path": "11-industry-verticals/real-estate-brokerage/skills/real-estate-brokerage-mastery/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "SentinelRealEstateBrokerage",
+          "type": "AGENT",
+          "path": "11-industry-verticals/real-estate-brokerage/agents/SentinelRealEstateBrokerage/AGENT.md",
+          "score": 90
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "11-industry-verticals/tourism-travel/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "skills",
+          "type": "SKILL",
+          "path": "11-industry-verticals/tourism-travel/skills/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "tourism-travel-mastery",
+          "type": "SKILL",
+          "path": "11-industry-verticals/tourism-travel/skills/tourism-travel-mastery/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "SentinelTourismTravel",
+          "type": "AGENT",
+          "path": "11-industry-verticals/tourism-travel/agents/SentinelTourismTravel/AGENT.md",
+          "score": 90
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "11-industry-verticals/ai-automation-lab/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "skills",
+          "type": "SKILL",
+          "path": "11-industry-verticals/ai-automation-lab/skills/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "SentinelAiAutomationLab",
+          "type": "AGENT",
+          "path": "11-industry-verticals/ai-automation-lab/agents/SentinelAiAutomationLab/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "11-industry-verticals/agency-creative/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "skills",
+          "type": "SKILL",
+          "path": "11-industry-verticals/agency-creative/skills/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "SentinelAgencyCreative",
+          "type": "AGENT",
+          "path": "11-industry-verticals/agency-creative/agents/SentinelAgencyCreative/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "11-industry-verticals/ecommerce-retail/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "skills",
+          "type": "SKILL",
+          "path": "11-industry-verticals/ecommerce-retail/skills/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "shopify-official-mastery",
+          "type": "SKILL",
+          "path": "11-industry-verticals/ecommerce-retail/skills/external/shopify/shopify-official-mastery/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "SentinelEcommerceRetail",
+          "type": "AGENT",
+          "path": "11-industry-verticals/ecommerce-retail/agents/SentinelEcommerceRetail/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "11-industry-verticals/crypto-web3/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "skills",
+          "type": "SKILL",
+          "path": "11-industry-verticals/crypto-web3/skills/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "smart-contract-dev",
+          "type": "SKILL",
+          "path": "11-industry-verticals/crypto-web3/skills/smart-contract-dev/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "SentinelCryptoWeb3",
+          "type": "AGENT",
+          "path": "11-industry-verticals/crypto-web3/agents/SentinelCryptoWeb3/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "Web3Architect",
+          "type": "AGENT",
+          "path": "11-industry-verticals/crypto-web3/agents/Web3Architect/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "11-industry-verticals/healthtech-pharma/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "health-data-privacy",
+          "type": "SKILL",
+          "path": "11-industry-verticals/healthtech-pharma/skills/health-data-privacy/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "healthtech-pharma-mastery",
+          "type": "SKILL",
+          "path": "11-industry-verticals/healthtech-pharma/skills/healthtech-pharma-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "SentinelHealthtechPharma",
+          "type": "AGENT",
+          "path": "11-industry-verticals/healthtech-pharma/agents/SentinelHealthtechPharma/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "HealthConsultant",
+          "type": "AGENT",
+          "path": "11-industry-verticals/healthtech-pharma/agents/HealthConsultant/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "11-industry-verticals/f-and-b-ops/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "skills",
+          "type": "SKILL",
+          "path": "11-industry-verticals/f-and-b-ops/skills/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "SentinelFAndBOps",
+          "type": "AGENT",
+          "path": "11-industry-verticals/f-and-b-ops/agents/SentinelFAndBOps/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "11-industry-verticals/islamic-finance/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "sharia-governance-physics",
+          "type": "SKILL",
+          "path": "11-industry-verticals/islamic-finance/skills/sharia-governance-physics/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "sukuk-structuring-logic",
+          "type": "SKILL",
+          "path": "11-industry-verticals/islamic-finance/skills/sukuk-structuring-logic/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "islamic-finance-mastery",
+          "type": "SKILL",
+          "path": "11-industry-verticals/islamic-finance/skills/islamic-finance-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "zakat-auditor-logic",
+          "type": "SKILL",
+          "path": "11-industry-verticals/islamic-finance/skills/zakat-auditor-logic/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "ShariaReviewer",
+          "type": "AGENT",
+          "path": "11-industry-verticals/islamic-finance/agents/ShariaReviewer/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "SentinelIslamicFinance",
+          "type": "AGENT",
+          "path": "11-industry-verticals/islamic-finance/agents/SentinelIslamicFinance/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "skills",
+          "type": "SKILL",
+          "path": "11-industry-verticals/events-festivals-ops/skills/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "skills",
+          "type": "SKILL",
+          "path": "11-industry-verticals/gov-public-sector/skills/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "gov-transformation-mastery",
+          "type": "SKILL",
+          "path": "11-industry-verticals/gov-public-sector/skills/gov-transformation-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "DigitalTransformationConsultant",
+          "type": "AGENT",
+          "path": "11-industry-verticals/gov-public-sector/agents/DigitalTransformationConsultant/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "SentinelGovPublicSector",
+          "type": "AGENT",
+          "path": "11-industry-verticals/gov-public-sector/agents/SentinelGovPublicSector/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "11-industry-verticals/lodging-hotel/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "skills",
+          "type": "SKILL",
+          "path": "11-industry-verticals/lodging-hotel/skills/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "revenue-yield-physics",
+          "type": "SKILL",
+          "path": "11-industry-verticals/lodging-hotel/skills/revenue-yield-physics/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "guest-lifecycle-orchestrator",
+          "type": "SKILL",
+          "path": "11-industry-verticals/lodging-hotel/skills/guest-lifecycle-orchestrator/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "facility-ops-maintenance",
+          "type": "SKILL",
+          "path": "11-industry-verticals/lodging-hotel/skills/facility-ops-maintenance/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "HotelManager",
+          "type": "AGENT",
+          "path": "11-industry-verticals/lodging-hotel/agents/HotelManager/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "SentinelLodgingHotel",
+          "type": "AGENT",
+          "path": "11-industry-verticals/lodging-hotel/agents/SentinelLodgingHotel/AGENT.md",
+          "score": 90
+        },
+        {
+          "name": "energy-renewables-mastery",
+          "type": "SKILL",
+          "path": "11-industry-verticals/energy-renewables/skills/energy-renewables-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "SentinelEnergyTech",
+          "type": "AGENT",
+          "path": "11-industry-verticals/energy-renewables/agents/SentinelEnergyTech/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "11-industry-verticals/legal-brokerage/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "corporate-entity-architect",
+          "type": "SKILL",
+          "path": "11-industry-verticals/legal-brokerage/skills/corporate-entity-architect/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "litigation-orchestrator",
+          "type": "SKILL",
+          "path": "11-industry-verticals/legal-brokerage/skills/litigation-orchestrator/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "egypt-contract-drafting-physics",
+          "type": "SKILL",
+          "path": "11-industry-verticals/legal-brokerage/skills/egypt-contract-drafting-physics/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "uae-contract-drafting-physics",
+          "type": "SKILL",
+          "path": "11-industry-verticals/legal-brokerage/skills/uae-contract-drafting-physics/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "legal-brokerage-mastery",
+          "type": "SKILL",
+          "path": "11-industry-verticals/legal-brokerage/skills/legal-brokerage-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "vc-instrument-logic",
+          "type": "SKILL",
+          "path": "11-industry-verticals/legal-brokerage/skills/vc-instrument-logic/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "LegalCounsel",
+          "type": "AGENT",
+          "path": "11-industry-verticals/legal-brokerage/agents/LegalCounsel/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "SentinelLegalBrokerage",
+          "type": "AGENT",
+          "path": "11-industry-verticals/legal-brokerage/agents/SentinelLegalBrokerage/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "skills",
+          "type": "SKILL",
+          "path": "11-industry-verticals/mena-localization-payments/skills/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "institutional-treasury-remittance",
+          "type": "SKILL",
+          "path": "11-industry-verticals/mena-localization-payments/skills/institutional-treasury-remittance/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "11-industry-verticals/fitness-wellness/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "skills",
+          "type": "SKILL",
+          "path": "11-industry-verticals/fitness-wellness/skills/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "SentinelFitnessWellness",
+          "type": "AGENT",
+          "path": "11-industry-verticals/fitness-wellness/agents/SentinelFitnessWellness/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "skills",
+          "type": "SKILL",
+          "path": "11-industry-verticals/media-broadcasting/skills/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "11-industry-verticals/real-estate-dev/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "real-estate-dev-mastery",
+          "type": "SKILL",
+          "path": "11-industry-verticals/real-estate-dev/skills/real-estate-dev-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "real-estate-modeling",
+          "type": "SKILL",
+          "path": "11-industry-verticals/real-estate-dev/skills/real-estate-modeling/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "SentinelRealEstateDev",
+          "type": "AGENT",
+          "path": "11-industry-verticals/real-estate-dev/agents/SentinelRealEstateDev/AGENT.md",
+          "score": 90
+        },
+        {
+          "name": "PropertyAnalyst",
+          "type": "AGENT",
+          "path": "11-industry-verticals/real-estate-dev/agents/PropertyAnalyst/AGENT.md",
+          "score": 90
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "11-industry-verticals/hospital-clinic/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "skills",
+          "type": "SKILL",
+          "path": "11-industry-verticals/hospital-clinic/skills/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "regulatory-compliance-medical",
+          "type": "SKILL",
+          "path": "11-industry-verticals/hospital-clinic/skills/regulatory-compliance-medical/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "patient-lifecycle-orchestrator",
+          "type": "SKILL",
+          "path": "11-industry-verticals/hospital-clinic/skills/patient-lifecycle-orchestrator/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "pharmacy-logistics-physics",
+          "type": "SKILL",
+          "path": "11-industry-verticals/hospital-clinic/skills/pharmacy-logistics-physics/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "SentinelHospitalClinic",
+          "type": "AGENT",
+          "path": "11-industry-verticals/hospital-clinic/agents/SentinelHospitalClinic/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "MedicalDirector",
+          "type": "AGENT",
+          "path": "11-industry-verticals/hospital-clinic/agents/MedicalDirector/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "supply-chain-ai-v4",
+          "type": "SKILL",
+          "path": "11-industry-verticals/nile-logistics-foundry/skills/supply-chain-ai-v4/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "vision-2030-alignment",
+          "type": "SKILL",
+          "path": "11-industry-verticals/regional-compliance-ksa/skills/vision-2030-alignment/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "dld-transparency-protocol",
+          "type": "SKILL",
+          "path": "11-industry-verticals/regional-compliance-uae/skills/dld-transparency-protocol/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "11-industry-verticals/education-lms/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "skills",
+          "type": "SKILL",
+          "path": "11-industry-verticals/education-lms/skills/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "SentinelEducationLms",
+          "type": "AGENT",
+          "path": "11-industry-verticals/education-lms/agents/SentinelEducationLms/AGENT.md",
+          "score": 60
+        }
+      ]
+    },
+    "12-meta-engine": {
+      "score": 43,
+      "components": [
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "12-meta-engine/meta-orchestration/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "self-healing-orchestrator",
+          "type": "SKILL",
+          "path": "12-meta-engine/meta-orchestration/skills/self-healing-orchestrator/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "meta-orchestration-mastery",
+          "type": "SKILL",
+          "path": "12-meta-engine/meta-orchestration/skills/meta-orchestration-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "cross-vertical-bridge",
+          "type": "SKILL",
+          "path": "12-meta-engine/meta-orchestration/skills/cross-vertical-bridge/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "agentic-superpowers-mastery",
+          "type": "SKILL",
+          "path": "12-meta-engine/meta-orchestration/skills/external/obra-superpowers/agentic-superpowers-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "planning-with-files-mastery",
+          "type": "SKILL",
+          "path": "12-meta-engine/meta-orchestration/skills/external/planning-with-files/planning-with-files-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "Router",
+          "type": "AGENT",
+          "path": "12-meta-engine/meta-orchestration/agents/Router/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "Architect",
+          "type": "AGENT",
+          "path": "12-meta-engine/meta-orchestration/agents/Architect/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "Guide",
+          "type": "AGENT",
+          "path": "12-meta-engine/meta-orchestration/agents/Guide/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "ContextSlicer",
+          "type": "AGENT",
+          "path": "12-meta-engine/meta-orchestration/agents/ContextSlicer/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "Orchestrator",
+          "type": "AGENT",
+          "path": "12-meta-engine/meta-orchestration/agents/Orchestrator/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "SentinelMetaOrchestration",
+          "type": "AGENT",
+          "path": "12-meta-engine/meta-orchestration/agents/SentinelMetaOrchestration/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "Cortex",
+          "type": "AGENT",
+          "path": "12-meta-engine/meta-orchestration/agents/Cortex/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "workspace-automation-cli",
+          "type": "SKILL",
+          "path": "12-meta-engine/google-workspace/skills/external/google/workspace-automation-cli/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "12-meta-engine/scripts/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "scripts-mastery",
+          "type": "SKILL",
+          "path": "12-meta-engine/scripts/skills/scripts-mastery/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "SentinelScripts",
+          "type": "AGENT",
+          "path": "12-meta-engine/scripts/agents/SentinelScripts/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "12-meta-engine/library-taxonomy/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "library-taxonomy-mastery",
+          "type": "SKILL",
+          "path": "12-meta-engine/library-taxonomy/skills/library-taxonomy-mastery/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "SentinelLibraryTaxonomy",
+          "type": "AGENT",
+          "path": "12-meta-engine/library-taxonomy/agents/SentinelLibraryTaxonomy/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "12-meta-engine/tools-ai/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "tools-ai-mastery",
+          "type": "SKILL",
+          "path": "12-meta-engine/tools-ai/skills/tools-ai-mastery/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "SentinelToolsAi",
+          "type": "AGENT",
+          "path": "12-meta-engine/tools-ai/agents/SentinelToolsAi/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "12-meta-engine/blueprints/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "blueprints-mastery",
+          "type": "SKILL",
+          "path": "12-meta-engine/blueprints/skills/blueprints-mastery/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "antigravity-awesome-mastery",
+          "type": "SKILL",
+          "path": "12-meta-engine/blueprints/skills/external/antigravity-awesome-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "global-playbook-mastery",
+          "type": "SKILL",
+          "path": "12-meta-engine/blueprints/skills/external/agent-playbook/global-playbook-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "SentinelBlueprints",
+          "type": "AGENT",
+          "path": "12-meta-engine/blueprints/agents/SentinelBlueprints/AGENT.md",
+          "score": 40
+        }
+      ]
+    },
+    "13-gaming-entertainment": {
+      "score": 60,
+      "components": [
+        {
+          "name": "unreal-cpp-mastery",
+          "type": "SKILL",
+          "path": "13-gaming-entertainment/game-engines/skills/unreal-cpp-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "unity-csharp-mastery",
+          "type": "SKILL",
+          "path": "13-gaming-entertainment/game-engines/skills/unity-csharp-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "godot-mastery",
+          "type": "SKILL",
+          "path": "13-gaming-entertainment/game-engines/skills/godot-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "GameArchitect",
+          "type": "AGENT",
+          "path": "13-gaming-entertainment/game-engines/agents/GameArchitect/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "game-economy-monetization",
+          "type": "SKILL",
+          "path": "13-gaming-entertainment/economy-monetization/skills/game-economy-monetization/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "webgl-phaser-threejs-mastery",
+          "type": "SKILL",
+          "path": "13-gaming-entertainment/web-gaming/skills/webgl-phaser-threejs-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "streaming-metaverse-narrative",
+          "type": "SKILL",
+          "path": "13-gaming-entertainment/entertainment-media/skills/streaming-metaverse-narrative/SKILL.md",
+          "score": 60
+        }
+      ]
+    },
+    "14-ai-intelligence": {
+      "score": 58,
+      "components": [
+        {
+          "name": "make-com-logic-optimization",
+          "type": "SKILL",
+          "path": "14-ai-intelligence/automation-workflows/skills/make-com-logic-optimization/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "n8n-workflow-engineering",
+          "type": "SKILL",
+          "path": "14-ai-intelligence/automation-workflows/skills/n8n-workflow-engineering/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "caveman-automation",
+          "type": "SKILL",
+          "path": "14-ai-intelligence/automation-workflows/skills/external/caveman-automation/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "fine-tuning-dataset-curation",
+          "type": "SKILL",
+          "path": "14-ai-intelligence/intelligence-foundations/skills/fine-tuning-dataset-curation/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "vector-database-architecture",
+          "type": "SKILL",
+          "path": "14-ai-intelligence/intelligence-foundations/skills/vector-database-architecture/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "openai-codex-mastery",
+          "type": "SKILL",
+          "path": "14-ai-intelligence/frontier-models/skills/openai-codex-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "claude-3-5-sonnet-mastery",
+          "type": "SKILL",
+          "path": "14-ai-intelligence/frontier-models/skills/claude-3-5-sonnet-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "openai-official-mastery",
+          "type": "SKILL",
+          "path": "14-ai-intelligence/frontier-models/skills/external/openai/openai-official-mastery/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "anthropic-official-mastery",
+          "type": "SKILL",
+          "path": "14-ai-intelligence/frontier-models/skills/external/anthropic/anthropic-official-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "computer-use-mastery",
+          "type": "SKILL",
+          "path": "14-ai-intelligence/frontier-models/skills/external/anthropic/computer-use-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "openclaw-orchestration",
+          "type": "SKILL",
+          "path": "14-ai-intelligence/agentic-orchestration/skills/openclaw-orchestration/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "agent-computational-velocity-protocol",
+          "type": "SKILL",
+          "path": "14-ai-intelligence/agentic-orchestration/skills/agent-computational-velocity-protocol/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "agent-orchestration-mastery",
+          "type": "SKILL",
+          "path": "14-ai-intelligence/agentic-orchestration/skills/external/wshobson-agents/agent-orchestration-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "proactive-agent-mastery",
+          "type": "SKILL",
+          "path": "14-ai-intelligence/agentic-orchestration/skills/external/proactive-agent/proactive-agent-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "copilot-mastery",
+          "type": "SKILL",
+          "path": "14-ai-intelligence/agentic-orchestration/skills/external/github/copilot-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "maker-ecosystem-mastery",
+          "type": "SKILL",
+          "path": "14-ai-intelligence/agentic-orchestration/skills/external/various/maker-ecosystem-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "langchain-official-mastery",
+          "type": "SKILL",
+          "path": "14-ai-intelligence/agentic-orchestration/skills/external/langchain/langchain-official-mastery/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "brainstorm-agent",
+          "type": "AGENT",
+          "path": "14-ai-intelligence/agents/brainstorm-agent/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "ai-sdk-orchestration",
+          "type": "SKILL",
+          "path": "14-ai-intelligence/ai-enterprise/skills/external/vercel-ai-sdk/ai-sdk-orchestration/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "AiOps",
+          "type": "AGENT",
+          "path": "14-ai-intelligence/ai-enterprise/agents/AiOps/AGENT.md",
+          "score": 60
+        }
+      ]
+    },
+    "15-music-sound-engineering": {
+      "score": 60,
+      "components": [
+        {
+          "name": "dj-mixing-performance",
+          "type": "SKILL",
+          "path": "15-music-sound-engineering/performance-library/skills/dj-mixing-performance/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "mixing-mastering-omega",
+          "type": "SKILL",
+          "path": "15-music-sound-engineering/sound-engineering/skills/mixing-mastering-omega/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "vocal-production-signal-chains",
+          "type": "SKILL",
+          "path": "15-music-sound-engineering/music-production/skills/vocal-production-signal-chains/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "ableton-live-mastery",
+          "type": "SKILL",
+          "path": "15-music-sound-engineering/music-production/skills/ableton-live-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "MusicProducer",
+          "type": "AGENT",
+          "path": "15-music-sound-engineering/music-production/agents/MusicProducer/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "vst-synthesis-mastery",
+          "type": "SKILL",
+          "path": "15-music-sound-engineering/sound-design/skills/vst-synthesis-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "electronic-composition-theory",
+          "type": "SKILL",
+          "path": "15-music-sound-engineering/composition-theory/skills/electronic-composition-theory/SKILL.md",
+          "score": 60
+        }
+      ]
+    },
+    "16-content-dominance": {
+      "score": 55,
+      "components": [
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "16-content-dominance/video-narrative/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "govtech-tone-content",
+          "type": "SKILL",
+          "path": "16-content-dominance/video-narrative/skills/govtech-tone-content/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "video-scripting-mastery",
+          "type": "SKILL",
+          "path": "16-content-dominance/video-narrative/skills/video-scripting-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "content-creation-mastery",
+          "type": "SKILL",
+          "path": "16-content-dominance/video-narrative/skills/content-creation-mastery/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "content-social-production",
+          "type": "SKILL",
+          "path": "16-content-dominance/video-narrative/skills/content-social-production/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "high-density-copywriting-protocols",
+          "type": "SKILL",
+          "path": "16-content-dominance/video-narrative/skills/high-density-copywriting-protocols/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "Creator",
+          "type": "AGENT",
+          "path": "16-content-dominance/video-narrative/agents/Creator/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "Content",
+          "type": "AGENT",
+          "path": "16-content-dominance/video-narrative/agents/Content/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "SentinelContentCreation",
+          "type": "AGENT",
+          "path": "16-content-dominance/video-narrative/agents/SentinelContentCreation/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "commands",
+          "type": "COMMANDS",
+          "path": "16-content-dominance/written-content/commands/COMMANDS.md",
+          "score": 30
+        },
+        {
+          "name": "copywriting-mastery",
+          "type": "SKILL",
+          "path": "16-content-dominance/written-content/skills/copywriting-mastery/SKILL.md",
+          "score": 40
+        },
+        {
+          "name": "written-leadgen-bio-mastery",
+          "type": "SKILL",
+          "path": "16-content-dominance/written-content/skills/written-leadgen-bio-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "egyptian-arabic-rtl",
+          "type": "SKILL",
+          "path": "16-content-dominance/written-content/skills/egyptian-arabic-rtl/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "ContentDirector",
+          "type": "AGENT",
+          "path": "16-content-dominance/written-content/agents/ContentDirector/AGENT.md",
+          "score": 60
+        },
+        {
+          "name": "SentinelCopywriting",
+          "type": "AGENT",
+          "path": "16-content-dominance/written-content/agents/SentinelCopywriting/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "emotional-storytelling-loops",
+          "type": "SKILL",
+          "path": "16-content-dominance/storytelling-logic/skills/emotional-storytelling-loops/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "arabic-content-creator",
+          "type": "AGENT",
+          "path": "16-content-dominance/agents/arabic-content-creator/AGENT.md",
+          "score": 90
+        },
+        {
+          "name": "social-content-viral-loops",
+          "type": "SKILL",
+          "path": "16-content-dominance/social-content/skills/social-content-viral-loops/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "Content",
+          "type": "AGENT",
+          "path": "16-content-dominance/social-content/agents/Content/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "egyptian-masri-cultural-hooks",
+          "type": "SKILL",
+          "path": "16-content-dominance/regional-cultural/skills/egyptian-masri-cultural-hooks/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "arabic-egypt-cultural",
+          "type": "SKILL",
+          "path": "16-content-dominance/regional-cultural/skills/arabic-egypt-cultural/SKILL.md",
+          "score": 90
+        }
+      ]
+    },
+    "17-performance-marketing-growth": {
+      "score": 71,
+      "components": [
+        {
+          "name": "ad-creative-production-mastery",
+          "type": "SKILL",
+          "path": "17-performance-marketing-growth/ad-creative-production/skills/ad-creative-production-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "ads-design-systems",
+          "type": "SKILL",
+          "path": "17-performance-marketing-growth/ad-creative-production/skills/ads-design-systems/SKILL.md",
+          "score": 90
+        },
+        {
+          "name": "bilingual-ad-localization-enar",
+          "type": "SKILL",
+          "path": "17-performance-marketing-growth/ad-creative-production/skills/bilingual-ad-localization-enar/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "offline-media-negotiation-mastery",
+          "type": "SKILL",
+          "path": "17-performance-marketing-growth/traditional-media-ops/skills/offline-media-negotiation-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "growth-economics-roi-physics",
+          "type": "SKILL",
+          "path": "17-performance-marketing-growth/growth-economics/skills/growth-economics-roi-physics/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "digital-advertising-specialist",
+          "type": "AGENT",
+          "path": "17-performance-marketing-growth/agents/digital-advertising-specialist/AGENT.md",
+          "score": 90
+        },
+        {
+          "name": "senior-digital-marketing",
+          "type": "AGENT",
+          "path": "17-performance-marketing-growth/agents/senior-digital-marketing/AGENT.md",
+          "score": 90
+        },
+        {
+          "name": "senior-marketing-specialist",
+          "type": "AGENT",
+          "path": "17-performance-marketing-growth/agents/senior-marketing-specialist/AGENT.md",
+          "score": 90
+        },
+        {
+          "name": "media-buyer",
+          "type": "AGENT",
+          "path": "17-performance-marketing-growth/agents/media-buyer/AGENT.md",
+          "score": 90
+        },
+        {
+          "name": "marketing-manager",
+          "type": "AGENT",
+          "path": "17-performance-marketing-growth/agents/marketing-manager/AGENT.md",
+          "score": 90
+        },
+        {
+          "name": "google-meta-ads-mastery",
+          "type": "SKILL",
+          "path": "17-performance-marketing-growth/digital-ads-mastery/skills/google-meta-ads-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "programmatic-ads-mastery",
+          "type": "SKILL",
+          "path": "17-performance-marketing-growth/digital-ads-mastery/skills/programmatic-ads-mastery/SKILL.md",
+          "score": 60
+        },
+        {
+          "name": "AdStrategist",
+          "type": "AGENT",
+          "path": "17-performance-marketing-growth/digital-ads-mastery/agents/AdStrategist/AGENT.md",
+          "score": 40
+        },
+        {
+          "name": "MediaBuyer",
+          "type": "AGENT",
+          "path": "17-performance-marketing-growth/digital-ads-mastery/agents/MediaBuyer/AGENT.md",
+          "score": 60
+        }
+      ]
+    }
+  }
+}

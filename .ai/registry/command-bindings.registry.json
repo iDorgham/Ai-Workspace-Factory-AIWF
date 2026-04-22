@@ -1,0 +1,220 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "owner": "guide-agent",
+    "pattern_source": ".ai/cli-layer/command-routing.json",
+    "schema": ".ai/registry/schemas/command-binding.schema.json"
+  },
+  "bindings": [
+    {
+      "id": "research_competitors",
+      "pattern_refs": ["research_competitors"],
+      "primary_agent": "research-agent",
+      "subagent_pipeline": ["discovery-engine", "profile-builder"],
+      "skill_refs": ["marketing-competitive-analysis", "marketing-competitive-brief"]
+    },
+    {
+      "id": "scrape_all_blog",
+      "pattern_refs": ["scrape_all_blog"],
+      "primary_agent": "scraper-agent",
+      "subagent_pipeline": ["delta-detector", "ethical-crawler", "content-parser", "asset-handler", "sync-state-writer"],
+      "skill_refs": []
+    },
+    {
+      "id": "scrape_all_projects",
+      "pattern_refs": ["scrape_all_projects"],
+      "primary_agent": "scraper-agent",
+      "subagent_pipeline": ["delta-detector", "ethical-crawler", "content-parser", "asset-handler", "sync-state-writer"],
+      "skill_refs": []
+    },
+    {
+      "id": "scrape_all_website",
+      "pattern_refs": ["scrape_all_website"],
+      "primary_agent": "scraper-agent",
+      "subagent_pipeline": ["delta-detector", "ethical-crawler", "content-parser", "asset-handler", "sync-state-writer"],
+      "skill_refs": []
+    },
+    {
+      "id": "scrape_single_website",
+      "pattern_refs": ["scrape_single_website"],
+      "primary_agent": "scraper-agent",
+      "subagent_pipeline": ["delta-detector", "ethical-crawler", "content-parser", "asset-handler", "sync-state-writer"],
+      "skill_refs": []
+    },
+    {
+      "id": "scrape_single_all_website",
+      "pattern_refs": ["scrape_single_all_website"],
+      "primary_agent": "scraper-agent",
+      "subagent_pipeline": ["delta-detector", "ethical-crawler", "content-parser", "asset-handler", "sync-state-writer"],
+      "skill_refs": []
+    },
+    {
+      "id": "sync",
+      "pattern_refs": ["sync"],
+      "primary_agent": "scraper-agent",
+      "subagent_pipeline": ["delta-detector", "ethical-crawler", "content-parser", "asset-handler", "sync-state-writer"],
+      "skill_refs": []
+    },
+    {
+      "id": "create_blog_posts",
+      "pattern_refs": ["create_blog_posts"],
+      "primary_agent": "creator-agent",
+      "subagent_pipeline": ["blueprint-architect", "content-generator", "brand-voice-applier"],
+      "skill_refs": ["marketing-content-creation"]
+    },
+    {
+      "id": "optimize_images",
+      "pattern_refs": ["optimize_images"],
+      "primary_agent": "seo-agent",
+      "subagent_pipeline": ["image-seo-auditor"],
+      "skill_refs": ["marketing-seo-audit"]
+    },
+    {
+      "id": "export",
+      "pattern_refs": ["export"],
+      "primary_agent": "workflow-agent",
+      "subagent_pipeline": ["export-packager"],
+      "skill_refs": []
+    },
+    {
+      "id": "brand",
+      "pattern_refs": ["brand"],
+      "primary_agent": "brand-agent",
+      "subagent_pipeline": ["discovery-engine"],
+      "skill_refs": ["marketing-brand-strategy"]
+    },
+    {
+      "id": "extract_brand_voice",
+      "pattern_refs": ["extract_brand_voice"],
+      "primary_agent": "brand-agent",
+      "subagent_pipeline": ["content-parser"],
+      "skill_refs": []
+    },
+    {
+      "id": "refine_brand_voice",
+      "pattern_refs": ["refine_brand_voice"],
+      "primary_agent": "brand-agent",
+      "subagent_pipeline": ["content-parser"],
+      "skill_refs": []
+    },
+    {
+      "id": "create_website_pages",
+      "pattern_refs": ["create_website_pages"],
+      "primary_agent": "creator-agent",
+      "subagent_pipeline": ["blueprint-architect", "content-generator"],
+      "skill_refs": []
+    },
+    {
+      "id": "create_project_pages",
+      "pattern_refs": ["create_project_pages"],
+      "primary_agent": "creator-agent",
+      "subagent_pipeline": ["blueprint-architect", "content-generator"],
+      "skill_refs": []
+    },
+    {
+      "id": "create_landing_pages",
+      "pattern_refs": ["create_landing_pages"],
+      "primary_agent": "creator-agent",
+      "subagent_pipeline": ["blueprint-architect", "content-generator"],
+      "skill_refs": []
+    },
+    {
+      "id": "compare",
+      "pattern_refs": ["compare"],
+      "primary_agent": "creator-agent",
+      "subagent_pipeline": ["delta-detector"],
+      "skill_refs": []
+    },
+    {
+      "id": "intel_competitor",
+      "pattern_refs": ["intel_competitor"],
+      "primary_agent": "research-agent",
+      "subagent_pipeline": ["discovery-engine"],
+      "skill_refs": []
+    },
+    {
+      "id": "intel_market_snapshot",
+      "pattern_refs": ["intel_market_snapshot"],
+      "primary_agent": "research-agent",
+      "subagent_pipeline": ["discovery-engine"],
+      "skill_refs": []
+    },
+    {
+      "id": "intel_opportunities",
+      "pattern_refs": ["intel_opportunities"],
+      "primary_agent": "research-agent",
+      "subagent_pipeline": ["discovery-engine"],
+      "skill_refs": []
+    },
+    {
+      "id": "polish_content",
+      "pattern_refs": ["polish_content"],
+      "primary_agent": "seo-agent",
+      "subagent_pipeline": ["brand-voice-applier"],
+      "skill_refs": []
+    },
+    {
+      "id": "review",
+      "pattern_refs": ["review"],
+      "primary_agent": "workflow-agent",
+      "subagent_pipeline": ["voice-validator", "seo-optimizer"],
+      "skill_refs": []
+    },
+    {
+      "id": "approve",
+      "pattern_refs": ["approve"],
+      "primary_agent": "workflow-agent",
+      "subagent_pipeline": [],
+      "skill_refs": []
+    },
+    {
+      "id": "revise",
+      "pattern_refs": ["revise"],
+      "primary_agent": "creator-agent",
+      "subagent_pipeline": ["content-generator"],
+      "skill_refs": []
+    },
+    {
+      "id": "archive",
+      "pattern_refs": ["archive"],
+      "primary_agent": "workflow-agent",
+      "subagent_pipeline": [],
+      "skill_refs": []
+    },
+    {
+      "id": "memory_save",
+      "pattern_refs": ["memory_save"],
+      "primary_agent": "workflow-agent",
+      "subagent_pipeline": ["memory-manager"],
+      "skill_refs": []
+    },
+    {
+      "id": "memory_load",
+      "pattern_refs": ["memory_load"],
+      "primary_agent": "workflow-agent",
+      "subagent_pipeline": ["memory-manager"],
+      "skill_refs": []
+    },
+    {
+      "id": "memory_clear",
+      "pattern_refs": ["memory_clear"],
+      "primary_agent": "workflow-agent",
+      "subagent_pipeline": ["memory-manager"],
+      "skill_refs": []
+    },
+    {
+      "id": "budget_check",
+      "pattern_refs": ["budget_check"],
+      "primary_agent": "guide-agent",
+      "subagent_pipeline": [],
+      "skill_refs": []
+    },
+    {
+      "id": "antigravity",
+      "pattern_refs": ["antigravity"],
+      "primary_agent": "antigravity-agent",
+      "subagent_pipeline": ["continual-learning-engine"],
+      "skill_refs": []
+    }
+  ]
+}
