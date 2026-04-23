@@ -419,10 +419,23 @@ commands:
     flags:
       - "--region=egypt|redsea|mena"
       - "--force (bypass Omega Gate v10 approval)"
+  deploy:
+    id: "CMD-023"
+    syntax: "/deploy [shard_id] [flags]"
+    agent: "Deployment Specialist (T1) + Cloud-Gateway"
+    description: "Automated distribution of factory shards to remote cloud infrastructure."
+    steps:
+      - "Validate shard connectivity via Cloud-Gateway"
+      - "Push industrial manifest to Shadow-Runner"
+      - "Execute remote /sync equilibrium check"
+    flags:
+      - "--provider=aws|hetzner|vercel|do"
+      - "--region=egypt|mena|global"
+      - "--mode=full|delta"
 
 ---
 # Metadata
-component_id: "cmd-system-v7"
+registry_id: "cmd-system-v7"
 version: "7.0.0"
 library_path: "12-meta-engine/meta-orchestration/v7-orchestration/command-system.yaml"
 created: "2026-04-23T12:56:22+02:00"
