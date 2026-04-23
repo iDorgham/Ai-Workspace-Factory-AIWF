@@ -1,9 +1,10 @@
 # 🌌 AI Workspace Factory (AIWF) — Galaxy Genesis v10.1.0
 
 [![Status: Perfect Equilibrium](https://img.shields.io/badge/Status-Perfect%20Equilibrium-brightgreen?style=for-the-badge&logo=appveyor)](https://github.com/iDorgham/Ai-Workspace-Factory-AIWF)
+[![Version: 10.1.0](https://img.shields.io/badge/Version-10.1.0-red?style=for-the-badge)](https://github.com/iDorgham/Ai-Workspace-Factory-AIWF)
+[![SDD: Compliant](https://img.shields.io/badge/SDD-Compliant-blue?style=for-the-badge)](https://github.com/iDorgham/Ai-Workspace-Factory-AIWF)
 [![Orchestration: v10.1.0](https://img.shields.io/badge/Orchestration-v10.1.0-blueviolet?style=for-the-badge)](https://github.com/iDorgham/Ai-Workspace-Factory-AIWF)
 [![License: Sovereign](https://img.shields.io/badge/License-Sovereign-gold?style=for-the-badge)](https://github.com/iDorgham/Ai-Workspace-Factory-AIWF)
-[![Registry: Protected](https://img.shields.io/badge/Registry-Protected-orange?style=for-the-badge)](https://github.com/iDorgham/Ai-Workspace-Factory-AIWF)
 
 The **AI Workspace Factory** is an autonomous, recursive meta-engine for the industrial-scale production of sovereign SaaS ecosystems. It has transitioned into the **Galaxy Phase**, enabling the spawning of distributed industrial shards across a global mesh.
 
@@ -12,19 +13,31 @@ The **AI Workspace Factory** is an autonomous, recursive meta-engine for the ind
 ## 🏛️ Core Architecture: The Five Pillars
 
 ### 1. The Omega Core (`v10.0`)
-Recursive self-monitoring and autonomous logic evolution. The factory senses its own performance and proposes structural refactors.
+**Recursive self-monitoring** and autonomous logic evolution. The factory senses its own performance and proposes structural refactors.
 
 ### 2. Galaxy-Orchestrator (`v10.1`)
-Recursive spawning protocol. Replicate the factory DNA into new cloud shards while maintaining absolute governance integrity.
+**Recursive spawning protocol.** Replicate the factory DNA into new cloud shards while maintaining absolute governance integrity.
 
 ### 3. Registry-Guardian (`v10.1`)
-An industrial immune system that blocks structural drift and ID collisions in the command library.
+**Industrial immune system** that blocks structural drift and ID collisions in the command library.
 
 ### 4. P2P Swarm Fabric (`v9.0`)
-A decentralized mesh of headless runners sharing sharded memory and parallelizing industrial execution.
+**Decentralized mesh** of headless runners sharing sharded memory and parallelizing industrial execution.
 
 ### 5. Intent-to-SaaS Engine (`v8.0`)
-Zero-interface project generation from a single intent string, governed by the Asset Guardian.
+**Zero-interface project generation** from a single intent string, governed by the Asset Guardian.
+
+---
+
+## 🛠️ Spec-Driven Development (SDD) Workflow
+
+The AIWF operates on a strict **Spec-Driven Development** (SDD) blueprint. No code is generated without a validated contract.
+
+1.  **PRD**: Logic starts in `plan/00-prd/`.
+2.  **Spec**: Detailed requirements defined in `spec.yaml` and `spec.md`.
+3.  **Contract**: API and State contracts established in `contracts/api-contract.yaml`.
+4.  **Implementation**: Coded using the `/dev` command, mapped to `tasks.json`.
+5.  **Validation**: Every component must pass the `/test` gate with ≥100% contract coverage.
 
 ---
 
