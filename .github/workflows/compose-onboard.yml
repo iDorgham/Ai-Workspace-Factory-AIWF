@@ -47,6 +47,7 @@ jobs:
 
           if [ -n "$CLIENT_NAME" ]; then
             echo "🚀 Processing Client: $CLIENT_NAME (Pipeline: $PIPELINE)"
+            export PYTHONPATH=$PYTHONPATH:.
             python3 factory/scripts/compose.py "$CLIENT_NAME" --pipeline "$PIPELINE" --verbose
           else
             echo "⚠️ No client detected for onboarding. Skipping."

@@ -21,6 +21,7 @@ jobs:
           python-version: '3.11'
       - name: Run Health Scorer
         run: |
+          export PYTHONPATH=$PYTHONPATH:.
           python3 factory/scripts/health_scorer.py
       - name: Archive Audit Report
         uses: actions/upload-artifact@v4
@@ -35,6 +36,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Verify Provisioning Engine
         run: |
+          export PYTHONPATH=$PYTHONPATH:.
           # Use modern v10 scaffolder
           python3 factory/scripts/saas_scaffolder.py "CI-Test-Project"
           # Check for .ai/metadata.json
@@ -50,6 +52,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Run Chaos Validator (Dry-Run)
         run: |
+          export PYTHONPATH=$PYTHONPATH:.
           # Create a dummy workspace for testing
           python3 factory/scripts/saas_scaffolder.py "Chaos-Test"
           # Run validator (if script exists in scripts/ or factory/scripts/)
