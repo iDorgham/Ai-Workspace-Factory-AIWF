@@ -53,7 +53,9 @@ jobs:
           fi
 
       - name: Audit Path Integrity
-        run: python3 factory/library/12-meta-engine/core/scripts/scripts/audit_path_integrity.py --check-content
+        run: |
+          export PYTHONPATH=$PYTHONPATH:$(pwd)/factory/library/12-meta-engine/core/scripts/scripts
+          python3 factory/library/12-meta-engine/core/scripts/scripts/audit_path_integrity.py --check-content
 
       - name: Commit & Push Workspace
         run: |
