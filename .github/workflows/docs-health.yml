@@ -19,7 +19,11 @@ jobs:
           python-version: "3.11"
 
       - name: Generate workspace index/status
-        run: python3 .ai/scripts/workspace_health.py
+        run: |
+          export PYTHONPATH=$PYTHONPATH:$(pwd)/factory/library/01-software-engineering/developing/scripts
+          python3 factory/library/01-software-engineering/developing/scripts/workspace_health.py
 
       - name: Run docs quality gate
-        run: python3 .ai/scripts/docs_quality_gate.py
+        run: |
+          export PYTHONPATH=$PYTHONPATH:$(pwd)/factory/library/01-software-engineering/developing/scripts
+          python3 factory/library/01-software-engineering/developing/scripts/docs_quality_gate.py

@@ -24,7 +24,7 @@ jobs:
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/python-versions@v3
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
@@ -38,7 +38,7 @@ jobs:
           python3 factory/scripts/compose.py $CLIENT_NAME --pipeline $PIPELINE --verbose
 
       - name: Audit Path Integrity
-        run: python3 .ai/scripts/audit_path_integrity.py --check-content
+        run: python3 factory/library/12-meta-engine/core/scripts/scripts/audit_path_integrity.py --check-content
 
       - name: Commit & Push Workspace
         run: |
