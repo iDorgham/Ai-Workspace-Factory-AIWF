@@ -1,0 +1,88 @@
+# Red Sea Tourism Booking — Factory Profile
+# Version: 1.0.0
+# Region: Red Sea / Egypt / MENA
+# Category: Hospitality / Tourism
+# ============================================================
+
+profile_id: "redsea-tourism-booking"
+version: "1.0.0"
+name: "Red Sea Tourism Booking Platform"
+description: >
+  Starter profile for hospitality and tourism booking platforms targeting
+  the Red Sea region (Hurghada, Sharm El-Sheikh, Marsa Alam, Dahab).
+  Includes pre-configured regional compliance, Arabic RTL support, local
+  payment gateways, and tourism-specific data models.
+region: ["redsea", "egypt", "mena"]
+vertical: "hospitality"
+status: "stable"
+created: "2026-04-23"
+
+tech_stack:
+  frontend:
+    - "Next.js 14 (App Router)"
+    - "Tailwind CSS"
+    - "next-intl (Arabic/English i18n)"
+    - "React Hook Form"
+  backend:
+    - "Supabase (PostgreSQL + Auth + Storage)"
+    - "Next.js API Routes"
+  payments:
+    - "Fawry SDK"
+    - "Vodafone Cash API"
+    - "Stripe (international cards)"
+  maps:
+    - "Google Maps Platform"
+    - "Mapbox (offline fallback)"
+  media:
+    - "Cloudinary (hotel images, dive site photos)"
+
+regional_compliance:
+  target_regions: ["redsea", "egypt"]
+  data_residency: "Law 151/2020"
+  currency: ["EGP", "USD"]
+  rtl_layout: true
+  local_payments: ["Fawry", "Vodafone Cash"]
+  language_support: ["ar", "en"]
+  timezone: "Africa/Cairo"
+
+domain_models:
+  - Property (hotel, resort, dive center, liveaboard)
+  - Room (type, capacity, amenities, price, availability)
+  - Booking (guest, dates, room, status, payment)
+  - Guest (profile, passport, nationality, preferences)
+  - Activity (diving, snorkeling, safari, excursion)
+  - Review (rating, text, photos, verified_stay)
+  - Payment (method, amount_egp, amount_usd, status, fawry_ref)
+
+features:
+  core:
+    - Property search with date picker and availability calendar
+    - Multi-room booking with group discounts
+    - Arabic/English UI with RTL layout switch
+    - Fawry payment integration (reference code flow)
+    - Vodafone Cash payment integration
+    - Guest profile with document upload (passport/national ID)
+    - Booking confirmation with PDF voucher (Arabic + English)
+    - Email/SMS notifications (Arabic templates)
+  optional:
+    - Dive certification tracking (PADI/SSI)
+    - Excursion booking add-ons
+    - Liveaboard itinerary management
+    - Loyalty points system (EGP-denominated)
+    - Real-time chat (Arabic + English)
+
+library_components:
+  - "factory/library/components/booking-calendar"
+  - "factory/library/components/payment-gateway-mena"
+  - "factory/library/components/rtl-layout-wrapper"
+  - "factory/library/templates/hospitality-prd"
+  - "factory/library/templates/mena-compliance-block"
+
+quick_start:
+  commands:
+    - "/do 'Red Sea resort booking platform' --region=redsea"
+    - "/plan --from=00-prd/prd.md --region=redsea"
+    - "/dev --phase=1 --region=redsea"
+  notes: >
+    Run /brainstorm --skill=redsea-tourism-booking --region=redsea
+    to generate a fully-tailored spec snippet ready to copy into your plan.

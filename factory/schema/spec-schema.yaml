@@ -1,0 +1,208 @@
+# `spec.yaml` — AIWF SDD Contract Schema
+# Version: 7.0.0
+# Enforced by: Contract Guardian (Sub-Agent, T1)
+# Used by: /plan, /dev, /test, /fix
+# ============================================================
+
+$schema: "https://aiwf.dev/schemas/spec/v7.0.0"
+$version: "7.0.0"
+$description: >
+  Machine-readable contract schema for AIWF Spec-Driven Development.
+  Every spec.yaml produced by /plan must conform to this schema.
+  Contract Guardian blocks /dev execution if any required field is missing or invalid.
+
+# ─── REQUIRED FIELDS ────────────────────────────────────────
+
+required:
+  - phase_id
+  - version
+  - description
+  - requirements
+  - acceptance_criteria
+  - sovereign_boundary
+  - tech_stack
+  - approved_by
+  - evolution_hash
+
+# ─── FIELD DEFINITIONS ──────────────────────────────────────
+
+fields:
+
+  phase_id:
+    type: string
+    pattern: "^[0-9]{2}-[a-z0-9-]+$"
+    example: "01-hotel-booking"
+    description: "Zero-padded phase number followed by kebab-case slug."
+
+  version:
+    type: string
+    pattern: "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    example: "1.0.0"
+    description: "Semantic version of this spec. Increment on any breaking change."
+
+  description:
+    type: string
+    minLength: 20
+    description: "Human-readable summary of this phase's scope and objectives."
+
+  requirements:
+    type: array
+    items:
+      type: string
+      pattern: "^REQ-[0-9]{3}$"
+    minItems: 1
+    description: "List of REQ-IDs from the PRD that this phase implements."
+
+  acceptance_criteria:
+    type: array
+    minItems: 1
+    items:
+      type: object
+      required: [id, description, test_fixture, contract_gate]
+      fields:
+        id:
+          type: string
+          pattern: "^AC-[0-9]{3}$"
+        description:
+          type: string
+          minLength: 10
+        test_fixture:
+          type: string
+          description: "Relative path to test fixture file. Must exist before /dev runs."
+        contract_gate:
+          type: boolean
+          description: "If true, this AC blocks auto-merge if not passing."
+
+  dependencies:
+    type: array
+    items:
+      type: string
+      pattern: "^[0-9]{2}-[a-z0-9-]+$"
+    description: "Other phase_ids this phase depends on. Dependency order enforced."
+
+  sovereign_boundary:
+    type: string
+    enum: ["client-only", "shared", "restricted"]
+    description: >
+      client-only: Data stays in client workspace only.
+      shared: Can be used across workspaces with consent.
+      restricted: Requires Omega Gate approval for any access.
+
+  tech_stack:
+    type: array
+    items:
+      type: string
+    minItems: 1
+    description: "Technologies used in this phase. Pulled from factory/library/ first."
+
+  regional_compliance:
+    type: object
+    required: false
+    description: "Required when --region flag was active during /plan."
+    fields:
+      target_regions:
+        type: array
+        items:
+          type: string
+          enum: ["egypt", "redsea", "mena"]
+      requirements:
+        type: array
+        items:
+          type: string
+        description: "Specific legal or regulatory requirements (e.g., Law 151/2020)."
+      feature_flags:
+        type: object
+        fields:
+          rtl_layout:
+            type: boolean
+            description: "Arabic RTL layout required."
+          local_payments:
+            type: array
+            items:
+              type: string
+              enum: ["Fawry", "Vodafone Cash", "Meeza", "InstaPay", "Mada", "STC Pay"]
+          data_residency:
+            type: string
+            enum: ["Law 151/2020", "PDPL", "none"]
+          currency:
+            type: array
+            items:
+              type: string
+              enum: ["EGP", "SAR", "AED", "USD"]
+
+  approved_by:
+    type: string
+    enum: ["pending_omega", "Dorgham-Approved"]
+    description: >
+      Must be set to Dorgham-Approved before /dev can run in production mode.
+      pending_omega is the default after /plan.
+
+  evolution_hash:
+    type: string
+    pattern: "^sha256:[a-f0-9]{8,}$"
+    description: "SHA-256 hash of this spec at time of approval. Rollback pointer."
+
+# ─── VALIDATION RULES ───────────────────────────────────────
+
+validation_rules:
+  - rule: "All REQ-IDs in requirements must exist in 00-prd/requirements-trace.json"
+    gate: spec-lint
+    severity: blocking
+
+  - rule: "Every acceptance_criteria item must have a test_fixture file path"
+    gate: contract-check
+    severity: blocking
+
+  - rule: "contract_gate: true items block auto-merge if not passing"
+    gate: auto-merge
+    severity: blocking
+
+  - rule: "regional_compliance required when target_regions is non-empty"
+    gate: regional-compliance
+    severity: blocking
+
+  - rule: "approved_by must be Dorgham-Approved for /dev --prod runs"
+    gate: omega-gate
+    severity: blocking
+
+  - rule: "evolution_hash must be recalculated on any field mutation"
+    gate: trace-matrix
+    severity: warning
+
+# ─── EXAMPLE spec.yaml ──────────────────────────────────────
+
+example:
+  phase_id: "01-hotel-booking"
+  version: "1.0.0"
+  description: "Hotel search, booking, and payment flow for Red Sea resort platform."
+  requirements:
+    - "REQ-001"
+    - "REQ-002"
+    - "REQ-003"
+  acceptance_criteria:
+    - id: "AC-001"
+      description: "User can search hotels by date range and location."
+      test_fixture: "contracts/test-fixtures/ac-001-search.json"
+      contract_gate: true
+    - id: "AC-002"
+      description: "Payment flow supports Fawry and Vodafone Cash."
+      test_fixture: "contracts/test-fixtures/ac-002-payment.json"
+      contract_gate: true
+  dependencies: []
+  sovereign_boundary: "client-only"
+  tech_stack:
+    - "Next.js 14"
+    - "Supabase"
+    - "Fawry SDK"
+  regional_compliance:
+    target_regions: ["redsea", "egypt"]
+    requirements:
+      - "Law 151/2020 data residency"
+      - "Arabic RTL support"
+    feature_flags:
+      rtl_layout: true
+      local_payments: ["Fawry", "Vodafone Cash"]
+      data_residency: "Law 151/2020"
+      currency: ["EGP"]
+  approved_by: "pending_omega"
+  evolution_hash: "sha256:aabbccdd..."
