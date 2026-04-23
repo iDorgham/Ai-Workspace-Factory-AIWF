@@ -69,7 +69,16 @@ class SyncEngine:
         return len(changes)
 
     def sync_all(self, dry_run=False):
-        """Sync all workspaces."""
+        """Sync all workspaces with pre-sync Registry-Guardian audit."""
+        
+        # 0. Registry-Guardian Blocking Gate
+        from registry_guardian import RegistryGuardian
+        registry = os.path.join(self.library_path, "command-system.yaml")
+        guardian = RegistryGuardian(registry)
+        if not guardian.audit():
+            print("🛑 [SYNC-ABORTED] Registry integrity check failed. Fix errors in command-system.yaml first.")
+            return False
+
         workspaces = self.get_workspaces()
         print(f"🚀 Starting Hot-Sync for {len(workspaces)} workspaces...")
         

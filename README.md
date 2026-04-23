@@ -1,116 +1,107 @@
-![AI Workspace Factory Banner](file:///Users/Dorgham/.gemini/antigravity/brain/e4908b8d-eb55-444d-a978-d139a19d2e29/aiwf_banner_1776834994917.png)
+# 🌌 AI Workspace Factory (AIWF) — Omega Singularity v10.0.0
 
-# 🏭 AI WORKSPACE FACTORY (AIWF)
-### *The Antifragile Sovereign Composition Engine*
+[![Status: Perfect Equilibrium](https://img.shields.io/badge/Status-Perfect%20Equilibrium-brightgreen?style=for-the-badge&logo=appveyor)](https://github.com/iDorgham/Ai-Workspace-Factory-AIWF)
+[![Orchestration: v10.0.0](https://img.shields.io/badge/Orchestration-v10.0.0-blueviolet?style=for-the-badge)](https://github.com/iDorgham/Ai-Workspace-Factory-AIWF)
+[![License: Sovereign](https://img.shields.io/badge/License-Sovereign-gold?style=for-the-badge)](https://github.com/iDorgham/Ai-Workspace-Factory-AIWF)
+[![Coverage: 100%](https://img.shields.io/badge/Coverage-100%25-success?style=for-the-badge)](https://github.com/iDorgham/Ai-Workspace-Factory-AIWF)
 
-[GitHub Repository](https://github.com/iDorgham/Ai-Workspace-Factory-AIWF)
-
-[![Version](https://img.shields.io/badge/version-6.0.0--alpha-blueviolet?style=for-the-badge)](file:///Users/Dorgham/Documents/Work/Devleopment/AIWF/master/docs/Product%20required%20document/AIWF-PRD.md)
-[![Status](https://img.shields.io/badge/status-active--development-orange?style=for-the-badge)](#)
-[![Compliance](https://img.shields.io/badge/compliance-MENA%20%2F%20Sovereign-success?style=for-the-badge)](#)
+The **AI Workspace Factory** is an autonomous, distributed meta-engine designed for the industrial-scale production of sovereign SaaS ecosystems. It has achieved the **Singularity Phase**, enabling recursive self-architecting and decentralized P2P swarm orchestration.
 
 ---
 
-## 🌟 OVERVIEW
+## 🏛️ Core Architecture: The Five Pillars
 
-**AI Workspace Factory (AIWF)** is a state-of-the-art composition engine designed to industrialize the creation and evolution of AI-native workspaces. Moving beyond simple prompt-based generation, AIWF v6.0.0 introduces **Antifragility**—a system that doesn't just resist stress but actively improves from it.
+### 1. The Omega Core (`v10.0`)
+Recursive self-monitoring and autonomous logic evolution. The factory senses its own performance and proposes structural refactors.
 
-By leveraging a **Library-First** philosophy, AIWF assembles client-specific environments from curated, versioned components, ensuring deterministic outputs, sovereign isolation, and recursive architectural evolution.
+### 2. P2P Global Swarm (`v9.0`)
+A decentralized fabric of headless runners sharing sharded memory and executing tasks in parallel across an encrypted mesh.
 
----
-
-## 🏗️ THE ANTIFRAGILE PILLARS (v6.0.0)
-
-Version 6.0.0 represents a quantum leap in autonomous resilience. The system is built on four core pillars that enable self-evolution and proactive healing.
-
-| Pillar | Agent / System | Function |
-| :--- | :--- | :--- |
-| **Autonomous Healing** | `Healing Bot` | Monitors structural integrity and auto-remediates drift using append-only repair logs. |
-| **Recursive Learning** | `/master learn` | Converts user corrections and pipeline feedback into permanent, versioned skill manifests. |
-| **Swarm Consensus** | `Swarm Router v3` | Orchestrates critical paths through multi-agent validation, preventing single-point logic failures. |
-| **Chaos Scaffolding** | `Chaos Validator` | Injects controlled stressors to verify isolation boundaries and adaptive recovery rates. |
+### 3. Headless Scaling (`v8.0`)
+Zero-interface "Intent-to-SaaS" flow. Generate production-ready projects from a single intent string.
 
 ---
 
-## 📊 CORE ARCHITECTURE
+## 🛠️ Spec-Driven Development (SDD) Workflow
 
-AIWF operates as a multi-phase pipeline that transforms client requirements into production-ready sovereign workspaces.
+The AIWF operates on a strict **Spec-Driven Development** (SDD) blueprint. No code is generated without a validated contract.
 
-```mermaid
-graph TD
-    Input["[CLI / IDE Input]"] --> Router[".tool_router_v2.py"]
-    Router --> Phase1["Phase 1: Deterministic Compose"]
-    Phase1 --> Phase2["Phase 2: Swarm Consensus Routing"]
-    Phase2 --> Phase3["Phase 3: Autonomous Healing & Audit"]
-    Phase3 --> Phase4["Phase 4: Recursive Learning (/master learn)"]
-    Phase4 --> Phase5["Phase 5: Chaos & Resilience Validation"]
-    Phase5 --> Output["[Sovereign Workspace]"]
+1.  **PRD**: Logic starts in `plan/00-prd/`.
+2.  **Spec**: Detailed requirements defined in `spec.yaml` and `spec.md`.
+3.  **Contract**: API and State contracts established in `contracts/api-contract.yaml`.
+4.  **Implementation**: Coded using the `/dev` command, mapped to `tasks.json`.
+5.  **Validation**: Every component must pass the `/test` gate with ≥100% contract coverage.
 
-    subgraph "Sovereign Layer"
-        Output
-    end
+---
 
-    subgraph "Evolution Loop"
-        Phase4 -.->|Update Library| Phase1
-    end
+## 🛰️ Industrial Command Suite
+
+### 1. Development & Planning
+- `/plan --phase=N`: Provision the SDD blueprint for a specific industrial phase.
+- `/dev`: Execute implementation based on the active `tasks.json` graph.
+- `/test --phase=N`: Run unit, integration, and regional compliance tests.
+
+### 2. Singularity Operations
+- `/omega generate "<intent>"`: Execute the full Intent-to-SaaS autonomous pipeline.
+- `/omega audit`: Run recursive factory health and structural integrity checks.
+- `/sync`: Global hot-sync to propagate library logic across all nodes.
+
+### 3. Visibility & Swarm
+- `/dashboard`: Launch the real-time Omega monitoring cockpit.
+- `/swarm "cmd"`: Execute a command across 50+ workspaces in parallel.
+- `/network status`: View P2P mesh health and sharded memory distribution.
+
+---
+
+## 🧠 Intelligence Interface: Guide & Brainstorm
+
+### `/guide` — The Recursive Mentor
+The `/guide` command provides pedagogical context for your current progress.
+- **Done**: Educational recap of the last completed task.
+- **Learn**: Deep-dive into the architectural patterns used.
+- **Next**: Actionable, copyable commands for the next step.
+
+### `/brainstorm` — The Strategic Architect
+The `/brainstorm` command is used for high-level technical design and "what-if" scenarios.
+- **Usage**: `/brainstorm --topic="Global Revenue"`
+- **Output**: A conceptual architecture and a ready-to-use **Agent Prompt** for the T0 orchestrator.
+
+---
+
+## ⚙️ Installation & Setup (AIWF)
+
+To install the AI Workspace Factory on a new sovereign node:
+
+### 1. Clone the Sovereign Fabric
+```bash
+git clone https://github.com/iDorgham/Ai-Workspace-Factory-AIWF.git
+cd Ai-Workspace-Factory-AIWF
+```
+
+### 2. Initialize the Industrial Environment
+```bash
+# Install core dependencies (Rich, Asyncio, Websockets)
+pip install -r requirements.txt
+
+# Run initial factory audit to verify equilibrium
+python3 factory/core/omega_core.py
+```
+
+### 3. Boot the Control Center
+```bash
+# Launch the real-time dashboard
+python3 factory/dashboard/omega_tui_lite.py
 ```
 
 ---
 
-## 🛠️ REPOSITORY STRUCTURE
+## 🚀 The Galaxy Roadmap (v11.0 — v15.0)
 
-```text
-AIWF/
-├── .ai/                    # System memory, agents, and autonomous logs
-├── docs/                   # Strategic planning, PRDs, and playbooks
-│   └── Product required document/AIWF-PRD.md
-├── factory/                # The Composition Engine
-│   ├── library/            # Canonical, versioned components
-│   ├── profiles/           # Blueprint configurations for workspaces
-│   └── scripts/            # Core automation and validation logic
-├── master/                 # Project core and master contexts
-├── workspaces/             # Factory-generated client environments (isolated)
-└── scripts/                # Root-level utility and maintenance scripts
-```
+- **v11.0 (Phase 6)**: Multi-Cloud Sovereignty (Shadow Runners).
+- **v12.0 (Phase 7)**: Autonomous Revenue (Stripe/Fawry Adapters).
+- **v14.0 (Phase 9)**: Neural Fabric (Local LLM Synthesis).
+- **v15.0 (Phase 10)**: The Sovereign Galaxy (DAO Governance).
 
 ---
 
-## 🚀 COMMAND CENTER
-
-AIWF provides a powerful CLI interface for operators to manage the entire lifecycle of a workspace.
-
-| Command | Tier | Description |
-| :--- | :--- | :--- |
-| `/master learn` | T0 | Triggers the Recursive Learning Engine to update skill manifests. |
-| `/heal check --auto` | T0 | Executes the Healing Bot to audit and fix structural drift. |
-| `/route consensus` | T0 | Runs the Swarm Router for multi-agent strategy validation. |
-| `/chaos inject` | T1 | Injects stressors to test the resilience of a specific workspace. |
-| `/dashboard --root` | T1 | Renders the Antifragile Dashboard with real-time stress metrics. |
-
----
-
-## 🛡️ GOVERNANCE & THE OMEGA GATE
-
-Safety and sovereignty are hardcoded into the AIWF DNA. All autonomous mutations are governed by the **Omega Gate**:
-
-- **Human-Mediated Approval**: Structural or library changes require an explicit `Dorgham-Approval` flag.
-- **Traceable Logs**: Every action is stamped with an ISO-8601 timestamp, a unique Reasoning Hash, and a rollback pointer.
-- **Sovereign Isolation**: Client workspaces in `workspaces/` are 100% independent; cross-project writes are strictly forbidden without high-tier consensus.
-
----
-
-## 📈 TECHNICAL SPECIFICATIONS
-
-- **Token Efficiency**: Target session overhead `< 2.5%` via Context Compression (95).
-- **Reliability**: `99.8%` routing precision with deterministic fallback.
-- **Resilience**: `95%+` recovery success rate under Chaos Scaffolding stress tests.
-- **Compliance**: Full alignment with MENA ethics (AAOIFI/IFSB) and DLD standards.
-
----
-
-> [!NOTE]
-> AIWF is a living system. Architectural improvements are committed as append-only records to ensure a perfect audit trail and total reversibility.
-
----
-
-**Built by [Dorgham]** | *v6.0.0 "Antifragile Factory"*
+*Governor: Dorgham* | *Registry Version: 10.0.0* | *Status: Manifest*

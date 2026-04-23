@@ -1,0 +1,3 @@
+{"timestamp": "2026-04-23T15:55:23.125320", "issue": "ID_COLLISION_DETECTED", "details": ["CMD-006", "cmd-system-v7"], "reasoning_hash": "sha256:repair-1776952523.125331"}
+{"timestamp": "2026-04-23T15:55:48.809087", "issue": "ID_COLLISION_DETECTED", "details": ["CMD-007", "cmd-system-v7"], "reasoning_hash": "sha256:repair-1776952548.809093"}
+{"timestamp": "2026-04-23T15:56:32.735693", "issue": "ID_COLLISION_DETECTED", "details": ["cmd-system-v7"], "reasoning_hash": "sha256:repair-1776952592.7357"}
