@@ -64,6 +64,6 @@ if __name__ == "__main__":
         if arg.startswith("--region="):
             region = arg.split("=")[1]
             
-    root = "/Users/Dorgham/Documents/Work/Devleopment/AIWF"
+    root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     scaffolder = SaaSScaffolder(root)
     scaffolder.init_project(name, region=region)

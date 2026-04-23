@@ -3,7 +3,7 @@ import json
 from datetime import datetime
 
 # --- CONFIGURATION ---
-BASE_DIR = "/Users/Dorgham/Documents/Work/Devleopment/AIWF"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 LIBRARY_DIR = os.path.join(BASE_DIR, "factory/library")
 PROFILES_DIR = os.path.join(BASE_DIR, "factory/profiles")
 REPORT_PATH = os.path.join(BASE_DIR, ".ai/logs/health-audit-report.md")

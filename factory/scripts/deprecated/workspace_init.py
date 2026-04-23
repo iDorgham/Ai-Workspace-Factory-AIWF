@@ -6,7 +6,7 @@ from datetime import datetime
 import hashlib
 
 # --- CONFIGURATION ---
-BASE_DIR = "/Users/Dorgham/Documents/Work/Devleopment/AIWF"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 WORKSPACES_DIR = os.path.join(BASE_DIR, "workspaces")
 LOG_PATH = os.path.join(BASE_DIR, ".ai/logs/workflow.jsonl")
 
