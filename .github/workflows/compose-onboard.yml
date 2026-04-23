@@ -14,6 +14,9 @@ on:
         default: 'sovereign'
         required: true
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   compose:
     runs-on: ubuntu-latest
