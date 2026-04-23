@@ -1,10 +1,11 @@
 {
   "profile_id": "ultra-antifragile-orchestrator",
-  "version": "7.0.0",
+  "version": "7.1.0",
   "name": "Ultra-Antifragile Sovereign Orchestrator",
-  "description": "Full AIWF v7.0.0 orchestration layer. Apply this profile to any workspace to inherit the complete ultra-antifragile command system, agent swarm, silent Git automation, Omega Gate v2 governance, regional awareness, and Guide Protocol.",
+  "description": "Full AIWF v7.1.0 orchestration layer. Apply this profile to any workspace to inherit the complete ultra-antifragile command system, agent swarm, silent Git automation, Omega Gate v2 governance, regional awareness, Guide Protocol, workspace scaffold (docs/ structure, .gitignore, .env), AIWF-Guide, and interactive /tutorial.",
   "created": "2026-04-23T12:56:22+02:00",
-  "reasoning_hash": "sha256:profile-v7-2026-04-23",
+  "updated": "2026-04-23T13:14:08+02:00",
+  "reasoning_hash": "sha256:profile-v7.1-2026-04-23",
 
   "library_components": [
     {
@@ -66,6 +67,24 @@
       "path": "factory/schema/spec-schema.yaml",
       "target": ".ai/schema/spec-schema.yaml",
       "description": "spec.yaml contract enforcement schema"
+    },
+    {
+      "id": "workspace-scaffold",
+      "path": "12-meta-engine/meta-orchestration/v7-orchestration/workspace-scaffold/",
+      "target": "scaffold/",
+      "description": "docs/ folder structure, .gitignore template, .env template, naming conventions",
+      "provisions": [
+        { "from": ".gitignore.template", "to": ".gitignore" },
+        { "from": ".env.template", "to": ".env" },
+        { "from": "README.md", "to": ".ai/scaffold-guide.md" },
+        { "from": "AIWF-Guide.md", "to": "docs/00-guides/AIWF-Guide.md" }
+      ]
+    },
+    {
+      "id": "tutorial",
+      "path": "12-meta-engine/meta-orchestration/v7-orchestration/tutorial.md",
+      "target": ".ai/commands/tutorial.md",
+      "description": "Interactive /tutorial instructor command — 8-step walkthrough with checkpoints"
     }
   ],
 
@@ -83,10 +102,30 @@
     "guide_protocol_mandatory": true,
     "healing_bot_version": "v2",
     "sdd_blueprint_enforced": true,
-    "spec_yaml_contract": true
+    "spec_yaml_contract": true,
+    "workspace_scaffold": true,
+    "docs_auto_routing": true,
+    "gitignore_provisioned": true,
+    "env_template_provisioned": true,
+    "aiwf_guide_provisioned": true,
+    "tutorial_command": true
   },
 
-  "compose_instructions": "Apply via /compose [workspace-slug] --profile=ultra-antifragile-orchestrator. All 10 library components will be provisioned into the workspace's .ai/ directory.",
+  "workspace_structure": {
+    "docs_categories": [
+      "docs/00-guides/",
+      "docs/01-plans/",
+      "docs/02-specs/",
+      "docs/03-architecture/",
+      "docs/04-contracts/",
+      "docs/05-reports/",
+      "docs/06-releases/"
+    ],
+    "naming_template": "{YYYY-MM-DD}_{phase-slug}_{type}.{ext}",
+    "auto_provisioned": [".gitignore", ".env", "docs/00-guides/AIWF-Guide.md"]
+  },
+
+  "compose_instructions": "Apply via /compose [workspace-slug] --profile=ultra-antifragile-orchestrator. Provisions: .ai/ orchestration stack (12 components), docs/ (7 categories), .gitignore, .env, AIWF-Guide.md, /tutorial command.",
 
   "hot_sync": {
     "command": "/update-agents --safe --profile=ultra-antifragile-orchestrator",
