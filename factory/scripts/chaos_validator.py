@@ -2,17 +2,17 @@ import os
 import json
 import random
 import time
-from datetime import datetime
+from datetime import datetime, timezone
 import hashlib
 
 # --- CONFIGURATION ---
-BASE_DIR = "/Users/Dorgham/Documents/Work/Devleopment/AIWF"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 WORKSPACES_DIR = os.path.join(BASE_DIR, "workspaces")
 LOG_PATH = os.path.join(BASE_DIR, ".ai/logs/workflow.jsonl")
 
 def log_chaos(action, details):
     entry = {
-        "timestamp": datetime.utcnow().isoformat() + "Z",
+        "timestamp": datetime.now(timezone.utc).isoformat() + "Z",
         "action": action,
         "details": details,
         "reasoning_hash": hashlib.sha256(str(details).encode()).hexdigest(),
