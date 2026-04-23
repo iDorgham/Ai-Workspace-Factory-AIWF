@@ -148,6 +148,37 @@ sub_agents:
       - "Execute audit_path_integrity.py"
       - "Compliance audits for regional requirements"
     triggers: ["/heal check", "/fix --spec-sync", "session_start (background)"]
+
+  scrape_specialist:
+    id: "T1-006"
+    name: "Scrape Specialist"
+    role: "Data Harvester"
+    responsibilities:
+      - "Autonomous data extraction from public URLs"
+      - "Bypass common anti-bot patterns safely"
+      - "Parse unstructured HTML into JSON/Markdown"
+      - "Ensure Law 151/2020 data privacy during harvesting"
+    triggers: ["/scrape"]
+
+  content_architect:
+    id: "T1-007"
+    name: "Content Architect"
+    role: "Multi-modal Copywriter"
+    responsibilities:
+      - "Generate SEO-optimized content for blogs and e-commerce"
+      - "Multi-language support (AR/EN) with RTL awareness"
+      - "Align copy with PRD REQ-IDs and brand voice"
+    triggers: ["/content"]
+
+  asset_guardian:
+    id: "T1-008"
+    name: "Asset Guardian"
+    role: "Quality Gatekeeper"
+    responsibilities:
+      - "Validate /art output for accessibility (WCAG 2.1)"
+      - "Perform color contrast checks between assets and UI"
+      - "Ensure brand consistency and resolution standards"
+    triggers: ["/art (post-generation gate)"]
 ```
 
 ---

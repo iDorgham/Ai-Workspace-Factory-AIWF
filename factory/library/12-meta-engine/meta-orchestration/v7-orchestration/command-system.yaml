@@ -248,6 +248,86 @@ commands:
       ▶️ Next: [1-3 prioritized next actions]
       💡 Suggest: [Optional proactive brainstorm, ~15-20% trigger]
 
+  scrape:
+    id: "CMD-011"
+    syntax: "/scrape [url] [flags]"
+    agent: "Scrape Specialist"
+    description: "Autonomous data extraction for blogs, product catalogs, or research."
+    steps:
+      - "Fetch URL and bypass anti-bot headers"
+      - "Parse DOM and extract structured fields (JSON/Markdown)"
+      - "Clean data and validate against Law 151/2020 privacy rules"
+    outputs:
+      - "docs/01-plans/scraped_{date}.json"
+    flags:
+      - "--output=path"
+      - "--format=json|markdown"
+      - "--limit=N"
+
+  content:
+    id: "CMD-012"
+    syntax: "/content [type] --topic='X' [flags]"
+    agent: "Content Architect"
+    description: "Generate SEO-optimized copy for blogs, SaaS, or e-commerce."
+    steps:
+      - "Analyze topic and PRD REQ-IDs"
+      - "Research context (via scrape if needed)"
+      - "Generate copy with RTL/MENA awareness"
+      - "Apply SEO metadata and keywords"
+    outputs:
+      - "docs/01-plans/{date}_{slug}_content.md"
+    flags:
+      - "--topic=string (required)"
+      - "--type=blog|product|doc|social"
+      - "--region=egypt|redsea|mena"
+
+  art:
+    id: "CMD-013"
+    syntax: "/art 'prompt' [flags]"
+    agent: "Spec Architect → Asset Guardian"
+    description: "Generates UI assets, logos, and illustrations with accessibility check."
+    steps:
+      - "Generate prompt based on project style.css/tailwind.config"
+      - "Trigger Generative Art Pipeline (DALL-E/Midjourney)"
+      - "Post-gate: Asset Guardian validates color contrast (WCAG 2.1)"
+      - "Auto-provision into public/assets/"
+    outputs:
+      - "public/assets/{type}/{date}_{slug}.webp"
+    flags:
+      - "--style=midjourney|dalle"
+      - "--variations=N"
+      - "--region=redsea|egypt|mena"
+
+  deck:
+    id: "CMD-014"
+    syntax: "/deck --topic='X' [flags]"
+    agent: "Content Architect"
+    description: "Generate professional investor or product presentation decks."
+    steps:
+      - "Synthesize data from docs/ plans and architecture"
+      - "Generate slide-by-slide structure"
+      - "Format as PDF/PPTX with brand consistency"
+    outputs:
+      - "docs/00-guides/{date}_presentation-deck.pdf"
+    flags:
+      - "--slides=N"
+      - "--template=investor|product|technical"
+
+  life:
+    id: "CMD-015"
+    syntax: "/life [subcommand] [flags]"
+    agent: "Master Guide"
+    description: "Personal planning and priority management engine."
+    subcommands:
+      - "/life daily — sync calendar and tasks for today"
+      - "/life weekly — 7-day priority overview"
+      - "/life roadmap — align personal goals with project milestones"
+    outputs:
+      - "docs/00-guides/{date}_priority-list.md"
+    flags:
+      - "--mode=daily|weekly|roadmap"
+      - "--sync-external"
+
 ---
 # Metadata
 component_id: "cmd-system-v7"
