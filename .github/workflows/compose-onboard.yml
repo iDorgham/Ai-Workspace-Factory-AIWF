@@ -36,17 +36,31 @@ jobs:
 
       - name: Execute Sovereign Composition
         run: |
-          CLIENT_NAME="${{ github.event.inputs.client }}"
-          PIPELINE="${{ github.event.inputs.pipeline }}"
-          python3 factory/scripts/compose.py $CLIENT_NAME --pipeline $PIPELINE --verbose
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            CLIENT_NAME="${{ github.event.inputs.client }}"
+            PIPELINE="${{ github.event.inputs.pipeline }}"
+          else
+            # For push triggers, detect the changed JSON file in factory/intake/
+            CLIENT_NAME=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }} | grep 'factory/intake/' | head -n 1 | xargs basename -s .json || echo "")
+            PIPELINE="sovereign"
+          fi
+
+          if [ -n "$CLIENT_NAME" ]; then
+            echo "🚀 Processing Client: $CLIENT_NAME (Pipeline: $PIPELINE)"
+            python3 factory/scripts/compose.py "$CLIENT_NAME" --pipeline "$PIPELINE" --verbose
+          else
+            echo "⚠️ No client detected for onboarding. Skipping."
+          fi
 
       - name: Audit Path Integrity
         run: python3 factory/library/12-meta-engine/core/scripts/scripts/audit_path_integrity.py --check-content
 
       - name: Commit & Push Workspace
         run: |
-          git config --global user.name "AIWF-Orchestrator"
-          git config --global user.email "orchestrator@ai-workspace-factory.local"
-          git add workspaces/
-          git commit -m "🚀 INDUSTRIAL-ONBOARDING: Created sovereign workspace for ${{ github.event.inputs.client }}"
-          git push origin main
+          if [ -n "$CLIENT_NAME" ]; then
+            git config --global user.name "AIWF-Orchestrator"
+            git config --global user.email "orchestrator@ai-workspace-factory.local"
+            git add workspaces/
+            git commit -m "🚀 INDUSTRIAL-ONBOARDING: Created sovereign workspace for $CLIENT_NAME"
+            git push origin master
+          fi
