@@ -1,11 +1,11 @@
-# 🌌 AI Workspace Factory (AIWF) — Omega Singularity v10.0.0
+# 🌌 AI Workspace Factory (AIWF) — Galaxy Genesis v10.1.0
 
 [![Status: Perfect Equilibrium](https://img.shields.io/badge/Status-Perfect%20Equilibrium-brightgreen?style=for-the-badge&logo=appveyor)](https://github.com/iDorgham/Ai-Workspace-Factory-AIWF)
-[![Orchestration: v10.0.0](https://img.shields.io/badge/Orchestration-v10.0.0-blueviolet?style=for-the-badge)](https://github.com/iDorgham/Ai-Workspace-Factory-AIWF)
+[![Orchestration: v10.1.0](https://img.shields.io/badge/Orchestration-v10.1.0-blueviolet?style=for-the-badge)](https://github.com/iDorgham/Ai-Workspace-Factory-AIWF)
 [![License: Sovereign](https://img.shields.io/badge/License-Sovereign-gold?style=for-the-badge)](https://github.com/iDorgham/Ai-Workspace-Factory-AIWF)
-[![Coverage: 100%](https://img.shields.io/badge/Coverage-100%25-success?style=for-the-badge)](https://github.com/iDorgham/Ai-Workspace-Factory-AIWF)
+[![Registry: Protected](https://img.shields.io/badge/Registry-Protected-orange?style=for-the-badge)](https://github.com/iDorgham/Ai-Workspace-Factory-AIWF)
 
-The **AI Workspace Factory** is an autonomous, distributed meta-engine designed for the industrial-scale production of sovereign SaaS ecosystems. It has achieved the **Singularity Phase**, enabling recursive self-architecting and decentralized P2P swarm orchestration.
+The **AI Workspace Factory** is an autonomous, recursive meta-engine for the industrial-scale production of sovereign SaaS ecosystems. It has transitioned into the **Galaxy Phase**, enabling the spawning of distributed industrial shards across a global mesh.
 
 ---
 
@@ -14,82 +14,79 @@ The **AI Workspace Factory** is an autonomous, distributed meta-engine designed 
 ### 1. The Omega Core (`v10.0`)
 Recursive self-monitoring and autonomous logic evolution. The factory senses its own performance and proposes structural refactors.
 
-### 2. P2P Global Swarm (`v9.0`)
-A decentralized fabric of headless runners sharing sharded memory and executing tasks in parallel across an encrypted mesh.
+### 2. Galaxy-Orchestrator (`v10.1`)
+Recursive spawning protocol. Replicate the factory DNA into new cloud shards while maintaining absolute governance integrity.
 
-### 3. Headless Scaling (`v8.0`)
-Zero-interface "Intent-to-SaaS" flow. Generate production-ready projects from a single intent string.
+### 3. Registry-Guardian (`v10.1`)
+An industrial immune system that blocks structural drift and ID collisions in the command library.
+
+### 4. P2P Swarm Fabric (`v9.0`)
+A decentralized mesh of headless runners sharing sharded memory and parallelizing industrial execution.
+
+### 5. Intent-to-SaaS Engine (`v8.0`)
+Zero-interface project generation from a single intent string, governed by the Asset Guardian.
 
 ---
 
-## 🛠️ Spec-Driven Development (SDD) Workflow
+## 🖥️ OMEGA COMMAND CENTER (TUI)
 
-The AIWF operates on a strict **Spec-Driven Development** (SDD) blueprint. No code is generated without a validated contract.
+The factory features a high-fidelity **Terminal User Interface (TUI)** for real-time visibility and orchestration control.
 
-1.  **PRD**: Logic starts in `plan/00-prd/`.
-2.  **Spec**: Detailed requirements defined in `spec.yaml` and `spec.md`.
-3.  **Contract**: API and State contracts established in `contracts/api-contract.yaml`.
-4.  **Implementation**: Coded using the `/dev` command, mapped to `tasks.json`.
-5.  **Validation**: Every component must pass the `/test` gate with ≥100% contract coverage.
+- **Global Monitor**: View all 28+ workspaces, their health scores, and orchestration versions.
+- **Swarm Radar**: Track active parallel processes and resource allocation across the mesh.
+- **Log Streamer**: Real-time WebSocket relay of agent decisions and industrial mutations.
+- **Panic Button (P-01)**: Immediate factory-wide emergency shutdown.
+
+```bash
+# LAUNCH THE COMMAND CENTER
+python3 factory/dashboard/omega_tui_lite.py
+```
 
 ---
 
 ## 🛰️ Industrial Command Suite
 
-### 1. Development & Planning
-- `/plan --phase=N`: Provision the SDD blueprint for a specific industrial phase.
-- `/dev`: Execute implementation based on the active `tasks.json` graph.
-- `/test --phase=N`: Run unit, integration, and regional compliance tests.
+### 🛠️ Development Workflow
+| Command | Action | Description |
+| :--- | :--- | :--- |
+| `/plan --phase=N` | **Blueprint** | Provision the SDD structure for a specific phase. |
+| `/dev` | **Implement** | Execute the highest-priority task in the active graph. |
+| `/test` | **Validate** | Run contract and regional compliance validation. |
+| `/fix` | **Remediate** | Autonomous patching of identified structural failures. |
 
-### 2. Singularity Operations
-- `/omega generate "<intent>"`: Execute the full Intent-to-SaaS autonomous pipeline.
-- `/omega audit`: Run recursive factory health and structural integrity checks.
-- `/sync`: Global hot-sync to propagate library logic across all nodes.
-
-### 3. Visibility & Swarm
-- `/dashboard`: Launch the real-time Omega monitoring cockpit.
-- `/swarm "cmd"`: Execute a command across 50+ workspaces in parallel.
-- `/network status`: View P2P mesh health and sharded memory distribution.
-
----
-
-## 🧠 Intelligence Interface: Guide & Brainstorm
-
-### `/guide` — The Recursive Mentor
-The `/guide` command provides pedagogical context for your current progress.
-- **Done**: Educational recap of the last completed task.
-- **Learn**: Deep-dive into the architectural patterns used.
-- **Next**: Actionable, copyable commands for the next step.
-
-### `/brainstorm` — The Strategic Architect
-The `/brainstorm` command is used for high-level technical design and "what-if" scenarios.
-- **Usage**: `/brainstorm --topic="Global Revenue"`
-- **Output**: A conceptual architecture and a ready-to-use **Agent Prompt** for the T0 orchestrator.
+### 🧠 Intelligence Interface
+| Command | Mode | Purpose |
+| :--- | :--- | :--- |
+| `/guide` | **Pedagogy** | Educational recap, pattern learning, and next steps. |
+| `/brainstorm` | **Strategy** | High-level architecture and agent prompt ideation. |
 
 ---
 
-## ⚙️ Installation & Setup (AIWF)
+## ⚙️ Setup & Installation
 
-To install the AI Workspace Factory on a new sovereign node:
+Follow these steps to initialize a new Sovereign Node in the AIWF Galaxy.
 
-### 1. Clone the Sovereign Fabric
+### 1. Provision the Fabric
 ```bash
 git clone https://github.com/iDorgham/Ai-Workspace-Factory-AIWF.git
 cd Ai-Workspace-Factory-AIWF
 ```
 
-### 2. Initialize the Industrial Environment
+### 2. Initialize Sovereignty
 ```bash
-# Install core dependencies (Rich, Asyncio, Websockets)
+# Install core industrial dependencies
 pip install -r requirements.txt
 
-# Run initial factory audit to verify equilibrium
-python3 factory/core/omega_core.py
+# Execute the Registry-Guardian Audit
+python3 factory/scripts/registry_guardian.py
 ```
 
-### 3. Boot the Control Center
+### 3. Boot Omega Prime
 ```bash
-# Launch the real-time dashboard
+# Run the recursive factory audit
+python3 factory/core/omega_core.py
+
+# Launch the Dashboard
 python3 factory/dashboard/omega_tui_lite.py
 ```
 
@@ -104,4 +101,4 @@ python3 factory/dashboard/omega_tui_lite.py
 
 ---
 
-*Governor: Dorgham* | *Registry Version: 10.0.0* | *Status: Manifest*
+*Governor: Dorgham* | *Registry Version: 10.1.0* | *Status: Manifest*
