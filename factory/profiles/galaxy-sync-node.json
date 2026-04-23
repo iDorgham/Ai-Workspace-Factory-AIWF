@@ -1,0 +1,22 @@
+{
+  "market_context": "distributed-galaxy",
+  "voice_id": "P2P-Orchestrator",
+  "profile": "galaxy-sync-node",
+  "display": "🛰️ Galaxy Sync Node",
+  "sector": "07-galaxy-sync",
+  "version": "1.0.0",
+  "description": "High-availability P2P synchronization node for distributed factory shards.",
+  "staffing": {
+    "strategy": [
+      "@Galaxy-Sync-Engine"
+    ],
+    "execution": [
+      "@Swarm-Router"
+    ]
+  },
+  "governance": {
+    "rules": "factory/library/07-galaxy-sync/protocols/EQUILIBRIUM.md"
+  },
+  "name": "Galaxy Sync Node",
+  "profile_id": "galaxy-sync-node"
+}

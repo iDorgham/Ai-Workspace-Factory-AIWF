@@ -2,8 +2,8 @@
 # Path: plan/_manifest.yaml
 # Reasoning Hash: sha256:manifest-v7-2026-04-23
 
-project_slug: "omega-singularity"
-version: "10.0.0-Composite"
+project_slug: "sovereign-galaxy"
+version: "13.0.0"
 
 phases:
   - id: 1
@@ -11,30 +11,60 @@ phases:
     name: "Foundation Hardening (v7.2)"
     status: "completed"
     path: "plan/01-foundation/"
-  
+   
   - id: 2
     slug: "visibility"
     name: "Operational Visibility (v7.5)"
     status: "completed"
     path: "plan/02-visibility/"
-
+ 
   - id: 3
     slug: "scaling"
     name: "Headless Scaling (v8.0)"
     status: "completed"
     path: "plan/03-scaling/"
-
+ 
   - id: 4
     slug: "network"
     name: "Global Swarm (v9.0)"
     status: "completed"
     path: "plan/04-network/"
-
+ 
   - id: 5
     slug: "singularity"
     name: "The Omega Engine (v10.0)"
-    status: "pending"
+    status: "completed"
     path: "plan/05-singularity/"
-
-active_phase: 5
+ 
+  - id: 6
+    slug: "multi-cloud"
+    name: "Multi-Cloud Orchestration (v11.0)"
+    status: "completed"
+    path: "plan/06-multi-cloud/"
+ 
+  - id: 7
+    slug: "galaxy-sync"
+    name: "Galaxy Sync Engine (v12.0)"
+    status: "completed"
+    path: "plan/07-galaxy-sync/"
+ 
+  - id: 8
+    slug: "regional-lockdown"
+    name: "Regional Shard Lockdown (v13.0)"
+    status: "active"
+    path: "plan/08-regional-lockdown/"
+ 
+  - id: 9
+    slug: "autonomous-revenue"
+    name: "Autonomous Revenue (v14.0)"
+    status: "pending"
+    path: "plan/09-autonomous-revenue/"
+ 
+  - id: 10
+    slug: "neural-fabric"
+    name: "Neural Fabric (v15.0)"
+    status: "pending"
+    path: "plan/10-neural-fabric/"
+ 
+active_phase: 8
 omega_gate_status: "verified"

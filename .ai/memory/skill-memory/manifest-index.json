@@ -1,5 +1,15 @@
 {
   "version": "1.0.0",
-  "last_updated": "2026-04-22T06:58:20.829107",
-  "manifests": []
+  "last_updated": "2026-04-23T17:29:10Z",
+  "manifests": [
+    "json-integrity-mastery.json",
+    "performance-optimization-learning.json",
+    "responsive-design-learning.json",
+    "schema-resilience-patterns.json",
+    "seo-optimization-learning.json",
+    "unknown_skill-learning.json",
+    "v7-command-system-manifest.json",
+    "geospatial-compliance-mastery.json",
+    "sdd-planning-mastery.json"
+  ]
 }

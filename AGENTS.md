@@ -1,4 +1,4 @@
-# 🤖 AIWF AGENT REGISTRY (v7.0.0)
+# 🤖 AIWF AGENT REGISTRY (v7.1.0)
 
 The AI Workspace Factory operates via a specialized swarm of agents, each governed by specific sovereign protocols and consensus rules.
 
@@ -45,6 +45,22 @@ The AI Workspace Factory operates via a specialized swarm of agents, each govern
 - **Token Efficiency**: Session overhead < 2.5% via structured outputs.
 - **MENA Sovereignty & Cultural Compliance**: Regional adaptations applied when `--region` flag is active.
 - **Spec-Driven Execution**: All implementation gated on validated `spec.yaml` contract.
+- **Silent Versioning & Tagging**: Version increments and Git tagging are performed automatically and silently upon phase completion.
+
+---
+
+## 📜 SOVEREIGN SDD PROTOCOLS (Planning Rules)
+
+All SDD Planning phases must adhere to the following mandatory industrial standards:
+
+1. **Phase Specification Minimum**: Each planning phase MUST contain at least **5 unique specifications** (`spec.md` + `spec.yaml`).
+2. **Library Enhancement cycle**: Each phase must include a dedicated task for **refining and enhancing the core library** (`factory/library/`).
+3. **Skill Codification**: New skills discovered during implementation must be added to the **skill library** (`.ai/skills/`).
+4. **Autonomous Automation**: Every phase must introduce at least one **automation script** or internal tool refinement.
+5. **Health & Performance Audit**: Mandatory performance optimization and **library health improvement** (targeting OMEGA-tier 100/100).
+6. **Command Ergonomics**: Existing CLI commands and subcommands (e.g., `/plan status`, `/plan audit`) must be **refined for efficiency** and logic flow.
+7. **Profile Expansion**: Each phase must result in the creation of at least **2 new workspace profiles** (`factory/profiles/`).
+8. **Invisible Traceability**: Versioning and Git tags must be applied **automatically and silently** without blocking the main workflow.
 
 ---
 
@@ -61,5 +77,6 @@ The AI Workspace Factory operates via a specialized swarm of agents, each govern
 
 ---
 
-*Registry version: 7.0.0*
-*Last updated: 2026-04-23T12:44:57+02:00*
+*Registry version: 7.1.0*
+*Last updated: 2026-04-23T18:22:00+02:00*
+*AIWF System Compatibility: v13.0.0*

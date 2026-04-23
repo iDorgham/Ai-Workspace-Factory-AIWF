@@ -1,0 +1,27 @@
+{
+    "phase": "11-website-content",
+    "version": "13.0.0",
+    "tasks": [
+        {
+            "id": "TASK-CONTENT-001",
+            "title": "Architect Content-Engine",
+            "status": "completed",
+            "description": "Implement factory/core/content_engine.py to handle creative assembly from specs.",
+            "dependencies": []
+        },
+        {
+            "id": "TASK-CONTENT-002",
+            "title": "Propagate Sitemap Shards",
+            "status": "completed",
+            "description": "Generate the physical directory structure in workspaces/sovereign-web/.",
+            "dependencies": ["TASK-CONTENT-001"]
+        },
+        {
+            "id": "TASK-CONTENT-003",
+            "title": "Export Content Manifest",
+            "status": "completed",
+            "description": "Generate the high-fidelity content_manifest.json for frontend integration.",
+            "dependencies": ["TASK-CONTENT-002"]
+        }
+    ]
+}

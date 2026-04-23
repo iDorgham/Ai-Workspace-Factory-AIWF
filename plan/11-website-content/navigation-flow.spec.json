@@ -1,0 +1,22 @@
+{
+  "spec_id": "navigation-flow",
+  "title": "Navigation & Menu Flow",
+  "version": "1.0.0",
+  "menu_logic": {
+    "primary": [
+      "Products",
+      "Shards",
+      "Roadmap"
+    ],
+    "secondary": [
+      "Login / Dashboard",
+      "Industrial CLI"
+    ]
+  },
+  "flow": [
+    "Entry: Home",
+    "Conversion: Try /dev command in browser",
+    "Retention: Save Phase Blueprint"
+  ],
+  "status": "draft"
+}

@@ -43,6 +43,18 @@
 | `/memory load` | memory-manager | `.ai/memory/context-cache/` | Restored session context | No |
 | `/memory clear` | memory-manager | Active session | Cleared temp context | No |
 | `/budget check` | guide-agent | Current token usage | Usage report + recommendations | No |
+| `/plan` | spec-architect | Current phase context | **Blueprint.** Provision 5+ specs (`spec.md` + `spec.yaml`) | No |
+| `/plan content` | content-planner-agent | `discovery-interview.json` | **Discover & Plan.** Runs discovery session → generates phase-based `content-plan.md` | No |
+| `/plan status` | orchestrator | `plan/` directories | **Status.** Phase progress and architectural gap analysis | No |
+| `/plan audit` | integrity-auditor | All library components | **Health.** OMEGA-tier Health Report and performance audit | No |
+| `/plan release` | deployment-specialist | Current phase specs | **Release.** Silent versioning and immutable Git tagging | No |
+| `/dev` | contract-guardian | Validated `spec.yaml` | **Implement.** Spec-governed code generation and integration | No |
+| `/git` | deployment-specialist | Workspace state | **Sovereign.** Branch integrity and version control sequences | No |
+| `/test` | integrity-auditor | Source code + contracts | **Validate.** Contract testing and Law 151 residency audit | No |
+| `/fix` | healing-bot | Error logs / lint drift | **Heal.** Recursive remediation and drift repair logs | No |
+| `/sync` | scraper-agent | Registry / Shards | **Equilibrium.** Propagates state across distributed shards | No |
+| `/deploy` | deployment-specialist | Approved builds | **Distribute.** Shard distribution to cloud infrastructure | No |
+| `/content` | creator-agent | Brand voice / keyword maps | **Creative.** Production of sitemaps, flow, and high-fidelity content | No |
 
 ---
 
@@ -55,6 +67,7 @@ The guide-agent must resolve these ambiguities before routing:
 - `/scrape [name] website` → scope: SINGLE competitor matching `[name]` slug or closest match
 - `/create blog posts about [topic]` → topic extracted from command; if multi-word, preserve full phrase
 - `/revise [feedback]` → feedback applied to the LAST created/polished content item in `state.json`
+- `/plan release` → triggers `.ai/scripts/silent_phase_release.py` to increment version and tag Git without user prompt.
 
 ### Competitor Name Matching
 1. Exact slug match in `index.json` → use directly
@@ -94,7 +107,7 @@ After every command, guide-agent outputs one of these next steps:
 | `/intel opportunities` | `/create blog posts about [top opportunity]` |
 | `/polish content` | `/optimize images in content/` |
 | `/optimize images` | `/review` |
-| `/review` (passed) | `/approve` |
+| `/review` (passed) | `/plan` |
 | `/review` (failed) | `/revise [specific feedback for failed gate]` |
 | `/revise *` | `/review` |
 | `/approve` | `/export` |
