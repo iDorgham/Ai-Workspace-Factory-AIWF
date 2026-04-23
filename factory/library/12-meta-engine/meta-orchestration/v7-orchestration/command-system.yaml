@@ -58,17 +58,17 @@ commands:
 
   plan:
     id: "CMD-002"
-    syntax: "/plan [flags]"
+    syntax: "/plan [--from=path1,path2|dir/] [flags]"
     agent: "Spec Architect + Contract Guardian + Regional Adapter"
-    description: "Generate complete AIWF SDD workspace from a PRD."
-    prerequisite: "plan/00-prd/prd.md must exist"
+    description: "Generate complete AIWF SDD workspace from one or more PRDs (Multi-PRD Synthesis)."
+    prerequisite: "At least one PRD must exist in plan/00-prd/ or specified path"
     steps:
-      - "Read PRD and requirements-trace.json"
-      - "Generate spec.md (human narrative)"
-      - "Generate spec.yaml (machine contract)"
+      - "Read and synthesize multiple PRDs if provided"
+      - "Resolve requirement conflicts and de-duplicate REQ-IDs"
+      - "Merge synthesized requirements into unified spec.md and spec.yaml"
       - "Produce design.md with Mermaid architecture"
       - "Generate db-schema.sql and db-erd.md"
-      - "Build tasks.json with dependency graph"
+      - "Build tasks.json with dependency graph across all synthesized REQs"
       - "Create contracts/ (api-contract.yaml, state-contract.json, test-fixtures/)"
       - "Populate regional/ folder if --region active"
       - "Run all validation gates"
@@ -76,7 +76,7 @@ commands:
     validation_gates:
       - "spec-lint: 100%"
       - "contract-check: 100%"
-      - "trace-matrix: 100%"
+      - "trace-matrix: 100% (traceable to all source PRDs)"
       - "regional-compliance: 100% (if --region active)"
     outputs:
       - "plan/_manifest.yaml"
@@ -90,7 +90,8 @@ commands:
       - "plan/01-<slug>/regional/"
       - "plan/01-<slug>/validation/"
     flags:
-      - "--from=prd.md"
+      - "--from=file1,file2 (comma-separated synthesis)"
+      - "--from=dir/ (synthesize all PRDs in directory)"
       - "--phase=N"
       - "--region=egypt|redsea|mena"
       - "--validate-only"
