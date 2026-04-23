@@ -34,12 +34,14 @@ class ShadowRunner:
     def execute_remote_task(self, task_type, payload):
         """Execute a task pushed from the Cloud-Gateway (e.g., /sync)."""
         self.status = "EXECUTING"
-        print(f"⚡ [SHADOW] Executing {task_type}...")
+        print(f"⚡ [SHADOW] Received industrial signal: {task_type}")
         
-        if task_type == "sync":
-            # Trigger local sync logic
-            time.sleep(2) # Simulation
+        if task_type == "trigger_sync":
+            print("🔄 [SHADOW] Executing Local Equilibrium Sync...")
+            # Simulation: Trigger /sync command
+            time.sleep(1)
             self.last_sync = datetime.now(timezone.utc).isoformat()
+            print("✅ [SHADOW] Sync Complete.")
         
         self.status = "IDLE"
         return True

@@ -9,6 +9,7 @@ import os
 import json
 import requests
 from datetime import datetime
+from factory.core.galaxy_sync import GalaxySync
 
 class CloudGateway:
     def __init__(self, factory_root):
@@ -16,6 +17,7 @@ class CloudGateway:
         self.secrets_path = os.path.join(factory_root, ".ai/secrets/cloud_keys.json")
         self.providers = ["aws", "hetzner", "vercel", "digitalocean"]
         self.active_shards = []
+        self.sync_engine = GalaxySync(factory_root)
 
     def _load_keys(self):
         """Securely load cloud credentials (placeholder for Galaxy-Secret-Manager)."""
@@ -50,11 +52,7 @@ class CloudGateway:
 
     def sync_global_registry(self):
         """Broadcast the local command-system.yaml to all active cloud shards."""
-        print(f"🔄 [GATEWAY] Broadcasting Registry v10.1.0 to {len(self.active_shards)} shards...")
-        for shard in self.active_shards:
-            # Logic to push registry via P2P fabric
-            pass
-        return True
+        return self.sync_engine.broadcast_registry_update(self.active_shards)
 
 if __name__ == "__main__":
     root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
