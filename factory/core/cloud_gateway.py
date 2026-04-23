@@ -10,6 +10,7 @@ import json
 import requests
 from datetime import datetime
 from factory.core.galaxy_sync import GalaxySync
+from factory.core.regional_controller import RegionalController
 
 class CloudGateway:
     def __init__(self, factory_root):
@@ -18,6 +19,7 @@ class CloudGateway:
         self.providers = ["aws", "hetzner", "vercel", "digitalocean"]
         self.active_shards = []
         self.sync_engine = GalaxySync(factory_root)
+        self.regional_engine = RegionalController()
 
     def _load_keys(self):
         """Securely load cloud credentials (placeholder for Galaxy-Secret-Manager)."""

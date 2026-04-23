@@ -1,6 +1,7 @@
 import os
 import json
 from datetime import datetime
+from factory.core.regional_controller import RegionalController
 
 # --- CONFIGURATION ---
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -14,9 +15,21 @@ STRUCTURAL_BUCKETS = ["agents", "templates", "tests", "docs", "resources", "skil
 class HealthScorer:
     def __init__(self):
         self.score = 100.0
-        self.deductions = {"doc": 0.0, "pollution": 0.0, "schema": 0.0}
+        self.deductions = {"doc": 0.0, "pollution": 0.0, "schema": 0.0, "geospatial": 0.0}
         self.findings = []
         self.stats = {"total_nodes": 0, "total_profiles": 0, "violations": 0}
+        self.regional_controller = RegionalController()
+
+    def audit_geospatial_integrity(self, workspace_path, shard_id):
+        """Audit the data residency of a workspace against its shard location."""
+        # Mock logic: Extract residency from metadata.json
+        residency = "MENA-LOCKED" # Default for test
+        if not self.regional_controller.validate_routing(residency, shard_id):
+            self.score -= 10.0
+            self.deductions["geospatial"] += 10.0
+            self.findings.append(f"🚨 [GEOSPATIAL] Residency Violation: {workspace_path} is on non-compliant shard {shard_id}")
+            return False
+        return True
 
     def audit_library(self):
         print("🔍 Auditing Factory Library (Deep Diagnostic)...")
