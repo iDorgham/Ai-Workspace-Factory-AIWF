@@ -1,0 +1,99 @@
+{
+  "workspace_id": "test-v7",
+  "slug": "001_test-v7",
+  "profile": "ultra-antifragile-orchestrator",
+  "profile_version": "7.0.0",
+  "factory_version": "7.0.0",
+  "composed_at": "2026-04-23T13:04:25+02:00",
+  "reasoning_hash": "sha256:compose-test-v7-2026-04-23",
+  "composed_by": "Factory Scaffolder (T2-001)",
+  "approved_by": "Dorgham-Approval",
+  "sovereign_boundary": "restricted",
+
+  "components_provisioned": [
+    {
+      "id": "agents-registry",
+      "source": "12-meta-engine/meta-orchestration/v7-orchestration/agents-registry.md",
+      "target": ".ai/agents/agents-registry.md",
+      "status": "✅ provisioned"
+    },
+    {
+      "id": "command-system",
+      "source": "12-meta-engine/meta-orchestration/v7-orchestration/command-system.yaml",
+      "target": ".ai/commands/v7-command-system.yaml",
+      "status": "✅ provisioned"
+    },
+    {
+      "id": "silent-git-automation",
+      "source": "12-meta-engine/meta-orchestration/v7-orchestration/silent-git-automation.md",
+      "target": ".ai/commands/git-automation.md",
+      "status": "✅ provisioned"
+    },
+    {
+      "id": "deployment-specialist",
+      "source": "12-meta-engine/meta-orchestration/v7-orchestration/deployment-specialist.md",
+      "target": ".ai/commands/deploy.md",
+      "status": "✅ provisioned"
+    },
+    {
+      "id": "omega-gate-v2",
+      "source": "12-meta-engine/meta-orchestration/v7-orchestration/omega-gate-v2.md",
+      "target": ".ai/registry/omega-gate-v2.md",
+      "status": "✅ provisioned"
+    },
+    {
+      "id": "regional-adapter",
+      "source": "12-meta-engine/meta-orchestration/v7-orchestration/regional-adapter.md",
+      "target": ".ai/registry/regional-adapter.md",
+      "status": "✅ provisioned"
+    },
+    {
+      "id": "guide-protocol",
+      "source": "12-meta-engine/meta-orchestration/v7-orchestration/guide-protocol.md",
+      "target": ".ai/registry/guide-protocol.md",
+      "status": "✅ provisioned"
+    },
+    {
+      "id": "sdd-blueprint",
+      "source": "12-meta-engine/meta-orchestration/v7-orchestration/sdd-blueprint/README.md",
+      "target": ".ai/templates/sdd-blueprint/README.md",
+      "status": "✅ provisioned"
+    },
+    {
+      "id": "validation-gates",
+      "source": "12-meta-engine/meta-orchestration/v7-orchestration/validation-gates.json",
+      "target": ".ai/registry/validation-gates.json",
+      "status": "✅ provisioned"
+    },
+    {
+      "id": "spec-schema",
+      "source": "factory/schema/spec-schema.yaml",
+      "target": ".ai/schema/spec-schema.yaml",
+      "status": "✅ provisioned"
+    },
+    {
+      "id": "skill-manifest",
+      "source": ".ai/memory/skill-memory/v7-command-system-manifest.json",
+      "target": ".ai/memory/skill-memory/v7-command-system-manifest.json",
+      "status": "✅ provisioned"
+    }
+  ],
+
+  "validation": {
+    "status": "passed",
+    "gates": {
+      "profile_valid": "✅",
+      "components_count": "11/11",
+      "library_sources_exist": "✅",
+      "sovereign_isolation": "✅",
+      "workspace_directory_structure": "✅"
+    }
+  },
+
+  "governance": {
+    "omega_gate": "v2",
+    "deploy_policy": "explicit_only",
+    "auto_merge": "5_gates_required",
+    "append_only_logging": true
+  }
+}
