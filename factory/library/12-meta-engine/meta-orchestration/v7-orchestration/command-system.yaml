@@ -1,0 +1,258 @@
+# AIWF v7.0.0 — Enhanced Command System
+# Library Component: 12-meta-engine/meta-orchestration/v7-orchestration/command-system.yaml
+# Version: 7.0.0 | Reasoning Hash: sha256:commands-v7-2026-04-23
+# Rollback: .ai/commands/ (v6 command files preserved)
+# ============================================================
+
+schema_version: "7.0.0"
+component_id: "cmd-system-v7"
+description: >
+  Full machine-readable specification of the AIWF v7.0.0 enhanced command system.
+  Consumed by Factory Scaffolder when composing new workspaces, and by
+  Hot-Sync Protocol when updating managed workspaces.
+
+global_flags:
+  - flag: "--dry-run"
+    description: "Simulate the command without writing files or making real changes."
+  - flag: "--simple"
+    description: "Minimal output mode — suppress structural details."
+  - flag: "--validate"
+    description: "Run validation gates only, do not proceed to execution."
+  - flag: "--trace"
+    description: "Verbose tracing of all agent decisions and routing."
+  - flag: "--auto-fix"
+    description: "Allow Healing Bot v2 to apply safe auto-remediations."
+  - flag: "--silent"
+    description: "Suppress all non-essential output. Show only result/URL/status."
+  - flag: "--phase=N"
+    description: "Target a specific implementation phase number."
+  - flag: "--region=egypt|redsea|mena"
+    description: "Activate Regional Adapter for MENA-specific adaptations."
+  - flag: "--auto-merge"
+    description: "Enable conditional auto-merge after all gates pass."
+  - flag: "--verbose"
+    description: "Maximum output detail for debugging."
+
+commands:
+
+  do:
+    id: "CMD-001"
+    syntax: '/do "idea or description" [flags]'
+    agent: "Master Guide → Spec Architect"
+    description: "Transform a raw idea into a structured PRD."
+    steps:
+      - "Parse idea: extract domain, goal, users, constraints"
+      - "Clarify with ≤3 targeted questions if ambiguous"
+      - "Auto-detect regional relevance and suggest adaptations"
+      - "Generate 00-prd/prd.md with REQ-IDs and acceptance criteria"
+      - "Generate 00-prd/requirements-trace.json trace skeleton"
+      - "Suggest /plan as next step"
+    outputs:
+      - "plan/00-prd/prd.md"
+      - "plan/00-prd/requirements-trace.json"
+    flags:
+      - "--region=egypt|redsea|mena"
+      - "--from=existing-prd.md"
+      - "--dry-run"
+      - "--validate"
+
+  plan:
+    id: "CMD-002"
+    syntax: "/plan [flags]"
+    agent: "Spec Architect + Contract Guardian + Regional Adapter"
+    description: "Generate complete AIWF SDD workspace from a PRD."
+    prerequisite: "plan/00-prd/prd.md must exist"
+    steps:
+      - "Read PRD and requirements-trace.json"
+      - "Generate spec.md (human narrative)"
+      - "Generate spec.yaml (machine contract)"
+      - "Produce design.md with Mermaid architecture"
+      - "Generate db-schema.sql and db-erd.md"
+      - "Build tasks.json with dependency graph"
+      - "Create contracts/ (api-contract.yaml, state-contract.json, test-fixtures/)"
+      - "Populate regional/ folder if --region active"
+      - "Run all validation gates"
+      - "Write _manifest.yaml"
+    validation_gates:
+      - "spec-lint: 100%"
+      - "contract-check: 100%"
+      - "trace-matrix: 100%"
+      - "regional-compliance: 100% (if --region active)"
+    outputs:
+      - "plan/_manifest.yaml"
+      - "plan/01-<slug>/spec.md"
+      - "plan/01-<slug>/spec.yaml"
+      - "plan/01-<slug>/design.md"
+      - "plan/01-<slug>/db-schema.sql"
+      - "plan/01-<slug>/db-erd.md"
+      - "plan/01-<slug>/tasks.json"
+      - "plan/01-<slug>/contracts/"
+      - "plan/01-<slug>/regional/"
+      - "plan/01-<slug>/validation/"
+    flags:
+      - "--from=prd.md"
+      - "--phase=N"
+      - "--region=egypt|redsea|mena"
+      - "--validate-only"
+      - "--dry-run"
+      - "--auto-merge"
+
+  dev:
+    id: "CMD-003"
+    syntax: "/dev --phase=N [flags]"
+    agent: "Master Guide + Contract Guardian + Regional Adapter"
+    description: "Implement code, tests, docs, and migrations for a phase."
+    prerequisite: "spec.yaml must be Dorgham-Approved"
+    blocks_if:
+      - "Contract Guardian reports contract failures"
+      - "spec-lint gate not at 100%"
+      - "approved_by is pending_omega"
+    git_automation:
+      branch_pattern: "phase/{N}-{slug} or feature/{slug}"
+      commit_format: "feat({slug}): {description} #sdd-trace:REQ-XXX | hash:{reasoning_hash}"
+      push: true
+      auto_merge:
+        enabled: "conditional"
+        gates:
+          - "all tests pass"
+          - "contract coverage ≥100%"
+          - "Omega Gate approval logged"
+          - "regional compliance verified (if --region active)"
+          - "no pending structural mutations"
+        log: ".ai/logs/github_auto.log"
+    flags:
+      - "--phase=N (required)"
+      - "--auto-fix"
+      - "--silent"
+      - "--auto-merge"
+      - "--region=egypt|redsea|mena"
+
+  test:
+    id: "CMD-004"
+    syntax: "/test --phase=N [flags]"
+    agent: "Contract Guardian + Regional Adapter (if --region)"
+    description: "Execute unit, integration, contract, stress, and regional compliance tests."
+    outputs:
+      - "plan/01-<slug>/validation/contract-coverage.json"
+    auto_merge_gate: "≥100% contract coverage required"
+    flags:
+      - "--phase=N"
+      - "--stress (chaos injection)"
+      - "--region=egypt|redsea|mena"
+
+  fix:
+    id: "CMD-005"
+    syntax: "/fix [target] [flags]"
+    agent: "Healing Bot v2 + Spec Architect"
+    description: "Diagnose failures, map to spec.yaml ACs, propose patches."
+    steps:
+      - "Identify failing component"
+      - "Map failure to spec.yaml acceptance criteria"
+      - "Propose targeted patch or --spec-sync realignment"
+      - "Invoke Healing Bot v2 for structural remediation"
+      - "Log to .ai/logs/healing-bot.md"
+    subcommands:
+      - "/fix last — fix the most recent failure"
+      - "/fix contracts — re-validate all contracts"
+      - "/fix --auto-fix — let Healing Bot v2 apply safe patches"
+      - "/fix --spec-sync — realign implementation with spec"
+    flags:
+      - "--auto-fix"
+      - "--spec-sync"
+
+  db:
+    id: "CMD-006"
+    syntax: "/db [flags]"
+    agent: "Spec Architect + Regional Adapter (if --region)"
+    description: "Design schema, generate migrations, seeds, ERD."
+    outputs:
+      - "plan/01-<slug>/db-schema.sql"
+      - "plan/01-<slug>/db-erd.md"
+    regional_note: "Applies Law 151/2020 data residency rules when --region=egypt"
+    flags:
+      - "--phase=N"
+      - "--dry-run"
+      - "--region=egypt|redsea|mena"
+
+  git:
+    id: "CMD-007"
+    syntax: "/git [subcommand] [flags]"
+    agent: "Master Guide (silent automation)"
+    description: "Full control over Git operations and automation toggles."
+    subcommands:
+      - "/git status"
+      - "/git commit -m 'message'"
+      - "/git push"
+      - "/git auto on|off — toggle silent automation"
+      - "/git merge-auto on|off — toggle conditional auto-merge"
+    log: ".ai/logs/github_auto.log"
+
+  deploy:
+    id: "CMD-008"
+    syntax: "/deploy [flags]"
+    agent: "Deployment Specialist"
+    description: "Deploy to Vercel. EXPLICIT ONLY — never auto-triggered."
+    critical_constraint: "NEVER triggered by git push, merge, or any automation. ONLY runs when user explicitly invokes /deploy."
+    steps:
+      - "Check Vercel CLI (vercel --version)"
+      - "Link project if needed (vercel link --yes)"
+      - "Pull env vars (vercel pull --environment=preview|production)"
+      - "Build and deploy (vercel deploy or vercel deploy --prod)"
+      - "Output deployment URL and build summary"
+      - "Log to .ai/logs/deployments.log with Reasoning Hash"
+    subcommands:
+      - "/deploy --prod --silent"
+      - "/deploy --preview"
+      - "/deploy status"
+      - "/deploy --dry-run"
+    flags:
+      - "--prod"
+      - "--preview"
+      - "--env=KEY=VALUE"
+      - "--dry-run"
+      - "--silent"
+      - "--confirm"
+      - "--region=egypt|redsea|mena"
+
+  brainstorm:
+    id: "CMD-009"
+    syntax: "/brainstorm [flags]"
+    agent: "Master Guide + Recursive Engine"
+    description: "Proactive ideation, spec enhancement, regional adaptation."
+    auto_trigger:
+      probability: "15-20%"
+      condition: "Regional context or compliance gaps detected during active dev"
+    output_format:
+      - "Clear title/objective"
+      - "Minimal spec.yaml or tasks.json snippet (copyable)"
+      - "Regional fit explanation"
+      - "Omega Gate considerations"
+      - "Next steps with exact commands"
+    copyable_blocks: true
+    flags:
+      - "--skill=name"
+      - "--spec=phase-slug"
+      - "--region=egypt|redsea|mena"
+      - "--idea"
+      - "--proactive"
+
+  guide:
+    id: "CMD-010"
+    syntax: "Automatic — appended to EVERY response"
+    agent: "Master Guide"
+    description: "Persistent instructor mode. MANDATORY on every response."
+    format: |
+      Guide:
+      ✅ Done: [Brief educational recap]
+      📚 Learn: [Plain-language teaching of key concept]
+      ▶️ Next: [1-3 prioritized next actions]
+      💡 Suggest: [Optional proactive brainstorm, ~15-20% trigger]
+
+---
+# Metadata
+component_id: "cmd-system-v7"
+version: "7.0.0"
+library_path: "12-meta-engine/meta-orchestration/v7-orchestration/command-system.yaml"
+created: "2026-04-23T12:56:22+02:00"
+reasoning_hash: "sha256:commands-v7-2026-04-23"
+rollback_pointer: ".ai/commands/ (v6 command files)"

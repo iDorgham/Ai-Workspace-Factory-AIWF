@@ -1,0 +1,99 @@
+{
+  "manifest_id": "v7-command-system-manifest",
+  "version": "7.0.0",
+  "created": "2026-04-23T12:56:22+02:00",
+  "type": "skill_manifest",
+  "source": "Recursive Engine — converted from v7.0.0 system specification",
+  "reasoning_hash": "sha256:skill-v7-2026-04-23",
+  "description": "Skill manifest for the AIWF v7.0.0 ultra-antifragile command system. Captured by Recursive Engine for persistent skill memory. Enables any session to reconstruct full orchestration capability from this manifest alone.",
+
+  "commands_mastered": [
+    {
+      "command": "/do",
+      "mastery_level": "production",
+      "key_pattern": "idea → clarify(≤3 questions) → REQ-IDs → prd.md + trace.json",
+      "common_flags": ["--region", "--from", "--dry-run"],
+      "gotchas": ["Never ask more than 3 clarifying questions", "Always suggest /plan as next step"]
+    },
+    {
+      "command": "/plan",
+      "mastery_level": "production",
+      "key_pattern": "prd.md → spec.yaml + design.md + contracts/ + validation/ → all 4 gates",
+      "common_flags": ["--phase", "--region", "--validate-only"],
+      "gotchas": ["spec.yaml approved_by defaults to pending_omega", "Gates must all pass before /dev"]
+    },
+    {
+      "command": "/dev",
+      "mastery_level": "production",
+      "key_pattern": "spec.yaml(Dorgham-Approved) → code → auto-branch → smart-commit → conditional-merge",
+      "common_flags": ["--phase", "--auto-fix", "--auto-merge", "--region"],
+      "gotchas": ["Blocks if approved_by is pending_omega", "Auto-merge requires all 5 gates"]
+    },
+    {
+      "command": "/deploy",
+      "mastery_level": "production",
+      "key_pattern": "EXPLICIT ONLY → vercel CLI → link → env pull → deploy → log",
+      "common_flags": ["--prod", "--preview", "--dry-run", "--region"],
+      "gotchas": [
+        "NEVER auto-triggered by git push or merge",
+        "Production requires --confirm flag",
+        "Always logs to .ai/logs/deployments.log"
+      ]
+    },
+    {
+      "command": "/fix",
+      "mastery_level": "production",
+      "key_pattern": "failure → map to AC → Healing Bot v2 patch → log to healing-bot.md",
+      "common_flags": ["--auto-fix", "--spec-sync"],
+      "gotchas": ["Use /fix last for most recent failure", "--spec-sync realigns implementation to spec"]
+    },
+    {
+      "command": "/brainstorm",
+      "mastery_level": "production",
+      "key_pattern": "proactive(15-20%) or explicit → structured proposal + copyable spec block",
+      "gotchas": ["Never auto-apply structural changes", "Always end with Guide section"]
+    }
+  ],
+
+  "agent_patterns": {
+    "t0_always_active": ["master_guide", "healing_bot_v2", "swarm_router_v3", "recursive_engine", "chaos_validator"],
+    "t1_spin_up_triggers": {
+      "spec_architect": ["/plan", "spec validation"],
+      "contract_guardian": ["/dev", "/test"],
+      "regional_adapter": ["--region flag"],
+      "deployment_specialist": ["/deploy only"],
+      "integrity_auditor": ["/heal check", "session start background"]
+    }
+  },
+
+  "governance_patterns": {
+    "omega_gate_required_for": ["structural mutations", "library promotions", "auto-merge", "spec approval"],
+    "omega_gate_not_required_for": ["reads", "/test", "/brainstorm", "preview deploy", "log writes"],
+    "auto_merge_gates": 5,
+    "deploy_trigger": "explicit_user_command_only"
+  },
+
+  "regional_patterns": {
+    "egypt": ["Law 151/2020", "Fawry", "Vodafone Cash", "Meeza", "EGP", "RTL", "Africa/Cairo"],
+    "redsea": ["inherits egypt", "tourism booking", "dive centers", "liveaboards", "USD accepted"],
+    "mena": ["multi-currency", "multi-payment", "PDPL", "DIFC", "SAR/AED/KWD/BHD/OMR"]
+  },
+
+  "friction_lessons": [
+    {
+      "lesson": "Deploy separation is critical",
+      "detail": "Git automation and Vercel deployment must never be coupled. /deploy is always explicit.",
+      "anti_pattern": "Auto-triggering /deploy on git push or auto-merge"
+    },
+    {
+      "lesson": "spec.yaml is the single source of truth",
+      "detail": "All implementation decisions trace back to spec.yaml. If not in spec, it should not be built.",
+      "anti_pattern": "Building features not represented by REQ-IDs"
+    },
+    {
+      "lesson": "Library-First before ad-hoc",
+      "detail": "Always check factory/library/ before generating new components. Most patterns already exist.",
+      "anti_pattern": "Generating fresh components without checking the library"
+    }
+  ]
+}

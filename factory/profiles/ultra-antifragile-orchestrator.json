@@ -1,0 +1,96 @@
+{
+  "profile_id": "ultra-antifragile-orchestrator",
+  "version": "7.0.0",
+  "name": "Ultra-Antifragile Sovereign Orchestrator",
+  "description": "Full AIWF v7.0.0 orchestration layer. Apply this profile to any workspace to inherit the complete ultra-antifragile command system, agent swarm, silent Git automation, Omega Gate v2 governance, regional awareness, and Guide Protocol.",
+  "created": "2026-04-23T12:56:22+02:00",
+  "reasoning_hash": "sha256:profile-v7-2026-04-23",
+
+  "library_components": [
+    {
+      "id": "agents-registry",
+      "path": "12-meta-engine/meta-orchestration/v7-orchestration/agents-registry.md",
+      "target": ".ai/agents.md",
+      "description": "T0 + T1 + T2 agent definitions"
+    },
+    {
+      "id": "command-system",
+      "path": "12-meta-engine/meta-orchestration/v7-orchestration/command-system.yaml",
+      "target": ".ai/commands/v7-command-system.yaml",
+      "description": "Full 10-command enhanced system spec"
+    },
+    {
+      "id": "silent-git-automation",
+      "path": "12-meta-engine/meta-orchestration/v7-orchestration/silent-git-automation.md",
+      "target": ".ai/commands/git-automation.md",
+      "description": "Branch strategy, commit format, auto-merge gates"
+    },
+    {
+      "id": "deployment-specialist",
+      "path": "12-meta-engine/meta-orchestration/v7-orchestration/deployment-specialist.md",
+      "target": ".ai/commands/deploy.md",
+      "description": "Explicit Vercel deployment spec"
+    },
+    {
+      "id": "omega-gate-v2",
+      "path": "12-meta-engine/meta-orchestration/v7-orchestration/omega-gate-v2.md",
+      "target": ".ai/access-rules.md",
+      "description": "Governance rules and approval hierarchy"
+    },
+    {
+      "id": "regional-adapter",
+      "path": "12-meta-engine/meta-orchestration/v7-orchestration/regional-adapter.md",
+      "target": ".ai/regional-adapter.md",
+      "description": "Egypt / Red Sea / MENA adaptation rules"
+    },
+    {
+      "id": "guide-protocol",
+      "path": "12-meta-engine/meta-orchestration/v7-orchestration/guide-protocol.md",
+      "target": ".ai/guide-protocol.md",
+      "description": "Instructor mode format rules"
+    },
+    {
+      "id": "sdd-blueprint",
+      "path": "12-meta-engine/meta-orchestration/v7-orchestration/sdd-blueprint/",
+      "target": ".ai/templates/sdd-blueprint/",
+      "description": "Plan folder structure templates"
+    },
+    {
+      "id": "validation-gates",
+      "path": "12-meta-engine/meta-orchestration/v7-orchestration/validation-gates.json",
+      "target": ".ai/validation-gates.json",
+      "description": "All gate definitions for spec-lint, contracts, auto-merge"
+    },
+    {
+      "id": "spec-schema",
+      "path": "factory/schema/spec-schema.yaml",
+      "target": ".ai/schema/spec-schema.yaml",
+      "description": "spec.yaml contract enforcement schema"
+    }
+  ],
+
+  "governance": {
+    "omega_gate_version": "v2",
+    "requires_dorgham_approval": true,
+    "deploy_policy": "explicit_only",
+    "auto_merge": "conditional_5_gates"
+  },
+
+  "features": {
+    "silent_git_automation": true,
+    "vercel_deploy_explicit_only": true,
+    "regional_awareness": true,
+    "guide_protocol_mandatory": true,
+    "healing_bot_version": "v2",
+    "sdd_blueprint_enforced": true,
+    "spec_yaml_contract": true
+  },
+
+  "compose_instructions": "Apply via /compose [workspace-slug] --profile=ultra-antifragile-orchestrator. All 10 library components will be provisioned into the workspace's .ai/ directory.",
+
+  "hot_sync": {
+    "command": "/update-agents --safe --profile=ultra-antifragile-orchestrator",
+    "safe_update": true,
+    "preserves_sovereign_isolation": true
+  }
+}

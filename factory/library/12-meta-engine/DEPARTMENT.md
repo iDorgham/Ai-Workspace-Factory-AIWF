@@ -17,5 +17,15 @@
 - **skills:12-meta-engine/scripts/scripts-mastery**: [scripts-mastery](./scripts/skills/scripts-mastery/SKILL.md)
 - **skills:12-meta-engine/tools-ai/tools-ai-mastery**: [tools-ai-mastery](./tools-ai/skills/tools-ai-mastery/SKILL.md)
 
+- **components:12-meta-engine/meta-orchestration/v7-orchestration/agents-registry**: [agents-registry](./meta-orchestration/v7-orchestration/agents-registry.md)
+- **components:12-meta-engine/meta-orchestration/v7-orchestration/command-system**: [command-system](./meta-orchestration/v7-orchestration/command-system.yaml)
+- **components:12-meta-engine/meta-orchestration/v7-orchestration/silent-git-automation**: [silent-git-automation](./meta-orchestration/v7-orchestration/silent-git-automation.md)
+- **components:12-meta-engine/meta-orchestration/v7-orchestration/deployment-specialist**: [deployment-specialist](./meta-orchestration/v7-orchestration/deployment-specialist.md)
+- **components:12-meta-engine/meta-orchestration/v7-orchestration/omega-gate-v2**: [omega-gate-v2](./meta-orchestration/v7-orchestration/omega-gate-v2.md)
+- **components:12-meta-engine/meta-orchestration/v7-orchestration/regional-adapter**: [regional-adapter](./meta-orchestration/v7-orchestration/regional-adapter.md)
+- **components:12-meta-engine/meta-orchestration/v7-orchestration/guide-protocol**: [guide-protocol](./meta-orchestration/v7-orchestration/guide-protocol.md)
+- **components:12-meta-engine/meta-orchestration/v7-orchestration/sdd-blueprint**: [sdd-blueprint](./meta-orchestration/v7-orchestration/sdd-blueprint/README.md)
+- **components:12-meta-engine/meta-orchestration/v7-orchestration/validation-gates**: [validation-gates](./meta-orchestration/v7-orchestration/validation-gates.json)
+
 ---
-*V11 Sync*
+*V11 Sync → V7.0.0 Orchestration Layer Added: 2026-04-23T12:56:22+02:00*
