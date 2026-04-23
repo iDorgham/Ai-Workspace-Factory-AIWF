@@ -714,3 +714,71 @@ Sync complete. Aggregated 1 workspaces.
 [2026-04-22 11:28:25] 🐕 WATCHDOG: Error: sync-aggregated-state.py not found.
 [2026-04-22 11:28:25] 🐕 WATCHDOG: Error: autonomous_maintenance_bot.py not found.
 [2026-04-22 11:28:25] 🐕 WATCHDOG: Broadcasting state to Dashboard...
+[2026-04-22 11:28:25] 🐕 WATCHDOG: Could not connect to Dashboard API: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/update-state (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8000): Failed to establish a new connection: [Errno 61] Connection refused"))
+[2026-04-22 11:28:25] 🐕 WATCHDOG: --- Cycle Complete. Hibernating... ---
+[2026-04-22 11:58:25] 🐕 WATCHDOG: --- Starting Sovereign Sync Cycle ---
+[2026-04-22 11:58:25] 🐕 WATCHDOG: Error: sync-aggregated-state.py not found.
+[2026-04-22 11:58:25] 🐕 WATCHDOG: Error: autonomous_maintenance_bot.py not found.
+[2026-04-22 11:58:25] 🐕 WATCHDOG: Broadcasting state to Dashboard...
+[2026-04-22 11:58:25] 🐕 WATCHDOG: Could not connect to Dashboard API: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/update-state (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8000): Failed to establish a new connection: [Errno 61] Connection refused"))
+[2026-04-22 11:58:25] 🐕 WATCHDOG: --- Cycle Complete. Hibernating... ---
+[2026-04-22 12:28:25] 🐕 WATCHDOG: --- Starting Sovereign Sync Cycle ---
+[2026-04-22 12:28:25] 🐕 WATCHDOG: Error: sync-aggregated-state.py not found.
+[2026-04-22 12:28:25] 🐕 WATCHDOG: Error: autonomous_maintenance_bot.py not found.
+[2026-04-22 12:28:25] 🐕 WATCHDOG: Broadcasting state to Dashboard...
+[2026-04-22 12:28:25] 🐕 WATCHDOG: Could not connect to Dashboard API: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/update-state (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8000): Failed to establish a new connection: [Errno 61] Connection refused"))
+[2026-04-22 12:28:25] 🐕 WATCHDOG: --- Cycle Complete. Hibernating... ---
+[2026-04-22 12:58:25] 🐕 WATCHDOG: --- Starting Sovereign Sync Cycle ---
+[2026-04-22 12:58:25] 🐕 WATCHDOG: Error: sync-aggregated-state.py not found.
+[2026-04-22 12:58:25] 🐕 WATCHDOG: Error: autonomous_maintenance_bot.py not found.
+[2026-04-22 12:58:25] 🐕 WATCHDOG: Broadcasting state to Dashboard...
+[2026-04-22 12:58:25] 🐕 WATCHDOG: Could not connect to Dashboard API: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/update-state (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8000): Failed to establish a new connection: [Errno 61] Connection refused"))
+[2026-04-22 12:58:25] 🐕 WATCHDOG: --- Cycle Complete. Hibernating... ---
+[2026-04-22 13:28:25] 🐕 WATCHDOG: --- Starting Sovereign Sync Cycle ---
+[2026-04-22 13:28:25] 🐕 WATCHDOG: Error: sync-aggregated-state.py not found.
+[2026-04-22 13:28:25] 🐕 WATCHDOG: Error: autonomous_maintenance_bot.py not found.
+[2026-04-22 13:28:25] 🐕 WATCHDOG: Broadcasting state to Dashboard...
+[2026-04-22 13:28:25] 🐕 WATCHDOG: Could not connect to Dashboard API: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/update-state (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8000): Failed to establish a new connection: [Errno 61] Connection refused"))
+[2026-04-22 13:28:25] 🐕 WATCHDOG: --- Cycle Complete. Hibernating... ---
+[2026-04-22 13:58:25] 🐕 WATCHDOG: --- Starting Sovereign Sync Cycle ---
+[2026-04-22 13:58:25] 🐕 WATCHDOG: Error: sync-aggregated-state.py not found.
+[2026-04-22 13:58:25] 🐕 WATCHDOG: Error: autonomous_maintenance_bot.py not found.
+[2026-04-22 13:58:25] 🐕 WATCHDOG: Broadcasting state to Dashboard...
+[2026-04-22 13:58:25] 🐕 WATCHDOG: Could not connect to Dashboard API: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/update-state (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8000): Failed to establish a new connection: [Errno 61] Connection refused"))
+[2026-04-22 13:58:25] 🐕 WATCHDOG: --- Cycle Complete. Hibernating... ---
+[2026-04-22 14:28:26] 🐕 WATCHDOG: --- Starting Sovereign Sync Cycle ---
+[2026-04-22 14:28:26] 🐕 WATCHDOG: Error: sync-aggregated-state.py not found.
+[2026-04-22 14:28:26] 🐕 WATCHDOG: Error: autonomous_maintenance_bot.py not found.
+[2026-04-22 14:28:26] 🐕 WATCHDOG: Broadcasting state to Dashboard...
+[2026-04-22 14:28:26] 🐕 WATCHDOG: Could not connect to Dashboard API: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/update-state (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8000): Failed to establish a new connection: [Errno 61] Connection refused"))
+[2026-04-22 14:28:26] 🐕 WATCHDOG: --- Cycle Complete. Hibernating... ---
+[2026-04-22 14:58:26] 🐕 WATCHDOG: --- Starting Sovereign Sync Cycle ---
+[2026-04-22 14:58:26] 🐕 WATCHDOG: Error: sync-aggregated-state.py not found.
+[2026-04-22 14:58:26] 🐕 WATCHDOG: Error: autonomous_maintenance_bot.py not found.
+[2026-04-22 14:58:26] 🐕 WATCHDOG: Broadcasting state to Dashboard...
+[2026-04-22 14:58:26] 🐕 WATCHDOG: Could not connect to Dashboard API: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/update-state (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8000): Failed to establish a new connection: [Errno 61] Connection refused"))
+[2026-04-22 14:58:26] 🐕 WATCHDOG: --- Cycle Complete. Hibernating... ---
+[2026-04-22 15:28:25] 🐕 WATCHDOG: --- Starting Sovereign Sync Cycle ---
+[2026-04-22 15:28:25] 🐕 WATCHDOG: Error: sync-aggregated-state.py not found.
+[2026-04-22 15:28:25] 🐕 WATCHDOG: Error: autonomous_maintenance_bot.py not found.
+[2026-04-22 15:28:25] 🐕 WATCHDOG: Broadcasting state to Dashboard...
+[2026-04-22 15:28:25] 🐕 WATCHDOG: Could not connect to Dashboard API: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/update-state (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8000): Failed to establish a new connection: [Errno 61] Connection refused"))
+[2026-04-22 15:28:25] 🐕 WATCHDOG: --- Cycle Complete. Hibernating... ---
+[2026-04-22 15:58:25] 🐕 WATCHDOG: --- Starting Sovereign Sync Cycle ---
+[2026-04-22 15:58:25] 🐕 WATCHDOG: Error: sync-aggregated-state.py not found.
+[2026-04-22 15:58:25] 🐕 WATCHDOG: Error: autonomous_maintenance_bot.py not found.
+[2026-04-22 15:58:25] 🐕 WATCHDOG: Broadcasting state to Dashboard...
+[2026-04-22 15:58:25] 🐕 WATCHDOG: Could not connect to Dashboard API: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/update-state (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8000): Failed to establish a new connection: [Errno 61] Connection refused"))
+[2026-04-22 15:58:25] 🐕 WATCHDOG: --- Cycle Complete. Hibernating... ---
+[2026-04-22 16:28:25] 🐕 WATCHDOG: --- Starting Sovereign Sync Cycle ---
+[2026-04-22 16:28:25] 🐕 WATCHDOG: Error: sync-aggregated-state.py not found.
+[2026-04-22 16:28:25] 🐕 WATCHDOG: Error: autonomous_maintenance_bot.py not found.
+[2026-04-22 16:28:25] 🐕 WATCHDOG: Broadcasting state to Dashboard...
+[2026-04-22 16:28:25] 🐕 WATCHDOG: Could not connect to Dashboard API: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/update-state (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8000): Failed to establish a new connection: [Errno 61] Connection refused"))
+[2026-04-22 16:28:25] 🐕 WATCHDOG: --- Cycle Complete. Hibernating... ---
+[2026-04-22 16:58:25] 🐕 WATCHDOG: --- Starting Sovereign Sync Cycle ---
+[2026-04-22 16:58:25] 🐕 WATCHDOG: Error: sync-aggregated-state.py not found.
+[2026-04-22 16:58:25] 🐕 WATCHDOG: Error: autonomous_maintenance_bot.py not found.
+[2026-04-22 16:58:25] 🐕 WATCHDOG: Broadcasting state to Dashboard...
+[2026-04-22 16:58:25] 🐕 WATCHDOG: Could not connect to Dashboard API: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /api/update-state (Caused by NewConnectionError("HTTPConnection(host='localhost', port=8000): Failed to establish a new connection: [Errno 61] Connection refused"))
+[2026-04-22 16:58:25] 🐕 WATCHDOG: --- Cycle Complete. Hibernating... ---

@@ -1,0 +1,19 @@
+# AIWF PHASE 3 CONTRACT: HEADLESS SCALING
+version: "8.0.0"
+phase: 3
+component: "headless-core"
+reasoning_hash: "sha256:phase3-spec-2026-04-23"
+
+requirements:
+  - id: "REQ-SAAS-001"
+    priority: "P0"
+    ac: ["scaffold-speed < 60s", "full-stack-integration"]
+  - id: "REQ-SAAS-002"
+    priority: "P0"
+    ac: ["cli-parity", "headless-logging"]
+
+validation_gates:
+  - name: "scaffold-integrity"
+    command: "pytest tests/scaffold_test.py"
+  - name: "runner-parity"
+    command: "python3 runner.py test --dry-run"

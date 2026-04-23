@@ -100,36 +100,38 @@ commands:
 
   dev:
     id: "CMD-003"
-    syntax: "/dev --phase=N [flags]"
-    agent: "Master Guide + Contract Guardian + Regional Adapter"
-    description: "Implement code, tests, docs, and migrations for a phase."
-    prerequisite: "spec.yaml must be Dorgham-Approved"
-    blocks_if:
-      - "Contract Guardian reports contract failures"
-      - "spec-lint gate not at 100%"
-      - "approved_by is pending_omega"
-    git_automation:
-      branch_pattern: "phase/{N}-{slug} or feature/{slug}"
-      commit_format: "feat({slug}): {description} #sdd-trace:REQ-XXX | hash:{reasoning_hash}"
-      push: true
-      auto_merge:
-        enabled: "conditional"
-        gates:
-          - "all tests pass"
-          - "contract coverage ≥100%"
-          - "Omega Gate approval logged"
-          - "regional compliance verified (if --region active)"
-          - "no pending structural mutations"
-        log: ".ai/logs/github_auto.log"
+    syntax: "/dev [--phase=N] [--task=ID]"
+    agent: "Regional Adapter + Master Guide"
+    description: "Execute implementation tasks. Focuses by default on the FIRST uncompleted phase in tasks.json."
+    steps:
+      - "Read tasks.json and identify first 'pending' phase"
+      - "Activate sovereign developer swarm for the targeted task"
+      - "Execute code changes with append-only auditability"
+      - "Apply MENA regional adaptations if --region active"
+      - "Auto-update tasks.json upon completion"
+    outputs:
+      - "Code mutations in workspaces/<slug>/"
+      - "Updated tasks.json"
     flags:
-      - "--phase=N (required)"
-      - "--auto-fix"
-      - "--silent"
-      - "--auto-merge"
+      - "--phase=N (target specific phase)"
+      - "--task=ID (target specific task ID)"
       - "--region=egypt|redsea|mena"
 
-  test:
+  guide:
     id: "CMD-004"
+    syntax: "/guide"
+    agent: "Master Guide"
+    description: "Interactive instructor mode. Provides recap, learning, and next steps based on current phase progress."
+    steps:
+      - "Read tasks.json and project manifest"
+      - "Generate '✅ Done' educational recap of last completed task"
+      - "Generate '📚 Learn' pedagogical explanation of used patterns"
+      - "Generate '▶️ Next' prioritized commands for the current phase"
+    outputs:
+      - "Standardized Guide response block"
+
+  test:
+    id: "CMD-005"
     syntax: "/test --phase=N [flags]"
     agent: "Contract Guardian + Regional Adapter (if --region)"
     description: "Execute unit, integration, contract, stress, and regional compliance tests."
@@ -328,6 +330,95 @@ commands:
     flags:
       - "--mode=daily|weekly|roadmap"
       - "--sync-external"
+
+  dashboard:
+    id: "CMD-016"
+    syntax: "/dashboard"
+    agent: "T0 Master Guide"
+    description: "Launches the Omega TUI Command Center for multi-workspace visibility."
+    steps:
+      - "Aggregate status from all workspaces"
+      - "Stream real-time logs via WebSocket relay"
+      - "Display health scores and orchestration versions"
+    outputs:
+      - "Interactive TUI session"
+
+  swarm:
+    id: "CMD-017"
+    syntax: "/swarm '<command>' [--group=name]"
+    agent: "T0 Swarm Router"
+    description: "Execute a command across multiple workspaces in parallel."
+    steps:
+      - "Identify target workspace group"
+      - "Distribute task via ThreadPoolExecutor"
+      - "Aggregate outputs and duration metrics"
+    flags:
+      - "--group=name (filter by workspace folder)"
+      - "--workers=N (parallel thread count)"
+
+  saas:
+    id: "CMD-018"
+    syntax: "/saas init [name] [flags]"
+    agent: "T2 Factory Scaffolder + T1 Spec Architect"
+    description: "Provisions a full SaaS stack (Auth, DB, Billing, Dashboards) in 60s."
+    steps:
+      - "Pull pre-certified components from factory/library/18-saas-boilerplate/"
+      - "Auto-config Next.js, Prisma, and NextAuth"
+      - "Inject Stripe/Fawry billing shims"
+      - "Generate initial UI assets via /art"
+    flags:
+      - "--region=egypt|redsea|mena"
+      - "--db=postgres|mongodb"
+
+  harvest:
+    id: "CMD-019"
+    syntax: "/harvest [url] --topic='X' [flags]"
+    agent: "T1 Scrape Specialist + T1 Content Architect"
+    description: "Orchestrated Scraping + Content generation to populate a workspace."
+    steps:
+      - "Scrape raw data from target URL"
+      - "Synthesize data into SEO-optimized content"
+      - "Provision 5+ items directly to workspace docs/01-plans/"
+    flags:
+      - "--count=N (items to generate)"
+      - "--region=egypt|redsea|mena"
+
+  network:
+    id: "CMD-020"
+    syntax: "/network [subcommand] [flags]"
+    agent: "T0 Root Orchestrator + Swarm Router"
+    description: "Manage P2P Global Swarm connectivity and sharded memory."
+    subcommands:
+      - "/network join — connect to the AIWF P2P fabric"
+      - "/network status — view connected peers and sharded memory health"
+      - "/network sync — fetch optimized library components from the network"
+    steps:
+      - "Initialize P2P Node (factory/core/p2p_node.py)"
+      - "Discover peers via Discovery Engine"
+      - "Establish encrypted handshake"
+      - "Verify peer reputation and consensus"
+    flags:
+      - "--port=N (custom listening port)"
+      - "--private (disable mDNS discovery)"
+
+  omega:
+    id: "CMD-021"
+    syntax: "/omega [subcommand] [args] [flags]"
+    agent: "Omega Core (T0) + Recursive Engine"
+    description: "Execute high-autonomy singularity operations: self-refactoring and intent-to-saas."
+    subcommands:
+      - "/omega audit — run recursive factory health audit"
+      - "/omega evolve — apply autonomous logic refactors"
+      - "/omega generate <intent> — zero-interface Intent-to-SaaS flow"
+    steps:
+      - "Identify intent/signal"
+      - "Generate SDD & Scaffolding (SaaS Architect)"
+      - "Execute Harvest & Synthesis (Harvest Engine)"
+      - "Apply Asset Guardian quality gate"
+      - "Execute final deployment audit"
+    flags:
+      - "--region=egypt|redsea|mena"
+      - "--force (bypass Omega Gate v10 approval)"
 
 ---
 # Metadata

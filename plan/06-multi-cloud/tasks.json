@@ -1,0 +1,27 @@
+{
+  "phase": 6,
+  "slug": "multi-cloud",
+  "tasks": [
+    {
+      "id": "T-6-01",
+      "name": "Cloud Gateway Core",
+      "description": "Implement factory/core/cloud_gateway.py for cross-provider relay.",
+      "status": "pending",
+      "priority": "P0"
+    },
+    {
+      "id": "T-6-02",
+      "name": "Shadow Runner Logic",
+      "description": "Implement auto-failover to cloud nodes in HeadlessRunner.",
+      "status": "pending",
+      "priority": "P1"
+    },
+    {
+      "id": "T-6-03",
+      "name": "Law 151 Compliance Shard",
+      "description": "Implement geographic sharding for sensitive database fields.",
+      "status": "pending",
+      "priority": "P1"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "phase": 10,
+  "slug": "galaxy",
+  "tasks": [
+    {
+      "id": "T-10-01",
+      "name": "DAO Protocol v1",
+      "description": "Implement autonomous treasury and governance shims.",
+      "status": "pending",
+      "priority": "P0"
+    },
+    {
+      "id": "T-10-02",
+      "name": "Sub-Factory Architect",
+      "description": "Implement recursive factory generation logic in Meta-Engine.",
+      "status": "pending",
+      "priority": "P1"
+    }
+  ]
+}

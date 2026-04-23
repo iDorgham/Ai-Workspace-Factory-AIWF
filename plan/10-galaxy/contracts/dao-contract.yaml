@@ -1,0 +1,20 @@
+# 🛰️ DAO CONTRACT: The Sovereign Galaxy
+# Phase: 10 | Status: DRAFT
+
+governance:
+  type: "Decentralized Autonomous Meta-Engine"
+  voter_id: "Dorgham-Master-Key"
+  consensus_threshold: "Sovereign Override"
+
+treasury:
+  assets: ["EGP", "USD", "Compute-Units"]
+  allowance_per_month: 10000.0
+  auto_pay: ["AWS_BILL", "STRIPE_FEES", "HETZNER_INFRA"]
+
+evolution_rules:
+  - id: "EVO-001"
+    name: "Recursive Self-Architecting"
+    threshold: "Omega-Core Approval"
+  - id: "EVO-002"
+    name: "Sub-Factory Spawning"
+    threshold: "Consensus of 3+ Peers"

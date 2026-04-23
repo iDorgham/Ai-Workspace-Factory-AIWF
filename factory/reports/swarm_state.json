@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-04-23T14:59:09.988601",
+  "active_command": "sleep 30",
+  "process_count": 2,
+  "pids": [
+    25721,
+    25720
+  ]
+}
