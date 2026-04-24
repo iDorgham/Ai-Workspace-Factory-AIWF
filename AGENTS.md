@@ -59,13 +59,13 @@ The AI Workspace Factory operates via a specialized swarm of agents, each govern
 
 All SDD Planning phases must adhere to the following mandatory industrial standards:
 
-1. **Phase Specification Minimum**: Each planning phase MUST contain at least **5 unique specifications** (`spec.md` + `spec.yaml`).
-2. **Library Enhancement cycle**: Each phase must include a dedicated task for **refining and enhancing the core library** (`factory/library/`).
-3. **Skill Codification**: New skills discovered during implementation must be added to the **skill library** (`.ai/skills/`).
-4. **Autonomous Automation**: Every phase must introduce at least one **automation script** or internal tool refinement.
-5. **Health & Performance Audit**: Mandatory performance optimization and **library health improvement** (targeting OMEGA-tier 100/100).
-6. **Command Ergonomics**: Existing CLI commands and subcommands (e.g., `/plan status`, `/plan audit`) must be **refined for efficiency** and logic flow.
-7. **Profile Expansion**: Each phase must result in the creation of at least **2 new workspace profiles** (`factory/profiles/`).
+1. **High-Density Specification**: Each planning phase MUST contain at least **5 unique specifications** (`spec.md` + `spec.json`).
+2. **Agent Proliferation**: Each version must introduce or refine at least one **specialized sub-agent** (T1) dedicated to the phase's core domain.
+3. **Skill Synthesis**: At least **2 new skills** discovered during implementation must be codified into the global skill library (`.ai/skills/`).
+4. **OMEGA Health Audit**: Every phase must include a mandatory **Health & Performance Optimization** task targeting a perfect 100/100 OMEGA-tier score.
+5. **Library-First Evolution**: Each phase must include a dedicated task for **refining and enhancing the core library** (`factory/library/`).
+6. **Autonomous Automation**: Every phase must introduce at least one **automation script** or internal tool refinement.
+7. **Command Ergonomics**: Existing CLI commands and subcommands must be **refined for efficiency** and cinematic logic flow.
 8. **Invisible Traceability**: Versioning and Git tags must be applied **automatically and silently** without blocking the main workflow.
 
 ---
@@ -83,6 +83,6 @@ All SDD Planning phases must adhere to the following mandatory industrial standa
 
 ---
 
-*Registry version: 7.1.0*
-*Last updated: 2026-04-23T18:22:00+02:00*
-*AIWF System Compatibility: v13.0.0*
+*Registry version: 8.0.0*
+*Last updated: 2026-04-24T06:30:00+03:00*
+*AIWF System Compatibility: v19.0.0*

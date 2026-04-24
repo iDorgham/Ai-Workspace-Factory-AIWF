@@ -22,6 +22,20 @@
             "status": "completed",
             "description": "Finalize factory/library/ with absolute industrial standards and OMEGA-tier audit.",
             "dependencies": ["TASK-SING-002"]
+        },
+        {
+            "id": "TASK-SING-004",
+            "title": "OMEGA Health Optimization",
+            "status": "pending",
+            "description": "Execute performance hardening across all singularity nodes to reach 100/100 score.",
+            "dependencies": ["TASK-SING-003"]
+        },
+        {
+            "id": "TASK-SING-005",
+            "title": "Skill Synthesis: Terminal",
+            "status": "completed",
+            "description": "Codify Terminal Certification and Omega Convergence skills.",
+            "dependencies": ["TASK-SING-003"]
         }
     ]
 }
