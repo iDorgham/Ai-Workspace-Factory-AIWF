@@ -1,4 +1,4 @@
-# 🤖 AIWF AGENT REGISTRY (v7.1.0)
+# 🤖 AIWF AGENT REGISTRY (v8.0.0)
 
 The AI Workspace Factory operates via a specialized swarm of agents, each governed by specific sovereign protocols and consensus rules.
 
