@@ -1,0 +1,2 @@
+{"ts": "2026-04-24T05:19:00Z", "stressor": "system-init", "target": "internal", "recovery_ms": 0, "status": "READY", "compliance_id": "LAW151-SCAL-017"}
+{"ts": "2026-04-24T05:19:47.632338", "stressor": "timeout", "target": "node-mena-02", "recovery_ms": 504, "status": "RECOVERED", "compliance_id": "LAW151-SCAL-017"}

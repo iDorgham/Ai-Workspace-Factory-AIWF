@@ -1,0 +1,56 @@
+# 🚢 AIWF Regional Shard Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aiwf-shard-{{shard_id}}
+  labels:
+    app: aiwf-factory
+    tier: sovereign-shard
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      shard: {{shard_id}}
+  template:
+    metadata:
+      labels:
+        shard: {{shard_id}}
+    spec:
+      containers:
+      - name: shard-engine
+        image: aiwf-registry.me-south-1.amazonaws.com/shards/{{shard_id}}:latest
+        ports:
+        - containerPort: 8080
+        resources:
+          limits:
+            cpu: "500m"
+            memory: "1Gi"
+          requests:
+            cpu: "250m"
+            memory: "512Mi"
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8080
+        readinessProbe:
+          httpGet:
+            path: /ready
+            port: 8080
+        envFrom:
+        - configMapRef:
+            name: aiwf-config
+        - secretRef:
+            name: aiwf-secrets
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: aiwf-service-{{shard_id}}
+spec:
+  selector:
+    shard: {{shard_id}}
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+  type: LoadBalancer

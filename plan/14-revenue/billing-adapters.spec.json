@@ -1,0 +1,29 @@
+{
+    "id": "SPEC-REV-002",
+    "title": "Bilingual Billing Adapters",
+    "version": "1.0.0",
+    "requirements": [
+        "Unified interface for multi-gateway execution.",
+        "Bilingual support (EN/AR) for checkout metadata and receipts.",
+        "Webhook verification logic for secure settlement.",
+        "Compliance: Law 151 data residency for payment logs."
+    ],
+    "adapters": [
+        {
+            "id": "ADAPT-STRIPE",
+            "name": "Global/GCC Stripe Adapter",
+            "currencies": ["USD", "AED", "SAR"]
+        },
+        {
+            "id": "ADAPT-FAWRY",
+            "name": "Egypt Fawry Retail Adapter",
+            "currencies": ["EGP"]
+        },
+        {
+            "id": "ADAPT-VODACASH",
+            "name": "Egypt Vodafone Cash P2P Adapter",
+            "currencies": ["EGP"]
+        }
+    ],
+    "reasoning_hash": "sha256:billing-adapt-spec-293847"
+}

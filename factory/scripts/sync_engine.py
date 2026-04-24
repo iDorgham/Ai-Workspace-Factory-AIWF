@@ -13,7 +13,7 @@ from datetime import datetime
 class SyncEngine:
     def __init__(self, factory_root):
         self.factory_root = factory_root
-        self.library_path = os.path.join(factory_root, "factory/library/12-meta-engine/meta-orchestration/v7-orchestration")
+        self.library_path = os.path.join(factory_root, "factory/library/00-core-orchestration/12-meta-engine/meta-orchestration/v7-orchestration")
         self.workspaces_path = os.path.join(factory_root, "workspaces")
         self.timestamp = datetime.now().isoformat()
 

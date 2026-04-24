@@ -22,6 +22,34 @@
             "status": "completed",
             "description": "Generate the high-fidelity content_manifest.json for frontend integration.",
             "dependencies": ["TASK-CONTENT-002"]
+        },
+        {
+            "id": "TASK-CONTENT-004",
+            "title": "Library Hardening: Content Strategy",
+            "status": "completed",
+            "description": "Refine factory/library/20-content-strategy/ with insights from Phase 11.",
+            "dependencies": ["TASK-CONTENT-003"]
+        },
+        {
+            "id": "TASK-CONTENT-005",
+            "title": "Profile Expansion: Content & SEO",
+            "status": "completed",
+            "description": "Create new workspace profiles for Content Strategy and SEO Authority.",
+            "dependencies": ["TASK-CONTENT-004"]
+        },
+        {
+            "id": "TASK-CONTENT-006",
+            "title": "Automation: Content Validator",
+            "status": "completed",
+            "description": "Develop factory/core/content_validator.py for brand voice enforcement.",
+            "dependencies": ["TASK-CONTENT-005"]
+        },
+        {
+            "id": "TASK-CONTENT-007",
+            "title": "Skill Codification: Content Synthesis",
+            "status": "completed",
+            "description": "Codify Content Synthesis skill in .ai/skills/.",
+            "dependencies": ["TASK-CONTENT-006"]
         }
     ]
 }

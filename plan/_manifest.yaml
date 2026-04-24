@@ -51,7 +51,7 @@ phases:
   - id: 8
     slug: "regional-lockdown"
     name: "Regional Shard Lockdown (v13.0)"
-    status: "active"
+    status: "completed"
     path: "plan/08-regional-lockdown/"
  
   - id: 9
@@ -65,6 +65,54 @@ phases:
     name: "Neural Fabric (v15.0)"
     status: "pending"
     path: "plan/10-neural-fabric/"
+
+  - id: 11
+    slug: "website-content"
+    name: "Global Website Content (v13.0)"
+    status: "completed"
+    path: "plan/11-website-content/"
+
+  - id: 12
+    slug: "distribution"
+    name: "Global Shard Distribution (v13.1)"
+    status: "completed"
+    path: "plan/12-distribution/"
+
+  - id: 13
+    slug: "predictive"
+    name: "Predictive Industrial Analytics (v14.0)"
+    status: "completed"
+    path: "plan/13-predictive/"
+
+  - id: 14
+    slug: "revenue"
+    name: "Autonomous Revenue Engines (v15.0)"
+    status: "completed"
+    path: "plan/14-revenue/"
+
+  - id: 15
+    slug: "sync"
+    name: "Galaxy Sync v2 (v16.0)"
+    status: "completed"
+    path: "plan/15-sync/"
+
+  - id: 16
+    slug: "evolution"
+    name: "Autonomous Recursive Evolution (v17.0)"
+    status: "completed"
+    path: "plan/16-evolution/"
+
+  - id: 17
+    slug: "scaling"
+    name: "Industrial Shard Scaling (v18.0)"
+    status: "completed"
+    path: "plan/17-scaling/"
+
+  - id: 18
+    slug: "singularity"
+    name: "The Omega Singularity (v19.0)"
+    status: "active"
+    path: "plan/18-singularity/"
  
-active_phase: 8
+active_phase: 18
 omega_gate_status: "verified"

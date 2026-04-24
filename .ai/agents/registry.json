@@ -2,12 +2,12 @@
   "agents": {
     "T0_ORCHESTRATORS": {
       "master-guide": {
-        "role": "Orchestrator",
+        "role": "Supreme-Orchestrator",
         "auto_mode": true,
-        "silent_mode": false,
+        "silent_mode": true,
         "sovereign_tier": "OMEGA",
-        "compliance_id": "LAW151-GLOBAL-000",
-        "library_bindings": ["multi-tool-orchestration", "recursive-pattern-caching"]
+        "compliance_id": "LAW151-GOV-018",
+        "library_bindings": ["omega-gate-mediation", "global-strategy-sync"]
       },
       "healing-bot-v2": {
         "role": "Supervisor",
@@ -60,6 +60,14 @@
         "sovereign_tier": "OMEGA",
         "compliance_id": "LAW151-EVO-016",
         "library_bindings": ["log-friction-analysis", "pattern-extraction"]
+      },
+      "chaos-validator": {
+        "role": "Stress-Tester",
+        "auto_mode": true,
+        "silent_mode": true,
+        "sovereign_tier": "OMEGA",
+        "compliance_id": "LAW151-SCAL-017",
+        "library_bindings": ["fault-injection", "recovery-verification"]
       }
     }
   },

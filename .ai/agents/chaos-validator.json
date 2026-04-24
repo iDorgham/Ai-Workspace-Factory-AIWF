@@ -1,0 +1,20 @@
+{
+  "agent_id": "chaos-validator",
+  "name": "Chaos Validator",
+  "tier": "T1",
+  "role": "Stress-Tester",
+  "description": "Injects controlled stressors into the Sovereign Galaxy to verify adaptive recovery and shard resilience.",
+  "sovereign_tier": "OMEGA",
+  "compliance_id": "LAW151-SCAL-017",
+  "skills": [
+    "fault-injection",
+    "recovery-verification",
+    "latency-simulation",
+    "resilience-audit"
+  ],
+  "protocols": {
+    "chaos_mode": "Non-Destructive-Default",
+    "injection_threshold": "Omega-Tier-Only",
+    "circuit_breaker": "Emergency Recovery on structural drift"
+  }
+}

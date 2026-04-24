@@ -3,7 +3,9 @@ import os
 import json
 from pathlib import Path
 
-TARGET_DIR = Path("/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace Factory/factory/library")
+_scripts = Path(__file__).resolve().parent
+REPO_ROOT = _scripts.parent.parent.parent.parent.parent.parent
+TARGET_DIR = REPO_ROOT / "factory" / "library"
 
 def parse_frontmatter(content):
     if not content.startswith('---'):

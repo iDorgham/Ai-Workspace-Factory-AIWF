@@ -1,0 +1,2 @@
+{"ts": "2026-04-24T05:25:00Z", "mutation": "system-init", "status": "READY", "votes": "5/5", "compliance_id": "LAW151-GOV-018"}
+{"ts": "2026-04-24T05:28:13.620875", "mutation": "shard-promotion", "status": "AUTHORIZED", "votes": "4/5", "compliance_id": "LAW151-GOV-018"}

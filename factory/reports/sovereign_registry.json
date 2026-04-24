@@ -1,0 +1,26 @@
+{
+    "luxury-boutique": {
+        "shard_id": "luxury-boutique",
+        "tier": "OMEGA",
+        "integrity_hash": "81343f2a206a51b863888254f0e34d2ff74120d4e8d8c471ec336b19400fef70",
+        "compliance_nodes": [
+            "LAW-151",
+            "MENA-SOIL",
+            "PCI-DSS"
+        ],
+        "issued_at": "2026-04-24T06:07:05.404741",
+        "issuer": "AIWF-ROOT-AUTHORITY"
+    },
+    "brand-strategy": {
+        "shard_id": "brand-strategy",
+        "tier": "OMEGA",
+        "integrity_hash": "cc9953a476e11b5c71f6ccd8b89d04f240e7b6086f9f6fbed69ab528b7bd7c7e",
+        "compliance_nodes": [
+            "LAW-151",
+            "MENA-SOIL",
+            "PCI-DSS"
+        ],
+        "issued_at": "2026-04-24T06:07:05.405780",
+        "issuer": "AIWF-ROOT-AUTHORITY"
+    }
+}

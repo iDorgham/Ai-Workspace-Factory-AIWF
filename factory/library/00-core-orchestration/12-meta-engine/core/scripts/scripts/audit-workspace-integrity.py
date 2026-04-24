@@ -10,8 +10,10 @@ from pathlib import Path
 from typing import Any
 
 _scripts = Path(__file__).resolve().parent
-if str(_scripts) not in sys.path:
-    sys.path.insert(0, str(_scripts))
+_lib = _scripts / "lib"
+for p in [str(_scripts), str(_lib)]:
+    if p not in sys.path:
+        sys.path.insert(0, p)
 
 from paths import REPO_ROOT  # noqa: E402
 

@@ -1,0 +1,21 @@
+{
+    "id": "SPEC-EVO-002",
+    "title": "Recursive Skill Synthesis Protocol",
+    "version": "1.0.0",
+    "requirements": [
+        "Autonomous identification of 'Learned Patterns' from session logs.",
+        "Skill Codification: Automatically generate SKILL.md and manifest logic.",
+        "Validation Gate: Ensure new skills don't conflict with existing OMEGA-tier protocols.",
+        "Registration: Automated entry into the master REGISTRY.md."
+    ],
+    "logic": {
+        "pattern_mining": "Analyze .system_generated/logs/ for repeated autonomous remediations.",
+        "codification": "Template-based generation of .ai/skills/ structure.",
+        "audit": "Self-test the new skill in a temporary 'Sandboxed-Shard'."
+    },
+    "compliance": {
+        "sovereignty": "Skills must adhere to MENA/Law 151 architectural standards.",
+        "transparency": "Human-readable reasoning log for every synthesized skill."
+    },
+    "reasoning_hash": "sha256:skill-synth-spec-293847"
+}

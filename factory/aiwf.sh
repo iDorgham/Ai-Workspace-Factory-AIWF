@@ -44,6 +44,15 @@ case $COMMAND in
             python3 factory/core/evolution_engine.py --action evolve --pattern "auto-shard-provisioning"
         fi
         ;;
+    "/chaos")
+        python3 factory/core/scaling_engine.py $ARGS
+        ;;
+    "/health")
+        python3 factory/core/health_dashboard.py $ARGS
+        ;;
+    "/gate")
+        python3 factory/core/omega_gate.py $ARGS
+        ;;
     "/guide")
         python3 factory/scripts/swarm.py $ARGS
         ;;

@@ -166,6 +166,18 @@
 - **agents:16-content-dominance/written-content/SentinelCopywriting**: [SentinelCopywriting](./16-content-dominance/written-content/agents/SentinelCopywriting/AGENT.md)
 - **agents:17-performance-marketing-growth/digital-ads-mastery/AdStrategist**: [AdStrategist](./17-performance-marketing-growth/digital-ads-mastery/agents/AdStrategist/AGENT.md)
 - **agents:17-performance-marketing-growth/digital-ads-mastery/MediaBuyer**: [MediaBuyer](./17-performance-marketing-growth/digital-ads-mastery/agents/MediaBuyer/AGENT.md)
+- **engines:50-intelligence-marketing/predictive-modeling/PredictiveEngine**: [PredictiveEngine](./50-intelligence-marketing/predictive-modeling/predictive_engine.py)
+- **engines:50-intelligence-marketing/predictive-modeling/MarketScraper**: [MarketScraper](./50-intelligence-marketing/predictive-modeling/market_scraper.py)
+- **engines:10-engineering-devops/03-security-compliance/fintech-sovereignty/RevenueOrchestrator**: [RevenueOrchestrator](./10-engineering-devops/03-security-compliance/fintech-sovereignty/revenue_orchestrator.py)
+- **templates:10-engineering-devops/03-security-compliance/fintech-sovereignty/BillingAdapter**: [BillingAdapter](./10-engineering-devops/03-security-compliance/fintech-sovereignty/billing_adapter.py)
+- **engines:00-core-orchestration/sync-topology/GalaxySyncV2**: [GalaxySyncV2](./00-core-orchestration/sync-topology/sync_protocol_v2.py)
+- **engines:00-core-orchestration/sync-topology/EquilibriumGuardian**: [EquilibriumGuardian](./00-core-orchestration/sync-topology/equilibrium_guardian.py)
+- **engines:00-core-orchestration/recursive-evolution/EvolutionEngine**: [EvolutionEngine](./00-core-orchestration/recursive-evolution/evolution_engine.py)
+- **engines:00-core-orchestration/recursive-evolution/SkillSynthesizer**: [SkillSynthesizer](./00-core-orchestration/recursive-evolution/skill_synthesizer.py)
+- **engines:10-engineering-devops/scaling-infrastructure/ScalingOrchestrator**: [ScalingOrchestrator](./10-engineering-devops/scaling-infrastructure/scaling_orchestrator.py)
+- **engines:10-engineering-devops/scaling-infrastructure/RegionalBalancer**: [RegionalBalancer](./10-engineering-devops/scaling-infrastructure/regional_balancer.py)
+- **engines:00-core-orchestration/omega-singularity/SingularityCore**: [SingularityCore](./00-core-orchestration/omega-singularity/singularity_core.py)
+- **engines:00-core-orchestration/omega-singularity/OmegaCertificationEngine**: [OmegaCertificationEngine](./00-core-orchestration/omega-singularity/omega_certification_engine.py)
 - **skills:01-software-engineering/backend/backend-mastery**: [backend-mastery](./01-software-engineering/backend/skills/backend-mastery/SKILL.md)
 - **skills:01-software-engineering/developing/skills/external/github/github-official-mastery**: [github-official-mastery](./01-software-engineering/developing/skills/external/github/github-official-mastery/SKILL.md)
 - **skills:01-software-engineering/backend/external/nestjs-architecture/nestjs-modular-architecture**: [nestjs-modular-architecture](./01-software-engineering/backend/skills/external/nestjs-architecture/nestjs-modular-architecture/SKILL.md)
@@ -466,8 +478,11 @@
 - **skills:17-performance-marketing-growth/digital-ads-mastery/programmatic-ads-mastery**: [programmatic-ads-mastery](./17-performance-marketing-growth/digital-ads-mastery/skills/programmatic-ads-mastery/SKILL.md)
 - **skills:17-performance-marketing-growth/growth-economics/growth-economics-roi-physics**: [growth-economics-roi-physics](./17-performance-marketing-growth/growth-economics/skills/growth-economics-roi-physics/SKILL.md)
 - **skills:17-performance-marketing-growth/traditional-media-ops/offline-media-negotiation-mastery**: [offline-media-negotiation-mastery](./17-performance-marketing-growth/traditional-media-ops/skills/offline-media-negotiation-mastery/SKILL.md)
+- **skills:11-website-content/content-synthesis**: [content-synthesis](../../.ai/skills/content-synthesis/SKILL.md)
 
 - **templates:10-operations-qa/execution/MASTER_AUDIT_PRESENTATION_TEMPLATE**: [MASTER_AUDIT_PRESENTATION_TEMPLATE](./10-operations-qa/execution/templates/MASTER_AUDIT_PRESENTATION_TEMPLATE.md)
+- **templates:10-engineering-devops/distribution-scaffolding/Dockerfile**: [Dockerfile](./10-engineering-devops/distribution-scaffolding/Dockerfile)
+- **templates:10-engineering-devops/distribution-scaffolding/k8s-deployment**: [k8s-deployment](./10-engineering-devops/distribution-scaffolding/k8s-deployment.yaml)
 
 ---
 *Total Components: 491*
