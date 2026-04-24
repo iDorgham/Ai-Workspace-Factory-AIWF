@@ -1,0 +1,47 @@
+version: "2.0.0"
+name: "Outbound Mirror Protocol"
+description: "Sovereign data-exchange contract for AIWF v20.0 technical equilibrium."
+compliance: "Law 151/2020 (MENA-SOIL)"
+traceability: "ISO-8601 Certified"
+
+sync_topology:
+  active_set: 
+    path: ".ai/"
+    role: "Source of Truth"
+  archive_set:
+    path: "factory/library/"
+    role: "Industrial Mirror"
+
+propagation_rules:
+  mode: "event-driven"
+  bidirectional: true
+  conflict_resolution: "active_set_priority"
+  checksum_algorithm: "sha256"
+
+exclusion_patterns:
+  - "**/scratch/**"
+  - "**/.DS_Store"
+  - "**/tmp/**"
+  - "**/node_modules/**"
+  - "**/.git/**"
+
+priority_tiers:
+  tier_0: 
+    paths: [".ai/agents/", ".ai/commands/"]
+    latency: "< 5ms"
+    validation: "OMEGA"
+  tier_1:
+    paths: ["factory/library/scripts/", "factory/library/templates/"]
+    latency: "< 50ms"
+    validation: "HIGH"
+
+compliance_geofencing:
+  mena_soil:
+    enforced: true
+    regions: ["aws:me-central-1"]
+    sensitive_patterns: ["**/legal/**", "**/financial/**", "**/compliance/**"]
+    violation_protocol: "autonomous_purge"
+
+evolution_hash: "sha256:protocol-mirror-v20-contract-2026-04-25T01:12:00"
+governor: "Dorgham"
+status: "MANIFESTED"

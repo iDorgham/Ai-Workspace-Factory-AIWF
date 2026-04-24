@@ -1,0 +1,44 @@
+version: "1.0.0"
+name: "MENA Payment Routing Protocol"
+description: "Sovereign financial contract for regional payment gateway orchestration."
+compliance: "Law 151/2020 & Egyptian E-Invoicing"
+traceability: "ISO-8601 Certified"
+
+adapters:
+  fawry:
+    enabled: true
+    priority: 1
+    supported_methods: ["card", "fawry_pay", "reference_number"]
+    currency: ["EGP"]
+  vodafone_cash:
+    enabled: true
+    priority: 2
+    supported_methods: ["wallet"]
+    currency: ["EGP"]
+  meeza:
+    enabled: true
+    priority: 3
+    supported_methods: ["card", "qr_code"]
+    currency: ["EGP"]
+
+taxation_rules:
+  egypt:
+    vat_rate: 0.14
+    currency: "EGP"
+    compliance_id: "ETAX-GATE-01"
+  ksa:
+    vat_rate: 0.15
+    currency: "SAR"
+  uae:
+    vat_rate: 0.05
+    currency: "AED"
+
+residency_protocols:
+  financial_geofencing: "MENA-SOIL"
+  data_residency_region: "aws:me-central-1"
+  encryption_standard: "AES-256-GCM"
+  audit_retention: "5 years (Sovereign Storage)"
+
+evolution_hash: "sha256:protocol-payment-v20-contract-2026-04-25T01:22:00"
+governor: "Dorgham"
+status: "MANIFESTED"

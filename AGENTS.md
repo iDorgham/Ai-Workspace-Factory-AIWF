@@ -85,4 +85,4 @@ All SDD Planning phases must adhere to the following mandatory industrial standa
 
 *Registry version: 8.0.0*
 *Last updated: 2026-04-24T06:30:00+03:00*
-*AIWF System Compatibility: v19.0.0*
+*AIWF System Compatibility: v20.0.0*

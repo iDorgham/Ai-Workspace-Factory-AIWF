@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Neural Fabric Sync Validation Schema",
+  "version": "1.0.0",
+  "description": "Enforces structural integrity and naming conventions for synchronized industrial assets.",
+  "type": "object",
+  "required": ["filename", "path", "metadata"],
+  "properties": {
+    "filename": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+\\.[a-z0-9]+$",
+      "description": "Strict snake_case naming enforcement."
+    },
+    "path": {
+      "type": "string",
+      "pattern": "^( .ai/|factory/library/|workspaces/)",
+      "description": "Validates that the file resides within sovereign shards."
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["evolution_hash", "timestamp", "governor"],
+      "properties": {
+        "evolution_hash": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO-8601 compliant timestamp."
+        },
+        "governor": {
+          "type": "string",
+          "enum": ["Dorgham"]
+        },
+        "compliance_id": {
+          "type": "string",
+          "pattern": "^LAW151-[A-Z0-9-]+$"
+        }
+      }
+    },
+    "content_integrity": {
+      "type": "object",
+      "properties": {
+        "min_density": {
+          "type": "integer",
+          "minimum": 5,
+          "description": "Minimum spec density gate for SDD planning phases."
+        },
+        "forbidden_placeholders": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": ["TODO", "TBD", "[ ]"]
+        }
+      }
+    }
+  },
+  "evolution_hash": "sha256:spec-sync-schema-v20-validation-2026-04-25T01:15:00",
+  "status": "OMEGA-READY"
+}

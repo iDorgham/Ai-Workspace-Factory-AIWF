@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Revenue Orchestration Schema",
+  "version": "1.0.0",
+  "description": "Structural integrity for financial transactions and tax compliance.",
+  "type": "object",
+  "required": ["transaction_id", "amount", "currency", "compliance"],
+  "properties": {
+    "transaction_id": {
+      "type": "string",
+      "pattern": "^TXN-[A-Z0-9]{12}$"
+    },
+    "amount": {
+      "type": "number",
+      "minimum": 0
+    },
+    "currency": {
+      "type": "string",
+      "enum": ["EGP", "SAR", "AED", "USD", "EUR"]
+    },
+    "tax_details": {
+      "type": "object",
+      "required": ["vat_amount", "tax_id"],
+      "properties": {
+        "vat_amount": { "type": "number" },
+        "tax_id": { "type": "string" }
+      }
+    },
+    "compliance": {
+      "type": "object",
+      "required": ["residency_region", "law_151_certified"],
+      "properties": {
+        "residency_region": {
+          "type": "string",
+          "enum": ["aws:me-central-1", "local-mena-soil"]
+        },
+        "law_151_certified": { "type": "boolean", "const": true }
+      }
+    },
+    "reasoning_hash": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    }
+  },
+  "evolution_hash": "sha256:spec-revenue-schema-v20-2026-04-25T01:25:00",
+  "status": "OMEGA-READY"
+}

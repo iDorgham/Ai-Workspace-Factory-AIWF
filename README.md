@@ -13,7 +13,7 @@
 ---
 
 ## 🏛️ Overview
-The **AI Workspace Factory (AIWF)** is a professional-grade, multi-agent industrial ecosystem designed to scaffold, govern, and evolve sovereign development environments. Operating under the **v19.0.0 OMEGA SINGULARITY** standard, the factory enables high-velocity project materialization with absolute technical equilibrium and geospatial data residency.
+The **AI Workspace Factory (AIWF)** is a professional-grade, multi-agent industrial ecosystem designed to scaffold, govern, and evolve sovereign development environments. Operating under the **v20.0.0 OMEGA EQUILIBRIUM** standard, the factory enables high-velocity project materialization with absolute technical equilibrium and geospatial data residency.
 
 ## 🚀 Key Features
 
@@ -77,5 +77,5 @@ graph TD
 
 ---
 <div align="center">
-  <sub>Governor: <b>Dorgham</b> | Standard: <b>v19.0.0 OMEGA</b> | Industrialized by <b>Antigravity</b></sub>
+  <sub>Governor: <b>Dorgham</b> | Standard: <b>v20.0.0 OMEGA</b> | Industrialized by <b>Antigravity</b></sub>
 </div>

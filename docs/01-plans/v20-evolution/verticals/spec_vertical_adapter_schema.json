@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Universal Vertical Adapter Schema",
+  "version": "1.0.0",
+  "description": "Enforces structural integrity and cross-sector compatibility for vertical adapters.",
+  "type": "object",
+  "required": ["adapter_id", "sector", "io_format", "compliance"],
+  "properties": {
+    "adapter_id": {
+      "type": "string",
+      "pattern": "^ADPT-[A-Z]+-[0-9]{3}$"
+    },
+    "sector": {
+      "type": "string",
+      "enum": ["Hospitality", "Legal", "Finance", "Medical", "Infrastructure"]
+    },
+    "io_format": {
+      "type": "string",
+      "const": "Universal Industrial Format (UIF)"
+    },
+    "mapping_registry": {
+      "type": "object",
+      "description": "Maps local sector terminology to global industrial ontology."
+    },
+    "compliance": {
+      "type": "object",
+      "required": ["law_151_enforced", "residency"],
+      "properties": {
+        "law_151_enforced": { "type": "boolean", "const": true },
+        "residency": {
+          "type": "string",
+          "enum": ["MENA-SOIL", "GLOBAL-FEDERATION"]
+        }
+      }
+    },
+    "evolution_hash": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    }
+  },
+  "evolution_hash": "sha256:spec-vertical-adapter-v20-2026-04-25T01:35:00",
+  "status": "OMEGA-READY"
+}
