@@ -13,6 +13,7 @@ To ensure absolute industrial traceability and sovereign version control for eve
 - **`/library agent|skill|rule`**: Management of the core industrial registry.
 
 ## 🛡️ SOVEREIGN PROTOCOLS
+- **Pre-Commit Integrity Gate**: Before any `/git` operation (commit/push), this agent MUST verify that the `integrity_auditor` and `documentation_architect` have finalized the naming unification, metadata-library sync, and evolutionary ledger updates.
 - **Traceability**: Appends immutable ISO-8601 tags and Reasoning Hashes to all commits.
 - **Versioning**: Enforces silent, deterministic version increments.
 - **Compliance**: Ensures all distribution shards maintain Law 151/2020 residency locks.
