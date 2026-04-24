@@ -35,26 +35,33 @@ graph TD
 ## 🏛️ Core Architecture: The Sovereign Pillars
 
 ### 1. Scaling-Orchestrator (`v18.0`)
+
 **Massive Horizontal Growth.** Manages high-availability shard clusters and geofenced load-balancing across the global galaxy.
 
 ### 2. Evolution-Engine (`v17.0`)
+
 **Autonomous Recursive Refinement.** Mines session logs for learned patterns and codifies new industrial skills into the master library.
 
 ### 3. Galaxy-Sync v2 (`v16.0`)
+
 **Merkle-based Equilibrium.** Ensures absolute global state reconciliation across distributed shards with autonomous drift remediation.
 
 ### 4. Revenue-Orchestrator (`v15.0`)
+
 **Autonomous Fiscal Sovereignty.** Handles multi-region billing and regional gateway switching (Fawry, Vodafone Cash, Stripe).
 
 ### 5. Predictive-Engine (`v14.0`)
+
 **Industrial Intelligence.** Ingests market metadata and generates predictive demand signals for elastic scaling.
 
 ### 6. Regional-Controller (`v13.0`)
+
 **Geospatial Enforcement.** Enforces Law 151/2020 residency protocols for sovereign MENA-soil shards.
 
 ---
 
 ## 🏗️ Industrial Lifecycle
+
 The AIWF operates on a deterministic, recursive development cycle. Each phase must transition through the following industrial gates:
 
 ```mermaid
@@ -100,10 +107,10 @@ graph LR
 
 AIWF v19.0.0 introduces the **Action-Object Audit Fabric**, allowing for granular validation of workspace health:
 
-*   **Structural Health (`/audit plan`)**: Deep-component analysis to detect architectural drift and library misalignments.
-*   **Path Integrity (`/audit logs`)**: Autonomous verification of all internal path references and repository-root discovery.
-*   **Sovereignty Audit (`/audit security`)**: Final validation of Law 151 data residency and geofenced traffic isolation.
-*   **OMEGA Certification (`/audit release`)**: Final cryptographic signing and certification of distributed shards.
+- **Structural Health (`/audit plan`)**: Deep-component analysis to detect architectural drift and library misalignments.
+- **Path Integrity (`/audit logs`)**: Autonomous verification of all internal path references and repository-root discovery.
+- **Sovereignty Audit (`/audit security`)**: Final validation of Law 151 data residency and geofenced traffic isolation.
+- **OMEGA Certification (`/audit release`)**: Final cryptographic signing and certification of distributed shards.
 
 ---
 
