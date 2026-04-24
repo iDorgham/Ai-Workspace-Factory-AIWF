@@ -1,8 +1,0 @@
-spec_id: compliance-audit
-title: Cross-Border Compliance Audit
-version: 1.0.0
-requirements:
-  - [REQ-LOCKDOWN-003]
-components:
-  - factory/core/compliance_auditor.py
-status: draft

@@ -13,25 +13,25 @@
 
 | Command | Primary Agent | Required Context | Output | Hard Block? |
 |---------|--------------|-----------------|--------|------------|
-| `/brand` | brand-agent | `.ai/templates/brand-discovery/questions.json` | Guided brand strategy interview output: `content/sovereign/reference/market-positioning.md`, `content/sovereign/reference/brand-voice/*.md`, `.ai/logs/brand-session-[timestamp].json` | No |
+| `/brand` | brand-agent | `.ai/templates/brand-discovery/questions.json` | Guided brand strategy interview output: `content/sovereign/reference/market_positioning.md`, `content/sovereign/reference/brand-voice/*.md`, `.ai/logs/brand-session-[timestamp].json` | No |
 | `/brand workshop` | brand-agent | `.ai/templates/brand-discovery/questions.json` | Alias of `/brand` in meeting mode (branding expert + user) | No |
-| `/research competitors` | research-agent | `content/sovereign/reference/market-positioning.md` | `content/sovereign/scraped/*/info.md`, `index.json` | No |
+| `/research competitors` | research-agent | `content/sovereign/reference/market_positioning.md` | `content/sovereign/scraped/*/info.md`, `index.json` | No |
 | `/scrape all competitors blog` | scraper-agent | `content/sovereign/scraped/index.json` | `scraped/content/blog/` | No |
 | `/scrape all competitors projects` | scraper-agent | `content/sovereign/scraped/index.json` | `scraped/content/sovereign/projects/` | No |
 | `/scrape all competitors all website` | scraper-agent | `content/sovereign/scraped/index.json` | Full `scraped/` | No |
 | `/scrape [name] website` | scraper-agent | `content/sovereign/scraped/index.json`, competitor slug | `scraped/content/pages/` | No |
 | `/scrape [name] all website` | scraper-agent | `content/sovereign/scraped/index.json`, competitor slug | Full `scraped/` | No |
 | `/sync` | scraper-agent | `content/sovereign/scraped/index.json`, `sync-status.json` per competitor | Delta updates, `.ai/logs/sync-delta.jsonl` | No |
-| `/extract brand voice from [source]` | brand-agent | Source text | `content/sovereign/reference/brand-voice/voice-refinement.md` | No |
-| `/refine brand voice` | brand-agent | `content/` recent files, `content/sovereign/reference/brand-voice/` | Updated `style-rules.md`, `glossary.md` | No |
+| `/extract brand voice from [source]` | brand-agent | Source text | `content/sovereign/reference/brand-voice/voice_refinement.md` | No |
+| `/refine brand voice` | brand-agent | `content/` recent files, `content/sovereign/reference/brand-voice/` | Updated `style_rules.md`, `glossary.md` | No |
 | `/create website pages` | creator-agent | Brand voice, keyword maps, positioning | `content/sovereign/website-pages/` | Via `/review` |
 | `/create blog posts about [topic]` | creator-agent | Brand voice, keyword maps, topic | `content/sovereign/blog-posts/` | Via `/review` |
 | `/create project pages` | creator-agent | Brand voice, project data | `content/sovereign/projects/` | Via `/review` |
 | `/create landing pages for [campaign]` | creator-agent | Brand voice, campaign brief | `content/sovereign/landing-pages/` | Via `/review` |
 | `/compare sovereign vs competitor [name]` | creator-agent | Sovereign draft + competitor scraped data | `content/sovereign/comparisons/` | Via `/review` |
-| `/intel competitor [name]` | research-agent | `content/sovereign/scraped/index.json`, `content/sovereign/scraped/[slug]/info.md`, `content/sovereign/scraped/[slug]/scraped/content/` | `content/sovereign/scraped/[slug]/analysis/intel-brief.md`, `.ai/logs/intelligence-report-[timestamp].jsonl` | No |
+| `/intel competitor [name]` | research-agent | `content/sovereign/scraped/index.json`, `content/sovereign/scraped/[slug]/info.md`, `content/sovereign/scraped/[slug]/scraped/content/` | `content/sovereign/scraped/[slug]/analysis/intel_brief.md`, `.ai/logs/intelligence-report-[timestamp].jsonl` | No |
 | `/intel market snapshot` | research-agent | `content/sovereign/scraped/index.json`, competitor profile + scraped summaries | Cross-competitor trend summary + `.ai/logs/intelligence-report-[timestamp].jsonl` | No |
-| `/intel opportunities` | research-agent | `content/sovereign/reference/market-positioning.md`, trend summary, competitor coverage | `content/sovereign/comparisons/opportunity-map-[timestamp].md`, `.ai/logs/intelligence-report-[timestamp].jsonl` | No |
+| `/intel opportunities` | research-agent | `content/sovereign/reference/market_positioning.md`, trend summary, competitor coverage | `content/sovereign/comparisons/opportunity-map-[timestamp].md`, `.ai/logs/intelligence-report-[timestamp].jsonl` | No |
 | `/polish content in content/` | seo-agent + brand-agent | Draft Markdown, keyword maps, brand voice | Optimized in-place Markdown | Via `/review` |
 | `/optimize images in content/` | seo-agent | Images in `content/`, manifest | `assets-seo.json`, WebP refs | Via `/review` |
 | `/review` | workflow-agent | Staged `content/` drafts | `.ai/logs/quality-report-[timestamp].json` | No |
@@ -99,8 +99,8 @@ The guide-agent must resolve these ambiguities before routing:
 ### Missing Context Defaults
 | Missing | Default Action |
 |---------|---------------|
-| `market-positioning.md` empty | Respond: "Your brand foundation isn't set up yet. Run `/brand` to complete a professional brand discovery session first." |
-| `brand-voice/style-rules.md` empty | Respond: "Brand voice rules are not defined. Run `/brand` (full session) or `/extract brand voice from [source]` if you have existing copy." |
+| `market_positioning.md` empty | Respond: "Your brand foundation isn't set up yet. Run `/brand` to complete a professional brand discovery session first." |
+| `brand-voice/style_rules.md` empty | Respond: "Brand voice rules are not defined. Run `/brand` (full session) or `/extract brand voice from [source]` if you have existing copy." |
 | No competitor data for `/create` | Generate from brand positioning + keyword research alone |
 | No keyword map for `/polish` | Mine keywords from content topic + market positioning |
 | No images for `/optimize images` | Report: "No images found in content/. Add images to your draft files first." |

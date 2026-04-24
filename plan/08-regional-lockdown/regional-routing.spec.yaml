@@ -1,8 +1,0 @@
-spec_id: regional-routing
-title: Regional Routing Interceptors
-version: 1.0.0
-requirements:
-  - [REQ-LOCKDOWN-001]
-components:
-  - factory/core/cloud_gateway.py
-status: implemented

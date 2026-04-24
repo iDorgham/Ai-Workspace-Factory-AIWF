@@ -1,0 +1,6 @@
+07ba5c9884c3f9eb34d9c96f14e261c1712cbdb18d82a94180c9e4b6176f02cb  .ai/scripts/healing_agent.py
+5754c0233633c841631c72e08dc4877c299a61ee8e43d9822370fef31b630e13  .ai/scripts/recursive_engine.py
+c2e12878f7b4e6f370ae54fd50743e1db1868d384998383063e453c1b54dd7d8  .ai/scripts/swarm_router.py
+0c442fcd2e9606cc2422a3c0a60fa9fcd9608ecb77bb06f379380f2d8cd07d44  .ai/scripts/chaos_validator.py
+155cf499dc0dee12a12e3c2df75cf77bd6cd2fbf3705389453d74ca020a3fb3f  .ai/scripts/volatility_scaler.py
+dd665e27540610495463f84cd06d118036774e42e8d7e394371f2f0e0878890c  master/docs/Product required document/AIWF-PRD.md
