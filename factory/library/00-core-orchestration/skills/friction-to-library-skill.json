@@ -1,8 +1,0 @@
-{
-  "id": "friction-to-library-skill",
-  "version": "1.0.0",
-  "library_category": "Recursive Learning",
-  "sovereign_tier": "OMEGA",
-  "functionality": "Converts session errors and friction into new library component candidates",
-  "traceability_hash": "sha256:..."
-}

@@ -25,6 +25,6 @@ This directory is the canonical source of runtime-discoverable orchestration def
 Legacy mirrors are intentionally retained:
 - `.ai/agents.md`
 - `.ai/sub-agent-contracts.json`
-- `.ai/skill-integration.md`
+- `.ai/skill_integration.md`
 
 Loaders should prefer registry files first, then fallback via `.ai/compat/*.legacy-map.json`.

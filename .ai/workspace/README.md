@@ -8,7 +8,7 @@ This folder contains all system documentation, configuration, and reference mate
 
 ## Source of truth
 
-- **Runtime contracts, command routing, adapters, memory:** repository **`.ai/`** at the repo root (for example `.ai/agents.md`, `.ai/commands-multi-tool.md`, `.ai/cli-layer/`, `.ai/tool-adapters/`, `.ai/memory/state.json`).
+- **Runtime contracts, command routing, adapters, memory:** repository **`.ai/`** at the repo root (for example `.ai/agents.md`, `.ai/commands_multi_tool.md`, `.ai/cli-layer/`, `.ai/tool-adapters/`, `.ai/memory/state.json`).
 - **`.ai/workspace/`:** curated docs, templates, QA assets, and phase write-ups. Not every numbered “virtual” section exists as a subfolder here; when in doubt, follow the paths below or open `.ai/`.
 - **Operational JSON / JSONL logs:** **`.ai/logs/`** (append-only audit trails, test exports, path-integrity reports).
 - **Active content projects:** [`content/README.md`](../../content/README.md) (canonical `content/<slug>/` list and `active_project` values).
@@ -19,7 +19,7 @@ This folder contains all system documentation, configuration, and reference mate
 - **Safe to delete anytime:** editor/OS cruft (`.DS_Store`, `__pycache__/`, `*.pyc`) — covered by root `.gitignore`; remove if committed by mistake.
 - **Do not delete as “junk”:** append-only logs under `.ai/logs/` (for example `workflow.jsonl`, `tool-performance.jsonl`, scrape/sync traces) unless you adopt an explicit retention or rotation policy.
 - **Review before delete or move:** generated test exports (`day-*-test-results.json`), migration report JSON/MD under `.ai/migrations/` (regenerate from the `.py` check scripts), and historical narrative under `archive/legacy-snapshots/` (formerly `.ai/workspace/09-logs-reports/legacy-snapshots/`).
-- **Inventory:** run `python3 .ai/scripts/workspace_inventory.py` → `.ai/logs/workspace-cleanup-inventory.md`.
+- **Inventory:** run `python3 .ai/scripts/workspace_inventory.py` → `.ai/logs/workspace_cleanup_inventory.md`.
 
 ---
 
@@ -39,7 +39,7 @@ python3 .ai/scripts/run-smoke-tests.py
 python3 .ai/scripts/workspace_inventory.py
 ```
 
-`audit_path_integrity.py` regenerates `.ai/logs/path-integrity-summary.md` after each run (keeps it newer than `path-integrity-report.json` for `audit-workspace-integrity.py`).
+`audit_path_integrity.py` regenerates `.ai/logs/path_integrity_summary.md` after each run (keeps it newer than `path-integrity-report.json` for `audit-workspace-integrity.py`).
 
 ---
 
@@ -47,17 +47,17 @@ python3 .ai/scripts/workspace_inventory.py
 
 ### 🏗️ **01-system-architecture/** 
 Core system design and strategy documents
-- `ARCHITECTURE-v3.2-AGENT-CLARITY.md` — System design principles
-- `PHASE-1-VISUAL-ARCHITECTURE.md` — Architecture diagrams and visual flow
+- `ARCHITECTURE-v3.2_AGENT_CLARITY.md` — System design principles
+- `PHASE_1_VISUAL_ARCHITECTURE.md` — Architecture diagrams and visual flow
 - `IMPLEMENTATION-ROADMAP-v3.2.md` — Development timeline and milestones
-- `v3.1-vs-v3.2-SUMMARY.md` — Version comparison and upgrade path
+- `v3.1-vs-v3.2_SUMMARY.md` — Version comparison and upgrade path
 
 **When to use:** Understanding overall system design, comparing versions, reviewing architecture decisions.
 
 ---
 
 ### 🤖 **Agent contracts (canonical: `.ai/`)**
-Agent definitions, responsibilities, and data governance live under **`.ai/`** (not duplicated under `.ai/workspace/`). Start with `.ai/agents.md`, `.ai/data-ownership-multi-tool.md`, and `.ai/error-recovery.md`.
+Agent definitions, responsibilities, and data governance live under **`.ai/`** (not duplicated under `.ai/workspace/`). Start with `.ai/agents.md`, `.ai/data_ownership_multi_tool.md`, and `.ai/error_recovery.md`.
 
 **When to use:** Determining agent responsibilities, checking permissions, understanding data flows.
 
@@ -65,8 +65,8 @@ Agent definitions, responsibilities, and data governance live under **`.ai/`** (
 
 ### ⚙️ **03-cli-layer/** (documentation in `.ai/workspace/`)
 CLI design notes that accompany the live implementation in **`.ai/cli-layer/`**.
-- `CLI-LAYER-IMPLEMENTATION-GUIDE.md` — Phase 2a implementation details
-- `CLI-LAYER-VISUAL-DESIGN.md` — CLI flag design specifications
+- `CLI_LAYER_IMPLEMENTATION_GUIDE.md` — Phase 2a implementation details
+- `CLI_LAYER_VISUAL_DESIGN.md` — CLI flag design specifications
 
 **When to use:** Understanding CLI design; for live flag/router/error templates, read `.ai/cli-layer/`.
 
@@ -89,22 +89,22 @@ Canonical adapter contracts, registry JSON, and routing markdown live under **`.
 
 ### 🎨 **06-brand-reference/**
 Sovereign brand identity and market positioning
-- `market-positioning.md` — Studio niche, target clients, unique selling propositions
-- `06-brand-reference/content/sovereign/reference/brand-voice/style-rules.md` — Writing tone and voice guidelines
+- `market_positioning.md` — Studio niche, target clients, unique selling propositions
+- `06-brand-reference/content/sovereign/reference/brand-voice/style_rules.md` — Writing tone and voice guidelines
 - `06-brand-reference/content/sovereign/reference/brand-voice/glossary.md` — Approved terminology and prohibited terms
-- `06-brand-reference/content/sovereign/reference/brand-voice/tone-examples.md` — Voice examples by context
-- `06-brand-reference/content/sovereign/reference/brand-voice/voice-refinement.md` — Brand voice analysis and evolution
-- `brand-discovery.md` — Brand discovery process and framework
+- `06-brand-reference/content/sovereign/reference/brand-voice/tone_examples.md` — Voice examples by context
+- `06-brand-reference/content/sovereign/reference/brand-voice/voice_refinement.md` — Brand voice analysis and evolution
+- `brand_discovery.md` — Brand discovery process and framework
 
 **When to use:** Creating content, checking tone consistency, understanding brand positioning.
 
-**⚠️ Note:** Fill in `market-positioning.md` before first use.
+**⚠️ Note:** Fill in `market_positioning.md` before first use.
 
 ---
 
 ### 📋 **Content templates (canonical: `.ai/templates/`)**
 Content blueprints and export schemas
-- `.ai/templates/content-blueprints/` — Reusable content templates (`blog-post.md`, `website-page.md`, `project-page.md`, `landing-page.md`)
+- `.ai/templates/content-blueprints/` — Reusable content templates (`blog_post.md`, `website_page.md`, `project_page.md`, `landing_page.md`)
 - `.ai/templates/seo-meta-templates/` — SEO metadata schemas (`meta-template.json`)
 - `.ai/templates/csv-schemas/` — Data export formats (`content-export.json`)
 - `.ai/templates/brand-discovery/` — Brand discovery questionnaire (`questions.json`)
@@ -150,10 +150,10 @@ Historical data and previous versions
 
 ### 🚀 **_setup-guides/** (Priority)
 Quick-start and implementation guides
-- `IMPLEMENTATION-CHECKLIST.md` — Phase activation checklist
-- `PHASE-1-SETUP-GUIDE.md` — Multi-tool orchestration setup
-- `GUIDE-AGENT-SYSTEM-PROMPT-ADDENDUM.md` — System prompt extensions
-- `GUIDE-AGENT-SYSTEM-PROMPT-ADDENDUM-PHASE2A.md` — CLI layer system prompt
+- `IMPLEMENTATION_CHECKLIST.md` — Phase activation checklist
+- `PHASE_1_SETUP_GUIDE.md` — Multi-tool orchestration setup
+- `GUIDE_AGENT_SYSTEM_PROMPT_ADDENDUM.md` — System prompt extensions
+- `GUIDE_AGENT_SYSTEM_PROMPT_ADDENDUM_PHASE2A.md` — CLI layer system prompt
 
 **When to use:** Setting up a new workspace, integrating new tools, onboarding.
 
@@ -161,10 +161,10 @@ Quick-start and implementation guides
 
 ### 📌 **_quick-reference/** (Priority)
 Cheat sheets and quick lookups
-- `QUICK-REFERENCE.md` — Command cheat sheet
-- `PHASE-1-ARCHITECTURE-SUMMARY.md` — Phase 1 overview
+- `QUICK_REFERENCE.md` — Command cheat sheet
+- `PHASE_1_ARCHITECTURE_SUMMARY.md` — Phase 1 overview
 - `commands.md` — v3.2 command reference (backward compatibility)
-- `skill-integration.md` — Cowork skill mappings
+- `skill_integration.md` — Cowork skill mappings
 
 **When to use:** Looking up command syntax, finding quick answers, navigating features.
 
@@ -176,32 +176,32 @@ Cheat sheets and quick lookups
 
 | Task | Folder | File |
 |------|--------|------|
-| Understand system design | `01-system-architecture/` | `ARCHITECTURE-v3.2-AGENT-CLARITY.md` |
-| Check who owns a file | `.ai/` | `data-ownership.md` or `data-ownership-multi-tool.md` |
+| Understand system design | `01-system-architecture/` | `ARCHITECTURE-v3.2_AGENT_CLARITY.md` |
+| Check who owns a file | `.ai/` | `data_ownership.md` or `data_ownership_multi_tool.md` |
 | Execute a command with flags | `.ai/cli-layer/` + `.ai/workspace/03-cli-layer/` | live templates in `.ai/cli-layer/` |
 | Add a new tool | `.ai/tool-adapters/` | `interface.json` + new adapter |
 | Check session state | `.ai/memory/` | `state.json` |
-| Write brand-consistent content | `06-brand-reference/` | `content/sovereign/reference/brand-voice/style-rules.md` |
+| Write brand-consistent content | `06-brand-reference/` | `content/sovereign/reference/brand-voice/style_rules.md` |
 | Create new content | `.ai/templates/` | `content-blueprints/*.md` |
 | Run tests | `08-testing/tests/` | `day-*-*-tests.json` |
 | Review what was done | `09-logs-reports/` + `.ai/logs/` | phase docs here; live logs in `.ai/logs/` |
 | Compare old versions | `10-archive/` | `previous-versions/` |
-| Set up workspace | `_setup-guides/` | `IMPLEMENTATION-CHECKLIST.md` |
-| Find a command | `_quick-reference/` | `QUICK-REFERENCE.md` |
+| Set up workspace | `_setup-guides/` | `IMPLEMENTATION_CHECKLIST.md` |
+| Find a command | `_quick-reference/` | `QUICK_REFERENCE.md` |
 
 ---
 
 ## 📖 Entry Points
 
-**Starting a new session?** → Read `_setup-guides/IMPLEMENTATION-CHECKLIST.md`
+**Starting a new session?** → Read `_setup-guides/IMPLEMENTATION_CHECKLIST.md`
 
-**Need a quick command?** → See `_quick-reference/QUICK-REFERENCE.md`
+**Need a quick command?** → See `_quick-reference/QUICK_REFERENCE.md`
 
-**Investigating a design decision?** → Check `01-system-architecture/ARCHITECTURE-v3.2-AGENT-CLARITY.md`
+**Investigating a design decision?** → Check `01-system-architecture/ARCHITECTURE-v3.2_AGENT_CLARITY.md`
 
 **Debugging a tool issue?** → Review `.ai/tool-adapters/` (registry + relevant adapter)
 
-**Checking permissions?** → See `.ai/data-ownership-multi-tool.md`
+**Checking permissions?** → See `.ai/data_ownership_multi_tool.md`
 
 ---
 
@@ -225,4 +225,4 @@ See `.ai/templates/` for blueprints and `06-brand-reference/` for tone/positioni
 
 ---
 
-**Questions?** See `_quick-reference/QUICK-REFERENCE.md` for the command reference or check the specific folder README below.
+**Questions?** See `_quick-reference/QUICK_REFERENCE.md` for the command reference or check the specific folder README below.

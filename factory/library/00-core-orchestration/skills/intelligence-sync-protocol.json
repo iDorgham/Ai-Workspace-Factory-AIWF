@@ -1,9 +1,0 @@
-{
-  "id": "intelligence-sync-protocol",
-  "version": "1.0.0",
-  "library_category": "Neural Fabric Sync",
-  "sovereign_tier": "OMEGA",
-  "functionality": "Standardized API for migrating intelligence shards, skills, and state between distributed OMEGA nodes.",
-  "protocols": ["Neural-Fabric-Gossip", "Joint-Consensus-v2"],
-  "traceability_hash": "sha256:sync-v1-2026-04-24"
-}

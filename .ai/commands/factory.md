@@ -20,11 +20,11 @@ The `/factory` command suite governs the project and workspace lifecycle, from d
 | `make` | Materialize workspace | `/factory make [client]` |
 | `test` | Verify structure & compliance | `/factory test [client]` |
 | `check` | Detect workspace drift | `/factory check [client]` |
-| `sync` | Aggregate global state | `/factory sync [--scope]` |
+| `sync` | Mirror .ai <-> Library & Repair links | `/factory sync --deep` |
 | `assign` | Route task to swarm agent | `/factory assign [client] [task]` |
 | `suggest` | AI-driven optimizations | `/factory suggest [client]` |
-| `repair` | Self-heal core components | `/factory repair [--auto]` |
-| `report` | Generate industrial reports | `/factory report [type]` |
+| `repair` | Self-heal schemas & indices | `/factory repair --target=registry` |
+| `report` | Generate comprehensive reports | `/factory report --type=readiness` |
 | `help` | Interactive teaching engine | `/factory help [--category]` |
 | `status` | Real-time health tracking | `/factory status` |
 

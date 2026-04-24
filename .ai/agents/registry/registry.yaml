@@ -116,3 +116,14 @@ agents:
     library_bindings: ["factory/scripts/automation/saas_scaffolder.py"]
     sovereign_gate: "omega_gate_v2"
     memory_access: [".ai/plan/", ".ai/governance/SDD_PROTOCOLS.md"]
+
+  - id: integrity_auditor
+    tier: T1
+    role: "Structural Integrity & Sync Manager"
+    capabilities: ["naming_unification", "link_remediation", "cross_tier_sync"]
+    binds_to: ["/factory sync", "/library check"]
+    auto_mode: true
+    silent_mode: true
+    library_bindings: ["factory/library/00-core-orchestration/12-meta-engine/core/scripts/scripts/integrity_sync.py"]
+    sovereign_gate: "registry_guardian"
+    memory_access: [".ai/", "factory/library/", "docs/"]
