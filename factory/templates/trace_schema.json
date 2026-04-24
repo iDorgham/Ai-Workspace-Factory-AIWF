@@ -1,0 +1,16 @@
+{
+  "fields": [
+    "ts_iso8601",
+    "cmd",
+    "subcmd",
+    "mode",
+    "reasoning_hash",
+    "region",
+    "compliance_id",
+    "rollback_pointer",
+    "chain_id",
+    "auto_actions"
+  ],
+  "format": "jsonl",
+  "storage": ".ai/logs/workflow.jsonl"
+}

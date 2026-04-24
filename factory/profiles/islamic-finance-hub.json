@@ -15,7 +15,7 @@
     ]
   },
   "governance": {
-    "rules": "factory/library/11-industry-verticals/islamic-finance/commands/COMMANDS.md"
+    "rules": "factory/library/40-verticals/11-industry-verticals/islamic-finance/commands/COMMANDS.md"
   },
   "name": "Islamic Finance Hub",
   "profile_id": "islamic-finance-hub"

@@ -1,0 +1,23 @@
+chain_state_machine:
+  rules:
+    - state: "START"
+      transition: "PLAN"
+      gate: null
+    - state: "PLAN"
+      transition: "CREATE"
+      gate: "spec_validated"
+    - state: "CREATE"
+      transition: "DEV"
+      gate: "omega-v2"
+    - state: "DEV"
+      transition: "AUDIT"
+      gate: "build_success"
+    - state: "AUDIT"
+      transition: "GIT"
+      gate: "health>=90"
+  circuit_breaker:
+    pause_on: ["contract_fail", "sovereignty_violation"]
+    auto_trigger: "/guide heal --predictive"
+  sovereign_hooks:
+    pre_exec: "validate_data_residency"
+    post_exec: "append_compliance_id"

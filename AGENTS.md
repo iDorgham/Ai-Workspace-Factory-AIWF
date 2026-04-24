@@ -9,10 +9,11 @@ The AI Workspace Factory operates via a specialized swarm of agents, each govern
 | Agent | Role | Responsibility |
 | :--- | :--- | :--- |
 | **Master Guide** | Orchestrator | High-level strategy, orchestration, cross-project sync, Omega Gate mediation, and global memory management. |
-| **Healing Bot v2** | Supervisor | Predictive structural monitoring, drift detection, and auto-remediation. Logs to `.ai/logs/healing-bot.md`. |
+| **Healing Bot v2** | Supervisor | Predictive structural monitoring, drift detection, and auto-remediation. Executes `/dev fix`. |
 | **Swarm Router v3** | Mediator | Routes tasks across agents, resolves conflicts via multi-agent consensus (≥2/3 agreement required). |
-| **Recursive Engine** | Scientist | Analyzes session friction and corrections → converts into permanent skill manifests in `skill-memory/`. |
-| **Chaos Validator** | Stress-Tester | Injects controlled stressors to verify isolation boundaries and adaptive recovery (isolated env only). |
+| **Recursive Engine** | Scientist | Analyzes session friction and corrections → converts into permanent skill manifests. |
+| **Chaos Validator** | Stress-Tester | Injects controlled stressors to verify isolation boundaries and adaptive recovery. |
+| **Repository Agent** | Guardian | Manages `/git auto` protocols, silent versioning, and industrial traceability. |
 
 ---
 
@@ -24,7 +25,12 @@ The AI Workspace Factory operates via a specialized swarm of agents, each govern
 | **Contract Guardian** | Enforcer | Enforces `api-contract.yaml`, `state-contract.json`, and all test fixtures. Blocks `/dev` if contracts fail. |
 | **Regional Adapter** | Localizer | Injects Egypt/Red Sea/MENA adaptations: Arabic RTL, Fawry/Vodafone Cash, Law 151/2020 data residency, EGP/SAR/AED handling, tourism/hospitality features. |
 | **Deployment Specialist** | Deployer | Manages Vercel deployments, environment variables, preview/production separation. Only invoked via `/deploy`. |
-| **Integrity Auditor** | Inspector | Runs path integrity, sovereignty checks, and compliance audits. Executes `audit_path_integrity.py`. |
+| **Integrity Auditor** | Inspector | Runs path integrity, sovereignty checks, and `/audit` suite analysis. |
+| **CI Specialist** | Workflow Tech| Autonomous repair of CI/CD failures via `/git action fix`. |
+| **Security Auditor** | Sentinel | Predictive security patching and hardening via `/git security fix`. |
+| **Visualize Agent** | Designer | High-fidelity asset generation via `/create image`. |
+| **Creator Agent** | Assembler | Scaffolds high-fidelity content via `/create content`. |
+| **Scraper Agent** | Ingestor | High-performance data extraction via `/content scrape`. |
 
 ---
 

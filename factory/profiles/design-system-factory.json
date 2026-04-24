@@ -15,7 +15,7 @@
     ]
   },
   "governance": {
-    "rules": "factory/library/08-media-production/visual-design/commands/COMMANDS.md"
+    "rules": "factory/library/20-content-strategy/08-media-production/visual-design/commands/COMMANDS.md"
   },
   "name": "Design System Factory",
   "profile_id": "design-system-factory"

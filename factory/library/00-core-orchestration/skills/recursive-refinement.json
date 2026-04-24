@@ -1,0 +1,9 @@
+{
+  "id": "recursive-refinement",
+  "version": "1.0.0",
+  "library_category": "Evolution Automation",
+  "sovereign_tier": "OMEGA",
+  "functionality": "Autonomous optimization and refactoring of legacy skills based on OMEGA-tier architectural standards.",
+  "protocols": ["Skill-Refactor-v2", "Pattern-Normalization"],
+  "traceability_hash": "sha256:evo-refine-v1-2026-04-24"
+}

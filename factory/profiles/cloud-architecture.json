@@ -15,7 +15,7 @@
     ]
   },
   "governance": {
-    "rules": "factory/library/02-web-platforms/cloud-architecture/commands/COMMANDS.md"
+    "rules": "factory/library/30-web-platforms/02-web-platforms/cloud-architecture/commands/COMMANDS.md"
   },
   "name": "Cloud Architecture",
   "profile_id": "cloud-architecture"

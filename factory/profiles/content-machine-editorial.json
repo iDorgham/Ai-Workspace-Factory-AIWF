@@ -34,7 +34,7 @@
     ]
   },
   "governance": {
-    "rules": "factory/library/06-branding-content/content-creation/commands/COMMANDS.md"
+    "rules": "factory/library/20-content-strategy/06-branding-content/content-creation/commands/COMMANDS.md"
   },
   "name": "Content Machine Editorial",
   "profile_id": "content-machine-editorial"

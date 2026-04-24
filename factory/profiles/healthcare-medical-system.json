@@ -18,7 +18,7 @@
     ]
   },
   "governance": {
-    "rules": "factory/library/11-industry-verticals/hospital-clinic/commands/COMMANDS.md"
+    "rules": "factory/library/40-verticals/11-industry-verticals/hospital-clinic/commands/COMMANDS.md"
   },
   "name": "Healthcare Medical System",
   "profile_id": "healthcare-medical-system"

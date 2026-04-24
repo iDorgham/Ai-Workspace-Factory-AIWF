@@ -18,7 +18,7 @@
     ]
   },
   "governance": {
-    "rules": "factory/library/11-industry-verticals/f-and-b-ops/commands/COMMANDS.md"
+    "rules": "factory/library/40-verticals/11-industry-verticals/f-and-b-ops/commands/COMMANDS.md"
   },
   "name": "Hospitality Restaurant Ops",
   "profile_id": "hospitality-restaurant-ops"

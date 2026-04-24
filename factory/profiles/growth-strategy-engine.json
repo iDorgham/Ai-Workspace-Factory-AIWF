@@ -15,7 +15,7 @@
     ]
   },
   "governance": {
-    "rules": "factory/library/04-business-strategy/growth-strategy/commands/COMMANDS.md"
+    "rules": "factory/library/20-content-strategy/04-business-strategy/growth-strategy/commands/COMMANDS.md"
   },
   "name": "Growth Strategy Engine",
   "profile_id": "growth-strategy-engine"

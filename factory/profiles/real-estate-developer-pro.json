@@ -18,7 +18,7 @@
     ]
   },
   "governance": {
-    "rules": "factory/library/11-industry-verticals/real-estate-dev/commands/COMMANDS.md"
+    "rules": "factory/library/40-verticals/11-industry-verticals/real-estate-dev/commands/COMMANDS.md"
   },
   "name": "Real Estate Developer Pro",
   "profile_id": "real-estate-developer-pro"

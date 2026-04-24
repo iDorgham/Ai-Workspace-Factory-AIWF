@@ -18,7 +18,7 @@
     ]
   },
   "governance": {
-    "rules": "factory/library/11-industry-verticals/tourism-travel/commands/COMMANDS.md"
+    "rules": "factory/library/40-verticals/11-industry-verticals/tourism-travel/commands/COMMANDS.md"
   },
   "name": "Tourism Travel Suite",
   "profile_id": "tourism-travel-suite"

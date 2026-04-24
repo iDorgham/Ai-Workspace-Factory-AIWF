@@ -15,7 +15,7 @@
     ]
   },
   "governance": {
-    "rules": "factory/library/08-media-production/video-production/commands/COMMANDS.md"
+    "rules": "factory/library/20-content-strategy/08-media-production/video-production/commands/COMMANDS.md"
   },
   "name": "Cinematic Video Production",
   "profile_id": "cinematic-video-production"

@@ -43,18 +43,40 @@
 | `/memory load` | memory-manager | `.ai/memory/context-cache/` | Restored session context | No |
 | `/memory clear` | memory-manager | Active session | Cleared temp context | No |
 | `/budget check` | guide-agent | Current token usage | Usage report + recommendations | No |
-| `/plan` | spec-architect | Current phase context | **Blueprint.** Provision 5+ specs (`spec.md` + `spec.yaml`) | No |
-| `/plan content` | content-planner-agent | `discovery-interview.json` | **Discover & Plan.** Runs discovery session → generates phase-based `content-plan.md` | No |
-| `/plan status` | orchestrator | `plan/` directories | **Status.** Phase progress and architectural gap analysis | No |
-| `/plan audit` | integrity-auditor | All library components | **Health.** OMEGA-tier Health Report and performance audit | No |
-| `/plan release` | deployment-specialist | Current phase specs | **Release.** Silent versioning and immutable Git tagging | No |
-| `/dev` | contract-guardian | Validated `spec.yaml` | **Implement.** Spec-governed code generation and integration | No |
-| `/git` | deployment-specialist | Workspace state | **Sovereign.** Branch integrity and version control sequences | No |
-| `/test` | integrity-auditor | Source code + contracts | **Validate.** Contract testing and Law 151 residency audit | No |
-| `/fix` | healing-bot | Error logs / lint drift | **Heal.** Recursive remediation and drift repair logs | No |
-| `/sync` | scraper-agent | Registry / Shards | **Equilibrium.** Propagates state across distributed shards | No |
-| `/deploy` | deployment-specialist | Approved builds | **Distribute.** Shard distribution to cloud infrastructure | No |
-| `/content` | creator-agent | Brand voice / keyword maps | **Creative.** Production of sitemaps, flow, and high-fidelity content | No |
+| Command | Subcommand | Agent | Purpose |
+| :--- | :--- | :--- | :--- |
+| **`/plan`** | `content` | content-planner | Structured discovery interview |
+| | `blueprint` | spec-architect | Generates high-density SDD specs |
+| | `status` | orchestrator | Real-time phase progress/gap audit |
+| | `review` | orchestrator | Strategic alignment vs intent check |
+| | `adr` | spec-architect | Auto-generates ADRs with hashes |
+| **`/create`** | `content` | creator-agent | Scaffolds content into workspace |
+| | `image` | visualize-agent | Generates industrial visual assets |
+| | `page` | creator-agent | Builds page structures with locale |
+| | `spec` | spec-architect | Generates specs and test fixtures |
+| | `docs` | docs-curator | Auto-generates system documentation |
+| **`/dev`** | `init` | factory-manager | Env setup and dependency resolution |
+| | `implement` | developer-agent | Autonomous spec-governed generation |
+| | `test` | integrity-auditor| Multi-tier compliance testing |
+| | `fix` | healing-bot | Recursive remediation of drift |
+| | `build` | deployment-spec | Compiles and optimizes artifacts |
+| **`/audit`** | `health` | integrity-auditor| Industrial health scoring |
+| | `content` | creator-agent | Multi-locale consistency audit |
+| | `security` | security-auditor | SAST/DAST and secrets scanning |
+| | `logs` | orchestrator | Log aggregation and tracing |
+| | `seo` | seo-agent | Technical SEO and meta-audit |
+| **`/git`** | `auto` | repository-agent | Silent versioning and tagging |
+| | `release` | deployment-spec | Sovereign handover and release |
+| | `review` | repository-agent | PR consensus and auto-approval |
+| | `rollback` | repository-agent | Recovery to stable compliance state |
+| | `deploy` | deployment-spec | Shard distribution with routing |
+| **`/guide`** | `brainstorm` | master-guide | Multi-agent strategy consensus |
+| | `learn` | recursive-engine | Friction-to-skill conversion |
+| | `heal` | healing-bot | Predictive structural monitoring |
+| | `chaos` | chaos-validator | Stress testing and resilience |
+| | `dashboard` | orchestrator | Real-time KPI/Health UI |
+| | `tutor` | guide-agent | Interactive pedagogy and onboarding |
+| **`/help`** | | guide-agent | usage reference and sovereignty info |
 
 ---
 

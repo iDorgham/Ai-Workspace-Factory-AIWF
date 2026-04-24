@@ -15,7 +15,7 @@
     ]
   },
   "governance": {
-    "rules": "factory/library/08-media-production/image-production/commands/COMMANDS.md"
+    "rules": "factory/library/20-content-strategy/08-media-production/image-production/commands/COMMANDS.md"
   },
   "name": "Image Asset Engine",
   "profile_id": "image-asset-engine"

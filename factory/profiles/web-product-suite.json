@@ -15,7 +15,7 @@
     ]
   },
   "governance": {
-    "rules": "factory/library/02-web-platforms/web-developing/commands/COMMANDS.md"
+    "rules": "factory/library/30-web-platforms/02-web-platforms/web-developing/commands/COMMANDS.md"
   },
   "name": "Web Product Suite",
   "profile_id": "web-product-suite"

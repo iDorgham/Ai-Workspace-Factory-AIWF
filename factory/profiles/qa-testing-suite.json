@@ -15,7 +15,7 @@
     ]
   },
   "governance": {
-    "rules": "factory/library/10-operations-qa/quality-assurance/commands/COMMANDS.md"
+    "rules": "factory/library/10-engineering-devops/10-operations-qa/quality-assurance/commands/COMMANDS.md"
   },
   "name": "Qa Testing Suite",
   "profile_id": "qa-testing-suite"

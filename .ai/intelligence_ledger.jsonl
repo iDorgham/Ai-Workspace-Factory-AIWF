@@ -1,0 +1,2 @@
+{"ts": "2026-04-24T05:00:00Z", "source": "system-init", "consensus_hash": "alpha-zero", "status": "READY", "compliance_id": "LAW151-SYNC-015"}
+{"ts": "2026-04-24T05:00:32.898420", "source": "node-mena-01", "consensus_hash": "5d5e027e6269f2c97d9bea18d89afc2231ddbce1c7b41ae5d535a213a06779c7", "status": "AUTHORIZED", "compliance_id": "LAW151-SYNC-015"}

@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-04-24T03:16:12.759753",
+  "workspace_path": "/workspaces/mena-financial-app",
+  "shard_id": "aws:me-central-1",
+  "data_classification": "MENA-SENSITIVE",
+  "action": "AUTONOMOUS_DATA_PURGE",
+  "reason": "Law 151/2020 violation: MENA-SENSITIVE data residue on aws:me-central-1",
+  "status": "EXECUTED",
+  "purge_id": "PURGE-1776989772"
+}

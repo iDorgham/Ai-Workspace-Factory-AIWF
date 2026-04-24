@@ -18,7 +18,7 @@
     ]
   },
   "governance": {
-    "rules": "factory/library/11-industry-verticals/fitness-wellness/commands/COMMANDS.md"
+    "rules": "factory/library/40-verticals/11-industry-verticals/fitness-wellness/commands/COMMANDS.md"
   },
   "name": "Lifestyle Fitness Gym",
   "profile_id": "lifestyle-fitness-gym"

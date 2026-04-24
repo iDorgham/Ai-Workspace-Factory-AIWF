@@ -15,7 +15,7 @@
     ]
   },
   "governance": {
-    "rules": "factory/library/01-software-engineering/developing/commands/COMMANDS.md"
+    "rules": "factory/library/10-engineering-devops/01-software-engineering/developing/commands/COMMANDS.md"
   },
   "name": "Enterprise Developing",
   "profile_id": "enterprise-developing"

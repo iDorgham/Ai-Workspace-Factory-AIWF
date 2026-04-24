@@ -1,40 +1,27 @@
-# Sovereign Workspace — Versioning Policy
+# Sovereign Workspace — Versioning Policy v13.0.0
 
 ## Canonical Rule
-
 This file is the single source of truth for workspace versioning behavior.
 If other docs conflict, this policy wins.
 
-## File Classes
+## 🛰️ Silent Git Protocol (`/git auto`)
+1. **Autonomous Mutation**: When active, all structural and code changes are automatically committed to the current branch.
+2. **Commit Pattern**: `feat({workspace}): {description} [Reasoning: {hash}]`
+3. **Traceability**: Every mutation must include an ISO-8601 timestamp and a reasoning hash linked to the session memory.
+4. **Immutable Tagging**: Phase completion triggers a workspace-specific tag (e.g., `v13.1.0-sovereign-web`).
 
-- `governance`: Replace in place with explicit changelog notes.
-- `logs`: Append-only JSONL/JSON artifacts with timestamps.
-- `generated_content`: Version by command and slug.
-- `analysis_exports`: Version by timestamp or explicit incremental suffix.
+## 📁 File Classes
+- **Governance**: Replace in place with explicit changelog notes.
+- **Logs**: Append-only JSONL/JSON artifacts with timestamps.
+- **Generated Content**: Section-based assembly with versioned full-page aggregates.
+- **Analysis Exports**: Version by timestamp or explicit incremental suffix.
 
-## Naming Conventions
+## ⚙️ Allowed Modes
+- **Silent Automation**: Default for `/git auto`. Full autonomy for version control.
+- **Manual Handover**: Triggered via `/git release`. Finalizes version and creates immutable tag.
+- **In-place Optimization**: Overwrite allowed only when a backup is created in `.ai/memory/backups/`.
 
-- **Timestamped artifacts**: `name-[timestamp].json` or `name-[timestamp].jsonl`
-- **Incremental versions**: `name_v2.md`, `name_v3.md`
-- **Tool-specific variants** (only when command runs in parallel or explicit compare mode):
-  `name_[tool]_v2.md`
-
-## Allowed Modes
-
-- **Default mode**: global incremental versioning (`_vN`) without tool suffix.
-- **Parallel/compare mode**: tool-suffixed versioning is allowed to preserve alternatives.
-- **In-place optimization mode**: overwrite allowed only when a backup is created first.
-
-## Backup Requirement
-
-Before any in-place overwrite:
-
-1. Save backup to `.ai/memory/backups/` with timestamp.
-2. Apply update.
-3. On failure, restore backup and log rollback.
-
-## Prohibited Patterns
-
-- Mixing malformed duplicated suffixes (for example: `file.mdname.md`)
-- Using both global and tool versioning for the same artifact in one run without explicit merge step
-- Overwriting non-overwritable files defined by ownership contracts
+## 🚫 Prohibited Patterns
+- Overwriting non-overwritable files defined by ownership contracts.
+- Committing without a reasoning hash when `/git auto` is active.
+- Manual tagging that conflicts with factory versioning schema.

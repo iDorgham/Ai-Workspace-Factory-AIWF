@@ -18,7 +18,7 @@
     ]
   },
   "governance": {
-    "rules": "factory/library/06-branding-content/branding/commands/COMMANDS.md"
+    "rules": "factory/library/20-content-strategy/06-branding-content/branding/commands/COMMANDS.md"
   },
   "name": "Agency Branding Identity",
   "profile_id": "agency-branding-identity"

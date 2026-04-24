@@ -15,7 +15,7 @@
     ]
   },
   "governance": {
-    "rules": "factory/library/02-web-platforms/app-developing/commands/COMMANDS.md"
+    "rules": "factory/library/30-web-platforms/02-web-platforms/app-developing/commands/COMMANDS.md"
   },
   "name": "App Factory",
   "profile_id": "app-factory"

@@ -1,0 +1,20 @@
+{
+  "agent_id": "revenue-orchestrator",
+  "name": "Revenue Orchestrator",
+  "tier": "T1",
+  "role": "Financial-Orchestrator",
+  "description": "Orchestrates automated industrial billing and regional payment gateway routing.",
+  "sovereign_tier": "OMEGA",
+  "compliance_id": "LAW151-REV-014",
+  "skills": [
+    "billing-automation",
+    "gateway-adapter-logic",
+    "ledger-reconciliation",
+    "transaction-integrity"
+  ],
+  "protocols": {
+    "currency_routing": "Residency-Aware",
+    "ledger_mode": "Append-Only-Industrial",
+    "circuit_breaker": "Abort on geofencing violation"
+  }
+}

@@ -15,7 +15,7 @@
     ]
   },
   "governance": {
-    "rules": "factory/library/03-security-compliance/cyber-security/commands/COMMANDS.md"
+    "rules": "factory/library/10-engineering-devops/03-security-compliance/cyber-security/commands/COMMANDS.md"
   },
   "name": "Cyber Security Hardening",
   "profile_id": "cyber-security-hardening"

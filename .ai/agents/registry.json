@@ -1,0 +1,70 @@
+{
+  "agents": {
+    "T0_ORCHESTRATORS": {
+      "master-guide": {
+        "role": "Orchestrator",
+        "auto_mode": true,
+        "silent_mode": false,
+        "sovereign_tier": "OMEGA",
+        "compliance_id": "LAW151-GLOBAL-000",
+        "library_bindings": ["multi-tool-orchestration", "recursive-pattern-caching"]
+      },
+      "healing-bot-v2": {
+        "role": "Supervisor",
+        "auto_mode": true,
+        "silent_mode": true,
+        "sovereign_tier": "OMEGA",
+        "compliance_id": "LAW151-GLOBAL-001",
+        "library_bindings": ["predictive-healing-pattern", "auto-heal-logic"]
+      }
+    }
+  },
+  "specialists": {
+    "T1_SPECIALISTS": {
+      "deployment-specialist": {
+        "role": "Deployer",
+        "auto_mode": true,
+        "silent_mode": true,
+        "sovereign_tier": "OMEGA",
+        "compliance_id": "LAW151-DEPLOY-012",
+        "library_bindings": ["shard-propagation", "residency-routing"]
+      },
+      "security-auditor": {
+        "role": "Sentinel",
+        "auto_mode": true,
+        "silent_mode": true,
+        "sovereign_tier": "OMEGA",
+        "compliance_id": "LAW151-SEC-013",
+        "library_bindings": ["vulnerability-prediction", "automated-patching"]
+      },
+      "revenue-orchestrator": {
+        "role": "Financial-Orchestrator",
+        "auto_mode": true,
+        "silent_mode": true,
+        "sovereign_tier": "OMEGA",
+        "compliance_id": "LAW151-REV-014",
+        "library_bindings": ["billing-automation", "gateway-adapter-logic"]
+      },
+      "neural-fabric-sync": {
+        "role": "Sync-Orchestrator",
+        "auto_mode": true,
+        "silent_mode": true,
+        "sovereign_tier": "OMEGA",
+        "compliance_id": "LAW151-SYNC-015",
+        "library_bindings": ["sharded-state-sync", "consensus-verification"]
+      },
+      "recursive-engine": {
+        "role": "Scientist",
+        "auto_mode": true,
+        "silent_mode": true,
+        "sovereign_tier": "OMEGA",
+        "compliance_id": "LAW151-EVO-016",
+        "library_bindings": ["log-friction-analysis", "pattern-extraction"]
+      }
+    }
+  },
+  "metadata": {
+    "registry_version": "13.0.0 OMEGA",
+    "evolution_hash": "sha256:aiwf-v13.0.0-agent-reg-2026-04-24T03:15:00Z"
+  }
+}

@@ -15,7 +15,7 @@
     ]
   },
   "governance": {
-    "rules": "factory/library/03-security-compliance/fintech-compliance/commands/COMMANDS.md"
+    "rules": "factory/library/10-engineering-devops/03-security-compliance/fintech-compliance/commands/COMMANDS.md"
   },
   "name": "Fintech Compliance Launch",
   "profile_id": "fintech-compliance-launch"

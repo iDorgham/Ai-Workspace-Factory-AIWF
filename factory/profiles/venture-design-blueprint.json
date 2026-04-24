@@ -15,7 +15,7 @@
     ]
   },
   "governance": {
-    "rules": "factory/library/04-business-strategy/venture-design/commands/COMMANDS.md"
+    "rules": "factory/library/20-content-strategy/04-business-strategy/venture-design/commands/COMMANDS.md"
   },
   "name": "Venture Design Blueprint",
   "profile_id": "venture-design-blueprint"

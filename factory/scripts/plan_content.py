@@ -403,15 +403,26 @@ def generate_plan(workspace: str, answers: dict) -> str:
     timestamp     = datetime.now().isoformat()
     content_type  = answers.get("content_type", "website")
 
+    # --- Git Versioning Logic ---
+    base_version = "13.0.0" # Current Factory OMEGA
+    next_release = "13.1.0"
+    branch_name  = f"feat/{workspace}-content-v{next_release}"
+    git_strategy = "Sovereign Industrial (Standard)"
+
     plan_content = plan_template
     plan_content = plan_content.replace("{WORKSPACE_NAME}", workspace)
     plan_content = plan_content.replace("{TIMESTAMP}", timestamp)
     plan_content = plan_content.replace("{HOME_STYLE}", answers.get("Q1.1", "Not specified"))
     plan_content = plan_content.replace("{PRIMARY_GOAL}", answers.get("Q1.2", "Not specified"))
-    plan_content = plan_content.replace("{LANGUAGES}", answers.get("Q4.1", "Not specified"))
+    plan_content = plan_content.replace("{LANGUAGES}", str(answers.get("Q4.1", "Not specified")))
     plan_content = plan_content.replace("{SEO_PHASE}", "✅ Enabled" if answers.get("Q5.1") else "❌ Skipped")
     plan_content = plan_content.replace("{RTL_SUPPORT}", "✅ Yes" if answers.get("Q4.3") else "❌ No")
     plan_content = plan_content.replace("{ELEMENTS_COUNT}", str(answers.get("Q6.1", "TBD")))
+    plan_content = plan_content.replace("{GIT_STRATEGY}", git_strategy)
+    plan_content = plan_content.replace("{BRANCH_NAME}", branch_name)
+    plan_content = plan_content.replace("{BASE_VERSION}", base_version)
+    plan_content = plan_content.replace("{NEXT_RELEASE}", next_release)
+    plan_content = plan_content.replace("{GIT_BRANCH_NAME}", branch_name)
     plan_content = plan_content.replace("{workspace}", workspace)
     plan_content = plan_content.replace("{SITEMAP_TREE}", "│   ├── en/\n│   └── ar-eg/")
     plan_content = plan_content.replace("{LEGAL_TREE}", "│   ├── privacy_policy/\n│   ├── terms_of_service/\n│   └── data_residency_protocol/")

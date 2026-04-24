@@ -1,0 +1,40 @@
+routing_map:
+  commands:
+    "/plan":
+      agent: "spec-architect"
+      subcommands:
+        content:   { skill: "bilingual-content", mode: "interactive" }
+        blueprint: { skill: "sdd-blueprint-standard", mode: "silent" }
+        status:    { skill: "workspace-audit-orchestrator", mode: "silent" }
+    "/dev":
+      agent: "developer-agent"
+      subcommands:
+        implement: { skill: "workspace-assembly-from-library", mode: "silent", gate: "omega-v2" }
+        test:      { skill: "integrity-auditor-logic", mode: "silent" }
+        fix:       { skill: "predictive-healing-pattern", mode: "silent" }
+    "/git":
+      agent: "repository-agent"
+      subcommands:
+        auto:      { skill: "silent-git-protocol", mode: "silent" }
+        release:   { skill: "sovereign-handover-protocol", mode: "interactive", gate: "omega-v2" }
+    "/guide":
+      agent: "swarm-router-v3"
+      subcommands:
+        brainstorm: { skill: "multi-agent-orchestration", mode: "interactive" }
+        learn:      { skill: "recursive-silent-learning", mode: "silent" }
+
+automation_triggers:
+  on_health_drop:
+    threshold: 85
+    action: "/guide heal --predictive"
+  on_spec_validated:
+    action: "/git auto --silent"
+
+circuit_breaker:
+  enabled: true
+  max_retries: 3
+  pause_on_violation: true
+
+metadata:
+  traceability_hash: "sha256:aiwf-v13.0.0-routing-fsm-2026-04-24T03:15:00Z"
+  compliance_id: "LAW151-GLOBAL-004"

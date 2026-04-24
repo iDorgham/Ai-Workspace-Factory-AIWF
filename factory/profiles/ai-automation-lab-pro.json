@@ -18,7 +18,7 @@
     ]
   },
   "governance": {
-    "rules": "factory/library/11-industry-verticals/ai-automation-lab/commands/COMMANDS.md"
+    "rules": "factory/library/40-verticals/11-industry-verticals/ai-automation-lab/commands/COMMANDS.md"
   },
   "name": "Ai Automation Lab Pro",
   "profile_id": "ai-automation-lab-pro"

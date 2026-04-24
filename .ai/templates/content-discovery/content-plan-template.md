@@ -17,6 +17,20 @@
 | **SEO Phase** | {SEO_PHASE} |
 | **RTL Support** | {RTL_SUPPORT} |
 | **Interactive Elements** | {ELEMENTS_COUNT} selected |
+| **Git Strategy** | {GIT_STRATEGY} (Branch: {BRANCH_NAME}) |
+
+---
+
+## 🛠️ Git Release & Versioning Strategy
+
+| Item | Specification |
+|:---|:---|
+| **Base Version** | {BASE_VERSION} |
+| **Next Release** | {NEXT_RELEASE} |
+| **Target Branch** | `{GIT_BRANCH_NAME}` |
+| **Commit Pattern** | `feat({workspace}): {description} [Reasoning: {hash}]` |
+| **Release Tag** | `v{NEXT_RELEASE}-{workspace}` |
+| **Automation** | `/git auto` enabled (Silent Versioning) |
 
 ---
 

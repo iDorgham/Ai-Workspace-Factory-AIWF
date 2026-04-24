@@ -15,7 +15,7 @@
     ]
   },
   "governance": {
-    "rules": "factory/library/12-meta-engine/meta-orchestration/commands/COMMANDS.md"
+    "rules": "factory/library/00-core-orchestration/12-meta-engine/meta-orchestration/commands/COMMANDS.md"
   },
   "name": "Factory Library Maintenance",
   "profile_id": "factory-library-maintenance"

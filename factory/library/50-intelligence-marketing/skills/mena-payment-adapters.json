@@ -1,0 +1,9 @@
+{
+  "id": "mena-payment-adapters",
+  "version": "1.0.0",
+  "library_category": "Fintech & Payments",
+  "sovereign_tier": "OMEGA",
+  "functionality": "Standardized industrial bridges for Fawry and Vodafone Cash payment gateways.",
+  "protocols": ["Fawry-Pay-v2", "Vodafone-Cash-Transfer", "Stripe-Connect-MENA"],
+  "traceability_hash": "sha256:mena-pay-v1-2026-04-24"
+}

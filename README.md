@@ -1,4 +1,4 @@
-# 🌌 AI Workspace Factory (AIWF) — Sovereign Galaxy v13.0.0
+# 🏗️ AI Workspace Factory (AIWF) v13.0.0 "OMEGA"
 
 [![Status: Global Equilibrium](https://img.shields.io/badge/Status-Global%20Equilibrium-brightgreen?style=for-the-badge&logo=appveyor)](https://github.com/iDorgham/Ai-Workspace-Factory-AIWF)
 [![Residency: Law 151 Compliant](https://img.shields.io/badge/Residency-Law%20151%20Compliant-blue?style=for-the-badge&logo=shield)](https://github.com/iDorgham/Ai-Workspace-Factory-AIWF)
@@ -90,25 +90,43 @@ graph LR
 
 ### 🛠️ Development & Distribution
 
-| `/plan` | **Blueprint** | **Architectural Blueprinting.** Orchestrates high-density SDD specifications (≥5 specs) to define phase boundaries. |
-| `/plan content` | **Discover** | **Content Discovery.** Runs a structured interview with the user to define pages, style, languages, and SEO — then generates a full phase-based content plan. |
-| `/plan status` | **Status** | **Structural Audit.** Executes real-time analysis of phase progress and architectural gap identification. |
-| `/plan audit` | **Health** | **Industrial Health Scoring.** Triggers deep-component analysis to maintain OMEGA-tier library equilibrium. |
-| `/plan release` | **Release** | **Sovereign Handover.** Automates silent versioning, traceability logging, and immutable Git tagging. |
-| `/dev` | **Implement** | **Autonomous Implementation.** Executes code generation strictly governed by validated `spec.yaml` contracts. |
-| `/git` | **Sovereign** | **Repository Sovereignty.** Manages distributed shard integrity and autonomous version control sequences. |
-| `/test` | **Validate** | **Compliance Validation.** Enforces strict contract testing and Law 151/2020 geospatial residency checks. |
-| `/fix` | **Heal** | **Recursive Remediation.** Triggers autonomous drift detection and self-healing of dependency paths. |
-| `/sync` | **Equilibrium** | **Global Equilibrium.** Propagates registry and memory state across distributed shards via P2P fabric. |
-| `/deploy --target=ID` | **Distribute** | **Shard Distribution.** Dispatches shards to heterogeneous cloud infrastructure with residency-aware routing. |
-| `/content` | **Creative** | **Creative Assembly.** Orchestrates sitemaps, information architecture, and high-fidelity content for digital assets. |
+| Command | Object | Purpose |
+| :--- | :--- | :--- |
+| **`/plan`** | `content`, `blueprint`, `status`, `review`, `adr` | **Discovery & Blueprinting.** Orchestrates discovery and SDD specs. |
+| **`/create`** | `content`, `image`, `page`, `spec`, `docs` | **Asset & Content.** Scaffolds and assembles digital assets. |
+| **`/dev`** | `init`, `implement`, `test`, `fix`, `build` | **Implement & Validate.** Spec-governed code generation. |
+| **`/audit`** | `health`, `content`, `security`, `logs`, `seo` | **Quality & Security.** Industrial health and compliance scoring. |
+| **`/git`** | `auto`, `release`, `review`, `rollback`, `deploy`| **Versioning & Shards.** Sovereign handover and distribution. |
+| **`/guide`** | `brainstorm`, `learn`, `heal`, `chaos`, `dashboard`, `tutor` | **Intelligence Layer.** Strategic ideation and self-healing. |
+| **`/help`** | `<command>` | **Discoverability.** usage examples and flag reference. |
 
 ### 🧠 Intelligence Interface
 
 | Command | Mode | Purpose |
 | :--- | :--- | :--- |
-| `/guide` | **Pedagogy** | **Recursive Pedagogy.** Synthesizes session memory to provide architectural pattern analysis and deterministic "Next Prompt" recommendations. |
-| `/brainstorm` | **Strategy** | **Strategic Ideation.** Orchestrates multi-agent consensus for complex architectural design and prompt-engineering strategies. |
+| **`/guide`** | **Pedagogy** | **Recursive Pedagogy.** Synthesizes session memory to provide architectural pattern analysis and deterministic "Next Prompt" recommendations. |
+| **`/brainstorm`** | **Strategy** | **Strategic Ideation.** Orchestrates multi-agent consensus for complex architectural design and prompt-engineering strategies. |
+
+---
+
+## 🔍 The Industrial Audit Suite
+
+AIWF v13.0.0 introduces the **Action-Object Audit Fabric**, allowing for granular validation of workspace health:
+
+*   **Structural Health (`/audit plan`)**: Deep-component analysis to detect architectural drift and library misalignments.
+*   **Content Quality (`/audit content`)**: Multi-locale consistency checking (EN vs AR-EG) and readability scoring.
+*   **Strategic Alignment (`/audit content plan`)**: Validates that the generated implementation matches the original discovery intent.
+*   **SEO Visibility (`/audit content seo`)**: Technical SEO audit including keyword mapping and metadata integrity.
+
+---
+
+## 🛰️ Sovereign Git & Automation
+
+Operational sovereignty is maintained through autonomous repository management:
+
+*   **Silent Versioning (`/git auto`)**: Activates the background automation that handles all Git mutations silently, allowing the user to focus strictly on creative and architectural tasks.
+*   **Traceability Logic**: Every commit and tag includes a **Reasoning Hash** linked to the specific discovery session that triggered the change.
+*   **Sovereign Handover (`/git release`)**: The final industrial gate. Automates version incrementing, release tagging, and shard distribution readiness.
 
 ---
 

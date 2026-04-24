@@ -1,0 +1,11 @@
+spec_version: "1.0.0"
+metadata:
+  title: "[Component Name]"
+  phase: "Phase [X]"
+  compliance_id: "LAW151-EG-[ID]"
+  traceability_hash: "sha256:..."
+contract:
+  governance: "Omega Gate v2"
+  region: "mena"
+  requirements: []
+  test_fixtures: []

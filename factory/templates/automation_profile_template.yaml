@@ -1,0 +1,9 @@
+profile:
+  id: "auto-[name]"
+  mode: "silent"
+  sovereign_tier: "OMEGA"
+  triggers: []
+  actions: []
+  circuit_breaker:
+    threshold: 85
+    max_retries: 3

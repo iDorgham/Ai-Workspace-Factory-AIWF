@@ -15,7 +15,7 @@
     ]
   },
   "governance": {
-    "rules": "factory/library/09-social-engagement/social-media/commands/COMMANDS.md"
+    "rules": "factory/library/20-content-strategy/09-social-engagement/social-media/commands/COMMANDS.md"
   },
   "name": "Social Media Engagement Viral",
   "profile_id": "social-media-engagement-viral"

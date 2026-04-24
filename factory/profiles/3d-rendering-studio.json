@@ -15,7 +15,7 @@
     ]
   },
   "governance": {
-    "rules": "factory/library/08-media-production/3d-production/commands/COMMANDS.md"
+    "rules": "factory/library/20-content-strategy/08-media-production/3d-production/commands/COMMANDS.md"
   },
   "name": "3D Rendering Studio",
   "profile_id": "3d-rendering-studio"

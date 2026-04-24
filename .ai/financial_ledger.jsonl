@@ -1,0 +1,2 @@
+{"ts": "2026-04-24T04:55:00Z", "tx_id": "system-init", "amount": 0.0, "currency": "EGP", "gateway": "internal", "status": "READY", "compliance_id": "LAW151-REV-014"}
+{"ts": "2026-04-24T04:55:38.446423", "tx_id": "a2aa850f-6af1-47c0", "amount": 100.0, "currency": "EGP", "gateway": "fawry", "status": "SUCCESS", "compliance_id": "LAW151-REV-014"}
