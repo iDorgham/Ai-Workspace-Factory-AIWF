@@ -1,15 +1,12 @@
 ---
-cluster: 11-industry-verticals
-category: islamic-finance
-domains: [sharia-fintech, ethical-investment, murabaha-ijara-physics]
-sector_compliance: certified
-id: agents:11-industry-verticals/islamic-finance/SentinelIslamicFinance
-version: 11.0.0
-tier: 1 (Certified)
-quality_gate: 100/100
-dependencies: [islamic-finance-mastery, ethical-finance-physics]
-subagents: [@ShariaReviewer, @Orchestrator, @ComplianceOfficer]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 
 # 👥 Sentinel - Islamic Finance
 

@@ -1,14 +1,12 @@
 ---
-cluster: 05-data-analytics
-category: analysis
-display_category: Agents
-id: agents:05-data-analytics/analysis/UxResearcher
-version: 10.0.0
-domains: [research-analytics]
-sector_compliance: pending
-dependencies: [developing-mastery]
-subagents: [@Cortex, @Orchestrator]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @UXResearcher — User Research & Usability Testing
 
 ## Core Identity

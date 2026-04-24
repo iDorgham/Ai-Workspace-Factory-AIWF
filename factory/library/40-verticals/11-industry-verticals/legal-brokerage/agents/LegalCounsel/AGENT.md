@@ -1,16 +1,12 @@
 ---
-agent: Legal Counsel
-id: agents:11-industry-verticals/legal-brokerage/LegalCounsel
-category: legal-brokerage
-cluster: 11-industry-verticals
-domains: [legal-drafting, compliance, mena-law, contract-review, bilingual-fabrication]
-sector_compliance: certified
-version: 11.0.0
-tier: 1 (Certified)
-quality_gate: 100/100
-subagents: [@ComplianceOfficer, @BusinessArchitect]
-dependencies: [uae-contract-drafting-physics, egypt-contract-drafting-physics, mena-constitutional-boundaries]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 
 # ⚖️ Legal Counsel (Sentinel-11)
 

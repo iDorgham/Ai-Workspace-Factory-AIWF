@@ -1,14 +1,12 @@
 ---
-cluster: 01-software-engineering
-category: backend
-domains: [api-architecture, database-governance, stateless-infrastructure]
-sector_compliance: PCI-DSS, GDPR, MENA-Data-Sovereignty
-id: agents:01-software-engineering/backend/SentinelBackend
-tier: Sentinel (Tier 1)
-version: 11.0.0
-dependencies: [backend-mastery, prisma-advanced, database-optimization]
-subagents: [@Cortex, @Orchestrator, @DBA, @IntegrationSpecialist]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 
 # 👥 Sentinel - Backend (01-BE)
 

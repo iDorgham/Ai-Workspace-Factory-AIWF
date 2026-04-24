@@ -1,14 +1,12 @@
 ---
-cluster: 04-business-strategy
-category: business
-domains: [venture-logic, growth-economics, market-dynamics]
-sector_compliance: MENA-Business-Law, UAE-Corporate-Tax, EGY-Trade-Regs
-id: agents:04-business-strategy/business/SentinelBusiness
-tier: Sentinel (Tier 1)
-version: 11.0.0
-dependencies: [business-mastery, growth-strategy-mastery, unit-economics]
-subagents: [@Cortex, @Orchestrator, @Founder, @Forecasting]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 
 # 👥 Sentinel - Business (04-BU)
 

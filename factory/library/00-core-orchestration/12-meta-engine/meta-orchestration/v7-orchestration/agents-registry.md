@@ -1,3 +1,13 @@
+---
+type: Generic
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # 🤖 AIWF v7.0.0 — Agents Registry
 # Library Component: 12-meta-engine/meta-orchestration/v7-orchestration/agents-registry.md
 # Version: 7.0.0 | Reasoning Hash: sha256:agents-v7-2026-04-23

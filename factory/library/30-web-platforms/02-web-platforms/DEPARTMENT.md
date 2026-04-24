@@ -1,3 +1,13 @@
+---
+type: Generic
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # 🏢 🌐 Web Platforms & Cloud - Master Index
 
 - **agents:02-web-platforms/api-design/SentinelApiDesign**: [SentinelApiDesign](./api-design/agents/SentinelApiDesign/AGENT.md)

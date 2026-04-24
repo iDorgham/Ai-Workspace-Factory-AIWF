@@ -1,14 +1,12 @@
 ---
-cluster: 02-web-platforms
-category: saas-platforms
-domains: [multi-tenancy, subscription-logic, platform-scalability]
-sector_compliance: PCI-DSS, GDPR, MENA-Data-Sovereignty, SOC2
-id: agents:02-web-platforms/saas-platforms/SentinelSaasPlatforms
-tier: Sentinel (Tier 1)
-version: 11.0.0
-dependencies: [saas-platforms-mastery, multi-tenant-isolation, stripe-official-mastery]
-subagents: [@Cortex, @Orchestrator, @MultiTenantArchitect, @BillingManager]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 
 # 👥 Sentinel - SaaS Platforms (02-SP)
 

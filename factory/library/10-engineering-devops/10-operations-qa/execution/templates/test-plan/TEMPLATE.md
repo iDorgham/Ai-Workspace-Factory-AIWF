@@ -1,3 +1,13 @@
+---
+type: Generic
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # Test Plan: [Feature / Release Name]
 
 > **Plan ID:** `[TEST-SPRINT-N-slug]`

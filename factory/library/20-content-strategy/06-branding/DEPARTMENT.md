@@ -1,3 +1,13 @@
+---
+type: Generic
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # 🏢 🏢 Branding & Emotional Resonance - Master Index
 
 - **agents:06-branding/agency-ops/SentinelAgencyOps**: [SentinelAgencyOps](./agency-ops/agents/SentinelAgencyOps/AGENT.md)

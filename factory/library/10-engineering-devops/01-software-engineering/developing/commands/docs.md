@@ -1,14 +1,12 @@
 ---
-name: docs
-description: Automated documentation updates — changelog, version badge, PRD, feature log, README, release.
-cluster: developing
-category: commands
-display_category: Commands
-id: commands:developing/commands/docs
-version: 10.0.0
-domains: [engineering-core]
-sector_compliance: pending
+type: Command
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # /docs — Documentation Automation
 
 Use `/docs` to update project documentation automatically after shipping a feature, cutting a release, or organizing the docs folder.

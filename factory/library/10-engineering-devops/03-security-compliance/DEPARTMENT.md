@@ -1,3 +1,13 @@
+---
+type: Generic
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # 🏢 🛡️ Security & Compliance - Master Index
 
 - **agents:03-security-compliance/cyber-security/Security**: [Security](./cyber-security/agents/Security/AGENT.md)

@@ -1,12 +1,12 @@
 ---
-cluster: execution
-category: commands
-display_category: Commands
-id: commands:execution/commands/contract
-version: 10.0.0
-domains: [product-delivery]
-sector_compliance: pending
+type: Command
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # /contract — Auto-Generate & Audit
 
 > **SDD default:** Contracts are **generated automatically** from the confirmed spec **`Data Shape`** in **`.ai/plans/active/features/[phase]/[spec]/plan.md`**, mirrored in **`contracts.md`**, then synced to **`packages/shared/src/contracts/[domain].ts`**. Use this command for **manual overrides**, **audits**, **diff/history**, or **legacy** flat **`features/[id]/plan.md`** migrations.

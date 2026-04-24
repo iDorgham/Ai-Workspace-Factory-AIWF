@@ -1,7 +1,12 @@
 ---
-name: vscode-workspace-setup
-description: Configures VS Code workspaces with optimal settings, extensions, tasks, and debugging for team consistency. Use when users request "VS Code setup", "workspace settings", "team VS Code config", "editor configuration", or "devcontainer setup".
+type: Skill
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 
 # VS Code Workspace Setup
 

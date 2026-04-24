@@ -1,8 +1,12 @@
 ---
-name: "Real Estate Brokerage Mastery Mastery"
-description: "High-density technical mastery of Real Estate Brokerage Mastery Mastery"
-version: "4.1.0"
+type: Skill
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 
 # 🛠 Skill: Real Estate Brokerage Mastery Mastery
 

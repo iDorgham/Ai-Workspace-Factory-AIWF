@@ -1,14 +1,12 @@
 ---
-name: man
-description: One Man — one command, seven domains (Code, Brand, SaaS, Marketing, Business, Content, Copywrite). Subcommands give more power. Tasks, settings, mindset, inspire, run, ship.
-cluster: developing
-category: commands
-display_category: Commands
-id: commands:developing/commands/man
-version: 10.0.0
-domains: [engineering-core]
-sector_compliance: pending
+type: Command
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # /man — One Man
 
 **One command, seven domains.** Subcommands **give more power** — faster, easier workflow. Task manager, settings, mindset (change profile), inspire, run, ship.

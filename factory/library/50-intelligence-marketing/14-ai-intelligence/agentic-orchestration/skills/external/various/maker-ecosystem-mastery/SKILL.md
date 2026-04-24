@@ -1,3 +1,13 @@
+---
+type: Skill
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # Maker Ecosystem Integration Mastery
 
 This mastery hub synchronizes the **diverse official maker skills** currently active in the `.ai/skills` system that fall outside the primary cloud/auth/intelligence hubs. It ensures complete parity across the specialized technology ecosystem.

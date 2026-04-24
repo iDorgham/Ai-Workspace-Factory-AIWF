@@ -1,15 +1,12 @@
 ---
-cluster: 11-industry-verticals
-category: ecommerce-retail
-domains: [fulfillment-ops, inventory-parity, shopify-physics, retail-economics]
-sector_compliance: certified
-id: agents:11-industry-verticals/ecommerce-retail/SentinelEcommerceRetail
-version: 11.0.0
-tier: 1 (Certified)
-quality_gate: 100/100
-dependencies: [ecommerce-retail-mastery, shopify-official-mastery]
-subagents: [@InventoryManager, @LogisticsBot, @CustomerSuccessOracle]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 
 # 👥 Sentinel - Retail & eCommerce
 

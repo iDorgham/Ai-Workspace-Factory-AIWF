@@ -1,3 +1,13 @@
+---
+type: Skill
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # Workspace Factory API Routes
 
 **Template:** `.antigravity/templates/TEMPLATE_API_route.md` for full scaffold (GET/POST with auth, Zod, org scope).

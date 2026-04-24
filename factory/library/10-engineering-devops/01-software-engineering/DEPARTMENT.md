@@ -1,3 +1,13 @@
+---
+type: Generic
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # 🏢 💻 Software Engineering - Master Index
 
 - **agents:01-software-engineering/backend/SentinelBackend**: [SentinelBackend](./backend/agents/SentinelBackend/AGENT.md)

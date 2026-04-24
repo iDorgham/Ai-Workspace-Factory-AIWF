@@ -1,15 +1,12 @@
 ---
-cluster: 11-industry-verticals
-category: education-lms
-domains: [pedagogical-physics, academic-integrity, lms-governance, scorm-compliance]
-sector_compliance: certified
-id: agents:11-industry-verticals/education-lms/SentinelEducationLms
-version: 11.0.0
-tier: 1 (Certified)
-quality_gate: 100/100
-dependencies: [education-lms-mastery, lti-integration-physics]
-subagents: [@AcademicReviewer, @LMS-Admin, @StudentSupportBot]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 
 # 👥 Sentinel - EdTech & LMS
 

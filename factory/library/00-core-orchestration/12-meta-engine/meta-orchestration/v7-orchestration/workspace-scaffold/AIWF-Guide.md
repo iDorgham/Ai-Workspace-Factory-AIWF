@@ -1,3 +1,13 @@
+---
+type: Generic
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # 🏭 AIWF v7.0.0 — Complete Command System Guide
 **Workspace Guide** | Auto-provisioned to `docs/00-guides/`
 *Last updated: 2026-04-23 | Version: 7.0.0*

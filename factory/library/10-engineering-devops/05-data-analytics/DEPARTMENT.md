@@ -1,3 +1,13 @@
+---
+type: Generic
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # 🏢 📊 Data Analytics & Research - Master Index
 
 - **agents:05-data-analytics/analysis/Analytics**: [Analytics](./analysis/agents/Analytics/AGENT.md)

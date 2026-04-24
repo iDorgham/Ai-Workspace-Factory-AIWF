@@ -1,12 +1,12 @@
 ---
-cluster: engineering-core
-category: subcommands
-display_category: Subcommands
-id: commands:engineering-core/subcommands/one-man-code-settings
-version: 10.0.0
-domains: [engineering-core]
-sector_compliance: pending
+type: Generic
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # One Man Code — Settings Wizard Flow
 
 When user runs **`/man settings`**, run this wizard step by step. One step at a time; confirm before proceeding to next.

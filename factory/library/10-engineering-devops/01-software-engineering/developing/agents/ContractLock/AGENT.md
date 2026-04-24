@@ -1,20 +1,12 @@
 ---
-agent: ContractLock
-id: agents:01-software-engineering/developing/ContractLock
-tier: Governance
-token_budget: 1500
-activation: [/contract, /contract validate, /contract lock, /contract diff, contract:auto-validate, post-/plan auto-lock, pre-build gates, schema file change, API route added]
-guards: [packages/shared/src/contracts/]
-blocks: [@Router (if unlocked), @Frontend, @Backend, @DBA (until locked)]
-cluster: 01-software-engineering
-category: developing
-display_category: Agents
-version: 10.0.0
-domains: [cyber-security-ops]
-sector_compliance: pending
-dependencies: [developing-mastery]
-subagents: [@Cortex, @Orchestrator]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @ContractLock — Schema Governance
 
 ## Core Mandate

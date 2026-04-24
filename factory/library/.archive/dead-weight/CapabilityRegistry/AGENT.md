@@ -1,19 +1,12 @@
 ---
-artifact: capability-registry
-format_version: 1.0
-canonical_roster: CLAUDE.md §2
-registry_entries: 35
-machine_readable: true
-cluster: 10-operations-qa
-category: execution
-display_category: Agents
-id: agents:10-operations-qa/execution/CapabilityRegistry
-version: 10.0.0
-domains: [product-delivery]
-sector_compliance: pending
-dependencies: [developing-mastery]
-subagents: [@Cortex, @Orchestrator]
+type: Generic
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # Capability Registry — Agent Index
 
 Machine-readable catalog for **@RuntimeOrchestrator** and **@Router** re-routing. Each entry maps a stable `agent_id` to handles, tier, primary capabilities, and fallback routing order.

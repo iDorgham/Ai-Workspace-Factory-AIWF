@@ -1,12 +1,12 @@
 ---
-cluster: developing
-category: commands
-display_category: Commands
-id: commands:developing/commands/guide
-version: 10.0.0
-domains: [engineering-core]
-sector_compliance: pending
+type: Command
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # Guide
 
 **Workflow guide** — interprets intent and fires the right command for phased development.

@@ -1,12 +1,12 @@
 ---
-template: MASTER_AUDIT_PRESENTATION_TEMPLATE
-id: templates:10-operations-qa/execution/MASTER_AUDIT_PRESENTATION_TEMPLATE
-cluster: 10-operations-qa
-category: execution
-tier: 💎 OMEGA
+type: Generic
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
 version: 1.0.0
-last_synced: 2026-04-18
 ---
+
+
 
 # 💎 Sovereign Factory: Master Audit Presentation [2026]
 

@@ -1,3 +1,13 @@
+---
+type: Generic
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # AIWF v7.0.0 — Omega Gate v2 Governance Rules
 # Library Component: 12-meta-engine/meta-orchestration/v7-orchestration/omega-gate-v2.md
 # Version: 7.0.0 | Reasoning Hash: sha256:omega-v7-2026-04-23

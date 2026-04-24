@@ -1,3 +1,13 @@
+---
+type: Generic
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # Browser-Use Subagent — Prompt Library
 
 Copy-paste prompts for UI verification. Use with **browser-use** subagent or cursor-ide-browser MCP.

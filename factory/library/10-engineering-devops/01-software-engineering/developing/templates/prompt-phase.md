@@ -1,3 +1,13 @@
+---
+type: Generic
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # Pro Prompt Template — Phase N (Part A or Single)
 
 Copy this template for each phase (or Part A of a long phase).

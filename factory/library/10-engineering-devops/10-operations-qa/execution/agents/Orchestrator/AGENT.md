@@ -1,19 +1,12 @@
 ---
-id: agents:10-operations-qa/execution/Orchestrator
-tier: 1
-role: Ops-Cluster Sentinel
-single_responsibility: Ensure operational excellence and delivery quality across the workspace.
-owns: 
-triggers: 
-subagents: [@Cortex, @Orchestrator]
-cluster: 10-operations-qa
-category: execution
-display_category: Agents
-version: 10.0.0
-domains: [product-delivery]
-sector_compliance: pending
-dependencies: [developing-mastery]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @Orchestrator — Ops-Cluster Sentinel
 
 ## System Prompt

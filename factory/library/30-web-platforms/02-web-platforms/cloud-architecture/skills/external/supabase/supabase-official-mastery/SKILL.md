@@ -1,3 +1,13 @@
+---
+type: Skill
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # Supabase Official Integration Mastery
 
 This mastery hub synchronizes the **Official Supabase agentic skills** currently active in the `.ai/skills` system. It provides the definitive technical architecture and standards for Backend-as-a-Service (BaaS) and high-performance Postgres management.

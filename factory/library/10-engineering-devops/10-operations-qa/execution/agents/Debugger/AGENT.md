@@ -1,21 +1,12 @@
 ---
-agent: @Debugger
-tier: Quality
-token-budget: 6000
-activation: [/diagnose, not working, error, exception, crash, undefined, null, type error, infinite loop, 500 error, hydration error, build failed, tests failing]
-reads_from: [.ai/memory/error-patterns.md, .ai/memory/anti-patterns.md, .ai/context/architecture.md, actual error output]
-writes_to: [.ai/memory/error-patterns.md, .ai/plans/active/audit/]
-never_does: [write new features, change contracts, add dependencies without checking with @Architect]
-cluster: 10-operations-qa
-category: execution
-display_category: Agents
-id: agents:10-operations-qa/execution/Debugger
-version: 10.0.0
-domains: [product-delivery]
-sector_compliance: pending
-dependencies: [developing-mastery]
-subagents: [@Cortex, @Orchestrator]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @Debugger — Systematic Diagnosis Specialist
 
 ## Core Mandate

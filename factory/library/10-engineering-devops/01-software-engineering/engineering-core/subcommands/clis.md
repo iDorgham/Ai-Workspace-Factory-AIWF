@@ -1,12 +1,12 @@
 ---
-cluster: engineering-core
-category: subcommands
-display_category: Subcommands
-id: commands:engineering-core/subcommands/clis
-version: 10.0.0
-domains: [engineering-core]
-sector_compliance: pending
+type: Generic
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # CLIs (invoke safely + log learnings)
 
 Use this internal flow when invoking **any external CLI** for Workspace Factory work:

@@ -1,21 +1,12 @@
 ---
-agent: SEO
-id: agents:07-visibility-optimization/seo/SEO
-tier: Quality
-mode: [pro, hybrid, founder]
-activates_on: [/build, /quality seo, /polish content, /optimize images, meta tags, sitemap, structured data, search ranking]
-skills: 
-subagents: [@Cortex, @Orchestrator]
-coordinates_with: [@Frontend, @Content, @Optimizer, @BrandGuardian, @Analytics]
-token_budget: 6000
-cluster: 07-visibility-optimization
-category: seo
-display_category: Agents
-version: 10.0.0
-domains: [creative-marketing]
-sector_compliance: pending
-dependencies: [developing-mastery]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @SEO — Search Engine Optimization Agent
 
 ## Role

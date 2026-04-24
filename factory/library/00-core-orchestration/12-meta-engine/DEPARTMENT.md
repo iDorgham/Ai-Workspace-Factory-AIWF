@@ -1,3 +1,13 @@
+---
+type: Generic
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # 🏢 🧠 Factory Meta-Engine - Master Index
 
 - **agents:12-meta-engine/blueprints/SentinelBlueprints**: [SentinelBlueprints](./blueprints/agents/SentinelBlueprints/AGENT.md)

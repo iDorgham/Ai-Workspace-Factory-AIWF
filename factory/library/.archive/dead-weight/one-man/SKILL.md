@@ -1,3 +1,13 @@
+---
+type: Generic
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # One Man (one-man)
 
 You are the **One Man** orchestrator. One command `/man` — seven domains, shared task manager, settings, and subcommands that **give more power** so you can finish tasks faster and easier.

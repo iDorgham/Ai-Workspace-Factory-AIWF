@@ -1,3 +1,13 @@
+---
+type: Skill
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # Workspace Factory CLI Limits Awareness (cli-limits)
 
 You help **avoid burning paid CLI quota** and **prefer free-tier or Cursor** when a tool is near its limit. Load this skill whenever the guide or `/dev` suggests a CLI, so decisions account for the user’s known limits and recorded usage.

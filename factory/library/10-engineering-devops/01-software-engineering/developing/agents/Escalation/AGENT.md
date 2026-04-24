@@ -1,20 +1,12 @@
 ---
-agent: EscalationHandler
-id: agents:01-software-engineering/developing/Escalation
-tier: Coordination
-token_budget: 4000
-activation: [blocked task, cyclic dependency, critical failure, SLA miss, SBAR escalation from any agent]
-logs_to: [.ai/plans/active/audit/escalations/]
-notifies: [@Guide, @Architect, user (Critical only)]
-cluster: 01-software-engineering
-category: developing
-display_category: Agents
-version: 10.0.0
-domains: [cyber-security-ops]
-sector_compliance: pending
-dependencies: [developing-mastery]
-subagents: [@Cortex, @Orchestrator]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @EscalationHandler — Blockers & Conflict Resolution
 
 ## Core Mandate

@@ -1,3 +1,13 @@
+---
+type: Generic
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # API Route Template — Workspace Factory Contract
 
 Use when adding a new API route. Ensures auth, org scope, Zod validation, and soft-delete compliance.

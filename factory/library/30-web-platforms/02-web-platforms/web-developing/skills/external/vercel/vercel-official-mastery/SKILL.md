@@ -1,3 +1,13 @@
+---
+type: Skill
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # Vercel Official Integration Mastery
 
 This mastery hub synchronizes the **Official Vercel and Vercel Labs skills** currently active in the `.ai/skills` system. It provides the definitive protocols for high-performance Web Platforms and AI-native applications.

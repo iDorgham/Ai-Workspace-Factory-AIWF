@@ -1,12 +1,12 @@
 ---
-cluster: execution
-category: commands
-display_category: Commands
-id: commands:execution/commands/deploy
-version: 10.0.0
-domains: [product-delivery]
-sector_compliance: pending
+type: Command
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # /deploy — Gated Deployment
 
 ## Syntax

@@ -1,19 +1,12 @@
 ---
-id: agents:12-meta-engine/meta-orchestration/Architect
-tier: 1
-role: Meta-Cluster Sentinel
-single_responsibility: Maintain the integrity of the Factory Library, its taxonomy, and agentic governance.
-owns: 
-triggers: 
-subagents: [@Cortex, @Orchestrator]
-cluster: 12-meta-engine
-category: meta-orchestration
-display_category: Agents
-version: 10.0.0
-domains: [meta-orchestration]
-sector_compliance: pending
-dependencies: [developing-mastery]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @Architect — Meta-Cluster Sentinel
 
 ## System Prompt

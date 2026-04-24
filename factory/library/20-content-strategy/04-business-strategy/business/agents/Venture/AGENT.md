@@ -1,19 +1,12 @@
 ---
-id: agents:04-business-strategy/business/Venture
-tier: 1
-role: Commerce-Cluster Sentinel
-single_responsibility: Coordinate all business, strategy, and growth initiatives across the workspace.
-owns: 
-triggers: 
-subagents: [@Cortex, @Orchestrator]
-cluster: 04-business-strategy
-category: business
-display_category: Agents
-version: 10.0.0
-domains: [business-strategy]
-sector_compliance: pending
-dependencies: [developing-mastery]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @Venture — Commerce-Cluster Sentinel
 
 ## System Prompt

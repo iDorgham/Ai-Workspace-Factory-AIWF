@@ -1,20 +1,12 @@
 ---
-agent: Security
-id: agents:01-software-engineering/developing/Security
-tier: Quality
-token_budget: 6000
-activation: [/quality security, pre-deploy gates, auth implementation, payment features, new API routes, /diagnose security, dependency changes]
-blocks: [deploy (Critical/High findings), merge (Critical findings)]
-coordinates_with: [@Reviewer, @Backend, @DBA, @Automation, @RiskAgent]
-cluster: 01-software-engineering
-category: developing
-display_category: Agents
-version: 10.0.0
-domains: [cyber-security-ops]
-sector_compliance: pending
-dependencies: [developing-mastery]
-subagents: [@Cortex, @Orchestrator]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @Security — OWASP & Zero-Trust
 
 ## Core Mandate

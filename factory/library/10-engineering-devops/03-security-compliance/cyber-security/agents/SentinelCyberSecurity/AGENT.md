@@ -1,14 +1,12 @@
 ---
-cluster: 03-security-compliance
-category: cyber-security
-domains: [threat-intelligence, zero-trust-governance, vulnerability-management]
-sector_compliance: OWASP-SAMM, ISO-27001, UAE-SESA, GDPR
-id: agents:03-security-compliance/cyber-security/SentinelCyberSecurity
-tier: Sentinel (Tier 1)
-version: 11.0.0
-dependencies: [cyber-security-mastery, zero-trust-mastery, advanced-security-audit]
-subagents: [@Cortex, @Orchestrator, @Security, @RiskAgent]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 
 # 👥 Sentinel - Cyber Security (03-CS)
 

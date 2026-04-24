@@ -1,14 +1,12 @@
 ---
-cluster: 01-software-engineering
-category: developing
-display_category: Agents
-id: agents:01-software-engineering/developing/ComplianceOfficer
-version: 10.0.0
-domains: [cyber-security-ops]
-sector_compliance: pending
-dependencies: [developing-mastery]
-subagents: [@Cortex, @Orchestrator]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @ComplianceOfficer — Regulatory Compliance & Privacy
 
 ## Core Identity

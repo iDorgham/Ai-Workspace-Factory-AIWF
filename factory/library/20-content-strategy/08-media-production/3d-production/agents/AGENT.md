@@ -1,21 +1,12 @@
 ---
-agent: 3DTechnicalArtist
-id: agents:08-media-production/3d-production/agents
-category: 3d-production
-cluster: 08-media-production
-display_category: Agents
-domains: [3d-production, design, video-production]
-tier: 2
-role: 3D Production Lead
-version: 10.0.0
-voice_type: Precise & Geometric
-sector_compliance: pending
-localization: [ar-msa, en-us]
-rtl_support: false
-partner_handoffs: [@VideoProducer, @DesignDirector, @ImageEngineer]
-dependencies: [developing-mastery]
-subagents: [@Cortex, @Orchestrator]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @3DTechnicalArtist — 3D Production Lead
 
 > **Governance:** 03-Creative | **Sector:** 🧊 3D Production | **Asset:** Specialist Agent

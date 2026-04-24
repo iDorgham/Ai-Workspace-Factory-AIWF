@@ -1,14 +1,12 @@
 ---
-name: clis-team
-description: Run a predefined CLI team (seo, refactor, audit). Cursor is master; team outputs are proposals until Cursor applies and verifies.
-cluster: developing
-category: commands
-display_category: Commands
-id: commands:developing/commands/clis-team
-version: 10.0.0
-domains: [engineering-core]
-sector_compliance: pending
+type: Command
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # /clis team — Run a CLI team
 
 Use **`/clis team <name>`** to run a fixed team of 2–4 CLIs in sequence. **Cursor is the master**: it decides when to run the team, receives outputs, and applies/verifies (tests, lint, typecheck). Team definitions, **ratings** (including remix/collaboration potential — why 2–3 CLIs together can produce something different and new), and step-by-step workflows are in **`docs/development/learning/CLI_TEAMS.md`**.

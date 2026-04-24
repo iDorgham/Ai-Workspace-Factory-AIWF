@@ -1,13 +1,12 @@
 ---
-skill: Industry Rating & Maturation Protocol
-id: skills:11-industry-verticals/meta-ops/industry-rating-system
-category: meta-ops
-cluster: 11-industry-verticals
-display_category: Rules
-domains: [quality-assurance, library-ops, factory-scaling]
-level: 3
-version: 11.0.0
+type: Generic
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # 📊 Industry Maturity Rating System
 
 To ensure all 20+ Industry Verticals within the Sovereign Factory are capable of "Omega-Tier" automation, we employ a 3-tier rating system. This dictates the priority for scaling Skills, Agents, Commands, and Templates.

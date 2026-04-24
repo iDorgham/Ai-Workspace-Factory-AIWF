@@ -1,3 +1,13 @@
+---
+type: Skill
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # Anthropic Official Integration Mastery
 
 This mastery hub synchronizes the **Official Anthropic agentic skills** currently active in the `.ai/skills` system. It defines the gold standard for Claude-native development and Model Context Protocol (MCP) ecosystems.

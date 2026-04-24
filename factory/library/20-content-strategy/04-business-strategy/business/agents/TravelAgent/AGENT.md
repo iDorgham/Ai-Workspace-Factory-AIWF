@@ -1,21 +1,12 @@
 ---
-agent: TravelAgent
-id: agents:04-business-strategy/business/TravelAgent
-category: business
-cluster: 04-business-strategy
-display_category: Agents
-domains: [business, sales-revenue]
-tier: 2
-role: Logistics & Travel Lead
-version: 10.0.0
-voice_type: Efficient & Helpful
-sector_compliance: pending
-localization: [ar-msa, en-us]
-rtl_support: true
-partner_handoffs: [@Founder, @Analytics]
-dependencies: [developing-mastery]
-subagents: [@Cortex, @Orchestrator]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @TravelAgent — Logistics & Travel Lead
 
 > **Governance:** 02-Commerce | **Sector:** 💼 Business | **Asset:** Specialist Agent

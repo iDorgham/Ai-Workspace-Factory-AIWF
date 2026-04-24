@@ -1,8 +1,12 @@
 ---
-name: "Arabic Egypt Cultural & Legal Tone Mastery"
-description: "High-density technical mastery of Arabic Egypt Cultural & Legal Tone Mastery"
-version: "4.1.0"
+type: Skill
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 
 # 🛠 Skill: Arabic Egypt Cultural & Legal Tone Mastery
 

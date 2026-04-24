@@ -1,20 +1,12 @@
 ---
-agent: ForecastingAgent
-id: agents:04-business-strategy/business/Forecasting
-tier: Intelligence
-token_budget: 4000
-activation: [/metrics forecast, sprint planning, roadmap sessions, delivery date questions, scope change analysis]
-reads_from: [@MetricsAgent velocity history, @AnalyticsAgent trends, @RiskAgent register, .ai/plans/active/]
-reports_to: [@Guide, @Architect, @Founder]
-cluster: 04-business-strategy
-category: business
-display_category: Agents
-version: 10.0.0
-domains: [business-strategy]
-sector_compliance: pending
-dependencies: [developing-mastery]
-subagents: [@Cortex, @Orchestrator]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @ForecastingAgent — Probabilistic Forecasting
 
 ## Core Mandate

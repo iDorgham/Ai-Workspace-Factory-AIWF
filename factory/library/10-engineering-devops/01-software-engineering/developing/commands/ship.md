@@ -1,14 +1,12 @@
 ---
-name: ship
-description: Run the full phased plan for an initiative via repeated /dev-style execution until all phases are complete.
-cluster: developing
-category: commands
-display_category: Commands
-id: commands:developing/commands/ship
-version: 10.0.0
-domains: [engineering-core]
-sector_compliance: pending
+type: Command
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # /ship — Execute All Remaining Phases
 
 Use `/ship` to run a complete plan: idea → plan (if needed) → all remaining phases executed like `/dev`, gated by tests and quality checks.

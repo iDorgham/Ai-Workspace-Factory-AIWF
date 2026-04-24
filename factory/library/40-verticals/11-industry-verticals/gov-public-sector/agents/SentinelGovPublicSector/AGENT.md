@@ -1,15 +1,12 @@
 ---
-cluster: 11-industry-verticals
-category: gov-public-sector
-domains: [e-governance, digital-transformation, ppp-physics, public-service-digitization]
-sector_compliance: certified
-id: agents:11-industry-verticals/gov-public-sector/SentinelGovPublicSector
-version: 11.0.0
-tier: 1 (Certified)
-quality_gate: 100/100
-dependencies: [gov-transformation-mastery, public-sector-physics]
-subagents: [@DigitalTransformationConsultant, @PPP-Auditor, @ServiceArchitect]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 
 # 👥 Sentinel - Gov & Public Sector
 

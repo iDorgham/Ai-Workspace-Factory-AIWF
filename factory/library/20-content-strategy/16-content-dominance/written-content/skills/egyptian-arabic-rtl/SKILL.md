@@ -1,8 +1,12 @@
 ---
-name: "Egyptian Arabic RTL-First Website Content Creation"
-description: "High-density technical mastery of Egyptian Arabic RTL-First Website Content Creation"
-version: "4.1.0"
+type: Skill
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 
 # 🛠 Skill: Egyptian Arabic RTL-First Website Content Creation
 

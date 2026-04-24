@@ -1,22 +1,12 @@
 ---
-agent: RuntimeOrchestrator
-id: agents:10-operations-qa/execution/RuntimeOrchestrator
-tier: Orchestration
-token_budget: 8000
-activation: [/swarm --live, /swarm --auto, /swarm monitor, /swarm reroute, /swarm optimize --auto, mid-flight SOS execution, drift_score >= 2 recovery, /runtime sync --ci]
-reads_from: 
-writes_to: 
-collaborates_with: 
-logs_to: 
-cluster: 10-operations-qa
-category: execution
-display_category: Agents
-version: 10.0.0
-domains: [product-delivery]
-sector_compliance: pending
-dependencies: [developing-mastery]
-subagents: [@Cortex, @Orchestrator]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @RuntimeOrchestrator — Filesystem-Native Runtime Control
 
 ## Core Mandate

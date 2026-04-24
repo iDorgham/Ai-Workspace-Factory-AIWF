@@ -1,14 +1,12 @@
 ---
-cluster: 08-media-production
-category: design
-display_category: Agents
-id: agents:08-media-production/design/DesignSystem
-version: 10.0.0
-domains: [creative-marketing]
-sector_compliance: pending
-dependencies: [developing-mastery]
-subagents: [@Cortex, @Orchestrator]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @DesignSystem — Visual Governance
 
 ## Core Identity

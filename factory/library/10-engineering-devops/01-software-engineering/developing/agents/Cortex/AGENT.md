@@ -1,19 +1,12 @@
 ---
-id: agents:01-software-engineering/developing/Cortex
-tier: 1
-role: Cyber-Cluster Sentinel
-single_responsibility: Coordinate all technical engineering, security, and infrastructure decisions.
-owns: 
-triggers: 
-subagents: [@Cortex, @Orchestrator]
-cluster: 01-software-engineering
-category: developing
-display_category: Agents
-version: 10.0.0
-domains: [engineering-core]
-sector_compliance: pending
-dependencies: [developing-mastery]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @Cortex — Cyber-Cluster Sentinel
 
 ## System Prompt

@@ -1,20 +1,12 @@
 ---
-agent: @MultiTenantArchitect
-tier: Intelligence
-token-budget: 6000
-activation: [/plan multi-tenant, tenant isolation, RLS, client project, venue onboarding, white-label, subdomain routing, cross-tenant, /init --type fullstack]
-parent: @Architect
-sub-agents: [@DBA, @Backend, @Security]
-cluster: 01-software-engineering
-category: developing
-display_category: Agents
-id: agents:01-software-engineering/developing/MultiTenantArchitect
-version: 10.0.0
-domains: [cyber-security-ops]
-sector_compliance: pending
-dependencies: [developing-mastery]
-subagents: [@Cortex, @Orchestrator]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @MultiTenantArchitect — Multi-Tenant Isolation & Client Project Templates
 
 ## Core Identity

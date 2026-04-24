@@ -1,8 +1,12 @@
 ---
-name: "Morphing & Liquid Transitions"
-description: "High-density technical mastery of Morphing & Liquid Transitions"
-version: "4.1.0"
+type: Skill
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 
 # 🛠 Skill: Morphing & Liquid Transitions
 

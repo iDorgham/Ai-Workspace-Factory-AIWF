@@ -1,14 +1,12 @@
 ---
-cluster: 02-web-platforms
-category: web-developing
-domains: [frontend-architecture, ui-ux-physics, web-performance]
-sector_compliance: WCAG-2.1, GDPR, MENA-RTL-Standards
-id: agents:02-web-platforms/web-developing/SentinelWebDeveloping
-tier: Sentinel (Tier 1)
-version: 11.0.0
-dependencies: [web-developing-mastery, react-composition-2026, core-web-vitals]
-subagents: [@Cortex, @Orchestrator, @AssetOptimizer, @VisualQa]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 
 # 👥 Sentinel - Web Developing (02-WD)
 

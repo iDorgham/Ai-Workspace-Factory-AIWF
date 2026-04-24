@@ -1,14 +1,12 @@
 ---
-cluster: 01-software-engineering
-category: developing
-domains: [developing, engineering-standards, mena-compliance]
-sector_compliance: GDPR, DPA19, UAE-Data-Protection
-id: agents:01-software-engineering/developing/SentinelDeveloping
-tier: Sentinel (Tier 1)
-version: 11.0.0
-dependencies: [developing-mastery, zero-trust-validation, mena-venture-scaling-logic]
-subagents: [@Cortex, @Orchestrator, @Debugger, @ContextSlicer]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 
 # 👥 Sentinel - Developing (01-DE)
 

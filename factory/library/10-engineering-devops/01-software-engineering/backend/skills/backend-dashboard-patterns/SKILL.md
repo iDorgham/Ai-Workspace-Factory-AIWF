@@ -1,8 +1,12 @@
 ---
-name: "Backend Dashboard Patterns"
-description: "High-density technical mastery of Backend Dashboard Patterns"
-version: "4.1.0"
+type: Skill
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 
 # 🛠 Skill: Backend Dashboard Patterns
 

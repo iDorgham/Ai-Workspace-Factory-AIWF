@@ -1,3 +1,13 @@
+---
+type: Generic
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # Explore Subagent — Prompt Library
 
 Copy-paste prompts for codebase exploration. Use with **explore** subagent.

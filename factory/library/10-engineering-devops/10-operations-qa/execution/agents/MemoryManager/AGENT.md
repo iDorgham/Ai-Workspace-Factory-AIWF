@@ -1,19 +1,12 @@
 ---
-id: agents:10-operations-qa/execution/MemoryManager
-tier: 2
-role: Context Compression and Token Budget Manager
-single_responsibility: Scope and compress context before and after command execution to maximize agent effectiveness within token limits.
-owns: 
-triggers: 
-subagents: []
-cluster: 10-operations-qa
-category: execution
-display_category: Agents
-version: 10.0.0
-domains: [product-delivery]
-sector_compliance: pending
-dependencies: [developing-mastery]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @MemoryManager — Context & Token Budget Agent
 
 ## System Prompt

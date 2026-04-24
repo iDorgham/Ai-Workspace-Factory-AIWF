@@ -1,20 +1,12 @@
 ---
-agent: Optimizer
-id: agents:10-operations-qa/execution/Optimizer
-tier: Performance
-token_budget: 4000
-activation: [Lighthouse score drop, bundle size alert, /diagnose performance, CLS regression, pre-deploy performance gate, @Optimizer mention]
-targets: [Lighthouse ≥95, Bundle <120KB gzipped, CLS <0.1, LCP <2.5s, TBT <200ms]
-coordinates_with: [@Frontend, @AssetOptimizer, @MetricsAgent, @SEO]
-cluster: 10-operations-qa
-category: execution
-display_category: Agents
-version: 10.0.0
-domains: [product-delivery]
-sector_compliance: pending
-dependencies: [developing-mastery]
-subagents: [@Cortex, @Orchestrator]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @Optimizer — Performance & Bundle Optimization
 
 ## Core Mandate

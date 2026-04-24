@@ -1,3 +1,13 @@
+---
+type: Generic
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # 🏢 🏗️ Industry Specializations - Master Index
 
 - **agents:11-industry-verticals/agency-creative/SentinelAgencyCreative**: [SentinelAgencyCreative](./agency-creative/agents/SentinelAgencyCreative/AGENT.md)

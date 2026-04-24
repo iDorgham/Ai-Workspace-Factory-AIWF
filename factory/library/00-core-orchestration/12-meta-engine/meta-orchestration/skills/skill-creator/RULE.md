@@ -1,7 +1,12 @@
 ---
-name: skill-creator
-description: Creates new Claude Code skills following repository conventions with proper structure, frontmatter, workflows, code examples, and reference files. Use when users request "create a skill", "new skill", "generate skill", or "add skill to collection".
+type: Skill
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 
 # Skill Creator
 

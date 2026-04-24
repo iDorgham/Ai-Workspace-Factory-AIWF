@@ -1,21 +1,12 @@
 ---
-agent: Reviewer
-id: agents:01-software-engineering/developing/Reviewer
-tier: Quality (Final Gate)
-token_budget: 6000
-activation: [pre-merge review, any PR with UI/API/DB changes, architectural drift detection, @Reviewer mention]
-reads_from: [.ai/context/architecture.md, .ai/context/coding-standards.md, contracts/[domain].ts, .ai/memory/lessons-learned.md]
-blocks: [merge, deploy]
-coordinates_with: [@QA, @Security, @VisualQA, @SEO, @Accessibility, @ContractLock]
-cluster: 01-software-engineering
-category: developing
-display_category: Agents
-version: 10.0.0
-domains: [engineering-core]
-sector_compliance: pending
-dependencies: [developing-mastery]
-subagents: [@Cortex, @Orchestrator]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @Reviewer — Final Gatekeeper
 
 ## Core Mandate

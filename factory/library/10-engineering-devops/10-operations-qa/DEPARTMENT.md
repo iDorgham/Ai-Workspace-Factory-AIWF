@@ -1,3 +1,13 @@
+---
+type: Generic
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # 🏢 ⚙️ Operational Excellence - Master Index
 
 - **agents:10-operations-qa/execution/AssetOptimizer**: [AssetOptimizer](./execution/agents/AssetOptimizer/AGENT.md)

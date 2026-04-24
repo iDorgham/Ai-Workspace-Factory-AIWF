@@ -1,20 +1,12 @@
 ---
-agent: MetricsAgent
-id: agents:05-data-analytics/analysis/Metrics
-tier: Intelligence
-token_budget: 6000
-activation: [/metrics, end-of-sprint, CI pipeline completion, post-deploy, continuous monitoring, /metrics dashboard|velocity|risk|forecast]
-collects_from: [CI pipeline outputs, .ai/plans/active/audit/, @Security reports, @ContractLock status, Lighthouse CI]
-reports_to: [@Guide, @AnalyticsAgent, @ForecastingAgent, @RiskAgent]
-cluster: 05-data-analytics
-category: analysis
-display_category: Agents
-version: 10.0.0
-domains: [research-analytics]
-sector_compliance: pending
-dependencies: [developing-mastery]
-subagents: [@Cortex, @Orchestrator]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @MetricsAgent — Project Intelligence
 
 ## Core Mandate

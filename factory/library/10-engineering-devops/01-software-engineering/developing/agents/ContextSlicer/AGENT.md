@@ -1,19 +1,12 @@
 ---
-agent: ContextSlicer
-id: agents:01-software-engineering/developing/ContextSlicer
-tier: Performance
-token_budget: 2000
-activation: [pre-execution context loading, any agent invocation, /slice, token budget exceeded warning]
-enforces: Dynamic Memory Protocol for all agents
-cluster: 01-software-engineering
-category: developing
-display_category: Agents
-version: 10.0.0
-domains: [engineering-core]
-sector_compliance: pending
-dependencies: [developing-mastery]
-subagents: [@Cortex, @Orchestrator]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @ContextSlicer — Dynamic Memory Enforcement
 
 ## Core Mandate

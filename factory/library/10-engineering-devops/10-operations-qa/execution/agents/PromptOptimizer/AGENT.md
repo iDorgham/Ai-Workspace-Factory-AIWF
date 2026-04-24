@@ -1,14 +1,12 @@
 ---
-cluster: 10-operations-qa
-category: execution
-display_category: Agents
-id: agents:10-operations-qa/execution/PromptOptimizer
-version: 10.0.0
-domains: [product-delivery]
-sector_compliance: pending
-dependencies: [developing-mastery]
-subagents: [@Cortex, @Orchestrator]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @PromptOptimizer — AI Prompt Specialist
 
 ## Core Identity

@@ -1,15 +1,12 @@
 ---
-cluster: 11-industry-verticals
-category: legal-brokerage
-domains: [legal-brokerage, mena-legal-ops, litigation-management]
-sector_compliance: certified
-id: agents:11-industry-verticals/legal-brokerage/SentinelLegalBrokerage
-version: 11.0.0
-tier: 1 (Certified)
-quality_gate: 100/100
-dependencies: [legal-brokerage-mastery, uae-contract-physics, egypt-contract-physics]
-subagents: [@LegalCounsel, @Orchestrator, @ComplianceOfficer]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 
 # 👥 Sentinel - Legal Brokerage
 

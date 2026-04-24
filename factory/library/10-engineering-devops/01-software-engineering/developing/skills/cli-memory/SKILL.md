@@ -1,3 +1,13 @@
+---
+type: Skill
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # Workspace Factory CLI tool memory (cli-memory)
 
 You maintain the **durable tool memory** so Cursor and agents can prefer the right CLI for each task type. Load this skill when doing a **structured update** of `CLI_TOOL_MEMORY.md` from the usage log, or when the user asks to "update tool memory" or "refresh CLI scoreboard."

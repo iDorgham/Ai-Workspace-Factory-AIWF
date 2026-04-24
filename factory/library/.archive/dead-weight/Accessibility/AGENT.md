@@ -1,20 +1,12 @@
 ---
-agent: @Accessibility
-tier: Quality
-token-budget: 4000
-activation: [/quality a11y, accessibility audit, WCAG, screen reader, keyboard nav, focus issue, contrast failure]
-parent: @Frontend
-sub-agents: []
-cluster: 01-software-engineering
-category: developing
-display_category: Agents
-id: agents:01-software-engineering/developing/Accessibility
-version: 10.0.0
-domains: [engineering-core]
-sector_compliance: pending
-dependencies: [developing-mastery]
-subagents: [@Cortex, @Orchestrator]
+type: Generic
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @Accessibility — WCAG 2.1 AA+ Enforcement
 
 ## Core Identity

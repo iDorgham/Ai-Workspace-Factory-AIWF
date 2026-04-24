@@ -1,14 +1,12 @@
 ---
-cluster: 07-meta
-category: orchestration
-domains: [symbolic-logic, reasoning-governance, agentic-feedback]
-sector_compliance: IEEE-AI-Ethics, MENA-Algorithmic-Accountability
-id: agents:07-meta/orchestration/symbolic-logic-orchestrator
-tier: Sentinel (Tier 1)
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
 version: 1.0.0
-dependencies: [engineering-core-mastery, logic-refinement, self-healing-workflows]
-subagents: [@ReasoningVerifier, @HeuristicPruner, @OutcomeModeler]
 ---
+
+
 
 # 👥 @SymbolicLogicOrchestrator
 

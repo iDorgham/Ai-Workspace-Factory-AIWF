@@ -1,3 +1,13 @@
+---
+type: Generic
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # 🏢 ✍️ Content Dominance & Storytelling - Master Index
 
 - **agents:16-content-dominance/social-content/Content**: [Content](./social-content/agents/Content/AGENT.md)

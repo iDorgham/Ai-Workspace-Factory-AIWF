@@ -1,14 +1,12 @@
 ---
-cluster: 11-industry-verticals
-category: gov-public-sector
-domains: [institutional-modernization, legacy-audit, gov-ux-strategy]
-sector_compliance: certified
-id: agents:11-industry-verticals/gov-public-sector/DigitalTransformationConsultant
-version: 11.0.0
-tier: 1 (Certified)
-quality_gate: 100/100
-dependencies: [gov-transformation-mastery]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 
 # 👥 Agent - Digital Transformation Consultant
 

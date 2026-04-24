@@ -1,3 +1,13 @@
+---
+type: Skill
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # 🎨 SKILL: Generative Art Pipeline (v1.0.0)
 # Library Component: 12-meta-engine/meta-orchestration/v7-orchestration/skills/generative-art-pipeline/SKILL.md
 # Version: 1.0.0 | Reasoning Hash: sha256:art-skill-2026-04-23

@@ -1,3 +1,13 @@
+---
+type: Generic
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # Feature package template (legacy / optional deep tree)
 
 **SDD default:** **`/plan [phase]/[spec]`** + **`.ai/templates/sdd-spec/`** — see **`docs/workspace/reference/feature-plan-package-layout.md`**. Use this folder for **`/plan --legacy`**, migration, or extra **`phases/`** / **`prompts/`** depth.

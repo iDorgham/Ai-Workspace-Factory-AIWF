@@ -1,3 +1,13 @@
+---
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # Workspace Factory Agents
 
 **Purpose:** Personas and scenarios for the main Cursor agent to improve workflow and results. Use to adopt a role or scenario when tackling specific tasks.

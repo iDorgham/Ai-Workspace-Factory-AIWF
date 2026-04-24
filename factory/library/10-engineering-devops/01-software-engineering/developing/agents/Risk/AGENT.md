@@ -1,20 +1,12 @@
 ---
-agent: RiskAgent
-id: agents:01-software-engineering/developing/Risk
-tier: Intelligence
-token_budget: 4000
-activation: [/plan, pre-deploy, major changes, agent anomaly detected, /metrics risk, contract drift, security finding]
-reads_from: [.ai/plans/active/, @MetricsAgent data, @Security findings, @ContractLock drift alerts]
-reports_to: [@EscalationHandler (score ≥18), @Guide, @Architect]
-cluster: 01-software-engineering
-category: developing
-display_category: Agents
-version: 10.0.0
-domains: [cyber-security-ops]
-sector_compliance: pending
-dependencies: [developing-mastery]
-subagents: [@Cortex, @Orchestrator]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @RiskAgent — Risk Management
 
 ## Core Mandate

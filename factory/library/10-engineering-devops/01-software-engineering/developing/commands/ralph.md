@@ -1,14 +1,12 @@
 ---
-name: ralph
-description: Recursive autopilot — implement ALL remaining phases of the active plan end-to-end until complete. Runs /dev in a loop with session memory, TDD, enforcement, verification, and PR.
-cluster: developing
-category: commands
-display_category: Commands
-id: commands:developing/commands/ralph
-version: 10.0.0
-domains: [engineering-core]
-sector_compliance: pending
+type: Command
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # /ralph — Recursive Autopilot
 
 `/ralph` is shorthand for `/dev ralph`. It runs the full Ralph Loop from `dev.md` — implementing every remaining phase of the active plan automatically until done.

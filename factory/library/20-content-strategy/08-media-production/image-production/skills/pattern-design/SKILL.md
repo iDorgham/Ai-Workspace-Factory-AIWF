@@ -1,8 +1,12 @@
 ---
-name: "Pattern Design & Seamless Textures"
-description: "High-density technical mastery of Pattern Design & Seamless Textures"
-version: "4.1.0"
+type: Skill
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 
 # 🛠 Skill: Pattern Design & Seamless Textures
 

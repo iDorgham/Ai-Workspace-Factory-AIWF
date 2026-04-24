@@ -1,3 +1,13 @@
+---
+type: Generic
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # 🏢 📈 Business Strategy & Growth - Master Index
 
 - **agents:04-business-strategy/business/BusinessAnalyst**: [BusinessAnalyst](./business/agents/BusinessAnalyst/AGENT.md)

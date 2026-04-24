@@ -1,3 +1,13 @@
+---
+type: Skill
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # Strategist Skill
 
 Primary reference for strategic app engineering and market-driven planning in the Workspace Factory monorepo.

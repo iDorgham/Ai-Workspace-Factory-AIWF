@@ -1,3 +1,13 @@
+---
+type: Generic
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # Product Requirements Document — [Product / Project Name]
 
 > **Location (workspace):** `.ai/plans/active/project-prd.md`

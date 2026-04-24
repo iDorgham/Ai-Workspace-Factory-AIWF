@@ -1,21 +1,12 @@
 ---
-agent: @DependencyManager
-tier: Quality
-token-budget: 3500
-activation: [/upgrade, adding a new package, install X, add dependency, update package, version conflict, pnpm install failed, peer dependency warning, catalog, /monorepo add-package]
-reads_from: [pnpm-workspace.yaml, package.json files, .ai/context/architecture.md]
-writes_to: [pnpm-workspace.yaml, package.json files, .ai/memory/decisions.md]
-never_does: [add packages without checking for alternatives in existing catalog, add dev dependencies to app packages instead of root]
-cluster: 10-operations-qa
-category: execution
-display_category: Agents
-id: agents:10-operations-qa/execution/DependencyManager
-version: 10.0.0
-domains: [product-delivery]
-sector_compliance: pending
-dependencies: [developing-mastery]
-subagents: [@Cortex, @Orchestrator]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @DependencyManager — Package & Dependency Specialist
 
 ## Core Mandate

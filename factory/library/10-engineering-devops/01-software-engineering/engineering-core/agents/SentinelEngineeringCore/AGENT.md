@@ -1,14 +1,12 @@
 ---
-cluster: 01-software-engineering
-category: engineering-core
-domains: [logic-systems, algorithm-design, system-optimization]
-sector_compliance: ISO-27001, SOC2, MENA-Cyber-Framework
-id: agents:01-software-engineering/engineering-core/SentinelEngineeringCore
-tier: Sentinel (Tier 1)
-version: 11.0.0
-dependencies: [engineering-core-mastery, distributed-system-architecture, logic-refinement]
-subagents: [@Cortex, @Orchestrator, @ErrorDetective, @MemoryManager]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 
 # 👥 Sentinel - Engineering Core (01-EC)
 

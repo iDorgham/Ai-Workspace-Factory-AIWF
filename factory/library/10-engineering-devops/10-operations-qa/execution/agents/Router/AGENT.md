@@ -1,23 +1,12 @@
 ---
-agent: Router
-id: agents:10-operations-qa/execution/Router
-tier: Orchestration
-token_budget: 2500
-activation: [multi-step features, /swarm run, parallel execution planning, dependency resolution, /route, /plan (SOS post-processor), /plan sos]
-reads_from: [.ai/plans/active/features/[phase]/[spec]/, .ai/plans/active/features/[phase]/manifest.md, @ContractLock status, @RiskAgent register, .ai/memory/anti-patterns.md]
-writes_to: [.ai/plans/active/features/[phase]/manifest.md, .ai/plans/active/features/[phase]/[spec]/prompt.md]
-collaborates_with: [@ContextSlicer (context compression per task), @ErrorDetective (anti-pattern pre-scan), @RuntimeOrchestrator (runtime mode — mid-flight state only)]
-logs_to: [.ai/plans/active/audit/routing.log]
-runtime_mode_note: Plan-time writes stay here. Mid-flight drift, checkpoints, reroutes → @RuntimeOrchestrator + sos/runtime-state.md (see .ai/agents/runtime-orchestrator.md).
-cluster: 10-operations-qa
-category: execution
-display_category: Agents
-version: 10.0.0
-domains: [product-delivery]
-sector_compliance: pending
-dependencies: [developing-mastery]
-subagents: [@Cortex, @Orchestrator]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @Router — Intelligent Task Distribution
 
 ## Core Mandate

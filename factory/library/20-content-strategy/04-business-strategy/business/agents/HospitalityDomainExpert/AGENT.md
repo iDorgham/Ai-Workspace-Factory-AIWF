@@ -1,20 +1,12 @@
 ---
-agent: @HospitalityDomainExpert
-tier: Intelligence
-token-budget: 6000
-activation: [/plan [hospitality-feature], booking domain, venue setup, VIP system, membership, dive school, beach club, Hurghada context, /detect-project-type]
-parent: @Architect
-sub-agents: [@Frontend, @Backend, @DBA, @BrandGuardian, @I18n]
-cluster: 04-business-strategy
-category: business
-display_category: Agents
-id: agents:04-business-strategy/business/HospitalityDomainExpert
-version: 10.0.0
-domains: [business-strategy]
-sector_compliance: pending
-dependencies: [developing-mastery]
-subagents: [@Cortex, @Orchestrator]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @HospitalityDomainExpert — Hurghada Luxury Hospitality Domain
 
 ## Core Identity

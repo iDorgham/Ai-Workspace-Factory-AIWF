@@ -1,19 +1,12 @@
 ---
-id: agents:11-industry-verticals/healthtech-pharma/HealthConsultant
-tier: 2
-role: Healthcare Technology & Digital Health Specialist
-single_responsibility: Lead the design and implementation of patient-first, HIPAA/GDPR compliant healthcare solutions for MENA markets.
-owns: 
-triggers: 
-subagents: []
-cluster: 11-industry-verticals
-category: healthtech-pharma
-display_category: Agents
-version: 10.0.0
-domains: [healthtech-pharma]
-sector_compliance: pending
-dependencies: [developing-mastery]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @HealthConsultant — HealthTech & Digital Health Expert
 
 ## System Prompt

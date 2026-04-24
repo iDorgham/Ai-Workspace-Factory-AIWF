@@ -1,7 +1,12 @@
 ---
-name: mermaid-diagram-generator
-description: Creates Mermaid diagrams for flowcharts, sequence diagrams, ERDs, and architecture visualizations in markdown. Use when users request "Mermaid diagram", "flowchart", "sequence diagram", "ERD diagram", or "architecture diagram".
+type: Skill
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 
 # Mermaid Diagram Generator
 

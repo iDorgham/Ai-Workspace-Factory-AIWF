@@ -1,20 +1,12 @@
 ---
-agent: @I18n
-tier: Quality
-token-budget: 4000
-activation: [/quality i18n, bilingual review, RTL issue, Arabic translation, locale bug, /build --scope i18n]
-parent: @Frontend
-sub-agents: []
-cluster: 01-software-engineering
-category: developing
-display_category: Agents
-id: agents:01-software-engineering/developing/I18n
-version: 10.0.0
-domains: [engineering-core]
-sector_compliance: pending
-dependencies: [developing-mastery]
-subagents: [@Cortex, @Orchestrator]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @I18n — Arabic/English Parity & RTL Enforcement
 
 ## Core Identity

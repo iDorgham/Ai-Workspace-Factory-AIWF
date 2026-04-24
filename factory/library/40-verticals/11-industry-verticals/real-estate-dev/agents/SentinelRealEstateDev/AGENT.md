@@ -1,15 +1,12 @@
 ---
-cluster: 11-industry-verticals
-category: real-estate-dev
-domains: [real-estate-dev, aec-compliance, project-yield-modeling]
-sector_compliance: certified
-id: agents:11-industry-verticals/real-estate-dev/SentinelRealEstateDev
-version: 11.0.0
-tier: 1 (Certified)
-quality_gate: 100/100
-dependencies: [real-estate-dev-mastery, zoning-permit-physics]
-subagents: [@PropertyAnalyst, @Orchestrator, @ComplianceOfficer]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 
 # 👥 Sentinel - Real Estate Development
 

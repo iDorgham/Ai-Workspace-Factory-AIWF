@@ -1,7 +1,12 @@
 ---
-name: docs-starter-kit
-description: Generates comprehensive documentation templates for open-source and internal projects including README, CONTRIBUTING, SECURITY, CODE_OF_CONDUCT, LICENSE, and other standard docs with suggested sections and best practices. Use when users request "create project docs", "add OSS documentation", "setup standard docs", or "make it open-source ready".
+type: Skill
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 
 # Docs Starter Kit
 

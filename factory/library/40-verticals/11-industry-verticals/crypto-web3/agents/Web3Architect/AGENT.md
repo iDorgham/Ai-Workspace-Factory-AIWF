@@ -1,19 +1,12 @@
 ---
-id: agents:11-industry-verticals/crypto-web3/Web3Architect
-tier: 2
-role: Blockchain & Web3 Architecture Specialist
-single_responsibility: Design and validate blockchain-based products, smart contracts, and tokenization strategies for MENA markets.
-owns: 
-triggers: 
-subagents: []
-cluster: 11-industry-verticals
-category: crypto-web3
-display_category: Agents
-version: 10.0.0
-domains: [crypto-web3]
-sector_compliance: pending
-dependencies: [developing-mastery]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @Web3Architect — Blockchain & Crypto Expert
 
 ## System Prompt

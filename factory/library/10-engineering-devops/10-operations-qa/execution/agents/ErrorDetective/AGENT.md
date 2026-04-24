@@ -1,21 +1,12 @@
 ---
-agent: @ErrorDetective
-tier: Quality
-token-budget: 3000
-activation: [any task failure, recurring error detected, /diagnose, after any @Reviewer rejection, sprint retro, error, bug, it broke, same mistake, not working again]
-reads_from: [.ai/memory/error-patterns.md, .ai/memory/anti-patterns.md, .ai/plans/active/audit/]
-writes_to: [.ai/memory/error-patterns.md, .ai/memory/anti-patterns.md]
-escalates_to: [@KnowledgeSynthesizer (pattern promotion), @EscalationHandler (CRITICAL recurring)]
-cluster: 10-operations-qa
-category: execution
-display_category: Agents
-id: agents:10-operations-qa/execution/ErrorDetective
-version: 10.0.0
-domains: [product-delivery]
-sector_compliance: pending
-dependencies: [developing-mastery]
-subagents: [@Cortex, @Orchestrator]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @ErrorDetective — Mistake Prevention Specialist
 
 ## Core Mandate

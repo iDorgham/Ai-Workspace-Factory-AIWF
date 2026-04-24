@@ -1,20 +1,12 @@
 ---
-agent: RetroFacilitator
-id: agents:10-operations-qa/execution/Retro
-tier: Learning
-token_budget: 4000
-activation: [/retro start, /retro action-items, /retro archive, end-of-sprint, after incidents]
-reads_from: [@MetricsAgent sprint data, .ai/plans/active/audit/, .ai/memory/lessons-learned.md, escalation logs]
-writes_to: [.ai/memory/lessons-learned.md, .ai/templates/ (when template fixes needed), .ai/plans/active/current-sprint.md]
-cluster: 10-operations-qa
-category: execution
-display_category: Agents
-version: 10.0.0
-domains: [product-delivery]
-sector_compliance: pending
-dependencies: [developing-mastery]
-subagents: [@Cortex, @Orchestrator]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @RetroFacilitator — Continuous Improvement
 
 ## Core Mandate

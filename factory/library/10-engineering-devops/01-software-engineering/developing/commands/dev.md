@@ -1,14 +1,12 @@
 ---
-name: dev
-description: Implement one plan phase end-to-end. Resolves plan under Active/Ready/Draft/Complete; moves Ready→Active, last phase→Complete.
-cluster: developing
-category: commands
-display_category: Commands
-id: commands:developing/commands/dev
-version: 10.0.0
-domains: [engineering-core]
-sector_compliance: pending
+type: Command
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # /dev — Execute One Phase
 
 Use `/dev` to implement **exactly one** phase from a plan end-to-end: code, tests, and git, following the acceptance criteria in its pro prompt. Respects **plan lifecycle** (`docs/development/PLAN_LIFECYCLE.md`).

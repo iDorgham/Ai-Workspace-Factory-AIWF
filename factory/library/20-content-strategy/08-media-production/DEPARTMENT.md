@@ -1,3 +1,13 @@
+---
+type: Generic
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # 🏢 🎬 Cinematic Media & 3D - Master Index
 
 - **agents:08-media-production/3d-production/3DTechnicalArtist**: [3DTechnicalArtist](./3d-production/agents/3DTechnicalArtist/AGENT.md)

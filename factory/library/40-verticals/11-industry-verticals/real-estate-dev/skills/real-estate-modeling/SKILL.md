@@ -1,8 +1,12 @@
 ---
-name: "Real Estate Modeling Mastery"
-description: "High-density technical mastery of Real Estate Modeling Mastery"
-version: "4.1.0"
+type: Skill
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 
 # 🛠 Skill: Real Estate Modeling Mastery
 

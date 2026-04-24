@@ -1,8 +1,12 @@
 ---
-name: "Cinematic Color Grading (2026 LUTs)"
-description: "High-density technical mastery of Cinematic Color Grading (2026 LUTs)"
-version: "4.1.0"
+type: Skill
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 
 # 🛠 Skill: Cinematic Color Grading (2026 LUTs)
 

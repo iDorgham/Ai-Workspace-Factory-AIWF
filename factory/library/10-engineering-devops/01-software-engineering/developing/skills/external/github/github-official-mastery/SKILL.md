@@ -1,3 +1,13 @@
+---
+type: Skill
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # GitHub Official Integration Mastery
 
 This mastery hub synchronizes the **250+ official GitHub agentic skills** currently active in the `.ai/skills` system. It ensures that all software engineering workflows follow the absolute standards defined by GitHub for AI-powered development.

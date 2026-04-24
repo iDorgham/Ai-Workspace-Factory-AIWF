@@ -1,20 +1,12 @@
 ---
-agent: AnalyticsAgent
-id: agents:05-data-analytics/analysis/Analytics
-tier: Intelligence
-token_budget: 4000
-activation: [/metrics analytics, post-sprint, strategic decisions, trend analysis requests, bottleneck reports]
-reads_from: [@MetricsAgent data, .ai/memory/, .ai/plans/active/, .ai/plans/archive/]
-reports_to: [@Guide, @Architect, @ForecastingAgent]
-cluster: 05-data-analytics
-category: analysis
-display_category: Agents
-version: 10.0.0
-domains: [research-analytics]
-sector_compliance: pending
-dependencies: [developing-mastery]
-subagents: [@Cortex, @Orchestrator]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @AnalyticsAgent — Deep Insights & Trends
 
 ## Core Mandate

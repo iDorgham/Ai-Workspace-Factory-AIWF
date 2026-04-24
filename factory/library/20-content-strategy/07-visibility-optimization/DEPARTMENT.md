@@ -1,3 +1,13 @@
+---
+type: Generic
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # 🏢 🔍 Visibility & Search Intelligence - Master Index
 
 - **agents:07-visibility-optimization/seo/SEO**: [SEO](./seo/agents/SEO/AGENT.md)

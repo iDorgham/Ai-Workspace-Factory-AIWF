@@ -1,3 +1,13 @@
+---
+type: Skill
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
+---
+
+
+
 # Runtime Automation Rules
 
 Self-managing pipeline rules for **@RuntimeOrchestrator**. No daemons: each rule runs when a human/agent completes a loop step or invokes `/swarm run --auto` (zero-prompt = same loop, repeated until stop condition without extra chat prompts).

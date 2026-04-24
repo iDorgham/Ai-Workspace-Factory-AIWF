@@ -1,8 +1,12 @@
 ---
-name: "Lighting & Mood Systems"
-description: "High-density technical mastery of Lighting & Mood Systems"
-version: "4.1.0"
+type: Skill
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 
 # 🛠 Skill: Lighting & Mood Systems
 

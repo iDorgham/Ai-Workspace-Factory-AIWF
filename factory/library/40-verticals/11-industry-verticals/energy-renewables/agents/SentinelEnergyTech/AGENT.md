@@ -1,15 +1,12 @@
 ---
-cluster: 11-industry-verticals
-category: energy-renewables
-domains: [renewable-tech, grid-stability, energy-economics, ppa-governance]
-sector_compliance: certified
-id: agents:11-industry-verticals/energy-renewables/SentinelEnergyTech
-version: 11.0.0
-tier: 1 (Certified)
-quality_gate: 100/100
-dependencies: [energy-renewables-mastery, grid-compliance-physics]
-subagents: [@GridOperator, @EnergyAnalyst, @ProjectPM]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 
 # 👥 Sentinel - Energy & Renewables
 

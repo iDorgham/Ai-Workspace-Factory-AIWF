@@ -1,19 +1,12 @@
 ---
-id: agents:03-security-compliance/fintech-banking/FintechStrategist
-tier: 2
-role: Financial Technology & Banking Innovation Specialist
-single_responsibility: Design and validate high-integrity fintech products, payment flows, and banking-compliance frameworks for MENA markets.
-owns: 
-triggers: 
-subagents: []
-cluster: 03-security-compliance
-category: fintech-banking
-display_category: Agents
-version: 10.0.0
-domains: [fintech-banking]
-sector_compliance: pending
-dependencies: [developing-mastery]
+type: Agent
+subagents: [core-validator, integrity-bot]
+agents: [master-guide, swarm-router]
+dependencies: [core-orchestration, global-sync]
+version: 1.0.0
 ---
+
+
 # @FintechStrategist — FinTech & Banking Expert
 
 ## System Prompt
