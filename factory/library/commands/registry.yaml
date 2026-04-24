@@ -1,0 +1,109 @@
+---
+type: command-registry
+tier: OMEGA
+version: 19.0.0
+compliance: Law 151/2020
+traceability: ISO-8601 Certified
+---
+
+commands:
+  /factory:
+    start:
+      skill: [silent_factory_protocol]
+      agent: factory_orchestrator
+      dependencies: []
+      automation: "auto_on_intake"
+    profile:
+      skill: [library_curation_workflow]
+      agent: library_curator
+      dependencies: []
+    build:
+      skill: [silent_factory_protocol, component_contract_validator]
+      agent: factory_orchestrator
+      dependencies: ["factory start"]
+    make:
+      skill: [silent_factory_protocol, sovereign_memory_router]
+      agent: factory_orchestrator
+      dependencies: ["factory build"]
+    test:
+      skill: [component_contract_validator, predictive_drift_healing]
+      agent: healing_bot_v2
+      dependencies: ["factory make"]
+    check:
+      skill: [predictive_drift_healing]
+      agent: healing_bot_v2
+      dependencies: ["factory test"]
+    sync:
+      skill: [sovereign_memory_router]
+      agent: factory_orchestrator
+      dependencies: []
+    assign:
+      skill: [auto_chain_state_machine]
+      agent: swarm_router_v3
+      dependencies: []
+    suggest:
+      skill: [recursive_skill_promotion]
+      agent: library_curator
+      dependencies: []
+    repair:
+      skill: [predictive_drift_healing]
+      agent: healing_bot_v2
+      dependencies: ["factory check"]
+    help:
+      skill: [interactive_teaching_engine]
+      agent: teaching_agent
+      dependencies: []
+    status:
+      skill: [silent_factory_protocol]
+      agent: factory_orchestrator
+      dependencies: []
+
+  /library:
+    create:
+      skill: [library_curation_workflow]
+      agent: library_curator
+      dependencies: []
+    scan:
+      skill: [library_curation_workflow, component_contract_validator]
+      agent: library_curator
+      dependencies: []
+    test:
+      skill: [component_contract_validator]
+      agent: library_curator
+      dependencies: []
+    fix:
+      skill: [predictive_drift_healing]
+      agent: healing_bot_v2
+      dependencies: ["library scan"]
+    improve:
+      skill: [recursive_skill_promotion]
+      agent: library_curator
+      dependencies: []
+    agent:
+      skill: [library_curation_workflow]
+      agent: registry_guardian
+      dependencies: []
+    skill:
+      skill: [library_curation_workflow]
+      agent: library_curator
+      dependencies: []
+    rule:
+      skill: [library_curation_workflow]
+      agent: registry_guardian
+      dependencies: []
+    profile:
+      skill: [library_curation_workflow]
+      agent: library_curator
+      dependencies: []
+    maintain:
+      skill: [predictive_drift_healing]
+      agent: registry_guardian
+      dependencies: []
+    report:
+      skill: [library_curation_workflow]
+      agent: library_curator
+      dependencies: []
+    help:
+      skill: [interactive_teaching_engine]
+      agent: teaching_agent
+      dependencies: []

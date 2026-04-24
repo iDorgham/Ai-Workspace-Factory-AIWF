@@ -1,23 +1,50 @@
-chain_state_machine:
-  rules:
-    - state: "START"
-      transition: "PLAN"
-      gate: null
-    - state: "PLAN"
-      transition: "CREATE"
-      gate: "spec_validated"
-    - state: "CREATE"
-      transition: "DEV"
-      gate: "omega-v2"
-    - state: "DEV"
-      transition: "AUDIT"
-      gate: "build_success"
-    - state: "AUDIT"
-      transition: "GIT"
-      gate: "health>=90"
+---
+type: chain-fsm
+tier: OMEGA
+version: 19.0.0
+compliance: Law 151/2020
+traceability: ISO-8601 Certified
+---
+
+fsm:
+  initial_state: IDLE
+  silent_defaults: true
   circuit_breaker:
-    pause_on: ["contract_fail", "sovereignty_violation"]
-    auto_trigger: "/guide heal --predictive"
+    threshold: 85
+    pause_on: ["contract_fail", "sovereignty_violation", "ID_collision"]
+    auto_trigger: ["factory repair", "library fix"]
+    resume_on: ["health>=90", "gate_revalidated"]
+
+  transitions:
+    IDLE:
+      "/factory start": GATHERING_REQS
+    GATHERING_REQS:
+      "/factory build": SCAFFOLDING
+    SCAFFOLDING:
+      "/library scan": VALIDATING_LIBRARY
+      "/factory make": MATERIALIZING
+    VALIDATING_LIBRARY:
+      "SUCCESS": SCAFFOLDING
+      "FAILURE": HEALING
+    HEALING:
+      "/factory repair": SCAFFOLDING
+      "/library fix": VALIDATING_LIBRARY
+    MATERIALIZING:
+      "/factory test": VERIFYING
+    VERIFYING:
+      "SUCCESS": COMPLETED
+      "FAILURE": HEALING
+    COMPLETED:
+      "/factory status": IDLE
+
   sovereign_hooks:
-    pre_exec: "validate_data_residency"
-    post_exec: "append_compliance_id"
+    pre_transition: ["regional_controller_bridge"]
+    post_transition: ["registry_guardian"]
+    gate_injection:
+      DEV_TO_GIT: "omega_gate_v2"
+      MAKE_TO_TEST: "omega_gate_v2"
+
+  rollback:
+    enabled: true
+    strategy: "checkpoint_recovery"
+    trace_log: ".ai/logs/factory.jsonl"
