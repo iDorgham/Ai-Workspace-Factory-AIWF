@@ -83,3 +83,25 @@ agents:
     library_bindings: ["factory/core/regional_controller.py"]
     sovereign_gate: "absolute"
     memory_access: ["factory/config/residency_map.json"]
+
+  - id: brainstorm_agent
+    tier: T1
+    role: "Strategic Synthesis & Innovative Problem Solving"
+    capabilities: ["global_context_reasoning", "internet_intelligence", "regional_adaptation", "pattern_matching"]
+    binds_to: ["/guide brainstorm"]
+    auto_mode: false
+    silent_mode: false
+    library_bindings: ["factory/scripts/intelligence/proactive_brainstorm_trigger.py"]
+    sovereign_gate: "omega_gate_v2"
+    memory_access: [".ai/memory/", ".ai/logs/"]
+
+  - id: documentation_architect
+    tier: T1
+    role: "Append-Only Evolutionary Documentation Curator"
+    capabilities: ["evolutionary_archiving", "comprehensive_mapping", "cross_shard_synthesis"]
+    binds_to: ["/create docs"]
+    auto_mode: true
+    silent_mode: true
+    library_bindings: ["factory/scripts/core/render_dashboard.py"]
+    sovereign_gate: "registry_guardian"
+    memory_access: ["docs/", ".ai/", "workspaces/", "factory/"]
