@@ -105,3 +105,14 @@ agents:
     library_bindings: ["factory/scripts/core/render_dashboard.py"]
     sovereign_gate: "registry_guardian"
     memory_access: ["docs/", ".ai/", "workspaces/", "factory/"]
+
+  - id: spec_architect
+    tier: T1
+    role: "High-Density Blueprint & Contract Designer"
+    capabilities: ["high_density_blueprinting", "contract_generation", "mvp_first_enforcement"]
+    binds_to: ["/plan blueprint", "/create spec"]
+    auto_mode: false
+    silent_mode: false
+    library_bindings: ["factory/scripts/automation/saas_scaffolder.py"]
+    sovereign_gate: "omega_gate_v2"
+    memory_access: [".ai/plan/", ".ai/governance/SDD_PROTOCOLS.md"]
