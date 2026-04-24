@@ -1,0 +1,27 @@
+{
+    "phase": "06-multi-cloud",
+    "version": "11.0.0",
+    "tasks": [
+        {
+            "id": "TASK-CLOUD-001",
+            "title": "Architect Cloud-Gateway v1.0",
+            "status": "pending",
+            "description": "Implement the core routing logic for multi-provider shard management in factory/core/cloud_gateway.py.",
+            "dependencies": []
+        },
+        {
+            "id": "TASK-CLOUD-002",
+            "title": "Implement Shadow-Runner Heartbeat",
+            "status": "pending",
+            "description": "Develop the P2P heartbeat mechanism to monitor the health of remote cloud execution nodes.",
+            "dependencies": ["TASK-CLOUD-001"]
+        },
+        {
+            "id": "TASK-CLOUD-003",
+            "title": "Register /deploy Command",
+            "status": "pending",
+            "description": "Add the industrial /deploy command to command-system.yaml for automated cloud manifest pushing.",
+            "dependencies": ["TASK-CLOUD-001"]
+        }
+    ]
+}

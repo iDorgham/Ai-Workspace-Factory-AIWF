@@ -1,3 +1,0 @@
-{"timestamp": "2026-04-22T03:00:00Z", "command": "/refine", "skill_id": "seo-optimization", "input": "Improve the meta description", "target_id": "meta-001"}
-{"timestamp": "2026-04-22T03:01:00Z", "command": "/polish", "skill_id": "seo-optimization", "input": "Make the title more catchy", "target_id": "title-001"}
-{"timestamp": "2026-04-22T03:02:00Z", "command": "/refine", "context": {"skill_id": "seo-optimization"}, "input": "Fix the slug", "target_id": "slug-001"}

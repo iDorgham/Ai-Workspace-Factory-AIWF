@@ -1,0 +1,22 @@
+{
+    "id": "SPEC-DIST-001",
+    "title": "Distribution Router Protocol",
+    "version": "1.0.0",
+    "component": "factory/core/distribution_router.py",
+    "requirements": [
+        "Load multi-cloud regional configurations.",
+        "Verify shard integrity before propagation.",
+        "Atomic replication of .ai/ metadata layers.",
+        "Compliance check: Ensure Law 151 boundaries are respected during transfer."
+    ],
+    "logic": {
+        "discovery": "Scan workspaces/ for active shards.",
+        "routing": "Map shards to target regions (AWS-ME-1, GCP-EG-1).",
+        "transfer": "Secure P2P sync using factory/core/galaxy_sync.py."
+    },
+    "compliance": {
+        "data_residency": "Strict MENA-Soil enforcement.",
+        "encryption": "AES-256 at rest and transit."
+    },
+    "reasoning_hash": "sha256:dist-router-spec-128374"
+}

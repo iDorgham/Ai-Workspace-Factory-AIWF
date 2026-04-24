@@ -1,0 +1,8 @@
+spec_id: boundary-controller
+title: Boundary Controller Logic
+version: 1.0.0
+requirements:
+  - [REQ-LOCKDOWN-001]
+components:
+  - factory/core/regional_controller.py
+status: implemented

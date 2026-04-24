@@ -1,0 +1,27 @@
+{
+    "phase": "14-revenue",
+    "version": "15.0.0",
+    "tasks": [
+        {
+            "id": "TASK-REV-001",
+            "title": "Architect Revenue-Orchestrator",
+            "status": "completed",
+            "description": "Implement factory/core/revenue_orchestrator.py for multi-region billing management.",
+            "dependencies": []
+        },
+        {
+            "id": "TASK-REV-002",
+            "title": "Bilingual Billing Adapters",
+            "status": "completed",
+            "description": "Develop Stripe/Fawry/Vodafone-Cash integration templates for sovereign shards.",
+            "dependencies": ["TASK-REV-001"]
+        },
+        {
+            "id": "TASK-REV-003",
+            "title": "Library Hardening: Fintech",
+            "status": "completed",
+            "description": "Refine factory/library/03-security-compliance/ with financial protocols.",
+            "dependencies": ["TASK-REV-002"]
+        }
+    ]
+}

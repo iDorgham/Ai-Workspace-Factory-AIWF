@@ -1,0 +1,16 @@
+spec_id: navigation-flow
+title: Navigation & Menu Flow
+version: 1.0.0
+menu_logic:
+  primary:
+    - Products (Mega-Menu)
+    - Shards (Dropdown)
+    - Roadmap (Link)
+  secondary:
+    - Login / Dashboard
+    - Industrial CLI (Terminal Mode)
+flow:
+  - Entry: Home
+  - Conversion: Try /dev command in browser
+  - Retention: Save Phase Blueprint
+status: draft

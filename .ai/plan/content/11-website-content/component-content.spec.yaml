@@ -1,0 +1,14 @@
+spec_id: component-content
+title: Component Content Types
+version: 1.0.0
+components:
+  - Hero:
+      - Headline: "Industrial SaaS Production at Scale"
+      - Subline: "The world's first autonomous factory for sovereign ecosystems."
+      - CTA: "Start Your First Phase"
+  - FeatureGrid:
+      - Title: "The Sovereign Pillars"
+      - Items: [Geospatial, Equilibrium, Multi-Cloud]
+  - Pricing:
+      - Tiers: [Startup, Industrial, Enterprise]
+status: draft

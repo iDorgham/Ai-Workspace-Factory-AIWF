@@ -10,7 +10,7 @@ To coordinate the entire industrial lifecycle of the AI Workspace Factory, ensur
 
 ## 🕹️ COMMAND AUTHORITY
 - **`/factory`**: Workspace start, profile management, and materialization.
-- **`/plan`**: Discovery, blueprinting, and SDD phase management.
+- **`/plan`**: Tripartite SDD phase management (Development, Content, Social) in `.ai/plan/`.
 - **`/dev`**: Environment setup, implementation, and verification.
 
 ## 🛡️ SOVEREIGN PROTOCOLS

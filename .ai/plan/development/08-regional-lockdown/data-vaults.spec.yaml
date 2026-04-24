@@ -1,0 +1,8 @@
+spec_id: data-vaults
+title: Sovereign Data Vaults
+version: 1.0.0
+requirements:
+  - [REQ-LOCKDOWN-002]
+components:
+  - factory/core/regional_vault.py
+status: draft
