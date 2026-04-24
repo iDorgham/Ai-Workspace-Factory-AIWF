@@ -18,3 +18,4 @@ workspaces/
 
 # AIWF Intelligence Layer (MUST BE TRACKED)
 # We remove .ai/ from the ignore list
+.ruff_cache
