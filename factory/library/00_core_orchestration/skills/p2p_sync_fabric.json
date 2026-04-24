@@ -1,0 +1,9 @@
+{
+  "id": "p2p-sync-fabric",
+  "version": "1.0.0",
+  "library_category": "Distribution",
+  "sovereign_tier": "OMEGA",
+  "functionality": "Automated cross-continent state synchronization via mirrored propagation.",
+  "protocols": ["Git-Mirror", "Residency-Aware-Gossip"],
+  "traceability_hash": "sha256:p2p-v1-2026-04-24"
+}

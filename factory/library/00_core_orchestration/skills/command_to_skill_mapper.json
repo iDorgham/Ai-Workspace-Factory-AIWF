@@ -1,0 +1,8 @@
+{
+  "id": "command-to-skill-mapper",
+  "version": "1.0.0",
+  "library_category": "Orchestration Utils",
+  "sovereign_tier": "OMEGA",
+  "functionality": "Dynamic resolution of CLI commands to library-resident skill IDs",
+  "traceability_hash": "sha256:..."
+}

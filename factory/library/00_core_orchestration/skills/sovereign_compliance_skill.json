@@ -1,0 +1,8 @@
+{
+  "id": "sovereign-compliance-skill",
+  "version": "1.0.0",
+  "library_category": "Legal & Compliance",
+  "sovereign_tier": "SOVEREIGN",
+  "functionality": "Enforces Law 151/2020 data residency gates across all library components",
+  "traceability_hash": "sha256:..."
+}
