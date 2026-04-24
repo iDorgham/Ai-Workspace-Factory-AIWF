@@ -18,49 +18,85 @@ Your operational interface is the COMMAND REGISTRY v2.0 TERMINAL: a minimalist 7
 
 ---
 
-## 🏗️ AUTHORITATIVE COMMAND TREE (7 Top-Level | 42 Subcommands)
+## 🏗️ AUTHORITATIVE COMMAND TREE (9 Top-Level | 58 Subcommands)
 
 ### `/plan` — Discovery & Blueprinting
-- `content`: Structured discovery interview (pages, style, locale, SEO goals).
-- `blueprint`: Generates high-density SDD specs (≥5 specs).
-- `status`: Real-time phase progress, architectural gap & compliance audit.
-- `adr`: Auto-generates Architecture Decision Records with traceability hashes.
+- `discovery`: Structured requirements interrogation.
+- `blueprint`: Generate high-density SDD specs (≥5 specs).
+- `status`: Phase progress & compliance check.
+- `adr`: Generate Architecture Decision Records.
+- `review`: Stakeholder consensus & approval.
 
 ### `/create` — Asset & Content Generation
-- `content`: Scaffolds/assembles discovered content into workspace shards.
-- `image`: Generates industrial-grade visual assets via generative fabric.
-- `spec`: Generates/updates `spec.yaml`, `api-contract.yaml`, test fixtures.
-- `docs`: Auto-generates API docs, system diagrams, and READMEs.
+- `content`: Scaffold/assemble discovered content.
+- `image`: Generate industrial-grade visual assets.
+- `page`: Materialize UI components & pages.
+- `spec`: Generate spec.yaml & contracts.
+- `docs`: Auto-generate API & system documentation.
 
 ### `/dev` — Implementation & Validation
-- `init`: Env/runtime setup, dependency resolution, CI scaffold.
-- `implement`: Autonomous code generation governed by validated specs.
-- `test`: Unit, integration, e2e, load, security testing.
-- `fix`: Recursive remediation of drift, test failures, dependency breaks.
-
-### `/audit` — Quality, Security & Observability
-- `health`: Industrial health scoring (99.0+ req), structural drift & library equilibrium.
-- `security`: SAST, DAST, secrets scanning, SBOM generation.
-- `logs`: Log aggregation, distributed tracing, and perf profiling.
-- `seo`: Technical SEO audit (keyword density, meta-strategy).
+- `init`: Env setup & CI/CD scaffolding.
+- `implement`: Code generation governed by specs.
+- `test`: Execute industrial test suites.
+- `fix`: Recursive remediation of drift & failures.
+- `build`: Production bundle & verification.
 
 ### `/git` — Versioning, Review & Distribution
-- `auto`: Silent versioning, traceability logging, immutable tagging.
-- `release`: Sovereign handover, version increment, shard distribution readiness.
-- `rollback`: Recovery to previous stable state with compliance preservation.
-- `deploy`: Shard distribution to clouds with residency routing.
+- `auto`: Silent versioning & traceability.
+- `release`: Sovereign handover & version increment.
+- `review`: Autonomous PR & code audit.
+- `rollback`: Recovery with compliance preservation.
+- `deploy`: Shard distribution to cloud endpoints.
+
+### `/do` — Industrial Task Execution
+- `task`: Execute atomic industrial task.
+- `chain`: Execute deterministic multi-command chain.
+- `assign`: Delegate task to specialized agent.
+- `monitor`: Real-time task execution tracking.
+- `report`: Post-execution completion audit.
 
 ### `/guide` — Intelligence & Strategy
-- `brainstorm`: Multi-agent consensus for architecture/strategy.
+- `brainstorm`: Multi-agent consensus for architecture & strategy.
 - `learn`: Recursive skill extraction and friction-to-skill conversion.
 - `heal`: Autonomous structural remediation & predictive monitoring.
-- `chaos`: Stress testing, boundary validation, resilience injection.
+- `chaos`: Stress testing, boundary validation, and resilience injection.
 - `dashboard`: Real-time KPI/health UI and project roster.
 
-### `/omega` — Singularity Control (v19.0+)
-- `status`: Cinematic view of factory readiness and equilibrium.
-- `evolve`: Triggers recursive library optimization and metadata injection.
-- `certify`: Final industrial certification of distributed shards.
+### `/audit` — Quality & Observability
+- `health`: Industrial health scoring (99.0+) & structural drift.
+- `content`: High-fidelity content validation & strategic alignment.
+- `security`: SAST, DAST, secrets scanning, and SBOM generation.
+- `logs`: Log aggregation, distributed tracing, and perf profiling.
+- `seo`: Technical SEO audit and meta-strategy verification.
+
+### `/factory` — Project & Workspace Orchestration
+- `start`: Begin new project discovery & requirements gathering.
+- `profile`: List/show workspace composition templates.
+- `build`: Assemble project blueprint from templates.
+- `make`: Materialize full workspace in `workspaces/`.
+- `test`: Verify structure, contracts, compliance, and health.
+- `check`: Compare workspace vs manifest & detect drift.
+- `sync`: Aggregate global workspace state & P2P sync.
+- `assign`: Route task to specialized swarm agent.
+- `suggest`: AI-driven optimization recommendations.
+- `repair`: Self-heal indexes, schemas, and core scripts.
+- `report`: Generate comprehensive industrial reports.
+- `help`: Interactive teaching engine & pedagogy assistant.
+- `status`: Real-time health & phase tracking.
+
+### `/library` — Component & Knowledge Curation
+- `create`: Guided generation of agents, skills, and commands.
+- `scan`: Deep inspection for drift, conflicts, and outdated schemas.
+- `test`: Validate components against contracts & sovereignty.
+- `fix`: Auto-remediate scan failures & patch manifests.
+- `improve`: Optimize components for performance & clarity.
+- `agent`: Manage agent lifecycle (register, bind, retire).
+- `skill`: Manage skill lifecycle (catalog, version, archive).
+- `rule`: Manage factory rules & policy enforcement.
+- `profile`: Manage library and workspace profiles.
+- `maintain`: Background upkeep (index, cache, registry).
+- `report`: Generate component health & compliance reports.
+- `help`: Context-aware teaching assistant for library ops.
 
 ---
 

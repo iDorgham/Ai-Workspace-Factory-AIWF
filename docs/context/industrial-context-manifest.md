@@ -17,11 +17,11 @@ AIWF is a sovereign, industrial-scale content factory designed for the automated
 
 ---
 
-## 🛰️ 2. COMMAND SUITE (7-CORE HIERARCHY)
-The factory utilizes a unified 7-core command tree designed for maximum power and zero cognitive friction.
+## 🛰️ 2. COMMAND SUITE (9-CORE HIERARCHY)
+The factory utilizes a unified 9-core command tree designed for maximum power and zero cognitive friction.
 
 ### `/plan` — Discovery & Blueprinting
-- `content`, `blueprint`, `status`, `review`, `adr`
+- `discovery`, `blueprint`, `status`, `adr`, `review`
 
 ### `/create` — Asset & Content Generation
 - `content`, `image`, `page`, `spec`, `docs`
@@ -29,14 +29,23 @@ The factory utilizes a unified 7-core command tree designed for maximum power an
 ### `/dev` — Implementation & Validation
 - `init`, `implement`, `test`, `fix`, `build`
 
-### `/audit` — Quality, Security & Observability
-- `health`, `content`, `security`, `logs`, `seo`
-
 ### `/git` — Versioning, Review & Distribution
 - `auto`, `release`, `review`, `rollback`, `deploy`
 
+### `/do` — Industrial Task Execution
+- `task`, `chain`, `assign`, `monitor`, `report`
+
 ### `/guide` — Intelligence & Strategy
-- `brainstorm`, `learn`, `heal`, `chaos`, `dashboard`, `tutor`
+- `brainstorm`, `learn`, `heal`, `chaos`, `dashboard`
+
+### `/audit` — Quality & Observability
+- `health`, `content`, `security`, `logs`, `seo`
+
+### `/factory` — Project & Workspace Orchestration
+- `start`, `profile`, `build`, `make`, `test`, `check`, `sync`, `assign`, `suggest`, `repair`, `report`, `help`, `status`
+
+### `/library` — Component & Knowledge Curation
+- `create`, `scan`, `test`, `fix`, `improve`, `agent`, `skill`, `rule`, `profile`, `maintain`, `report`, `help`
 
 ### `/omega` — Singularity Control (v19.0+)
 - `status`: Cinematic view of factory readiness and equilibrium.
