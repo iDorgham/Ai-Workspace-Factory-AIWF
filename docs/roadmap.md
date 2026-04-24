@@ -18,7 +18,7 @@
 - **Milestones**:
     - [x] Recursive section-based page construction.
     - [x] Legal-root root structure enforcement.
-    - [x] Structured Discovery Session template (`discovery-session.md`).
+    - [x] Structured Discovery Session template (`discovery_session.md`).
     - [x] Bilingual High-Fidelity content generation.
 - **Validation**: 100/100 OMEGA score; Law 151 compliance certified.
 - **Date**: April 24, 2026

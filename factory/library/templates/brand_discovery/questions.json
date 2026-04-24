@@ -1,0 +1,509 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "description": "Full brand discovery interview question bank. Used by brand-consultant agent when /brand command is invoked. Questions flow in 7 phases. Each question has a type, choices (if applicable), and maps to an output field.",
+    "total_questions": 28,
+    "estimated_time_minutes": 15,
+    "output_files": [
+      "content/sovereign/reference/market-positioning.md",
+      "content/sovereign/reference/brand-voice/style-rules.md",
+      "content/sovereign/reference/brand-voice/glossary.md",
+      "content/sovereign/reference/brand-voice/tone-examples.md",
+      "content/sovereign/reference/brand-voice/voice-refinement.md"
+    ]
+  },
+
+  "phases": [
+    {
+      "id": "P1",
+      "name": "Brand Foundation",
+      "description": "Understanding what your brand is and where it stands today.",
+      "icon": "🏛️",
+      "questions": [
+        {
+          "id": "Q1",
+          "phase": "P1",
+          "question": "What is your brand's primary offering?",
+          "type": "single_choice_with_other",
+          "required": true,
+          "output_field": "primary_service",
+          "choices": [
+            "A — Interior design & architecture",
+            "B — Furniture & home décor retail",
+            "C — Real estate development",
+            "D — Art gallery & curation",
+            "E — Sustainable design & sourcing",
+            "F — Commercial space design",
+            "G — Photography or creative studio",
+            "H — Fashion or lifestyle brand",
+            "I — Consulting or professional services",
+            "J — Other (please describe)"
+          ]
+        },
+        {
+          "id": "Q2",
+          "phase": "P1",
+          "question": "Where is your brand in its journey?",
+          "type": "single_choice",
+          "required": true,
+          "output_field": "brand_stage",
+          "choices": [
+            "A — Just starting out (pre-launch or < 1 year)",
+            "B — Established but rebranding or repositioning",
+            "C — Growing and formalising our voice",
+            "D — Mature brand looking to evolve our content",
+            "E — Launching a new product or service line"
+          ]
+        },
+        {
+          "id": "Q3",
+          "phase": "P1",
+          "question": "What geographic market does your brand primarily serve?",
+          "type": "single_choice_with_other",
+          "required": true,
+          "output_field": "primary_market",
+          "choices": [
+            "A — Local city (one city or area)",
+            "B — National (one country)",
+            "C — Regional (e.g. Middle East, North Africa, GCC)",
+            "D — International (multiple regions)",
+            "E — Fully remote / online / global",
+            "F — Other (please specify)"
+          ]
+        },
+        {
+          "id": "Q4",
+          "phase": "P1",
+          "question": "In one sentence — what does your brand do, for whom, and why it matters?\n(Type your answer freely)",
+          "type": "open_text",
+          "required": true,
+          "output_field": "brand_one_liner",
+          "placeholder": "e.g. We design bespoke residential interiors for high-net-worth clients in Cairo who want spaces that outlast trends.",
+          "min_words": 10,
+          "max_words": 50
+        }
+      ]
+    },
+
+    {
+      "id": "P2",
+      "name": "Your Audience",
+      "description": "Who you are speaking to shapes everything about how you speak.",
+      "icon": "👤",
+      "questions": [
+        {
+          "id": "Q5",
+          "phase": "P2",
+          "question": "Who is your primary client or customer?",
+          "type": "single_choice_with_other",
+          "required": true,
+          "output_field": "primary_audience_type",
+          "choices": [
+            "A — High-net-worth individuals (personal projects)",
+            "B — Businesses / commercial clients",
+            "C — Developers and real estate investors",
+            "D — Young professionals and aspirational buyers",
+            "E — Families investing in their primary home",
+            "F — Boutique hotels, restaurants, retail",
+            "G — Both B2B and B2C equally",
+            "H — Other (please describe)"
+          ]
+        },
+        {
+          "id": "Q6",
+          "phase": "P2",
+          "question": "What does your ideal client care most about? (Choose up to 3)",
+          "type": "multi_choice",
+          "required": true,
+          "max_selections": 3,
+          "output_field": "audience_values",
+          "choices": [
+            "A — Craftsmanship and quality",
+            "B — Status and prestige",
+            "C — Sustainability and ethics",
+            "D — Uniqueness and originality",
+            "E — Convenience and seamless experience",
+            "F — Investment value and ROI",
+            "G — Cultural alignment and authenticity",
+            "H — Emotional connection and storytelling",
+            "I — Speed and efficiency",
+            "J — Price and value for money"
+          ]
+        },
+        {
+          "id": "Q7",
+          "phase": "P2",
+          "question": "What is the one thing your client fears or wants to avoid most?",
+          "type": "single_choice_with_other",
+          "required": true,
+          "output_field": "audience_fear",
+          "choices": [
+            "A — Wasting money on poor quality",
+            "B — Getting something generic or trend-driven",
+            "C — Losing control over the outcome",
+            "D — The process being stressful or unclear",
+            "E — A result that doesn't feel like them",
+            "F — Being overcharged or poorly treated",
+            "G — Other (please describe)"
+          ]
+        },
+        {
+          "id": "Q8",
+          "phase": "P2",
+          "question": "Describe your ideal client in 2–3 sentences. Who are they really?\n(Type your answer freely)",
+          "type": "open_text",
+          "required": false,
+          "output_field": "ideal_client_profile",
+          "placeholder": "e.g. She's 45, runs her own business in Zamalek, has travelled extensively and is tired of Egyptian design that tries to look European. She wants something singular."
+        }
+      ]
+    },
+
+    {
+      "id": "P3",
+      "name": "Brand Personality",
+      "description": "If your brand were a person at a dinner table, how would they show up?",
+      "icon": "🎭",
+      "questions": [
+        {
+          "id": "Q9",
+          "phase": "P3",
+          "question": "Which of these personalities is closest to your brand?",
+          "type": "single_choice",
+          "required": true,
+          "output_field": "brand_archetype",
+          "choices": [
+            "A — The Expert — authoritative, precise, commands respect through depth",
+            "B — The Creator — imaginative, expressive, pushes boundaries",
+            "C — The Guide — warm, helpful, empowers the client's own vision",
+            "D — The Rebel — challenges conventions, distinctive, unapologetically different",
+            "E — The Sage — philosophical, considered, shares knowledge generously",
+            "F — The Ruler — premium, established, confident in its authority",
+            "G — The Companion — friendly, approachable, genuinely relatable",
+            "H — The Explorer — curious, adventurous, drawn to discovery"
+          ]
+        },
+        {
+          "id": "Q10",
+          "phase": "P3",
+          "question": "Choose 3 words that should define your brand's voice.",
+          "type": "multi_choice_with_other",
+          "required": true,
+          "max_selections": 3,
+          "output_field": "brand_voice_words",
+          "choices": [
+            "A — Authoritative",
+            "B — Warm",
+            "C — Poetic",
+            "D — Minimal",
+            "E — Bold",
+            "F — Intellectual",
+            "G — Grounded",
+            "H — Refined",
+            "I — Playful",
+            "J — Honest",
+            "K — Aspirational",
+            "L — Understated",
+            "M — Other (type your own)"
+          ]
+        },
+        {
+          "id": "Q11",
+          "phase": "P3",
+          "question": "Where does your brand sit on each spectrum? (Answer A through E for each)",
+          "type": "spectrum_grid",
+          "required": true,
+          "output_field": "tone_spectrums",
+          "spectrums": [
+            {
+              "id": "S1",
+              "left": "Formal",
+              "right": "Casual",
+              "scale": ["A — Very formal", "B — Somewhat formal", "C — Balanced", "D — Somewhat casual", "E — Very casual"]
+            },
+            {
+              "id": "S2",
+              "left": "Serious",
+              "right": "Playful",
+              "scale": ["A — Very serious", "B — Mostly serious", "C — Balanced", "D — Mostly playful", "E — Very playful"]
+            },
+            {
+              "id": "S3",
+              "left": "Expert-led",
+              "right": "Client-led",
+              "scale": ["A — We lead, client follows", "B — We guide strongly", "C — Equal partnership", "D — We serve the vision", "E — Client always directs"]
+            },
+            {
+              "id": "S4",
+              "left": "Traditional",
+              "right": "Contemporary",
+              "scale": ["A — Deeply traditional", "B — Classic with modern touches", "C — Timeless (neither)", "D — Contemporary with roots", "E — Fully contemporary"]
+            },
+            {
+              "id": "S5",
+              "left": "Reserved",
+              "right": "Expressive",
+              "scale": ["A — Very reserved, minimal language", "B — Quiet confidence", "C — Measured expression", "D — Openly expressive", "E — Emotionally vivid"]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "P4",
+      "name": "Positioning & Differentiation",
+      "description": "What makes your brand impossible to substitute.",
+      "icon": "🎯",
+      "questions": [
+        {
+          "id": "Q12",
+          "phase": "P4",
+          "question": "What is your price positioning?",
+          "type": "single_choice",
+          "required": true,
+          "output_field": "price_tier",
+          "choices": [
+            "A — Ultra-premium (top 1–5%, bespoke, no published prices)",
+            "B — Premium (high-end, published price ranges, selective)",
+            "C — Mid-market premium (quality at accessible price point)",
+            "D — Value-focused (best quality for the price)",
+            "E — Variable (depends on service type)"
+          ]
+        },
+        {
+          "id": "Q13",
+          "phase": "P4",
+          "question": "What do you genuinely do that your competitors don't or can't?\n(Type freely — be specific. This is your most important answer.)",
+          "type": "open_text",
+          "required": true,
+          "output_field": "unique_differentiators",
+          "placeholder": "e.g. We source all natural materials directly from artisans in Morocco and Italy — no middlemen. We also limit ourselves to 6 commissions per year to ensure depth of attention."
+        },
+        {
+          "id": "Q14",
+          "phase": "P4",
+          "question": "What do you deliberately NOT do? (What separates you by what you refuse?)",
+          "type": "open_text",
+          "required": true,
+          "output_field": "deliberate_exclusions",
+          "placeholder": "e.g. We never take trend-driven briefs. We don't rush. We don't offer 3D renders as a substitute for real material samples."
+        },
+        {
+          "id": "Q15",
+          "phase": "P4",
+          "question": "Name 2–3 competitors or brands in your space (don't worry — we use this to differentiate, not copy).",
+          "type": "open_text",
+          "required": false,
+          "output_field": "known_competitors",
+          "placeholder": "e.g. Studio X in Cairo, Zaha Hadid Architects (aspirational), [local competitor name]"
+        }
+      ]
+    },
+
+    {
+      "id": "P5",
+      "name": "Voice & Language",
+      "description": "The specific words, rhythms, and rules that make your writing unmistakably yours.",
+      "icon": "✍️",
+      "questions": [
+        {
+          "id": "Q16",
+          "phase": "P5",
+          "question": "How should your content make the reader feel? (Choose up to 2)",
+          "type": "multi_choice",
+          "required": true,
+          "max_selections": 2,
+          "output_field": "content_emotional_goal",
+          "choices": [
+            "A — Inspired and elevated",
+            "B — Reassured and trusted",
+            "C — Educated and informed",
+            "D — Curious and intrigued",
+            "E — Aspired and motivated",
+            "F — Understood and seen",
+            "G — Excited to act",
+            "H — Calm and confident in their choice"
+          ]
+        },
+        {
+          "id": "Q17",
+          "phase": "P5",
+          "question": "What language or phrases should NEVER appear in your content?\n(List words, phrases, or types of language to ban.)",
+          "type": "open_text",
+          "required": false,
+          "output_field": "prohibited_language",
+          "placeholder": "e.g. 'Amazing', 'stunning', 'world-class', 'game-changing', 'passionate about', 'luxury' overused, exclamation marks, listicles"
+        },
+        {
+          "id": "Q18",
+          "phase": "P5",
+          "question": "What words or phrases feel most like YOUR brand? (Ones you naturally use.)",
+          "type": "open_text",
+          "required": false,
+          "output_field": "preferred_vocabulary",
+          "placeholder": "e.g. 'commission', 'considered', 'singular', 'the work', 'in dialogue with', 'earned'"
+        },
+        {
+          "id": "Q19",
+          "phase": "P5",
+          "question": "How should your calls to action feel?",
+          "type": "single_choice",
+          "required": true,
+          "output_field": "cta_style",
+          "choices": [
+            "A — Invitation: soft, no pressure ('When you're ready, we're here')",
+            "B — Confidence: clear and direct ('Begin a conversation →')",
+            "C — Curiosity: draws them in ('See how we approach this →')",
+            "D — Action: clear next step ('Book a consultation')",
+            "E — Authority: positions us as the natural choice ('Work with the studio →')"
+          ]
+        },
+        {
+          "id": "Q20",
+          "phase": "P5",
+          "question": "What language rules matter to you? (Choose all that apply)",
+          "type": "multi_choice",
+          "required": false,
+          "output_field": "language_rules",
+          "choices": [
+            "A — British English spelling (colour, realise, centre)",
+            "B — American English spelling (color, realize, center)",
+            "C — Oxford comma always (x, y, and z)",
+            "D — No exclamation marks in editorial content",
+            "E — Short paragraphs only (max 3–4 sentences)",
+            "F — No listicles — prose only for blog content",
+            "G — Numbers written out (one through nine)",
+            "H — Em dash (—) with spaces around it"
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "P6",
+      "name": "Content Strategy",
+      "description": "What you publish, how often, and why.",
+      "icon": "📣",
+      "questions": [
+        {
+          "id": "Q21",
+          "phase": "P6",
+          "question": "What are the main topics you want your brand to own? (Choose up to 4)",
+          "type": "multi_choice_with_other",
+          "required": true,
+          "max_selections": 4,
+          "output_field": "content_topics",
+          "choices": [
+            "A — Design philosophy and process",
+            "B — Material sourcing and craftsmanship",
+            "C — Sustainability and ethics in design",
+            "D — Client stories and case studies",
+            "E — Trend analysis and market insight",
+            "F — Behind-the-scenes of studio life",
+            "G — Education: how to commission design",
+            "H — Cultural commentary on design and space",
+            "I — Investment value of good design",
+            "J — Local design scene and scene-setting",
+            "K — Other (please specify)"
+          ]
+        },
+        {
+          "id": "Q22",
+          "phase": "P6",
+          "question": "Which content formats do you want to prioritise?",
+          "type": "multi_choice",
+          "required": true,
+          "output_field": "content_formats",
+          "choices": [
+            "A — Long-form blog posts (1,000+ words)",
+            "B — Short editorial pieces (500–800 words)",
+            "C — Project/portfolio case studies",
+            "D — Website core pages (About, Services, etc.)",
+            "E — Landing pages for campaigns",
+            "F — Social media captions",
+            "G — Email newsletters",
+            "H — Press releases and media pitches"
+          ]
+        },
+        {
+          "id": "Q23",
+          "phase": "P6",
+          "question": "What primary SEO goal are you focused on?",
+          "type": "single_choice",
+          "required": true,
+          "output_field": "seo_primary_goal",
+          "choices": [
+            "A — Local search (finding us by city + service)",
+            "B — Authority content (ranking for industry topics)",
+            "C — Project/portfolio discovery (finding our work)",
+            "D — Direct competitor displacement (outranking specific studios)",
+            "E — Long-tail informational (how-to, what-is, guides)"
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "P7",
+      "name": "Reference & Inspiration",
+      "description": "Showing us what resonates tells us more than describing it.",
+      "icon": "💡",
+      "questions": [
+        {
+          "id": "Q24",
+          "phase": "P7",
+          "question": "Name 2–3 brands (any industry) whose communication style you admire and why.",
+          "type": "open_text",
+          "required": false,
+          "output_field": "voice_inspiration",
+          "placeholder": "e.g. Aesop — precise, literary, never salesy. Kinfolk magazine — warm but considered. Bottega Veneta — says a lot by saying little."
+        },
+        {
+          "id": "Q25",
+          "phase": "P7",
+          "question": "Name 1–2 brands whose communication style you absolutely do NOT want to emulate.",
+          "type": "open_text",
+          "required": false,
+          "output_field": "voice_anti_inspiration",
+          "placeholder": "e.g. Generic real estate marketing (all caps, hype), mass-market design influencers (trend-chasing, shallow)"
+        },
+        {
+          "id": "Q26",
+          "phase": "P7",
+          "question": "Paste a paragraph of your own existing content that you're proud of (or that feels most 'you').\nIf you don't have any, skip this.",
+          "type": "open_text",
+          "required": false,
+          "output_field": "existing_brand_voice_sample",
+          "placeholder": "Paste any text from your website, a past email, a proposal, or social caption that feels right."
+        },
+        {
+          "id": "Q27",
+          "phase": "P7",
+          "question": "What does success look like for your brand content in 12 months?",
+          "type": "single_choice_with_other",
+          "required": true,
+          "output_field": "content_success_goal",
+          "choices": [
+            "A — More qualified enquiries from our ideal client",
+            "B — Recognition as a thought leader in our space",
+            "C — Better search visibility and organic traffic",
+            "D — A cohesive, professional brand presence across all channels",
+            "E — A content library we can consistently publish from",
+            "F — Reduced reliance on referrals — inbound leads",
+            "G — Other (please describe)"
+          ]
+        },
+        {
+          "id": "Q28",
+          "phase": "P7",
+          "question": "Is there anything else about your brand, your values, or what you do that you think is essential for anyone writing content for you to know?\n(This is your open mic — use it.)",
+          "type": "open_text",
+          "required": false,
+          "output_field": "additional_context",
+          "placeholder": "Any cultural context, personal philosophy, non-negotiables, or important backstory that informs your brand."
+        }
+      ]
+    }
+  ]
+}

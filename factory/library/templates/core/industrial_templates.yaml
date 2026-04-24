@@ -1,0 +1,84 @@
+---
+# spec_template.yaml
+type: specification
+id: SPEC-{{ID}}
+version: 1.0.0
+compliance: Law 151/2020
+traceability: ISO-8601
+auto_generate:
+  code: true
+  tests: true
+  docs: true
+requirements:
+  - {{REQ_1}}
+components:
+  - {{COMP_1}}
+
+---
+# workspace_profile_template.yaml
+id: PROFILE-{{NAME}}
+tier: OMEGA
+region: {{REGION}}
+locale: {{LOCALE}}
+capabilities:
+  - content_assembly
+  - agent_delegation
+overrides:
+  theme: industrial_dark
+  security_level: high
+
+---
+# teaching_flow_template.yaml
+id: TEACH-{{CMD}}
+intent: "Explain {{CMD}} to the user"
+schema:
+  required_flags: ["--region"]
+  optional_flags: ["--chain", "--teach"]
+compliance:
+  law_151: true
+  sovereign_isolation: "Level 4"
+generation_steps:
+  - "Step 1: Discovery"
+  - "Step 2: Scaffolding"
+validation_checks:
+  - "Check path integrity"
+
+---
+# trace_schema.json
+{
+  "fields": [
+    "ts_iso8601",
+    "cmd",
+    "subcmd",
+    "client_id",
+    "mode",
+    "hash",
+    "region",
+    "compliance_id",
+    "rollback_pointer",
+    "chain_id",
+    "health_score"
+  ],
+  "encryption": "AES-256-GCM"
+}
+
+---
+# agent_manifest_template.yaml
+id: AGENT-{{ID}}
+role: "{{ROLE}}"
+capabilities: [{{CAPS}}]
+binds_to: [{{BINDS}}]
+auto_mode: true
+silent_mode: true
+sovereign_gate: omega_gate_v2
+
+---
+# skill_manifest_template.json
+{
+  "id": "SKILL-{{ID}}",
+  "version": "1.0.0",
+  "triggers": [{{TRIGS}}],
+  "inputs": [{{INS}}],
+  "outputs": [{{OUTS}}],
+  "sovereign_tier": "T1"
+}

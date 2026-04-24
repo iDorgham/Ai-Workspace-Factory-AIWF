@@ -1,0 +1,185 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "description": "SEO meta template. technical-auditor sub-agent uses this as schema for generating seo-meta.json per content folder.",
+    "owner": "seo-agent"
+  },
+
+  "page_meta": {
+    "title": {
+      "value": "",
+      "rules": {
+        "max_chars": 60,
+        "min_chars": 40,
+        "primary_keyword_required": true,
+        "keyword_position": "front-loaded (within first 3 words preferred)",
+        "format": "[Primary Keyword] — [Brand or Context]",
+        "example": "Luxury Interior Design Cairo — Sovereign Studio"
+      }
+    },
+    "meta_description": {
+      "value": "",
+      "rules": {
+        "max_chars": 155,
+        "min_chars": 120,
+        "primary_keyword_required": true,
+        "cta_required": true,
+        "no_duplicate_of_title": true,
+        "example": "Sovereign designs bespoke residential interiors in Cairo and Dubai. Considered spaces built around how you live, not around trends. Begin a conversation."
+      }
+    },
+    "canonical_url": {
+      "value": "",
+      "rules": {
+        "format": "https://[domain]/[content-type]/[slug]",
+        "trailing_slash": false
+      }
+    },
+    "robots": {
+      "value": "index, follow",
+      "options": ["index, follow", "noindex, follow", "noindex, nofollow"]
+    }
+  },
+
+  "open_graph": {
+    "og_title": {
+      "value": "",
+      "rules": {
+        "max_chars": 60,
+        "note": "Can match page title or be more social-friendly"
+      }
+    },
+    "og_description": {
+      "value": "",
+      "rules": {
+        "max_chars": 155,
+        "note": "Can match meta_description"
+      }
+    },
+    "og_image": {
+      "value": "",
+      "rules": {
+        "format": "webp preferred, jpeg fallback",
+        "dimensions": "1200x630px",
+        "max_size_kb": 200,
+        "alt_text_required": true
+      }
+    },
+    "og_type": {
+      "value": "article",
+      "options": ["article", "website", "profile"]
+    }
+  },
+
+  "heading_structure": {
+    "h1_count": {
+      "value": null,
+      "rule": "exactly 1",
+      "must_contain_primary_keyword": true
+    },
+    "h2_count": {
+      "value": null,
+      "rule": "2–6 recommended",
+      "at_least_one_must_contain_keyword_variant": true
+    },
+    "h3_count": {
+      "value": null,
+      "rule": "as needed, no keyword stuffing"
+    },
+    "heading_hierarchy_valid": {
+      "value": null,
+      "rule": "H1 → H2 → H3 only. No skipped levels."
+    }
+  },
+
+  "keyword_analysis": {
+    "primary_keyword": {
+      "value": "",
+      "density": null,
+      "target_range": "1–2%",
+      "in_title": null,
+      "in_meta": null,
+      "in_h1": null,
+      "in_first_100_words": null
+    },
+    "secondary_keywords": [
+      {
+        "keyword": "",
+        "density": null,
+        "target_range": "0.5–1%"
+      }
+    ],
+    "cannibalization_check": {
+      "conflicts_with": [],
+      "status": "clear"
+    }
+  },
+
+  "readability": {
+    "flesch_kincaid_score": {
+      "value": null,
+      "threshold": 65,
+      "status": null
+    },
+    "avg_sentence_length_words": {
+      "value": null,
+      "target": "15–20"
+    },
+    "avg_paragraph_length_sentences": {
+      "value": null,
+      "target": "2–4"
+    },
+    "passive_voice_percent": {
+      "value": null,
+      "target": "< 15%"
+    }
+  },
+
+  "technical_seo": {
+    "word_count": {
+      "value": null,
+      "minimum_by_type": {
+        "blog-post": 600,
+        "project": 400,
+        "landing-page": 500,
+        "website-page": 300
+      }
+    },
+    "internal_links_count": {
+      "value": null,
+      "minimum": 2
+    },
+    "external_links_count": {
+      "value": null
+    },
+    "schema_markup": {
+      "type": null,
+      "options": ["Article", "LocalBusiness", "Service", "FAQPage", "BreadcrumbList"],
+      "implemented": false
+    }
+  },
+
+  "image_seo": {
+    "total_images": null,
+    "alt_text_coverage_percent": null,
+    "webp_conversion_percent": null,
+    "lazy_load_percent": null,
+    "oversized_images": [],
+    "missing_alt": []
+  },
+
+  "validation_summary": {
+    "seo_score": null,
+    "gates_passed": {
+      "title": null,
+      "meta_description": null,
+      "h1_valid": null,
+      "keyword_density": null,
+      "readability": null,
+      "image_seo": null
+    },
+    "overall_pass": null,
+    "generated_at": null,
+    "generator": "seo-agent / technical-auditor"
+  }
+}

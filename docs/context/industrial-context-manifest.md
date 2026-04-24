@@ -47,4 +47,4 @@ The AIWF is organized into three distinct industrial layers to ensure peak techn
 4. **Geospatial Lock**: Strict Law 151/2020 residency enforcement across all production shards.
 
 ---
-*Governor: Dorgham | Registry: docs/context/industrial-context-manifest.md*
+*Governor: Dorgham | Registry: docs/context/industrial_context_manifest.md*

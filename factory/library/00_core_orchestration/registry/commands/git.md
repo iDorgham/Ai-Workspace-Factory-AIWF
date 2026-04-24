@@ -14,11 +14,18 @@ Silent versioning, releases, and distribution
 
 | Subcommand | Purpose | Usage |
 |------------|---------|-------|
-| `auto` | Silent versioning & traceability | `/git auto` |
+| `auto` | Unified Sync + Docs + Commit | `/git auto --msg="Evolution"` |
+| `sync-push` | Forced OMEGA-Certified Push | `/git sync-push --tags` |
 | `release` | Sovereign handover & version increment | `/git release` |
 | `review` | Autonomous PR & code audit | `/git review` |
 | `rollback` | Recovery with compliance preservation | `/git rollback` |
 | `deploy` | Shard distribution to cloud endpoints | `/git deploy` |
+
+## 📐 Industrial Commit Lifecycle
+Any automated commit via `/git auto` triggers the following mandatory sequence:
+1. **`integrity_auditor`**: Enforce `snake_case` and mirror `.ai/` ➔ Library.
+2. **`documentation_architect`**: Evolve README, PRD, and Context Ledger.
+3. **`registry_guardian`**: Append ISO-8601 Traceability and finalize Git commit.
 
 ## 🛡️ Sovereign Protocol
 - **Agent**: registry_guardian
