@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 
 _scripts = Path(__file__).resolve().parent
-REPO_ROOT = _scripts.parent.parent.parent.parent.parent.parent
+REPO_ROOT = _scripts.parent.parent.parent.parent.parent.parent.parent
 TARGET_DIR = REPO_ROOT / "factory" / "library"
 
 def parse_frontmatter(content):
