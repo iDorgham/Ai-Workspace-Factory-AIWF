@@ -6,15 +6,15 @@ compliance: Law 151/2020
 traceability: ISO-8601 Certified
 ---
 
-# `/factory help`
+# `/library maintain`
 
 ## 📋 Purpose
-Context-aware teaching assistant for /factory
+Background upkeep (index, cache, registry, storage)
 
 ## 🚀 Usage
-`/factory help [args] [flags]`
+`/library maintain [args] [flags]`
 
 ## 🛡️ Sovereign Protocol
-- **Agent**: factory_orchestrator
+- **Agent**: registry_guardian
 - **Gate**: Omega Gate v2
 - **Traceability**: Appends Reasoning Hash to .ai/logs/factory.jsonl

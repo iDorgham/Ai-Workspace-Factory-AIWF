@@ -6,13 +6,13 @@ compliance: Law 151/2020
 traceability: ISO-8601 Certified
 ---
 
-# `/factory help`
+# `/factory profile`
 
 ## 📋 Purpose
-Context-aware teaching assistant for /factory
+List/show workspace composition templates
 
 ## 🚀 Usage
-`/factory help [args] [flags]`
+`/factory profile [args] [flags]`
 
 ## 🛡️ Sovereign Protocol
 - **Agent**: factory_orchestrator

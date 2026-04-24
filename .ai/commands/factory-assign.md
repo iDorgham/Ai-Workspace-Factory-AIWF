@@ -6,13 +6,13 @@ compliance: Law 151/2020
 traceability: ISO-8601 Certified
 ---
 
-# `/factory help`
+# `/factory assign`
 
 ## 📋 Purpose
-Context-aware teaching assistant for /factory
+Route task to specialized swarm agent
 
 ## 🚀 Usage
-`/factory help [args] [flags]`
+`/factory assign [args] [flags]`
 
 ## 🛡️ Sovereign Protocol
 - **Agent**: factory_orchestrator

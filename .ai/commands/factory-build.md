@@ -6,13 +6,13 @@ compliance: Law 151/2020
 traceability: ISO-8601 Certified
 ---
 
-# `/factory help`
+# `/factory build`
 
 ## 📋 Purpose
-Context-aware teaching assistant for /factory
+Assemble project structure from template
 
 ## 🚀 Usage
-`/factory help [args] [flags]`
+`/factory build [args] [flags]`
 
 ## 🛡️ Sovereign Protocol
 - **Agent**: factory_orchestrator

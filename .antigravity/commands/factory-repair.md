@@ -6,13 +6,13 @@ compliance: Law 151/2020
 traceability: ISO-8601 Certified
 ---
 
-# `/factory help`
+# `/factory repair`
 
 ## 📋 Purpose
-Context-aware teaching assistant for /factory
+Self-heal indexes, schemas, core scripts
 
 ## 🚀 Usage
-`/factory help [args] [flags]`
+`/factory repair [args] [flags]`
 
 ## 🛡️ Sovereign Protocol
 - **Agent**: factory_orchestrator
