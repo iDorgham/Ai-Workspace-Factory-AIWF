@@ -1,0 +1,7 @@
+{
+  "spec_id": "workspace_type_schema",
+  "version": "1.0.0",
+  "field": "workspace_type",
+  "enum": ["client", "personal", "staging"],
+  "required": true
+}

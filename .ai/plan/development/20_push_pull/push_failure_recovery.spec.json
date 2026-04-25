@@ -1,0 +1,7 @@
+{
+  "spec_id": "push_failure_recovery",
+  "version": "1.0.0",
+  "flow": ["stash", "pull --rebase", "pop", "retry"],
+  "max_retries": 3,
+  "backoff": "exponential"
+}

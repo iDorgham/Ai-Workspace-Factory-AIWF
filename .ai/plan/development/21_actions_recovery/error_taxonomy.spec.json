@@ -1,0 +1,9 @@
+{
+  "spec_id": "error_taxonomy",
+  "version": "1.0.0",
+  "classes": {
+    "HARD_BLOCK": "Job fails, stops pipeline. Example: residency violation.",
+    "SOFT_WARN": "Job continues, logs warning. Example: minor health drop.",
+    "AUTO_FIX": "Trigger healing, retry once. Example: stale lock."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "spec_id": "silent_commit_mode",
+  "version": "1.0.0",
+  "features": [
+    "suppressed_stdout",
+    "ledger_only_reporting",
+    "auto_rollback_on_failure"
+  ]
+}

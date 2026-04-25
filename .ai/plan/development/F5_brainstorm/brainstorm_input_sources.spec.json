@@ -1,0 +1,10 @@
+{
+  "spec_id": "brainstorm_input_sources",
+  "version": "1.0.0",
+  "sources": [
+    ".ai/logs/ledgers/evolution_ledger.jsonl",
+    ".ai/logs/ledgers/intelligence_ledger.jsonl",
+    ".ai/logs/ledgers/governance_ledger.jsonl",
+    ".ai/logs/tool_performance.jsonl"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "spec_id": "billing_adapter_contract",
+  "version": "1.0.0",
+  "adapters": ["Stripe", "Fawry"],
+  "invoice_schema": {
+    "id": "uuid",
+    "amount": "decimal",
+    "currency": "EGP|USD",
+    "status": "pending|paid|failed"
+  }
+}

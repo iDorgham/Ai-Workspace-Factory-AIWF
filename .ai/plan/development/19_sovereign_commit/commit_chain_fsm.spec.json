@@ -1,0 +1,10 @@
+{
+  "spec_id": "commit_chain_fsm",
+  "version": "1.0.0",
+  "steps": [
+    "integrity_auditor",
+    "documentation_architect",
+    "registry_guardian"
+  ],
+  "rollback_strategy": "pointer-based"
+}

@@ -1,0 +1,21 @@
+{
+  "spec_id": "mirror_sync_cadence",
+  "version": "1.0.0",
+  "triggers": [
+    {
+      "event": "pre-commit",
+      "action": "run_drift_check",
+      "severity": "block"
+    },
+    {
+      "event": "scheduled",
+      "interval": "hourly",
+      "action": "log_drift_status"
+    },
+    {
+      "event": "post-agent-write",
+      "action": "notify_drift"
+    }
+  ],
+  "compliance": "Law 151/2020"
+}

@@ -1,0 +1,15 @@
+{
+  "spec_id": "scaffolding_gate",
+  "version": "1.0.0",
+  "rules": [
+    {
+      "path_pattern": "workspaces/clients/*",
+      "required_type": "client"
+    },
+    {
+      "path_pattern": "workspaces/personal/*",
+      "required_type": "personal"
+    }
+  ],
+  "action_on_mismatch": "block"
+}

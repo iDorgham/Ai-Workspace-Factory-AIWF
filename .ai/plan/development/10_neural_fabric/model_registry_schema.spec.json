@@ -1,0 +1,6 @@
+{
+  "spec_id": "model_registry_schema",
+  "version": "1.0.0",
+  "registry_path": "factory/knowledge/model_registry.json",
+  "fields": ["model_name", "version", "engine", "checksum", "download_url"]
+}

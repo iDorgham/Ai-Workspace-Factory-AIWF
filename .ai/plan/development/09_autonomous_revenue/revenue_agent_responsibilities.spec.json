@@ -1,0 +1,10 @@
+{
+  "spec_id": "revenue_agent_responsibilities",
+  "version": "1.0.0",
+  "agent": "revenue_orchestrator",
+  "responsibilities": [
+    "Monitor billing adapter health",
+    "Trigger growth loop A/B tests",
+    "Resolve subscription state conflicts"
+  ]
+}

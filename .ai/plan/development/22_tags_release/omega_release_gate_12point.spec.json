@@ -1,0 +1,18 @@
+{
+  "spec_id": "omega_release_gate_12point",
+  "version": "1.0.0",
+  "checks": [
+    "path_integrity",
+    "mirror_drift_0",
+    "all_phases_not_draft",
+    "no_tombstoned_imports",
+    "law151_certified",
+    "health_score_95",
+    "test_coverage_80",
+    "spec_density_5",
+    "lint_clean",
+    "security_scan_pass",
+    "dependency_audit_pass",
+    "governance_hash_match"
+  ]
+}

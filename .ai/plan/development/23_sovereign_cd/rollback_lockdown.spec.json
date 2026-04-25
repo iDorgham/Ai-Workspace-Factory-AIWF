@@ -1,0 +1,5 @@
+{
+  "spec_id": "rollback_lockdown",
+  "version": "1.0.0",
+  "policy": "Auto-rollback if Law 151 compliance check fails in production"
+}

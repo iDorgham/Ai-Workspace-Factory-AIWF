@@ -1,2 +1,10 @@
 {"ts": "2026-04-24T05:07:00Z", "pattern_id": "system-init", "status": "READY", "compliance_id": "LAW151-EVO-016"}
 {"ts": "2026-04-24T05:08:18.431122", "pattern_id": "mena-payment-routing", "status": "MANIFESTED", "compliance_id": "LAW151-EVO-016"}
+{"type": "mirror_drift", "status": "fail", "node_count_delta": 31, "affected_domains": ["commands", "rules"], "timestamp": "2026-04-25T01:17:50.171884+00:00", "reasoning_hash": "sha256:manual-trigger"}
+{"type": "mirror_drift", "status": "pass", "node_count_delta": 31, "affected_domains": ["commands", "rules"], "timestamp": "2026-04-25T01:27:58.860584+00:00", "reasoning_hash": "sha256:manual-trigger"}
+{"type": "mirror_drift", "status": "fail", "node_count_delta": 31, "affected_domains": ["commands", "rules"], "timestamp": "2026-04-25T01:27:59.631160+00:00", "reasoning_hash": "sha256:manual-trigger"}
+{"type": "mirror_drift", "status": "fail", "node_count_delta": 31, "affected_domains": ["commands", "rules"], "timestamp": "2026-04-25T01:28:00.387840+00:00", "reasoning_hash": "sha256:manual-trigger"}
+{"type": "mirror_drift", "status": "fail", "node_count_delta": 31, "affected_domains": ["commands", "rules"], "timestamp": "2026-04-25T01:28:12.430194+00:00", "reasoning_hash": "sha256:manual-trigger"}
+{"type": "mirror_drift", "status": "pass", "node_count_delta": 31, "affected_domains": ["commands", "rules"], "timestamp": "2026-04-25T01:28:48.997858+00:00", "reasoning_hash": "sha256:manual-trigger"}
+{"type": "mirror_drift", "status": "pass", "node_count_delta": 31, "affected_domains": ["commands", "rules"], "timestamp": "2026-04-25T01:29:01.953185+00:00", "reasoning_hash": "sha256:manual-trigger"}
+{"type": "mirror_drift", "status": "pass", "node_count_delta": 31, "affected_domains": ["commands", "rules"], "timestamp": "2026-04-25T01:29:21.570894+00:00", "reasoning_hash": "sha256:manual-trigger"}

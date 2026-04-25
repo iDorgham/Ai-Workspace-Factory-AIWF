@@ -1,0 +1,6 @@
+{
+  "spec_id": "tagging_convention",
+  "version": "1.0.0",
+  "pattern": "v{major}.{minor}.{patch}-{reasoning_hash}",
+  "silent": true
+}

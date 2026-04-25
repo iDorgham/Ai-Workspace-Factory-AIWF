@@ -1,0 +1,7 @@
+{
+  "spec_id": "latent_synthesis_protocol",
+  "version": "1.0.0",
+  "mode": "pre-commit-simulation",
+  "latent_space_id": "aiwf-v20-neural",
+  "validation": "omega-consensus"
+}

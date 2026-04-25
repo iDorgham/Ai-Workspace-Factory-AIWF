@@ -1,0 +1,9 @@
+{
+  "spec_id": "branch_topology",
+  "version": "1.0.0",
+  "branches": {
+    "master": "immutable, tagged",
+    "staging": "CI gate, promotion only",
+    "agent/*": "ephemeral, per-run"
+  }
+}

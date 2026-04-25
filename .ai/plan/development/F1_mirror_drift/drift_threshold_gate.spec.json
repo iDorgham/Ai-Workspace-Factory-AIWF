@@ -1,0 +1,13 @@
+{
+  "spec_id": "drift_threshold_gate",
+  "version": "1.0.0",
+  "thresholds": {
+    "node_count_delta": 5,
+    "untracked_files": 10
+  },
+  "behavior": {
+    "on_exceed": "block_commands",
+    "blocked_commands": ["/create", "/dev", "/plan"],
+    "warning_message": "CRITICAL DRIFT: .ai registry out of sync with library. Run /git sync to repair."
+  }
+}

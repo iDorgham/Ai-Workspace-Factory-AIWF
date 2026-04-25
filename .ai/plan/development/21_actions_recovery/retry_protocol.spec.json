@@ -1,0 +1,6 @@
+{
+  "spec_id": "retry_protocol",
+  "version": "1.0.0",
+  "max_retries": 2,
+  "delay": "jittered exponential backoff"
+}

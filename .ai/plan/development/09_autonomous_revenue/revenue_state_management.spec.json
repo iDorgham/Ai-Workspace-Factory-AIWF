@@ -1,0 +1,9 @@
+{
+  "spec_id": "revenue_state_management",
+  "version": "1.0.0",
+  "states": ["trialing", "active", "past_due", "canceled"],
+  "transitions": [
+    {"from": "trialing", "to": "active", "on": "payment_success"},
+    {"from": "active", "to": "past_due", "on": "payment_failure"}
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "spec_id": "release_artifact_bundle",
+  "version": "1.0.0",
+  "includes": [
+    "evolution_ledger.jsonl",
+    "walkthrough.md",
+    "health-audit-report.md"
+  ]
+}

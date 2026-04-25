@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: transparent;
+    color: var(--text-primary, #1a1a1a);
+    font-size: 13px;
+    padding: 0 0 24px 0;
+  }
+  .header {
+    padding: 18px 20px 12px;
+    border-bottom: 2px solid var(--border-color, #e5e5e5);
+    margin-bottom: 16px;
+  }
+  .header h1 {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+  }
+  .header .sub {
+    font-size: 11px;
+    color: var(--text-secondary, #666);
+    margin-top: 3px;
+  }
+  .fix-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 16px;
+  }
+  .fix-card {
+    border: 1px solid var(--border-color, #e0e0e0);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .fix-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    cursor: pointer;
+    user-select: none;
+    background: var(--bg-secondary, #fafafa);
+  }
+  .fix-header:hover { background: var(--bg-hover, #f0f0f0); }
+  .priority-badge {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 2px 7px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    flex-shrink: 0;
+  }
+  .p1 { background: #fee2e2; color: #dc2626; }
+  .p2 { background: #fef3c7; color: #b45309; }
+  .p3 { background: #dbeafe; color: #1d4ed8; }
+  .fix-title {
+    font-weight: 600;
+    font-size: 13px;
+    flex: 1;
+  }
+  .fix-meta {
+    font-size: 11px;
+    color: var(--text-secondary, #888);
+    flex-shrink: 0;
+  }
+  .chevron {
+    font-size: 11px;
+    color: var(--text-secondary, #aaa);
+    transition: transform 0.2s;
+    flex-shrink: 0;
+  }
+  .chevron.open { transform: rotate(90deg); }
+  .fix-body {
+    display: none;
+    padding: 14px 16px;
+    border-top: 1px solid var(--border-color, #e8e8e8);
+    background: var(--bg-primary, #fff);
+  }
+  .fix-body.open { display: block; }
+
+  .section-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: var(--text-secondary, #888);
+    margin-bottom: 6px;
+    margin-top: 12px;
+  }
+  .section-label:first-child { margin-top: 0; }
+
+  .diagnosis {
+    font-size: 12px;
+    color: var(--text-secondary, #555);
+    line-height: 1.5;
+    margin-bottom: 4px;
+  }
+  .steps {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .step {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 12px;
+    line-height: 1.45;
+  }
+  .step-num {
+    font-size: 10px;
+    font-weight: 700;
+    color: #fff;
+    background: var(--step-color, #555);
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .step-text { flex: 1; }
+  .step-text strong { font-weight: 600; }
+  .step-text code {
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    font-size: 10.5px;
+    background: var(--code-bg, #f3f4f6);
+    padding: 1px 4px;
+    border-radius: 3px;
+  }
+  .file-pill {
+    display: inline-block;
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    font-size: 10px;
+    background: var(--code-bg, #f3f4f6);
+    padding: 1px 5px;
+    border-radius: 3px;
+    margin: 1px 2px;
+    color: var(--text-primary, #333);
+  }
+  .risk-row {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+  .risk-icon { flex-shrink: 0; }
+  .owner-tag {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 4px;
+    background: var(--tag-bg, #ede9fe);
+    color: #5b21b6;
+    margin-right: 6px;
+  }
+  .effort-tag {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 4px;
+    background: var(--tag-bg2, #dcfce7);
+    color: #166534;
+  }
+  .divider { height: 1px; background: var(--border-color, #eee); margin: 10px 0; }
+  
+  .summary-bar {
+    display: flex;
+    gap: 6px;
+    padding: 10px 16px 0;
+    flex-wrap: wrap;
+  }
+  .summary-pill {
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: 500;
+  }
+  .s-critical { background: #fee2e2; color: #dc2626; }
+  .s-structural { background: #fef3c7; color: #b45309; }
+  .s-growth { background: #dbeafe; color: #1d4ed8; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>AIWF Fix Plan — 5 Vectors</h1>
+  <div class="sub">v19.0.0 OMEGA · Sequence: Mirror Sync → Phase Gaps → Deprecated Tomb → Workspace Isolation → Brainstorm Signal</div>
+</div>
+
+<div class="summary-bar">
+  <span class="summary-pill s-critical">P1 Critical: 2</span>
+  <span class="summary-pill s-structural">P2 Structural: 2</span>
+  <span class="summary-pill s-growth">P3 Growth: 1</span>
+</div>
+<br>
+
+<div class="fix-grid" id="cards"></div>
+
+<script>
+const fixes = [
+  {
+    id: "F1",
+    priority: "P1",
+    priorityLabel: "Critical",
+    priorityClass: "p1",
+    title: "Mirror Drift — Cadence Enforcement",
+    meta: "965 nodes · sync gap risk",
+    stepColor: "#dc2626",
+    diagnosis: "check_mirror_drift.py and delta_detector.py exist but run on-demand only. With 965 library nodes across 8 domains, any .ai/ mutation that doesn't sync creates silent registry drift — the worst kind because nothing breaks immediately.",
+    owner: "healing_bot_v2 + registry_guardian",
+    effort: "Low effort, high leverage",
+    steps: [
+      { text: "<strong>Wire check_mirror_drift.py to a scheduled cadence.</strong> It should run on every <code>/git auto</code> commit (pre-push hook) and as a standalone cron-equivalent triggered by the workspace. Not post-sync — pre-commit, so drift is caught before it lands." },
+      { text: "<strong>Add a drift threshold gate.</strong> If delta between .ai/ state and library registry exceeds N nodes (suggest 5), block further /create or /dev commands and surface a hard warning. Currently there's no enforcement ceiling." },
+      { text: "<strong>Emit drift events to evolution_ledger.jsonl.</strong> Right now the ledger exists but mirror drift isn't a tracked signal. Add a structured entry: <code>{ type: 'mirror_drift', node_count_delta, affected_domains, timestamp }</code> so the history is queryable." },
+      { text: "<strong>Add a mirror health widget to .ai/dashboard/index.md.</strong> The dashboard currently shows 0 strategic patterns and generic metrics. A mirror health row (last synced, nodes in drift, last repair hash) gives real operational signal." }
+    ],
+    risk: "If left unaddressed: evolution engine (Phase 16) references library nodes by ID. Stale registry means it operates on phantom contracts."
+  },
+  {
+    id: "F2",
+    priority: "P1",
+    priorityLabel: "Critical",
+    priorityClass: "p1",
+    title: "Phases 9 & 10 — Close the Open Loops",
+    meta: "Autonomous Revenue + Neural Fabric",
+    stepColor: "#dc2626",
+    diagnosis: "Both phases are STATUS: DRAFT with near-empty agent definitions (revenue_orchestrator and neural_fabric_sync have no RESPONSIBILITIES). Phase 18 (active) references evolution and singularity concepts that build on revenue and neural infrastructure. These aren't distant — they're prerequisites that got bypassed.",
+    owner: "spec_architect + documentation_architect",
+    effort: "Medium effort, critical path",
+    steps: [
+      { text: "<strong>Classify both phases explicitly as 'deferred' or 'absorbed'.</strong> Right now they're DRAFT which is ambiguous. If Phase 9 (Revenue) capabilities were partially absorbed into Phase 14, document the cross-reference explicitly. If truly deferred, set status: 'deferred' with a rationale field in the manifest." },
+      { text: "<strong>Apply the SDD density gate retroactively.</strong> Each phase needs minimum 5 specs. Phase 9 has a skeleton spec only — no api_contract, no security_hardening, no billing_adapters detail beyond stub. Either fill them or formally tombstone with an absorption record." },
+      { text: "<strong>Fill revenue_orchestrator.md and neural_fabric_sync.md RESPONSIBILITIES.</strong> Both agents have empty RESPONSIBILITIES sections. The evolution engine will route tasks to them by role — empty contracts mean undefined behavior. Minimum viable: 3 concrete responsibilities each, bound to specific scripts." },
+      { text: "<strong>Reconcile Phase 9 vs Phase 14.</strong> factory/library/scripts/maintenance/billing_adapter.py exists under fintech templates, and Phase 14 has billing_adapters.spec.json. Document whether Phase 9 was superseded by 14, or whether they serve different scopes (Phase 9 = economic lifecycle, Phase 14 = transaction mechanics)." }
+    ],
+    risk: "Evolution engine (Phase 16: recursive_refactoring.spec.json) may generate code that assumes revenue and neural contracts are live. Undefined agent responsibilities = uncontrolled behavior at singularity tier."
+  },
+  {
+    id: "F3",
+    priority: "P2",
+    priorityLabel: "Structural",
+    priorityClass: "p2",
+    title: "Deprecated Scripts — Formal Tombstoning",
+    meta: "10 scripts · silent debt",
+    stepColor: "#b45309",
+    diagnosis: "factory/scripts/deprecated/ has 10 scripts moved there silently. No rationale, no replacement mapping, no date. This creates cognitive load for every agent (and human) reading the factory tree — they can't distinguish 'safe to delete' from 'referenced somewhere upstream'.",
+    owner: "library_curator + registry_guardian",
+    effort: "Low effort, one-time",
+    steps: [
+      { text: "<strong>Create factory/scripts/deprecated/TOMBSTONE.md.</strong> One entry per script: script name, date deprecated, reason (superseded_by / absorbed_into / replaced_by_agent), and whether any live script imports it. Template: <code>| app_scaffolder.py | 2026-04-23 | superseded_by: saas_scaffolder.py | no live imports |</code>" },
+      { text: "<strong>Run a grep pass for imports before tombstoning.</strong> Check all .py files in factory/ for <code>import app_scaffolder</code>, <code>from deprecated</code>, etc. If anything imports from deprecated/, that import is the real bug — fix it first." },
+      { text: "<strong>Mark each file with a header comment.</strong> Top of each deprecated script should read: <code># TOMBSTONED: {date} | Reason: {reason} | Successor: {file} | Do not import.</code> This survives file moves and is readable without the TOMBSTONE.md." },
+      { text: "<strong>Add deprecated/ exclusion to audit_v2.py.</strong> Currently the health scorer traverses the whole factory tree. Add an explicit skip for deprecated/ in the IMPROVE/DELETE analysis so deprecated scripts don't inflate the audit's low-quality-file count." }
+    ],
+    risk: "Low immediate risk, compounding cognitive cost. At 10 scripts now, manageable. At 30+ (post-singularity phase), the folder becomes a liability that slows every audit and generates false positives in health reports."
+  },
+  {
+    id: "F4",
+    priority: "P2",
+    priorityLabel: "Structural",
+    priorityClass: "p2",
+    title: "Workspace Isolation — Enforcement Logic",
+    meta: "clients/ vs personal/ boundary",
+    stepColor: "#b45309",
+    diagnosis: "audit_path_integrity.py checks FR-2.1 and FR-2.2 (metadata pollution and sovereignty violations) but only validates structure after the fact. There's no prevention layer — nothing stops a shard from being created in the wrong tier or without the .ai/ sovereignty stamp.",
+    owner: "factory_orchestrator + healing_bot_v2",
+    effort: "Medium effort, preventive",
+    steps: [
+      { text: "<strong>Add a workspace_type field to every workspace's metadata.json.</strong> Values: <code>client</code> | <code>personal</code> | <code>staging</code>. This becomes the canonical classification. audit_path_integrity.py already reads metadata — extend it to validate this field exists and is a legal value." },
+      { text: "<strong>Enforce workspace_type at scaffolding time.</strong> In saas_scaffolder.py (the successor to app_scaffolder), add a pre-scaffold gate: if target path is under workspaces/clients/ and workspace_type != 'client', block with an explicit error and log to governance_ledger.jsonl." },
+      { text: "<strong>Add cross-contamination detection.</strong> Personal shard data must never appear in a client shard path. Add a rule to healing.py: scan for personal/ slug references inside clients/ subtrees and flag immediately. This is critical for Law 151/2020 compliance — client data residency violations can stem from contaminated paths." },
+      { text: "<strong>Define the personal/ tier structure formally.</strong> Currently workspaces/ has only a .gitkeep and README. Create workspaces/personal/ with a skeleton metadata.json and README that mirrors the client structure. Leaving it undefined means the first personal shard will invent its own structure." }
+    ],
+    risk: "As soon as you onboard a real client shard, an unguarded workspace/ tier is a compliance surface. Law 151/2020 requires demonstrable residency control — naming convention alone won't pass an audit."
+  },
+  {
+    id: "F5",
+    priority: "P3",
+    priorityLabel: "Growth",
+    priorityClass: "p3",
+    title: "Brainstorm Agent — Signal Activation",
+    meta: "0 patterns detected · trigger threshold",
+    stepColor: "#1d4ed8",
+    diagnosis: "brainstorm_suggestions.md shows only 2 suggestions, both generic (template sync, client onboarding). The dashboard shows 'Detected: 0 strategic patterns'. The proactive_brainstorm_trigger.py exists in intelligence/ but isn't producing domain-specific signal. Either the trigger conditions are too narrow or the data inputs aren't connected.",
+    owner: "brainstorm_agent + memory_manager",
+    effort: "Medium effort, high strategic value",
+    steps: [
+      { text: "<strong>Read proactive_brainstorm_trigger.py and map its input conditions.</strong> Identify what events actually trigger it today. If it's only reading workspace-index.json (1 client, 1 project), that's your data sparsity problem — the signal generator has nothing to differentiate on." },
+      { text: "<strong>Connect to the JSONL ledgers as signal sources.</strong> The evolution_ledger, intelligence_ledger, and tool_performance.jsonl contain behavioral data. The brainstorm engine should mine these for recurring patterns (e.g. which commands are run most, which phases have the most repairs, which agents log the most errors) and convert friction points into suggestions." },
+      { text: "<strong>Lower the pattern detection threshold for single-project workspaces.</strong> Currently the engine likely requires cross-workspace pattern matching to fire. Add a single-workspace mode that detects intra-project patterns: phase completion velocity, spec density gaps, agent utilization imbalance." },
+      { text: "<strong>Add phase-gap suggestions explicitly.</strong> Phases 9 and 10 being DRAFT should auto-trigger a brainstorm suggestion: 'Phase 9 (Revenue) has been DRAFT for N days with no spec additions — recommend resolution.' This bridges F2 and F5 — the brainstorm agent becomes a governance surface for open loops." }
+    ],
+    risk: "Low structural risk. High opportunity cost — the intelligence layer is the feature that makes AIWF a thinking system rather than a command runner. Every week it produces generic output is a week of strategic signal lost."
+  }
+];
+
+function renderCard(fix) {
+  const card = document.createElement('div');
+  card.className = 'fix-card';
+  
+  const header = document.createElement('div');
+  header.className = 'fix-header';
+  header.innerHTML = `
+    <span class="priority-badge ${fix.priorityClass}">${fix.priorityLabel}</span>
+    <span class="fix-title">${fix.id} · ${fix.title}</span>
+    <span class="fix-meta">${fix.meta}</span>
+    <span class="chevron">▶</span>
+  `;
+  
+  const body = document.createElement('div');
+  body.className = 'fix-body';
+  
+  let stepsHTML = fix.steps.map((s, i) => `
+    <li class="step">
+      <span class="step-num" style="background:${fix.stepColor}">${i+1}</span>
+      <span class="step-text">${s.text}</span>
+    </li>
+  `).join('');
+  
+  body.innerHTML = `
+    <div class="section-label">Diagnosis</div>
+    <div class="diagnosis">${fix.diagnosis}</div>
+    <div class="section-label">Fix Steps</div>
+    <ul class="steps">${stepsHTML}</ul>
+    <div class="divider"></div>
+    <span class="owner-tag">Owner: ${fix.owner}</span>
+    <span class="effort-tag">${fix.effort}</span>
+    <div class="divider"></div>
+    <div class="risk-row"><span class="risk-icon">⚠</span><span>${fix.risk}</span></div>
+  `;
+  
+  header.addEventListener('click', () => {
+    const isOpen = body.classList.contains('open');
+    document.querySelectorAll('.fix-body').forEach(b => b.classList.remove('open'));
+    document.querySelectorAll('.chevron').forEach(c => c.classList.remove('open'));
+    if (!isOpen) {
+      body.classList.add('open');
+      header.querySelector('.chevron').classList.add('open');
+    }
+  });
+  
+  card.appendChild(header);
+  card.appendChild(body);
+  return card;
+}
+
+const container = document.getElementById('cards');
+fixes.forEach(f => container.appendChild(renderCard(f)));
+</script>
+</body>
+</html>

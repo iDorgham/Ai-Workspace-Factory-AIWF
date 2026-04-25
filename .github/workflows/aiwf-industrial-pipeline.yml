@@ -61,3 +61,12 @@ jobs:
           else
             echo "⚠️ Chaos Validator not found, skipping..."
           fi
+
+  auto-recovery:
+    name: 🦾 Sovereign Auto-Recovery
+    needs: [health-audit, sovereign-verification, chaos-regression]
+    if: failure()
+    uses: ./.github/workflows/self_heal.yml
+    with:
+      job_name: "industrial-pipeline"
+      error_code: "AUTO_FAIL"

@@ -1,0 +1,5 @@
+{
+  "spec_id": "suggestion_schema",
+  "version": "1.0.0",
+  "fields": ["id", "trigger_source", "evidence_events", "confidence", "suggested_command"]
+}

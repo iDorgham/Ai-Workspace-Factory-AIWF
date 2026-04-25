@@ -9,6 +9,7 @@ import subprocess
 import concurrent.futures
 import sys
 import json
+import time
 from datetime import datetime
 
 class SwarmRouter:
@@ -17,6 +18,33 @@ class SwarmRouter:
         self.workspaces_path = os.path.join(factory_root, "workspaces")
         self.state_file = os.path.join(factory_root, "factory/reports/swarm_state.json")
         self.active_processes = {} # pid -> subprocess.Popen object
+        self.locks_path = os.path.join(factory_root, ".ai/locks")
+        os.makedirs(self.locks_path, exist_ok=True)
+
+    def acquire_lock(self, agent_id, ttl=300):
+        """Acquire a mutex lock for an agent with TTL."""
+        lock_file = os.path.join(self.locks_path, f"{agent_id}.lock")
+        if os.path.exists(lock_file):
+            # Check TTL
+            mtime = os.path.getmtime(lock_file)
+            if time.time() - mtime < ttl:
+                 print(f"🔒 [LOCK] Agent {agent_id} is busy. Waiting for lock...")
+                 return False
+            else:
+                 print(f"🔓 [LOCK] Stale lock found for {agent_id}. Breaking.")
+                 os.remove(lock_file)
+        
+        with open(lock_file, "w") as f:
+            f.write(str(os.getpid()))
+        return True
+
+    def release_lock(self, agent_id):
+        """Release a mutex lock."""
+        lock_file = os.path.join(self.locks_path, f"{agent_id}.lock")
+        if os.path.exists(lock_file):
+            os.remove(lock_file)
+            return True
+        return False
 
     def get_workspaces(self, group=None):
         """Find workspaces, optionally filtered by group directory."""

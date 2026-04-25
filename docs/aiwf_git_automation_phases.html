@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: transparent;
+    color: var(--text-primary, #1a1a1a);
+    font-size: 13px;
+    padding: 0 0 28px 0;
+  }
+  .header {
+    padding: 18px 20px 10px;
+    border-bottom: 2px solid var(--border-color, #e5e5e5);
+    margin-bottom: 6px;
+  }
+  .header h1 { font-size: 15px; font-weight: 700; letter-spacing: -0.3px; }
+  .header .sub { font-size: 11px; color: var(--text-secondary, #666); margin-top: 3px; }
+
+  /* Phase rail */
+  .phase-rail {
+    display: flex;
+    align-items: center;
+    padding: 14px 20px 6px;
+    gap: 0;
+    overflow-x: auto;
+  }
+  .phase-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    flex: 1;
+    min-width: 90px;
+  }
+  .phase-circle {
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px; font-weight: 800;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    border: 3px solid transparent;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .phase-circle.active { border-color: #1a1a1a; transform: scale(1.12); }
+  .phase-label {
+    font-size: 9.5px; font-weight: 600; margin-top: 5px;
+    text-align: center; line-height: 1.3;
+    color: var(--text-secondary, #555);
+    max-width: 80px;
+  }
+  .connector {
+    flex: 0 0 24px; height: 2px;
+    background: var(--border-color, #ddd);
+    margin-bottom: 22px;
+  }
+
+  /* Detail panel */
+  .detail-panel {
+    margin: 8px 16px 0;
+    border: 1px solid var(--border-color, #e0e0e0);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .panel-header {
+    display: flex; align-items: center; gap: 10px;
+    padding: 12px 16px;
+  }
+  .panel-badge {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.4px;
+    padding: 3px 9px; border-radius: 20px; color: #fff;
+    text-transform: uppercase; flex-shrink: 0;
+  }
+  .panel-title { font-size: 14px; font-weight: 700; flex: 1; }
+  .panel-meta { font-size: 11px; color: var(--text-secondary, #888); }
+
+  .panel-body { padding: 0 16px 16px; background: var(--bg-primary, #fff); }
+
+  .section-label {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.8px;
+    text-transform: uppercase; color: var(--text-secondary, #888);
+    margin: 14px 0 7px;
+  }
+  .diagnosis {
+    font-size: 12px; color: var(--text-secondary, #555);
+    line-height: 1.55; border-left: 3px solid var(--phase-color, #ddd);
+    padding-left: 10px; margin-bottom: 2px;
+  }
+
+  .specs-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 6px;
+    margin-bottom: 4px;
+  }
+  .spec-card {
+    background: var(--bg-secondary, #f8f8f8);
+    border: 1px solid var(--border-color, #e8e8e8);
+    border-radius: 6px; padding: 8px 10px;
+  }
+  .spec-title { font-size: 11px; font-weight: 700; margin-bottom: 3px; }
+  .spec-file {
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    font-size: 9.5px; color: var(--text-secondary, #666);
+    background: var(--code-bg, #eee); padding: 1px 4px; border-radius: 3px;
+    display: inline-block; margin: 1px 0;
+  }
+  .spec-desc { font-size: 11px; color: var(--text-secondary, #555); margin-top: 4px; line-height: 1.4; }
+
+  .steps { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+  .step { display: flex; align-items: flex-start; gap: 9px; font-size: 12px; line-height: 1.45; }
+  .step-num {
+    font-size: 10px; font-weight: 700; color: #fff;
+    border-radius: 50%; width: 19px; height: 19px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; margin-top: 1px;
+  }
+  .step-text { flex: 1; }
+  .step-text strong { font-weight: 600; }
+  code {
+    font-family: 'SF Mono','Fira Code',monospace;
+    font-size: 10.5px; background: var(--code-bg, #f3f4f6);
+    padding: 1px 4px; border-radius: 3px;
+  }
+
+  .tags-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 2px; }
+  .tag {
+    font-size: 10px; font-weight: 600; padding: 3px 9px;
+    border-radius: 20px; background: var(--tag-bg, #f0f0f0);
+    color: var(--text-secondary, #555);
+  }
+  .divider { height: 1px; background: var(--border-color, #eee); margin: 10px 0; }
+
+  .exists-row { display: flex; align-items: center; gap: 6px; font-size: 11px; }
+  .exists-icon { font-size: 13px; }
+  .exists-label { color: var(--text-secondary, #666); }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Git Automation — 5-Phase Plan</h1>
+  <div class="sub">Phases 19–23 · Builds on existing: aiwf-industrial-pipeline.yml · compose-onboard.yml · docs-health.yml · omega_release.py</div>
+</div>
+
+<div class="phase-rail" id="rail"></div>
+<div class="detail-panel" id="detail"></div>
+
+<script>
+const phases = [
+  {
+    id: 19,
+    label: "Sovereign\nCommit Engine",
+    color: "#6366f1",
+    badge: "Phase 19",
+    meta: "commit · hooks · reasoning hash",
+    diagnosis: "Currently /git auto exists as a command stub routing to registry_guardian, but the actual commit logic in omega_release.py and chain_executor.py is skeletal. Commits happen in compose-onboard.yml but with a hardcoded message and no reasoning hash. The sovereign commit protocol defined in versioning.md (reasoning hash, ISO-8601, snake_case gate) is documented but not enforced in CI.",
+    specs: [
+      { title: "commit_contract.spec.json", file: ".ai/plan/development/19_git_automation/", desc: "Define commit message schema: type, scope, description, reasoning_hash field, compliance tag" },
+      { title: "pre_commit_gate.spec.json", file: "factory/scripts/core/", desc: "Pre-commit hook: snake_case enforcement + mirror drift check + no TODO_PLACEHOLDER gate" },
+      { title: "reasoning_hash_generator.spec.json", file: "factory/library/scripts/core/", desc: "Deterministic hash from session ID + timestamp + changed file manifest" },
+      { title: "commit_chain.spec.json", file: "factory/scripts/core/chain_executor.py", desc: "Extend chain_executor FSM: integrity_auditor → docs_architect → registry_guardian → commit" },
+      { title: "silent_commit_mode.spec.json", file: ".ai/governance/versioning.md", desc: "Auto-commit mode for agent mutations with suppressed stdout, only ledger entry" }
+    ],
+    steps: [
+      { text: "<strong>Implement pre-commit hook as a real script.</strong> <code>factory/scripts/pre_commit_gate.py</code> — runs snake_case check, mirror drift check (F1 from fix plan), and blocks if TODO_PLACEHOLDER found. Install via <code>.github/hooks/pre-commit</code> symlink." },
+      { text: "<strong>Extend chain_executor.py with the 3-step sovereign commit FSM.</strong> Step 1: integrity_auditor (naming + mirror). Step 2: documentation_architect (README/PRD evolution). Step 3: registry_guardian (hash append + commit). Each step has a rollback pointer." },
+      { text: "<strong>Wire reasoning hash into compose-onboard.yml commit step.</strong> Replace the hardcoded <code>git commit -m \"🚀 INDUSTRIAL-ONBOARDING...\"</code> with a call to the reasoning hash generator, producing: <code>feat(onboarding): created sovereign workspace for $CLIENT_NAME [Reasoning: $HASH]</code>" },
+      { text: "<strong>Add commit validation job to aiwf-industrial-pipeline.yml.</strong> Parse last 10 commits, verify each has a reasoning hash field. Fail the pipeline if any commit in the push batch violates the sovereign commit schema." }
+    ],
+    tags: ["chain_executor.py", "omega_release.py", "compose-onboard.yml", "versioning.md"],
+    effort: "Medium · 1 new script + 2 workflow edits + 1 spec set"
+  },
+  {
+    id: 20,
+    label: "Push/Pull\nSovereignty",
+    color: "#0ea5e9",
+    badge: "Phase 20",
+    meta: "push · pull · branch protection",
+    diagnosis: "compose-onboard.yml pushes directly to master with git push origin master after onboarding. There's no branch protection logic, no pull strategy for multi-agent concurrent writes, and no handling for push failures. In a swarm architecture where multiple agents can mutate the workspace, uncoordinated pushes to master will cause conflicts that break the evolution engine's assumptions.",
+    specs: [
+      { title: "branch_strategy.spec.json", file: ".ai/plan/development/20_git_automation/", desc: "Define branch topology: master (immutable), staging (integration), agent/* (shard branches per agent)" },
+      { title: "push_gate.spec.json", file: "factory/scripts/core/", desc: "Pre-push validation: health score ≥ 80, no data residency violations, sovereign compliance cert exists" },
+      { title: "pull_sync_protocol.spec.json", file: ".ai/governance/", desc: "Rebase-first pull strategy for agent branches; conflict resolution owned by swarm_router_v3" },
+      { title: "concurrent_write_guard.spec.json", file: "factory/scripts/core/swarm.py", desc: "Mutex lock via .ai/locks/ directory before any agent write; TTL-based expiry" },
+      { title: "push_failure_recovery.spec.json", file: "factory/scripts/maintenance/healing.py", desc: "On push failure: stash → pull --rebase → reapply → retry with exponential backoff (3 attempts)" }
+    ],
+    steps: [
+      { text: "<strong>Replace direct master push in compose-onboard.yml with staging branch push.</strong> Change <code>git push origin master</code> → <code>git push origin HEAD:staging/onboard-$CLIENT_NAME</code>. Add a downstream job that merges staging → master only after audit passes." },
+      { text: "<strong>Implement push_gate.py.</strong> Runs before any push: checks health_scorer output ≥ 80, confirms no MENA residency violations in the changeset, verifies sovereign compliance cert is current. Exit code 1 blocks the push." },
+      { text: "<strong>Add concurrent write guard to swarm.py.</strong> Before any agent writes to the workspace, check <code>.ai/locks/{agent_id}.lock</code>. If lock exists and TTL not expired, queue the write. This prevents swarm conflicts on shared files like registry.yaml and routing_map.yaml." },
+      { text: "<strong>Document branch topology in governance.</strong> Add <code>.ai/governance/branch_strategy.md</code> defining master (immutable, tagged only), staging (CI gate), agent/* (ephemeral per-run). Wire healing_bot to detect and prune stale agent branches older than 7 days." }
+    ],
+    tags: ["compose-onboard.yml", "swarm.py", "healing.py", "registry_guardian"],
+    effort: "Medium-High · branch topology change + 2 new scripts + workflow restructure"
+  },
+  {
+    id: 21,
+    label: "Actions &\nError Recovery",
+    color: "#f59e0b",
+    badge: "Phase 21",
+    meta: "CI jobs · failure handling · self-healing",
+    diagnosis: "The 3 existing workflows (industrial-pipeline, compose-onboard, docs-health) have no error recovery logic. If health_scorer.py fails, the job exits with no remediation. If sovereign-verification fails, there's no rollback. The chaos-regression job skips silently if chaos_validator.py doesn't exist. This is a brittle CI layer for a system designed to be self-healing.",
+    specs: [
+      { title: "action_error_taxonomy.spec.json", file: ".ai/plan/development/21_git_automation/", desc: "Classify all CI failures: HARD_BLOCK (abort + alert) vs SOFT_WARN (log + continue) vs AUTO_FIX (trigger healing bot)" },
+      { title: "self_healing_workflow.spec.json", file: ".github/workflows/", desc: "On job failure: invoke healing_bot_v2 via workflow_call, run targeted remediation, re-run failed job once" },
+      { title: "action_diagnostics.spec.json", file: "factory/scripts/maintenance/", desc: "Structured JSON failure report per job: exit code, failing step, affected files, suggested fix command" },
+      { title: "missing_script_gate.spec.json", file: ".github/workflows/aiwf-industrial-pipeline.yml", desc: "Replace silent skip pattern with explicit FAIL when required scripts are missing (chaos_validator, workspace_health, etc.)" },
+      { title: "action_retry_protocol.spec.json", file: ".github/workflows/", desc: "Transient failure retry: network errors, checkout failures, pip install flakiness — max 2 retries with jitter" }
+    ],
+    steps: [
+      { text: "<strong>Add a workflow-level failure handler to all 3 existing workflows.</strong> Use GitHub Actions <code>if: failure()</code> step at the end of each job to call a <code>log_broadcaster.py</code> with the job name, step, and exit code — emitting a structured entry to <code>.ai/logs/deployments.log</code>." },
+      { text: "<strong>Fix the chaos-regression silent skip.</strong> The current <code>if [ -f ]; then ... else echo \"⚠️ skipping\" fi</code> pattern is silent debt. Replace with: if script missing → run <code>factory/scripts/maintenance/run_smoke_tests.py</code> as fallback AND open a GitHub Issue via <code>gh issue create</code> flagging the missing script." },
+      { text: "<strong>Create a self-healing reusable workflow.</strong> <code>.github/workflows/self_heal.yml</code> with <code>workflow_call</code> trigger. Input: failing job name + error code. Steps: checkout → run healing.py --target=$JOB → run audit_path_integrity → report outcome. Called via <code>uses: ./.github/workflows/self_heal.yml</code> on failure." },
+      { text: "<strong>Classify every existing CI step into the error taxonomy.</strong> Annotate each step in the 3 workflows with a comment: <code># ERROR_CLASS: HARD_BLOCK</code> or <code>SOFT_WARN</code> or <code>AUTO_FIX</code>. This makes the intent machine-readable for the evolution engine to process later." }
+    ],
+    tags: ["aiwf-industrial-pipeline.yml", "log_broadcaster.py", "healing.py", "run_smoke_tests.py"],
+    effort: "High · touches all 3 workflows + 2 new workflows + taxonomy doc"
+  },
+  {
+    id: 22,
+    label: "Tags &\nRelease Gates",
+    color: "#10b981",
+    badge: "Phase 22",
+    meta: "semver tags · release cert · changelog",
+    diagnosis: "omega_release.py generates a SOVEREIGN_COMPLIANCE_CERTIFICATE.md but is hardcoded to factory v6.0.0 and only checks 4 binary conditions. The versioning.md defines immutable tagging on phase completion, but there's no workflow that actually creates a Git tag. /git release is a command stub. No changelog is generated. Tags and releases are completely manual today.",
+    specs: [
+      { title: "semver_schema.spec.json", file: ".ai/plan/development/22_git_automation/", desc: "AIWF version format: MAJOR(epoch).MINOR(phase).PATCH(mutation) + suffix: -sovereign | -omega | -client-{slug}" },
+      { title: "release_gate.spec.json", file: "factory/scripts/core/omega_release.py", desc: "Extend OmegaReleaseGate: 12-point checklist (health ≥ 85, all phase specs present, no deprecated imports, mirror drift = 0, etc.)" },
+      { title: "tag_automation.spec.json", file: ".github/workflows/", desc: "On phase completion (manifest status → completed): auto-create annotated tag, push to origin, trigger release workflow" },
+      { title: "changelog_generator.spec.json", file: "factory/scripts/core/", desc: "Parse workflow.jsonl + evolution_ledger.jsonl → generate CHANGELOG.md grouped by phase, sorted by timestamp" },
+      { title: "release_notes.spec.json", file: ".github/workflows/", desc: "GitHub Release creation: tag + cert attachment + changelog section + OMEGA health score at time of release" }
+    ],
+    steps: [
+      { text: "<strong>Upgrade OmegaReleaseGate from 4-check to 12-check.</strong> Add: health_score ≥ 85, mirror drift = 0, no DRAFT phases in manifest (except explicitly deferred), all active agent RESPONSIBILITIES non-empty, no deprecated/ imports in live scripts, Law 151/2020 cert current. Each check has a remediation hint on failure." },
+      { text: "<strong>Build changelog_generator.py.</strong> Reads <code>workflow.jsonl</code> and <code>evolution_ledger.jsonl</code>, groups entries by phase ID, extracts action + reasoning_hash + timestamp, outputs <code>CHANGELOG.md</code> in Keep-a-Changelog format. Run as part of every <code>/git release</code>." },
+      { text: "<strong>Create tag_release.yml GitHub Actions workflow.</strong> Trigger: <code>workflow_dispatch</code> with input <code>version</code> + <code>phase_id</code>. Steps: run OmegaReleaseGate (12-check) → generate changelog → create annotated tag <code>v{version}-sovereign</code> → create GitHub Release with cert + changelog attached." },
+      { text: "<strong>Wire phase completion in manifest to tag trigger.</strong> When any agent sets a phase <code>status: completed</code> in <code>_manifest.yaml</code>, a post-write hook calls tag_release.yml via <code>gh workflow run</code>. This makes tagging an automatic consequence of phase closure, not a manual step." }
+    ],
+    tags: ["omega_release.py", "workflow.jsonl", "evolution_ledger.jsonl", "_manifest.yaml"],
+    effort: "Medium · omega_release extension + 2 new scripts + 1 new workflow"
+  },
+  {
+    id: 23,
+    label: "Sovereign\nCD Pipeline",
+    color: "#ec4899",
+    badge: "Phase 23",
+    meta: "deploy · shard distribution · rollback",
+    diagnosis: "/git deploy is a command stub. The k8s-deployment.yaml template exists in factory/templates/distribution/ and factory/library/ but is never invoked from CI. compose-onboard.yml creates workspaces but doesn't deploy them. There's no environment promotion logic (staging → production), no shard-aware routing, and no automated rollback on deployment failure.",
+    specs: [
+      { title: "deploy_pipeline.spec.json", file: ".ai/plan/development/23_git_automation/", desc: "Environment promotion: staging → canary (10% traffic) → production. Each gate requires passing health check." },
+      { title: "shard_router.spec.json", file: "factory/scripts/core/", desc: "Deploy each workspace shard to its geospatially-correct cloud endpoint per Law 151/2020 residency map" },
+      { title: "deployment_manifest.spec.json", file: "factory/library/distribution_scaffolding/", desc: "Per-deployment manifest: shard_id, target_region, image_tag, rollback_pointer, residency_cert_hash" },
+      { title: "canary_gate.spec.json", file: ".github/workflows/", desc: "Canary validation: run smoke tests against canary endpoint, check error rate < 1%, latency < 500ms before full promote" },
+      { title: "rollback_protocol.spec.json", file: "factory/scripts/core/omega_release.py", desc: "On deployment failure: restore previous tag, re-issue compliance cert, log to resilience_ledger.jsonl, alert via deployments.log" }
+    ],
+    steps: [
+      { text: "<strong>Build deploy.yml as the sovereign CD workflow.</strong> Trigger: push to master after tag. Jobs: (1) shard_router — resolves each workspace's target region from residency map. (2) deploy_shard — applies k8s-deployment.yaml template with shard-specific env vars. (3) canary_gate — runs smoke tests. (4) promote or rollback." },
+      { text: "<strong>Implement shard_router.py.</strong> Reads <code>factory/config/residency_map.json</code>, maps each workspace slug to its cloud endpoint and region. Outputs a deployment matrix for the GitHub Actions matrix strategy. This replaces the hardcoded shard references in the current pipeline." },
+      { text: "<strong>Wire rollback_pointer from omega_release.py into the CD pipeline.</strong> Every deployment stores its previous tag as <code>rollback_pointer</code> in <code>resilience_ledger.jsonl</code>. On failure in the canary gate, the pipeline reads the rollback_pointer and runs <code>git checkout $ROLLBACK_TAG && redeploy</code> automatically." },
+      { text: "<strong>Add deployment status to the .ai/dashboard.</strong> After each deploy, a post-deploy step writes a structured entry to <code>.ai/logs/deployments.log</code> and updates the dashboard widget (from F1 fix plan) with: last deploy timestamp, environment, health score, shard count, rollback available. This closes the loop between git ops and workspace intelligence." }
+    ],
+    tags: ["k8s-deployment.yaml", "resilience_ledger.jsonl", "residency_map.json", "deployments.log"],
+    effort: "High · new CD workflow + 2 new scripts + dashboard integration"
+  }
+];
+
+let activeIdx = 0;
+
+function renderRail() {
+  const rail = document.getElementById('rail');
+  rail.innerHTML = '';
+  phases.forEach((p, i) => {
+    const node = document.createElement('div');
+    node.className = 'phase-node';
+    node.innerHTML = `
+      <div class="phase-circle ${i === activeIdx ? 'active' : ''}" style="background:${p.color}">
+        ${p.id}
+      </div>
+      <div class="phase-label">${p.label}</div>
+    `;
+    node.addEventListener('click', () => { activeIdx = i; renderRail(); renderDetail(); });
+    rail.appendChild(node);
+    if (i < phases.length - 1) {
+      const conn = document.createElement('div');
+      conn.className = 'connector';
+      rail.appendChild(conn);
+    }
+  });
+}
+
+function renderDetail() {
+  const p = phases[activeIdx];
+  const panel = document.getElementById('detail');
+  panel.style.borderColor = p.color + '55';
+
+  const stepsHTML = p.steps.map((s, i) => `
+    <li class="step">
+      <span class="step-num" style="background:${p.color}">${i+1}</span>
+      <span class="step-text">${s.text}</span>
+    </li>
+  `).join('');
+
+  const specsHTML = p.specs.map(s => `
+    <div class="spec-card">
+      <div class="spec-title">${s.title}</div>
+      <span class="spec-file">${s.file}</span>
+      <div class="spec-desc">${s.desc}</div>
+    </div>
+  `).join('');
+
+  const tagsHTML = p.tags.map(t => `<span class="tag">${t}</span>`).join('');
+
+  panel.innerHTML = `
+    <div class="panel-header" style="background:${p.color}15; border-bottom: 1px solid ${p.color}30">
+      <span class="panel-badge" style="background:${p.color}">${p.badge}</span>
+      <span class="panel-title">${p.label.replace('\n',' ')}</span>
+      <span class="panel-meta">${p.meta}</span>
+    </div>
+    <div class="panel-body">
+      <div class="section-label">Diagnosis — Why This Phase Exists</div>
+      <div class="diagnosis" style="border-color:${p.color}">${p.diagnosis}</div>
+
+      <div class="section-label">5 Specs Required (SDD Gate)</div>
+      <div class="specs-grid">${specsHTML}</div>
+
+      <div class="section-label">Implementation Steps</div>
+      <ul class="steps">${stepsHTML}</ul>
+
+      <div class="divider"></div>
+      <div class="section-label">Binds To</div>
+      <div class="tags-row">${tagsHTML}</div>
+      <div style="margin-top:10px">
+        <span style="font-size:11px;color:var(--text-secondary,#666);">⚙ Effort: </span>
+        <span style="font-size:11px;font-weight:600">${p.effort}</span>
+      </div>
+    </div>
+  `;
+}
+
+renderRail();
+renderDetail();
+</script>
+</body>
+</html>

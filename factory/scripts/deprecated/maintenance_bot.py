@@ -1,3 +1,4 @@
+# TOMBSTONED: 2026-04-25 | Reason: DEPRECATED | Successor: N/A | Do not import.
 import os
 import subprocess
 import json

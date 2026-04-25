@@ -1,3 +1,4 @@
+# TOMBSTONED: 2026-04-25 | Reason: DEPRECATED | Successor: N/A | Do not import.
 #!/usr/bin/env python3
 from pathlib import Path
 import json, argparse

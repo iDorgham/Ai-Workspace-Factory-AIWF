@@ -1,0 +1,7 @@
+{
+  "spec_id": "phase9_vs_phase14_reconciliation",
+  "version": "1.0.0",
+  "decision": "absorbed",
+  "reason": "Phase 9 conceptual billing was integrated into Phase 14 industrial revenue engines.",
+  "superseded_by": 14
+}

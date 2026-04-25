@@ -1,0 +1,10 @@
+{
+  "spec_id": "pre_commit_gate",
+  "version": "1.0.0",
+  "checks": [
+    "snake_case_naming",
+    "mirror_drift_below_threshold",
+    "no_todo_placeholders"
+  ],
+  "enforcement": "hard_block"
+}

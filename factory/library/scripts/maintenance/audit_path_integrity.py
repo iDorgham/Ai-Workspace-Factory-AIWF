@@ -26,8 +26,21 @@ def audit_path_integrity(workspaces_root: str, check_content: bool = False):
                     if not (item.name.startswith("00") and "_" in item.name):
                         violations.append(f"ILLEGAL_SUBDIR: Client '{client_folder.name}' has non-project subdir '{item.name}'")
                 else:
-                    if item.name not in allowed:
+                if item.name not in allowed:
                         violations.append(f"METADATA_POLLUTION: Client '{client_folder.name}' contains unexpected file '{item.name}'")
+            
+            # FR-2.1: Validate workspace_type
+            metadata_path = client_folder / "metadata.json"
+            if metadata_path.exists():
+                try:
+                    with open(metadata_path, "r") as f:
+                        meta = json.load(f)
+                        if meta.get("workspace_type") != "client":
+                            violations.append(f"SOVEREIGNTY_VIOLATION: Client '{client_folder.name}' has invalid workspace_type '{meta.get('workspace_type')}'")
+                except Exception as e:
+                    violations.append(f"METADATA_CORRUPTION: Could not parse metadata.json for '{client_folder.name}': {e}")
+            else:
+                violations.append(f"MISSING_METADATA: Client '{client_folder.name}' missing metadata.json")
 
             # FR-2.2: Project folder must be sovereign
             for project_folder in client_folder.iterdir():

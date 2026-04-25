@@ -9,6 +9,9 @@
 To assist in specialized industrial tasks.
 
 ## 📋 RESPONSIBILITIES
+- **Billing Adapter Management**: Orchestrate Stripe and Fawry integrations via `billing_adapter.py`.
+- **Growth Loop Optimization**: Execute A/B tests for pricing and landing pages via `growth_loop_engine.py`.
+- **Subscription Lifecycle Governance**: Monitor and resolve state transitions in `revenue_state_ledger.jsonl`.
 
 
 ## 🛡️ SOVEREIGN PROTOCOLS

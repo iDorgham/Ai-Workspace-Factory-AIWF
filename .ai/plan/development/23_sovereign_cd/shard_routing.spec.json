@@ -1,0 +1,8 @@
+{
+  "spec_id": "shard_routing",
+  "version": "1.0.0",
+  "shards": {
+    "mena-egypt-01": "workspaces/clients/egypt-*",
+    "personal-global-01": "workspaces/personal/*"
+  }
+}

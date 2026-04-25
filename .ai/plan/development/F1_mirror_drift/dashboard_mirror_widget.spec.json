@@ -1,0 +1,14 @@
+{
+  "spec_id": "dashboard_mirror_widget",
+  "version": "1.0.0",
+  "widget": {
+    "title": "Mirror Health",
+    "fields": [
+      "last_synced",
+      "nodes_in_drift",
+      "last_repair_hash",
+      "status"
+    ],
+    "refresh_interval": "5m"
+  }
+}

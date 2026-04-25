@@ -1,0 +1,8 @@
+{
+  "spec_id": "audit_exclusion_rules",
+  "version": "1.0.0",
+  "exclusions": [
+    "factory/scripts/deprecated/*"
+  ],
+  "target_tool": "audit_v2.py"
+}

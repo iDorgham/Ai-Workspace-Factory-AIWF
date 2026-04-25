@@ -1,47 +1,92 @@
 #!/usr/bin/env python3
 import json
 import datetime
+import os
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-INDEX_FILE = ROOT / "memory" / "workspace-index.json"
-SUGGESTIONS_FILE = ROOT / "dashboard" / "brainstorm-suggestions.md"
+# Try to import REPO_ROOT, fallback to discovery
+try:
+    from paths import REPO_ROOT
+except ImportError:
+    REPO_ROOT = Path(__file__).resolve().parents[4] # Adjust based on deep path
+
+SUGGESTIONS_FILE = REPO_ROOT / ".ai" / "dashboard" / "brainstorm_suggestions.md"
+MANIFEST_FILE = REPO_ROOT / ".ai" / "plan" / "_manifest.yaml"
+EVOLUTION_LEDGER = REPO_ROOT / ".ai" / "logs" / "ledgers" / "evolution_ledger.jsonl"
+
+def get_ledger_events(type_filter=None):
+    if not EVOLUTION_LEDGER.exists(): return []
+    events = []
+    with open(EVOLUTION_LEDGER, "r") as f:
+        for line in f:
+            try:
+                evt = json.loads(line)
+                if not type_filter or evt.get("type") == type_filter:
+                    events.append(evt)
+            except: continue
+    return events
 
 def check_triggers():
-    if not INDEX_FILE.exists(): return []
-    
-    index = json.loads(INDEX_FILE.read_text())
-    metrics = index.get("metrics", {})
     suggestions = []
+    
+    # 1. Phase Gap Detection (F5)
+    if MANIFEST_FILE.exists():
+        try:
+            # Simple line-based YAML parser for the manifest
+            phases = []
+            current_phase = {}
+            with open(MANIFEST_FILE, "r") as f:
+                for line in f:
+                    line = line.strip()
+                    if line.startswith("- id:"):
+                        if current_phase: phases.append(current_phase)
+                        current_phase = {"id": line.split(":")[1].strip()}
+                    elif ":" in line and current_phase:
+                        key, val = line.split(":", 1)
+                        current_phase[key.strip()] = val.strip().strip('"')
+                if current_phase: phases.append(current_phase)
+            
+            for phase in phases:
+                if phase.get("status") in ["active", "pending", "draft"]:
+                     # Check spec density (conceptual check)
+                     # Path in manifest is relative to .ai/
+                     spec_dir = REPO_ROOT / ".ai" / phase.get("path", "")
+                     spec_count = len(list(spec_dir.glob("*.spec.json"))) if spec_dir.exists() else 0
+                     if spec_count < 5:
+                         suggestions.append({
+                             "id": f"BS-GAP-{phase['id']}",
+                             "type": "Spec Density",
+                             "title": f"Low Spec Density in Phase {phase['id']}",
+                             "description": f"Phase '{phase.get('name')}' has only {spec_count} specs. Recommend reaching the SDD gate (5 specs) before execution.",
+                             "impact": "High",
+                             "trigger": "SDD Gate Violation"
+                         })
+        except Exception as e:
+            print(f"⚠️ Error parsing manifest: {e}")
 
-    # Trigger 1: Cross-Workspace Pattern (FR-4.2)
-    if metrics.get("total_projects", 0) >= 1:
-        suggestions.append({
-            "id": f"BS-{datetime.datetime.now().strftime('%s')}",
-            "type": "Cross-Workspace",
-            "title": "Industrial Template Synchronization",
-            "description": "Detected new sovereign project structure. Recommend shared 'Common' library for cross-client assets.",
-            "impact": "High",
-            "trigger": "First project scaffolding detected"
-        })
+    # 2. Mirror Drift Trend (F1 integration)
+    drift_events = get_ledger_events("mirror_drift")
+    if drift_events:
+        last_drift = drift_events[-1]
+        if last_drift.get("status") == "fail":
+            suggestions.append({
+                "id": f"BS-DRIFT-{datetime.datetime.now().strftime('%s')}",
+                "type": "Reliability",
+                "title": "Systemic Mirror Drift detected",
+                "description": f"Registry drift ({last_drift.get('node_count_delta')} nodes) detected. Run /git sync to restore symmetry.",
+                "impact": "Medium",
+                "trigger": "Mirror Drift Failure"
+            })
 
-    # Trigger 2: Gap Detection (Example)
-    if metrics.get("total_clients", 0) > 0 and metrics.get("total_projects", 0) < 2:
-        suggestions.append({
-            "id": f"BS-GAP-{datetime.datetime.now().strftime('%s')}",
-            "type": "Gap Detection",
-            "title": "Standardized Client Onboarding",
-            "description": "Only 1 project for active client. Suggest generating a 'Client Playbook' to accelerate Phase 2.",
-            "impact": "Medium",
-            "trigger": "Low project-to-client ratio"
-        })
-
-    return suggestions[:2] # FR-4.1: Max 2 suggestions
+    # 3. Agent Utilization (Conceptual)
+    # Could scan intelligence_ledger.jsonl for agent_call events
+    
+    return suggestions[:5] # Expanded from 2 to 5 for F5
 
 def render_suggestions(suggestions):
     if not suggestions: return
     
-    Path(SUGGESTIONS_FILE.parent).mkdir(parents=True, exist_ok=True)
+    SUGGESTIONS_FILE.parent.mkdir(parents=True, exist_ok=True)
     
     content = ["# 💡 Brainstorm Suggestions\n", f"> Last updated: {datetime.datetime.now().isoformat()}\n"]
     

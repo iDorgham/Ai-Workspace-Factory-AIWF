@@ -1,0 +1,11 @@
+{
+  "spec_id": "law151_isolation_cert",
+  "version": "1.0.0",
+  "fields": [
+    "workspace_id",
+    "workspace_type",
+    "residency_region",
+    "isolation_audit_timestamp",
+    "governance_hash"
+  ]
+}

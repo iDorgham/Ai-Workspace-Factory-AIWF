@@ -1,0 +1,28 @@
+name: 🏷️ AIWF TAG & RELEASE
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version tag (e.g. v20.0.1)'
+        required: true
+        type: string
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: 🏛️ Run Omega Release Gate
+        run: |
+          python3 factory/scripts/core/omega_release_gate.py
+      - name: 📝 Generate Changelog
+        run: |
+          python3 factory/scripts/core/changelog_generator.py
+      - name: 🏷️ Tag & Push
+        run: |
+          git config user.name "AIWF Bot"
+          git config user.email "bot@aiwf.factory"
+          git tag -a ${{ inputs.version }} -m "Industrial Release ${{ inputs.version }}"
+          git push origin ${{ inputs.version }}

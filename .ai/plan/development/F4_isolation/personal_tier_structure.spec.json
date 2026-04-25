@@ -1,0 +1,10 @@
+{
+  "spec_id": "personal_tier_structure",
+  "version": "1.0.0",
+  "required_files": [
+    "metadata.json",
+    "README.md",
+    ".ai/"
+  ],
+  "mirror_client_structure": true
+}

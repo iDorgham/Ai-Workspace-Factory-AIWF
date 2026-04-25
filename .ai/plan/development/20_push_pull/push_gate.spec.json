@@ -1,0 +1,9 @@
+{
+  "spec_id": "push_gate",
+  "version": "1.0.0",
+  "gates": [
+    {"check": "health_score", "min": 80},
+    {"check": "residency_violations", "allow": 0},
+    {"check": "sovereign_cert", "status": "current"}
+  ]
+}

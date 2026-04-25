@@ -3,6 +3,7 @@ import os
 import sys
 import time
 import shutil
+import json
 from pathlib import Path
 from audit_path_integrity import audit_path_integrity
 
@@ -33,9 +34,31 @@ def remediate(workspaces_root: str, auto: bool = False):
     for client_folder in clients_dir.iterdir():
         if not client_folder.is_dir(): continue
         
+        # Validate workspace_type in metadata.json (F4)
+        metadata_path = client_folder / "metadata.json"
+        if metadata_path.exists():
+            try:
+                with open(metadata_path, "r") as f:
+                    meta = json.load(f)
+                    if meta.get("workspace_type") != "client":
+                        msg = f"LAW 151 VIOLATION: Client folder '{client_folder.name}' has invalid workspace_type '{meta.get('workspace_type')}'"
+                        print(f"❌ {msg}")
+                        hash_id = generate_reasoning_hash()
+                        log_event(msg, hash_id)
+            except Exception as e:
+                print(f"⚠️ Error reading metadata for {client_folder.name}: {e}")
+
         # FR-2.1: Metadata Pollution
         allowed = ["metadata.json", "README.md", "dashboard", ".DS_Store"]
         for item in client_folder.iterdir():
+            # Cross-contamination check: scan for "personal" or private identifiers in filenames
+            forbidden = ["personal", "private", "test_user"]
+            if any(term in item.name.lower() for term in forbidden):
+                 msg = f"CROSS-CONTAMINATION DETECTED: Illegal identifier in '{item.name}' within client '{client_folder.name}'"
+                 print(f"❌ {msg}")
+                 hash_id = generate_reasoning_hash()
+                 log_event(msg, hash_id)
+
             if not item.is_dir() and item.name not in allowed:
                 msg = f"Removing illegal file '{item.name}' from client '{client_folder.name}'"
                 print(f"🛠️  {msg}")

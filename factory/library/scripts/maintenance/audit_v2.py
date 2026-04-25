@@ -2,6 +2,7 @@ import os
 import json
 
 LIBRARY_DIR = 'factory/library'
+EXCLUDE_DIRS = ['deprecated', '.git', '__pycache__']
 
 def analyze():
     skills_to_delete = []
@@ -10,6 +11,8 @@ def analyze():
     skills_to_improve = []
 
     for root, dirs, files in os.walk(LIBRARY_DIR):
+        # Exclude directories in-place
+        dirs[:] = [d for d in dirs if d not in EXCLUDE_DIRS]
         for f in files:
             path = os.path.join(root, f)
             if f == 'SKILL.md':

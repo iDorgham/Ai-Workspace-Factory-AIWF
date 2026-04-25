@@ -1,0 +1,25 @@
+name: 🦾 AIWF SELF-HEAL
+on:
+  workflow_call:
+    inputs:
+      job_name:
+        required: true
+        type: string
+      error_code:
+        required: true
+        type: string
+
+jobs:
+  heal:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 🛠️ Run Healing Bot
+        run: |
+          python3 factory/library/scripts/maintenance/healing.py --auto --target=${{ inputs.job_name }}
+      - name: 🔍 Verify Repair
+        run: |
+          python3 factory/library/scripts/maintenance/audit_path_integrity.py
+      - name: 📈 Report Outcome
+        run: |
+          echo "Healing attempt completed for ${{ inputs.job_name }} (Code: ${{ inputs.error_code }})"

@@ -1,0 +1,6 @@
+{
+  "spec_id": "reasoning_hash_generator",
+  "version": "1.0.0",
+  "inputs": ["session_id", "timestamp", "changed_files"],
+  "algorithm": "sha256"
+}
