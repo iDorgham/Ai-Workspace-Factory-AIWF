@@ -1,0 +1,13 @@
+{
+  "spec_id": "brand_identity",
+  "version": "1.0.0",
+  "tone": "Industrial, Sovereign, Premium, Deterministic",
+  "visual_palette": {
+    "primary": "#0A0E14 (Deep Space Blue)",
+    "accent": "#FFD700 (Gold)",
+    "success": "#00FFA3 (Cyber Mint)",
+    "warning": "#FF3B30 (Alert Red)"
+  },
+  "typography": "Outfit, Roboto Mono",
+  "imagery_guidelines": "High-fidelity blueprints, futuristic industrial landscapes, golden-age MENA geometry."
+}

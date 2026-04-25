@@ -1,0 +1,7 @@
+{
+  "spec_id": "neural_security_hardening",
+  "version": "1.0.0",
+  "boundary": "local-only",
+  "no_pii_policy": true,
+  "context_sanitization": "regex-based-scrubbing"
+}

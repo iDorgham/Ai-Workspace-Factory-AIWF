@@ -1,0 +1,78 @@
+{
+  "phase": "content-aiwf-v21-launch-05-validation-handoff",
+  "planning_type": "content",
+  "topic": "AIWF v21 Launch Content Strategy",
+  "version": "1.0.0",
+  "created": "2026-04-25T00:00:00Z",
+  "reasoning_hash": "sha256:aiwf-v21-launch-content-05-validation-handoff-2026-04-25",
+  "density_gate": {"minimum_tasks": 5, "minimum_files": 12, "c4_required": true},
+  "tasks": [
+    {
+      "id": "T-C05-01",
+      "title": "Day 7 KPI checkpoint",
+      "status": "pending",
+      "priority": "P1",
+      "description": "Collect GitHub stars, LinkedIn impressions (C-02, C-04), X reach (C-03). Compare against targets. Document in kpi_report.md.",
+      "output": "validation/kpi_report.md",
+      "dependencies": [],
+      "trigger": "Day 7 post-launch",
+      "agent": "founder"
+    },
+    {
+      "id": "T-C05-02",
+      "title": "Day 14 KPI checkpoint + MENA assessment",
+      "status": "pending",
+      "priority": "P1",
+      "description": "Full metrics collection including Dev.to reads and Arabic piece reach (C-07, C-08). Decide: scale MENA content or maintain plan.",
+      "output": "validation/kpi_report.md",
+      "dependencies": ["T-C05-01"],
+      "trigger": "Day 14 post-launch",
+      "agent": "founder"
+    },
+    {
+      "id": "T-C05-03",
+      "title": "Day 30 final KPI checkpoint + content audit refresh",
+      "status": "pending",
+      "priority": "P1",
+      "description": "Full 30-day audit of all 12 pieces. SEO rank delta, engagement rates, conversion rates. Update publish_log.md with final metrics.",
+      "output": "validation/kpi_report.md",
+      "dependencies": ["T-C05-02"],
+      "trigger": "Day 30 post-launch",
+      "agent": "founder"
+    },
+    {
+      "id": "T-C05-04",
+      "title": "Retrospective — 4-question structured retro",
+      "status": "pending",
+      "priority": "P1",
+      "description": "Run 4-question retro after Day 30 checkpoint. What worked, what didn't, persona accuracy, Phase 06 changes.",
+      "output": "validation/retro.md",
+      "dependencies": ["T-C05-03"],
+      "trigger": "Day 31 post-launch",
+      "agent": "founder"
+    },
+    {
+      "id": "T-C05-05",
+      "title": "Mirror sync + handoff to factory/library/",
+      "status": "pending",
+      "priority": "P1",
+      "description": "Run planning_mirror_sync.py --type content. Verify all 12 final pieces + gate reports synced. Update _manifest.yaml content plan status to completed.",
+      "output": "factory/library/planning/content/",
+      "dependencies": ["T-C05-04"],
+      "trigger": "Day 32 post-launch",
+      "agent": "spec_architect_v2",
+      "cli_command": "python3 factory/scripts/core/planning_mirror_sync.py --type content"
+    },
+    {
+      "id": "T-C05-06",
+      "title": "Phase 06 content plan seed — input from retro",
+      "status": "pending",
+      "priority": "P2",
+      "description": "Create .ai/plan/content/phase-01-discovery/ for the next content cycle using retro.md findings as input. Pillar adjustments informed by KPI data.",
+      "output": ".ai/plan/content/phase-06-next-cycle/ (new)",
+      "dependencies": ["T-C05-04"],
+      "trigger": "Day 33 post-launch",
+      "agent": "spec_architect_v2"
+    }
+  ]
+}

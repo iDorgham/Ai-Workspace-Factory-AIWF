@@ -26,7 +26,7 @@ def audit_path_integrity(workspaces_root: str, check_content: bool = False):
                     if not (item.name.startswith("00") and "_" in item.name):
                         violations.append(f"ILLEGAL_SUBDIR: Client '{client_folder.name}' has non-project subdir '{item.name}'")
                 else:
-                if item.name not in allowed:
+                    if item.name not in allowed:
                         violations.append(f"METADATA_POLLUTION: Client '{client_folder.name}' contains unexpected file '{item.name}'")
             
             # FR-2.1: Validate workspace_type
@@ -77,7 +77,7 @@ def audit_path_integrity(workspaces_root: str, check_content: bool = False):
 
 if __name__ == "__main__":
     # Default to current workspaces folder
-    ws_root = str(Path(__file__).resolve().parents[2] / "workspaces")
+    ws_root = str(Path(__file__).resolve().parents[4] / "workspaces")
     check_content = "--check-content" in sys.argv
     
     # Simple positional arg for root if not flag

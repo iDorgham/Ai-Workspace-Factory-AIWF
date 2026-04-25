@@ -8,8 +8,12 @@ error handling, and performance tracking.
 
 from abc import ABC, abstractmethod
 from typing import Dict, List, Optional, Any
+import hashlib
+import json
+import subprocess
 import time
-from datetime import datetime
+from datetime import datetime, timezone
+from pathlib import Path
 
 
 class ToolAdapter(ABC):
@@ -199,3 +203,79 @@ class ToolAdapter(ABC):
     def format_latency(self) -> str:
         """Return formatted latency string."""
         return f"{self.stats['avg_latency_ms']:.0f}ms"
+
+    # ========== PERFORMANCE LEDGER (F5 Brainstorm Signal) ==========
+
+    def _get_session_id(self) -> str:
+        """Return git HEAD short SHA as session identifier."""
+        try:
+            result = subprocess.run(
+                ["git", "rev-parse", "--short", "HEAD"],
+                capture_output=True, text=True, timeout=3
+            )
+            return result.stdout.strip() if result.returncode == 0 else "no-git"
+        except Exception:
+            return "no-git"
+
+    def _make_reasoning_hash(self, tool_name: str, timestamp: str) -> str:
+        """Deterministic hash: adapter + tool + timestamp."""
+        raw = f"{self.tool_name}:{tool_name}:{timestamp}"
+        return f"sha256:{hashlib.sha256(raw.encode()).hexdigest()[:16]}"
+
+    def _find_ledger_path(self) -> Path:
+        """Locate tool_performance.jsonl relative to repo root."""
+        # Walk up from this file's location to find .ai/logs/ledgers/
+        current = Path(__file__).resolve()
+        for parent in current.parents:
+            candidate = parent / ".ai" / "logs" / "ledgers" / "tool_performance.jsonl"
+            if candidate.exists():
+                return candidate
+        # Fallback: create relative to repo root guess
+        return Path(__file__).resolve().parents[7] / ".ai" / "logs" / "ledgers" / "tool_performance.jsonl"
+
+    def log_to_performance_ledger(
+        self,
+        tool: str,
+        status: str,
+        latency_ms: int,
+        tokens_in: Optional[int] = None,
+        tokens_out: Optional[int] = None,
+        error_code: Optional[str] = None
+    ) -> None:
+        """
+        Append a structured entry to .ai/logs/ledgers/tool_performance.jsonl.
+
+        Called by concrete adapters after every tool invocation. Provides signal
+        data for the F5 brainstorm intelligence layer to detect patterns, gaps,
+        and adapter health across the multi-LLM stack.
+
+        Args:
+            tool: Function/method name invoked
+            status: 'success' | 'error' | 'timeout' | 'rate_limited'
+            latency_ms: Wall-clock duration in milliseconds
+            tokens_in: Input token count (None if unavailable)
+            tokens_out: Output token count (None if unavailable)
+            error_code: Error code string if status != 'success'
+        """
+        now = datetime.now(timezone.utc).isoformat()
+        entry = {
+            "type": "tool_call",
+            "adapter": self.tool_name,
+            "tool": tool,
+            "status": status,
+            "latency_ms": latency_ms,
+            "tokens_in": tokens_in,
+            "tokens_out": tokens_out,
+            "error_code": error_code,
+            "session_id": self._get_session_id(),
+            "timestamp": now,
+            "reasoning_hash": self._make_reasoning_hash(tool, now)
+        }
+        try:
+            ledger = self._find_ledger_path()
+            ledger.parent.mkdir(parents=True, exist_ok=True)
+            with open(ledger, "a") as f:
+                f.write(json.dumps(entry) + "\n")
+        except Exception:
+            # Never let ledger writes crash tool execution
+            pass

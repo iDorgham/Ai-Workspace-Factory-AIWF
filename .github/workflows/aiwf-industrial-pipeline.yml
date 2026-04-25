@@ -1,4 +1,4 @@
-name: 🏗️ AIWF Industrial Pipeline (v10.1.0)
+name: 🏗️ AIWF Industrial Pipeline (v21.0.0)
 
 on:
   push:
@@ -22,7 +22,7 @@ jobs:
       - name: Run Health Scorer
         run: |
           export PYTHONPATH=$PYTHONPATH:.
-          python3 factory/scripts/health_scorer.py
+          python3 factory/scripts/maintenance/health_scorer.py
       - name: Archive Audit Report
         uses: actions/upload-artifact@v4
         with:
@@ -34,16 +34,75 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
       - name: Verify Provisioning Engine
         run: |
           export PYTHONPATH=$PYTHONPATH:.
           # Use modern v10 scaffolder
-          python3 factory/scripts/saas_scaffolder.py "CI-Test-Project"
+          python3 factory/scripts/automation/saas_scaffolder.py "CI-Test-Project"
           # Check for .ai/metadata.json
-          if [ ! -f "workspaces/ci-test-project/.ai/metadata.json" ]; then
+          if [ ! -f "workspaces/clients/ci-test-project/metadata.json" ]; then
             echo "❌ Sovereign structure failed!"
             exit 1
           fi
+      - name: Spec Density Gate — All Active Plan Phases
+        run: |
+          export PYTHONPATH=$PYTHONPATH:.
+          echo "🔍 Running spec_density_gate_v2 on all non-draft plan phases..."
+          FAILED=0
+          PASSED=0
+          WARNED=0
+
+          for phase_dir in $(find .ai/plan -mindepth 2 -maxdepth 2 -type d -name "phase-*" 2>/dev/null); do
+            # Read phase status from phase.spec.json
+            spec_file="$phase_dir/phase.spec.json"
+            if [ -f "$spec_file" ]; then
+              status=$(python3 -c "import json,sys; d=json.load(open('$spec_file')); print(d.get('status','unknown'))" 2>/dev/null || echo "unknown")
+            else
+              status="unknown"
+            fi
+
+            result=$(python3 factory/scripts/core/spec_density_gate_v2.py --phase "$phase_dir" 2>&1)
+            exit_code=$?
+
+            phase_name=$(basename "$phase_dir")
+            parent_type=$(basename $(dirname "$phase_dir"))
+
+            if [ "$status" = "draft" ]; then
+              # Draft phases: warn only, never block
+              if [ $exit_code -ne 0 ]; then
+                echo "⚠️  WARN  [$parent_type/$phase_name] status=draft — density gate did not pass (non-blocking)"
+                WARNED=$((WARNED + 1))
+              else
+                echo "✅ PASS  [$parent_type/$phase_name] status=draft"
+                PASSED=$((PASSED + 1))
+              fi
+            else
+              # Non-draft phases: gate failure blocks CI
+              if [ $exit_code -ne 0 ]; then
+                echo "❌ FAIL  [$parent_type/$phase_name] status=$status — density gate BLOCKED"
+                echo "$result" | grep -E "Missing:|Gates:" | head -5
+                FAILED=$((FAILED + 1))
+              else
+                echo "✅ PASS  [$parent_type/$phase_name] status=$status"
+                PASSED=$((PASSED + 1))
+              fi
+            fi
+          done
+
+          echo ""
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+          echo "Density Gate Summary: PASS=$PASSED  WARN=$WARNED  FAIL=$FAILED"
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+          if [ $FAILED -gt 0 ]; then
+            echo "❌ $FAILED non-draft phase(s) failed the density gate. Commit blocked."
+            exit 1
+          fi
+          echo "✅ All non-draft phases passed the density gate."
 
   chaos-regression:
     name: ⚡ Chaos Stress-Test
@@ -54,17 +113,37 @@ jobs:
         run: |
           export PYTHONPATH=$PYTHONPATH:.
           # Create a dummy workspace for testing
-          python3 factory/scripts/saas_scaffolder.py "Chaos-Test"
+          python3 factory/scripts/automation/saas_scaffolder.py "Chaos-Test"
           # Run validator (if script exists in scripts/ or factory/scripts/)
-          if [ -f "factory/scripts/chaos_validator.py" ]; then
-            python3 factory/scripts/chaos_validator.py --target "workspaces/chaos-test" --mode all
+          if [ -f "factory/scripts/maintenance/chaos_validator.py" ]; then
+            python3 factory/scripts/maintenance/chaos_validator.py --target "workspaces/clients/chaos-test" --mode all
           else
             echo "⚠️ Chaos Validator not found, skipping..."
           fi
 
+  planning-mirror-sync:
+    name: 🔄 Planning Mirror Sync
+    runs-on: ubuntu-latest
+    needs: [sovereign-verification]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Sync .ai/plan/ → factory/library/planning/
+        run: |
+          export PYTHONPATH=$PYTHONPATH:.
+          python3 factory/scripts/core/planning_mirror_sync.py
+      - name: Upload Sync Manifest
+        uses: actions/upload-artifact@v4
+        with:
+          name: planning-sync-manifest
+          path: factory/library/planning/sync_manifest.json
+
   auto-recovery:
     name: 🦾 Sovereign Auto-Recovery
-    needs: [health-audit, sovereign-verification, chaos-regression]
+    needs: [health-audit, sovereign-verification, chaos-regression, planning-mirror-sync]
     if: failure()
     uses: ./.github/workflows/self_heal.yml
     with:

@@ -1,0 +1,14 @@
+{
+  "spec_id": "social_launch_kit",
+  "version": "1.0.0",
+  "platforms": {
+    "LinkedIn": {
+      "post_style": "Strategic, Leadership-focused",
+      "hook": "The age of the 'agent' is over. The age of the 'Industrial Factory' has begun."
+    },
+    "Twitter/X": {
+      "post_style": "Fast, Impactful, Technical",
+      "hook": "100/100 OMEGA Score achieved. AIWF v20.0 is live. #SovereignAI #MENATech"
+    }
+  }
+}

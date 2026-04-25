@@ -1,0 +1,6 @@
+{
+  "spec_id": "commit_contract",
+  "version": "1.0.0",
+  "schema": "type(scope): description [Reasoning: {hash}] [Law151: certified]",
+  "required_fields": ["type", "description", "reasoning_hash"]
+}

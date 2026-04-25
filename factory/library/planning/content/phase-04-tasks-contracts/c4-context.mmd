@@ -1,0 +1,28 @@
+%%{init: {"theme": "default"}}%%
+C4Context
+  title System Context — AIWF v21 Tasks + Contracts (Phase 04)
+
+  Person(founder, "Dorgham (Founder)", "Approves generated content before publish")
+  Person(spec_arch, "spec_architect_v2", "Orchestrates multi-CLI generation pipeline")
+
+  System_Boundary(phase04, "Phase 04 — Tasks + Contracts") {
+    System(production_pipeline, "Content Production Pipeline", "Executes 12 tasks across Claude + Qwen adapters; gates output; logs to publish_log.md")
+  }
+
+  System_Ext(phase03_briefs, "Phase 03 Briefs", "12 content briefs — production contracts for generation")
+  System_Ext(claude_adapter, "Claude Adapter", "Generates English content: README, LinkedIn, X, Dev.to")
+  System_Ext(qwen_adapter, "Qwen Adapter", "Generates Arabic content: C-07, C-08, C-12 — Law 151 anonymised")
+  System_Ext(quality_gate, "Quality Gate", "SEO ≥85, brand voice ≥92, readability ≥65, originality ≤15")
+  System_Ext(tool_ledger, "tool_performance.jsonl", "Logs every adapter call: latency, tokens, error_code, reasoning_hash")
+  System_Ext(publish_log, "publish_log.md", "Tracks publish status and URL for all 12 pieces")
+
+  Rel(phase03_briefs, production_pipeline, "Provides production contracts", "12 briefs")
+  Rel(spec_arch, production_pipeline, "Executes tasks", "Sequential + parallel")
+  Rel(production_pipeline, claude_adapter, "Routes English pieces to", "9 pieces")
+  Rel(production_pipeline, qwen_adapter, "Routes Arabic pieces to", "3 pieces (Law 151 anonymised)")
+  Rel(production_pipeline, quality_gate, "All output validated by", "SEO + voice + readability")
+  Rel(production_pipeline, tool_ledger, "Logs every execution to", "JSONL append")
+  Rel(production_pipeline, publish_log, "Updates status in", "Per piece")
+  Rel(founder, production_pipeline, "Final approval gate", "Manual review")
+
+  UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")

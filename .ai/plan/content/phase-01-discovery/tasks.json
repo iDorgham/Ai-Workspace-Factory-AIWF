@@ -1,0 +1,77 @@
+{
+  "phase": "content-aiwf-v21-launch-01-discovery",
+  "planning_type": "content",
+  "topic": "AIWF v21 Launch Content Strategy",
+  "version": "1.0.0",
+  "created": "2026-04-25T00:00:00Z",
+  "reasoning_hash": "sha256:aiwf-v21-launch-content-01-discovery-2026-04-25",
+  "density_gate": { "minimum_tasks": 5, "minimum_files": 12, "c4_required": true },
+  "tasks": [
+    {
+      "id": "T-C01-01",
+      "title": "Define 4 audience personas",
+      "status": "pending",
+      "priority": "P1",
+      "description": "Document The Sovereign Builder, The Pragmatic Dev, The MENA Pioneer, and The AI Director. Each persona needs: role, region, pain points, AIWF use case, preferred content format. Ground each in real signals from .ai/logs/workflow.jsonl and community knowledge.",
+      "output": "domain_model.md#audience-personas",
+      "dependencies": [],
+      "agent": "brainstorm_agent",
+      "cli_prompt_ref": "prompt_library/persona_research.md"
+    },
+    {
+      "id": "T-C01-02",
+      "title": "Audit existing AIWF content assets",
+      "status": "pending",
+      "priority": "P1",
+      "description": "Scan docs/, .ai/dashboard/, README.md, and any public-facing content. Score each against SEO ≥85, readability ≥65, brand voice ≥92. Produce asset inventory table in domain_model.md.",
+      "output": "domain_model.md#content-asset-inventory",
+      "dependencies": [],
+      "agent": "spec_architect_v2",
+      "cli_prompt_ref": "prompt_library/content_audit.md"
+    },
+    {
+      "id": "T-C01-03",
+      "title": "Map 3 competitor content strategies",
+      "status": "pending",
+      "priority": "P1",
+      "description": "Analyse LangChain, CrewAI, and AutoGen content strategies. Extract: primary channel, tone, posting cadence, differentiation angle. Add competitor matrix to domain_model.md. Extract AIWF counter-positioning.",
+      "output": "domain_model.md#competitor-content-map",
+      "dependencies": ["T-C01-01"],
+      "agent": "brainstorm_agent",
+      "cli_prompt_ref": "prompt_library/competitor_research.md"
+    },
+    {
+      "id": "T-C01-04",
+      "title": "Define SMART content objectives + channel matrix",
+      "status": "pending",
+      "priority": "P1",
+      "description": "Set 4 SMART objectives tied to v21 launch goals (developer awareness, MENA positioning, thought leadership, technical credibility). Build channel priority matrix: GitHub P1, LinkedIn P2, X P2, Dev.to P3, Arabic MENA P3.",
+      "output": "domain_model.md#content-objectives + domain_model.md#channel-priority-matrix",
+      "dependencies": ["T-C01-02", "T-C01-03"],
+      "agent": "spec_architect_v2",
+      "cli_prompt_ref": "prompt_library/objectives_channels.md"
+    },
+    {
+      "id": "T-C01-05",
+      "title": "Law 151/2020 compliance check",
+      "status": "pending",
+      "priority": "P1",
+      "description": "Complete regional_compliance.md. Verify all persona data is anonymised and stored in-region. Confirm Arabic content scope decision (English-first, Arabic-adapted). No personal data of Egyptian subjects may leave Egypt.",
+      "output": "regional_compliance.md",
+      "dependencies": ["T-C01-01"],
+      "agent": "factory_orchestrator",
+      "cli_prompt_ref": "prompt_library/law151_discovery.md"
+    },
+    {
+      "id": "T-C01-06",
+      "title": "Spec density gate validation",
+      "status": "pending",
+      "priority": "P1",
+      "description": "Run spec_density_gate_v2.py --phase .ai/plan/content/phase-01-discovery --write-report. Must return 6/6 gates PASS before Phase 02 activates.",
+      "output": "validation/density_gate_report.json",
+      "dependencies": ["T-C01-05"],
+      "agent": "spec_architect_v2",
+      "cli_prompt_ref": null
+    }
+  ]
+}

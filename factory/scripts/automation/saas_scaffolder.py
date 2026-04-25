@@ -80,6 +80,6 @@ if __name__ == "__main__":
         if arg.startswith("--type="):
             workspace_type = arg.split("=")[1]
             
-    root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
     scaffolder = SaaSScaffolder(root)
     scaffolder.init_project(name, region=region, workspace_type=workspace_type)

@@ -1,0 +1,53 @@
+{
+    "phase": "18G-governance",
+    "version": "1.0.0",
+    "status": "draft",
+    "registered": "2026-04-25",
+    "tasks": [
+        {
+            "id": "TASK-GOV-001",
+            "title": "Implement governance_health_check.py",
+            "status": "pending",
+            "priority": "P1",
+            "description": "Python script that validates all governance YAML and MD files for schema integrity. Must cover: access_rules.md, sdd_protocols.md, versioning.md, and all agent registry entries.",
+            "dependencies": [],
+            "output": "factory/scripts/core/governance_health_check.py"
+        },
+        {
+            "id": "TASK-GOV-002",
+            "title": "Implement sdd_gate_enforcer.py",
+            "status": "pending",
+            "priority": "P1",
+            "description": "Enforces the SDD 5-spec minimum rule. Blocks a phase from transitioning to 'active' in _manifest.yaml unless its spec folder contains >= 5 valid spec files.",
+            "dependencies": ["TASK-GOV-001"],
+            "output": "factory/scripts/core/sdd_gate_enforcer.py"
+        },
+        {
+            "id": "TASK-GOV-003",
+            "title": "Produce access_rules_audit.md",
+            "status": "pending",
+            "priority": "P2",
+            "description": "Audit current access_rules.md against the live agent roster in registry.yaml. Identify any role/permission gaps or orphaned entries.",
+            "dependencies": [],
+            "output": ".ai/governance/access_rules_audit.md"
+        },
+        {
+            "id": "TASK-GOV-004",
+            "title": "Write omega_gate_v3_spec.md",
+            "status": "pending",
+            "priority": "P1",
+            "description": "Specification document for the 12-point OMEGA Gate (extends current 4-point gate). This spec is a prerequisite for Phase 22 release gate implementation.",
+            "dependencies": ["TASK-GOV-001"],
+            "output": ".ai/governance/omega_gate_v3_spec.md"
+        },
+        {
+            "id": "TASK-GOV-005",
+            "title": "Create governance_contracts_index.yaml",
+            "status": "pending",
+            "priority": "P2",
+            "description": "Machine-readable index of all governance contracts, their path, schema version, last-validated date, and owning agent. Consumed by governance_health_check.py.",
+            "dependencies": ["TASK-GOV-003"],
+            "output": ".ai/governance/governance_contracts_index.yaml"
+        }
+    ]
+}

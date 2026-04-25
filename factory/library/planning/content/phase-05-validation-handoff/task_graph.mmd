@@ -1,0 +1,15 @@
+%%{init: {"theme": "default"}}%%
+gantt
+  title Task Graph — Phase 05: validation handoff
+  dateFormat  YYYY-MM-DD
+  axisFormat  %b %d
+
+  section Core Work
+    Primary deliverable         :t1, 2026-05-005, 2d
+    Secondary deliverable       :t2, after t1, 2d
+    Review and iterate          :t3, after t2, 1d
+
+  section Compliance & Gate
+    Law 151/2020 check          :gate1, after t3, 1d
+    Spec Density Gate           :milestone, after gate1, 0d
+    Phase 05 handoff  :milestone, after gate1, 0d

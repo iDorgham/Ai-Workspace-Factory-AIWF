@@ -1,0 +1,5 @@
+{
+  "spec_id": "header_comment_standard",
+  "version": "1.0.0",
+  "format": "# TOMBSTONED: {date} | Reason: {reason} | Successor: {file} | Do not import."
+}

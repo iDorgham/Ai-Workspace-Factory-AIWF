@@ -1,0 +1,7 @@
+{
+  "spec_id": "changelog_schema",
+  "version": "1.0.0",
+  "sections": ["Industrialization", "Intelligence", "Security", "Compliance"],
+  "format": "markdown",
+  "auto_generate": true
+}

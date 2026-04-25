@@ -1,0 +1,23 @@
+{
+  "spec_id": "content-aiwf-v21-launch-02-blueprint",
+  "spec_version": "1.0.0", "sdd_version": "v21.0.0",
+  "planning_type": "content", "phase_name": "Blueprint",
+  "phase_number": "02", "topic": "AIWF v21 Launch Content Strategy",
+  "status": "draft", "created": "2026-04-25T00:00:00Z",
+  "reasoning_hash": "sha256:aiwf-v21-launch-content-02-blueprint-2026-04-25",
+  "law_151_scope": true, "owner_agent": "spec_architect_v2",
+  "goals": [
+    "Define the content architecture: pillar structure, content types, and narrative arc",
+    "Map the content calendar skeleton: 30-day launch window with channel-specific cadence",
+    "Establish the brand narrative for AIWF v21 that differentiates from all three mapped competitors"
+  ],
+  "acceptance_criteria": [
+    {"id": "AC-01", "description": "Content pillar map with 4 pillars, 3 content types each", "verifiable": true, "test_ref": "validation/audit_checklist.md#AC-01"},
+    {"id": "AC-02", "description": "30-day content calendar skeleton with channel assignments", "verifiable": true, "test_ref": "validation/audit_checklist.md#AC-02"},
+    {"id": "AC-03", "description": "Brand narrative document: sovereign positioning statement + 3 proof points", "verifiable": true, "test_ref": "validation/audit_checklist.md#AC-03"}
+  ],
+  "timeline": {"estimated_days": 4, "start_date": "2026-05-03", "end_date": "2026-05-06"},
+  "density_gate": {"minimum_files": 12, "enforced_by": "spec_density_gate_v2", "c4_required": true, "regional_compliance_required": true},
+  "dependencies": ["content-aiwf-v21-launch-01-discovery"],
+  "blocks": ["content-aiwf-v21-launch-03-detailed-design"]
+}

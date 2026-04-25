@@ -1,0 +1,11 @@
+{
+  "spec_id": "tombstone_schema",
+  "version": "1.0.0",
+  "fields": {
+    "script": "string",
+    "date_deprecated": "iso8601",
+    "reason": "enum [REPLACED, DEPRECATED, UNUSED, BROKEN]",
+    "superseded_by": "string",
+    "live_imports": "boolean"
+  }
+}

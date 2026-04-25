@@ -1,0 +1,19 @@
+# AIWF PHASE 2 CONTRACT: OPERATIONAL VISIBILITY
+version: "7.5.0"
+phase: 2
+component: "omega-dashboard"
+reasoning_hash: "sha256:phase2-spec-2026-04-23"
+
+requirements:
+  - id: "REQ-DASH-001"
+    priority: "P1"
+    ac: ["real-time-polling", "multi-workspace-grid"]
+  - id: "REQ-DASH-002"
+    priority: "P1"
+    ac: ["parallel-execution", "swarm-summary-report"]
+
+validation_gates:
+  - name: "tui-rendering"
+    command: "python3 factory/dashboard/omega_tui_lite.py --validate"
+  - name: "swarm-latency"
+    command: "python3 factory/scripts/swarm.py 'echo test' --validate"

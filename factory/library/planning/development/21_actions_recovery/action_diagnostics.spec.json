@@ -1,0 +1,10 @@
+{
+  "spec_id": "action_diagnostics",
+  "version": "1.0.0",
+  "report_format": {
+    "exit_code": "integer",
+    "failing_step": "string",
+    "affected_files": "array",
+    "suggested_fix": "string"
+  }
+}

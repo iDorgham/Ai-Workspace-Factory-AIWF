@@ -1,0 +1,26 @@
+%%{init: {"theme": "default"}}%%
+C4Context
+  title System Context — AIWF v21 Content Blueprint
+
+  Person(founder, "Dorgham (Founder)", "Authors LinkedIn + X content; approves all pieces")
+  Person(dev_audience, "Developer Audience", "Discovers AIWF via GitHub + technical content")
+  Person(mena_audience, "MENA Audience", "Discovers AIWF via Arabic + regional content")
+
+  System_Boundary(content_blueprint, "Content Blueprint System") {
+    System(blueprint_engine, "Content Blueprint Engine", "Orchestrates pillar architecture, calendar, and brand narrative for 30-day launch")
+  }
+
+  System_Ext(github, "GitHub", "README + docs — developer discovery primary channel")
+  System_Ext(linkedin, "LinkedIn", "Founder voice + enterprise reach")
+  System_Ext(x_platform, "X (Twitter)", "Developer community + real-time launch")
+  System_Ext(mena_channels, "MENA Channels", "Arabic content + regional tech communities")
+
+  Rel(founder, blueprint_engine, "Reviews and approves", "Manual review")
+  Rel(blueprint_engine, github, "Schedules content for", "Day 1")
+  Rel(blueprint_engine, linkedin, "Schedules content for", "Day 1 → Day 28")
+  Rel(blueprint_engine, x_platform, "Schedules content for", "Day 1 → Day 14")
+  Rel(blueprint_engine, mena_channels, "Schedules content for", "Day 7 → Day 21")
+  Rel(dev_audience, github, "Discovers via", "Search + links")
+  Rel(mena_audience, mena_channels, "Discovers via", "Arabic content")
+
+  UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")

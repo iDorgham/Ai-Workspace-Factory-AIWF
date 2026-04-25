@@ -1,0 +1,1809 @@
+{
+  "skills": [
+    {
+      "meta": {},
+      "path": "factory/library/15-music-sound-engineering/composition-theory/skills/electronic-composition-theory/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/15-music-sound-engineering/sound-design/skills/vst-synthesis-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/15-music-sound-engineering/music-production/skills/vocal-production-signal-chains/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/15-music-sound-engineering/music-production/skills/ableton-live-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/15-music-sound-engineering/sound-engineering/skills/mixing-mastering-omega/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/15-music-sound-engineering/performance-library/skills/dj-mixing-performance/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/10-operations-qa/execution/skills/contract-first-development/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/10-operations-qa/execution/skills/platform-agnostic-contracts/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/10-operations-qa/execution/skills/blameless-escalation-sbar/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/10-operations-qa/execution/skills/gherkin-acceptance-criteria/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/10-operations-qa/execution/skills/execution-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/10-operations-qa/quality-assurance/skills/external/web-quality/high-density-web-quality/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/10-operations-qa/quality-assurance/skills/external/lambdatest-qa/grid-automation-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/10-operations-qa/quality-assurance/skills/external/sentry/sentry-official-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/02-web-platforms/cloud-architecture/skills/external/serverless-databases/serverless-db-physics/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/02-web-platforms/cloud-architecture/skills/external/cloudflare/cloudflare-official-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/02-web-platforms/cloud-architecture/skills/external/supabase/supabase-official-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/02-web-platforms/cloud-architecture/skills/external/microsoft-azure/azure-cloud-physics/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/02-web-platforms/cloud-architecture/skills/external/firebase/firebase-platform-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/render-props-pattern/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/react-composition-2026/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/compound-pattern/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/static-rendering/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/hooks-pattern/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/client-side-rendering/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/progressive-hydration/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/server-side-rendering/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/react-2026/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/ai-ui-patterns/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/react-selective-hydration/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/react-server-components/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/incremental-static-rendering/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/react-render-optimization/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/hoc-pattern/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/react-data-fetching/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/presentational-container-pattern/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/02-web-platforms/web-developing/skills/cms-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/02-web-platforms/web-developing/skills/framer-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/02-web-platforms/web-developing/skills/external/design-excellence/sleek-ui-design-protocols/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/02-web-platforms/web-developing/skills/external/nextjs-mastery/nextjs-2026-patterns/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/02-web-platforms/web-developing/skills/external/patterns-dev/react-design-patterns/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/02-web-platforms/web-developing/skills/bilingual-nextjs-performance/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/02-web-platforms/web-developing/skills/front-end-website-builders/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/02-web-platforms/web-developing/skills/live-website-builders/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/02-web-platforms/web-developing/skills/responsive-grid-systems/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/02-web-platforms/web-developing/skills/modern-frontend-frameworks/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/02-web-platforms/web-developing/skills/animation-frameworks/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/02-web-platforms/app-developing/skills/app-developing-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/02-web-platforms/api-design/skills/api-contracts/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/02-web-platforms/api-design/skills/api-gateway-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/strategist/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/self-healing-workflows/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/risk-scoring-5x5/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/safety-interaction/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/accessibility-wcag/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/dynamic-memory-protocol/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/pre-flight-checklist/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/distributed-system-architecture/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/style-transfer/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/context-compression/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/frontend/ui-ux-pro-max/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/frontend/asset-optimization/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/frontend/motion-animation-system/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/frontend/frontend-architecture-system/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/frontend/i18n/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/frontend/multi-currency-localization/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/qr-branding/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/zero-trust-validation/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/policy-as-code/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/auto-optimization-loop/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/creative-director/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/pro-prd-writer/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/gdpr-regional-compliance/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/swarm-coordination-patterns/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/pnpm-version-catalogs/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/docs-lint-link-check/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/core-web-vitals/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/security-devops-ops/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/stateless-auth/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/backend/database/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/backend/excel-spreadsheets/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/backend/prisma-advanced/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/backend/structured-logging-tracing/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/backend/multi-tenant-isolation/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/backend/api/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/backend/backend-engineering-playbook/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/property-domain/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/qr-crypto/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/runtime-automation-rules/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/workspace-audit-orchestrator/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/rbac-permission-system/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/edge-case-boundary-testing/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/testing/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/architecture/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/multi-tool-orchestration/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/lesson-injection/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/design-guide/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/legal-review/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/playwright-e2e/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/metrics-driven-decisions/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/cloud/upstash-integration/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/cloud/railway-deployment/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/cloud/cloudflare-stack/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/cloud/aws-services/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/cloud/firebase-integration/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/cloud/google-cloud/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/cloud/neon-postgres/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/data-viz/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/owasp-zero-trust-architecture/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/mcp-guide/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/cli-limits/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/service-selection-guide/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/01-software-engineering/developing/skills/programming-languages-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/booking-scheduling-domain/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/external/github/github-official-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/external/typescript-mastery/typescript-2026-physic/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/external/sentry-observability/real-time-observability-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/edge-patterns/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/api-security-patterns/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/cicd-automation/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/hallucination-containment/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/sentry-observability/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/developing/skills/cli-memory/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/01-software-engineering/backend/skills/backend-dashboard-patterns/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/backend/skills/external/nestjs-architecture/nestjs-modular-architecture/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/01-software-engineering/testing/skills/external/playwright-e2e/playwright-e2e-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/06-branding/brand-strategy/skills/brand/brand-identity-engine/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/06-branding/brand-strategy/skills/mena-strategic-brand-voice/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/06-branding/brand-strategy/skills/brand-grammar-emotional-intent/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/06-branding/brand-strategy/skills/multi-persona-branding-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/06-branding/brand-strategy/skills/branding-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/06-branding/modern-ai-branding/skills/ai-avatar-branding-logic/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/06-branding/brand-governance/skills/w3c-brand-token-system/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/06-branding/visual-identity/skills/arabic-typography-rtl-physics/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/06-branding/visual-identity/skills/golden-ratio/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/06-branding/visual-identity/skills/visual-identity-design-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/06-branding/visual-identity/skills/design-trends-2026/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/03-security-compliance/fintech-banking/skills/payment-compliance/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/03-security-compliance/islamic-finance-compliance/skills/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/03-security-compliance/identity/skills/external/clerk/clerk-official-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/03-security-compliance/mena-regulatory-compliance/skills/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/03-security-compliance/mena-regulatory-compliance/skills/mena-constitutional-boundaries/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/03-security-compliance/mena-regulatory-compliance/skills/regulatory-authority-mapping/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/03-security-compliance/cyber-security/skills/external/zero-trust-physics/zero-trust-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/03-security-compliance/cyber-security/skills/external/security-audits/advanced-security-audit/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/03-security-compliance/mena-data-sovereignty/skills/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/09-social-engagement/social-media/skills/social-media-sizes/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/09-social-engagement/social-media/skills/viral-engagement-engineering/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/09-social-engagement/content-strategy/skills/external/high-density-marketing/high-density-content-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/11-industry-verticals/education-lms/skills/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/11-industry-verticals/hospital-clinic/skills/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/11-industry-verticals/real-estate-dev/skills/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/11-industry-verticals/real-estate-dev/skills/real-estate-modeling/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/11-industry-verticals/media-broadcasting/skills/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/11-industry-verticals/fitness-wellness/skills/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/11-industry-verticals/mena-localization-payments/skills/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/11-industry-verticals/mena-localization-payments/skills/institutional-treasury-remittance/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/11-industry-verticals/legal-brokerage/skills/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/11-industry-verticals/legal-brokerage/skills/egypt-contract-drafting-physics/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/11-industry-verticals/legal-brokerage/skills/uae-contract-drafting-physics/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/11-industry-verticals/lodging-hotel/skills/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/11-industry-verticals/gov-public-sector/skills/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/11-industry-verticals/events-festivals-ops/skills/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/11-industry-verticals/islamic-finance/skills/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/11-industry-verticals/f-and-b-ops/skills/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/11-industry-verticals/healthtech-pharma/skills/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/11-industry-verticals/healthtech-pharma/skills/health-data-privacy/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/11-industry-verticals/crypto-web3/skills/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/11-industry-verticals/crypto-web3/skills/smart-contract-dev/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/11-industry-verticals/ecommerce-retail/skills/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/11-industry-verticals/ecommerce-retail/skills/external/shopify/shopify-official-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/11-industry-verticals/agency-creative/skills/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/11-industry-verticals/ai-automation-lab/skills/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/11-industry-verticals/tourism-travel/skills/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/11-industry-verticals/tourism-travel/skills/tourism-travel-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/11-industry-verticals/real-estate-brokerage/skills/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/11-industry-verticals/real-estate-brokerage/skills/real-estate-brokerage-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/04-business-strategy/business/skills/business-incorporation-egypt/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/04-business-strategy/business/skills/mena-venture-scaling-logic/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/04-business-strategy/business/skills/business-incorporation-uae/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/04-business-strategy/finance-ops/skills/finance-ops-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/04-business-strategy/finance-ops/skills/external/monorepo-physics/turborepo-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/04-business-strategy/finance-ops/skills/external/stripe/stripe-official-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/06-intel-data/data-mining/skills/external/intel-extraction/intelligence-extraction-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/08-media-production/image-production/skills/lighting-mood-systems/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/08-media-production/image-production/skills/high-fidelity-pbr-rendering/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/08-media-production/image-production/skills/pattern-design/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/08-media-production/image-production/skills/vector-illustration/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/08-media-production/image-production/skills/image-production-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/08-media-production/image-production/skills/digital-art/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/08-media-production/image-production/skills/advanced-composition/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/08-media-production/image-production/skills/background-removal/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/08-media-production/image-production/skills/overlay-blending/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/08-media-production/design/skills/figma-token-pipeline/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/08-media-production/design/skills/cine-serious-design-language/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/08-media-production/design/skills/design-token-governance/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/08-media-production/design/skills/cine-serious-visual-framework/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/08-media-production/design/skills/shadcn-atomic-design/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/08-media-production/design/skills/external/shadcn-ui/atomic-architecture-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/08-media-production/design/skills/external/extract-design-system/token-extraction-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/08-media-production/ai-generative-media/skills/ai-generative-media-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/08-media-production/visual-design/skills/visual-design-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/08-media-production/visual-design/skills/external/gsap-motion/cinematic-motion-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/08-media-production/audio-tech/skills/audio-tech-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/08-media-production/3d-production/skills/3d-production-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/08-media-production/3d-production/skills/3d-illusion-prompts/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/08-media-production/3d-production/skills/spatial-geometry-standards/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/08-media-production/video-production/skills/morphing-liquid-transitions/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/08-media-production/video-production/skills/camera-lenses/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/08-media-production/video-production/skills/cinematic-color-grading/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/08-media-production/video-production/skills/video-production-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/08-media-production/video-production/skills/cinematic-transitions/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/08-media-production/video-production/skills/shot-types/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/08-media-production/video-production/skills/cinematic-motion-orchestration/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/08-media-production/video-production/skills/motion-graphics/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/08-media-production/video-production/skills/camera-movement/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/08-media-production/video-production/skills/vfx-fundamentals/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/08-media-production/video-production/skills/sound-effects/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/12-meta-engine/blueprints/skills/blueprints-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/12-meta-engine/blueprints/skills/external/agent-playbook/global-playbook-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/12-meta-engine/blueprints/skills/external/antigravity-awesome-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/12-meta-engine/tools-ai/skills/tools-ai-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/12-meta-engine/library-taxonomy/skills/library-taxonomy-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/12-meta-engine/scripts/skills/scripts-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/12-meta-engine/google-workspace/skills/external/google/workspace-automation-cli/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/12-meta-engine/meta-orchestration/skills/self-healing-orchestrator/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/12-meta-engine/meta-orchestration/skills/meta-orchestration-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/12-meta-engine/meta-orchestration/skills/external/planning-with-files/planning-with-files-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/12-meta-engine/meta-orchestration/skills/external/obra-superpowers/agentic-superpowers-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/05-data-analytics/ai-automation-ops/skills/ai-automation-ops-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/05-data-analytics/analysis/skills/analysis-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/05-data-analytics/analysis/skills/predictive-unit-economics/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/05-data-analytics/analysis/skills/skills/qualitative-coding/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/05-data-analytics/mena-cultural-business-practices/skills/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/05-data-analytics/market-research/skills/market-research-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/05-data-analytics/cultural-intelligence/skills/cultural-intelligence-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/14-ai-intelligence/ai-enterprise/skills/external/vercel-ai-sdk/ai-sdk-orchestration/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/14-ai-intelligence/agentic-orchestration/skills/openclaw-orchestration/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/14-ai-intelligence/agentic-orchestration/skills/external/langchain/langchain-official-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/14-ai-intelligence/agentic-orchestration/skills/external/various/maker-ecosystem-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/14-ai-intelligence/agentic-orchestration/skills/external/github/copilot-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/14-ai-intelligence/agentic-orchestration/skills/external/proactive-agent/proactive-agent-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/14-ai-intelligence/agentic-orchestration/skills/external/wshobson-agents/agent-orchestration-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/14-ai-intelligence/agentic-orchestration/skills/agent-computational-velocity-protocol/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/14-ai-intelligence/frontier-models/skills/external/anthropic/anthropic-official-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/14-ai-intelligence/frontier-models/skills/external/anthropic/computer-use-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/14-ai-intelligence/frontier-models/skills/external/openai/openai-official-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/14-ai-intelligence/frontier-models/skills/openai-codex-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/14-ai-intelligence/frontier-models/skills/claude-3-5-sonnet-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/14-ai-intelligence/intelligence-foundations/skills/fine-tuning-dataset-curation/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/14-ai-intelligence/intelligence-foundations/skills/vector-database-architecture/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/14-ai-intelligence/automation-workflows/skills/make-com-logic-optimization/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/14-ai-intelligence/automation-workflows/skills/n8n-workflow-engineering/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/14-ai-intelligence/automation-workflows/skills/external/caveman-automation/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/13-gaming-entertainment/entertainment-media/skills/streaming-metaverse-narrative/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/13-gaming-entertainment/web-gaming/skills/webgl-phaser-threejs-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/13-gaming-entertainment/economy-monetization/skills/game-economy-monetization/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/13-gaming-entertainment/game-engines/skills/unreal-cpp-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/13-gaming-entertainment/game-engines/skills/unity-csharp-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/13-gaming-entertainment/game-engines/skills/godot-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/07-visibility-optimization/semantic-knowledge-graphs/skills/entity-knowledge-graph-management/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/07-visibility-optimization/seo-technical/skills/external/next-seo-mastery/technical-seo-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/07-visibility-optimization/geo-generative-search/skills/geo-generative-engine-optimization/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/07-visibility-optimization/llm-visibility-llmo/skills/llmo-model-visibility-citations/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/07-visibility-optimization/llm-visibility-llmo/skills/external/llmo-physics/llmo-semantic-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/07-visibility-optimization/llm-visibility-llmo/skills/llmo-audit/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/07-visibility-optimization/visibility-analytics/skills/visibility-intelligence-analytics/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/07-visibility-optimization/seo/skills/seo-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/07-visibility-optimization/seo/skills/bilingual-semantic-authority/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/07-visibility-optimization/seo/skills/external/awesome-seo-physics/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/07-visibility-optimization/seo/skills/seo-metadata-strategy/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/07-visibility-optimization/seo/skills/seo/seo-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/07-visibility-optimization/aeo-voice-search/skills/aeo-answer-engine-optimization/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/17-performance-marketing-growth/digital-ads-mastery/skills/google-meta-ads-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/17-performance-marketing-growth/digital-ads-mastery/skills/programmatic-ads-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/17-performance-marketing-growth/growth-economics/skills/growth-economics-roi-physics/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/17-performance-marketing-growth/traditional-media-ops/skills/offline-media-negotiation-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/17-performance-marketing-growth/ad-creative-production/skills/ad-creative-production-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/17-performance-marketing-growth/ad-creative-production/skills/ads-design-systems/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/17-performance-marketing-growth/ad-creative-production/skills/bilingual-ad-localization-enar/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/16-content-dominance/regional-cultural/skills/egyptian-masri-cultural-hooks/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/16-content-dominance/regional-cultural/skills/arabic-egypt-cultural/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/16-content-dominance/social-content/skills/social-content-viral-loops/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/16-content-dominance/storytelling-logic/skills/emotional-storytelling-loops/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/16-content-dominance/written-content/skills/copywriting-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/16-content-dominance/written-content/skills/written-leadgen-bio-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {
+        "audit_tier": 1,
+        "dependencies": [
+          "core-orchestration"
+        ],
+        "power_score": 93,
+        "quality_status": "omega",
+        "version": "4.1.0"
+      },
+      "path": "factory/library/16-content-dominance/written-content/skills/egyptian-arabic-rtl/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/16-content-dominance/video-narrative/skills/content/content-social-production/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/16-content-dominance/video-narrative/skills/govtech-tone-content/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/16-content-dominance/video-narrative/skills/video-scripting-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/16-content-dominance/video-narrative/skills/content-creation-mastery/SKILL.md",
+      "status": "active"
+    },
+    {
+      "meta": {},
+      "path": "factory/library/16-content-dominance/video-narrative/skills/high-density-copywriting-protocols/SKILL.md",
+      "status": "active"
+    },
+    {
+      "path": "factory/library/06-frontier/skills/aerospace-satellite-mastery/SKILL.md",
+      "tier": "Tier 1",
+      "status": "STRUCTURAL"
+    },
+    {
+      "path": "factory/library/06-frontier/skills/bio-tech-innovation/SKILL.md",
+      "tier": "Tier 1",
+      "status": "STRUCTURAL"
+    },
+    {
+      "path": "factory/library/06-frontier/skills/quantum-logic-engine/SKILL.md",
+      "tier": "Tier 1",
+      "status": "STRUCTURAL"
+    },
+    {
+      "path": "factory/library/07-meta/skills/self-healing-registry/SKILL.md",
+      "tier": "Tier 1",
+      "status": "STRUCTURAL"
+    },
+    {
+      "path": "factory/library/07-meta/skills/meta-taxonomy-enforcer/SKILL.md",
+      "tier": "Tier 1",
+      "status": "STRUCTURAL"
+    }
+  ]
+}

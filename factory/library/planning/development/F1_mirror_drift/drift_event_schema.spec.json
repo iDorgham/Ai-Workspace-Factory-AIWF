@@ -1,0 +1,11 @@
+{
+  "spec_id": "drift_event_schema",
+  "version": "1.0.0",
+  "event_format": {
+    "type": "string",
+    "node_count_delta": "integer",
+    "affected_domains": "array",
+    "timestamp": "iso8601",
+    "reasoning_hash": "sha256"
+  }
+}

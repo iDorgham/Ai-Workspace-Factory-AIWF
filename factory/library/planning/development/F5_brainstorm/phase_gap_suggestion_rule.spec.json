@@ -1,0 +1,5 @@
+{
+  "spec_id": "phase_gap_suggestion_rule",
+  "version": "1.0.0",
+  "rule": "If phase status == DRAFT and age > 14 days and spec count < 5 -> emit SUGGESTION"
+}

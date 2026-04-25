@@ -1,0 +1,27 @@
+{
+    "phase": "07-galaxy-sync",
+    "version": "12.0.0",
+    "tasks": [
+        {
+            "id": "TASK-SYNC-001",
+            "title": "Implement Galaxy-Sync Engine",
+            "status": "pending",
+            "description": "Develop factory/core/galaxy_sync.py to handle registry broadcasting and delta-sync logic.",
+            "dependencies": []
+        },
+        {
+            "id": "TASK-SYNC-002",
+            "title": "Enable Remote Shadow-Sync",
+            "status": "pending",
+            "description": "Update the Cloud-Gateway and Shadow-Runner to support remote-triggered /sync operations.",
+            "dependencies": ["TASK-SYNC-001"]
+        },
+        {
+            "id": "TASK-SYNC-003",
+            "title": "Global Equilibrium Auditor",
+            "status": "pending",
+            "description": "Implement a hash-based verification system to ensure all shards are running the same registry version.",
+            "dependencies": ["TASK-SYNC-001"]
+        }
+    ]
+}

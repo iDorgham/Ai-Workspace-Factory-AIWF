@@ -1,0 +1,30 @@
+%%{init: {"theme": "default"}}%%
+C4Container
+  title Container Architecture — AIWF v21 Content Discovery
+
+  Person(spec_arch, "spec_architect_v2", "AIWF Agent — orchestrates content discovery")
+
+  System_Boundary(content_discovery, "Content Discovery System") {
+    Container(audience_research, "Audience Research Module", "Markdown + JSON", "Persona definitions, pain point mapping, format preferences")
+    Container(content_audit, "Content Audit Module", "Python + Markdown", "Scans existing docs/, .ai/, README; scores quality")
+    Container(competitor_map, "Competitor Map", "Markdown + JSON", "3+ sovereign AI tool content strategies analysed")
+    Container(channel_matrix, "Channel Priority Matrix", "JSON", "Channels ranked by audience fit × reach × cost")
+    Container(discovery_store, "Discovery Store", ".ai/plan/content/phase-01-discovery/", "All discovery artifacts; versioned in git")
+    Container(compliance_check, "Law 151 Compliance Gate", "Python (omega_release.py)", "Ensures Egyptian persona data stays in-region")
+  }
+
+  System_Ext(workspace_docs, "AIWF Workspace Docs", "docs/, .ai/dashboard/, README — existing content assets")
+  System_Ext(brainstorm_agent, "brainstorm_agent", "T1 Agent — generates competitive + audience signals")
+
+  Rel(spec_arch, audience_research, "Commissions", "Internal")
+  Rel(spec_arch, content_audit, "Triggers", "Internal")
+  Rel(spec_arch, competitor_map, "Commissions via", "brainstorm_agent")
+  Rel(brainstorm_agent, competitor_map, "Writes findings to", "Markdown")
+  Rel(content_audit, workspace_docs, "Reads from", "Filesystem")
+  Rel(audience_research, discovery_store, "Writes to", "Filesystem")
+  Rel(content_audit, discovery_store, "Writes to", "Filesystem")
+  Rel(competitor_map, discovery_store, "Writes to", "Filesystem")
+  Rel(channel_matrix, discovery_store, "Writes to", "Filesystem")
+  Rel(discovery_store, compliance_check, "Validated by", "Pre-activation gate")
+
+  UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")

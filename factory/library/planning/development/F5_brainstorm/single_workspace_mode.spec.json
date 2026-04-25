@@ -1,0 +1,9 @@
+{
+  "spec_id": "single_workspace_mode",
+  "version": "1.0.0",
+  "intra_project_patterns": [
+    "phase_velocity_drop",
+    "spec_density_gap",
+    "agent_utilization_imbalance"
+  ]
+}

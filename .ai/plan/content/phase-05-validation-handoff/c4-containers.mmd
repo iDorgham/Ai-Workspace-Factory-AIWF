@@ -1,0 +1,28 @@
+%%{init: {"theme": "default"}}%%
+C4Container
+  title Container Architecture — AIWF v21 Validation + Handoff (Phase 05)
+
+  Person(founder, "Dorgham (Founder)", "Primary operator for this phase")
+
+  System_Boundary(phase05, "Phase 05 — Validation + Handoff") {
+    Container(kpi_tracker, "KPI Tracker", "Markdown", "validation/kpi_report.md — populated at Day 7, 14, 30 checkpoints")
+    Container(content_auditor, "Content Auditor", "Manual + scripts", "Re-scores all 12 pieces: engagement rate, SEO rank delta, conversion rate")
+    Container(retro_doc, "Retro Document", "Markdown", "validation/retro.md — 4-question structured retrospective")
+    Container(mirror_sync_runner, "Mirror Sync Runner", "Python", "planning_mirror_sync.py --type content — syncs all 5 phases to factory/library/")
+    Container(phase06_seed, "Phase 06 Seed", "Phase skeleton", "New content plan skeleton pre-populated with retro findings")
+  }
+
+  System_Ext(publish_log, "publish_log.md", "Source of truth for published URLs and status")
+  System_Ext(channel_analytics, "Channel Analytics APIs", "LinkedIn, X, GitHub, Dev.to — KPI data sources")
+  System_Ext(factory_library, "factory/library/planning/content/", "Mirror target")
+  System_Ext(manifest, ".ai/plan/_manifest.yaml", "Updated: content plan status → completed")
+
+  Rel(publish_log, kpi_tracker, "Provides piece registry to", "Track per-piece KPIs")
+  Rel(channel_analytics, kpi_tracker, "Feeds metrics into", "Day 7/14/30 rows")
+  Rel(kpi_tracker, content_auditor, "Day 30 data triggers", "Full audit")
+  Rel(content_auditor, retro_doc, "Audit findings inform", "4-question retro")
+  Rel(retro_doc, phase06_seed, "Retro output seeds", "Next cycle pillar adjustments")
+  Rel(mirror_sync_runner, factory_library, "Syncs .ai/plan/content/ to", "Deterministic copy")
+  Rel(mirror_sync_runner, manifest, "Updates content plan status in", "_manifest.yaml")
+
+  UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")

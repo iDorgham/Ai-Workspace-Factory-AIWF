@@ -1,11 +1,20 @@
 #!/usr/bin/env python3
-"""Check drift between mirrored governance trees (.cursor and .antigravity)."""
+"""Check drift between mirrored governance trees (.cursor and .antigravity).
+
+Reasoning Hash Policy:
+  Every ledger entry MUST carry a deterministic reasoning hash derived from:
+    session_id (git HEAD short SHA) + timestamp + sorted list of affected files
+  The legacy "sha256:manual-trigger" sentinel is only emitted when git is unavailable.
+"""
 
 from __future__ import annotations
 
 import datetime
 import argparse
+import hashlib
 import json
+import os
+import subprocess
 import sys
 from pathlib import Path
 
@@ -14,6 +23,35 @@ try:
     from paths import REPO_ROOT
 except ImportError:
     REPO_ROOT = Path(__file__).resolve().parents[4] # Adjust based on deep path
+
+
+def _git_head_sha(repo_root: Path) -> str:
+    """Return the short git HEAD SHA, or 'no-git' if unavailable."""
+    try:
+        result = subprocess.run(
+            ["git", "-C", str(repo_root), "rev-parse", "--short", "HEAD"],
+            capture_output=True, text=True, timeout=5
+        )
+        return result.stdout.strip() if result.returncode == 0 else "no-git"
+    except Exception:
+        return "no-git"
+
+
+def generate_reasoning_hash(repo_root: Path, affected_files: list[str], timestamp: str) -> str:
+    """
+    Compute a deterministic reasoning hash from:
+      session_id (git HEAD short SHA) + ISO timestamp + sorted affected file list
+
+    Format: sha256:{hex[:16]}  (16-char prefix for readability in logs)
+    Falls back to 'sha256:manual-trigger' only if git is unavailable AND no files detected.
+    """
+    session_id = _git_head_sha(repo_root)
+    if session_id == "no-git" and not affected_files:
+        return "sha256:manual-trigger"
+
+    raw = f"{session_id}:{timestamp}:{':'.join(sorted(affected_files))}"
+    full_hash = hashlib.sha256(raw.encode()).hexdigest()
+    return f"sha256:{full_hash[:16]}"
 
 
 def _relative_files(root: Path) -> set[str]:
@@ -61,14 +99,29 @@ def main() -> int:
     affected_domains = [k for k, v in checks.items() if v["left_only"] or v["right_only"]]
     
     status = "pass" if drift_total <= args.threshold else "fail"
-    
+    now_iso = datetime.datetime.now(datetime.timezone.utc).isoformat()
+
+    # Collect all drifted file paths for hash input
+    drifted_files: list[str] = []
+    for diff in checks.values():
+        drifted_files.extend(diff["left_only"])
+        drifted_files.extend(diff["right_only"])
+
+    # Use caller-supplied hash, or compute a real deterministic one
+    reasoning_hash = (
+        args.reasoning_hash
+        if args.reasoning_hash
+        else generate_reasoning_hash(REPO_ROOT, drifted_files, now_iso)
+    )
+
     payload = {
         "type": "mirror_drift",
         "status": status,
         "node_count_delta": drift_total,
         "affected_domains": affected_domains,
-        "timestamp": datetime.datetime.now(datetime.timezone.utc).isoformat(),
-        "reasoning_hash": args.reasoning_hash or "sha256:manual-trigger"
+        "timestamp": now_iso,
+        "reasoning_hash": reasoning_hash,
+        "hash_source": "caller-supplied" if args.reasoning_hash else "auto-generated"
     }
 
     # Log to evolution ledger

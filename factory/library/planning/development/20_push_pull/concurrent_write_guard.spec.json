@@ -1,0 +1,6 @@
+{
+  "spec_id": "concurrent_write_guard",
+  "version": "1.0.0",
+  "mutex_lock": ".ai/locks/{agent_id}.lock",
+  "ttl_seconds": 300
+}

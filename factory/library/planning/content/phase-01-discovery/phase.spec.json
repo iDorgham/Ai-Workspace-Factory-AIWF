@@ -1,0 +1,57 @@
+{
+  "spec_id": "content-aiwf-v21-launch-01-discovery",
+  "spec_version": "1.0.0",
+  "sdd_version": "v21.0.0",
+  "planning_type": "content",
+  "phase_name": "Discovery",
+  "phase_number": "01",
+  "topic": "AIWF v21 Launch Content Strategy",
+  "status": "approved",
+  "created": "2026-04-25T00:00:00Z",
+  "reasoning_hash": "sha256:aiwf-v21-launch-content-01-discovery-2026-04-25",
+  "law_151_scope": true,
+  "owner_agent": "spec_architect_v2",
+
+  "goals": [
+    "Map all target audiences for the AIWF v21 launch across MENA and global markets",
+    "Identify existing brand voice signals, content gaps, and competitor positioning",
+    "Define content objectives, success metrics, and channel priorities before any production begins"
+  ],
+
+  "acceptance_criteria": [
+    {
+      "id": "AC-01",
+      "description": "Audience personas documented with demographics, pain points, AIWF use cases, and preferred content formats",
+      "verifiable": true,
+      "test_ref": "validation/audit_checklist.md#AC-01"
+    },
+    {
+      "id": "AC-02",
+      "description": "Content audit completed: existing .ai/ and docs/ assets catalogued with quality scores",
+      "verifiable": true,
+      "test_ref": "validation/audit_checklist.md#AC-02"
+    },
+    {
+      "id": "AC-03",
+      "description": "Competitor content landscape mapped: at least 3 sovereign AI / developer tools analysed",
+      "verifiable": true,
+      "test_ref": "validation/audit_checklist.md#AC-03"
+    }
+  ],
+
+  "timeline": {
+    "estimated_days": 5,
+    "start_date": "2026-04-28",
+    "end_date": "2026-05-02"
+  },
+
+  "density_gate": {
+    "minimum_files": 12,
+    "enforced_by": "spec_density_gate_v2",
+    "c4_required": true,
+    "regional_compliance_required": true
+  },
+
+  "dependencies": [],
+  "blocks": ["content-aiwf-v21-launch-02-blueprint"]
+}

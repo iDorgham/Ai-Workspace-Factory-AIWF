@@ -1,0 +1,30 @@
+%%{init: {"theme": "default"}}%%
+C4Context
+  title System Context — AIWF v21 Launch Content Strategy
+
+  %% ── Actors ────────────────────────────────────────────────────────────────
+  Person(founder, "AI-Native Founder", "Builds sovereign AI products on AIWF; MENA / global")
+  Person(dev, "Senior Developer", "Integrates AIWF into existing stacks; English-first")
+  Person(mena_dev, "MENA Developer", "Arabic/English bilingual; sovereignty-aware; Egypt/Gulf")
+
+  %% ── System Boundary ───────────────────────────────────────────────────────
+  System_Boundary(aiwf_content, "AIWF v21 Content System") {
+    System(content_engine, "Content Strategy Engine", "Generates, governs, and distributes AIWF launch content across all channels")
+  }
+
+  %% ── External Systems ──────────────────────────────────────────────────────
+  System_Ext(github, "GitHub", "Primary developer discovery channel; README + docs")
+  System_Ext(linkedin, "LinkedIn", "Founder + enterprise audience; thought leadership")
+  System_Ext(x_platform, "X (Twitter)", "Developer + AI community real-time engagement")
+  System_Ext(dev_communities, "Dev Communities", "HackerNews, Dev.to, MENA tech forums")
+
+  %% ── Relationships ─────────────────────────────────────────────────────────
+  Rel(founder, content_engine, "Discovers via", "LinkedIn / thought leadership")
+  Rel(dev, content_engine, "Discovers via", "GitHub / technical docs")
+  Rel(mena_dev, content_engine, "Discovers via", "Arabic content / MENA communities")
+  Rel(content_engine, github, "Publishes to", "README / docs push")
+  Rel(content_engine, linkedin, "Publishes to", "Posts / articles")
+  Rel(content_engine, x_platform, "Publishes to", "Threads / announcements")
+  Rel(content_engine, dev_communities, "Publishes to", "Posts / cross-links")
+
+  UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")

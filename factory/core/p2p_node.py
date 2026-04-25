@@ -1,8 +1,15 @@
 #!/usr/bin/env python3
 """
-AIWF P2P Node Engine v9.0.0 (Prototype)
+AIWF P2P Node Engine v9.0.1 (Prototype)
 Core logic for node identity, discovery, and secure component exchange.
+
+Fix (v9.0.1): connect_to_peer() now sets a socket timeout before connecting.
+Without it, connect() blocks for the full OS TCP timeout (~75-130s) when the
+peer is unreachable, freezing any AI response that triggers peer discovery.
 """
+
+# Maximum time to wait for a peer connection attempt before giving up.
+PEER_CONNECT_TIMEOUT_S = 2.0
 
 import socket
 import threading
@@ -77,7 +84,9 @@ class P2PNode:
         """Initial handshake with a peer."""
         try:
             client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            client.settimeout(PEER_CONNECT_TIMEOUT_S)  # ← prevents freeze when peer is down
             client.connect((host, port))
+            client.settimeout(None)  # restore blocking for send
             
             helo = {
                 "type": "HELO",

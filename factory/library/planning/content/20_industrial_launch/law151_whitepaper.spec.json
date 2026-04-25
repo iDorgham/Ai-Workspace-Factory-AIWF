@@ -1,0 +1,11 @@
+{
+  "spec_id": "law151_whitepaper",
+  "version": "1.0.0",
+  "sections": [
+    "Abstract: Data Sovereignty in the AI Age",
+    "Technical Architecture of the Geospatial Lock",
+    "The Shard Routing Protocol (SRP)",
+    "Audit Trails and Immutability via Sovereign Commit",
+    "Law 151/2020: A Technical Compliance Roadmap"
+  ]
+}

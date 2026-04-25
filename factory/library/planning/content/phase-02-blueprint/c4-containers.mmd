@@ -1,0 +1,27 @@
+%%{init: {"theme": "default"}}%%
+C4Container
+  title Container Architecture — AIWF v21 Content Blueprint
+
+  Person(spec_arch, "spec_architect_v2", "Orchestrates blueprint generation")
+
+  System_Boundary(blueprint_system, "Content Blueprint System") {
+    Container(pillar_map, "Pillar Architecture Map", "Markdown + JSON", "4 pillars × 3 content types — defines what gets made and why")
+    Container(calendar, "30-Day Calendar", "Markdown table", "Day-by-day content schedule: channel, piece, pillar, persona")
+    Container(brand_narrative, "Brand Narrative", "Markdown", "Positioning statement + 3 proof points + forbidden language rules")
+    Container(format_specs, "Format Specifications", "YAML in contracts/", "Per-channel format rules: word count, structure, CTA")
+    Container(blueprint_store, "Blueprint Store", ".ai/plan/content/phase-02-blueprint/", "All blueprint artifacts versioned")
+  }
+
+  System_Ext(phase01_outputs, "Phase 01 Outputs", "Personas, competitor map, channel matrix — inputs to blueprint")
+  System_Ext(multi_cli, "Multi-CLI Adapters", "Claude / Gemini / Qwen — generate content in Phase 04 from these blueprints")
+
+  Rel(spec_arch, pillar_map, "Designs from persona + competitor inputs", "Phase 01 data")
+  Rel(phase01_outputs, pillar_map, "Informs", "Personas + competitive gaps")
+  Rel(spec_arch, calendar, "Sequences by", "Channel priority + persona journey")
+  Rel(spec_arch, brand_narrative, "Authors", "Positioning + proof points")
+  Rel(pillar_map, blueprint_store, "Writes to", "Filesystem")
+  Rel(calendar, blueprint_store, "Writes to", "Filesystem")
+  Rel(brand_narrative, blueprint_store, "Writes to", "Filesystem")
+  Rel(blueprint_store, multi_cli, "Feeds prompts to", "Phase 04 production")
+
+  UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")

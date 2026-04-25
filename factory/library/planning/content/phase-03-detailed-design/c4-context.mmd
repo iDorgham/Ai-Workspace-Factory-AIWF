@@ -1,0 +1,24 @@
+%%{init: {"theme": "default"}}%%
+C4Context
+  title System Context — AIWF v21 Detailed Design (Phase 03)
+
+  Person(spec_arch, "spec_architect_v2", "Generates content briefs from pillar map + calendar")
+  Person(founder, "Dorgham (Founder)", "Reviews briefs; approves before multi-CLI execution")
+
+  System_Boundary(detailed_design, "Detailed Design System") {
+    System(brief_engine, "Content Brief Engine", "Produces 12 production-ready briefs with SEO, tone, proof points, and CLI assignment")
+  }
+
+  System_Ext(phase02, "Phase 02 Blueprint", "Pillar map + 30-day calendar — inputs to brief generation")
+  System_Ext(phase04, "Phase 04 Tasks + Contracts", "Consumes briefs as production contracts for multi-CLI generation")
+  System_Ext(seo_gate, "SEO Quality Gate", "Validates: primary keyword, secondary keywords, word count target per channel")
+  System_Ext(law151, "Law 151/2020 Compliance", "Flags pieces requiring data anonymisation before external LLM prompt")
+
+  Rel(phase02, brief_engine, "Feeds pillar + calendar", "Markdown inputs")
+  Rel(spec_arch, brief_engine, "Authors briefs", "12 pieces")
+  Rel(brief_engine, seo_gate, "Validates keywords", "Per-brief check")
+  Rel(brief_engine, law151, "Flags Arabic pieces", "law_151_flag=true")
+  Rel(brief_engine, phase04, "Exports briefs as", "Production contracts")
+  Rel(founder, brief_engine, "Approves", "Manual review gate")
+
+  UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")

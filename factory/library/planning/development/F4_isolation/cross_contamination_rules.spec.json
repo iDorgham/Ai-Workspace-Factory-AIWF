@@ -1,0 +1,12 @@
+{
+  "spec_id": "cross_contamination_rules",
+  "version": "1.0.0",
+  "detection": [
+    {
+      "scope": "workspaces/clients/",
+      "forbidden_patterns": ["personal", "private", "test_user"],
+      "action": "log_to_governance"
+    }
+  ],
+  "compliance": "Law 151/2020"
+}

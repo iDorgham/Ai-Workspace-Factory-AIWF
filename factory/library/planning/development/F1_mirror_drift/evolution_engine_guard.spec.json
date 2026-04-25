@@ -1,0 +1,11 @@
+{
+  "spec_id": "evolution_engine_guard",
+  "version": "1.0.0",
+  "guard_rules": [
+    {
+      "condition": "mirror_health == 'DEGRADED'",
+      "effect": "block_read",
+      "target": "evolution_engine"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "spec_id": "governance_approval_rule",
+  "version": "1.0.0",
+  "rule": "If release_type == 'major' -> require Dorgham-Approval hash"
+}

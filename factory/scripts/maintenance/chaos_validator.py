@@ -6,9 +6,9 @@ from datetime import datetime, timezone
 import hashlib
 
 # --- CONFIGURATION ---
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 WORKSPACES_DIR = os.path.join(BASE_DIR, "workspaces")
-LOG_PATH = os.path.join(BASE_DIR, ".ai/logs/workflow.jsonl")
+LOG_PATH = os.path.join(BASE_DIR, ".ai/logs/ledgers/chaos_ledger.jsonl")
 
 def log_chaos(action, details):
     entry = {

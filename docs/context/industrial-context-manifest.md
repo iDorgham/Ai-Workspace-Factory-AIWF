@@ -1,4 +1,4 @@
-# 🏭 INDUSTRIAL CONTEXT MANIFEST (v19.0.0 OMEGA)
+# 🏭 INDUSTRIAL CONTEXT MANIFEST (v20.0.0 OMEGA)
 **Authoritative Reference for External Agents & Orchestrators**
 
 ---
@@ -12,16 +12,18 @@ The AIWF is organized into three distinct industrial layers to ensure peak techn
 - **`governance/`**: SDD protocols, Law 151/2020 locks, and industrial standards.
 - **`plan/`**: Tripartite SDD streams (Development, Content, Social).
 - **`skills/`**: Sovereign capability manifests with functional bindings.
+- **`locks/`**: Mutex-driven concurrent write guards for swarm operations.
+- **`logs/ledgers/`**: Evolutionary audit trails (evolution, chaos, drift ledgers).
 
 ### 2. Core Tier (`factory/`) — [ARCHIVE SET]
 - **`library/`**: Canonical repository of all industrial assets, versioned registries, and pillars.
 - **`core/`**: Orchestration engines and lifecycle management logic.
-- **`scripts/`**: Tiered Python utilities (Core, Maintenance, Automation, Migration).
+- **`scripts/`**: Tiered Python utilities (Core, Maintenance, Automation, Migration, GitOps).
 - **`templates/`**: Global YAML/MD composition templates.
 
 ### 3. Production Tier (`workspaces/`) — [DELIVERY GALAXY]
-- **`clients/`**: Isolated, project-specific shards for external stakeholders.
-- **`personal/`**: High-velocity shards for R&D and internal development.
+- **`clients/`**: Isolated, project-specific shards for external stakeholders (MENA-LOCKED).
+- **`personal/`**: High-velocity shards for R&D and internal development (GLOBAL-PUBLIC).
 
 ---
 
@@ -42,9 +44,10 @@ The AIWF is organized into three distinct industrial layers to ensure peak techn
 
 ## 🛡️ CORE PROTOCOLS
 1. **Outbound Mirror Protocol**: `.ai/` ➔ `library/` automatic sync for all edits. Inbound promotion via `/factory pull`.
-2. **Append-Only Documentation**: Managed by `documentation_architect`. Zero data loss; evolutionary layers only.
-3. **Density Gate**: Minimum 5-10 specifications required per SDD phase.
+2. **Sovereign Commit FSM**: Integrity-first state machine for all industrial mutations.
+3. **Omega Release Gate**: 12-point compliance audit for production materialization.
 4. **Geospatial Lock**: Strict Law 151/2020 residency enforcement across all production shards.
+5. **Concurrent Write Guard**: Mutex-driven shard locking to prevent swarm collisions.
 
 ---
-*Governor: Dorgham | Registry: docs/context/industrial_context_manifest.md*
+*Governor: Dorgham | Registry: docs/context/industrial-context-manifest.md*

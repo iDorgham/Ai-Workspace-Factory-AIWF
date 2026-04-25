@@ -1,0 +1,10 @@
+spec_id: seo-optimization
+title: SEO & Keyword Strategy
+version: 1.0.0
+keywords:
+  Primary: ["AI Workspace Factory", "Autonomous SaaS Production"]
+  Secondary: ["Law 151 Compliance", "Data Residency MENA", "Geospatial Sovereignty"]
+meta_strategy:
+  TitleTemplate: "{Page} | AIWF Sovereign Galaxy"
+  Description: "Industrial-scale autonomous production of sovereign ecosystems with Law 151/2020 compliance."
+status: implemented

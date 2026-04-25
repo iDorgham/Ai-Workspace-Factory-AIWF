@@ -1,0 +1,16 @@
+{
+  "spec_id": "website_copy_v20",
+  "version": "1.0.0",
+  "pages": [
+    {
+      "id": "hero",
+      "headline": "Materializing the Sovereign Galaxy",
+      "subheadline": "The Industrial Engine for Autonomous Multi-Agent Ecosystems. OMEGA-Tier Certified."
+    },
+    {
+      "id": "compliance",
+      "title": "Native Law 151/2020 Compliance",
+      "copy": "Your data never leaves the soil. Geospatial geofencing and autonomous purging for the MENA market."
+    }
+  ]
+}

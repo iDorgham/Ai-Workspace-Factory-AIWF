@@ -1,0 +1,23 @@
+{
+  "spec_id": "content-aiwf-v21-launch-05-validation-handoff",
+  "spec_version": "1.0.0", "sdd_version": "v21.0.0",
+  "planning_type": "content", "phase_name": "Validation & Handoff",
+  "phase_number": "05", "topic": "AIWF v21 Launch Content Strategy",
+  "status": "draft", "created": "2026-04-25T00:00:00Z",
+  "reasoning_hash": "sha256:aiwf-v21-launch-content-05-validation-handoff-2026-04-25",
+  "law_151_scope": true, "owner_agent": "spec_architect_v2",
+  "goals": [
+    "Final quality review of all 12 content pieces before public publication",
+    "Measure post-launch KPIs at day 7, 14, and 30 checkpoints",
+    "Close the content plan and mirror all artifacts to factory/library/planning/content/"
+  ],
+  "acceptance_criteria": [
+    {"id": "AC-01", "description": "All 12 content pieces pass final quality gate: SEO ≥85, brand voice ≥92", "verifiable": true, "test_ref": "validation/audit_checklist.md#AC-01"},
+    {"id": "AC-02", "description": "Day-7 KPI check completed: GitHub stars delta, LinkedIn impressions, X reach", "verifiable": true, "test_ref": "validation/audit_checklist.md#AC-02"},
+    {"id": "AC-03", "description": "Plan mirrored to factory/library/planning/content/; phase closed in _manifest.yaml", "verifiable": true, "test_ref": "validation/audit_checklist.md#AC-03"}
+  ],
+  "timeline": {"estimated_days": 5, "start_date": "2026-05-19", "end_date": "2026-05-23"},
+  "density_gate": {"minimum_files": 12, "enforced_by": "spec_density_gate_v2", "c4_required": true, "regional_compliance_required": true},
+  "dependencies": ["content-aiwf-v21-launch-04-tasks-contracts"],
+  "blocks": []
+}

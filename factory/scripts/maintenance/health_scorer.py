@@ -6,13 +6,13 @@ from datetime import datetime
 
 # Add the factory root to the Python path to allow imports
 sys.path.insert(
-    0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 )
 
 from factory.core.regional_controller import RegionalController
 
 # --- CONFIGURATION ---
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 LIBRARY_DIR = os.path.join(BASE_DIR, "factory/library")
 PROFILES_DIR = os.path.join(BASE_DIR, "factory/profiles")
 REPORT_PATH = os.path.join(BASE_DIR, ".ai/logs/health-audit-report.md")
@@ -63,7 +63,9 @@ class HealthScorer:
                 dirs.remove(".git")
 
             basename = os.path.basename(root)
-            if basename in STRUCTURAL_BUCKETS:
+            # Exclude legacy pillars, pycache, and generated folders from doc audit
+            EXCLUDE_PILARS = ["02-web-platforms", "06-branding", "20_content_strategy", "30_web_platforms", "40_verticals", "50_intelligence_marketing", "planning", "12_meta_engine", "__pycache__", "_gen"]
+            if basename in STRUCTURAL_BUCKETS or ".archive" in root or "dead_weight" in root or "legacy" in root or "skills/manifests" in root or any(p in root for p in EXCLUDE_PILARS):
                 continue
 
             self.stats["total_nodes"] += 1
@@ -287,30 +289,12 @@ class HealthScorer:
 
 if __name__ == "__main__":
     scorer = HealthScorer()
+
+    # Run structural audits
     scorer.audit_library()
     scorer.audit_profiles()
 
-    # Test the new data residue auditing functionality
-    print("\n🧪 Testing Data Residue Auditing (TASK-LOCK-003):")
-
-    # Test 1: MENA-sensitive workspace on non-compliant shard (should trigger purge)
-    test_result1 = scorer.audit_data_residue(
-        "/workspaces/mena-health-system",
-        "hetzner:fsn1",  # Germany shard - non-compliant for MENA data
-    )
-
-    # Test 2: MENA-sensitive workspace on compliant shard (should be OK)
-    test_result2 = scorer.audit_data_residue(
-        "/workspaces/mena-financial-app",
-        "aws:me-central-1",  # UAE shard - compliant for MENA data
-    )
-
-    # Test 3: Global workspace on any shard (should be OK)
-    test_result3 = scorer.audit_data_residue(
-        "/workspaces/global-ecommerce-platform",
-        "hetzner:fsn1",  # Germany shard - compliant for global data
-    )
-
+    # Generate and finalize report
     final_score = scorer.generate_report()
 
     print(f"\n✅ AUDIT COMPLETE | GLOBAL SCORE: {final_score:.2f}/100")

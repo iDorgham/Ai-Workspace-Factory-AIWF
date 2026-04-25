@@ -9,6 +9,9 @@
 To assist in specialized industrial tasks.
 
 ## 📋 RESPONSIBILITIES
+- **Local Model Lifecycle**: Manage download, verification, and execution of local LLMs via `neural_runner.py`.
+- **Latent Synthesis**: Synchronize project candidates in latent space before commit via `latent_sync.py`.
+- **Inference SLA Monitoring**: Enforce <500ms latency boundaries using `tool_performance.jsonl`.
 
 
 ## 🛡️ SOVEREIGN PROTOCOLS

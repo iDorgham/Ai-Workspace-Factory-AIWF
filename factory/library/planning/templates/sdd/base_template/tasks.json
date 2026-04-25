@@ -1,0 +1,70 @@
+{
+  "phase": "{{PHASE_ID}}",
+  "planning_type": "{{PLANNING_TYPE}}",
+  "topic": "{{TOPIC}}",
+  "version": "1.0.0",
+  "created": "{{ISO_TIMESTAMP}}",
+  "reasoning_hash": "{{REASONING_HASH}}",
+  "density_gate": {
+    "minimum_tasks": 5,
+    "minimum_files": 12,
+    "c4_required": true
+  },
+  "tasks": [
+    {
+      "id": "T-{{PHASE_NUM}}-01",
+      "title": "{{TASK_TITLE_1}}",
+      "status": "pending",
+      "priority": "P1",
+      "description": "{{TASK_DESCRIPTION_1}}",
+      "output": "{{OUTPUT_FILE_OR_FOLDER}}",
+      "dependencies": [],
+      "agent": "{{RESPONSIBLE_AGENT}}",
+      "cli_prompt_ref": "prompt_library/{{TASK_SLUG}}.md"
+    },
+    {
+      "id": "T-{{PHASE_NUM}}-02",
+      "title": "{{TASK_TITLE_2}}",
+      "status": "pending",
+      "priority": "P1",
+      "description": "{{TASK_DESCRIPTION_2}}",
+      "output": "{{OUTPUT_FILE_OR_FOLDER}}",
+      "dependencies": ["T-{{PHASE_NUM}}-01"],
+      "agent": "{{RESPONSIBLE_AGENT}}",
+      "cli_prompt_ref": "prompt_library/{{TASK_SLUG}}.md"
+    },
+    {
+      "id": "T-{{PHASE_NUM}}-03",
+      "title": "{{TASK_TITLE_3}}",
+      "status": "pending",
+      "priority": "P1",
+      "description": "{{TASK_DESCRIPTION_3}}",
+      "output": "{{OUTPUT_FILE_OR_FOLDER}}",
+      "dependencies": ["T-{{PHASE_NUM}}-01"],
+      "agent": "{{RESPONSIBLE_AGENT}}",
+      "cli_prompt_ref": "prompt_library/{{TASK_SLUG}}.md"
+    },
+    {
+      "id": "T-{{PHASE_NUM}}-04",
+      "title": "Law 151/2020 Regional Compliance Check",
+      "status": "pending",
+      "priority": "P1",
+      "description": "Complete regional_compliance.md for this phase. Verify all data flows comply with Law 151/2020 residency requirements. Flag any offshore processing.",
+      "output": "regional_compliance.md",
+      "dependencies": ["T-{{PHASE_NUM}}-02", "T-{{PHASE_NUM}}-03"],
+      "agent": "factory_orchestrator",
+      "cli_prompt_ref": "prompt_library/law151_check.md"
+    },
+    {
+      "id": "T-{{PHASE_NUM}}-05",
+      "title": "Spec Density Gate Validation",
+      "status": "pending",
+      "priority": "P1",
+      "description": "Run spec_density_gate_v2.py against this phase folder. Must return ≥12 files and C4 diagrams present before phase can activate.",
+      "output": "validation/density_gate_report.json",
+      "dependencies": ["T-{{PHASE_NUM}}-04"],
+      "agent": "spec_architect_v2",
+      "cli_prompt_ref": null
+    }
+  ]
+}

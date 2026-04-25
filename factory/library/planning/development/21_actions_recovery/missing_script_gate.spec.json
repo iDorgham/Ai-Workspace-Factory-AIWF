@@ -1,0 +1,5 @@
+{
+  "spec_id": "missing_script_gate",
+  "version": "1.0.0",
+  "policy": "Required script missing -> HARD_BLOCK + GitHub Issue creation"
+}

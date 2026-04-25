@@ -1,0 +1,6 @@
+{
+  "spec_id": "deployment_regions",
+  "version": "1.0.0",
+  "regions": ["me-south-1", "af-south-1"],
+  "compliance": "GDPR + Law 151"
+}

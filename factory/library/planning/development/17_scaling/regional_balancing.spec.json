@@ -1,0 +1,21 @@
+{
+    "id": "SPEC-SCAL-002",
+    "title": "Regional Load-Balancing Protocol",
+    "version": "1.0.0",
+    "requirements": [
+        "Geofenced traffic routing: Direct users to the nearest regional shard replica.",
+        "Failover-Equilibrium: Automatically redirect traffic on regional shard failure.",
+        "Weighted-Sovereignty: Prefer Egypt-soil nodes for MENA-EG traffic.",
+        "Compliance: Adherence to Law 151 data residency during cross-shard failover."
+    ],
+    "logic": {
+        "detection": "Continuous health-check monitoring of regional shard ingress.",
+        "routing": "Dynamic update of GSLB (Global Server Load Balancing) nodes.",
+        "failover": "Enforce 'Regional-Lockdown' (P-08) during failover to prevent PII leakage."
+    },
+    "compliance": {
+        "security": "mTLS enforcement between balancer and shard replicas.",
+        "auditing": "Log all routing decisions and failover events in the Factory-Ledger."
+    },
+    "reasoning_hash": "sha256:balancing-spec-293847"
+}

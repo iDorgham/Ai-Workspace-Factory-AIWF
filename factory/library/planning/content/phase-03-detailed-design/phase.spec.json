@@ -1,0 +1,23 @@
+{
+  "spec_id": "content-aiwf-v21-launch-03-detailed-design",
+  "spec_version": "1.0.0", "sdd_version": "v21.0.0",
+  "planning_type": "content", "phase_name": "Detailed Design",
+  "phase_number": "03", "topic": "AIWF v21 Launch Content Strategy",
+  "status": "draft", "created": "2026-04-25T00:00:00Z",
+  "reasoning_hash": "sha256:aiwf-v21-launch-content-03-detailed-design-2026-04-25",
+  "law_151_scope": true, "owner_agent": "spec_architect_v2",
+  "goals": [
+    "Produce detailed content briefs for every launch piece (GitHub, LinkedIn, X, MENA)",
+    "Define SEO keyword strategy per content type and channel",
+    "Create component-level C4 diagram for content production + distribution pipeline"
+  ],
+  "acceptance_criteria": [
+    {"id": "AC-01", "description": "Content brief produced for each of 12 launch pieces", "verifiable": true, "test_ref": "validation/audit_checklist.md#AC-01"},
+    {"id": "AC-02", "description": "SEO keyword clusters defined for GitHub README and blog posts", "verifiable": true, "test_ref": "validation/audit_checklist.md#AC-02"},
+    {"id": "AC-03", "description": "C4 Component diagram for content production pipeline", "verifiable": true, "test_ref": "validation/audit_checklist.md#AC-03"}
+  ],
+  "timeline": {"estimated_days": 5, "start_date": "2026-05-07", "end_date": "2026-05-11"},
+  "density_gate": {"minimum_files": 12, "enforced_by": "spec_density_gate_v2", "c4_required": true, "regional_compliance_required": true},
+  "dependencies": ["content-aiwf-v21-launch-02-blueprint"],
+  "blocks": ["content-aiwf-v21-launch-04-tasks-contracts"]
+}

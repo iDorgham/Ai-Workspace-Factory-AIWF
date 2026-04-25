@@ -1,0 +1,129 @@
+---
+type: agent-registry
+tier: OMEGA
+version: 19.0.0
+compliance: Law 151/2020
+traceability: ISO-8601 Certified
+---
+
+agents:
+  - id: factory_orchestrator
+    tier: T0
+    role: "Project & Workspace Lifecycle Manager"
+    capabilities: ["workspace_scaffolding", "client_intake", "project_provisioning", "shard_isolation"]
+    binds_to: ["/factory"]
+    auto_mode: true
+    silent_mode: true
+    library_bindings: ["factory/core/factory_manager.py"]
+    sovereign_gate: "omega_gate_v2"
+    memory_access: ["workspace-memory.md", "factory/profiles/"]
+
+  - id: library_curator
+    tier: T0
+    role: "Component & Knowledge Librarian"
+    capabilities: ["component_indexing", "contract_validation", "semantic_search", "version_control"]
+    binds_to: ["/library"]
+    auto_mode: true
+    silent_mode: true
+    library_bindings: ["factory/core/library_curator.py"]
+    sovereign_gate: "registry_guardian"
+    memory_access: ["factory/library/", "skill-memory/"]
+
+  - id: teaching_agent
+    tier: T1
+    role: "Context-Aware Pedagogy Engine"
+    capabilities: ["interactive_help", "dry_run_simulation", "schema_walkthrough", "chain_building"]
+    binds_to: ["/factory help", "/library help"]
+    auto_mode: false
+    silent_mode: false
+    library_bindings: ["factory/core/teaching_engine.py"]
+    sovereign_gate: "omega_gate_v2"
+    memory_access: ["docs/context/", ".ai/commands/"]
+
+  - id: swarm_router_v3
+    tier: T0
+    role: "Task Mediator & Consensus Engine"
+    capabilities: ["task_routing", "conflict_resolution", "consensus_mediation"]
+    binds_to: ["/factory assign"]
+    auto_mode: true
+    silent_mode: true
+    library_bindings: ["factory/scripts/swarm.py"]
+    sovereign_gate: "omega_gate_v2"
+    memory_access: [".ai/agents/routing_map.yaml"]
+
+  - id: healing_bot_v2
+    tier: T0
+    role: "Predictive Structural Monitor"
+    capabilities: ["drift_detection", "auto_remediation", "index_repair"]
+    binds_to: ["/factory repair", "/library fix"]
+    auto_mode: true
+    silent_mode: true
+    library_bindings: ["factory/core/healing_bot.py"]
+    sovereign_gate: "registry_guardian"
+    memory_access: ["factory/reports/", "factory/library-index/"]
+
+  - id: registry_guardian
+    tier: T0
+    role: "Schema & Collision Enforcement"
+    capabilities: ["id_collision_prevention", "schema_validation", "unauthorized_promotion_block"]
+    binds_to: ["/library maintain"]
+    auto_mode: true
+    silent_mode: true
+    library_bindings: ["factory/scripts/registry_validator.py"]
+    sovereign_gate: "omega_gate_v2"
+    memory_access: [".ai/agents/", ".ai/skills/"]
+
+  - id: regional_controller_bridge
+    tier: T0
+    role: "Law 151/2020 Compliance Gate"
+    capabilities: ["geospatial_lock", "data_residency_validation", "regional_routing"]
+    binds_to: ["global"]
+    auto_mode: true
+    silent_mode: true
+    library_bindings: ["factory/core/regional_controller.py"]
+    sovereign_gate: "absolute"
+    memory_access: ["factory/config/residency_map.json"]
+
+  - id: brainstorm_agent
+    tier: T1
+    role: "Strategic Synthesis & Innovative Problem Solving"
+    capabilities: ["global_context_reasoning", "internet_intelligence", "regional_adaptation", "pattern_matching"]
+    binds_to: ["/guide brainstorm"]
+    auto_mode: false
+    silent_mode: false
+    library_bindings: ["factory/scripts/intelligence/proactive_brainstorm_trigger.py"]
+    sovereign_gate: "omega_gate_v2"
+    memory_access: [".ai/memory/", ".ai/logs/"]
+
+  - id: documentation_architect
+    tier: T1
+    role: "Append-Only Evolutionary Documentation Curator"
+    capabilities: ["evolutionary_archiving", "comprehensive_mapping", "cross_shard_synthesis"]
+    binds_to: ["/create docs"]
+    auto_mode: true
+    silent_mode: true
+    library_bindings: ["factory/scripts/core/render_dashboard.py"]
+    sovereign_gate: "registry_guardian"
+    memory_access: ["docs/", ".ai/", "workspaces/", "factory/"]
+
+  - id: spec_architect
+    tier: T1
+    role: "High-Density Blueprint & Contract Designer"
+    capabilities: ["high_density_blueprinting", "contract_generation", "mvp_first_enforcement"]
+    binds_to: ["/plan blueprint", "/create spec"]
+    auto_mode: false
+    silent_mode: false
+    library_bindings: ["factory/scripts/automation/saas_scaffolder.py"]
+    sovereign_gate: "omega_gate_v2"
+    memory_access: [".ai/plan/", ".ai/governance/SDD_PROTOCOLS.md"]
+
+  - id: integrity_auditor
+    tier: T1
+    role: "Structural Integrity & Sync Manager"
+    capabilities: ["naming_unification", "link_remediation", "cross_tier_sync"]
+    binds_to: ["/factory sync", "/library check"]
+    auto_mode: true
+    silent_mode: true
+    library_bindings: ["factory/library/00-core-orchestration/12-meta-engine/core/scripts/scripts/integrity_sync.py"]
+    sovereign_gate: "registry_guardian"
+    memory_access: [".ai/", "factory/library/", "docs/"]

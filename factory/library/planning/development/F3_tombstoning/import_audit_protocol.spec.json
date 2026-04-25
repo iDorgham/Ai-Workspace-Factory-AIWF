@@ -1,0 +1,14 @@
+{
+  "spec_id": "import_audit_protocol",
+  "version": "1.0.0",
+  "scan_rules": [
+    {
+      "pattern": "from factory.scripts.deprecated import",
+      "action": "fail"
+    },
+    {
+      "pattern": "import factory.scripts.deprecated",
+      "action": "fail"
+    }
+  ]
+}

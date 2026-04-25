@@ -1,0 +1,6 @@
+{
+  "spec_id": "pull_sync_protocol",
+  "version": "1.0.0",
+  "strategy": "rebase-first",
+  "conflict_resolver": "swarm_router_v3"
+}

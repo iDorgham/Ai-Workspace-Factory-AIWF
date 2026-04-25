@@ -1,0 +1,10 @@
+{
+  "spec_id": "neural_agent_responsibilities",
+  "version": "1.0.0",
+  "agent": "neural_fabric_sync",
+  "responsibilities": [
+    "Manage local model lifecycle",
+    "Synchronize latent space candidates",
+    "Enforce inference SLAs"
+  ]
+}

@@ -1,0 +1,34 @@
+%%{init: {"theme": "default"}}%%
+C4Container
+  title Container Architecture — AIWF v21 Tasks + Contracts (Phase 04)
+
+  Person(spec_arch, "spec_architect_v2", "Orchestrates production pipeline")
+
+  System_Boundary(phase04, "Phase 04 — Tasks + Contracts") {
+    Container(task_runner, "Task Runner", "Python / bash", "Executes tasks.json entries in dependency order; handles retry on gate fail")
+    Container(law151_anon, "Law 151 Anonymiser", "Python", "Strips Egyptian user identifiers before Qwen prompt execution; logs to ledger")
+    Container(claude_exec, "Claude Executor", "CLI adapter", "Runs 9 English pieces against briefs from Phase 03")
+    Container(qwen_exec, "Qwen Executor", "CLI adapter", "Runs 3 Arabic pieces (C-07, C-08, C-12) post-anonymisation")
+    Container(gate_runner, "Quality Gate Runner", "Python scripts", "SEO + brand voice + readability + originality scoring; max 2 retry cycles")
+    Container(output_store, "Output Store", "docs/content/launch/", "24 files: {piece_id}_raw.md + {piece_id}_final.md per piece")
+    Container(publish_log_store, "Publish Log", "publish_log.md", "12 rows: piece_id, channel, url, status, published_at")
+  }
+
+  System_Ext(phase03_briefs, "Phase 03 Briefs", "templates/content_briefs/ — 12 production contracts")
+  System_Ext(tool_performance_ledger, "tool_performance.jsonl", "Central adapter performance log")
+  System_Ext(channels, "Distribution Channels", "GitHub, LinkedIn, X, Dev.to, Arabic MENA")
+
+  Rel(phase03_briefs, task_runner, "Provides briefs to", "12 contracts")
+  Rel(task_runner, law151_anon, "Routes Arabic tasks through", "law_151_flag=true")
+  Rel(task_runner, claude_exec, "Dispatches English tasks to", "9 tasks")
+  Rel(law151_anon, qwen_exec, "Passes anonymised prompts to", "3 tasks")
+  Rel(claude_exec, gate_runner, "Raw output piped to", "All pieces")
+  Rel(qwen_exec, gate_runner, "Raw output piped to", "Arabic pieces")
+  Rel(gate_runner, output_store, "Approved content written to", "_final.md")
+  Rel(gate_runner, task_runner, "Gate fail triggers", "Retry (max 2x)")
+  Rel(claude_exec, tool_performance_ledger, "Logs execution metrics to", "JSONL append")
+  Rel(qwen_exec, tool_performance_ledger, "Logs execution metrics to", "JSONL append")
+  Rel(output_store, publish_log_store, "Final pieces recorded in", "publish_log.md")
+  Rel(publish_log_store, channels, "Tracks publish status per", "Channel")
+
+  UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")

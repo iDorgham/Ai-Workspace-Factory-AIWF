@@ -1,0 +1,28 @@
+%%{init: {"theme": "default"}}%%
+C4Container
+  title Container Architecture — AIWF v21 Detailed Design (Phase 03)
+
+  Person(spec_arch, "spec_architect_v2", "Orchestrates brief generation")
+
+  System_Boundary(phase03, "Phase 03 — Detailed Design") {
+    Container(brief_store, "Content Brief Store", "Markdown files", "12 briefs in templates/content_briefs/ — one per launch piece")
+    Container(content_contract, "Content Contract", "YAML in contracts/", "Quality gate thresholds: SEO ≥85, voice ≥92, readability ≥65")
+    Container(distribution_contract, "Distribution Contract", "Markdown", "Per-channel publish rules: timing, format, CTA position, hashtag limits")
+    Container(publishing_contract, "Publishing Contract", "Markdown", "Approval workflow: brief → review → generate → gate → publish")
+    Container(prompt_lib, "Prompt Library", "Markdown", "CLI-agnostic prompts for each of the 12 pieces — adapter-assignable")
+  }
+
+  System_Ext(phase02_blueprint, "Phase 02 Blueprint", "Pillar map + calendar — source of brief parameters")
+  System_Ext(multi_cli, "Multi-CLI Adapters", "Claude / Qwen / Gemini — consume prompts in Phase 04")
+  System_Ext(law151_gate, "Law 151 Gate", "Anonymises Egyptian user data before Qwen adapter receives Arabic prompts")
+
+  Rel(spec_arch, brief_store, "Writes 12 briefs to", "templates/content_briefs/")
+  Rel(phase02_blueprint, brief_store, "Provides pillar + day + persona", "Calendar data")
+  Rel(brief_store, content_contract, "Validated against", "Quality gate thresholds")
+  Rel(brief_store, distribution_contract, "Channel rules applied", "Format + CTA rules")
+  Rel(brief_store, prompt_lib, "Generates prompts from", "Each brief → one prompt file")
+  Rel(prompt_lib, law151_gate, "Arabic pieces routed through", "law_151_flag=true")
+  Rel(law151_gate, multi_cli, "Anonymised prompts sent to", "Qwen adapter")
+  Rel(prompt_lib, multi_cli, "Non-Arabic prompts sent to", "Claude / Gemini adapters")
+
+  UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")

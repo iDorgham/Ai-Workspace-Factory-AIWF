@@ -110,6 +110,22 @@ Performs deep-level audits for **Law 151/2020** compliance, geospatial residency
 
 ---
 
+## ⛓️ GIT OPS EVOLUTION (OMEGA AUTOMATION)
+
+The factory now implements a fully autonomous, industrial-grade Git Operations stack.
+
+### 🔒 Sovereign Commit Engine
+- **Integrity FSM**: 3-step validation (Integrity -> Docs -> Registry) before any commit.
+- **Pre-commit Gate**: Automated enforcement of snake_case naming, mirror drift thresholds, and placeholder sanitation.
+- **Reasoning Hashes**: Every commit includes a unique `sha256` hash representing the model's reasoning trace.
+
+### 🏷️ Omega Release Gate
+- **12-Point Compliance Audit**: Mandatory checks for path integrity, security scans, and Law 151 certification.
+- **Autonomous Changelogs**: Self-generating industrial changelogs via `changelog_generator.py`.
+- **Sharded CD Pipeline**: Automated regional routing for deployments based on data residency requirements.
+
+---
+
 ## 🧠 SOVEREIGN ASSETS & CAPABILITIES
 
 ### 📚 780+ Permanent Skill Manifests

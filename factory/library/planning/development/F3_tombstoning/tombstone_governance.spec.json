@@ -1,0 +1,6 @@
+{
+  "spec_id": "tombstone_governance",
+  "version": "1.0.0",
+  "approver": "Dorgham",
+  "policy": "Any script moved to deprecated/ must have a TOMBSTONE.md entry and a reasoning hash."
+}

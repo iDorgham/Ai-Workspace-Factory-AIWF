@@ -1,0 +1,7 @@
+{
+  "spec_id": "self_healing_workflow",
+  "version": "1.0.0",
+  "inputs": ["job_name", "error_code"],
+  "remediation_logic": "healing.py --target={job_name}",
+  "max_retries": 1
+}

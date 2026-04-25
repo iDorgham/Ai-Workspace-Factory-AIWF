@@ -1,0 +1,9 @@
+{
+  "spec_id": "neural_runner_contract",
+  "version": "1.0.0",
+  "backends": ["llama.cpp", "mlx"],
+  "sla": {
+    "latency_ms": 500,
+    "availability": 0.99
+  }
+}

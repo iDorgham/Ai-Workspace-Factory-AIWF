@@ -1,0 +1,7 @@
+{
+  "spec_id": "pattern_threshold_config",
+  "version": "1.0.0",
+  "min_events": 3,
+  "recency_window_days": 7,
+  "confidence_floor": 0.7
+}

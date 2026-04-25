@@ -1,0 +1,11 @@
+{
+  "spec_id": "mena_localization",
+  "version": "1.0.0",
+  "target_dialects": ["Modern Standard Arabic", "Egyptian Arabic (Cairene)"],
+  "key_terms": {
+    "Sovereignty": "سيادة (Siyada)",
+    "Equilibrium": "توازن (Tawazun)",
+    "Factory": "مصنع (Masna')",
+    "Neural Fabric": "النسيج العصبي (Al-Naseej Al-Asabi)"
+  }
+}

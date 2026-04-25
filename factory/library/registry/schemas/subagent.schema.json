@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SubagentDefinition",
+  "type": "object",
+  "required": [
+    "id",
+    "parent_agent",
+    "trigger",
+    "single_responsibility",
+    "input",
+    "output",
+    "validation",
+    "error_owner",
+    "escalates_to"
+  ],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "parent_agent": { "type": "string" },
+    "trigger": { "type": "string" },
+    "single_responsibility": { "type": "string" },
+    "input": { "type": "object" },
+    "output": { "type": "object" },
+    "validation": { "type": "object" },
+    "writes": { "type": "array", "items": { "type": "string" } },
+    "reads": { "type": "array", "items": { "type": "string" } },
+    "error_owner": { "type": "string" },
+    "escalates_to": { "type": "string" },
+    "critical_note": { "type": "string" }
+  },
+  "additionalProperties": true
+}

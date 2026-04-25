@@ -1,0 +1,16 @@
+{
+  "phase": "content-aiwf-v21-launch-03-detailed-design",
+  "planning_type": "content",
+  "topic": "AIWF v21 Launch Content Strategy",
+  "version": "1.0.0",
+  "created": "2026-04-25T00:00:00Z",
+  "reasoning_hash": "sha256:aiwf-v21-launch-content-03-detailed-design-2026-04-25",
+  "density_gate": {"minimum_tasks": 5, "minimum_files": 12, "c4_required": true},
+  "tasks": [
+    {"id": "T-C03-01", "title": "Primary phase deliverable", "status": "pending", "priority": "P1", "description": "Defined in requirements.spec.md FR-01", "output": "domain_model.md", "dependencies": [], "agent": "spec_architect_v2", "cli_prompt_ref": "prompt_library/phase_03_primary.md"},
+    {"id": "T-C03-02", "title": "Secondary phase deliverable", "status": "pending", "priority": "P1", "description": "Defined in requirements.spec.md FR-02", "output": "design.md", "dependencies": ["T-C03-01"], "agent": "spec_architect_v2", "cli_prompt_ref": "prompt_library/phase_03_secondary.md"},
+    {"id": "T-C03-03", "title": "Contract definitions", "status": "pending", "priority": "P1", "description": "Complete contracts/ files for this phase", "output": "contracts/", "dependencies": ["T-C03-01"], "agent": "spec_architect_v2", "cli_prompt_ref": null},
+    {"id": "T-C03-04", "title": "Law 151/2020 compliance check", "status": "pending", "priority": "P1", "description": "Complete regional_compliance.md", "output": "regional_compliance.md", "dependencies": ["T-C03-02"], "agent": "factory_orchestrator", "cli_prompt_ref": "prompt_library/law151_phase_03.md"},
+    {"id": "T-C03-05", "title": "Spec density gate validation", "status": "pending", "priority": "P1", "description": "Run spec_density_gate_v2.py --phase .ai/plan/content/phase-03-detailed-design --write-report", "output": "validation/density_gate_report.json", "dependencies": ["T-C03-04"], "agent": "spec_architect_v2", "cli_prompt_ref": null}
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "spec_id": "sovereign_canary",
+  "version": "1.0.0",
+  "traffic_split": [5, 25, 100],
+  "health_metrics": ["latency", "error_rate", "residency_drift"]
+}

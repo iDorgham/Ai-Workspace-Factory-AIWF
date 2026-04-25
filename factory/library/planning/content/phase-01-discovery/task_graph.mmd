@@ -1,0 +1,26 @@
+%%{init: {"theme": "default"}}%%
+gantt
+  title Task Graph — Phase 01: Discovery (AIWF v21 Launch Content Strategy)
+  dateFormat  YYYY-MM-DD
+  axisFormat  %b %d
+
+  section Audience Research
+    Define 4 audience personas          :t1, 2026-04-28, 1d
+    Map channel preferences per persona :t2, after t1, 1d
+
+  section Content Audit
+    Audit existing AIWF assets          :t3, 2026-04-28, 2d
+    Score assets: SEO / readability     :t4, after t3, 1d
+
+  section Competitive Research
+    Map 3 competitor content strategies :t5, after t1, 2d
+    Extract AIWF differentiation angles :t6, after t5, 1d
+
+  section Objectives & Channels
+    Define SMART content objectives     :t7, after t4, 1d
+    Build channel priority matrix       :t8, after t7, 1d
+
+  section Compliance & Gate
+    Law 151/2020 compliance check       :gate1, after t8, 1d
+    Spec Density Gate validation        :milestone, after gate1, 0d
+    Phase 01 → Phase 02 handoff         :milestone, after gate1, 0d

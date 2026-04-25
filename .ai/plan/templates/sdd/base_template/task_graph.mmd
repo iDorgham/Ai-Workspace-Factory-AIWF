@@ -1,0 +1,26 @@
+%%{init: {"theme": "default"}}%%
+gantt
+  title Task Graph — {{PHASE_NAME}} ({{PLANNING_TYPE}})
+  dateFormat  YYYY-MM-DD
+  axisFormat  %b %d
+
+  section Discovery
+    {{TASK_1}}               :t1, {{START}}, {{DURATION}}d
+    {{TASK_2}}               :t2, after t1, {{DURATION}}d
+
+  section Design
+    {{TASK_3}}               :t3, after t2, {{DURATION}}d
+    {{TASK_4}}               :t4, after t3, {{DURATION}}d
+    C4 Diagram Review        :milestone, after t4, 0d
+
+  section Implementation
+    {{TASK_5}}               :t5, after t4, {{DURATION}}d
+    {{TASK_6}}               :t6, after t5, {{DURATION}}d
+
+  section Validation
+    Spec Density Gate Check  :gate1, after t6, 1d
+    Law 151 Compliance Audit :gate2, after gate1, 1d
+    Phase Handoff            :milestone, after gate2, 0d
+
+%% Each task maps 1:1 to an entry in tasks.json
+%% Milestones mark gate events — do not skip

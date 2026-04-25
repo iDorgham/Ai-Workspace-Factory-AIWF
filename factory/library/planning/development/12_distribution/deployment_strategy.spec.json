@@ -1,0 +1,17 @@
+{
+    "id": "SPEC-DIST-003",
+    "title": "Global Deployment Strategy",
+    "version": "1.0.0",
+    "requirements": [
+        "Blue/Green rollout for zero-downtime shard updates.",
+        "Automated rollback on liveness probe failure.",
+        "Geospatial traffic steering via Cloudflare/AWS Route53.",
+        "Regional health-check aggregation for the global dashboard."
+    ],
+    "logic": {
+        "pre_flight": "Verify container checksums and Law 151 metadata.",
+        "rollout": "Propagate to canary region (aws-me-1) first.",
+        "verification": "Wait for 100% readiness across 3 replicas."
+    },
+    "reasoning_hash": "sha256:deploy-strategy-spec-827364"
+}

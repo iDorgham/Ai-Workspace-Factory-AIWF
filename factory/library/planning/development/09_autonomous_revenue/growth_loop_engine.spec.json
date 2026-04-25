@@ -1,0 +1,9 @@
+{
+  "spec_id": "growth_loop_engine",
+  "version": "1.0.0",
+  "ab_test_protocol": {
+    "variants": ["control", "aggressive_pricing"],
+    "metrics": ["conversion_rate", "churn"],
+    "min_sample": 1000
+  }
+}

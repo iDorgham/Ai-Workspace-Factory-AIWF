@@ -1,0 +1,23 @@
+{
+  "spec_id": "content-aiwf-v21-launch-04-tasks-contracts",
+  "spec_version": "1.0.0", "sdd_version": "v21.0.0",
+  "planning_type": "content", "phase_name": "Tasks & Contracts",
+  "phase_number": "04", "topic": "AIWF v21 Launch Content Strategy",
+  "status": "draft", "created": "2026-04-25T00:00:00Z",
+  "reasoning_hash": "sha256:aiwf-v21-launch-content-04-tasks-contracts-2026-04-25",
+  "law_151_scope": true, "owner_agent": "spec_architect_v2",
+  "goals": [
+    "Produce all 12 launch content pieces via multi-CLI orchestration using prompt_library/",
+    "Validate every piece against quality gates (SEO ≥85, brand voice ≥92, readability ≥65)",
+    "Deliver final content assets ready for channel publication"
+  ],
+  "acceptance_criteria": [
+    {"id": "AC-01", "description": "12 content pieces produced and quality-gate validated", "verifiable": true, "test_ref": "validation/audit_checklist.md#AC-01"},
+    {"id": "AC-02", "description": "3 Arabic-adapted pieces reviewed by native Arabic speaker", "verifiable": true, "test_ref": "validation/audit_checklist.md#AC-02"},
+    {"id": "AC-03", "description": "All content pieces committed to docs/content/launch/ in AIWF repo", "verifiable": true, "test_ref": "validation/audit_checklist.md#AC-03"}
+  ],
+  "timeline": {"estimated_days": 7, "start_date": "2026-05-12", "end_date": "2026-05-18"},
+  "density_gate": {"minimum_files": 12, "enforced_by": "spec_density_gate_v2", "c4_required": true, "regional_compliance_required": true},
+  "dependencies": ["content-aiwf-v21-launch-03-detailed-design"],
+  "blocks": ["content-aiwf-v21-launch-05-validation-handoff"]
+}

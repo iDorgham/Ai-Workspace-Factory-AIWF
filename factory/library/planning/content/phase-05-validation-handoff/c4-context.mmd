@@ -1,0 +1,24 @@
+%%{init: {"theme": "default"}}%%
+C4Context
+  title System Context — AIWF v21 Validation + Handoff (Phase 05)
+
+  Person(founder, "Dorgham (Founder)", "Runs KPI checkpoints; conducts retro; approves handoff")
+  Person(spec_arch, "spec_architect_v2", "Orchestrates mirror sync and Phase 06 seeding")
+
+  System_Boundary(phase05, "Phase 05 — Validation + Handoff") {
+    System(validation_engine, "Validation + Handoff Engine", "KPI collection at Day 7/14/30, retro at Day 31, mirror sync at Day 32, Phase 06 seed at Day 33")
+  }
+
+  System_Ext(published_content, "Published Content", "12 pieces live across GitHub, LinkedIn, X, Dev.to, Arabic MENA")
+  System_Ext(analytics, "Channel Analytics", "LinkedIn Creator Studio, X Analytics, GitHub Insights, Dev.to Dashboard")
+  System_Ext(factory_library, "factory/library/planning/content/", "Mirror target — receives all 5 phases post-handoff")
+  System_Ext(phase06, "Phase 06 Content Plan", "Next content cycle — seeded from retro findings")
+
+  Rel(published_content, validation_engine, "Provides performance data", "Via analytics platforms")
+  Rel(analytics, validation_engine, "KPI data ingested at", "Day 7, 14, 30")
+  Rel(founder, validation_engine, "Runs checkpoints + retro", "Manual review")
+  Rel(spec_arch, validation_engine, "Executes mirror sync", "Day 32")
+  Rel(validation_engine, factory_library, "Syncs all content phases to", "planning_mirror_sync.py")
+  Rel(validation_engine, phase06, "Seeds next cycle from", "retro.md findings")
+
+  UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")
