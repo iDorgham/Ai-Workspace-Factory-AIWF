@@ -1,0 +1,97 @@
+{
+  "version": "v20.1.1",
+  "sync_runs": [
+    {
+      "timestamp": "2026-04-29T01:12:00Z",
+      "reasoning_hash": "sha256:f123456789abcdef",
+      "dry_run": false,
+      "types_synced": ["industrial_os_shards", "materialize_engine", "docs_sync"],
+      "types_missing": [],
+      "files_copied": 17542,
+      "files_excluded": 0
+    },
+    {
+      "timestamp": "2026-04-25T15:02:14.749068+00:00",
+      "reasoning_hash": "sha256:630445f131e54d81",
+      "dry_run": false,
+      "types_synced": [
+        "development",
+        "content",
+        "seo",
+        "social_media",
+        "marketing",
+        "business",
+        "media",
+        "branding"
+      ],
+      "types_missing": [],
+      "files_copied": 243,
+      "files_excluded": 0
+    },
+    {
+      "timestamp": "2026-04-25T15:12:52.948069+00:00",
+      "reasoning_hash": "sha256:62d164e82349bc21",
+      "dry_run": false,
+      "types_synced": [
+        "content"
+      ],
+      "types_missing": [],
+      "files_copied": 116,
+      "files_excluded": 0
+    },
+    {
+      "timestamp": "2026-04-28T04:36:31.473103+00:00",
+      "reasoning_hash": "sha256:591f4801ce2127b9",
+      "dry_run": false,
+      "types_synced": [
+        "development",
+        "content",
+        "seo",
+        "social_media",
+        "marketing",
+        "business",
+        "media",
+        "branding"
+      ],
+      "types_missing": [],
+      "files_copied": 264,
+      "files_excluded": 0
+    },
+    {
+      "timestamp": "2026-04-28T22:07:57.112819+00:00",
+      "reasoning_hash": "sha256:93a2bd9262c69975",
+      "dry_run": false,
+      "types_synced": [
+        "development",
+        "content",
+        "seo",
+        "social_media",
+        "marketing",
+        "business",
+        "media",
+        "branding"
+      ],
+      "types_missing": [],
+      "files_copied": 264,
+      "files_excluded": 0
+    }
+  ],
+  "last_sync": {
+    "timestamp": "2026-04-28T22:07:57.112819+00:00",
+    "reasoning_hash": "sha256:93a2bd9262c69975",
+    "dry_run": false,
+    "types_synced": [
+      "development",
+      "content",
+      "seo",
+      "social_media",
+      "marketing",
+      "business",
+      "media",
+      "branding"
+    ],
+    "types_missing": [],
+    "files_copied": 264,
+    "files_excluded": 0
+  }
+}

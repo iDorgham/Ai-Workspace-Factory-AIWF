@@ -162,7 +162,7 @@ Before v21, SDD existed only for the `development/` plan type. v21 expanded to 8
 │   └── [seo|social_media|marketing|business|media|branding]/
 │
 └── logs/
-    ├── health-audit-report.md
+    ├── health_audit_report.md
     ├── deployments.log
     └── ledgers/evolution_ledger.jsonl
 ```
