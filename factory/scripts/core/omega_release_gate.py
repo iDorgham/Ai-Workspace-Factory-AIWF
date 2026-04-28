@@ -37,6 +37,11 @@ class OmegaReleaseGate:
             if point not in self.results:
                 self.results[point] = True # Default pass for mocked points
 
+        print("\n📝 Gate Status Details:")
+        for point in self.points:
+            status = "✅ PASS" if self.results.get(point) else "❌ FAIL"
+            print(f"  - {point: <25}: {status}")
+
         score = sum(1 for v in self.results.values() if v)
         print(f"\n📊 Audit Score: {score}/12")
         
