@@ -1,0 +1,27 @@
+{
+  "client": null,
+  "profile": "medical-pharmacy-ops",
+  "pipeline_alias": null,
+  "generated_at": "2026-04-28T03:24:48+00:00",
+  "components": {
+    "agents": [
+      "revenue_orchestrator.md"
+    ],
+    "subagents": [],
+    "skills": [
+      "legal_content_mena.json"
+    ],
+    "commands": [
+      "init.md",
+      "plan.md",
+      "build.md"
+    ],
+    "subcommands": [],
+    "templates": [],
+    "scripts": []
+  },
+  "output_path": "/Users/Dorgham/Documents/Work/Devleopment/AIWF/workspaces/medical_fabric/001_medical_fabric",
+  "validation": {
+    "status": "pending"
+  }
+}

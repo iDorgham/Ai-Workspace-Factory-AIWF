@@ -1,0 +1,37 @@
+{
+  "market_context": "global-industrial",
+  "voice_id": "Enterprise-Professional",
+  "profile": "medical-pharmacy-ops",
+  "display": "💊 Medical Pharmacy",
+  "sector": "11-industry-verticals/medical-healthcare",
+  "version": "1.0.0",
+  "description": "Sovereign pharmacy management platform for the MENA healthcare market.",
+  "staffing": {
+    "strategy": [
+      "@Sentinel-Medical",
+      "@Sentinel-Operations"
+    ],
+    "execution": [
+      "@Sentinel-Medical",
+      "@Sentinel-Operations"
+    ]
+  },
+  "required": {
+    "agents": [
+      "medical_architect",
+      "revenue_orchestrator"
+    ],
+    "skills": [
+      "regional_tax_orchestration",
+      "sovereign_pii_vault",
+      "legal_content_mena"
+    ],
+    "commands": [
+      "init",
+      "plan",
+      "build"
+    ]
+  },
+  "name": "Medical Pharmacy Ops",
+  "profile_id": "medical-pharmacy-ops"
+}
