@@ -25,3 +25,7 @@ Intelligence, strategy, and autonomous ecosystem evolution
 - **Gate**: Omega Gate v2
 - **Traceability**: Appends Reasoning Hash to .ai/logs/factory.jsonl
 - **Compliance**: Egyptian Law 151/2020 Certified
+
+## Humanization Layer
+`/guide brainstorm about [topic]`, `/guide tutor`, and `/guide learn` run through the Antigravity humanization engine before agent dispatch.
+Full spec: `.ai/commands/guide_humanize.md`

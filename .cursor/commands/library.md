@@ -19,6 +19,7 @@ The `/library` command suite manages reusable components, knowledge artifacts, a
 | `test` | Validate components & contracts | `/library test --type=skill` |
 | `fix` | Auto-remediate failures | `/library fix --auto` |
 | `improve` | Optimize component performance | `/library improve --target=id` |
+| `check` | Audit naming & structural integrity | `/library check --fix` |
 | `agent` | Manage agent lifecycle | `/library agent --action=list` |
 | `skill` | Manage skill lifecycle | `/library skill --action=list` |
 | `rule` | Manage policy enforcement | `/library rule --action=validate` |

@@ -14,11 +14,21 @@ Discovery, blueprinting, and SDD phase management
 
 | Subcommand | Purpose | Usage |
 |------------|---------|-------|
-| `discovery` | Structured requirements interrogation | `/plan discovery` |
-| `blueprint` | Generate high-density SDD specs | `/plan blueprint` |
-| `status` | Phase progress & compliance check | `/plan status` |
-| `adr` | Generate Architecture Decision Records | `/plan adr` |
-| `review` | Stakeholder consensus & approval | `/plan review` |
+| `discovery` | Interrogate requirements | `/plan discovery --type=dev\|content\|social` |
+| `blueprint` | Generate high-density SDD specs (5-10/phase) | `/plan blueprint --path=.ai/plan/development/` |
+| `status` | Phase progress & compliance | `/plan status --deep` |
+| `adr` | Generate Architecture Decisions | `/plan adr --id=ADR-001` |
+| `review` | Stakeholder consensus | `/plan review --phase=singularity` |
+
+## 📐 SDD Methodology (Tripartite)
+The planning engine now operates across three distinct industrial streams in `.ai/plan/`:
+1. **`/development`**: Core technical architecture, shards, and infrastructure.
+2. **`/content`**: High-fidelity content strategy, SEO, and legal copywriting.
+3. **`/social`**: Social media orchestration and brand-voice distribution.
+
+### 🛡️ Industrial Rules (OMEGA-Tier)
+- **MVP Priority**: New projects **MUST** initiate with phase `00-mvp`.
+- **Density Gate**: Each phase must materialize at least **5 to 10 specifications** (API, State, Security, etc.).
 
 ## 🛡️ Sovereign Protocol
 - **Agent**: factory_orchestrator
