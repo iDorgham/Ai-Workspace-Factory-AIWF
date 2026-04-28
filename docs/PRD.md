@@ -1,13 +1,13 @@
 # 🏛️ AIWF — Product Requirements Document
-## AI Workspace Factory · v21.0.0 OMEGA EQUILIBRIUM
+## AI Workspace Factory · v20.1.0 OMEGA EQUILIBRIUM
 
 **Document Type:** Comprehensive PRD — Self-Contained Reconstruction Reference  
-**Version:** 21.0.0  
+**Version:** 20.1.0  
 **Status:** OMEGA CERTIFIED  
 **Governor:** Dorgham  
 **Created:** 2026-04-25  
-**Updated:** 2026-04-28  
-**Traceability Hash:** sha256:prd-v21-final-2026-04-28  
+**Updated:** 2026-04-29  
+**Traceability Hash:** sha256:prd-v20-1-final-2026-04-29  
 **Compliance:** Law 151/2020 — Egypt/MENA Data Residency Enforced  
 
 > **Purpose of this document:** A self-contained, high-fidelity PRD sufficient for another AI agent or engineering team to reconstruct the AIWF project from scratch with full fidelity. Every protocol, agent, architecture decision, and acceptance criterion is documented here.
@@ -84,7 +84,8 @@ AIWF is not a code generator. It is a **self-learning neural factory** that:
 | v16–v18 | Governance & Integrity | 2026-04-25 | Complete | Governance phase; 5-vector fix plan; structural integrity hardening |
 | v19.x | Sovereign Commit | 2026-04-25 | Complete | Pre-commit gate; reasoning hash; 3-step FSM commit chain |
 | v20.0 | OMEGA Equilibrium | 2026-04-25 | Complete | 12-point release gate; sovereign git ops; geofencing; swarm mutex safety |
-| **v21.0** | **Neural Fabric** | **2026-04-25** | **Current** | **Tripartite Planning Singularity; 8 plan types; spec_density_gate_v2; multi-CLI** |
+| **v20.1** | **Industrial Shards** | **2026-04-29** | **Current** | **Industrial Shard Spawning; materialize.sh engine; 6-shard OS Galaxy** |
+| v21.0 | Neural Fabric | Planned | Pipeline | Tripartite Planning Singularity; 8 plan types; spec_density_gate_v2 |
 | v22.0+ | Quantum Sovereignty | Future | Planned | See [ROADMAP_LONGTERM.md](ROADMAP_LONGTERM.md) |
 
 ### 2.2 Architectural Inflection Points
@@ -207,11 +208,13 @@ factory/
 │   │   └── sync_manifest.json         # Sync history (last 50 runs) + reasoning hashes
 │   └── [00-core|01-data|03-fintech|04-hospitality|05-medical|07-meta-engine]/
 │
-└── profiles/                          # 20+ industry workspace provisioning profiles
-    ├── redsea-tourism-booking.json
-    ├── fintech-compliance-launch.json
-    ├── medical-pharmacy-ops.json
-    └── [18 additional profiles]
+├── profiles/                          # 20+ industry workspace provisioning profiles
+│   ├── redsea-tourism-booking.json
+│   ├── fintech-compliance-launch.json
+│   ├── medical-pharmacy-ops.json
+│   └── [18 additional profiles]
+│
+└── materialize.sh                     # 🚀 Factory Materialization Engine (v20.1)
 ```
 
 ### 3.4 Tier 3 — `workspaces/` Execution Layer
@@ -219,22 +222,20 @@ factory/
 Each client workspace is a fully isolated sovereign unit:
 
 ```
-workspaces/clients/{slug}/
-├── metadata.json          # workspace_slug, workspace_type, region, law_151_active,
-│                          #   compliance_profile, created_at, factory_version
-├── .ai/                   # Workspace-local commands, memory, agent overrides
-│   ├── memory/            # Session memory, skill-memory/, backups/
-│   └── commands/          # Workspace-specific command overrides
-├── src/                   # Production code shards
-├── docs/                  # Generated documentation
-│   ├── 00-overview/
-│   ├── 01-plans/
-│   ├── 02-specs/
-│   ├── 03-architecture/
-│   ├── 04-api/
-│   ├── 05-deployment/
-│   └── 06-compliance/
-└── tests/                 # Workspace-specific test suites
+workspaces/
+├── templates/                 # 🌌 Industrial OS Shard Registry (v20.1)
+│   ├── CORE_OS_SAAS/          # Full-Stack SaaS Factory
+│   ├── MOBILE_OS_FORGE/       # High-Performance Mobile Forge
+│   ├── WEB_OS_TITAN/          # Web Design & Content Dominance
+│   ├── MENA_OS_BILINGUAL/     # Ar/En Regional SEO Node
+│   ├── ASSET_OS_LAB/          # GenAI Visual Asset Lab
+│   └── BRAND_OS_STRATEGY/     # Industrial Brand Engine
+├── clients/{slug}/            # Each workspace: fully isolated sovereign unit
+│   ├── metadata.json          # workspace_slug, workspace_type, region, law_151_active,
+│   │                          #   compliance_profile, created_at, factory_version
+│   ├── .ai/                   # Workspace-local commands and memory
+│   └── [src|docs|tests]/      # Project code and documentation
+└── personal/                  # Private innovation layer
 ```
 
 ### 3.5 C4 Architecture — System Context

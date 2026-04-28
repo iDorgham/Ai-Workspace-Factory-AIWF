@@ -2,7 +2,7 @@
 
 # 🏛️ AI WORKSPACE FACTORY
 
-<img src="https://img.shields.io/badge/Version-v21.0.0-2563EB?style=for-the-badge" alt="version"/>
+<img src="https://img.shields.io/badge/Version-v20.1.0-2563EB?style=for-the-badge" alt="version"/>
 <img src="https://img.shields.io/badge/Status-OMEGA_EQUILIBRIUM-8B5CF6?style=for-the-badge" alt="status"/>
 <img src="https://img.shields.io/badge/Audit_Score-100%2F100-F59E0B?style=for-the-badge" alt="audit"/>
 <img src="https://img.shields.io/badge/Compliance-Law_151%2F2020-10B981?style=for-the-badge" alt="compliance"/>
@@ -36,9 +36,8 @@
 
 ```
 One command → A fully spec'd, compliant, production-ready sovereign workspace
-```
 
-AIWF v21.0.0 introduces the **Tripartite Planning Singularity** — one unified system governing 8 plan types (development, content, SEO, social media, marketing, business, media, branding) with the same high-density phase structure, the same quality gates, and the same compliance layer across all of them.
+AIWF v20.1.0 introduces the **Industrial OS Galaxy** — 6 specialized, OMEGA-certified workspace templates that can be materialized in seconds via the root `materialize.sh` engine.
 
 ---
 
@@ -136,10 +135,15 @@ AIWF/
 │   └── profiles/                 ← 20+ industry workspace profiles
 │
 └── workspaces/                   ← 📦 Sovereign Client Environments
-    └── clients/{slug}/           ← Each workspace: fully isolated sovereign unit
-        ├── metadata.json         ← Workspace identity, region, compliance flags
-        ├── .ai/                  ← Workspace-local commands and memory
-        └── [src|docs|tests]/     ← Project code and documentation
+    ├── templates/                ← 🌌 Industrial OS Shards (v20.1)
+    │   ├── CORE_OS_SAAS/         ← Full-Stack SaaS Factory
+    │   ├── MOBILE_OS_FORGE/      ← High-Performance Mobile Forge
+    │   ├── WEB_OS_TITAN/         ← Web & Content Dominance Shard
+    │   ├── MENA_OS_BILINGUAL/    ← Ar/En Regional SEO Engine
+    │   ├── ASSET_OS_LAB/         ← GenAI Visual Production Lab
+    │   └── BRAND_OS_STRATEGY/    ← Industrial Brand Engine
+    ├── clients/{slug}/           ← Professional project sharding
+    └── personal/                 ← Private innovation layer
 ```
 
 ---
@@ -384,7 +388,7 @@ Workspace-to-library promotions require 3-agent consensus + governor approval vi
 
 ---
 
-🏛️ **AI Workspace Factory** · v21.0.0 · OMEGA EQUILIBRIUM
+🏛️ **AI Workspace Factory** · v20.1.0 · OMEGA EQUILIBRIUM
 
 Governor: **Dorgham** · Compliance: **Law 151/2020** · Region: **MENA-SOIL**
 
