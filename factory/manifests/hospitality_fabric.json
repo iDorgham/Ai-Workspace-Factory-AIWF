@@ -1,0 +1,30 @@
+{
+  "client": null,
+  "profile": "redsea-tourism-booking",
+  "pipeline_alias": null,
+  "generated_at": "2026-04-28T02:19:17+00:00",
+  "components": {
+    "agents": [
+      "integrity_auditor.md",
+      "revenue_orchestrator.md"
+    ],
+    "subagents": [],
+    "skills": [
+      "mena_payment_routing.json",
+      "legal_content_mena.json"
+    ],
+    "commands": [
+      "init.md",
+      "plan.md",
+      "build.md",
+      "deploy.md"
+    ],
+    "subcommands": [],
+    "templates": [],
+    "scripts": []
+  },
+  "output_path": "/Users/Dorgham/Documents/Work/Devleopment/AIWF/workspaces/hospitality_fabric/001_hospitality_fabric",
+  "validation": {
+    "status": "pending"
+  }
+}

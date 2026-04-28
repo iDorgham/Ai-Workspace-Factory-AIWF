@@ -2,7 +2,7 @@
   "market_context": "global-industrial",
   "voice_id": "Enterprise-Professional",
   "profile": "fintech-compliance-launch",
-  "display": "\ud83c\udfe6 Fintech Compliance",
+  "display": "🏦 Fintech Compliance",
   "sector": "03-security-compliance/fintech-compliance",
   "version": "3.3.1",
   "description": "Regulatory-first financial technology launch.",
@@ -16,6 +16,25 @@
   },
   "governance": {
     "rules": "factory/library/10-engineering-devops/03-security-compliance/fintech-compliance/commands/COMMANDS.md"
+  },
+  "required": {
+    "agents": [
+      "revenue_orchestrator",
+      "integrity_auditor",
+      "security_auditor"
+    ],
+    "skills": [
+      "mena_payment_routing",
+      "legal_content_mena",
+      "sovereign_deploy_router"
+    ],
+    "commands": [
+      "init",
+      "plan",
+      "build",
+      "test",
+      "dev"
+    ]
   },
   "name": "Fintech Compliance Launch",
   "profile_id": "fintech-compliance-launch"

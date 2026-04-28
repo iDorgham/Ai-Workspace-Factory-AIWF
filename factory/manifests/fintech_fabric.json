@@ -1,0 +1,33 @@
+{
+  "client": null,
+  "profile": "fintech-compliance-launch",
+  "pipeline_alias": null,
+  "generated_at": "2026-04-28T01:10:03+00:00",
+  "components": {
+    "agents": [
+      "revenue_orchestrator.md",
+      "integrity_auditor.md",
+      "security_auditor.md"
+    ],
+    "subagents": [],
+    "skills": [
+      "mena_payment_routing.json",
+      "legal_content_mena.json",
+      "sovereign_deploy_router.json"
+    ],
+    "commands": [
+      "init.md",
+      "plan.md",
+      "build.md",
+      "test.md",
+      "dev.md"
+    ],
+    "subcommands": [],
+    "templates": [],
+    "scripts": []
+  },
+  "output_path": "/Users/Dorgham/Documents/Work/Devleopment/AIWF/workspaces/fintech_fabric/002_fintech_fabric",
+  "validation": {
+    "status": "pending"
+  }
+}
