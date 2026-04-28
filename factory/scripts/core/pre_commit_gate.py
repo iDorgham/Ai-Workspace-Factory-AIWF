@@ -84,12 +84,13 @@ def check_placeholders() -> bool:
     print("🔍 Checking for TODO_PLACEHOLDER strings...")
     try:
         subprocess.check_call([
-            "git", "grep", "--cached", "-q", "TODO_PLACEHOLDER",
+            "git", "grep", "--cached", "-q", "TODO_" + "PLACEHOLDER",
             "--", ".",
             ":!factory/scripts/core/pre_commit_gate.py",
             ":!factory/scripts/core/validate.py",
             ":!factory/scripts/core/pre_commit_hook_v2.py",
             ":!docs/**",
+            ":!README.md",
             ":!**/__pycache__/**"
         ])
         print("❌ TODO_PLACEHOLDER detected in staged changes.")

@@ -1,53 +1,50 @@
-# 🏭 INDUSTRIAL CONTEXT MANIFEST (v20.0.0 OMEGA)
+# 🏭 INDUSTRIAL CONTEXT MANIFEST (v21.0.0 NEURAL FABRIC)
 **Authoritative Reference for External Agents & Orchestrators**
+**Last Updated**: 2026-04-28T07:30:00+03:00
+**Status**: OMEGA EQUILIBRIUM
 
 ---
 
-## 🏗️ WORKSPACE TOPOLOGY
-The AIWF is organized into three distinct industrial layers to ensure peak technical equilibrium.
+## 🏗️ SYSTEM ARCHITECTURE: THE NEURAL FABRIC
+The AIWF has evolved into a self-learning neural ecosystem. It is organized into three distinct industrial layers to ensure peak technical equilibrium across distributed shards.
 
 ### 1. Metadata Tier (`.ai/`) — [ACTIVE SET]
-- **`agents/`**: Core (T0) and Specialized (T1) manifests in high-density Markdown.
-- **`commands/`**: The 9-core authoritative command registry.
-- **`governance/`**: SDD protocols, Law 151/2020 locks, and industrial standards.
-- **`plan/`**: Tripartite SDD streams (Development, Content, Social).
-- **`skills/`**: Sovereign capability manifests with functional bindings.
-- **`locks/`**: Mutex-driven concurrent write guards for swarm operations.
-- **`logs/ledgers/`**: Evolutionary audit trails (evolution, chaos, drift ledgers).
+The real-time operational registry of every sovereign workspace.
+- **`agents/`**: Core (T0), Specialized (T1), and Composition (T2) manifests.
+- **`commands/`**: Authoritative command registry for industrial orchestration.
+- **`governance/`**: SDD protocols, Law 151/2020 locks, and sovereign standards.
+- **`plan/`**: Plan shards for Foundation, Intelligence, and Distribution.
+- **`skills/`**: Capability manifests with synthesized functional bindings.
+- **`locks/`**: Mutex-driven concurrent write guards for multi-agent swarm operations.
+- **`logs/ledgers/`**: Evolutionary audit trails (evolution, chaos, drift, sync ledgers).
 
 ### 2. Core Tier (`factory/`) — [ARCHIVE SET]
-- **`library/`**: Canonical repository of all industrial assets, versioned registries, and pillars.
-- **`core/`**: Orchestration engines and lifecycle management logic.
-- **`scripts/`**: Tiered Python utilities (Core, Maintenance, Automation, Migration, GitOps).
-- **`templates/`**: Global YAML/MD composition templates.
+The canonical library and engine core of the factory.
+- **`library/`**: Decentralized repository of all industrial pillars (Agents, Skills, Commands, Templates).
+- **`core/`**: Orchestration engines (compose, sync, chaos) and lifecycle logic.
+- **`scripts/`**: Tiered Python utilities for Automation, GitOps, and Migration.
+- **`profiles/`**: Market-context JSON configurations for workspace materialization.
 
-### 3. Production Tier (`workspaces/`) — [DELIVERY GALAXY]
-- **`clients/`**: Isolated, project-specific shards for external stakeholders (MENA-LOCKED).
-- **`personal/`**: High-velocity shards for R&D and internal development (GLOBAL-PUBLIC).
-
----
-
-## 🕹️ COMMAND ORCHESTRATION (9-CORE)
-| Command | Primary Agent | Domain |
-|:---|:---|:---|
-| `/factory` | `factory_orchestrator` | Lifecycle & Materialization |
-| `/library` | `library_curator` | Component stewardship |
-| `/plan` | `spec_architect` | Tripartite SDD Planning |
-| `/create` | `creator` | High-fidelity asset generation |
-| `/dev` | `factory_orchestrator` | Implementation & Verification |
-| `/git` | `registry_guardian` | Versioning & Traceability |
-| `/do` | `swarm_router_v3` | Task delegation |
-| `/guide` | `brainstorm` | Intelligence & Pedagogy |
-| `/audit` | `integrity_auditor` | Structural Health & Sync |
+### 3. Execution Tier (`workspaces/`) — [FABRICATION SET]
+The production-ready vertical fabrics.
+- **`fintech_fabric`**: Regional payment routing and revenue orchestration.
+- **`hospitality_fabric`**: Red Sea tourism and property inventory sync.
+- **`medical_fabric`**: Sovereign pharmacy and healthcare management.
 
 ---
 
-## 🛡️ CORE PROTOCOLS
-1. **Outbound Mirror Protocol**: `.ai/` ➔ `library/` automatic sync for all edits. Inbound promotion via `/factory pull`.
-2. **Sovereign Commit FSM**: Integrity-first state machine for all industrial mutations.
-3. **Omega Release Gate**: 12-point compliance audit for production materialization.
-4. **Geospatial Lock**: Strict Law 151/2020 residency enforcement across all production shards.
-5. **Concurrent Write Guard**: Mutex-driven shard locking to prevent swarm collisions.
+## 🔗 NEURAL SYNCHRONIZATION PROTOCOLS
+The `NeuralSyncAgent` maintains equilibrium across all active fabrics via the following:
+*   **State Mirroring**: Real-time replication of `.ai/` registry changes.
+*   **Skill Synthesis**: Recursive extraction of production logic into the global library.
+*   **Equilibrium Audit**: Sub-second verification of build manifests and audit scores.
+
+## 🛡️ COMPLIANCE & SOVEREIGNTY (LAW 151/2020)
+All AIWF fabrics are certified for the **MENA-SOIL** region.
+*   **Geofencing**: Strict data residency in `.ai/vault/`.
+*   **Encryption**: AES-256-GCM standard for all sensitive PII/Financial shards.
+*   **Traceability**: Every mutation signed with a SHA-256 Reasoning Hash.
 
 ---
-*Governor: Dorgham | Registry: docs/context/industrial-context-manifest.md*
+*Generated by Master Guide | AIWF v21.0.0*
+*Evolution Hash: sha256:context-manifest-v21-final*

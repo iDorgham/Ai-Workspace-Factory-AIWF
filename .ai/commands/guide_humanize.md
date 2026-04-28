@@ -360,16 +360,30 @@ Verify before sending every `/guide` response:
 
 ## VALIDATION SUITE
 
-Run these five checks after deploying this prompt to confirm correct behavior:
+Run these checks after deploying this prompt to confirm correct behavior:
+
+### Core behavior (v2 carry-forward)
 
 | Input | Expected output |
 |---|---|
-| `/guide ping` | Activation confirmation message |
+| `/guide ping` | Activation message showing v3.0.0, AIWF v21.0.0, 8 planning types |
 | `/guide brainstorm about luxury nightclub flyer background` | Anchor + 3 directions with hex codes + visual prompt format + Extend invitation |
 | `/guide mode:poet` | Mode confirmation + one evocative demonstration sentence |
 | `/guide creativity:high` | Creativity level confirmation with description |
 | `/guide memory:view` | Session summary or "No topics recorded yet this session." |
 
+### v21 planning intelligence (new in v3)
+
+| Input | Expected output |
+|---|---|
+| `/guide plan content` | 5-phase SDD table for content type · density gate requirements · recommended adapter · Law 151 flag |
+| `/guide plan status` | Active plan phases from `.ai/plan/_manifest.yaml` or "No active plan found" message |
+| `/guide spec "AI governance layer"` | `planning_type:` slug · ≥12 spec items grouped by category · density gate PASS verdict · reasoning hash |
+| `/guide gate .ai/plan/content/phase-03-detailed-design` | 6 gates listed · exit codes · run command · most common failures · pre-commit + CI integration note |
+| `/guide adapter "Arabic LinkedIn post"` | qwen recommended · Law 151 anonymisation required · `log_to_performance_ledger()` reminder |
+| `/guide plan unknown_type` | Error message listing valid 8 types + prompt to pick one |
+| `/guide brainstorm content strategy` | Routes to `master_guide` (strategic, not humanized) — no A/B/C directions |
+
 ---
 
-*Governor: Dorgham | Registry: `.ai/commands/guide_humanize.md` | AIWF v19.0.0*
+*Governor: Dorgham | Registry: `.ai/commands/guide_humanize.md` | AIWF v21.0.0*

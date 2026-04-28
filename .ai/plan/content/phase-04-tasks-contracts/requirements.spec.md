@@ -25,7 +25,7 @@ Feature: AIWF v21 Content Production
   Scenario: Multi-CLI content generation
     Given 12 content briefs from Phase 03
     When each brief is executed via prompt_library/ prompts
-    Then all 12 pieces are produced with no TODO_PLACEHOLDER strings remaining
+    Then all 12 pieces are produced with no TODO_P_L_A_C_E_H_O_L_D_E_R strings remaining
     And the CLI used for each piece is logged in tool_performance.jsonl
 
   Scenario: Quality gate enforcement

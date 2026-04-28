@@ -29,17 +29,42 @@
       "types_missing": [],
       "files_copied": 116,
       "files_excluded": 0
+    },
+    {
+      "timestamp": "2026-04-28T04:36:31.473103+00:00",
+      "reasoning_hash": "sha256:591f4801ce2127b9",
+      "dry_run": false,
+      "types_synced": [
+        "development",
+        "content",
+        "seo",
+        "social_media",
+        "marketing",
+        "business",
+        "media",
+        "branding"
+      ],
+      "types_missing": [],
+      "files_copied": 264,
+      "files_excluded": 0
     }
   ],
   "last_sync": {
-    "timestamp": "2026-04-25T15:12:52.948069+00:00",
-    "reasoning_hash": "sha256:62d164e82349bc21",
+    "timestamp": "2026-04-28T04:36:31.473103+00:00",
+    "reasoning_hash": "sha256:591f4801ce2127b9",
     "dry_run": false,
     "types_synced": [
-      "content"
+      "development",
+      "content",
+      "seo",
+      "social_media",
+      "marketing",
+      "business",
+      "media",
+      "branding"
     ],
     "types_missing": [],
-    "files_copied": 116,
+    "files_copied": 264,
     "files_excluded": 0
   }
 }
