@@ -20,7 +20,9 @@ The `/factory` command suite governs the project and workspace lifecycle, from d
 | `make` | Materialize workspace | `/factory make [client]` |
 | `test` | Verify structure & compliance | `/factory test [client]` |
 | `check` | Detect workspace drift | `/factory check [client]` |
-| `sync` | Mirror .ai <-> Library & Repair links | `/factory sync --deep` |
+| `scan` | Deep inspection for drift | `/factory scan --deep` |
+| `materialize` | Spawn new workspace from template | `/factory materialize` |
+| `sync` | Synchronize cross-shard state | `/factory sync` |
 | `assign` | Route task to swarm agent | `/factory assign [client] [task]` |
 | `suggest` | AI-driven optimizations | `/factory suggest [client]` |
 | `repair` | Self-heal schemas & indices | `/factory repair --target=registry` |

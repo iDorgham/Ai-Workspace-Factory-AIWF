@@ -1,0 +1,1 @@
+/Users/Dorgham/Documents/Work/Devleopment/AIWF/.ai/scripts/factory_materialize.sh

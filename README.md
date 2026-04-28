@@ -159,6 +159,7 @@ AIWF/
 | ☁️ **Cloud Architecture** | `cloud-architecture` | Multi-cloud sovereign deployment, MENA residency nodes, IaC |
 | 🤖 **AI Automation Lab** | `ai-automation-lab-pro` | Multi-agent orchestration, recursive skill synthesis, tool-performance ledger |
 | 📢 **Advertising Suite** | `advertising-performance-suite` | Campaign planning, performance reporting, competitive intelligence |
+| 🌌 **suber_saas_template** | `suber-saas-template-premium` | Next.js 15 App Router, shadcn/ui Design System, Framer Motion, Law 151 |
 | ⚖️ **Legal Tech** | *(custom profile)* | Law 151/2020 + PDPL (KSA) compliance auditors, contract governance |
 
 ---
