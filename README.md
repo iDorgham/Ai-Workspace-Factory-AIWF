@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="docs/assets/banner-3.png" alt="AIWF Industrial Banner" width="100%">
+
 # 🏛️ AI WORKSPACE FACTORY
 
 <img src="https://img.shields.io/badge/Version-v20.1.0-2563EB?style=for-the-badge" alt="version"/>
