@@ -1,0 +1,72 @@
+{
+  "type": "density_gate_report",
+  "phase_path": "/Users/Dorgham/Documents/Work/Devleopment/AIWF/.ai/plan/content/phase-06-egyptian-arabic-content-master-v12",
+  "phase_name": "phase-06-egyptian-arabic-content-master-v12",
+  "timestamp": "2026-05-01T23:18:21.148516+00:00",
+  "reasoning_hash": "sha256:2a32fb5a1de38242",
+  "overall": "PASS",
+  "gates_passed": 6,
+  "gates_total": 6,
+  "failed_gates": [],
+  "gates": [
+    {
+      "gate": "minimum_file_count",
+      "passed": true,
+      "value": 17,
+      "threshold": 12,
+      "message": "17 files found \u2014 \u2713 PASS"
+    },
+    {
+      "gate": "required_top_level_files",
+      "passed": true,
+      "missing": [],
+      "message": "All required files present \u2713"
+    },
+    {
+      "gate": "c4_diagrams",
+      "passed": true,
+      "missing": [],
+      "message": "C4 diagrams present \u2713"
+    },
+    {
+      "gate": "required_subdirectories",
+      "passed": true,
+      "subdirs": {
+        "contracts": {
+          "exists": true,
+          "file_count": 2,
+          "pass": true
+        },
+        "templates": {
+          "exists": true,
+          "file_count": 1,
+          "pass": true
+        },
+        "validation": {
+          "exists": true,
+          "file_count": 3,
+          "pass": true
+        },
+        "prompt_library": {
+          "exists": true,
+          "file_count": 2,
+          "pass": true
+        }
+      },
+      "message": "All required subdirs populated \u2713"
+    },
+    {
+      "gate": "tasks_minimum",
+      "passed": true,
+      "value": 6,
+      "threshold": 5,
+      "message": "6 tasks defined \u2713"
+    },
+    {
+      "gate": "phase_spec_valid",
+      "passed": true,
+      "missing_keys": [],
+      "message": "phase.spec.json valid \u2713"
+    }
+  ]
+}

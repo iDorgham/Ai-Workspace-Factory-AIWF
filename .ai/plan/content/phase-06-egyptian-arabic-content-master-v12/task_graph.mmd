@@ -1,0 +1,19 @@
+%%{init: {"theme": "default"}}%%
+gantt
+  title Task graph — Phase 06: Egyptian Arabic Content Master v1.2
+  dateFormat  YYYY-MM-DD
+  axisFormat  %b %d
+
+  section Contracts
+    Freeze brief_schema + router map    :a1, 2026-05-02, 1d
+
+  section Validation
+    Rubric + checklist alignment        :a2, after a1, 1d
+
+  section Factory pack
+    Implement pack deltas in factory    :a3, after a2, 2d
+    Version bump 1.2.0                  :a4, after a3, 1d
+
+  section Gates
+    Density gate (this phase path)      :milestone, after a4, 0d
+    Rsync factory to .ai/skills         :milestone, after a4, 0d

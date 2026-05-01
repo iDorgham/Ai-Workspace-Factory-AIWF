@@ -1,0 +1,73 @@
+{
+  "phase": "content-egyptian-arabic-content-master-v12",
+  "planning_type": "content",
+  "topic": "Egyptian Arabic Content Master v1.2 skill pack",
+  "version": "1.0.0",
+  "created": "2026-05-02T12:00:00Z",
+  "reasoning_hash": "sha256:phase-06-egyptian-arabic-content-master-v12-tasks-2026-05-02",
+  "density_gate": { "minimum_tasks": 5, "minimum_files": 12, "c4_required": true },
+  "tasks": [
+    {
+      "id": "T-C06-01",
+      "title": "Freeze brief_schema + pack_router_map in factory pack",
+      "status": "completed",
+      "priority": "P0",
+      "description": "Copy or merge contracts/brief_schema.yaml and contracts/pack_router_map.yaml from this phase into factory/library/skills/egyptian_arabic_content_master/contracts/. Update design.md pointers in live pack if layout differs.",
+      "output": "factory/library/skills/egyptian_arabic_content_master/contracts/",
+      "dependencies": [],
+      "agent": "spec_architect_v2"
+    },
+    {
+      "id": "T-C06-02",
+      "title": "Align validation rubric with live quality_checklist",
+      "status": "completed",
+      "priority": "P0",
+      "description": "Merge phase validation/rubric_masri.md into factory pack as evaluation/rubric_masri.md (or keep phase as source until T-C06-01 completes). Ensure criteria map 1:1 to checklist items v1.1.0+.",
+      "output": "factory/library/skills/egyptian_arabic_content_master/evaluation/rubric_masri.md",
+      "dependencies": ["T-C06-01"],
+      "agent": "spec_architect_v2"
+    },
+    {
+      "id": "T-C06-03",
+      "title": "Implement optional vertical stubs + golden_pairs placeholder",
+      "status": "completed",
+      "priority": "P1",
+      "description": "Add factory verticals/*.md from templates/vertical_stub.md pattern; add evaluation/golden_pairs.jsonl (append-only, anonymised) if pursuing quality-oracle spine.",
+      "output": "factory/library/skills/egyptian_arabic_content_master/verticals/ | evaluation/golden_pairs.jsonl",
+      "dependencies": ["T-C06-02"],
+      "agent": "spec_architect_v2"
+    },
+    {
+      "id": "T-C06-04",
+      "title": "Bump skill_manifest + registry manifest to 1.2.0",
+      "status": "completed",
+      "priority": "P0",
+      "description": "Update skill_manifest.json, factory/library/skills/manifests/egyptian_arabic_content_master/skill.md, and egyptian_arabic_content_master.md pointers for v1.2 capabilities.",
+      "output": "factory/library/skills/egyptian_arabic_content_master/skill_manifest.json",
+      "dependencies": ["T-C06-03"],
+      "agent": "spec_architect_v2"
+    },
+    {
+      "id": "T-C06-05",
+      "title": "Run spec density gate on this phase path",
+      "status": "completed",
+      "priority": "P0",
+      "description": "Run gate after scaffold complete; re-run after substantive edits. Write report to validation/density_gate_report.json.",
+      "output": "validation/density_gate_report.json",
+      "dependencies": [],
+      "agent": "integrity_auditor",
+      "cli_command": "python3 factory/scripts/core/spec_density_gate_v2.py --phase .ai/plan/content/phase-06-egyptian-arabic-content-master-v12 --write-report"
+    },
+    {
+      "id": "T-C06-06",
+      "title": "Mirror skill pack factory to .ai/skills (rsync)",
+      "status": "completed",
+      "priority": "P0",
+      "description": "Final sync after factory edits and version bump. Source of truth remains factory/library path.",
+      "output": ".ai/skills/egyptian_arabic_content_master/",
+      "dependencies": ["T-C06-04", "T-C06-05"],
+      "agent": "repository_agent",
+      "cli_command": "rsync -a --delete \"factory/library/skills/egyptian_arabic_content_master/\" \".ai/skills/egyptian_arabic_content_master/\""
+    }
+  ]
+}

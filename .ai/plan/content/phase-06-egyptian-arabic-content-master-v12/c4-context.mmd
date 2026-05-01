@@ -1,0 +1,24 @@
+%%{init: {"theme": "default"}}%%
+C4Context
+  title System context — Egyptian Arabic Content Master v1.2 (Phase 06)
+
+  Person(editor, "Content editor / spec owner", "Authors briefs; approves Masri tone and legal sensitivity flags")
+  Person(agent, "Teaching or orchestration agent", "Loads skill pack; composes outputs from prompts + examples")
+
+  System_Boundary(phase06, "Phase 06 — SDD scaffold") {
+    System(phase_docs, "Phase 06 documents", "requirements, design, contracts, validation rubric, tasks")
+  }
+
+  System_Ext(factory_pack, "factory/library/skills/egyptian_arabic_content_master/", "Canonical skill pack (v1.2 target)")
+  System_Ext(ai_skills, ".ai/skills/egyptian_arabic_content_master/", "Runtime mirror consumed by agents")
+  System_Ext(density_gate, "spec_density_gate_v2.py", "Validates phase folder structure before promotion")
+  System_Ext(workspaces, "workspaces/*/", "Client content; may reference pack by path only")
+
+  Rel(editor, phase_docs, "Authors / updates", "Markdown + YAML")
+  Rel(phase_docs, factory_pack, "Promotes contracts + evaluation via tasks", "T-C06-01..04")
+  Rel(agent, factory_pack, "Prefers reading", "Persona + matrix + channel formats")
+  Rel(factory_pack, ai_skills, "Mirrored by", "rsync final task")
+  Rel(density_gate, phase_docs, "Validates", "PASS required for confidence")
+  Rel(workspaces, factory_pack, "May depend on", "Library-first composition")
+
+  UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")
