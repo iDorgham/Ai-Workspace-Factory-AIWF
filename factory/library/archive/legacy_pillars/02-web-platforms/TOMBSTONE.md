@@ -1,4 +1,4 @@
-# TOMBSTONE — factory/library/_legacy_pillars/02-web-platforms/
+# TOMBSTONE — factory/library/archive/legacy_pillars/02-web-platforms/
 
 **Status:** DEPRECATED  
 **Tombstoned:** 2026-04-25  
@@ -12,7 +12,7 @@
 It was superseded by `30_web_platforms/` during the library restructuring that standardised
 all domain names to `{NN}_{snake_case}` format (AIWF v13.0+).
 
-**Successor Domain:** `factory/library/_legacy_pillars/30_web_platforms/`  
+**Successor Domain:** `factory/library/archive/legacy_pillars/30_web_platforms/`  
 **File Count at Tombstone:** 0 (all assets were migrated to 30_web_platforms during restructuring)  
 **Empty Subdirs:** `sovereign-ui/` (migration artifact — content is in 30_web_platforms/03_ui_components/)
 

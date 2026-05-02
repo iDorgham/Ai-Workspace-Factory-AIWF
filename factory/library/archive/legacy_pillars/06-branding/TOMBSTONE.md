@@ -1,4 +1,4 @@
-# TOMBSTONE — factory/library/_legacy_pillars/06-branding/
+# TOMBSTONE — factory/library/archive/legacy_pillars/06-branding/
 
 **Status:** DEPRECATED  
 **Tombstoned:** 2026-04-25  
@@ -14,8 +14,8 @@ the library restructuring that standardised all domain names to `{NN}_{snake_cas
 (AIWF v13.0+).
 
 Branding assets and design token specs now live in:
-- `factory/library/_legacy_pillars/00_core_orchestration/` — brand governance contracts
-- `factory/library/_legacy_pillars/50_intelligence_marketing/` — brand intelligence and marketing assets
+- `factory/library/archive/legacy_pillars/00_core_orchestration/` — brand governance contracts
+- `factory/library/archive/legacy_pillars/50_intelligence_marketing/` — brand intelligence and marketing assets
 
 **File Count at Tombstone:** 0 (all assets were migrated during restructuring)  
 **Empty Subdirs:** `design-tokens/` (migration artifact — content is in 00_core_orchestration/)

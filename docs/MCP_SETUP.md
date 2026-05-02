@@ -2,7 +2,7 @@
 
 ## 🐳 Docker MCP
 The Docker capability is integrated via the **Sovereign CLI Bridge**. 
-- **Registry Path**: `factory/library/_legacy_pillars/10_engineering_devops/01_software_engineering/developing/skills/mcp_docker/`
+- **Registry Path**: `factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/developing/skills/mcp_docker/`
 - **Protocol**: Maps standard Docker CLI commands to industrial safety standards.
 
 ## 📦 Global Servers

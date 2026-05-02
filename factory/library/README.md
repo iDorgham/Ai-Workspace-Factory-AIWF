@@ -24,7 +24,8 @@ This library follows an artifact-first taxonomy.
 
 ## Legacy Content
 
-Legacy domain pillars were moved to:
-- `_legacy_pillars/`
+Historical domain pillars live under read-only archive paths (do not treat as canonical sources of truth for new work):
 
-See `_legacy_pillars/MIGRATION_MANIFEST.json` for the exact moved paths.
+- `archive/legacy_pillars/`
+
+See `archive/legacy_pillars/MIGRATION_MANIFEST.json` for the recorded move map.
