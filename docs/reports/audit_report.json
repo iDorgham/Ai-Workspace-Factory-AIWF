@@ -1,0 +1,1596 @@
+{
+  "dead_weights": [
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/16_content_dominance/social_content/skills/social-content-viral-loops/SKILL.md",
+      "lines": 47,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/16_content_dominance/regional_cultural/skills/egyptian-masri-cultural-hooks/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/16_content_dominance/regional_cultural/skills/arabic-egypt-cultural/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/16_content_dominance/written_content/skills/written-leadgen-bio-mastery/SKILL.md",
+      "lines": 43,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/16_content_dominance/written_content/skills/egyptian-arabic-rtl/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/16_content_dominance/video_narrative/skills/video-scripting-mastery/SKILL.md",
+      "lines": 42,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/16_content_dominance/storytelling_logic/skills/emotional-storytelling-loops/SKILL.md",
+      "lines": 42,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/image_production/skills/lighting-mood-systems/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/image_production/skills/high-fidelity-pbr-rendering/SKILL.md",
+      "lines": 40,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/image_production/skills/pattern-design/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/image_production/skills/vector-illustration/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/image_production/skills/digital-art/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/image_production/skills/advanced-composition/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/image_production/skills/background-removal/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/image_production/skills/overlay-blending/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/design/skills/cine_serious_visual_framework/SKILL.md",
+      "lines": 45,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/design/skills/external/shadcn_ui/atomic-architecture-mastery/SKILL.md",
+      "lines": 39,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/design/skills/external/extract_design_system/token-extraction-mastery/SKILL.md",
+      "lines": 38,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/visual_design/skills/external/gsap-motion/cinematic-motion-mastery/SKILL.md",
+      "lines": 38,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/video_production/skills/morphing-liquid-transitions/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/video_production/skills/camera-lenses/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/video_production/skills/cinematic-color-grading/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/video_production/skills/cinematic-transitions/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/video_production/skills/shot-types/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/video_production/skills/cinematic-motion-orchestration/SKILL.md",
+      "lines": 39,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/video_production/skills/motion-graphics/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/video_production/skills/camera-movement/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/video_production/skills/vfx-fundamentals/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/video_production/skills/sound-effects/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/04_business_strategy/business/skills/business_incorporation_uae/SKILL.md",
+      "lines": 39,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/04_business_strategy/business/skills/business_incorporation_egypt/SKILL.md",
+      "lines": 39,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/04_business_strategy/business/skills/mena_venture_scaling_logic/SKILL.md",
+      "lines": 37,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/04_business_strategy/finance_ops/skills/external/monorepo-physics/turborepo-mastery/SKILL.md",
+      "lines": 37,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/07_visibility_optimization/seo_technical/skills/external/next-seo-mastery/technical-seo-mastery/SKILL.md",
+      "lines": 39,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/07_visibility_optimization/geo_generative_search/skills/geo-generative-engine-optimization/SKILL.md",
+      "lines": 36,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/07_visibility_optimization/aeo_voice_search/skills/aeo-answer-engine-optimization/SKILL.md",
+      "lines": 39,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/07_visibility_optimization/llm_visibility_llmo/skills/llmo-model-visibility-citations/SKILL.md",
+      "lines": 38,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/07_visibility_optimization/llm_visibility_llmo/skills/external/llmo-physics/llmo-semantic-mastery/SKILL.md",
+      "lines": 38,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/07_visibility_optimization/visibility_analytics/skills/visibility-intelligence-analytics/SKILL.md",
+      "lines": 45,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/07_visibility_optimization/seo/skills/external/awesome_seo_physics/SKILL.md",
+      "lines": 37,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/07_visibility_optimization/seo/skills/bilingual_semantic_authority/SKILL.md",
+      "lines": 40,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/07_visibility_optimization/semantic_knowledge_graphs/skills/entity-knowledge-graph-management/SKILL.md",
+      "lines": 39,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/06_branding/visual_identity/skills/arabic-typography-rtl-physics/SKILL.md",
+      "lines": 42,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/06_branding/visual_identity/skills/golden-ratio/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/06_branding/visual_identity/skills/visual-identity-design-mastery/SKILL.md",
+      "lines": 40,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/06_branding/visual_identity/skills/design-trends-2026/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/06_branding/modern_ai_branding/skills/ai-avatar-branding-logic/SKILL.md",
+      "lines": 37,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/06_branding/brand_strategy/skills/multi-persona-branding-mastery/SKILL.md",
+      "lines": 42,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/06_branding/brand_governance/skills/w3c-brand-token-system/SKILL.md",
+      "lines": 43,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/09_social_engagement/social_media/skills/social-media-sizes/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/09_social_engagement/social_media/skills/viral-engagement-engineering/SKILL.md",
+      "lines": 38,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/09_social_engagement/content_strategy/skills/external/high-density-marketing/high-density-content-mastery/SKILL.md",
+      "lines": 37,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/gov_public_sector/skills/SKILL.md",
+      "lines": 36,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/education_lms/skills/SKILL.md",
+      "lines": 36,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/legal_brokerage/skills/egypt-contract-drafting-physics/SKILL.md",
+      "lines": 40,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/legal_brokerage/skills/uae-contract-drafting-physics/SKILL.md",
+      "lines": 38,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/legal_brokerage/skills/legal-brokerage-mastery/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/agency_creative/skills/SKILL.md",
+      "lines": 37,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/real_estate_dev/skills/real-estate-dev-mastery/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/real_estate_dev/skills/real-estate-modeling/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/tourism_travel/skills/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/tourism_travel/skills/tourism-travel-mastery/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/ai_automation_lab/skills/SKILL.md",
+      "lines": 36,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/ecommerce_retail/skills/SKILL.md",
+      "lines": 36,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/healthtech_pharma/skills/healthtech-pharma-mastery/SKILL.md",
+      "lines": 36,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/hospital_clinic/skills/SKILL.md",
+      "lines": 36,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/media_broadcasting/skills/SKILL.md",
+      "lines": 36,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/real_estate_brokerage/skills/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/real_estate_brokerage/skills/real-estate-brokerage-mastery/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/f_and_b_ops/skills/SKILL.md",
+      "lines": 40,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/crypto_web3/skills/SKILL.md",
+      "lines": 36,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/events_festivals_ops/skills/SKILL.md",
+      "lines": 36,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/islamic_finance/skills/islamic-finance-mastery/SKILL.md",
+      "lines": 36,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/fitness_wellness/skills/SKILL.md",
+      "lines": 37,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/lodging_hotel/skills/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/15_music_sound_engineering/sound_engineering/skills/mixing-mastering-omega/SKILL.md",
+      "lines": 39,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/15_music_sound_engineering/music_production/skills/vocal-production-signal-chains/SKILL.md",
+      "lines": 40,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/15_music_sound_engineering/music_production/skills/ableton-live-mastery/SKILL.md",
+      "lines": 36,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/15_music_sound_engineering/performance_library/skills/dj-mixing-performance/SKILL.md",
+      "lines": 42,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/15_music_sound_engineering/composition_theory/skills/electronic-composition-theory/SKILL.md",
+      "lines": 38,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/15_music_sound_engineering/sound_design/skills/vst-synthesis-mastery/SKILL.md",
+      "lines": 40,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/13_gaming_entertainment/entertainment_media/skills/streaming-metaverse-narrative/SKILL.md",
+      "lines": 42,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/13_gaming_entertainment/economy_monetization/skills/game-economy-monetization/SKILL.md",
+      "lines": 43,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/13_gaming_entertainment/web_gaming/skills/webgl-phaser-threejs-mastery/SKILL.md",
+      "lines": 39,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/13_gaming_entertainment/game_engines/skills/unreal-cpp-mastery/SKILL.md",
+      "lines": 36,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/13_gaming_entertainment/game_engines/skills/unity-csharp-mastery/SKILL.md",
+      "lines": 39,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/00_core_orchestration/12_meta_engine/google_workspace/skills/external/google/workspace_automation_cli/SKILL.md",
+      "lines": 38,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/00_core_orchestration/12_meta_engine/meta_orchestration/skills/external/obra_superpowers/agentic-superpowers-mastery/SKILL.md",
+      "lines": 37,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/00_core_orchestration/12_meta_engine/meta_orchestration/skills/external/planning_with_files/planning-with-files-mastery/SKILL.md",
+      "lines": 39,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/06_intel_data/data_mining/skills/external/intel-extraction/intelligence-extraction-mastery/SKILL.md",
+      "lines": 37,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/17_performance_marketing_growth/ad_creative_production/skills/ad-creative-production-mastery/SKILL.md",
+      "lines": 45,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/17_performance_marketing_growth/ad_creative_production/skills/ads-design-systems/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/17_performance_marketing_growth/ad_creative_production/skills/bilingual-ad-localization-enar/SKILL.md",
+      "lines": 38,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/17_performance_marketing_growth/growth_economics/skills/growth-economics-roi-physics/SKILL.md",
+      "lines": 37,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/17_performance_marketing_growth/traditional_media_ops/skills/offline-media-negotiation-mastery/SKILL.md",
+      "lines": 39,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/17_performance_marketing_growth/digital_ads_mastery/skills/google-meta-ads-mastery/SKILL.md",
+      "lines": 39,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/17_performance_marketing_growth/digital_ads_mastery/skills/programmatic-ads-mastery/SKILL.md",
+      "lines": 39,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/14_ai_intelligence/intelligence_foundations/skills/fine-tuning-dataset-curation/SKILL.md",
+      "lines": 38,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/14_ai_intelligence/intelligence_foundations/skills/vector-database-architecture/SKILL.md",
+      "lines": 36,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/14_ai_intelligence/ai_enterprise/skills/external/vercel-ai-sdk/ai-sdk-orchestration/SKILL.md",
+      "lines": 37,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/14_ai_intelligence/frontier_models/skills/external/anthropic/anthropic-official-mastery/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/14_ai_intelligence/frontier_models/skills/external/anthropic/computer-use-mastery/SKILL.md",
+      "lines": 37,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/14_ai_intelligence/frontier_models/skills/openai-codex-mastery/SKILL.md",
+      "lines": 39,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/14_ai_intelligence/frontier_models/skills/claude-3-5-sonnet-mastery/SKILL.md",
+      "lines": 49,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/14_ai_intelligence/agentic_orchestration/skills/openclaw-orchestration/SKILL.md",
+      "lines": 36,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/14_ai_intelligence/agentic_orchestration/skills/external/various/maker-ecosystem-mastery/SKILL.md",
+      "lines": 40,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/14_ai_intelligence/agentic_orchestration/skills/external/github/copilot-mastery/SKILL.md",
+      "lines": 38,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/14_ai_intelligence/agentic_orchestration/skills/external/proactive-agent/proactive-agent-mastery/SKILL.md",
+      "lines": 37,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/14_ai_intelligence/agentic_orchestration/skills/external/wshobson-agents/agent-orchestration-mastery/SKILL.md",
+      "lines": 38,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/14_ai_intelligence/agentic_orchestration/skills/agent-computational-velocity-protocol/SKILL.md",
+      "lines": 40,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/14_ai_intelligence/automation_workflows/skills/make-com-logic-optimization/SKILL.md",
+      "lines": 36,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/14_ai_intelligence/automation_workflows/skills/n8n-workflow-engineering/SKILL.md",
+      "lines": 46,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/14_ai_intelligence/automation_workflows/skills/external/caveman-automation/SKILL.md",
+      "lines": 39,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/30_web_platforms/02_web_platforms/web_developing/skills/react-patterns/react-server-components/SKILL.md",
+      "lines": 34,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/30_web_platforms/02_web_platforms/web_developing/skills/react-patterns/incremental-static-rendering/SKILL.md",
+      "lines": 33,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/30_web_platforms/02_web_platforms/web_developing/skills/react-patterns/presentational-container-pattern/SKILL.md",
+      "lines": 37,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/30_web_platforms/02_web_platforms/web_developing/skills/cms-mastery/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/30_web_platforms/02_web_platforms/web_developing/skills/framer-mastery/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/30_web_platforms/02_web_platforms/web_developing/skills/external/design-excellence/sleek-ui-design-protocols/SKILL.md",
+      "lines": 37,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/30_web_platforms/02_web_platforms/web_developing/skills/external/nextjs-mastery/nextjs-2026-patterns/SKILL.md",
+      "lines": 39,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/30_web_platforms/02_web_platforms/web_developing/skills/external/patterns-dev/react-design-patterns/SKILL.md",
+      "lines": 39,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/30_web_platforms/02_web_platforms/web_developing/skills/front-end-website-builders/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/30_web_platforms/02_web_platforms/web_developing/skills/live-website-builders/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/30_web_platforms/02_web_platforms/web_developing/skills/responsive-grid-systems/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/30_web_platforms/02_web_platforms/web_developing/skills/modern-frontend-frameworks/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/30_web_platforms/02_web_platforms/web_developing/skills/animation-frameworks/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/30_web_platforms/02_web_platforms/app_developing/skills/external/expo/expo-mobile-optimization/SKILL.md",
+      "lines": 37,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/30_web_platforms/02_web_platforms/api_design/skills/api-contracts/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/30_web_platforms/02_web_platforms/api_design/skills/api-gateway-mastery/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/30_web_platforms/02_web_platforms/cloud_architecture/skills/external/serverless-databases/serverless-db-physics/SKILL.md",
+      "lines": 38,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/30_web_platforms/02_web_platforms/cloud_architecture/skills/external/microsoft-azure/azure-cloud-physics/SKILL.md",
+      "lines": 37,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/developing/skills/programming_languages_mastery/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/developing/skills/distributed_system_architecture/SKILL.md",
+      "lines": 40,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/developing/skills/cli_memory/SKILL.md",
+      "lines": 48,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/developing/skills/runtime_automation_rules/SKILL.md",
+      "lines": 46,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/developing/skills/mcp_docker/SKILL.md",
+      "lines": 28,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/developing/skills/qr_crypto/SKILL.md",
+      "lines": 46,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/developing/skills/external/github/github_official_mastery/SKILL.md",
+      "lines": 46,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/developing/skills/external/sentry_observability/real-time-observability-mastery/SKILL.md",
+      "lines": 38,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/developing/skills/external/typescript_mastery/typescript-2026-physic/SKILL.md",
+      "lines": 37,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/developing/skills/safety_interaction/SKILL.md",
+      "lines": 40,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/developing/skills/mcp_guide/SKILL.md",
+      "lines": 49,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/backend/skills/backend_dashboard_patterns/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/backend/skills/external/nestjs_architecture/nestjs-modular-architecture/SKILL.md",
+      "lines": 37,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/testing/skills/external/playwright_e2e/playwright-e2e-mastery/SKILL.md",
+      "lines": 39,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/10_operations_qa/quality_assurance/skills/external/web-quality/high-density-web-quality/SKILL.md",
+      "lines": 38,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/10_operations_qa/quality_assurance/skills/external/lambdatest-qa/grid-automation-mastery/SKILL.md",
+      "lines": 39,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/03_security_compliance/mena_regulatory_compliance/skills/mena-constitutional-boundaries/SKILL.md",
+      "lines": 39,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/03_security_compliance/mena_regulatory_compliance/skills/regulatory-authority-mapping/SKILL.md",
+      "lines": 45,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/03_security_compliance/cyber_security/skills/external/zero-trust-physics/zero-trust-mastery/SKILL.md",
+      "lines": 40,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/03_security_compliance/cyber_security/skills/external/security-audits/advanced-security-audit/SKILL.md",
+      "lines": 38,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/skills/github_imports/theme-factory/SKILL.md",
+      "lines": 43,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/skills/github_imports/content-creator/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/skills/github_imports/business-growth/SKILL.md",
+      "lines": 44,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/skills/github_imports/project-management/SKILL.md",
+      "lines": 47,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/skills/github_imports/project-management/team-communications/SKILL.md",
+      "lines": 48,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/skills/github_imports/team-communications/SKILL.md",
+      "lines": 48,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/skills/github_imports/internal-comms/SKILL.md",
+      "lines": 26,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/skills/github_imports/marketing-skill/content-creator/SKILL.md",
+      "lines": 41,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/skills/github_imports/finance/SKILL.md",
+      "lines": 43,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/skills/github_imports/product-team/SKILL.md",
+      "lines": 49,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/skills/github_imports/frontend-design/SKILL.md",
+      "lines": 30,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/skills/github_imports/brand-guidelines/SKILL.md",
+      "lines": 49,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/skills/github_imports/ginkgo-cloud-lab/SKILL.md",
+      "lines": 35,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/skills/github_imports/engineering/interview-system-designer/SKILL.md",
+      "lines": 42,
+      "type": "skill"
+    },
+    {
+      "path": "factory/library/skills/github_imports/interview-system-designer/SKILL.md",
+      "lines": 42,
+      "type": "skill"
+    }
+  ],
+  "hollow_agents": [
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/16_content_dominance/social_content/agents/Content/AGENT.md",
+      "lines": 52,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/16_content_dominance/agents/arabic_content_creator/AGENT.md",
+      "lines": 41,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/16_content_dominance/written_content/agents/ContentDirector/AGENT.md",
+      "lines": 68,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/16_content_dominance/written_content/agents/SentinelCopywriting/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/16_content_dominance/video_narrative/agents/Creator/AGENT.md",
+      "lines": 61,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/16_content_dominance/video_narrative/agents/SentinelContentCreation/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/image_production/agents/SentinelImageProduction/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/design/agents/designsystem/AGENT.md",
+      "lines": 77,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/design/agents/designdirector/AGENT.md",
+      "lines": 58,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/ai_generative_media/agents/SentinelAiGenerativeMedia/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/agents/vfx_artist/AGENT.md",
+      "lines": 41,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/agents/art_director/AGENT.md",
+      "lines": 41,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/agents/video_editor/AGENT.md",
+      "lines": 41,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/agents/motion_designer/AGENT.md",
+      "lines": 41,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/agents/digital_artist/AGENT.md",
+      "lines": 41,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/agents/creative_director/AGENT.md",
+      "lines": 41,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/audio_tech/agents/SentinelAudioTech/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/3d_production/agents/AGENT.md",
+      "lines": 31,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/3d_production/agents/3DTechnicalArtist/AGENT.md",
+      "lines": 52,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/3d_production/agents/Sentinel3dProduction/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/visual_design/agents/SentinelVisualDesign/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/video_production/agents/AGENT.md",
+      "lines": 73,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/08_media_production/video_production/agents/SentinelVideoProduction/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/04_business_strategy/sales_revenue/agents/SentinelSalesRevenue/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/04_business_strategy/business/agents/founder/AGENT.md",
+      "lines": 52,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/04_business_strategy/business/agents/sentinelbusiness/AGENT.md",
+      "lines": 55,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/04_business_strategy/business/agents/travelagent/AGENT.md",
+      "lines": 43,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/04_business_strategy/business/agents/venture/AGENT.md",
+      "lines": 77,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/04_business_strategy/business/agents/venturearchitect/AGENT.md",
+      "lines": 59,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/04_business_strategy/agents/account_manager/AGENT.md",
+      "lines": 41,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/04_business_strategy/growth_strategy/agents/SentinelGrowthStrategy/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/04_business_strategy/finance_ops/agents/SentinelFinanceOps/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/04_business_strategy/venture_design/agents/SentinelVentureDesign/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/07_visibility_optimization/traditional_seo/agents/VisibilityArchitect/AGENT.md",
+      "lines": 68,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/07_visibility_optimization/seo/agents/sentinelseo/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/06_branding/agency_ops/agents/SentinelAgencyOps/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/06_branding/brand_strategy/agents/BrandDirector/AGENT.md",
+      "lines": 68,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/06_branding/brand_governance/agents/DesignSystem/AGENT.md",
+      "lines": 52,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/06_branding/brand_governance/agents/BrandGuardian/AGENT.md",
+      "lines": 52,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/09_social_engagement/community_engagement/agents/SentinelCommunityEngagement/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/09_social_engagement/viral_loops/agents/SentinelViralLoops/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/09_social_engagement/social_media/agents/AGENT.md",
+      "lines": 73,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/09_social_engagement/social_media/agents/SentinelSocialMedia/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/09_social_engagement/agents/social_media_specialist/AGENT.md",
+      "lines": 41,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/20_content_strategy/09_social_engagement/influencer_ops/agents/SentinelInfluencerOps/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/gov_public_sector/agents/DigitalTransformationConsultant/AGENT.md",
+      "lines": 31,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/gov_public_sector/agents/SentinelGovPublicSector/AGENT.md",
+      "lines": 53,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/education_lms/agents/SentinelEducationLms/AGENT.md",
+      "lines": 53,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/legal_brokerage/agents/LegalCounsel/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/legal_brokerage/agents/SentinelLegalBrokerage/AGENT.md",
+      "lines": 54,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/agency_creative/agents/SentinelAgencyCreative/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/real_estate_dev/agents/SentinelRealEstateDev/AGENT.md",
+      "lines": 53,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/real_estate_dev/agents/PropertyAnalyst/AGENT.md",
+      "lines": 41,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/tourism_travel/agents/SentinelTourismTravel/AGENT.md",
+      "lines": 41,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/ai_automation_lab/agents/SentinelAiAutomationLab/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/ecommerce_retail/agents/SentinelEcommerceRetail/AGENT.md",
+      "lines": 53,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/energy_renewables/agents/SentinelEnergyTech/AGENT.md",
+      "lines": 53,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/healthtech_pharma/agents/SentinelHealthtechPharma/AGENT.md",
+      "lines": 53,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/healthtech_pharma/agents/HealthConsultant/AGENT.md",
+      "lines": 45,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/hospital_clinic/agents/SentinelHospitalClinic/AGENT.md",
+      "lines": 59,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/hospital_clinic/agents/MedicalDirector/AGENT.md",
+      "lines": 69,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/real_estate_brokerage/agents/SentinelRealEstateBrokerage/AGENT.md",
+      "lines": 41,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/f_and_b_ops/agents/SentinelFAndBOps/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/crypto_web3/agents/SentinelCryptoWeb3/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/crypto_web3/agents/Web3Architect/AGENT.md",
+      "lines": 46,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/islamic_finance/agents/ShariaReviewer/AGENT.md",
+      "lines": 68,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/islamic_finance/agents/SentinelIslamicFinance/AGENT.md",
+      "lines": 54,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/fitness_wellness/agents/SentinelFitnessWellness/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/lodging_hotel/agents/HotelManager/AGENT.md",
+      "lines": 68,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/11_industry_verticals/lodging_hotel/agents/SentinelLodgingHotel/AGENT.md",
+      "lines": 60,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/15_music_sound_engineering/music_production/agents/MusicProducer/AGENT.md",
+      "lines": 68,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/40_verticals/13_gaming_entertainment/game_engines/agents/GameArchitect/AGENT.md",
+      "lines": 68,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/00_core_orchestration/12_meta_engine/library_taxonomy/agents/sentinellibrarytaxonomy/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/00_core_orchestration/12_meta_engine/tools_ai/agents/sentineltoolsai/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/00_core_orchestration/12_meta_engine/meta_orchestration/agents/guide/AGENT.md",
+      "lines": 52,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/00_core_orchestration/12_meta_engine/meta_orchestration/agents/cortex/AGENT.md",
+      "lines": 52,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/00_core_orchestration/12_meta_engine/meta_orchestration/agents/architect/AGENT.md",
+      "lines": 84,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/00_core_orchestration/12_meta_engine/meta_orchestration/agents/contextslicer/AGENT.md",
+      "lines": 52,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/00_core_orchestration/12_meta_engine/meta_orchestration/agents/sentinelmetaorchestration/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/00_core_orchestration/12_meta_engine/meta_orchestration/agents/orchestrator/AGENT.md",
+      "lines": 52,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/00_core_orchestration/12_meta_engine/meta_orchestration/agents/router/AGENT.md",
+      "lines": 52,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/00_core_orchestration/07_meta/agents/symbolic_logic_orchestrator/AGENT.md",
+      "lines": 54,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/17_performance_marketing_growth/agents/senior_marketing_specialist/AGENT.md",
+      "lines": 41,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/17_performance_marketing_growth/agents/media_buyer/AGENT.md",
+      "lines": 41,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/17_performance_marketing_growth/agents/senior_digital_marketing/AGENT.md",
+      "lines": 41,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/17_performance_marketing_growth/agents/digital_advertising_specialist/AGENT.md",
+      "lines": 41,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/17_performance_marketing_growth/agents/marketing_manager/AGENT.md",
+      "lines": 41,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/17_performance_marketing_growth/digital_ads_mastery/agents/AdStrategist/AGENT.md",
+      "lines": 52,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/17_performance_marketing_growth/digital_ads_mastery/agents/MediaBuyer/AGENT.md",
+      "lines": 68,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/14_ai_intelligence/ai_enterprise/agents/AiOps/AGENT.md",
+      "lines": 68,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/50_intelligence_marketing/14_ai_intelligence/agents/brainstorm/AGENT.md",
+      "lines": 68,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/30_web_platforms/02_web_platforms/web_developing/agents/SentinelWebDeveloping/AGENT.md",
+      "lines": 55,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/30_web_platforms/02_web_platforms/app_developing/agents/SentinelAppDeveloping/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/30_web_platforms/02_web_platforms/api_design/agents/SentinelApiDesign/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/30_web_platforms/02_web_platforms/saas_platforms/agents/SentinelSaasPlatforms/AGENT.md",
+      "lines": 55,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/30_web_platforms/02_web_platforms/cloud_architecture/agents/SentinelCloudArchitecture/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/05_data_analytics/cultural_intelligence/agents/SentinelCulturalIntelligence/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/05_data_analytics/analysis/agents/scraper/AGENT.md",
+      "lines": 64,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/05_data_analytics/analysis/agents/intelsynthesizer/AGENT.md",
+      "lines": 59,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/05_data_analytics/analysis/agents/uxresearcher/AGENT.md",
+      "lines": 95,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/05_data_analytics/analysis/agents/tutor/AGENT.md",
+      "lines": 93,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/05_data_analytics/analysis/agents/researcher/AGENT.md",
+      "lines": 66,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/05_data_analytics/analysis/agents/sentinelanalysis/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/05_data_analytics/analysis/agents/knowledgesynthesizer/AGENT.md",
+      "lines": 52,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/05_data_analytics/ai_automation_ops/agents/SentinelAiAutomationOps/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/05_data_analytics/market_research/agents/SentinelMarketResearch/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/devops/agents/sentineldevops/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/developing/agents/cortex/AGENT.md",
+      "lines": 87,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/developing/agents/dba/AGENT.md",
+      "lines": 95,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/developing/agents/legalreview/AGENT.md",
+      "lines": 96,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/developing/agents/mobile/AGENT.md",
+      "lines": 66,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/developing/agents/dataarchitect/AGENT.md",
+      "lines": 85,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/developing/agents/workspacemanager/AGENT.md",
+      "lines": 74,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/developing/agents/sentineldeveloping/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/developing/agents/performanceengineer/AGENT.md",
+      "lines": 98,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/backend/agents/sentinelbackend/AGENT.md",
+      "lines": 55,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/ios_apple/agents/SentinelIosApple/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/testing/agents/sentineltesting/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/engineering_core/agents/ErrorDetective/AGENT.md",
+      "lines": 52,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/engineering_core/agents/Frontend/AGENT.md",
+      "lines": 52,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/engineering_core/agents/SentinelEngineeringCore/AGENT.md",
+      "lines": 55,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/engineering_core/agents/Architect/AGENT.md",
+      "lines": 52,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/engineering_core/agents/Backend/AGENT.md",
+      "lines": 52,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/engineering_core/agents/DBA/AGENT.md",
+      "lines": 52,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/engineering_core/agents/QA/AGENT.md",
+      "lines": 52,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/10_operations_qa/training/agents/sentineltraining/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/10_operations_qa/project_management/agents/SentinelProjectManagement/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/10_operations_qa/supply_chain/agents/SentinelSupplyChain/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/10_operations_qa/execution/agents/assetoptimizer/AGENT.md",
+      "lines": 91,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/10_operations_qa/execution/agents/productmanager/AGENT.md",
+      "lines": 76,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/10_operations_qa/execution/agents/runtimeorchestrator/AGENT.md",
+      "lines": 40,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/10_operations_qa/execution/agents/memorymanager/AGENT.md",
+      "lines": 45,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/10_operations_qa/execution/agents/workflowagent/AGENT.md",
+      "lines": 58,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/10_operations_qa/execution/agents/sentinelexecution/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/10_operations_qa/execution/agents/orchestrator/AGENT.md",
+      "lines": 90,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/10_operations_qa/quality_assurance/agents/SentinelQualityAssurance/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/10_operations_qa/performance_ops/agents/Admin/AGENT.md",
+      "lines": 52,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/10_operations_qa/performance_ops/agents/VisualQa/AGENT.md",
+      "lines": 52,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/10_operations_qa/performance_ops/agents/EscalationHandler/AGENT.md",
+      "lines": 52,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/10_operations_qa/performance_ops/agents/Reviewer/AGENT.md",
+      "lines": 52,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/10_operations_qa/performance_ops/agents/RetroFacilitator/AGENT.md",
+      "lines": 52,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/10_operations_qa/performance_ops/agents/MetricsAgent/AGENT.md",
+      "lines": 52,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/10_operations_qa/performance_ops/agents/Automation/AGENT.md",
+      "lines": 52,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/03_security_compliance/identity/agents/sentinelidentity/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/03_security_compliance/data_sovereignty/agents/SentinelDataSovereignty/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/03_security_compliance/fintech_compliance/agents/SentinelFintechCompliance/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/03_security_compliance/fintech_banking/agents/FintechStrategist/AGENT.md",
+      "lines": 47,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/03_security_compliance/mena_regulatory_compliance/agents/RiskAgent/AGENT.md",
+      "lines": 52,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/03_security_compliance/mena_regulatory_compliance/agents/ContractLock/AGENT.md",
+      "lines": 52,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/03_security_compliance/legal_tech/agents/SentinelLegalTech/AGENT.md",
+      "lines": 56,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/03_security_compliance/cyber_security/agents/Security/AGENT.md",
+      "lines": 52,
+      "type": "agent"
+    },
+    {
+      "path": "factory/library/archive/legacy_pillars/10_engineering_devops/03_security_compliance/cyber_security/agents/SentinelCyberSecurity/AGENT.md",
+      "lines": 55,
+      "type": "agent"
+    }
+  ]
+}

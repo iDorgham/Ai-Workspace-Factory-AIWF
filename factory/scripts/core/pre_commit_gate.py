@@ -39,7 +39,10 @@ DENSITY_GATE = REPO_ROOT / "factory/scripts/core/spec_density_gate_v2.py"
 def check_snake_case() -> bool:
     print("🔍 Checking for snake_case naming violations...")
     try:
-        files = subprocess.check_output(["git", "diff", "--cached", "--name-only"], text=True).splitlines()
+        files = subprocess.check_output(
+            ["git", "diff", "--cached", "--name-only", "--diff-filter=ACMR"],
+            text=True,
+        ).splitlines()
     except Exception:
         return True
 
@@ -169,7 +172,10 @@ def check_spec_density() -> bool:
     print("🔍 Checking SDD spec density for staged phase folders...")
 
     try:
-        files = subprocess.check_output(["git", "diff", "--cached", "--name-only"], text=True).splitlines()
+        files = subprocess.check_output(
+            ["git", "diff", "--cached", "--name-only", "--diff-filter=ACMR"],
+            text=True,
+        ).splitlines()
     except Exception:
         return True
 
