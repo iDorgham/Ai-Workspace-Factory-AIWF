@@ -19,7 +19,17 @@
 
 # Factory Outputs & Backups (Local only)
 .backup/
-workspaces/
+# Workspaces: track only root + tier governance files; slug trees & templates stay local.
+workspaces/*
+!workspaces/README.md
+!workspaces/.gitkeep
+!workspaces/personal/
+workspaces/personal/*
+!workspaces/personal/README.md
+!workspaces/personal/metadata.json
+!workspaces/clients/
+workspaces/clients/*
+!workspaces/clients/README.md
 
 # AIWF Intelligence Layer (MUST BE TRACKED)
 # We remove .ai/ from the ignore list
