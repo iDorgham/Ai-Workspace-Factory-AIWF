@@ -71,18 +71,26 @@ All SDD Planning phases must adhere to the following mandatory industrial standa
 ---
 
 ## 🧠 Learned User Preferences
+- **egyptian_arabic_content_master**: Embed reference data inside the skill; do not link `docs/ar.md`; keep English alongside Arabic in `prompt_library/`.
 - **Industrial Aesthetic**: Prefers dark mode, high-tech, and "premium" visual styling for all artifacts and UIs.
 - **Library-First**: Prioritizes reuse and versioning over ad-hoc generation.
 - **Traceability**: Requires ISO-8601 timestamps and Reasoning Hashes for all autonomous mutations.
+- **Skills Layout Convention**: Store each skill in its own folder named after the skill with `skill.md` inside.
 
 ## 📋 Learned Workspace Facts
+- **Continual-learning index**: `.cursor/hooks/state/continual-learning-index.json` stores only parent transcript paths and integer mtimes (no secrets). **Local-only** under gitignored `.cursor/` — do not `git add` or commit; refresh stays on disk for the IDE/hooks.
+- **egyptian_arabic_content_master**: Lives under `.ai/skills/egyptian_arabic_content_master/` with factory library alignment; included in templates `ASSET_OS_LAB`, `BRAND_OS_STRATEGY`, `CORE_OS_SAAS`, `MENA_OS_BILINGUAL`, `MOBILE_OS_FORGE`, `WEB_OS_TITAN`.
 - **Root Directory**: `/Users/Dorgham/Documents/Work/Devleopment/AIWF`
 - **Sovereign Isolation**: All client work is strictly contained within `workspaces/<slug>/`.
 - **Governance**: All structural changes require explicit `Dorgham-Approval` via Omega Gate v2.
 - **Deploy Policy**: Vercel deployment ONLY via explicit `/deploy` command — never auto-triggered.
+- **Canonical library layout**: Skill manifests under `factory/library/skills/manifests`, subcommands under `factory/library/subcommands`, subagent registry at `factory/library/subagents/registry.json`, imported design packs (VoltAgent awesome-design-md) under `factory/library/design/<provider>/design.md` with catalog `factory/library/design/README.md`; runtime specialized subagents live under `.ai/subagents` (not `.ai/agents/specialized/subagents`).
+- **CORE_OS_SAAS template**: `workspaces/templates/CORE_OS_SAAS` is a pnpm workspace + Turborepo (`turbo.json`, root scripts call `turbo run`); Next.js app root is `apps/web`; for Next `15.0.0-rc.0` in that template use `apps/web/next.config.mjs` (TypeScript next config is not loaded).
+- **`active_phase` vs alphanumeric phases**: In `.ai/plan/_manifest.yaml`, **`active_phase`** is the numeric development phase **`id`** cursor (e.g. `18` singularity), not alphanumeric rows like **`18G`**; avoid two phases both **`status: active`** unless workflow explicitly allows parallel co-primary execution.
+- **v21 `phase.spec.json` status gates**: When **`phase.spec.json`** is neither **`draft`** nor **`planned`**, v21 structure/density enforcement applies; use **`pending`** for a density-PASS scaffold that may proceed without claiming **`active_phase`**—promote **`active`** only via coordinated manifest and phase workflow.
 
 ---
 
 *Registry version: 8.0.0*
-*Last updated: 2026-04-24T06:30:00+03:00*
+*Last updated: 2026-05-01T01:15:29Z*
 *AIWF System Compatibility: v20.0.0*

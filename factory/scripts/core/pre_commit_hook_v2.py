@@ -48,10 +48,10 @@ def check_snake_case() -> bool:
         ".github/",
         "docs/",
         "factory/library/scripts/tool_adapters/",
-        # Cursor hook state may use hyphenated JSON basenames; path is usually gitignored
-        ".cursor/hooks/state/",
+        # Gitignored IDE tree; only rare commits touch it (e.g. stop tracking accidental adds).
+        ".cursor/",
     )
-    skip_names = {"README", "TOMBSTONE", "CHANGELOG", "LICENSE", "Makefile"}
+    skip_names = {"README", "TOMBSTONE", "CHANGELOG", "LICENSE", "Makefile", "AGENTS"}
     # v21 SDD / C4 diagrams use hyphenated basenames required by spec_density_gate_v2.py
     allow_hyphenated_stems = {"c4-context", "c4-containers"}
 
@@ -61,6 +61,8 @@ def check_snake_case() -> bool:
         basename = Path(f).name
         if "." in basename:
             name_part = basename.split(".")[0]
+            if not name_part:
+                continue  # e.g. `.gitignore` → stem ""
             if name_part in skip_names:
                 continue
             if name_part in allow_hyphenated_stems:

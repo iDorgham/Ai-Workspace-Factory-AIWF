@@ -7,6 +7,8 @@
 # AI Tool Metadata (Keep IDE-specific metadata local)
 .antigravity/
 .claude/
+# Entire .cursor/ is local (commands/rules may be synced by tooling but do not
+# force-add hook state e.g. hooks/state/continual-learning-index.json — never commit .cursor/).
 .cursor/
 .kilocode/
 .kiro/
