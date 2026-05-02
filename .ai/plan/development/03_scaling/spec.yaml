@@ -14,6 +14,6 @@ requirements:
 
 validation_gates:
   - name: "scaffold-integrity"
-    command: "pytest tests/scaffold_test.py"
+    command: "pytest factory/tests/ -q"
   - name: "runner-parity"
     command: "python3 runner.py test --dry-run"

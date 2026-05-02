@@ -41,7 +41,7 @@ One command → A fully spec'd, compliant, production-ready sovereign workspace
 
 AIWF v20.1.0 introduces the **Industrial OS Galaxy** — six OMEGA-certified workspace templates under `workspaces/templates/`. **Spawn a new shard** from the repo root with:
 
-`bash .ai/scripts/factory_materialize.sh` (or **`bash scripts/materialize.sh`** — same file via repo-root `scripts/` convenience symlink)
+`bash .ai/scripts/factory_materialize.sh` (or **`bash .ai/scripts/bin/materialize.sh`** — same file via convenience symlink)
 
 Use the Cursor slash command **`/mat`** for the same instructions (run that script in a **terminal** — it prompts for template, layer, then slug). Alias: **`/factory materialize`**.
 
