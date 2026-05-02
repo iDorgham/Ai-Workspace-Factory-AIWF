@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import subprocess
 import sys
@@ -156,11 +157,17 @@ def main() -> int:
             "mirror_drift": mirror_drift,
         },
     }
+    # Open PRs often intentionally drift mirrors until merge + sync; do not block docs-health on that alone.
+    skip_mirror_fail = os.environ.get("GITHUB_EVENT_NAME") == "pull_request"
+
     failed = [
         name
         for name, payload in report["checks"].items()
         if payload.get("status") != "pass"
+        and not (skip_mirror_fail and name == "mirror_drift")
     ]
+    if skip_mirror_fail and mirror_drift.get("status") != "pass":
+        mirror_drift["pull_request_non_blocking"] = True
     report["summary"] = {"status": "pass" if not failed else "fail", "failed_checks": failed}
     print(json.dumps(report, indent=2))
     return 0 if not failed else 1
