@@ -6,6 +6,8 @@
 ## 🏗️ OVERVIEW
 This workspace is the primary incubation environment for the **AI Workspace Factory**. It operates under the **GLOBAL-PUBLIC** residency tier, enabling high-velocity R&D without the strict regional lockdowns of client shards.
 
+**New personal shard:** from the AIWF repo root run `bash .ai/scripts/factory_materialize.sh` (Cursor **`/mat`**) and choose the **personal** layer when prompted.
+
 ## 🔒 COMPLIANCE & GOVERNANCE
 - **Residency**: GLOBAL-PUBLIC (Non-sensitive).
 - **Isolation Protocol**: F4 Sovereign Isolation (No cross-contamination with `workspaces/clients/`).

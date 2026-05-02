@@ -84,7 +84,7 @@ AIWF is not a code generator. It is a **self-learning neural factory** that:
 | v16–v18 | Governance & Integrity | 2026-04-25 | Complete | Governance phase; 5-vector fix plan; structural integrity hardening |
 | v19.x | Sovereign Commit | 2026-04-25 | Complete | Pre-commit gate; reasoning hash; 3-step FSM commit chain |
 | v20.0 | OMEGA Equilibrium | 2026-04-25 | Complete | 12-point release gate; sovereign git ops; geofencing; swarm mutex safety |
-| **v20.1** | **Industrial Shards** | **2026-04-29** | **Current** | **Industrial Shard Spawning; materialize.sh engine; 6-shard OS Galaxy** |
+| **v20.1** | **Industrial Shards** | **2026-04-29** | **Current** | **Industrial shard spawning; `.ai/scripts/factory_materialize.sh` + `/mat`; 6-template OS galaxy** |
 | v21.0 | Neural Fabric | Planned | Pipeline | Tripartite Planning Singularity; 8 plan types; spec_density_gate_v2 |
 | v22.0+ | Quantum Sovereignty | Future | Planned | See [ROADMAP_LONGTERM.md](ROADMAP_LONGTERM.md) |
 
@@ -214,8 +214,9 @@ factory/
 │   ├── medical-pharmacy-ops.json
 │   └── [18 additional profiles]
 │
-└── materialize.sh                     # 🚀 Factory Materialization Engine (v20.1)
 ```
+
+**Workspace materialization** lives at the repository root: **`.ai/scripts/factory_materialize.sh`** (documented slash: **`/mat`** / **`/factory materialize`**). It is not under `factory/` — the script discovers the repo root by locating `workspaces/templates/`.
 
 ### 3.4 Tier 3 — `workspaces/` Execution Layer
 
@@ -237,6 +238,8 @@ workspaces/
 │   └── [src|docs|tests]/      # Project code and documentation
 └── personal/                  # Private innovation layer
 ```
+
+**Creating a shard:** From the repo root, run `bash .ai/scripts/factory_materialize.sh`. Prompts: (1) template — **numeric index** or **folder name** / unique substring; (2) layer — **`clients`** or **`personal`** (aliases: `0`/`1`, `client`, `mena-locked`, `rnd`, …); (3) **slug** for the new directory. Result: `workspaces/clients/<slug>/` or `workspaces/personal/<slug>/` with a fresh `git` repository.
 
 ### 3.5 C4 Architecture — System Context
 
@@ -506,7 +509,8 @@ Full spec: `.ai/commands/guide.md` (registry + humanization; see file frontmatte
 ### 6.2 `/dev` — Workspace Lifecycle
 
 ```
-/dev materialize --project [name] --profile [slug]   → Scaffold sovereign workspace
+bash .ai/scripts/factory_materialize.sh              → Interactive shard spawn (template + layer + slug); /mat
+/dev materialize --project [name] --profile [slug]   → (Narrative / future CLI) scaffold sovereign workspace
 /dev implement --spec [spec_name]                    → Materialize code from OMEGA specs
 /dev build --project [name]                         → Generate manifests + release stubs
 /dev deploy --project [name] --env [env]            → Gated deploy to MENA-SOIL nodes

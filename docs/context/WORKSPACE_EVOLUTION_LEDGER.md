@@ -37,6 +37,7 @@ The industrial galaxy is organized into distinct, high-fidelity tiers:
 ### 3. Production Tier (The Galaxy)
 - **`workspaces/clients/`**: Secure, isolated shards for external client projects.
 - **`workspaces/personal/`**: High-velocity shards for internal experimentation and R&D.
+- **`workspaces/templates/`**: Six industrial OS templates; new shards are spawned with **`.ai/scripts/factory_materialize.sh`** (Cursor **`/mat`** / **`/factory materialize`**) into `clients/` or `personal/` using interactive template + layer + slug prompts.
 
 ---
 

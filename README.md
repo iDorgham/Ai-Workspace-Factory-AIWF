@@ -39,7 +39,11 @@
 ```
 One command → A fully spec'd, compliant, production-ready sovereign workspace
 
-AIWF v20.1.0 introduces the **Industrial OS Galaxy** — 6 specialized, OMEGA-certified workspace templates that can be materialized in seconds via the root `materialize.sh` engine.
+AIWF v20.1.0 introduces the **Industrial OS Galaxy** — six OMEGA-certified workspace templates under `workspaces/templates/`. **Spawn a new shard** from the repo root with:
+
+`bash .ai/scripts/factory_materialize.sh`
+
+Use the Cursor slash command **`/mat`** for the same instructions (run that script in a **terminal** — it prompts for template, layer, then slug). Alias: **`/factory materialize`**.
 
 ---
 
@@ -136,16 +140,16 @@ AIWF/
 │   ├── library/                  ← Shared agents, skills, templates, planning mirror
 │   └── profiles/                 ← 20+ industry workspace profiles
 │
-└── workspaces/                   ← 📦 Sovereign Client Environments
-    ├── templates/                ← 🌌 Industrial OS Shards (v20.1)
+└── workspaces/                   ← 📦 Sovereign shards (see workspaces/README.md)
+    ├── templates/                ← 🌌 Industrial OS templates (v20.1; local clone content — see .gitignore)
     │   ├── CORE_OS_SAAS/         ← Full-Stack SaaS Factory
     │   ├── MOBILE_OS_FORGE/      ← High-Performance Mobile Forge
     │   ├── WEB_OS_TITAN/         ← Web & Content Dominance Shard
     │   ├── MENA_OS_BILINGUAL/    ← Ar/En Regional SEO Engine
     │   ├── ASSET_OS_LAB/         ← GenAI Visual Production Lab
     │   └── BRAND_OS_STRATEGY/    ← Industrial Brand Engine
-    ├── clients/{slug}/           ← Professional project sharding
-    └── personal/                 ← Private innovation layer
+    ├── clients/{slug}/           ← Production shards (local-only; use materializer)
+    └── personal/{slug}/          ← R&D shards (local-only; tier README tracked)
 ```
 
 ---
@@ -179,7 +183,8 @@ AIWF/
 | 🧭 **`/guide`** | `dashboard` · `learn` · `chaos` · `tutor` · `brainstorm` · `heal` · `plan [type]` · `spec [topic]` · `gate [path]` · `adapter [task]` · `memory:view` | Oversight & Learning | Antigravity intelligence layer. Humanized guidance, v21 planning intelligence, CLI adapter routing. |
 | 🏭 **`/dev`** | `materialize` · `implement` · `build` · `deploy` · `archive` | Full Lifecycle | End-to-end workspace lifecycle: scaffold → code → package → deploy → seal. |
 | 📐 **`/plan`** | `blueprint` · `audit` · `[type] "[topic]"` | Planning | Generate sovereign SDD blueprints for any of 8 plan types. Density gate enforced automatically. |
-| 🔧 **`/factory`** | `repair` · `sync` · `assign` · `maintain` | Factory Health | Core engine maintenance: repair drift, sync library, assign swarm tasks. |
+| 🔧 **`/factory`** | `repair` · `sync` · `assign` · `maintain` · **`materialize`** | Factory Health | Library repair/sync; **`materialize`** spawns shards (shortcut **`/mat`** → run `bash .ai/scripts/factory_materialize.sh` in Terminal). |
+| ⚡ **`/mat`** | *(none — invokes script)* | Workspace spawn | Short alias: materialize a template into `workspaces/personal/` or `workspaces/clients/` (interactive). |
 | 📚 **`/library`** | `check` · `fix` · `promote` · `help` | Library Governance | Manage the global component library, validate contracts, promote workspace skills. |
 | 🔗 **`/git`** | `auto` · `commit` · `push` · `tag` · `release` | Sovereign Git Ops | Governed git operations with reasoning hash, Law 151 certification, FSM chain executor. |
 | 🛡️ **`/audit`** | `health` · `security` · `compliance` · `12-point` | Audit & Compliance | Run any subset of the 12-point OMEGA audit. Includes Law 151/2020 residency checks. |
@@ -265,6 +270,7 @@ python3 factory/scripts/core/omega_release_gate.py --all
 
 ```bash
 /guide ping                             # Confirm Antigravity is active
+bash .ai/scripts/factory_materialize.sh # New workspace from template (interactive; /mat in chat = same)
 /guide plan development                 # See the development SDD lifecycle
 /plan blueprint --from 00-foundation    # Start a new development blueprint
 /audit health                           # Check ecosystem health score
@@ -288,8 +294,8 @@ sequenceDiagram
     Gate-->>AIWF: ✅ PASS
     AIWF-->>You: 5-phase SDD plan ready
 
-    You->>AIWF: /dev materialize --profile redsea-tourism-booking
-    AIWF->>WS: Scaffold sovereign workspace
+    You->>AIWF: bash .ai/scripts/factory_materialize.sh (or /mat → same)
+    AIWF->>WS: Copy template → clients/ or personal/ + localize paths
     WS-->>AIWF: metadata.json + full structure created
 
     You->>AIWF: /dev implement --spec booking_orchestrator
