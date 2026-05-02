@@ -118,9 +118,11 @@ graph TD
 
 ```
 AIWF/
+├── docs/                         ← PRD, roadmap, context; **`docs/reports/`** = generated audits (not repo root)
 ├── .ai/                          ← 🧠 Metadata & Intelligence Layer
 │   ├── agents/                   ← Agent registry, routing map, sub-agent contracts
 │   ├── commands/                 ← 9-core command specs (guide, dev, plan, git…)
+│   ├── scripts/                  ← `factory_materialize.sh` (+ **`bin/materialize.sh`** symlink for `/mat`)
 │   ├── governance/               ← Versioning policy, SDD protocols, compliance
 │   ├── plan/                     ← Active plans: 8 types × 5 phases × ≥12 files
 │   │   ├── _manifest.yaml        ← Phase registry + planning system block
@@ -139,6 +141,7 @@ AIWF/
 │   │   │                             omega_release_gate, pre_commit_gate, chain_executor
 │   │   ├── automation/           ← saas_scaffolder, workspace provisioner
 │   │   └── maintenance/          ← health_scorer, chaos_validator, log_broadcaster
+│   ├── tests/                    ← Python repo harness (`pytest factory/tests/` from root)
 │   ├── library/                  ← Shared agents, skills, templates, planning mirror
 │   └── profiles/                 ← 20+ industry workspace profiles
 │
@@ -185,7 +188,7 @@ AIWF/
 | 🧭 **`/guide`** | `dashboard` · `learn` · `chaos` · `tutor` · `brainstorm` · `heal` · `plan [type]` · `spec [topic]` · `gate [path]` · `adapter [task]` · `memory:view` | Oversight & Learning | Antigravity intelligence layer. Humanized guidance, v21 planning intelligence, CLI adapter routing. |
 | 🏭 **`/dev`** | `materialize` · `implement` · `build` · `deploy` · `archive` | Full Lifecycle | End-to-end workspace lifecycle: scaffold → code → package → deploy → seal. |
 | 📐 **`/plan`** | `blueprint` · `audit` · `[type] "[topic]"` | Planning | Generate sovereign SDD blueprints for any of 8 plan types. Density gate enforced automatically. |
-| 🔧 **`/factory`** | `repair` · `sync` · `assign` · `maintain` · **`materialize`** | Factory Health | Library repair/sync; **`materialize`** spawns shards (shortcut **`/mat`** → run `bash .ai/scripts/factory_materialize.sh` in Terminal). |
+| 🔧 **`/factory`** | `repair` · `sync` · `assign` · `maintain` · **`materialize`** | Factory Health | Library repair/sync; **`materialize`** spawns shards (shortcut **`/mat`** → run `bash .ai/scripts/factory_materialize.sh` or **`bash .ai/scripts/bin/materialize.sh`** in Terminal). |
 | ⚡ **`/mat`** | *(none — invokes script)* | Workspace spawn | Short alias: materialize a template into `workspaces/personal/` or `workspaces/clients/` (interactive). |
 | 📚 **`/library`** | `check` · `fix` · `promote` · `help` | Library Governance | Manage the global component library, validate contracts, promote workspace skills. |
 | 🔗 **`/git`** | `auto` · `commit` · `push` · `tag` · `release` | Sovereign Git Ops | Governed git operations with reasoning hash, Law 151 certification, FSM chain executor. |

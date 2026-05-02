@@ -19,3 +19,4 @@
 
 **AIWF library import:** Vendored skills and agents from the GitHub links above (except NerdyChefsAI, which has no URL here) live under `factory/library/skills/github_imports/`, `factory/library/agents/github_imports/`, and curated CSV/readme snapshots under `factory/library/reference/github_curated/`. Re-run `python3 factory/scripts/core/import_github_skills_library.py --clone-root <clones>` after refreshing shallow clones.
 
+**Related layout:** Generated audits and other machine-written reports belong under [`docs/reports/README.md`](reports/README.md) (not the repository root).

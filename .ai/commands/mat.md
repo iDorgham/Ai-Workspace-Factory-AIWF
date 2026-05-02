@@ -16,6 +16,8 @@ Run from the **AIWF repository root** (where `workspaces/templates/` exists):
 
 ```bash
 bash .ai/scripts/factory_materialize.sh
+# equivalent:
+# bash .ai/scripts/bin/materialize.sh
 ```
 
 The script **prints** templates with indices, then asks **in order**:

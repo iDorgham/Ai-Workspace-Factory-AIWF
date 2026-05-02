@@ -124,6 +124,8 @@ Before v21, SDD existed only for the `development/` plan type. v21 expanded to 8
 └─────────────────────────────────────────────────────────┘
 ```
 
+**Cross-cutting (repo root):** `docs/` holds human-facing specs (`PRD.md`, `ROADMAP_LONGTERM.md`, …) and **`docs/reports/`** for generated machine output (e.g. library **`audit_report.json`**). The factory Python harness lives under **`factory/tests/`** (`pytest factory/tests/` from the repo root).
+
 ### 3.2 Tier 1 — `.ai/` Metadata Layer
 
 ```
@@ -149,6 +151,10 @@ Before v21, SDD existed only for the `development/` plan type. v21 expanded to 8
 ├── governance/
 │   ├── versioning.md       # Sovereign commit schema, file class rules
 │   └── SDD_PROTOCOLS.md    # SDD lifecycle, density gate rules, C4 requirements
+│
+├── scripts/
+│   ├── factory_materialize.sh   # Interactive shard spawn; discovers repo via workspaces/templates/
+│   └── bin/materialize.sh       # Symlink — same script (documented as /mat convenience)
 │
 ├── plan/
 │   ├── _manifest.yaml      # Phase registry (23+ phases) + planning_system block
@@ -200,6 +206,8 @@ factory/
 │       ├── chaos_validator.py         # Proactive stress-test runner
 │       └── log_broadcaster.py         # Optional Omega Relay client (v1.1.0 — timeout-safe)
 │
+├── tests/                               # Repo pytest harness (CLI router, orchestration, scraper)
+│
 ├── library/
 │   ├── agents/                        # Shared agent definitions
 │   ├── skills/                        # Synthesized skill shards
@@ -216,7 +224,7 @@ factory/
 │
 ```
 
-**Workspace materialization** lives at the repository root: **`.ai/scripts/factory_materialize.sh`** (documented slash: **`/mat`** / **`/factory materialize`**). It is not under `factory/` — the script discovers the repo root by locating `workspaces/templates/`.
+**Workspace materialization** lives under **`.ai/scripts/`**: **`factory_materialize.sh`** (same content as **`.ai/scripts/bin/materialize.sh`**; documented slash: **`/mat`** / **`/factory materialize`**). The script is not under `factory/` — it discovers the repo root by locating `workspaces/templates/`.
 
 ### 3.4 Tier 3 — `workspaces/` Execution Layer
 
@@ -239,7 +247,7 @@ workspaces/
 └── personal/                  # Private innovation layer
 ```
 
-**Creating a shard:** From the repo root, run `bash .ai/scripts/factory_materialize.sh`. Prompts: (1) template — **numeric index** or **folder name** / unique substring; (2) layer — **`clients`** or **`personal`** (aliases: `0`/`1`, `client`, `mena-locked`, `rnd`, …); (3) **slug** for the new directory. Result: `workspaces/clients/<slug>/` or `workspaces/personal/<slug>/` with a fresh `git` repository.
+**Creating a shard:** From the repo root, run `bash .ai/scripts/factory_materialize.sh` (or `bash .ai/scripts/bin/materialize.sh`). Prompts: (1) template — **numeric index** or **folder name** / unique substring; (2) layer — **`clients`** or **`personal`** (aliases: `0`/`1`, `client`, `mena-locked`, `rnd`, …); (3) **slug** for the new directory. Result: `workspaces/clients/<slug>/` or `workspaces/personal/<slug>/` with a fresh `git` repository.
 
 ### 3.5 C4 Architecture — System Context
 

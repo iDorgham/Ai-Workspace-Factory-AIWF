@@ -39,6 +39,8 @@ From the **AIWF repository root** (directory that contains `workspaces/templates
 
 ```bash
 bash .ai/scripts/factory_materialize.sh
+# same engine:
+# bash .ai/scripts/bin/materialize.sh
 ```
 
 **Cursor:** use slash **`/mat`** — it tells the assistant to run the same command in a **real Terminal** (interactive `read` prompts do not work reliably from chat stdin).

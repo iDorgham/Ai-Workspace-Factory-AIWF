@@ -30,18 +30,20 @@ The industrial galaxy is organized into distinct, high-fidelity tiers:
 - **`.backup/`**: Immutable architectural snapshots and recovery shards.
 
 ### 2. Core Tier (The Factory)
-- **`factory/`**: Industrial core containing orchestration logic, library pillars (00-50), and scripts.
+- **`factory/`**: Industrial core containing orchestration logic, library pillars (00-50), **`factory/scripts/`**, and the **`factory/tests/`** Python harness.
 - **`dashboard/`**: Real-time KPI monitoring and strategic visualization layer.
-- **`docs/`**: Professional documentation suite (PRDs, Roadmaps, Certifications).
+- **`docs/`**: Professional documentation suite (PRDs, Roadmaps, Certifications) plus **`docs/reports/`** for generated JSON/text (e.g. library audit output — not the repo root).
 
 ### 3. Production Tier (The Galaxy)
 - **`workspaces/clients/`**: Secure, isolated shards for external client projects.
 - **`workspaces/personal/`**: High-velocity shards for internal experimentation and R&D.
-- **`workspaces/templates/`**: Six industrial OS templates; new shards are spawned with **`.ai/scripts/factory_materialize.sh`** (Cursor **`/mat`** / **`/factory materialize`**) into `clients/` or `personal/` using interactive template + layer + slug prompts.
+- **`workspaces/templates/`**: Six industrial OS templates; new shards are spawned with **`.ai/scripts/factory_materialize.sh`** (same as **`.ai/scripts/bin/materialize.sh`**; Cursor **`/mat`** / **`/factory materialize`**) into `clients/` or `personal/` using interactive template + layer + slug prompts.
 
 ---
 
 ## 📈 CONTINUAL IMPROVEMENT LOG
+- **v20.1+ (repo hygiene)**:
+    - **Root cleanup:** Removed legacy root **`DESIGN.md`**; **`docs/reports/`** is the canonical home for **`audit_report.json`** and similar generated artifacts; **`factory/tests/`** holds the repo pytest harness (formerly root **`tests/`**); **`scripts/materialize`** convenience entry moved to **`.ai/scripts/bin/materialize.sh`**.
 - **v19.0.0 (Singularity)**: 
     - Purged legacy monoliths and decommissioned `.antigravity/`.
     - Unified 9-core command suite across all tools.

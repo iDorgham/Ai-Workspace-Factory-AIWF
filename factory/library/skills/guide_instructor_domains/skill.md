@@ -14,7 +14,7 @@
 | Domain | AIWF anchors |
 |--------|----------------|
 | Security / secrets | `.github/workflows/`, `factory/scripts/core/pre_commit_hook_v2.py`, `official_semgrep_*` skills |
-| Development / engineering | `.ai/plan/`, `factory/scripts/`, `tests/` |
+| Development / engineering | `.ai/plan/`, `factory/scripts/`, `factory/tests/` |
 | Design | `factory/library/design/`, `official_figma_*`, `official_anthropics_canvas_*` |
 | Content / SEO / marketing | `.ai/plan/content/`, `marketing_*`, `egyptian_arabic_content_master` |
 | GitHub / Actions / Advanced Security | `.github/workflows/`, `official_github_*`, `official_callstackincubator_github_actions` |

@@ -89,7 +89,7 @@
 | | `dashboard` | orchestrator | Real-time KPI/Health UI |
 | | `tutor` | guide-agent | Interactive pedagogy and onboarding |
 | **`/help`** | | guide-agent | usage reference and sovereignty info |
-| **`/mat`** | | factory-manager | Interactive workspace materialization — run `bash .ai/scripts/factory_materialize.sh` from repo root | No |
+| **`/mat`** | | factory-manager | Interactive workspace materialization — run `bash .ai/scripts/factory_materialize.sh` (or `bash .ai/scripts/bin/materialize.sh`) from repo root | No |
 
 ---
 
