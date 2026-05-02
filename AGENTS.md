@@ -78,6 +78,7 @@ All SDD Planning phases must adhere to the following mandatory industrial standa
 - **Skills Layout Convention**: Store each skill in its own folder named after the skill with `skill.md` inside.
 
 ## 📋 Learned Workspace Facts
+- **`/guide` instructor mode (v3.4):** Natural-language `/guide …` (when the first token is not a known subcommand) is handled as **explain / understand / learn** first; domain map lives in `.ai/commands/guide.md` (**INSTRUCTOR MODE**) and `.ai/skills/guide_instructor_domains/skill.md`. **Canonical + mirror:** edit only `.ai/commands/guide.md`, then `cp` to `factory/library/commands/guide.md`; Antigravity persona: `.ai/agents/core/antigravity.md` (**v2.1.0**). Optional deep-lesson subagent: `.ai/subagents/guide_instructor.md`.
 - **Continual-learning index**: `.cursor/hooks/state/continual-learning-index.json` stores only parent transcript paths and integer mtimes (no secrets). **Local-only** under gitignored `.cursor/` — do not `git add` or commit; refresh stays on disk for the IDE/hooks.
 - **egyptian_arabic_content_master**: Lives under `.ai/skills/egyptian_arabic_content_master/` with factory library alignment; included in templates `ASSET_OS_LAB`, `BRAND_OS_STRATEGY`, `CORE_OS_SAAS`, `MENA_OS_BILINGUAL`, `MOBILE_OS_FORGE`, `WEB_OS_TITAN`.
 - **Root Directory**: `/Users/Dorgham/Documents/Work/Devleopment/AIWF`

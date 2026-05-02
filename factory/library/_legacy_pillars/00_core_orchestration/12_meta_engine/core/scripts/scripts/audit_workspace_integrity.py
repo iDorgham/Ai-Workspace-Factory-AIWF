@@ -19,7 +19,7 @@ from paths import REPO_ROOT  # noqa: E402
 
 ROOT = REPO_ROOT
 ROUTING_PATH = ROOT / ".ai/cli-layer/command-routing.json"
-ROUTING_DOC_PATH = ROOT / ".ai/commands-multi-tool.md"
+ROUTING_DOC_PATH = ROOT / ".ai/commands/commands.md"
 STATE_PATH = ROOT / ".ai/memory/state.json"
 TOOL_REGISTRY_PATH = ROOT / ".ai/tool-registry.json"
 ADAPTERS_DIR = ROOT / ".ai/scripts/adapters"

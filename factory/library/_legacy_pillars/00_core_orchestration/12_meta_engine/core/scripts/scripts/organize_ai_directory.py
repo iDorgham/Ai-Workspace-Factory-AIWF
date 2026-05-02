@@ -14,7 +14,6 @@ MOVES = {
     ],
     "commands": [
         "commands.md",
-        "commands-multi-tool.md"
     ],
     "governance": [
         "access-rules.md",

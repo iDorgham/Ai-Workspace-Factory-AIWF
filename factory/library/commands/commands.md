@@ -7,10 +7,12 @@
 # Zero flags. Zero manual paths. Zero ambiguity.
 #
 # Slash-doc sync (when adding/changing commands in this file):
-#   1) Edit THIS file (`.ai/commands/commands.md`) as canonical markdown.
-#   2) Mirror into Cursor: `cp .ai/commands/commands.md .cursor/commands/commands.md`
-#   3) Outbound library mirror (optional): `python3 factory/scripts/core/industrial_mirror_sync.py`
-#      maps `.ai/commands/` → `factory/library/commands/` — confirm output in that script.
+#   1) Edit THIS file (`.ai/commands/commands.md`) as canonical markdown (includes **MULTI-TOOL RANKINGS** below).
+#   2) Push to IDE layers: `bash factory/scripts/core/sync_ide_triple_layer.sh`  
+#      (rsync `.ai/commands/` → `.cursor/commands/` + `.antigravity/commands/`, then removes legacy duplicate filenames).
+#   3) Or manual: `cp .ai/commands/commands.md .cursor/commands/commands.md` and same for `.antigravity/commands/`.
+#   4) Outbound factory mirror (optional): `python3 factory/scripts/core/industrial_mirror_sync.py`
+# Do **not** maintain separate `commands-multi-tool.md` / `commands_multi_tool.md` — merged here.
 # ============================================================
 
 ---

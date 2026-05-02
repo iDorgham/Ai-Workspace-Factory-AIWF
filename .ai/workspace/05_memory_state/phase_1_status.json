@@ -37,9 +37,9 @@
         "status": "active"
       },
       "command_router": {
-        "file": ".ai/commands-multi-tool.md",
+        "file": ".ai/commands/commands.md",
         "status": "active",
-        "supersedes": ".ai/commands.md"
+        "note": "Router + MULTI-TOOL RANKINGS merged in commands.md (legacy commands-multi-tool.md retired)"
       },
       "data_ownership": {
         "file": ".ai/data-ownership-multi-tool.md",

@@ -5,7 +5,7 @@ Status: ✅ ALL PREREQUISITES COMPLETE
 
 Files Created:
   ✅ .ai/DAY-3-IMPLEMENTATION-GUIDE.md (140 min plan)
-  ✅ .ai/commands-multi-tool.md (command routing rules)
+  ✅ .ai/commands/commands.md (router + MULTI-TOOL RANKINGS; legacy commands-multi-tool merged)
   ✅ tests/day-3-tool-router-tests.json (12 test cases)
 
 Next Steps:
