@@ -8,12 +8,15 @@ from typing import Any
 
 
 def find_repo_root() -> Path:
+    """Resolve AIWF repo root for scripts that live under factory/library/... (CI may omit .ai/memory)."""
     here = Path(__file__).resolve()
     for parent in [here.parent, *here.parents]:
         marker = parent / ".ai" / "memory" / "state.json"
         if marker.is_file():
             return parent
-    raise FileNotFoundError("Could not locate repo root (missing .ai/memory/state.json)")
+        if (parent / ".git").is_dir() or (parent / ".git").is_file():
+            return parent
+    raise FileNotFoundError("Could not locate repo root (no .ai/memory/state.json and no .git ancestor)")
 
 
 REPO_ROOT: Path = find_repo_root()
