@@ -10,6 +10,9 @@
 # Entire .cursor/ is local (commands/rules may be synced by tooling but do not
 # force-add hook state e.g. hooks/state/continual-learning-index.json — never commit .cursor/).
 .cursor/
+# Rules mirror only: `sync_ide_triple_layer.sh` rsyncs `.cursor/rules/` → here for agents/CLI.
+# Canonical editor rules stay under `.cursor/rules/`; do not version this copy.
+.ai/rules/
 .kilocode/
 .kiro/
 .qwen/

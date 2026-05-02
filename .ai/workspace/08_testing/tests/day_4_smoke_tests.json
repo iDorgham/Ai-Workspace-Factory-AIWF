@@ -220,7 +220,7 @@
     "dependencies": [
       ".ai/scripts/tool-router.py",
       ".ai/scripts/test-flag-parser.py",
-      ".ai/commands-multi-tool.md",
+      ".ai/commands/commands.md",
       ".ai/tool-registry.json",
       "logs/workflow.jsonl (will be appended)",
       "logs/tool-performance.jsonl (will be appended)"

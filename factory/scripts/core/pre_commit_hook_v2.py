@@ -31,7 +31,7 @@ def _repo_root() -> Path:
 
 
 REPO_ROOT = _repo_root()
-DRIFT_CHECK = REPO_ROOT / "factory/library/_legacy_pillars/10_engineering_devops/01_software_engineering/developing/scripts/check_mirror_drift.py"
+DRIFT_CHECK = REPO_ROOT / "factory/scripts/core/check_mirror_drift.py"
 DENSITY_GATE = REPO_ROOT / "factory/scripts/core/spec_density_gate_v2.py"
 
 # ── Check 1: snake_case naming ─────────────────────────────────────────────────
@@ -49,12 +49,11 @@ def check_snake_case() -> bool:
         "docs/",
         "factory/library/scripts/tool_adapters/",
         # Archived pillar tree: historical filenames (kebab-case, role playbooks, etc.).
-        "factory/library/_legacy_pillars/",
+        "factory/library/archive/legacy_pillars/",
         # Gitignored IDE tree; only rare commits touch it (e.g. stop tracking accidental adds).
         ".cursor/",
         # Third-party / catalog template filenames use kebab-case stems by convention.
         ".ai/templates/subagents/",
-        "factory/templates/subagents/",
         "factory/library/templates/subagents/",
         "factory/library/templates/workspace_imports/",
         # Registry-style mirrors of Claude subagent packs (kebab-case filenames).

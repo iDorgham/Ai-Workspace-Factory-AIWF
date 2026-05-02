@@ -457,7 +457,7 @@
     "owner": "guide-agent",
     "depends_on": [
       ".ai/tool-registry.json",
-      ".ai/commands-multi-tool.md",
+      ".ai/commands/commands.md",
       ".ai/cli-layer/tool-router.md"
     ]
   }

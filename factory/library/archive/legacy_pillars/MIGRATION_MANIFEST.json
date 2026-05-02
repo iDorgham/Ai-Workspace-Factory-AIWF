@@ -1,0 +1,58 @@
+{
+  "action": "library_reorganization",
+  "strategy": "artifact_first_with_legacy_archive",
+  "moved": [
+    {
+      "from": "00_core_orchestration",
+      "to": "archive/legacy_pillars/00_core_orchestration"
+    },
+    {
+      "from": "02-web-platforms",
+      "to": "archive/legacy_pillars/02-web-platforms"
+    },
+    {
+      "from": "06-branding",
+      "to": "archive/legacy_pillars/06-branding"
+    },
+    {
+      "from": "10_engineering_devops",
+      "to": "archive/legacy_pillars/10_engineering_devops"
+    },
+    {
+      "from": "20_content_strategy",
+      "to": "archive/legacy_pillars/20_content_strategy"
+    },
+    {
+      "from": "30_web_platforms",
+      "to": "archive/legacy_pillars/30_web_platforms"
+    },
+    {
+      "from": "40_verticals",
+      "to": "archive/legacy_pillars/40_verticals"
+    },
+    {
+      "from": "50_intelligence_marketing",
+      "to": "archive/legacy_pillars/50_intelligence_marketing"
+    }
+  ],
+  "canonical_top_level": [
+    "agents",
+    "commands",
+    "skills",
+    "subagents",
+    "subcommands",
+    "templates",
+    "rules",
+    "scripts",
+    "design",
+    "registry",
+    "profiles",
+    "mirror",
+    "reports",
+    "planning",
+    "archive",
+    "_gen",
+    ".archive",
+    ".ai"
+  ]
+}

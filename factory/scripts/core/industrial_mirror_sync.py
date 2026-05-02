@@ -5,13 +5,17 @@ AIWF Industrial Mirror Sync v1.0.0
 Deep outbound mirror: .ai/ → factory/library/
 
 Mappings:
-  .ai/agents/     -> factory/library/_legacy_pillars/00_core_orchestration/registry/agents/
+  .ai/agents/     -> factory/library/00_core_orchestration/registry/agents/
+                   + factory/library/agents/workspace_imports/ai/agents/
+                   + factory/library/archive/legacy_pillars/00_core_orchestration/registry/agents/
   .ai/commands/   -> factory/library/commands/
-  .ai/governance/ -> factory/library/_legacy_pillars/00_core_orchestration/omega_singularity/governance/
+  .ai/governance/ -> factory/library/00_core_orchestration/omega_singularity/governance/
   .ai/plan/       -> factory/library/planning/
-  .ai/skills/     -> factory/library/skills/manifests/
+  .ai/skills/     -> factory/library/skills/ (per-skill folders; `egyptian_arabic_content_master` may merge)
+  .ai/subagents/  -> factory/library/subagents/workspace_imports/ai/subagents/
   .ai/templates/  -> factory/library/templates/
   .ai/registry/   -> factory/library/registry/
+  .ai/rules/      -> factory/library/rules/workspace_imports/ai/rules/
 
 Exclusions:
   logs/, locks/, memory/, dashboard/, .DS_Store
@@ -35,10 +39,18 @@ MAPPINGS = {
     "commands": "commands",
     "governance": "00_core_orchestration/omega_singularity/governance",
     "plan": "planning",
-    "skills": "skills/manifests",
+    "skills": "skills",
+    "subagents": "subagents/workspace_imports/ai/subagents",
     "templates": "templates",
     "registry": "registry",
+    "rules": "rules/workspace_imports/ai/rules",
 }
+
+# Additional destinations for the same .ai/agents/ tree (keep imports + legacy pillars aligned).
+AGENT_MIRROR_EXTRA = (
+    "agents/workspace_imports/ai/agents",
+    "archive/legacy_pillars/00_core_orchestration/registry/agents",
+)
 
 EXCLUSIONS = {"logs", "locks", "memory", "dashboard", ".DS_Store", "__pycache__", "tmp", "scratch"}
 
@@ -100,6 +112,14 @@ def main():
         synced = sync_dir(src_path, dest_path)
         total_synced.extend(synced)
         print(f"   ✅ {len(synced)} files synced.")
+
+        if src_slug == "agents":
+            for extra_rel in AGENT_MIRROR_EXTRA:
+                extra_dest = LIBRARY_ROOT / extra_rel
+                print(f"🔄 Syncing {src_slug} -> {extra_rel} (parallel mirror)...")
+                extra_synced = sync_dir(src_path, extra_dest)
+                total_synced.extend(extra_synced)
+                print(f"   ✅ {len(extra_synced)} files synced.")
 
     reasoning_hash = generate_reasoning_hash(total_synced)
     

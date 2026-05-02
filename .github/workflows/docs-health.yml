@@ -23,10 +23,10 @@ jobs:
 
       - name: Generate workspace index/status
         run: |
-          export PYTHONPATH=$PYTHONPATH:$(pwd)/factory/library/01-software-engineering/developing/scripts
-          python3 factory/library/01-software-engineering/developing/scripts/workspace_health.py
+          export PYTHONPATH=$PYTHONPATH:$(pwd)/factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/developing/scripts
+          python3 factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/developing/scripts/workspace_health.py
 
       - name: Run docs quality gate
         run: |
-          export PYTHONPATH=$PYTHONPATH:$(pwd)/factory/library/01-software-engineering/developing/scripts
-          python3 factory/library/01-software-engineering/developing/scripts/docs_quality_gate.py
+          export PYTHONPATH=$PYTHONPATH:$(pwd)/factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/developing/scripts
+          python3 factory/library/archive/legacy_pillars/10_engineering_devops/01_software_engineering/developing/scripts/docs_quality_gate.py
