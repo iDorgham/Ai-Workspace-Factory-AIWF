@@ -5,11 +5,11 @@ AIWF Industrial Mirror Sync v1.0.0
 Deep outbound mirror: .ai/ → factory/library/
 
 Mappings:
-  .ai/agents/     -> factory/library/00_core_orchestration/registry/agents/
+  .ai/agents/     -> factory/library/core_orchestration/registry/agents/
                    + factory/library/agents/workspace_imports/ai/agents/
                    + factory/library/archive/legacy_pillars/00_core_orchestration/registry/agents/
   .ai/commands/   -> factory/library/commands/
-  .ai/governance/ -> factory/library/00_core_orchestration/omega_singularity/governance/
+  .ai/governance/ -> factory/library/core_orchestration/omega_singularity/governance/
   .ai/plan/       -> factory/library/planning/
   .ai/skills/     -> factory/library/skills/ (per-skill folders; `egyptian_arabic_content_master` may merge)
   .ai/subagents/  -> factory/library/subagents/workspace_imports/ai/subagents/
@@ -35,9 +35,9 @@ SOURCE_ROOT = ROOT / ".ai"
 LIBRARY_ROOT = ROOT / "factory/library"
 
 MAPPINGS = {
-    "agents": "00_core_orchestration/registry/agents",
+    "agents": "core_orchestration/registry/agents",
     "commands": "commands",
-    "governance": "00_core_orchestration/omega_singularity/governance",
+    "governance": "core_orchestration/omega_singularity/governance",
     "plan": "planning",
     "skills": "skills",
     "subagents": "subagents/workspace_imports/ai/subagents",

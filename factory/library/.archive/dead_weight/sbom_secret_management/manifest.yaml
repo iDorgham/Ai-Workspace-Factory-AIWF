@@ -1,7 +1,0 @@
-name: Sbom Secret Management
-description: "Standardized protocols for Sbom Secret Management."
-metadata:
-  version: 10.0.0
-  tier: 💎 OMEGA
-  status: SYNCED
-  logic: operational-remediation

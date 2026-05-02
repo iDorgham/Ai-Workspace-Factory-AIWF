@@ -1,7 +1,0 @@
-name: Sdd Spec Workflow
-description: "Standardized protocols for Sdd Spec Workflow."
-metadata:
-  version: 10.0.0
-  tier: 💎 OMEGA
-  status: SYNCED
-  logic: operational-remediation

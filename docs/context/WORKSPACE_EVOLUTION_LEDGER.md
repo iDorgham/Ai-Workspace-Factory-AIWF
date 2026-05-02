@@ -30,7 +30,7 @@ The industrial galaxy is organized into distinct, high-fidelity tiers:
 - **`.backup/`**: Immutable architectural snapshots and recovery shards.
 
 ### 2. Core Tier (The Factory)
-- **`factory/`**: Industrial core containing orchestration logic, library pillars (00-50), **`factory/scripts/`**, and the **`factory/tests/`** Python harness.
+- **`factory/`**: Industrial core containing orchestration logic, library pillars (including **`factory/library/core_orchestration/`** for the outbound agents/governance mirror), **`factory/scripts/`**, and the **`factory/tests/`** Python harness.
 - **`dashboard/`**: Real-time KPI monitoring and strategic visualization layer.
 - **`docs/`**: Professional documentation suite (PRDs, Roadmaps, Certifications) plus **`docs/reports/`** for generated JSON/text (e.g. library audit output — not the repo root).
 
@@ -44,6 +44,7 @@ The industrial galaxy is organized into distinct, high-fidelity tiers:
 ## 📈 CONTINUAL IMPROVEMENT LOG
 - **v20.1+ (repo hygiene)**:
     - **Root cleanup:** Removed legacy root **`DESIGN.md`**; **`docs/reports/`** is the canonical home for **`audit_report.json`** and similar generated artifacts; **`factory/tests/`** holds the repo pytest harness (formerly root **`tests/`**); **`scripts/materialize`** convenience entry moved to **`.ai/scripts/bin/materialize.sh`**.
+    - **Library layout:** Removed dot-prefixed **`factory/library/.archive/`** (dead-weight snapshots); renamed live mirror folder **`00_core_orchestration/`** → **`core_orchestration/`** (sync targets in `industrial_mirror_sync.py` updated). Historical pillars remain under **`factory/library/archive/legacy_pillars/`** unchanged.
 - **v19.0.0 (Singularity)**: 
     - Purged legacy monoliths and decommissioned `.antigravity/`.
     - Unified 9-core command suite across all tools.

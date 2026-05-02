@@ -60,7 +60,7 @@ def repair_links():
 
 def mirror_ai_to_library():
     print("[*] Mirroring .ai/ (Active Set) to Library (Archive Set)...")
-    lib_reg = LIB_DIR / "00_core_orchestration/registry"
+    lib_reg = LIB_DIR / "core_orchestration/registry"
     lib_reg.mkdir(parents=True, exist_ok=True)
     
     # 1. Sync Agents

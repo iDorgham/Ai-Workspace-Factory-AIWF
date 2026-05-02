@@ -27,10 +27,10 @@
 - MISSING_DOC: /Users/Dorgham/Documents/Work/Devleopment/AIWF/factory/library/subagents/claude/categories/08-business-product
 - MISSING_DOC: /Users/Dorgham/Documents/Work/Devleopment/AIWF/factory/library/subagents/claude/categories/05-data-ai
 - MISSING_DOC: /Users/Dorgham/Documents/Work/Devleopment/AIWF/factory/library/subagents/codex/categories
-- MISSING_DOC: /Users/Dorgham/Documents/Work/Devleopment/AIWF/factory/library/00_core_orchestration/omega_singularity/governance
-- MISSING_DOC: /Users/Dorgham/Documents/Work/Devleopment/AIWF/factory/library/00_core_orchestration/registry/agents/core
-- MISSING_DOC: /Users/Dorgham/Documents/Work/Devleopment/AIWF/factory/library/00_core_orchestration/registry/agents/specialized
-- MISSING_DOC: /Users/Dorgham/Documents/Work/Devleopment/AIWF/factory/library/00_core_orchestration/registry/agents/registry
+- MISSING_DOC: /Users/Dorgham/Documents/Work/Devleopment/AIWF/factory/library/core_orchestration/omega_singularity/governance
+- MISSING_DOC: /Users/Dorgham/Documents/Work/Devleopment/AIWF/factory/library/core_orchestration/registry/agents/core
+- MISSING_DOC: /Users/Dorgham/Documents/Work/Devleopment/AIWF/factory/library/core_orchestration/registry/agents/specialized
+- MISSING_DOC: /Users/Dorgham/Documents/Work/Devleopment/AIWF/factory/library/core_orchestration/registry/agents/registry
 - MISSING_DOC: /Users/Dorgham/Documents/Work/Devleopment/AIWF/factory/library/agents/workspace_imports/ai/agents/core
 - MISSING_DOC: /Users/Dorgham/Documents/Work/Devleopment/AIWF/factory/library/agents/workspace_imports/ai/agents/specialized
 - MISSING_DOC: /Users/Dorgham/Documents/Work/Devleopment/AIWF/factory/library/agents/workspace_imports/ai/agents/registry

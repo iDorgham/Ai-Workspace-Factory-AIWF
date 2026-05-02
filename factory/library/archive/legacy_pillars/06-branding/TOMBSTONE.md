@@ -9,7 +9,7 @@
 ## Why This Domain Was Deprecated
 
 `06-branding/` was an early domain naming convention using kebab-case with numeric prefix.
-It was superseded by `00_core_orchestration/` and `50_intelligence_marketing/` during
+It was superseded by **`factory/library/core_orchestration/`** (live `.ai` mirror) and `50_intelligence_marketing/` during
 the library restructuring that standardised all domain names to `{NN}_{snake_case}` format
 (AIWF v13.0+).
 
@@ -18,7 +18,7 @@ Branding assets and design token specs now live in:
 - `factory/library/archive/legacy_pillars/50_intelligence_marketing/` — brand intelligence and marketing assets
 
 **File Count at Tombstone:** 0 (all assets were migrated during restructuring)  
-**Empty Subdirs:** `design-tokens/` (migration artifact — content is in 00_core_orchestration/)
+**Empty Subdirs:** `design-tokens/` (migration artifact — live content is in `factory/library/core_orchestration/`)
 
 ---
 
