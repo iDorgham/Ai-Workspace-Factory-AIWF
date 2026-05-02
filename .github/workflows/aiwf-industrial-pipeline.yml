@@ -93,7 +93,8 @@ jobs:
               # Enforced: declared non-draft status → density failure blocks CI
               if [ $exit_code -ne 0 ]; then
                 echo "❌ FAIL  [$parent_type/$phase_name] status=$status — density gate BLOCKED"
-                echo "$result" | grep -E "Missing:|Gates:" | head -5
+                # grep may find no lines; with bash -e that must not abort the step before FAILED is incremented
+                echo "$result" | grep -E "Missing:|Gates:" | head -5 || true
                 FAILED=$((FAILED + 1))
               else
                 echo "✅ PASS  [$parent_type/$phase_name] status=$status"
