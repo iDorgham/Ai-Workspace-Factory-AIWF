@@ -68,6 +68,11 @@ def check_snake_case() -> bool:
         "factory/templates/subagents/",
         # Outbound mirror of `.cursor/rules/` (hyphenated .mdc stems match IDE conventions).
         "factory/library/rules/workspace_imports/",
+        # Vendored third-party skills/agents from public GitHub repos (upstream kebab-case).
+        "factory/library/skills/github_imports/",
+        "factory/library/agents/github_imports/",
+        # Curated awesome-list snapshots (hyphenated upstream filenames).
+        "factory/library/reference/github_curated/",
     )
     skip_names = {
         "README",

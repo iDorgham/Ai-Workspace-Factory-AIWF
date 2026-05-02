@@ -1,0 +1,7 @@
+{
+  "merge_key": "protocol-reverse-engineering",
+  "winner_source": "wshobson_agents",
+  "priority": 50,
+  "original_skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/reverse-engineering/skills/protocol-reverse-engineering/SKILL.md",
+  "original_skill_root": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/reverse-engineering/skills/protocol-reverse-engineering"
+}

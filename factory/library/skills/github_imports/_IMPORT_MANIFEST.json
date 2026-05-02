@@ -1,0 +1,3435 @@
+{
+  "clone_root": "/private/tmp/aiwf_github_imports",
+  "skill_count_imported": 563,
+  "skill_candidates_total": 569,
+  "skipped_duplicates": [
+    {
+      "merge_key": "xlsx",
+      "skipped_source": "k_dense_scientific",
+      "skipped_path": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/xlsx/SKILL.md",
+      "kept_source": "anthropics_official",
+      "kept_path": "/private/tmp/aiwf_github_imports/anthropics_skills/skills/xlsx/SKILL.md",
+      "reason": "duplicate_merge_key"
+    },
+    {
+      "merge_key": "pdf",
+      "skipped_source": "k_dense_scientific",
+      "skipped_path": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/pdf/SKILL.md",
+      "kept_source": "anthropics_official",
+      "kept_path": "/private/tmp/aiwf_github_imports/anthropics_skills/skills/pdf/SKILL.md",
+      "reason": "duplicate_merge_key"
+    },
+    {
+      "merge_key": "pptx",
+      "skipped_source": "k_dense_scientific",
+      "skipped_path": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/pptx/SKILL.md",
+      "kept_source": "anthropics_official",
+      "kept_path": "/private/tmp/aiwf_github_imports/anthropics_skills/skills/pptx/SKILL.md",
+      "reason": "duplicate_merge_key"
+    },
+    {
+      "merge_key": "frontend-design",
+      "skipped_source": "anthropics_claude_code",
+      "skipped_path": "/private/tmp/aiwf_github_imports/anthropics_claude-code/plugins/frontend-design/skills/frontend-design/SKILL.md",
+      "kept_source": "anthropics_official",
+      "kept_path": "/private/tmp/aiwf_github_imports/anthropics_skills/skills/frontend-design/SKILL.md",
+      "reason": "duplicate_merge_key"
+    },
+    {
+      "merge_key": "brand-guidelines",
+      "skipped_source": "alirezarezvani",
+      "skipped_path": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/brand-guidelines/SKILL.md",
+      "kept_source": "anthropics_official",
+      "kept_path": "/private/tmp/aiwf_github_imports/anthropics_skills/skills/brand-guidelines/SKILL.md",
+      "reason": "duplicate_merge_key"
+    },
+    {
+      "merge_key": "docx",
+      "skipped_source": "k_dense_scientific",
+      "skipped_path": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/docx/SKILL.md",
+      "kept_source": "anthropics_official",
+      "kept_path": "/private/tmp/aiwf_github_imports/anthropics_skills/skills/docx/SKILL.md",
+      "reason": "duplicate_merge_key"
+    }
+  ],
+  "skills": [
+    {
+      "merge_key": "a11y-audit",
+      "dest_rel": "factory/library/skills/github_imports/a11y-audit",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/a11y-audit/SKILL.md"
+    },
+    {
+      "merge_key": "ab-test-setup",
+      "dest_rel": "factory/library/skills/github_imports/ab-test-setup",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/ab-test-setup/SKILL.md"
+    },
+    {
+      "merge_key": "accessibility-compliance",
+      "dest_rel": "factory/library/skills/github_imports/accessibility-compliance",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/ui-design/skills/accessibility-compliance/SKILL.md"
+    },
+    {
+      "merge_key": "ad-creative",
+      "dest_rel": "factory/library/skills/github_imports/ad-creative",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/ad-creative/SKILL.md"
+    },
+    {
+      "merge_key": "adaptyv",
+      "dest_rel": "factory/library/skills/github_imports/adaptyv",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/adaptyv/SKILL.md"
+    },
+    {
+      "merge_key": "adversarial-reviewer",
+      "dest_rel": "factory/library/skills/github_imports/adversarial-reviewer",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/adversarial-reviewer/SKILL.md"
+    },
+    {
+      "merge_key": "aeon",
+      "dest_rel": "factory/library/skills/github_imports/aeon",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/aeon/SKILL.md"
+    },
+    {
+      "merge_key": "agent-designer",
+      "dest_rel": "factory/library/skills/github_imports/agent-designer",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/agent-designer/SKILL.md"
+    },
+    {
+      "merge_key": "agent-development",
+      "dest_rel": "factory/library/skills/github_imports/agent-development",
+      "source": "anthropics_claude_code",
+      "skill_md": "/private/tmp/aiwf_github_imports/anthropics_claude-code/plugins/plugin-dev/skills/agent-development/SKILL.md"
+    },
+    {
+      "merge_key": "agent-protocol",
+      "dest_rel": "factory/library/skills/github_imports/agent-protocol",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/agent-protocol/SKILL.md"
+    },
+    {
+      "merge_key": "agent-workflow-designer",
+      "dest_rel": "factory/library/skills/github_imports/agent-workflow-designer",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/agent-workflow-designer/SKILL.md"
+    },
+    {
+      "merge_key": "agenthub",
+      "dest_rel": "factory/library/skills/github_imports/agenthub",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/agenthub/SKILL.md"
+    },
+    {
+      "merge_key": "agile-product-owner",
+      "dest_rel": "factory/library/skills/github_imports/agile-product-owner",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/product-team/agile-product-owner/SKILL.md"
+    },
+    {
+      "merge_key": "ai-security",
+      "dest_rel": "factory/library/skills/github_imports/ai-security",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/ai-security/SKILL.md"
+    },
+    {
+      "merge_key": "ai-seo",
+      "dest_rel": "factory/library/skills/github_imports/ai-seo",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/ai-seo/SKILL.md"
+    },
+    {
+      "merge_key": "airflow-dag-patterns",
+      "dest_rel": "factory/library/skills/github_imports/airflow-dag-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/data-engineering/skills/airflow-dag-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "algorithmic-art",
+      "dest_rel": "factory/library/skills/github_imports/algorithmic-art",
+      "source": "anthropics_official",
+      "skill_md": "/private/tmp/aiwf_github_imports/anthropics_skills/skills/algorithmic-art/SKILL.md"
+    },
+    {
+      "merge_key": "alirezarezvani__engineering-team__playwright-pro__skills__init",
+      "dest_rel": "factory/library/skills/github_imports/alirezarezvani__engineering-team__playwright-pro__skills__init",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/playwright-pro/skills/init/SKILL.md"
+    },
+    {
+      "merge_key": "alirezarezvani__engineering-team__playwright-pro__skills__review",
+      "dest_rel": "factory/library/skills/github_imports/alirezarezvani__engineering-team__playwright-pro__skills__review",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/playwright-pro/skills/review/SKILL.md"
+    },
+    {
+      "merge_key": "alirezarezvani__engineering-team__self-improving-agent__skills__review",
+      "dest_rel": "factory/library/skills/github_imports/alirezarezvani__engineering-team__self-improving-agent__skills__review",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/self-improving-agent/skills/review/SKILL.md"
+    },
+    {
+      "merge_key": "alirezarezvani__engineering-team__self-improving-agent__skills__status",
+      "dest_rel": "factory/library/skills/github_imports/alirezarezvani__engineering-team__self-improving-agent__skills__status",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/self-improving-agent/skills/status/SKILL.md"
+    },
+    {
+      "merge_key": "alirezarezvani__engineering__agenthub__skills__init",
+      "dest_rel": "factory/library/skills/github_imports/alirezarezvani__engineering__agenthub__skills__init",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/agenthub/skills/init/SKILL.md"
+    },
+    {
+      "merge_key": "alirezarezvani__engineering__agenthub__skills__run",
+      "dest_rel": "factory/library/skills/github_imports/alirezarezvani__engineering__agenthub__skills__run",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/agenthub/skills/run/SKILL.md"
+    },
+    {
+      "merge_key": "alirezarezvani__engineering__agenthub__skills__status",
+      "dest_rel": "factory/library/skills/github_imports/alirezarezvani__engineering__agenthub__skills__status",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/agenthub/skills/status/SKILL.md"
+    },
+    {
+      "merge_key": "alirezarezvani__engineering__autoresearch-agent__skills__run",
+      "dest_rel": "factory/library/skills/github_imports/alirezarezvani__engineering__autoresearch-agent__skills__run",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/autoresearch-agent/skills/run/SKILL.md"
+    },
+    {
+      "merge_key": "alirezarezvani__engineering__autoresearch-agent__skills__status",
+      "dest_rel": "factory/library/skills/github_imports/alirezarezvani__engineering__autoresearch-agent__skills__status",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/autoresearch-agent/skills/status/SKILL.md"
+    },
+    {
+      "merge_key": "analytics-tracking",
+      "dest_rel": "factory/library/skills/github_imports/analytics-tracking",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/analytics-tracking/SKILL.md"
+    },
+    {
+      "merge_key": "angular-migration",
+      "dest_rel": "factory/library/skills/github_imports/angular-migration",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/framework-migration/skills/angular-migration/SKILL.md"
+    },
+    {
+      "merge_key": "anndata",
+      "dest_rel": "factory/library/skills/github_imports/anndata",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/anndata/SKILL.md"
+    },
+    {
+      "merge_key": "anti-reversing-techniques",
+      "dest_rel": "factory/library/skills/github_imports/anti-reversing-techniques",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/reverse-engineering/skills/anti-reversing-techniques/SKILL.md"
+    },
+    {
+      "merge_key": "api-design-principles",
+      "dest_rel": "factory/library/skills/github_imports/api-design-principles",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/backend-development/skills/api-design-principles/SKILL.md"
+    },
+    {
+      "merge_key": "api-design-reviewer",
+      "dest_rel": "factory/library/skills/github_imports/api-design-reviewer",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/api-design-reviewer/SKILL.md"
+    },
+    {
+      "merge_key": "api-test-suite-builder",
+      "dest_rel": "factory/library/skills/github_imports/api-test-suite-builder",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/api-test-suite-builder/SKILL.md"
+    },
+    {
+      "merge_key": "app-store-optimization",
+      "dest_rel": "factory/library/skills/github_imports/app-store-optimization",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/app-store-optimization/SKILL.md"
+    },
+    {
+      "merge_key": "apple-hig-expert",
+      "dest_rel": "factory/library/skills/github_imports/apple-hig-expert",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/product-team/apple-hig-expert/SKILL.md"
+    },
+    {
+      "merge_key": "arboreto",
+      "dest_rel": "factory/library/skills/github_imports/arboreto",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/arboreto/SKILL.md"
+    },
+    {
+      "merge_key": "architecture-decision-records",
+      "dest_rel": "factory/library/skills/github_imports/architecture-decision-records",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/documentation-generation/skills/architecture-decision-records/SKILL.md"
+    },
+    {
+      "merge_key": "architecture-patterns",
+      "dest_rel": "factory/library/skills/github_imports/architecture-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/backend-development/skills/architecture-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "astropy",
+      "dest_rel": "factory/library/skills/github_imports/astropy",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/astropy/SKILL.md"
+    },
+    {
+      "merge_key": "async-python-patterns",
+      "dest_rel": "factory/library/skills/github_imports/async-python-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/python-development/skills/async-python-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "atlassian-admin",
+      "dest_rel": "factory/library/skills/github_imports/atlassian-admin",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/project-management/atlassian-admin/SKILL.md"
+    },
+    {
+      "merge_key": "atlassian-templates",
+      "dest_rel": "factory/library/skills/github_imports/atlassian-templates",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/project-management/atlassian-templates/SKILL.md"
+    },
+    {
+      "merge_key": "attack-tree-construction",
+      "dest_rel": "factory/library/skills/github_imports/attack-tree-construction",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/security-scanning/skills/attack-tree-construction/SKILL.md"
+    },
+    {
+      "merge_key": "auth-implementation-patterns",
+      "dest_rel": "factory/library/skills/github_imports/auth-implementation-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/developer-essentials/skills/auth-implementation-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "autoresearch-agent",
+      "dest_rel": "factory/library/skills/github_imports/autoresearch-agent",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/autoresearch-agent/SKILL.md"
+    },
+    {
+      "merge_key": "aws-solution-architect",
+      "dest_rel": "factory/library/skills/github_imports/aws-solution-architect",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/aws-solution-architect/SKILL.md"
+    },
+    {
+      "merge_key": "azure-cloud-architect",
+      "dest_rel": "factory/library/skills/github_imports/azure-cloud-architect",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/azure-cloud-architect/SKILL.md"
+    },
+    {
+      "merge_key": "backtesting-frameworks",
+      "dest_rel": "factory/library/skills/github_imports/backtesting-frameworks",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/quantitative-trading/skills/backtesting-frameworks/SKILL.md"
+    },
+    {
+      "merge_key": "bash-defensive-patterns",
+      "dest_rel": "factory/library/skills/github_imports/bash-defensive-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/shell-scripting/skills/bash-defensive-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "bats-testing-patterns",
+      "dest_rel": "factory/library/skills/github_imports/bats-testing-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/shell-scripting/skills/bats-testing-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "bazel-build-optimization",
+      "dest_rel": "factory/library/skills/github_imports/bazel-build-optimization",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/developer-essentials/skills/bazel-build-optimization/SKILL.md"
+    },
+    {
+      "merge_key": "behuman",
+      "dest_rel": "factory/library/skills/github_imports/behuman",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/behuman/SKILL.md"
+    },
+    {
+      "merge_key": "benchling-integration",
+      "dest_rel": "factory/library/skills/github_imports/benchling-integration",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/benchling-integration/SKILL.md"
+    },
+    {
+      "merge_key": "bgpt-paper-search",
+      "dest_rel": "factory/library/skills/github_imports/bgpt-paper-search",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/bgpt-paper-search/SKILL.md"
+    },
+    {
+      "merge_key": "billing-automation",
+      "dest_rel": "factory/library/skills/github_imports/billing-automation",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/payment-processing/skills/billing-automation/SKILL.md"
+    },
+    {
+      "merge_key": "binary-analysis-patterns",
+      "dest_rel": "factory/library/skills/github_imports/binary-analysis-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/reverse-engineering/skills/binary-analysis-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "biopython",
+      "dest_rel": "factory/library/skills/github_imports/biopython",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/biopython/SKILL.md"
+    },
+    {
+      "merge_key": "bioservices",
+      "dest_rel": "factory/library/skills/github_imports/bioservices",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/bioservices/SKILL.md"
+    },
+    {
+      "merge_key": "block-no-verify-hook",
+      "dest_rel": "factory/library/skills/github_imports/block-no-verify-hook",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/block-no-verify/skills/block-no-verify-hook/SKILL.md"
+    },
+    {
+      "merge_key": "board",
+      "dest_rel": "factory/library/skills/github_imports/board",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/agenthub/skills/board/SKILL.md"
+    },
+    {
+      "merge_key": "board-deck-builder",
+      "dest_rel": "factory/library/skills/github_imports/board-deck-builder",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/board-deck-builder/SKILL.md"
+    },
+    {
+      "merge_key": "board-meeting",
+      "dest_rel": "factory/library/skills/github_imports/board-meeting",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/board-meeting/SKILL.md"
+    },
+    {
+      "merge_key": "board-prep",
+      "dest_rel": "factory/library/skills/github_imports/board-prep",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/executive-mentor/skills/board-prep/SKILL.md"
+    },
+    {
+      "merge_key": "brainstorming",
+      "dest_rel": "factory/library/skills/github_imports/brainstorming",
+      "source": "obra_superpowers",
+      "skill_md": "/private/tmp/aiwf_github_imports/obra_superpowers/skills/brainstorming/SKILL.md"
+    },
+    {
+      "merge_key": "brand-guidelines",
+      "dest_rel": "factory/library/skills/github_imports/brand-guidelines",
+      "source": "anthropics_official",
+      "skill_md": "/private/tmp/aiwf_github_imports/anthropics_skills/skills/brand-guidelines/SKILL.md"
+    },
+    {
+      "merge_key": "browser-automation",
+      "dest_rel": "factory/library/skills/github_imports/browser-automation",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/browser-automation/SKILL.md"
+    },
+    {
+      "merge_key": "browserstack",
+      "dest_rel": "factory/library/skills/github_imports/browserstack",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/playwright-pro/skills/browserstack/SKILL.md"
+    },
+    {
+      "merge_key": "business-growth",
+      "dest_rel": "factory/library/skills/github_imports/business-growth",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/business-growth/SKILL.md"
+    },
+    {
+      "merge_key": "business-investment-advisor",
+      "dest_rel": "factory/library/skills/github_imports/business-investment-advisor",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/finance/business-investment-advisor/SKILL.md"
+    },
+    {
+      "merge_key": "c-level-advisor",
+      "dest_rel": "factory/library/skills/github_imports/c-level-advisor",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/SKILL.md"
+    },
+    {
+      "merge_key": "campaign-analytics",
+      "dest_rel": "factory/library/skills/github_imports/campaign-analytics",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/campaign-analytics/SKILL.md"
+    },
+    {
+      "merge_key": "canvas-design",
+      "dest_rel": "factory/library/skills/github_imports/canvas-design",
+      "source": "anthropics_official",
+      "skill_md": "/private/tmp/aiwf_github_imports/anthropics_skills/skills/canvas-design/SKILL.md"
+    },
+    {
+      "merge_key": "capa-officer",
+      "dest_rel": "factory/library/skills/github_imports/capa-officer",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/ra-qm-team/capa-officer/SKILL.md"
+    },
+    {
+      "merge_key": "cellxgene-census",
+      "dest_rel": "factory/library/skills/github_imports/cellxgene-census",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/cellxgene-census/SKILL.md"
+    },
+    {
+      "merge_key": "ceo-advisor",
+      "dest_rel": "factory/library/skills/github_imports/ceo-advisor",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/ceo-advisor/SKILL.md"
+    },
+    {
+      "merge_key": "cfo-advisor",
+      "dest_rel": "factory/library/skills/github_imports/cfo-advisor",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/cfo-advisor/SKILL.md"
+    },
+    {
+      "merge_key": "challenge",
+      "dest_rel": "factory/library/skills/github_imports/challenge",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/executive-mentor/skills/challenge/SKILL.md"
+    },
+    {
+      "merge_key": "change-management",
+      "dest_rel": "factory/library/skills/github_imports/change-management",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/change-management/SKILL.md"
+    },
+    {
+      "merge_key": "changelog-automation",
+      "dest_rel": "factory/library/skills/github_imports/changelog-automation",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/documentation-generation/skills/changelog-automation/SKILL.md"
+    },
+    {
+      "merge_key": "changelog-generator",
+      "dest_rel": "factory/library/skills/github_imports/changelog-generator",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/changelog-generator/SKILL.md"
+    },
+    {
+      "merge_key": "chief-of-staff",
+      "dest_rel": "factory/library/skills/github_imports/chief-of-staff",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/chief-of-staff/SKILL.md"
+    },
+    {
+      "merge_key": "chro-advisor",
+      "dest_rel": "factory/library/skills/github_imports/chro-advisor",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/chro-advisor/SKILL.md"
+    },
+    {
+      "merge_key": "churn-prevention",
+      "dest_rel": "factory/library/skills/github_imports/churn-prevention",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/churn-prevention/SKILL.md"
+    },
+    {
+      "merge_key": "ci-cd-pipeline-builder",
+      "dest_rel": "factory/library/skills/github_imports/ci-cd-pipeline-builder",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/ci-cd-pipeline-builder/SKILL.md"
+    },
+    {
+      "merge_key": "cirq",
+      "dest_rel": "factory/library/skills/github_imports/cirq",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/cirq/SKILL.md"
+    },
+    {
+      "merge_key": "ciso-advisor",
+      "dest_rel": "factory/library/skills/github_imports/ciso-advisor",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/ciso-advisor/SKILL.md"
+    },
+    {
+      "merge_key": "citation-management",
+      "dest_rel": "factory/library/skills/github_imports/citation-management",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/citation-management/SKILL.md"
+    },
+    {
+      "merge_key": "claude-api",
+      "dest_rel": "factory/library/skills/github_imports/claude-api",
+      "source": "anthropics_official",
+      "skill_md": "/private/tmp/aiwf_github_imports/anthropics_skills/skills/claude-api/SKILL.md"
+    },
+    {
+      "merge_key": "claude-opus-4-5-migration",
+      "dest_rel": "factory/library/skills/github_imports/claude-opus-4-5-migration",
+      "source": "anthropics_claude_code",
+      "skill_md": "/private/tmp/aiwf_github_imports/anthropics_claude-code/plugins/claude-opus-4-5-migration/skills/claude-opus-4-5-migration/SKILL.md"
+    },
+    {
+      "merge_key": "clinical-decision-support",
+      "dest_rel": "factory/library/skills/github_imports/clinical-decision-support",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/clinical-decision-support/SKILL.md"
+    },
+    {
+      "merge_key": "clinical-reports",
+      "dest_rel": "factory/library/skills/github_imports/clinical-reports",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/clinical-reports/SKILL.md"
+    },
+    {
+      "merge_key": "cloud-security",
+      "dest_rel": "factory/library/skills/github_imports/cloud-security",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/cloud-security/SKILL.md"
+    },
+    {
+      "merge_key": "cmo-advisor",
+      "dest_rel": "factory/library/skills/github_imports/cmo-advisor",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/cmo-advisor/SKILL.md"
+    },
+    {
+      "merge_key": "cobrapy",
+      "dest_rel": "factory/library/skills/github_imports/cobrapy",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/cobrapy/SKILL.md"
+    },
+    {
+      "merge_key": "code-review-excellence",
+      "dest_rel": "factory/library/skills/github_imports/code-review-excellence",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/developer-essentials/skills/code-review-excellence/SKILL.md"
+    },
+    {
+      "merge_key": "code-reviewer",
+      "dest_rel": "factory/library/skills/github_imports/code-reviewer",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/code-reviewer/SKILL.md"
+    },
+    {
+      "merge_key": "code-to-prd",
+      "dest_rel": "factory/library/skills/github_imports/code-to-prd",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/product-team/code-to-prd/SKILL.md"
+    },
+    {
+      "merge_key": "code-tour",
+      "dest_rel": "factory/library/skills/github_imports/code-tour",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/code-tour/SKILL.md"
+    },
+    {
+      "merge_key": "codebase-onboarding",
+      "dest_rel": "factory/library/skills/github_imports/codebase-onboarding",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/codebase-onboarding/SKILL.md"
+    },
+    {
+      "merge_key": "cold-email",
+      "dest_rel": "factory/library/skills/github_imports/cold-email",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/cold-email/SKILL.md"
+    },
+    {
+      "merge_key": "command-development",
+      "dest_rel": "factory/library/skills/github_imports/command-development",
+      "source": "anthropics_claude_code",
+      "skill_md": "/private/tmp/aiwf_github_imports/anthropics_claude-code/plugins/plugin-dev/skills/command-development/SKILL.md"
+    },
+    {
+      "merge_key": "command-guide",
+      "dest_rel": "factory/library/skills/github_imports/command-guide",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/command-guide/SKILL.md"
+    },
+    {
+      "merge_key": "company-os",
+      "dest_rel": "factory/library/skills/github_imports/company-os",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/company-os/SKILL.md"
+    },
+    {
+      "merge_key": "competitive-intel",
+      "dest_rel": "factory/library/skills/github_imports/competitive-intel",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/competitive-intel/SKILL.md"
+    },
+    {
+      "merge_key": "competitive-landscape",
+      "dest_rel": "factory/library/skills/github_imports/competitive-landscape",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/startup-business-analyst/skills/competitive-landscape/SKILL.md"
+    },
+    {
+      "merge_key": "competitive-teardown",
+      "dest_rel": "factory/library/skills/github_imports/competitive-teardown",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/product-team/competitive-teardown/SKILL.md"
+    },
+    {
+      "merge_key": "competitor-alternatives",
+      "dest_rel": "factory/library/skills/github_imports/competitor-alternatives",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/competitor-alternatives/SKILL.md"
+    },
+    {
+      "merge_key": "confluence-expert",
+      "dest_rel": "factory/library/skills/github_imports/confluence-expert",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/project-management/confluence-expert/SKILL.md"
+    },
+    {
+      "merge_key": "consciousness-council",
+      "dest_rel": "factory/library/skills/github_imports/consciousness-council",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/consciousness-council/SKILL.md"
+    },
+    {
+      "merge_key": "content-creator",
+      "dest_rel": "factory/library/skills/github_imports/content-creator",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/content-creator/SKILL.md"
+    },
+    {
+      "merge_key": "content-humanizer",
+      "dest_rel": "factory/library/skills/github_imports/content-humanizer",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/content-humanizer/SKILL.md"
+    },
+    {
+      "merge_key": "content-production",
+      "dest_rel": "factory/library/skills/github_imports/content-production",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/content-production/SKILL.md"
+    },
+    {
+      "merge_key": "content-strategy",
+      "dest_rel": "factory/library/skills/github_imports/content-strategy",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/content-strategy/SKILL.md"
+    },
+    {
+      "merge_key": "context-driven-development",
+      "dest_rel": "factory/library/skills/github_imports/context-driven-development",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/conductor/skills/context-driven-development/SKILL.md"
+    },
+    {
+      "merge_key": "context-engine",
+      "dest_rel": "factory/library/skills/github_imports/context-engine",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/context-engine/SKILL.md"
+    },
+    {
+      "merge_key": "contract-and-proposal-writer",
+      "dest_rel": "factory/library/skills/github_imports/contract-and-proposal-writer",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/business-growth/contract-and-proposal-writer/SKILL.md"
+    },
+    {
+      "merge_key": "coo-advisor",
+      "dest_rel": "factory/library/skills/github_imports/coo-advisor",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/coo-advisor/SKILL.md"
+    },
+    {
+      "merge_key": "copy-editing",
+      "dest_rel": "factory/library/skills/github_imports/copy-editing",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/copy-editing/SKILL.md"
+    },
+    {
+      "merge_key": "copywriting",
+      "dest_rel": "factory/library/skills/github_imports/copywriting",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/copywriting/SKILL.md"
+    },
+    {
+      "merge_key": "cost-optimization",
+      "dest_rel": "factory/library/skills/github_imports/cost-optimization",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/cloud-infrastructure/skills/cost-optimization/SKILL.md"
+    },
+    {
+      "merge_key": "coverage",
+      "dest_rel": "factory/library/skills/github_imports/coverage",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/playwright-pro/skills/coverage/SKILL.md"
+    },
+    {
+      "merge_key": "cpo-advisor",
+      "dest_rel": "factory/library/skills/github_imports/cpo-advisor",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/cpo-advisor/SKILL.md"
+    },
+    {
+      "merge_key": "cqrs-implementation",
+      "dest_rel": "factory/library/skills/github_imports/cqrs-implementation",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/backend-development/skills/cqrs-implementation/SKILL.md"
+    },
+    {
+      "merge_key": "cro-advisor",
+      "dest_rel": "factory/library/skills/github_imports/cro-advisor",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/cro-advisor/SKILL.md"
+    },
+    {
+      "merge_key": "cs-onboard",
+      "dest_rel": "factory/library/skills/github_imports/cs-onboard",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/cs-onboard/SKILL.md"
+    },
+    {
+      "merge_key": "cto-advisor",
+      "dest_rel": "factory/library/skills/github_imports/cto-advisor",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/cto-advisor/SKILL.md"
+    },
+    {
+      "merge_key": "culture-architect",
+      "dest_rel": "factory/library/skills/github_imports/culture-architect",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/culture-architect/SKILL.md"
+    },
+    {
+      "merge_key": "customer-success-manager",
+      "dest_rel": "factory/library/skills/github_imports/customer-success-manager",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/business-growth/customer-success-manager/SKILL.md"
+    },
+    {
+      "merge_key": "dask",
+      "dest_rel": "factory/library/skills/github_imports/dask",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/dask/SKILL.md"
+    },
+    {
+      "merge_key": "data-quality-auditor",
+      "dest_rel": "factory/library/skills/github_imports/data-quality-auditor",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/data-quality-auditor/SKILL.md"
+    },
+    {
+      "merge_key": "data-quality-frameworks",
+      "dest_rel": "factory/library/skills/github_imports/data-quality-frameworks",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/data-engineering/skills/data-quality-frameworks/SKILL.md"
+    },
+    {
+      "merge_key": "data-storytelling",
+      "dest_rel": "factory/library/skills/github_imports/data-storytelling",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/business-analytics/skills/data-storytelling/SKILL.md"
+    },
+    {
+      "merge_key": "database-designer",
+      "dest_rel": "factory/library/skills/github_imports/database-designer",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/database-designer/SKILL.md"
+    },
+    {
+      "merge_key": "database-lookup",
+      "dest_rel": "factory/library/skills/github_imports/database-lookup",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/database-lookup/SKILL.md"
+    },
+    {
+      "merge_key": "database-migration",
+      "dest_rel": "factory/library/skills/github_imports/database-migration",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/framework-migration/skills/database-migration/SKILL.md"
+    },
+    {
+      "merge_key": "database-schema-designer",
+      "dest_rel": "factory/library/skills/github_imports/database-schema-designer",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/database-schema-designer/SKILL.md"
+    },
+    {
+      "merge_key": "datamol",
+      "dest_rel": "factory/library/skills/github_imports/datamol",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/datamol/SKILL.md"
+    },
+    {
+      "merge_key": "dbt-transformation-patterns",
+      "dest_rel": "factory/library/skills/github_imports/dbt-transformation-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/data-engineering/skills/dbt-transformation-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "debugging-strategies",
+      "dest_rel": "factory/library/skills/github_imports/debugging-strategies",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/developer-essentials/skills/debugging-strategies/SKILL.md"
+    },
+    {
+      "merge_key": "decision-logger",
+      "dest_rel": "factory/library/skills/github_imports/decision-logger",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/decision-logger/SKILL.md"
+    },
+    {
+      "merge_key": "deepchem",
+      "dest_rel": "factory/library/skills/github_imports/deepchem",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/deepchem/SKILL.md"
+    },
+    {
+      "merge_key": "deeptools",
+      "dest_rel": "factory/library/skills/github_imports/deeptools",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/deeptools/SKILL.md"
+    },
+    {
+      "merge_key": "defi-protocol-templates",
+      "dest_rel": "factory/library/skills/github_imports/defi-protocol-templates",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/blockchain-web3/skills/defi-protocol-templates/SKILL.md"
+    },
+    {
+      "merge_key": "demo-video",
+      "dest_rel": "factory/library/skills/github_imports/demo-video",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/demo-video/SKILL.md"
+    },
+    {
+      "merge_key": "dependency-auditor",
+      "dest_rel": "factory/library/skills/github_imports/dependency-auditor",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/dependency-auditor/SKILL.md"
+    },
+    {
+      "merge_key": "dependency-upgrade",
+      "dest_rel": "factory/library/skills/github_imports/dependency-upgrade",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/framework-migration/skills/dependency-upgrade/SKILL.md"
+    },
+    {
+      "merge_key": "deployment-pipeline-design",
+      "dest_rel": "factory/library/skills/github_imports/deployment-pipeline-design",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/cicd-automation/skills/deployment-pipeline-design/SKILL.md"
+    },
+    {
+      "merge_key": "depmap",
+      "dest_rel": "factory/library/skills/github_imports/depmap",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/depmap/SKILL.md"
+    },
+    {
+      "merge_key": "design-system-patterns",
+      "dest_rel": "factory/library/skills/github_imports/design-system-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/ui-design/skills/design-system-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "dhdna-profiler",
+      "dest_rel": "factory/library/skills/github_imports/dhdna-profiler",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/dhdna-profiler/SKILL.md"
+    },
+    {
+      "merge_key": "diffdock",
+      "dest_rel": "factory/library/skills/github_imports/diffdock",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/diffdock/SKILL.md"
+    },
+    {
+      "merge_key": "dispatching-parallel-agents",
+      "dest_rel": "factory/library/skills/github_imports/dispatching-parallel-agents",
+      "source": "obra_superpowers",
+      "skill_md": "/private/tmp/aiwf_github_imports/obra_superpowers/skills/dispatching-parallel-agents/SKILL.md"
+    },
+    {
+      "merge_key": "distributed-tracing",
+      "dest_rel": "factory/library/skills/github_imports/distributed-tracing",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/observability-monitoring/skills/distributed-tracing/SKILL.md"
+    },
+    {
+      "merge_key": "dnanexus-integration",
+      "dest_rel": "factory/library/skills/github_imports/dnanexus-integration",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/dnanexus-integration/SKILL.md"
+    },
+    {
+      "merge_key": "doc-coauthoring",
+      "dest_rel": "factory/library/skills/github_imports/doc-coauthoring",
+      "source": "anthropics_official",
+      "skill_md": "/private/tmp/aiwf_github_imports/anthropics_skills/skills/doc-coauthoring/SKILL.md"
+    },
+    {
+      "merge_key": "docker-development",
+      "dest_rel": "factory/library/skills/github_imports/docker-development",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/docker-development/SKILL.md"
+    },
+    {
+      "merge_key": "docx",
+      "dest_rel": "factory/library/skills/github_imports/docx",
+      "source": "anthropics_official",
+      "skill_md": "/private/tmp/aiwf_github_imports/anthropics_skills/skills/docx/SKILL.md"
+    },
+    {
+      "merge_key": "dotnet-backend-patterns",
+      "dest_rel": "factory/library/skills/github_imports/dotnet-backend-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/dotnet-contribution/skills/dotnet-backend-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "e2e-testing-patterns",
+      "dest_rel": "factory/library/skills/github_imports/e2e-testing-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/developer-essentials/skills/e2e-testing-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "email-sequence",
+      "dest_rel": "factory/library/skills/github_imports/email-sequence",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/email-sequence/SKILL.md"
+    },
+    {
+      "merge_key": "email-template-builder",
+      "dest_rel": "factory/library/skills/github_imports/email-template-builder",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/email-template-builder/SKILL.md"
+    },
+    {
+      "merge_key": "embedding-strategies",
+      "dest_rel": "factory/library/skills/github_imports/embedding-strategies",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/llm-application-dev/skills/embedding-strategies/SKILL.md"
+    },
+    {
+      "merge_key": "employment-contract-templates",
+      "dest_rel": "factory/library/skills/github_imports/employment-contract-templates",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/hr-legal-compliance/skills/employment-contract-templates/SKILL.md"
+    },
+    {
+      "merge_key": "engineering",
+      "dest_rel": "factory/library/skills/github_imports/engineering",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/SKILL.md"
+    },
+    {
+      "merge_key": "engineering-team",
+      "dest_rel": "factory/library/skills/github_imports/engineering-team",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/SKILL.md"
+    },
+    {
+      "merge_key": "env-secrets-manager",
+      "dest_rel": "factory/library/skills/github_imports/env-secrets-manager",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/env-secrets-manager/SKILL.md"
+    },
+    {
+      "merge_key": "epic-design",
+      "dest_rel": "factory/library/skills/github_imports/epic-design",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/epic-design/SKILL.md"
+    },
+    {
+      "merge_key": "error-handling-patterns",
+      "dest_rel": "factory/library/skills/github_imports/error-handling-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/developer-essentials/skills/error-handling-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "esm",
+      "dest_rel": "factory/library/skills/github_imports/esm",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/esm/SKILL.md"
+    },
+    {
+      "merge_key": "etetoolkit",
+      "dest_rel": "factory/library/skills/github_imports/etetoolkit",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/etetoolkit/SKILL.md"
+    },
+    {
+      "merge_key": "eval",
+      "dest_rel": "factory/library/skills/github_imports/eval",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/agenthub/skills/eval/SKILL.md"
+    },
+    {
+      "merge_key": "evaluation-methodology",
+      "dest_rel": "factory/library/skills/github_imports/evaluation-methodology",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/plugin-eval/skills/evaluation-methodology/SKILL.md"
+    },
+    {
+      "merge_key": "event-store-design",
+      "dest_rel": "factory/library/skills/github_imports/event-store-design",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/backend-development/skills/event-store-design/SKILL.md"
+    },
+    {
+      "merge_key": "executing-plans",
+      "dest_rel": "factory/library/skills/github_imports/executing-plans",
+      "source": "obra_superpowers",
+      "skill_md": "/private/tmp/aiwf_github_imports/obra_superpowers/skills/executing-plans/SKILL.md"
+    },
+    {
+      "merge_key": "executive-mentor",
+      "dest_rel": "factory/library/skills/github_imports/executive-mentor",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/executive-mentor/SKILL.md"
+    },
+    {
+      "merge_key": "experiment-designer",
+      "dest_rel": "factory/library/skills/github_imports/experiment-designer",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/product-team/experiment-designer/SKILL.md"
+    },
+    {
+      "merge_key": "exploratory-data-analysis",
+      "dest_rel": "factory/library/skills/github_imports/exploratory-data-analysis",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/exploratory-data-analysis/SKILL.md"
+    },
+    {
+      "merge_key": "extract",
+      "dest_rel": "factory/library/skills/github_imports/extract",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/self-improving-agent/skills/extract/SKILL.md"
+    },
+    {
+      "merge_key": "fastapi-templates",
+      "dest_rel": "factory/library/skills/github_imports/fastapi-templates",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/api-scaffolding/skills/fastapi-templates/SKILL.md"
+    },
+    {
+      "merge_key": "fda-consultant-specialist",
+      "dest_rel": "factory/library/skills/github_imports/fda-consultant-specialist",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/ra-qm-team/fda-consultant-specialist/SKILL.md"
+    },
+    {
+      "merge_key": "finance",
+      "dest_rel": "factory/library/skills/github_imports/finance",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/finance/SKILL.md"
+    },
+    {
+      "merge_key": "financial-analyst",
+      "dest_rel": "factory/library/skills/github_imports/financial-analyst",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/finance/financial-analyst/SKILL.md"
+    },
+    {
+      "merge_key": "finishing-a-development-branch",
+      "dest_rel": "factory/library/skills/github_imports/finishing-a-development-branch",
+      "source": "obra_superpowers",
+      "skill_md": "/private/tmp/aiwf_github_imports/obra_superpowers/skills/finishing-a-development-branch/SKILL.md"
+    },
+    {
+      "merge_key": "fix",
+      "dest_rel": "factory/library/skills/github_imports/fix",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/playwright-pro/skills/fix/SKILL.md"
+    },
+    {
+      "merge_key": "flowio",
+      "dest_rel": "factory/library/skills/github_imports/flowio",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/flowio/SKILL.md"
+    },
+    {
+      "merge_key": "fluidsim",
+      "dest_rel": "factory/library/skills/github_imports/fluidsim",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/fluidsim/SKILL.md"
+    },
+    {
+      "merge_key": "focused-fix",
+      "dest_rel": "factory/library/skills/github_imports/focused-fix",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/focused-fix/SKILL.md"
+    },
+    {
+      "merge_key": "form-cro",
+      "dest_rel": "factory/library/skills/github_imports/form-cro",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/form-cro/SKILL.md"
+    },
+    {
+      "merge_key": "founder-coach",
+      "dest_rel": "factory/library/skills/github_imports/founder-coach",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/founder-coach/SKILL.md"
+    },
+    {
+      "merge_key": "free-tool-strategy",
+      "dest_rel": "factory/library/skills/github_imports/free-tool-strategy",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/free-tool-strategy/SKILL.md"
+    },
+    {
+      "merge_key": "frontend-design",
+      "dest_rel": "factory/library/skills/github_imports/frontend-design",
+      "source": "anthropics_official",
+      "skill_md": "/private/tmp/aiwf_github_imports/anthropics_skills/skills/frontend-design/SKILL.md"
+    },
+    {
+      "merge_key": "full-page-screenshot",
+      "dest_rel": "factory/library/skills/github_imports/full-page-screenshot",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/full-page-screenshot/SKILL.md"
+    },
+    {
+      "merge_key": "gcp-cloud-architect",
+      "dest_rel": "factory/library/skills/github_imports/gcp-cloud-architect",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/gcp-cloud-architect/SKILL.md"
+    },
+    {
+      "merge_key": "gdpr-data-handling",
+      "dest_rel": "factory/library/skills/github_imports/gdpr-data-handling",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/hr-legal-compliance/skills/gdpr-data-handling/SKILL.md"
+    },
+    {
+      "merge_key": "gdpr-dsgvo-expert",
+      "dest_rel": "factory/library/skills/github_imports/gdpr-dsgvo-expert",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/ra-qm-team/gdpr-dsgvo-expert/SKILL.md"
+    },
+    {
+      "merge_key": "generate",
+      "dest_rel": "factory/library/skills/github_imports/generate",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/playwright-pro/skills/generate/SKILL.md"
+    },
+    {
+      "merge_key": "generate-image",
+      "dest_rel": "factory/library/skills/github_imports/generate-image",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/generate-image/SKILL.md"
+    },
+    {
+      "merge_key": "geniml",
+      "dest_rel": "factory/library/skills/github_imports/geniml",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/geniml/SKILL.md"
+    },
+    {
+      "merge_key": "geomaster",
+      "dest_rel": "factory/library/skills/github_imports/geomaster",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/geomaster/SKILL.md"
+    },
+    {
+      "merge_key": "geopandas",
+      "dest_rel": "factory/library/skills/github_imports/geopandas",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/geopandas/SKILL.md"
+    },
+    {
+      "merge_key": "get-available-resources",
+      "dest_rel": "factory/library/skills/github_imports/get-available-resources",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/get-available-resources/SKILL.md"
+    },
+    {
+      "merge_key": "gget",
+      "dest_rel": "factory/library/skills/github_imports/gget",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/gget/SKILL.md"
+    },
+    {
+      "merge_key": "ginkgo-cloud-lab",
+      "dest_rel": "factory/library/skills/github_imports/ginkgo-cloud-lab",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/ginkgo-cloud-lab/SKILL.md"
+    },
+    {
+      "merge_key": "git-advanced-workflows",
+      "dest_rel": "factory/library/skills/github_imports/git-advanced-workflows",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/developer-essentials/skills/git-advanced-workflows/SKILL.md"
+    },
+    {
+      "merge_key": "git-worktree-manager",
+      "dest_rel": "factory/library/skills/github_imports/git-worktree-manager",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/git-worktree-manager/SKILL.md"
+    },
+    {
+      "merge_key": "github-actions-templates",
+      "dest_rel": "factory/library/skills/github_imports/github-actions-templates",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/cicd-automation/skills/github-actions-templates/SKILL.md"
+    },
+    {
+      "merge_key": "gitlab-ci-patterns",
+      "dest_rel": "factory/library/skills/github_imports/gitlab-ci-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/cicd-automation/skills/gitlab-ci-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "gitops-workflow",
+      "dest_rel": "factory/library/skills/github_imports/gitops-workflow",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/kubernetes-operations/skills/gitops-workflow/SKILL.md"
+    },
+    {
+      "merge_key": "glycoengineering",
+      "dest_rel": "factory/library/skills/github_imports/glycoengineering",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/glycoengineering/SKILL.md"
+    },
+    {
+      "merge_key": "go-concurrency-patterns",
+      "dest_rel": "factory/library/skills/github_imports/go-concurrency-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/systems-programming/skills/go-concurrency-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "godot-gdscript-patterns",
+      "dest_rel": "factory/library/skills/github_imports/godot-gdscript-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/game-development/skills/godot-gdscript-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "google-workspace-cli",
+      "dest_rel": "factory/library/skills/github_imports/google-workspace-cli",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/google-workspace-cli/SKILL.md"
+    },
+    {
+      "merge_key": "grafana-dashboards",
+      "dest_rel": "factory/library/skills/github_imports/grafana-dashboards",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/observability-monitoring/skills/grafana-dashboards/SKILL.md"
+    },
+    {
+      "merge_key": "gtars",
+      "dest_rel": "factory/library/skills/github_imports/gtars",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/gtars/SKILL.md"
+    },
+    {
+      "merge_key": "hads",
+      "dest_rel": "factory/library/skills/github_imports/hads",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/documentation-standards/skills/hads/SKILL.md"
+    },
+    {
+      "merge_key": "hard-call",
+      "dest_rel": "factory/library/skills/github_imports/hard-call",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/executive-mentor/skills/hard-call/SKILL.md"
+    },
+    {
+      "merge_key": "helm-chart-builder",
+      "dest_rel": "factory/library/skills/github_imports/helm-chart-builder",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/helm-chart-builder/SKILL.md"
+    },
+    {
+      "merge_key": "helm-chart-scaffolding",
+      "dest_rel": "factory/library/skills/github_imports/helm-chart-scaffolding",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/kubernetes-operations/skills/helm-chart-scaffolding/SKILL.md"
+    },
+    {
+      "merge_key": "histolab",
+      "dest_rel": "factory/library/skills/github_imports/histolab",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/histolab/SKILL.md"
+    },
+    {
+      "merge_key": "hook-development",
+      "dest_rel": "factory/library/skills/github_imports/hook-development",
+      "source": "anthropics_claude_code",
+      "skill_md": "/private/tmp/aiwf_github_imports/anthropics_claude-code/plugins/plugin-dev/skills/hook-development/SKILL.md"
+    },
+    {
+      "merge_key": "hugging-science",
+      "dest_rel": "factory/library/skills/github_imports/hugging-science",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/hugging-science/SKILL.md"
+    },
+    {
+      "merge_key": "hybrid-cloud-networking",
+      "dest_rel": "factory/library/skills/github_imports/hybrid-cloud-networking",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/cloud-infrastructure/skills/hybrid-cloud-networking/SKILL.md"
+    },
+    {
+      "merge_key": "hybrid-search-implementation",
+      "dest_rel": "factory/library/skills/github_imports/hybrid-search-implementation",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/llm-application-dev/skills/hybrid-search-implementation/SKILL.md"
+    },
+    {
+      "merge_key": "hypogenic",
+      "dest_rel": "factory/library/skills/github_imports/hypogenic",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/hypogenic/SKILL.md"
+    },
+    {
+      "merge_key": "hypothesis-generation",
+      "dest_rel": "factory/library/skills/github_imports/hypothesis-generation",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/hypothesis-generation/SKILL.md"
+    },
+    {
+      "merge_key": "imaging-data-commons",
+      "dest_rel": "factory/library/skills/github_imports/imaging-data-commons",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/imaging-data-commons/SKILL.md"
+    },
+    {
+      "merge_key": "incident-commander",
+      "dest_rel": "factory/library/skills/github_imports/incident-commander",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/incident-commander/SKILL.md"
+    },
+    {
+      "merge_key": "incident-response",
+      "dest_rel": "factory/library/skills/github_imports/incident-response",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/incident-response/SKILL.md"
+    },
+    {
+      "merge_key": "incident-runbook-templates",
+      "dest_rel": "factory/library/skills/github_imports/incident-runbook-templates",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/incident-response/skills/incident-runbook-templates/SKILL.md"
+    },
+    {
+      "merge_key": "infographics",
+      "dest_rel": "factory/library/skills/github_imports/infographics",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/infographics/SKILL.md"
+    },
+    {
+      "merge_key": "information-security-manager-iso27001",
+      "dest_rel": "factory/library/skills/github_imports/information-security-manager-iso27001",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/ra-qm-team/information-security-manager-iso27001/SKILL.md"
+    },
+    {
+      "merge_key": "interaction-design",
+      "dest_rel": "factory/library/skills/github_imports/interaction-design",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/ui-design/skills/interaction-design/SKILL.md"
+    },
+    {
+      "merge_key": "internal-comms",
+      "dest_rel": "factory/library/skills/github_imports/internal-comms",
+      "source": "anthropics_official",
+      "skill_md": "/private/tmp/aiwf_github_imports/anthropics_skills/skills/internal-comms/SKILL.md"
+    },
+    {
+      "merge_key": "internal-narrative",
+      "dest_rel": "factory/library/skills/github_imports/internal-narrative",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/internal-narrative/SKILL.md"
+    },
+    {
+      "merge_key": "interview-system-designer",
+      "dest_rel": "factory/library/skills/github_imports/interview-system-designer",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/interview-system-designer/SKILL.md"
+    },
+    {
+      "merge_key": "intl-expansion",
+      "dest_rel": "factory/library/skills/github_imports/intl-expansion",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/intl-expansion/SKILL.md"
+    },
+    {
+      "merge_key": "isms-audit-expert",
+      "dest_rel": "factory/library/skills/github_imports/isms-audit-expert",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/ra-qm-team/isms-audit-expert/SKILL.md"
+    },
+    {
+      "merge_key": "iso-13485-certification",
+      "dest_rel": "factory/library/skills/github_imports/iso-13485-certification",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/iso-13485-certification/SKILL.md"
+    },
+    {
+      "merge_key": "istio-traffic-management",
+      "dest_rel": "factory/library/skills/github_imports/istio-traffic-management",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/cloud-infrastructure/skills/istio-traffic-management/SKILL.md"
+    },
+    {
+      "merge_key": "javascript-testing-patterns",
+      "dest_rel": "factory/library/skills/github_imports/javascript-testing-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/javascript-typescript/skills/javascript-testing-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "jira-expert",
+      "dest_rel": "factory/library/skills/github_imports/jira-expert",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/project-management/jira-expert/SKILL.md"
+    },
+    {
+      "merge_key": "k8s-manifest-generator",
+      "dest_rel": "factory/library/skills/github_imports/k8s-manifest-generator",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/kubernetes-operations/skills/k8s-manifest-generator/SKILL.md"
+    },
+    {
+      "merge_key": "k8s-security-policies",
+      "dest_rel": "factory/library/skills/github_imports/k8s-security-policies",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/kubernetes-operations/skills/k8s-security-policies/SKILL.md"
+    },
+    {
+      "merge_key": "karpathy-coder",
+      "dest_rel": "factory/library/skills/github_imports/karpathy-coder",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/karpathy-coder/SKILL.md"
+    },
+    {
+      "merge_key": "kpi-dashboard-design",
+      "dest_rel": "factory/library/skills/github_imports/kpi-dashboard-design",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/business-analytics/skills/kpi-dashboard-design/SKILL.md"
+    },
+    {
+      "merge_key": "labarchive-integration",
+      "dest_rel": "factory/library/skills/github_imports/labarchive-integration",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/labarchive-integration/SKILL.md"
+    },
+    {
+      "merge_key": "lamindb",
+      "dest_rel": "factory/library/skills/github_imports/lamindb",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/lamindb/SKILL.md"
+    },
+    {
+      "merge_key": "landing-page-generator",
+      "dest_rel": "factory/library/skills/github_imports/landing-page-generator",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/product-team/landing-page-generator/SKILL.md"
+    },
+    {
+      "merge_key": "langchain-architecture",
+      "dest_rel": "factory/library/skills/github_imports/langchain-architecture",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/llm-application-dev/skills/langchain-architecture/SKILL.md"
+    },
+    {
+      "merge_key": "latchbio-integration",
+      "dest_rel": "factory/library/skills/github_imports/latchbio-integration",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/latchbio-integration/SKILL.md"
+    },
+    {
+      "merge_key": "latex-posters",
+      "dest_rel": "factory/library/skills/github_imports/latex-posters",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/latex-posters/SKILL.md"
+    },
+    {
+      "merge_key": "launch-strategy",
+      "dest_rel": "factory/library/skills/github_imports/launch-strategy",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/launch-strategy/SKILL.md"
+    },
+    {
+      "merge_key": "linkerd-patterns",
+      "dest_rel": "factory/library/skills/github_imports/linkerd-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/cloud-infrastructure/skills/linkerd-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "literature-review",
+      "dest_rel": "factory/library/skills/github_imports/literature-review",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/literature-review/SKILL.md"
+    },
+    {
+      "merge_key": "llm-cost-optimizer",
+      "dest_rel": "factory/library/skills/github_imports/llm-cost-optimizer",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/llm-cost-optimizer/SKILL.md"
+    },
+    {
+      "merge_key": "llm-evaluation",
+      "dest_rel": "factory/library/skills/github_imports/llm-evaluation",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/llm-application-dev/skills/llm-evaluation/SKILL.md"
+    },
+    {
+      "merge_key": "llm-wiki",
+      "dest_rel": "factory/library/skills/github_imports/llm-wiki",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/llm-wiki/SKILL.md"
+    },
+    {
+      "merge_key": "loop",
+      "dest_rel": "factory/library/skills/github_imports/loop",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/autoresearch-agent/skills/loop/SKILL.md"
+    },
+    {
+      "merge_key": "ma-playbook",
+      "dest_rel": "factory/library/skills/github_imports/ma-playbook",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/ma-playbook/SKILL.md"
+    },
+    {
+      "merge_key": "markdown-mermaid-writing",
+      "dest_rel": "factory/library/skills/github_imports/markdown-mermaid-writing",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/markdown-mermaid-writing/SKILL.md"
+    },
+    {
+      "merge_key": "market-research-reports",
+      "dest_rel": "factory/library/skills/github_imports/market-research-reports",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/market-research-reports/SKILL.md"
+    },
+    {
+      "merge_key": "market-sizing-analysis",
+      "dest_rel": "factory/library/skills/github_imports/market-sizing-analysis",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/startup-business-analyst/skills/market-sizing-analysis/SKILL.md"
+    },
+    {
+      "merge_key": "marketing-context",
+      "dest_rel": "factory/library/skills/github_imports/marketing-context",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/marketing-context/SKILL.md"
+    },
+    {
+      "merge_key": "marketing-demand-acquisition",
+      "dest_rel": "factory/library/skills/github_imports/marketing-demand-acquisition",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/marketing-demand-acquisition/SKILL.md"
+    },
+    {
+      "merge_key": "marketing-ideas",
+      "dest_rel": "factory/library/skills/github_imports/marketing-ideas",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/marketing-ideas/SKILL.md"
+    },
+    {
+      "merge_key": "marketing-ops",
+      "dest_rel": "factory/library/skills/github_imports/marketing-ops",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/marketing-ops/SKILL.md"
+    },
+    {
+      "merge_key": "marketing-psychology",
+      "dest_rel": "factory/library/skills/github_imports/marketing-psychology",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/marketing-psychology/SKILL.md"
+    },
+    {
+      "merge_key": "marketing-skill",
+      "dest_rel": "factory/library/skills/github_imports/marketing-skill",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/SKILL.md"
+    },
+    {
+      "merge_key": "marketing-strategy-pmm",
+      "dest_rel": "factory/library/skills/github_imports/marketing-strategy-pmm",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/marketing-strategy-pmm/SKILL.md"
+    },
+    {
+      "merge_key": "markitdown",
+      "dest_rel": "factory/library/skills/github_imports/markitdown",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/markitdown/SKILL.md"
+    },
+    {
+      "merge_key": "matchms",
+      "dest_rel": "factory/library/skills/github_imports/matchms",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/matchms/SKILL.md"
+    },
+    {
+      "merge_key": "matlab",
+      "dest_rel": "factory/library/skills/github_imports/matlab",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/matlab/SKILL.md"
+    },
+    {
+      "merge_key": "matplotlib",
+      "dest_rel": "factory/library/skills/github_imports/matplotlib",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/matplotlib/SKILL.md"
+    },
+    {
+      "merge_key": "mcp-builder",
+      "dest_rel": "factory/library/skills/github_imports/mcp-builder",
+      "source": "anthropics_official",
+      "skill_md": "/private/tmp/aiwf_github_imports/anthropics_skills/skills/mcp-builder/SKILL.md"
+    },
+    {
+      "merge_key": "mcp-integration",
+      "dest_rel": "factory/library/skills/github_imports/mcp-integration",
+      "source": "anthropics_claude_code",
+      "skill_md": "/private/tmp/aiwf_github_imports/anthropics_claude-code/plugins/plugin-dev/skills/mcp-integration/SKILL.md"
+    },
+    {
+      "merge_key": "mcp-server-builder",
+      "dest_rel": "factory/library/skills/github_imports/mcp-server-builder",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/mcp-server-builder/SKILL.md"
+    },
+    {
+      "merge_key": "mdr-745-specialist",
+      "dest_rel": "factory/library/skills/github_imports/mdr-745-specialist",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/ra-qm-team/mdr-745-specialist/SKILL.md"
+    },
+    {
+      "merge_key": "medchem",
+      "dest_rel": "factory/library/skills/github_imports/medchem",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/medchem/SKILL.md"
+    },
+    {
+      "merge_key": "meeting-analyzer",
+      "dest_rel": "factory/library/skills/github_imports/meeting-analyzer",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/project-management/meeting-analyzer/SKILL.md"
+    },
+    {
+      "merge_key": "memory-forensics",
+      "dest_rel": "factory/library/skills/github_imports/memory-forensics",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/reverse-engineering/skills/memory-forensics/SKILL.md"
+    },
+    {
+      "merge_key": "memory-safety-patterns",
+      "dest_rel": "factory/library/skills/github_imports/memory-safety-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/systems-programming/skills/memory-safety-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "merge",
+      "dest_rel": "factory/library/skills/github_imports/merge",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/agenthub/skills/merge/SKILL.md"
+    },
+    {
+      "merge_key": "microservices-patterns",
+      "dest_rel": "factory/library/skills/github_imports/microservices-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/backend-development/skills/microservices-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "migrate",
+      "dest_rel": "factory/library/skills/github_imports/migrate",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/playwright-pro/skills/migrate/SKILL.md"
+    },
+    {
+      "merge_key": "migration-architect",
+      "dest_rel": "factory/library/skills/github_imports/migration-architect",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/migration-architect/SKILL.md"
+    },
+    {
+      "merge_key": "ml-pipeline-workflow",
+      "dest_rel": "factory/library/skills/github_imports/ml-pipeline-workflow",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/machine-learning-ops/skills/ml-pipeline-workflow/SKILL.md"
+    },
+    {
+      "merge_key": "mobile-android-design",
+      "dest_rel": "factory/library/skills/github_imports/mobile-android-design",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/ui-design/skills/mobile-android-design/SKILL.md"
+    },
+    {
+      "merge_key": "mobile-ios-design",
+      "dest_rel": "factory/library/skills/github_imports/mobile-ios-design",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/ui-design/skills/mobile-ios-design/SKILL.md"
+    },
+    {
+      "merge_key": "modal",
+      "dest_rel": "factory/library/skills/github_imports/modal",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/modal/SKILL.md"
+    },
+    {
+      "merge_key": "modern-javascript-patterns",
+      "dest_rel": "factory/library/skills/github_imports/modern-javascript-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/javascript-typescript/skills/modern-javascript-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "molecular-dynamics",
+      "dest_rel": "factory/library/skills/github_imports/molecular-dynamics",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/molecular-dynamics/SKILL.md"
+    },
+    {
+      "merge_key": "molfeat",
+      "dest_rel": "factory/library/skills/github_imports/molfeat",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/molfeat/SKILL.md"
+    },
+    {
+      "merge_key": "monorepo-management",
+      "dest_rel": "factory/library/skills/github_imports/monorepo-management",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/developer-essentials/skills/monorepo-management/SKILL.md"
+    },
+    {
+      "merge_key": "monorepo-navigator",
+      "dest_rel": "factory/library/skills/github_imports/monorepo-navigator",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/monorepo-navigator/SKILL.md"
+    },
+    {
+      "merge_key": "ms365-tenant-manager",
+      "dest_rel": "factory/library/skills/github_imports/ms365-tenant-manager",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/ms365-tenant-manager/SKILL.md"
+    },
+    {
+      "merge_key": "mtls-configuration",
+      "dest_rel": "factory/library/skills/github_imports/mtls-configuration",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/cloud-infrastructure/skills/mtls-configuration/SKILL.md"
+    },
+    {
+      "merge_key": "multi-cloud-architecture",
+      "dest_rel": "factory/library/skills/github_imports/multi-cloud-architecture",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/cloud-infrastructure/skills/multi-cloud-architecture/SKILL.md"
+    },
+    {
+      "merge_key": "multi-reviewer-patterns",
+      "dest_rel": "factory/library/skills/github_imports/multi-reviewer-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/agent-teams/skills/multi-reviewer-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "networkx",
+      "dest_rel": "factory/library/skills/github_imports/networkx",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/networkx/SKILL.md"
+    },
+    {
+      "merge_key": "neurokit2",
+      "dest_rel": "factory/library/skills/github_imports/neurokit2",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/neurokit2/SKILL.md"
+    },
+    {
+      "merge_key": "neuropixels-analysis",
+      "dest_rel": "factory/library/skills/github_imports/neuropixels-analysis",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/neuropixels-analysis/SKILL.md"
+    },
+    {
+      "merge_key": "nextjs-app-router-patterns",
+      "dest_rel": "factory/library/skills/github_imports/nextjs-app-router-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/frontend-mobile-development/skills/nextjs-app-router-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "nft-standards",
+      "dest_rel": "factory/library/skills/github_imports/nft-standards",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/blockchain-web3/skills/nft-standards/SKILL.md"
+    },
+    {
+      "merge_key": "nodejs-backend-patterns",
+      "dest_rel": "factory/library/skills/github_imports/nodejs-backend-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/javascript-typescript/skills/nodejs-backend-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "nx-workspace-patterns",
+      "dest_rel": "factory/library/skills/github_imports/nx-workspace-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/developer-essentials/skills/nx-workspace-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "observability-designer",
+      "dest_rel": "factory/library/skills/github_imports/observability-designer",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/observability-designer/SKILL.md"
+    },
+    {
+      "merge_key": "omero-integration",
+      "dest_rel": "factory/library/skills/github_imports/omero-integration",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/omero-integration/SKILL.md"
+    },
+    {
+      "merge_key": "on-call-handoff-patterns",
+      "dest_rel": "factory/library/skills/github_imports/on-call-handoff-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/incident-response/skills/on-call-handoff-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "onboarding-cro",
+      "dest_rel": "factory/library/skills/github_imports/onboarding-cro",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/onboarding-cro/SKILL.md"
+    },
+    {
+      "merge_key": "open-notebook",
+      "dest_rel": "factory/library/skills/github_imports/open-notebook",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/open-notebook/SKILL.md"
+    },
+    {
+      "merge_key": "openapi-spec-generation",
+      "dest_rel": "factory/library/skills/github_imports/openapi-spec-generation",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/documentation-generation/skills/openapi-spec-generation/SKILL.md"
+    },
+    {
+      "merge_key": "opentrons-integration",
+      "dest_rel": "factory/library/skills/github_imports/opentrons-integration",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/opentrons-integration/SKILL.md"
+    },
+    {
+      "merge_key": "optimize-for-gpu",
+      "dest_rel": "factory/library/skills/github_imports/optimize-for-gpu",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/optimize-for-gpu/SKILL.md"
+    },
+    {
+      "merge_key": "org-health-diagnostic",
+      "dest_rel": "factory/library/skills/github_imports/org-health-diagnostic",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/org-health-diagnostic/SKILL.md"
+    },
+    {
+      "merge_key": "page-cro",
+      "dest_rel": "factory/library/skills/github_imports/page-cro",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/page-cro/SKILL.md"
+    },
+    {
+      "merge_key": "paid-ads",
+      "dest_rel": "factory/library/skills/github_imports/paid-ads",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/paid-ads/SKILL.md"
+    },
+    {
+      "merge_key": "paper-lookup",
+      "dest_rel": "factory/library/skills/github_imports/paper-lookup",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/paper-lookup/SKILL.md"
+    },
+    {
+      "merge_key": "paperzilla",
+      "dest_rel": "factory/library/skills/github_imports/paperzilla",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/paperzilla/SKILL.md"
+    },
+    {
+      "merge_key": "parallel-debugging",
+      "dest_rel": "factory/library/skills/github_imports/parallel-debugging",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/agent-teams/skills/parallel-debugging/SKILL.md"
+    },
+    {
+      "merge_key": "parallel-feature-development",
+      "dest_rel": "factory/library/skills/github_imports/parallel-feature-development",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/agent-teams/skills/parallel-feature-development/SKILL.md"
+    },
+    {
+      "merge_key": "parallel-web",
+      "dest_rel": "factory/library/skills/github_imports/parallel-web",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/parallel-web/SKILL.md"
+    },
+    {
+      "merge_key": "pathml",
+      "dest_rel": "factory/library/skills/github_imports/pathml",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/pathml/SKILL.md"
+    },
+    {
+      "merge_key": "paypal-integration",
+      "dest_rel": "factory/library/skills/github_imports/paypal-integration",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/payment-processing/skills/paypal-integration/SKILL.md"
+    },
+    {
+      "merge_key": "paywall-upgrade-cro",
+      "dest_rel": "factory/library/skills/github_imports/paywall-upgrade-cro",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/paywall-upgrade-cro/SKILL.md"
+    },
+    {
+      "merge_key": "pci-compliance",
+      "dest_rel": "factory/library/skills/github_imports/pci-compliance",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/payment-processing/skills/pci-compliance/SKILL.md"
+    },
+    {
+      "merge_key": "pdf",
+      "dest_rel": "factory/library/skills/github_imports/pdf",
+      "source": "anthropics_official",
+      "skill_md": "/private/tmp/aiwf_github_imports/anthropics_skills/skills/pdf/SKILL.md"
+    },
+    {
+      "merge_key": "peer-review",
+      "dest_rel": "factory/library/skills/github_imports/peer-review",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/peer-review/SKILL.md"
+    },
+    {
+      "merge_key": "pennylane",
+      "dest_rel": "factory/library/skills/github_imports/pennylane",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/pennylane/SKILL.md"
+    },
+    {
+      "merge_key": "performance-profiler",
+      "dest_rel": "factory/library/skills/github_imports/performance-profiler",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/performance-profiler/SKILL.md"
+    },
+    {
+      "merge_key": "phylogenetics",
+      "dest_rel": "factory/library/skills/github_imports/phylogenetics",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/phylogenetics/SKILL.md"
+    },
+    {
+      "merge_key": "playwright-pro",
+      "dest_rel": "factory/library/skills/github_imports/playwright-pro",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/playwright-pro/SKILL.md"
+    },
+    {
+      "merge_key": "plugin-settings",
+      "dest_rel": "factory/library/skills/github_imports/plugin-settings",
+      "source": "anthropics_claude_code",
+      "skill_md": "/private/tmp/aiwf_github_imports/anthropics_claude-code/plugins/plugin-dev/skills/plugin-settings/SKILL.md"
+    },
+    {
+      "merge_key": "plugin-structure",
+      "dest_rel": "factory/library/skills/github_imports/plugin-structure",
+      "source": "anthropics_claude_code",
+      "skill_md": "/private/tmp/aiwf_github_imports/anthropics_claude-code/plugins/plugin-dev/skills/plugin-structure/SKILL.md"
+    },
+    {
+      "merge_key": "polars",
+      "dest_rel": "factory/library/skills/github_imports/polars",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/polars/SKILL.md"
+    },
+    {
+      "merge_key": "polars-bio",
+      "dest_rel": "factory/library/skills/github_imports/polars-bio",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/polars-bio/SKILL.md"
+    },
+    {
+      "merge_key": "popup-cro",
+      "dest_rel": "factory/library/skills/github_imports/popup-cro",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/popup-cro/SKILL.md"
+    },
+    {
+      "merge_key": "postgresql",
+      "dest_rel": "factory/library/skills/github_imports/postgresql",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/database-design/skills/postgresql/SKILL.md"
+    },
+    {
+      "merge_key": "postmortem",
+      "dest_rel": "factory/library/skills/github_imports/postmortem",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/executive-mentor/skills/postmortem/SKILL.md"
+    },
+    {
+      "merge_key": "postmortem-writing",
+      "dest_rel": "factory/library/skills/github_imports/postmortem-writing",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/incident-response/skills/postmortem-writing/SKILL.md"
+    },
+    {
+      "merge_key": "pptx",
+      "dest_rel": "factory/library/skills/github_imports/pptx",
+      "source": "anthropics_official",
+      "skill_md": "/private/tmp/aiwf_github_imports/anthropics_skills/skills/pptx/SKILL.md"
+    },
+    {
+      "merge_key": "pptx-posters",
+      "dest_rel": "factory/library/skills/github_imports/pptx-posters",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/pptx-posters/SKILL.md"
+    },
+    {
+      "merge_key": "pr-review-expert",
+      "dest_rel": "factory/library/skills/github_imports/pr-review-expert",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/pr-review-expert/SKILL.md"
+    },
+    {
+      "merge_key": "pricing-strategy",
+      "dest_rel": "factory/library/skills/github_imports/pricing-strategy",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/pricing-strategy/SKILL.md"
+    },
+    {
+      "merge_key": "primekg",
+      "dest_rel": "factory/library/skills/github_imports/primekg",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/primekg/SKILL.md"
+    },
+    {
+      "merge_key": "product-analytics",
+      "dest_rel": "factory/library/skills/github_imports/product-analytics",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/product-team/product-analytics/SKILL.md"
+    },
+    {
+      "merge_key": "product-discovery",
+      "dest_rel": "factory/library/skills/github_imports/product-discovery",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/product-team/product-discovery/SKILL.md"
+    },
+    {
+      "merge_key": "product-manager-toolkit",
+      "dest_rel": "factory/library/skills/github_imports/product-manager-toolkit",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/product-team/product-manager-toolkit/SKILL.md"
+    },
+    {
+      "merge_key": "product-strategist",
+      "dest_rel": "factory/library/skills/github_imports/product-strategist",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/product-team/product-strategist/SKILL.md"
+    },
+    {
+      "merge_key": "product-team",
+      "dest_rel": "factory/library/skills/github_imports/product-team",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/product-team/SKILL.md"
+    },
+    {
+      "merge_key": "programmatic-seo",
+      "dest_rel": "factory/library/skills/github_imports/programmatic-seo",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/programmatic-seo/SKILL.md"
+    },
+    {
+      "merge_key": "project-management",
+      "dest_rel": "factory/library/skills/github_imports/project-management",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/project-management/SKILL.md"
+    },
+    {
+      "merge_key": "projection-patterns",
+      "dest_rel": "factory/library/skills/github_imports/projection-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/backend-development/skills/projection-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "prometheus-configuration",
+      "dest_rel": "factory/library/skills/github_imports/prometheus-configuration",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/observability-monitoring/skills/prometheus-configuration/SKILL.md"
+    },
+    {
+      "merge_key": "promote",
+      "dest_rel": "factory/library/skills/github_imports/promote",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/self-improving-agent/skills/promote/SKILL.md"
+    },
+    {
+      "merge_key": "prompt-engineer-toolkit",
+      "dest_rel": "factory/library/skills/github_imports/prompt-engineer-toolkit",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/prompt-engineer-toolkit/SKILL.md"
+    },
+    {
+      "merge_key": "prompt-engineering-patterns",
+      "dest_rel": "factory/library/skills/github_imports/prompt-engineering-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/llm-application-dev/skills/prompt-engineering-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "prompt-governance",
+      "dest_rel": "factory/library/skills/github_imports/prompt-governance",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/prompt-governance/SKILL.md"
+    },
+    {
+      "merge_key": "protect-mcp-setup",
+      "dest_rel": "factory/library/skills/github_imports/protect-mcp-setup",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/protect-mcp/skills/protect-mcp-setup/SKILL.md"
+    },
+    {
+      "merge_key": "protocol-reverse-engineering",
+      "dest_rel": "factory/library/skills/github_imports/protocol-reverse-engineering",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/reverse-engineering/skills/protocol-reverse-engineering/SKILL.md"
+    },
+    {
+      "merge_key": "protocolsio-integration",
+      "dest_rel": "factory/library/skills/github_imports/protocolsio-integration",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/protocolsio-integration/SKILL.md"
+    },
+    {
+      "merge_key": "pufferlib",
+      "dest_rel": "factory/library/skills/github_imports/pufferlib",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/pufferlib/SKILL.md"
+    },
+    {
+      "merge_key": "pydeseq2",
+      "dest_rel": "factory/library/skills/github_imports/pydeseq2",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/pydeseq2/SKILL.md"
+    },
+    {
+      "merge_key": "pydicom",
+      "dest_rel": "factory/library/skills/github_imports/pydicom",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/pydicom/SKILL.md"
+    },
+    {
+      "merge_key": "pyhealth",
+      "dest_rel": "factory/library/skills/github_imports/pyhealth",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/pyhealth/SKILL.md"
+    },
+    {
+      "merge_key": "pylabrobot",
+      "dest_rel": "factory/library/skills/github_imports/pylabrobot",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/pylabrobot/SKILL.md"
+    },
+    {
+      "merge_key": "pymatgen",
+      "dest_rel": "factory/library/skills/github_imports/pymatgen",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/pymatgen/SKILL.md"
+    },
+    {
+      "merge_key": "pymc",
+      "dest_rel": "factory/library/skills/github_imports/pymc",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/pymc/SKILL.md"
+    },
+    {
+      "merge_key": "pymoo",
+      "dest_rel": "factory/library/skills/github_imports/pymoo",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/pymoo/SKILL.md"
+    },
+    {
+      "merge_key": "pyopenms",
+      "dest_rel": "factory/library/skills/github_imports/pyopenms",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/pyopenms/SKILL.md"
+    },
+    {
+      "merge_key": "pysam",
+      "dest_rel": "factory/library/skills/github_imports/pysam",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/pysam/SKILL.md"
+    },
+    {
+      "merge_key": "pytdc",
+      "dest_rel": "factory/library/skills/github_imports/pytdc",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/pytdc/SKILL.md"
+    },
+    {
+      "merge_key": "python-anti-patterns",
+      "dest_rel": "factory/library/skills/github_imports/python-anti-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/python-development/skills/python-anti-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "python-background-jobs",
+      "dest_rel": "factory/library/skills/github_imports/python-background-jobs",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/python-development/skills/python-background-jobs/SKILL.md"
+    },
+    {
+      "merge_key": "python-code-style",
+      "dest_rel": "factory/library/skills/github_imports/python-code-style",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/python-development/skills/python-code-style/SKILL.md"
+    },
+    {
+      "merge_key": "python-configuration",
+      "dest_rel": "factory/library/skills/github_imports/python-configuration",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/python-development/skills/python-configuration/SKILL.md"
+    },
+    {
+      "merge_key": "python-design-patterns",
+      "dest_rel": "factory/library/skills/github_imports/python-design-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/python-development/skills/python-design-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "python-error-handling",
+      "dest_rel": "factory/library/skills/github_imports/python-error-handling",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/python-development/skills/python-error-handling/SKILL.md"
+    },
+    {
+      "merge_key": "python-observability",
+      "dest_rel": "factory/library/skills/github_imports/python-observability",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/python-development/skills/python-observability/SKILL.md"
+    },
+    {
+      "merge_key": "python-packaging",
+      "dest_rel": "factory/library/skills/github_imports/python-packaging",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/python-development/skills/python-packaging/SKILL.md"
+    },
+    {
+      "merge_key": "python-performance-optimization",
+      "dest_rel": "factory/library/skills/github_imports/python-performance-optimization",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/python-development/skills/python-performance-optimization/SKILL.md"
+    },
+    {
+      "merge_key": "python-project-structure",
+      "dest_rel": "factory/library/skills/github_imports/python-project-structure",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/python-development/skills/python-project-structure/SKILL.md"
+    },
+    {
+      "merge_key": "python-resilience",
+      "dest_rel": "factory/library/skills/github_imports/python-resilience",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/python-development/skills/python-resilience/SKILL.md"
+    },
+    {
+      "merge_key": "python-resource-management",
+      "dest_rel": "factory/library/skills/github_imports/python-resource-management",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/python-development/skills/python-resource-management/SKILL.md"
+    },
+    {
+      "merge_key": "python-testing-patterns",
+      "dest_rel": "factory/library/skills/github_imports/python-testing-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/python-development/skills/python-testing-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "python-type-safety",
+      "dest_rel": "factory/library/skills/github_imports/python-type-safety",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/python-development/skills/python-type-safety/SKILL.md"
+    },
+    {
+      "merge_key": "pytorch-lightning",
+      "dest_rel": "factory/library/skills/github_imports/pytorch-lightning",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/pytorch-lightning/SKILL.md"
+    },
+    {
+      "merge_key": "pyzotero",
+      "dest_rel": "factory/library/skills/github_imports/pyzotero",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/pyzotero/SKILL.md"
+    },
+    {
+      "merge_key": "qiskit",
+      "dest_rel": "factory/library/skills/github_imports/qiskit",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/qiskit/SKILL.md"
+    },
+    {
+      "merge_key": "qms-audit-expert",
+      "dest_rel": "factory/library/skills/github_imports/qms-audit-expert",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/ra-qm-team/qms-audit-expert/SKILL.md"
+    },
+    {
+      "merge_key": "quality-documentation-manager",
+      "dest_rel": "factory/library/skills/github_imports/quality-documentation-manager",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/ra-qm-team/quality-documentation-manager/SKILL.md"
+    },
+    {
+      "merge_key": "quality-manager-qmr",
+      "dest_rel": "factory/library/skills/github_imports/quality-manager-qmr",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/ra-qm-team/quality-manager-qmr/SKILL.md"
+    },
+    {
+      "merge_key": "quality-manager-qms-iso13485",
+      "dest_rel": "factory/library/skills/github_imports/quality-manager-qms-iso13485",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/ra-qm-team/quality-manager-qms-iso13485/SKILL.md"
+    },
+    {
+      "merge_key": "qutip",
+      "dest_rel": "factory/library/skills/github_imports/qutip",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/qutip/SKILL.md"
+    },
+    {
+      "merge_key": "ra-qm-team",
+      "dest_rel": "factory/library/skills/github_imports/ra-qm-team",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/ra-qm-team/SKILL.md"
+    },
+    {
+      "merge_key": "rag-architect",
+      "dest_rel": "factory/library/skills/github_imports/rag-architect",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/rag-architect/SKILL.md"
+    },
+    {
+      "merge_key": "rag-implementation",
+      "dest_rel": "factory/library/skills/github_imports/rag-implementation",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/llm-application-dev/skills/rag-implementation/SKILL.md"
+    },
+    {
+      "merge_key": "rdkit",
+      "dest_rel": "factory/library/skills/github_imports/rdkit",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/rdkit/SKILL.md"
+    },
+    {
+      "merge_key": "react-modernization",
+      "dest_rel": "factory/library/skills/github_imports/react-modernization",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/framework-migration/skills/react-modernization/SKILL.md"
+    },
+    {
+      "merge_key": "react-native-architecture",
+      "dest_rel": "factory/library/skills/github_imports/react-native-architecture",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/frontend-mobile-development/skills/react-native-architecture/SKILL.md"
+    },
+    {
+      "merge_key": "react-native-design",
+      "dest_rel": "factory/library/skills/github_imports/react-native-design",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/ui-design/skills/react-native-design/SKILL.md"
+    },
+    {
+      "merge_key": "react-state-management",
+      "dest_rel": "factory/library/skills/github_imports/react-state-management",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/frontend-mobile-development/skills/react-state-management/SKILL.md"
+    },
+    {
+      "merge_key": "receiving-code-review",
+      "dest_rel": "factory/library/skills/github_imports/receiving-code-review",
+      "source": "obra_superpowers",
+      "skill_md": "/private/tmp/aiwf_github_imports/obra_superpowers/skills/receiving-code-review/SKILL.md"
+    },
+    {
+      "merge_key": "red-team",
+      "dest_rel": "factory/library/skills/github_imports/red-team",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/red-team/SKILL.md"
+    },
+    {
+      "merge_key": "referral-program",
+      "dest_rel": "factory/library/skills/github_imports/referral-program",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/referral-program/SKILL.md"
+    },
+    {
+      "merge_key": "regulatory-affairs-head",
+      "dest_rel": "factory/library/skills/github_imports/regulatory-affairs-head",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/ra-qm-team/regulatory-affairs-head/SKILL.md"
+    },
+    {
+      "merge_key": "release-manager",
+      "dest_rel": "factory/library/skills/github_imports/release-manager",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/release-manager/SKILL.md"
+    },
+    {
+      "merge_key": "remember",
+      "dest_rel": "factory/library/skills/github_imports/remember",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/self-improving-agent/skills/remember/SKILL.md"
+    },
+    {
+      "merge_key": "report",
+      "dest_rel": "factory/library/skills/github_imports/report",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/playwright-pro/skills/report/SKILL.md"
+    },
+    {
+      "merge_key": "requesting-code-review",
+      "dest_rel": "factory/library/skills/github_imports/requesting-code-review",
+      "source": "obra_superpowers",
+      "skill_md": "/private/tmp/aiwf_github_imports/obra_superpowers/skills/requesting-code-review/SKILL.md"
+    },
+    {
+      "merge_key": "research-grants",
+      "dest_rel": "factory/library/skills/github_imports/research-grants",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/research-grants/SKILL.md"
+    },
+    {
+      "merge_key": "research-lookup",
+      "dest_rel": "factory/library/skills/github_imports/research-lookup",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/research-lookup/SKILL.md"
+    },
+    {
+      "merge_key": "research-summarizer",
+      "dest_rel": "factory/library/skills/github_imports/research-summarizer",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/product-team/research-summarizer/SKILL.md"
+    },
+    {
+      "merge_key": "responsive-design",
+      "dest_rel": "factory/library/skills/github_imports/responsive-design",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/ui-design/skills/responsive-design/SKILL.md"
+    },
+    {
+      "merge_key": "resume",
+      "dest_rel": "factory/library/skills/github_imports/resume",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/autoresearch-agent/skills/resume/SKILL.md"
+    },
+    {
+      "merge_key": "revenue-operations",
+      "dest_rel": "factory/library/skills/github_imports/revenue-operations",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/business-growth/revenue-operations/SKILL.md"
+    },
+    {
+      "merge_key": "review-agent-setup",
+      "dest_rel": "factory/library/skills/github_imports/review-agent-setup",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/review-agent-governance/skills/review-agent-setup/SKILL.md"
+    },
+    {
+      "merge_key": "risk-management-specialist",
+      "dest_rel": "factory/library/skills/github_imports/risk-management-specialist",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/ra-qm-team/risk-management-specialist/SKILL.md"
+    },
+    {
+      "merge_key": "risk-metrics-calculation",
+      "dest_rel": "factory/library/skills/github_imports/risk-metrics-calculation",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/quantitative-trading/skills/risk-metrics-calculation/SKILL.md"
+    },
+    {
+      "merge_key": "roadmap-communicator",
+      "dest_rel": "factory/library/skills/github_imports/roadmap-communicator",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/product-team/roadmap-communicator/SKILL.md"
+    },
+    {
+      "merge_key": "rowan",
+      "dest_rel": "factory/library/skills/github_imports/rowan",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/rowan/SKILL.md"
+    },
+    {
+      "merge_key": "runbook-generator",
+      "dest_rel": "factory/library/skills/github_imports/runbook-generator",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/runbook-generator/SKILL.md"
+    },
+    {
+      "merge_key": "rust-async-patterns",
+      "dest_rel": "factory/library/skills/github_imports/rust-async-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/systems-programming/skills/rust-async-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "saas-metrics-coach",
+      "dest_rel": "factory/library/skills/github_imports/saas-metrics-coach",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/finance/saas-metrics-coach/SKILL.md"
+    },
+    {
+      "merge_key": "saas-scaffolder",
+      "dest_rel": "factory/library/skills/github_imports/saas-scaffolder",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/product-team/saas-scaffolder/SKILL.md"
+    },
+    {
+      "merge_key": "saga-orchestration",
+      "dest_rel": "factory/library/skills/github_imports/saga-orchestration",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/backend-development/skills/saga-orchestration/SKILL.md"
+    },
+    {
+      "merge_key": "sales-engineer",
+      "dest_rel": "factory/library/skills/github_imports/sales-engineer",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/business-growth/sales-engineer/SKILL.md"
+    },
+    {
+      "merge_key": "sample-skill",
+      "dest_rel": "factory/library/skills/github_imports/sample-skill",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/skill-tester/assets/sample-skill/SKILL.md"
+    },
+    {
+      "merge_key": "sast-configuration",
+      "dest_rel": "factory/library/skills/github_imports/sast-configuration",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/security-scanning/skills/sast-configuration/SKILL.md"
+    },
+    {
+      "merge_key": "scanpy",
+      "dest_rel": "factory/library/skills/github_imports/scanpy",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/scanpy/SKILL.md"
+    },
+    {
+      "merge_key": "scenario-war-room",
+      "dest_rel": "factory/library/skills/github_imports/scenario-war-room",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/scenario-war-room/SKILL.md"
+    },
+    {
+      "merge_key": "schema-markup",
+      "dest_rel": "factory/library/skills/github_imports/schema-markup",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/schema-markup/SKILL.md"
+    },
+    {
+      "merge_key": "scholar-evaluation",
+      "dest_rel": "factory/library/skills/github_imports/scholar-evaluation",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/scholar-evaluation/SKILL.md"
+    },
+    {
+      "merge_key": "scientific-brainstorming",
+      "dest_rel": "factory/library/skills/github_imports/scientific-brainstorming",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/scientific-brainstorming/SKILL.md"
+    },
+    {
+      "merge_key": "scientific-critical-thinking",
+      "dest_rel": "factory/library/skills/github_imports/scientific-critical-thinking",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/scientific-critical-thinking/SKILL.md"
+    },
+    {
+      "merge_key": "scientific-schematics",
+      "dest_rel": "factory/library/skills/github_imports/scientific-schematics",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/scientific-schematics/SKILL.md"
+    },
+    {
+      "merge_key": "scientific-slides",
+      "dest_rel": "factory/library/skills/github_imports/scientific-slides",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/scientific-slides/SKILL.md"
+    },
+    {
+      "merge_key": "scientific-visualization",
+      "dest_rel": "factory/library/skills/github_imports/scientific-visualization",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/scientific-visualization/SKILL.md"
+    },
+    {
+      "merge_key": "scientific-writing",
+      "dest_rel": "factory/library/skills/github_imports/scientific-writing",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/scientific-writing/SKILL.md"
+    },
+    {
+      "merge_key": "scikit-bio",
+      "dest_rel": "factory/library/skills/github_imports/scikit-bio",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/scikit-bio/SKILL.md"
+    },
+    {
+      "merge_key": "scikit-learn",
+      "dest_rel": "factory/library/skills/github_imports/scikit-learn",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/scikit-learn/SKILL.md"
+    },
+    {
+      "merge_key": "scikit-survival",
+      "dest_rel": "factory/library/skills/github_imports/scikit-survival",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/scikit-survival/SKILL.md"
+    },
+    {
+      "merge_key": "screen-reader-testing",
+      "dest_rel": "factory/library/skills/github_imports/screen-reader-testing",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/accessibility-compliance/skills/screen-reader-testing/SKILL.md"
+    },
+    {
+      "merge_key": "scrum-master",
+      "dest_rel": "factory/library/skills/github_imports/scrum-master",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/project-management/scrum-master/SKILL.md"
+    },
+    {
+      "merge_key": "scvelo",
+      "dest_rel": "factory/library/skills/github_imports/scvelo",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/scvelo/SKILL.md"
+    },
+    {
+      "merge_key": "scvi-tools",
+      "dest_rel": "factory/library/skills/github_imports/scvi-tools",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/scvi-tools/SKILL.md"
+    },
+    {
+      "merge_key": "seaborn",
+      "dest_rel": "factory/library/skills/github_imports/seaborn",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/seaborn/SKILL.md"
+    },
+    {
+      "merge_key": "secrets-management",
+      "dest_rel": "factory/library/skills/github_imports/secrets-management",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/cicd-automation/skills/secrets-management/SKILL.md"
+    },
+    {
+      "merge_key": "secrets-vault-manager",
+      "dest_rel": "factory/library/skills/github_imports/secrets-vault-manager",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/secrets-vault-manager/SKILL.md"
+    },
+    {
+      "merge_key": "security-pen-testing",
+      "dest_rel": "factory/library/skills/github_imports/security-pen-testing",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/security-pen-testing/SKILL.md"
+    },
+    {
+      "merge_key": "security-requirement-extraction",
+      "dest_rel": "factory/library/skills/github_imports/security-requirement-extraction",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/security-scanning/skills/security-requirement-extraction/SKILL.md"
+    },
+    {
+      "merge_key": "self-eval",
+      "dest_rel": "factory/library/skills/github_imports/self-eval",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/self-eval/SKILL.md"
+    },
+    {
+      "merge_key": "self-improving-agent",
+      "dest_rel": "factory/library/skills/github_imports/self-improving-agent",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/self-improving-agent/skills/self-improving-agent/SKILL.md"
+    },
+    {
+      "merge_key": "senior-architect",
+      "dest_rel": "factory/library/skills/github_imports/senior-architect",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/senior-architect/SKILL.md"
+    },
+    {
+      "merge_key": "senior-backend",
+      "dest_rel": "factory/library/skills/github_imports/senior-backend",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/senior-backend/SKILL.md"
+    },
+    {
+      "merge_key": "senior-computer-vision",
+      "dest_rel": "factory/library/skills/github_imports/senior-computer-vision",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/senior-computer-vision/SKILL.md"
+    },
+    {
+      "merge_key": "senior-data-engineer",
+      "dest_rel": "factory/library/skills/github_imports/senior-data-engineer",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/senior-data-engineer/SKILL.md"
+    },
+    {
+      "merge_key": "senior-data-scientist",
+      "dest_rel": "factory/library/skills/github_imports/senior-data-scientist",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/senior-data-scientist/SKILL.md"
+    },
+    {
+      "merge_key": "senior-devops",
+      "dest_rel": "factory/library/skills/github_imports/senior-devops",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/senior-devops/SKILL.md"
+    },
+    {
+      "merge_key": "senior-frontend",
+      "dest_rel": "factory/library/skills/github_imports/senior-frontend",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/senior-frontend/SKILL.md"
+    },
+    {
+      "merge_key": "senior-fullstack",
+      "dest_rel": "factory/library/skills/github_imports/senior-fullstack",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/senior-fullstack/SKILL.md"
+    },
+    {
+      "merge_key": "senior-ml-engineer",
+      "dest_rel": "factory/library/skills/github_imports/senior-ml-engineer",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/senior-ml-engineer/SKILL.md"
+    },
+    {
+      "merge_key": "senior-pm",
+      "dest_rel": "factory/library/skills/github_imports/senior-pm",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/project-management/senior-pm/SKILL.md"
+    },
+    {
+      "merge_key": "senior-prompt-engineer",
+      "dest_rel": "factory/library/skills/github_imports/senior-prompt-engineer",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/senior-prompt-engineer/SKILL.md"
+    },
+    {
+      "merge_key": "senior-qa",
+      "dest_rel": "factory/library/skills/github_imports/senior-qa",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/senior-qa/SKILL.md"
+    },
+    {
+      "merge_key": "senior-secops",
+      "dest_rel": "factory/library/skills/github_imports/senior-secops",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/senior-secops/SKILL.md"
+    },
+    {
+      "merge_key": "senior-security",
+      "dest_rel": "factory/library/skills/github_imports/senior-security",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/senior-security/SKILL.md"
+    },
+    {
+      "merge_key": "seo-audit",
+      "dest_rel": "factory/library/skills/github_imports/seo-audit",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/seo-audit/SKILL.md"
+    },
+    {
+      "merge_key": "service-mesh-observability",
+      "dest_rel": "factory/library/skills/github_imports/service-mesh-observability",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/cloud-infrastructure/skills/service-mesh-observability/SKILL.md"
+    },
+    {
+      "merge_key": "setup",
+      "dest_rel": "factory/library/skills/github_imports/setup",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/autoresearch-agent/skills/setup/SKILL.md"
+    },
+    {
+      "merge_key": "shap",
+      "dest_rel": "factory/library/skills/github_imports/shap",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/shap/SKILL.md"
+    },
+    {
+      "merge_key": "shellcheck-configuration",
+      "dest_rel": "factory/library/skills/github_imports/shellcheck-configuration",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/shell-scripting/skills/shellcheck-configuration/SKILL.md"
+    },
+    {
+      "merge_key": "signed-audit-trails-recipe",
+      "dest_rel": "factory/library/skills/github_imports/signed-audit-trails-recipe",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/signed-audit-trails/skills/signed-audit-trails-recipe/SKILL.md"
+    },
+    {
+      "merge_key": "signup-flow-cro",
+      "dest_rel": "factory/library/skills/github_imports/signup-flow-cro",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/signup-flow-cro/SKILL.md"
+    },
+    {
+      "merge_key": "similarity-search-patterns",
+      "dest_rel": "factory/library/skills/github_imports/similarity-search-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/llm-application-dev/skills/similarity-search-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "simpy",
+      "dest_rel": "factory/library/skills/github_imports/simpy",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/simpy/SKILL.md"
+    },
+    {
+      "merge_key": "site-architecture",
+      "dest_rel": "factory/library/skills/github_imports/site-architecture",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/site-architecture/SKILL.md"
+    },
+    {
+      "merge_key": "skill-creator",
+      "dest_rel": "factory/library/skills/github_imports/skill-creator",
+      "source": "anthropics_official",
+      "skill_md": "/private/tmp/aiwf_github_imports/anthropics_skills/skills/skill-creator/SKILL.md"
+    },
+    {
+      "merge_key": "skill-development",
+      "dest_rel": "factory/library/skills/github_imports/skill-development",
+      "source": "anthropics_claude_code",
+      "skill_md": "/private/tmp/aiwf_github_imports/anthropics_claude-code/plugins/plugin-dev/skills/skill-development/SKILL.md"
+    },
+    {
+      "merge_key": "skill-security-auditor",
+      "dest_rel": "factory/library/skills/github_imports/skill-security-auditor",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/skill-security-auditor/SKILL.md"
+    },
+    {
+      "merge_key": "skill-tester",
+      "dest_rel": "factory/library/skills/github_imports/skill-tester",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/skill-tester/SKILL.md"
+    },
+    {
+      "merge_key": "slack-gif-creator",
+      "dest_rel": "factory/library/skills/github_imports/slack-gif-creator",
+      "source": "anthropics_official",
+      "skill_md": "/private/tmp/aiwf_github_imports/anthropics_skills/skills/slack-gif-creator/SKILL.md"
+    },
+    {
+      "merge_key": "slo-implementation",
+      "dest_rel": "factory/library/skills/github_imports/slo-implementation",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/observability-monitoring/skills/slo-implementation/SKILL.md"
+    },
+    {
+      "merge_key": "snowflake-development",
+      "dest_rel": "factory/library/skills/github_imports/snowflake-development",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/snowflake-development/SKILL.md"
+    },
+    {
+      "merge_key": "soc2-compliance",
+      "dest_rel": "factory/library/skills/github_imports/soc2-compliance",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/ra-qm-team/soc2-compliance/SKILL.md"
+    },
+    {
+      "merge_key": "social-content",
+      "dest_rel": "factory/library/skills/github_imports/social-content",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/social-content/SKILL.md"
+    },
+    {
+      "merge_key": "social-media-analyzer",
+      "dest_rel": "factory/library/skills/github_imports/social-media-analyzer",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/social-media-analyzer/SKILL.md"
+    },
+    {
+      "merge_key": "social-media-manager",
+      "dest_rel": "factory/library/skills/github_imports/social-media-manager",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/social-media-manager/SKILL.md"
+    },
+    {
+      "merge_key": "solidity-security",
+      "dest_rel": "factory/library/skills/github_imports/solidity-security",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/blockchain-web3/skills/solidity-security/SKILL.md"
+    },
+    {
+      "merge_key": "spark-optimization",
+      "dest_rel": "factory/library/skills/github_imports/spark-optimization",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/data-engineering/skills/spark-optimization/SKILL.md"
+    },
+    {
+      "merge_key": "spawn",
+      "dest_rel": "factory/library/skills/github_imports/spawn",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/agenthub/skills/spawn/SKILL.md"
+    },
+    {
+      "merge_key": "spec-driven-workflow",
+      "dest_rel": "factory/library/skills/github_imports/spec-driven-workflow",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/spec-driven-workflow/SKILL.md"
+    },
+    {
+      "merge_key": "spec-to-repo",
+      "dest_rel": "factory/library/skills/github_imports/spec-to-repo",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/product-team/spec-to-repo/SKILL.md"
+    },
+    {
+      "merge_key": "sql-database-assistant",
+      "dest_rel": "factory/library/skills/github_imports/sql-database-assistant",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/sql-database-assistant/SKILL.md"
+    },
+    {
+      "merge_key": "sql-optimization-patterns",
+      "dest_rel": "factory/library/skills/github_imports/sql-optimization-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/developer-essentials/skills/sql-optimization-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "stable-baselines3",
+      "dest_rel": "factory/library/skills/github_imports/stable-baselines3",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/stable-baselines3/SKILL.md"
+    },
+    {
+      "merge_key": "startup-financial-modeling",
+      "dest_rel": "factory/library/skills/github_imports/startup-financial-modeling",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/startup-business-analyst/skills/startup-financial-modeling/SKILL.md"
+    },
+    {
+      "merge_key": "startup-metrics-framework",
+      "dest_rel": "factory/library/skills/github_imports/startup-metrics-framework",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/startup-business-analyst/skills/startup-metrics-framework/SKILL.md"
+    },
+    {
+      "merge_key": "statistical-analysis",
+      "dest_rel": "factory/library/skills/github_imports/statistical-analysis",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/statistical-analysis/SKILL.md"
+    },
+    {
+      "merge_key": "statistical-analyst",
+      "dest_rel": "factory/library/skills/github_imports/statistical-analyst",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/statistical-analyst/SKILL.md"
+    },
+    {
+      "merge_key": "statsmodels",
+      "dest_rel": "factory/library/skills/github_imports/statsmodels",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/statsmodels/SKILL.md"
+    },
+    {
+      "merge_key": "strategic-alignment",
+      "dest_rel": "factory/library/skills/github_imports/strategic-alignment",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/strategic-alignment/SKILL.md"
+    },
+    {
+      "merge_key": "stress-test",
+      "dest_rel": "factory/library/skills/github_imports/stress-test",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/c-level-advisor/executive-mentor/skills/stress-test/SKILL.md"
+    },
+    {
+      "merge_key": "stride-analysis-patterns",
+      "dest_rel": "factory/library/skills/github_imports/stride-analysis-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/security-scanning/skills/stride-analysis-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "stripe-integration",
+      "dest_rel": "factory/library/skills/github_imports/stripe-integration",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/payment-processing/skills/stripe-integration/SKILL.md"
+    },
+    {
+      "merge_key": "stripe-integration-expert",
+      "dest_rel": "factory/library/skills/github_imports/stripe-integration-expert",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/stripe-integration-expert/SKILL.md"
+    },
+    {
+      "merge_key": "subagent-driven-development",
+      "dest_rel": "factory/library/skills/github_imports/subagent-driven-development",
+      "source": "obra_superpowers",
+      "skill_md": "/private/tmp/aiwf_github_imports/obra_superpowers/skills/subagent-driven-development/SKILL.md"
+    },
+    {
+      "merge_key": "sympy",
+      "dest_rel": "factory/library/skills/github_imports/sympy",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/sympy/SKILL.md"
+    },
+    {
+      "merge_key": "systematic-debugging",
+      "dest_rel": "factory/library/skills/github_imports/systematic-debugging",
+      "source": "obra_superpowers",
+      "skill_md": "/private/tmp/aiwf_github_imports/obra_superpowers/skills/systematic-debugging/SKILL.md"
+    },
+    {
+      "merge_key": "tailwind-design-system",
+      "dest_rel": "factory/library/skills/github_imports/tailwind-design-system",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/frontend-mobile-development/skills/tailwind-design-system/SKILL.md"
+    },
+    {
+      "merge_key": "task-coordination-strategies",
+      "dest_rel": "factory/library/skills/github_imports/task-coordination-strategies",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/agent-teams/skills/task-coordination-strategies/SKILL.md"
+    },
+    {
+      "merge_key": "tc-tracker",
+      "dest_rel": "factory/library/skills/github_imports/tc-tracker",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/tc-tracker/SKILL.md"
+    },
+    {
+      "merge_key": "tdd-guide",
+      "dest_rel": "factory/library/skills/github_imports/tdd-guide",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/tdd-guide/SKILL.md"
+    },
+    {
+      "merge_key": "team-communication-protocols",
+      "dest_rel": "factory/library/skills/github_imports/team-communication-protocols",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/agent-teams/skills/team-communication-protocols/SKILL.md"
+    },
+    {
+      "merge_key": "team-communications",
+      "dest_rel": "factory/library/skills/github_imports/team-communications",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/project-management/team-communications/SKILL.md"
+    },
+    {
+      "merge_key": "team-composition-analysis",
+      "dest_rel": "factory/library/skills/github_imports/team-composition-analysis",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/startup-business-analyst/skills/team-composition-analysis/SKILL.md"
+    },
+    {
+      "merge_key": "team-composition-patterns",
+      "dest_rel": "factory/library/skills/github_imports/team-composition-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/agent-teams/skills/team-composition-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "tech-debt-tracker",
+      "dest_rel": "factory/library/skills/github_imports/tech-debt-tracker",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/tech-debt-tracker/SKILL.md"
+    },
+    {
+      "merge_key": "tech-stack-evaluator",
+      "dest_rel": "factory/library/skills/github_imports/tech-stack-evaluator",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/tech-stack-evaluator/SKILL.md"
+    },
+    {
+      "merge_key": "temporal-python-testing",
+      "dest_rel": "factory/library/skills/github_imports/temporal-python-testing",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/backend-development/skills/temporal-python-testing/SKILL.md"
+    },
+    {
+      "merge_key": "terraform-module-library",
+      "dest_rel": "factory/library/skills/github_imports/terraform-module-library",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/cloud-infrastructure/skills/terraform-module-library/SKILL.md"
+    },
+    {
+      "merge_key": "terraform-patterns",
+      "dest_rel": "factory/library/skills/github_imports/terraform-patterns",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering/terraform-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "test-driven-development",
+      "dest_rel": "factory/library/skills/github_imports/test-driven-development",
+      "source": "obra_superpowers",
+      "skill_md": "/private/tmp/aiwf_github_imports/obra_superpowers/skills/test-driven-development/SKILL.md"
+    },
+    {
+      "merge_key": "testrail",
+      "dest_rel": "factory/library/skills/github_imports/testrail",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/playwright-pro/skills/testrail/SKILL.md"
+    },
+    {
+      "merge_key": "theme-factory",
+      "dest_rel": "factory/library/skills/github_imports/theme-factory",
+      "source": "anthropics_official",
+      "skill_md": "/private/tmp/aiwf_github_imports/anthropics_skills/skills/theme-factory/SKILL.md"
+    },
+    {
+      "merge_key": "threat-detection",
+      "dest_rel": "factory/library/skills/github_imports/threat-detection",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/engineering-team/threat-detection/SKILL.md"
+    },
+    {
+      "merge_key": "threat-mitigation-mapping",
+      "dest_rel": "factory/library/skills/github_imports/threat-mitigation-mapping",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/security-scanning/skills/threat-mitigation-mapping/SKILL.md"
+    },
+    {
+      "merge_key": "tiledbvcf",
+      "dest_rel": "factory/library/skills/github_imports/tiledbvcf",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/tiledbvcf/SKILL.md"
+    },
+    {
+      "merge_key": "timesfm-forecasting",
+      "dest_rel": "factory/library/skills/github_imports/timesfm-forecasting",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/timesfm-forecasting/SKILL.md"
+    },
+    {
+      "merge_key": "torch-geometric",
+      "dest_rel": "factory/library/skills/github_imports/torch-geometric",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/torch-geometric/SKILL.md"
+    },
+    {
+      "merge_key": "torchdrug",
+      "dest_rel": "factory/library/skills/github_imports/torchdrug",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/torchdrug/SKILL.md"
+    },
+    {
+      "merge_key": "track-management",
+      "dest_rel": "factory/library/skills/github_imports/track-management",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/conductor/skills/track-management/SKILL.md"
+    },
+    {
+      "merge_key": "transformers",
+      "dest_rel": "factory/library/skills/github_imports/transformers",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/transformers/SKILL.md"
+    },
+    {
+      "merge_key": "treatment-plans",
+      "dest_rel": "factory/library/skills/github_imports/treatment-plans",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/treatment-plans/SKILL.md"
+    },
+    {
+      "merge_key": "turborepo-caching",
+      "dest_rel": "factory/library/skills/github_imports/turborepo-caching",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/developer-essentials/skills/turborepo-caching/SKILL.md"
+    },
+    {
+      "merge_key": "typescript-advanced-types",
+      "dest_rel": "factory/library/skills/github_imports/typescript-advanced-types",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/javascript-typescript/skills/typescript-advanced-types/SKILL.md"
+    },
+    {
+      "merge_key": "ui-design-system",
+      "dest_rel": "factory/library/skills/github_imports/ui-design-system",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/product-team/ui-design-system/SKILL.md"
+    },
+    {
+      "merge_key": "umap-learn",
+      "dest_rel": "factory/library/skills/github_imports/umap-learn",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/umap-learn/SKILL.md"
+    },
+    {
+      "merge_key": "unity-ecs-patterns",
+      "dest_rel": "factory/library/skills/github_imports/unity-ecs-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/game-development/skills/unity-ecs-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "usfiscaldata",
+      "dest_rel": "factory/library/skills/github_imports/usfiscaldata",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/usfiscaldata/SKILL.md"
+    },
+    {
+      "merge_key": "using-git-worktrees",
+      "dest_rel": "factory/library/skills/github_imports/using-git-worktrees",
+      "source": "obra_superpowers",
+      "skill_md": "/private/tmp/aiwf_github_imports/obra_superpowers/skills/using-git-worktrees/SKILL.md"
+    },
+    {
+      "merge_key": "using-superpowers",
+      "dest_rel": "factory/library/skills/github_imports/using-superpowers",
+      "source": "obra_superpowers",
+      "skill_md": "/private/tmp/aiwf_github_imports/obra_superpowers/skills/using-superpowers/SKILL.md"
+    },
+    {
+      "merge_key": "uv-package-manager",
+      "dest_rel": "factory/library/skills/github_imports/uv-package-manager",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/python-development/skills/uv-package-manager/SKILL.md"
+    },
+    {
+      "merge_key": "ux-researcher-designer",
+      "dest_rel": "factory/library/skills/github_imports/ux-researcher-designer",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/product-team/ux-researcher-designer/SKILL.md"
+    },
+    {
+      "merge_key": "vaex",
+      "dest_rel": "factory/library/skills/github_imports/vaex",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/vaex/SKILL.md"
+    },
+    {
+      "merge_key": "vector-index-tuning",
+      "dest_rel": "factory/library/skills/github_imports/vector-index-tuning",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/llm-application-dev/skills/vector-index-tuning/SKILL.md"
+    },
+    {
+      "merge_key": "venue-templates",
+      "dest_rel": "factory/library/skills/github_imports/venue-templates",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/venue-templates/SKILL.md"
+    },
+    {
+      "merge_key": "verification-before-completion",
+      "dest_rel": "factory/library/skills/github_imports/verification-before-completion",
+      "source": "obra_superpowers",
+      "skill_md": "/private/tmp/aiwf_github_imports/obra_superpowers/skills/verification-before-completion/SKILL.md"
+    },
+    {
+      "merge_key": "video-content-strategist",
+      "dest_rel": "factory/library/skills/github_imports/video-content-strategist",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/video-content-strategist/SKILL.md"
+    },
+    {
+      "merge_key": "visual-design-foundations",
+      "dest_rel": "factory/library/skills/github_imports/visual-design-foundations",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/ui-design/skills/visual-design-foundations/SKILL.md"
+    },
+    {
+      "merge_key": "wcag-audit-patterns",
+      "dest_rel": "factory/library/skills/github_imports/wcag-audit-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/accessibility-compliance/skills/wcag-audit-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "web-artifacts-builder",
+      "dest_rel": "factory/library/skills/github_imports/web-artifacts-builder",
+      "source": "anthropics_official",
+      "skill_md": "/private/tmp/aiwf_github_imports/anthropics_skills/skills/web-artifacts-builder/SKILL.md"
+    },
+    {
+      "merge_key": "web-component-design",
+      "dest_rel": "factory/library/skills/github_imports/web-component-design",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/ui-design/skills/web-component-design/SKILL.md"
+    },
+    {
+      "merge_key": "web3-testing",
+      "dest_rel": "factory/library/skills/github_imports/web3-testing",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/blockchain-web3/skills/web3-testing/SKILL.md"
+    },
+    {
+      "merge_key": "webapp-testing",
+      "dest_rel": "factory/library/skills/github_imports/webapp-testing",
+      "source": "anthropics_official",
+      "skill_md": "/private/tmp/aiwf_github_imports/anthropics_skills/skills/webapp-testing/SKILL.md"
+    },
+    {
+      "merge_key": "what-if-oracle",
+      "dest_rel": "factory/library/skills/github_imports/what-if-oracle",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/what-if-oracle/SKILL.md"
+    },
+    {
+      "merge_key": "workflow-orchestration-patterns",
+      "dest_rel": "factory/library/skills/github_imports/workflow-orchestration-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/backend-development/skills/workflow-orchestration-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "workflow-patterns",
+      "dest_rel": "factory/library/skills/github_imports/workflow-patterns",
+      "source": "wshobson_agents",
+      "skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/conductor/skills/workflow-patterns/SKILL.md"
+    },
+    {
+      "merge_key": "writing-plans",
+      "dest_rel": "factory/library/skills/github_imports/writing-plans",
+      "source": "obra_superpowers",
+      "skill_md": "/private/tmp/aiwf_github_imports/obra_superpowers/skills/writing-plans/SKILL.md"
+    },
+    {
+      "merge_key": "writing-rules",
+      "dest_rel": "factory/library/skills/github_imports/writing-rules",
+      "source": "anthropics_claude_code",
+      "skill_md": "/private/tmp/aiwf_github_imports/anthropics_claude-code/plugins/hookify/skills/writing-rules/SKILL.md"
+    },
+    {
+      "merge_key": "writing-skills",
+      "dest_rel": "factory/library/skills/github_imports/writing-skills",
+      "source": "obra_superpowers",
+      "skill_md": "/private/tmp/aiwf_github_imports/obra_superpowers/skills/writing-skills/SKILL.md"
+    },
+    {
+      "merge_key": "x-twitter-growth",
+      "dest_rel": "factory/library/skills/github_imports/x-twitter-growth",
+      "source": "alirezarezvani",
+      "skill_md": "/private/tmp/aiwf_github_imports/alirezarezvani_claude-skills/marketing-skill/x-twitter-growth/SKILL.md"
+    },
+    {
+      "merge_key": "xlsx",
+      "dest_rel": "factory/library/skills/github_imports/xlsx",
+      "source": "anthropics_official",
+      "skill_md": "/private/tmp/aiwf_github_imports/anthropics_skills/skills/xlsx/SKILL.md"
+    },
+    {
+      "merge_key": "zarr-python",
+      "dest_rel": "factory/library/skills/github_imports/zarr-python",
+      "source": "k_dense_scientific",
+      "skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/zarr-python/SKILL.md"
+    }
+  ]
+}

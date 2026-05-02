@@ -1,0 +1,7 @@
+{
+  "merge_key": "vector-index-tuning",
+  "winner_source": "wshobson_agents",
+  "priority": 50,
+  "original_skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/llm-application-dev/skills/vector-index-tuning/SKILL.md",
+  "original_skill_root": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/llm-application-dev/skills/vector-index-tuning"
+}

@@ -1,0 +1,7 @@
+{
+  "merge_key": "deepchem",
+  "winner_source": "k_dense_scientific",
+  "priority": 70,
+  "original_skill_md": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/deepchem/SKILL.md",
+  "original_skill_root": "/private/tmp/aiwf_github_imports/K-Dense-AI_claude-scientific-skills/scientific-skills/deepchem"
+}

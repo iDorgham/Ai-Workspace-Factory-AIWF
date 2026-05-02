@@ -1,0 +1,7 @@
+{
+  "merge_key": "shellcheck-configuration",
+  "winner_source": "wshobson_agents",
+  "priority": 50,
+  "original_skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/shell-scripting/skills/shellcheck-configuration/SKILL.md",
+  "original_skill_root": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/shell-scripting/skills/shellcheck-configuration"
+}

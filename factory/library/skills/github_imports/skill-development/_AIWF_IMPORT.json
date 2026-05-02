@@ -1,0 +1,7 @@
+{
+  "merge_key": "skill-development",
+  "winner_source": "anthropics_claude_code",
+  "priority": 90,
+  "original_skill_md": "/private/tmp/aiwf_github_imports/anthropics_claude-code/plugins/plugin-dev/skills/skill-development/SKILL.md",
+  "original_skill_root": "/private/tmp/aiwf_github_imports/anthropics_claude-code/plugins/plugin-dev/skills/skill-development"
+}

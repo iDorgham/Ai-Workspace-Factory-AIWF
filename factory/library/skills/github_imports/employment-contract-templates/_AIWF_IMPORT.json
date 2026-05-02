@@ -1,0 +1,7 @@
+{
+  "merge_key": "employment-contract-templates",
+  "winner_source": "wshobson_agents",
+  "priority": 50,
+  "original_skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/hr-legal-compliance/skills/employment-contract-templates/SKILL.md",
+  "original_skill_root": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/hr-legal-compliance/skills/employment-contract-templates"
+}

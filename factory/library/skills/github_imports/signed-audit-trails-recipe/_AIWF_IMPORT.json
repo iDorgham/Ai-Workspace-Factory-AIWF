@@ -1,0 +1,7 @@
+{
+  "merge_key": "signed-audit-trails-recipe",
+  "winner_source": "wshobson_agents",
+  "priority": 50,
+  "original_skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/signed-audit-trails/skills/signed-audit-trails-recipe/SKILL.md",
+  "original_skill_root": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/signed-audit-trails/skills/signed-audit-trails-recipe"
+}

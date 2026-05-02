@@ -1,0 +1,7 @@
+{
+  "merge_key": "block-no-verify-hook",
+  "winner_source": "wshobson_agents",
+  "priority": 50,
+  "original_skill_md": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/block-no-verify/skills/block-no-verify-hook/SKILL.md",
+  "original_skill_root": "/private/tmp/aiwf_github_imports/wshobson_agents/plugins/block-no-verify/skills/block-no-verify-hook"
+}

@@ -1,0 +1,7 @@
+{
+  "merge_key": "mcp-builder",
+  "winner_source": "anthropics_official",
+  "priority": 100,
+  "original_skill_md": "/private/tmp/aiwf_github_imports/anthropics_skills/skills/mcp-builder/SKILL.md",
+  "original_skill_root": "/private/tmp/aiwf_github_imports/anthropics_skills/skills/mcp-builder"
+}
