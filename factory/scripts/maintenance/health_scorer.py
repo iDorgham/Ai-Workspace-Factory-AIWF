@@ -3,6 +3,7 @@ import json
 import shutil
 import sys
 from datetime import datetime
+from pathlib import Path
 
 # Add the factory root to the Python path to allow imports
 sys.path.insert(
@@ -68,6 +69,15 @@ class HealthScorer:
             if basename in STRUCTURAL_BUCKETS or ".archive" in root or "dead_weight" in root or "legacy" in root or "skills/manifests" in root or any(p in root for p in EXCLUDE_PILARS):
                 continue
 
+            # Imported design packs: provider folders use design.md (not SKILL/AGENT/README).
+            lib_path = Path(LIBRARY_DIR).resolve()
+            try:
+                rel_parts = Path(root).resolve().relative_to(lib_path).parts
+            except ValueError:
+                rel_parts = ()
+            if rel_parts and rel_parts[0] == "design":
+                continue
+
             self.stats["total_nodes"] += 1
 
             # Violation: Missing Documentation in functional leaf nodes
@@ -76,6 +86,7 @@ class HealthScorer:
                 and "SKILL.md" not in files
                 and "AGENT.md" not in files
                 and "README.md" not in files
+                and "design.md" not in files
             ):
                 self.deductions["doc"] += 0.5
                 self.stats["violations"] += 1
