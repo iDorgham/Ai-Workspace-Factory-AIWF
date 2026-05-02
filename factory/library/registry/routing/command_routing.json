@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-04-13",
+  "updated": "2026-05-01",
   "defaults": {
     "ranking": ["copilot", "codex", "gemini", "qwen"],
     "fallback_policy": "quality_first",
@@ -295,6 +295,145 @@
       ],
       "ranking": ["gemini", "qwen"],
       "fallback_policy": "speed_cost",
+      "confidence_threshold": 0.75
+    },
+    {
+      "id": "guide_plan_status",
+      "patterns": [
+        "^/guide plan status$"
+      ],
+      "ranking": ["claude", "gemini", "copilot", "codex", "qwen"],
+      "fallback_policy": "quality_first",
+      "confidence_threshold": 0.78
+    },
+    {
+      "id": "guide_plan_type",
+      "patterns": [
+        "^/guide plan (development|content|seo|social_media|marketing|business|media|branding)$"
+      ],
+      "ranking": ["claude", "gemini", "copilot", "codex", "qwen"],
+      "fallback_policy": "quality_first",
+      "confidence_threshold": 0.78
+    },
+    {
+      "id": "guide_brainstorm_about",
+      "patterns": [
+        "^/guide brainstorm about (.+)$"
+      ],
+      "ranking": ["claude", "gemini", "copilot", "qwen"],
+      "fallback_policy": "quality_first",
+      "confidence_threshold": 0.8
+    },
+    {
+      "id": "guide_brainstorm",
+      "patterns": [
+        "^/guide brainstorm$",
+        "^/guide brainstorm (.+)$"
+      ],
+      "ranking": ["claude", "gemini", "copilot", "codex", "qwen"],
+      "fallback_policy": "quality_first",
+      "confidence_threshold": 0.8
+    },
+    {
+      "id": "guide_spec",
+      "patterns": [
+        "^/guide spec (.+)$"
+      ],
+      "ranking": ["claude", "gemini", "copilot", "codex", "qwen"],
+      "fallback_policy": "quality_first",
+      "confidence_threshold": 0.82
+    },
+    {
+      "id": "guide_gate",
+      "patterns": [
+        "^/guide gate (.+)$"
+      ],
+      "ranking": ["claude", "copilot", "codex", "gemini", "qwen"],
+      "fallback_policy": "quality_first",
+      "confidence_threshold": 0.82
+    },
+    {
+      "id": "guide_adapter",
+      "patterns": [
+        "^/guide adapter (.+)$"
+      ],
+      "ranking": ["claude", "gemini", "copilot", "kilo", "qwen"],
+      "fallback_policy": "quality_first",
+      "confidence_threshold": 0.78
+    },
+    {
+      "id": "guide_learn",
+      "patterns": [
+        "^/guide learn (.+)$"
+      ],
+      "ranking": ["claude", "gemini", "copilot", "qwen"],
+      "fallback_policy": "quality_first",
+      "confidence_threshold": 0.78
+    },
+    {
+      "id": "guide_tutor",
+      "patterns": [
+        "^/guide tutor (.+)$"
+      ],
+      "ranking": ["claude", "gemini", "copilot", "qwen"],
+      "fallback_policy": "quality_first",
+      "confidence_threshold": 0.78
+    },
+    {
+      "id": "guide_heal_chaos_dashboard",
+      "patterns": [
+        "^/guide heal$",
+        "^/guide chaos$",
+        "^/guide dashboard$"
+      ],
+      "ranking": ["copilot", "codex", "claude", "gemini", "qwen"],
+      "fallback_policy": "speed_cost",
+      "confidence_threshold": 0.75
+    },
+    {
+      "id": "guide_mode",
+      "patterns": [
+        "^/guide mode:(poet|mentor|critic|explorer|co_creator)$"
+      ],
+      "ranking": ["claude", "gemini", "copilot", "qwen"],
+      "fallback_policy": "quality_first",
+      "confidence_threshold": 0.75
+    },
+    {
+      "id": "guide_creativity",
+      "patterns": [
+        "^/guide creativity:(high|medium|low)$"
+      ],
+      "ranking": ["claude", "gemini", "copilot", "qwen"],
+      "fallback_policy": "quality_first",
+      "confidence_threshold": 0.75
+    },
+    {
+      "id": "guide_memory",
+      "patterns": [
+        "^/guide memory:(view|export|clear)$"
+      ],
+      "ranking": ["claude", "copilot", "codex", "qwen"],
+      "fallback_policy": "speed_cost",
+      "confidence_threshold": 0.75
+    },
+    {
+      "id": "guide_help_ping",
+      "patterns": [
+        "^/guide help$",
+        "^/guide ping$"
+      ],
+      "ranking": ["claude", "gemini", "copilot", "codex", "qwen"],
+      "fallback_policy": "quality_first",
+      "confidence_threshold": 0.75
+    },
+    {
+      "id": "guide_root",
+      "patterns": [
+        "^/guide$"
+      ],
+      "ranking": ["claude", "gemini", "copilot", "codex", "qwen"],
+      "fallback_policy": "quality_first",
       "confidence_threshold": 0.75
     },
     {

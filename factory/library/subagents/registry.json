@@ -1,0 +1,34 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "owner": "guide-agent",
+    "schema": ".ai/registry/schemas/subagent.schema.json"
+  },
+  "subagents": [
+    { "id": "brand-consultant", "path": ".ai/subagents/brand-consultant.json", "parent_agent": "brand-agent", "status": "active" },
+    { "id": "discovery-engine", "path": ".ai/subagents/discovery-engine.json", "parent_agent": "research-agent", "status": "active" },
+    { "id": "profile-builder", "path": ".ai/subagents/profile-builder.json", "parent_agent": "research-agent", "status": "active" },
+    { "id": "delta-detector", "path": ".ai/subagents/delta-detector.json", "parent_agent": "scraper-agent", "status": "active" },
+    { "id": "ethical-crawler", "path": ".ai/subagents/ethical-crawler.json", "parent_agent": "scraper-agent", "status": "active" },
+    { "id": "content-parser", "path": ".ai/subagents/content-parser.json", "parent_agent": "scraper-agent", "status": "active" },
+    { "id": "asset-handler", "path": ".ai/subagents/asset-handler.json", "parent_agent": "scraper-agent", "status": "active" },
+    { "id": "sync-state-writer", "path": ".ai/subagents/sync-state-writer.json", "parent_agent": "scraper-agent", "status": "active" },
+    { "id": "blueprint-architect", "path": ".ai/subagents/blueprint-architect.json", "parent_agent": "creator-agent", "status": "active" },
+    { "id": "content-generator", "path": ".ai/subagents/content-generator.json", "parent_agent": "creator-agent", "status": "active" },
+    { "id": "brand-voice-applier", "path": ".ai/subagents/brand-voice-applier.json", "parent_agent": "creator-agent", "status": "active" },
+    { "id": "comparison-analyst", "path": ".ai/subagents/comparison-analyst.json", "parent_agent": "creator-agent", "status": "active" },
+    { "id": "keyword-auditor", "path": ".ai/subagents/keyword-auditor.json", "parent_agent": "seo-agent", "status": "active" },
+    { "id": "technical-auditor", "path": ".ai/subagents/technical-auditor.json", "parent_agent": "seo-agent", "status": "active" },
+    { "id": "image-seo-auditor", "path": ".ai/subagents/image-seo-auditor.json", "parent_agent": "seo-agent", "status": "active" },
+    { "id": "tone-analyzer", "path": ".ai/subagents/tone-analyzer.json", "parent_agent": "brand-agent", "status": "active" },
+    { "id": "drift-detector", "path": ".ai/subagents/drift-detector.json", "parent_agent": "brand-agent", "status": "active" },
+    { "id": "rule-updater", "path": ".ai/subagents/rule-updater.json", "parent_agent": "brand-agent", "status": "active" },
+    { "id": "quality-checker", "path": ".ai/subagents/quality-checker.json", "parent_agent": "workflow-agent", "status": "active" },
+    { "id": "approval-gate", "path": ".ai/subagents/approval-gate.json", "parent_agent": "workflow-agent", "status": "active" },
+    { "id": "export-packager", "path": ".ai/subagents/export-packager.json", "parent_agent": "workflow-agent", "status": "active" },
+    { "id": "archive-manager", "path": ".ai/subagents/archive-manager.json", "parent_agent": "workflow-agent", "status": "active" },
+    { "id": "trend-miner", "path": ".ai/subagents/trend-miner.json", "parent_agent": "research-agent", "status": "active" },
+    { "id": "opportunity-scorer", "path": ".ai/subagents/opportunity-scorer.json", "parent_agent": "research-agent", "status": "active" },
+    { "id": "intel-synthesizer", "path": ".ai/subagents/intel-synthesizer.json", "parent_agent": "research-agent", "status": "active" }
+  ]
+}

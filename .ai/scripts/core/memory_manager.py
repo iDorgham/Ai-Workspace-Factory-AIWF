@@ -89,11 +89,21 @@ def save_state(state: dict) -> None:
 def is_forbidden_path(file_path: str) -> bool:
     """Check if a file path is in the forbidden raw-load list."""
     path = Path(file_path)
+    path_parts = path.parts
+    if "scraped" not in path_parts:
+        return False
+
+    raw_markers = {"content", "images"}
+    for idx, part in enumerate(path_parts):
+        if part != "scraped":
+            continue
+        # Block raw payload segments like ".../scraped/content/*" or ".../scraped/images/*"
+        if idx + 1 < len(path_parts) and path_parts[idx + 1] in raw_markers:
+            return True
+
     for forbidden in FORBIDDEN_RAW_PATHS:
-        # Simple glob-style check
-        forbidden_parts = Path(forbidden.replace("*", "WILDCARD")).parts
-        path_parts = path.parts
-        if "scraped" in path_parts:
+        forbidden_clean = forbidden.replace("*", "")
+        if forbidden_clean and forbidden_clean in file_path:
             return True
     return False
 

@@ -200,7 +200,7 @@ Both versions become:
 ## Debugging Checklist
 
 **Command not using expected tool?**
-- [ ] Check `commands_multi_tool.md` for that command's rankings
+- [ ] Check `commands.md` for that command's rankings
 - [ ] Check logs/workflow.jsonl for actual tool used
 - [ ] Verify guide-agent is loading `-multi-tool` files (not old versions)
 
@@ -237,7 +237,7 @@ Core architecture:
   .ai/tool-adapters/_fallback_routing.md   ← Tool selection logic
 
 Governance:
-  .ai/commands_multi_tool.md               ← Command router (tool rankings)
+  .ai/commands/commands.md               ← Command router (tool rankings)
   .ai/data_ownership_multi_tool.md         ← Ownership + versioning rules
 
 Guides:
@@ -280,7 +280,7 @@ Logs:
 - Verify file extension (.md vs .json)
 
 **Tool not selected as expected?**
-- Check `commands_multi_tool.md` rankings
+- Check `commands.md` rankings
 - Check tool availability (file exists? readable?)
 
 **Performance confusing?**

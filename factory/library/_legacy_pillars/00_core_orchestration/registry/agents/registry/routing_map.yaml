@@ -1,0 +1,180 @@
+---
+type: routing-map
+tier: OMEGA
+version: 19.0.0
+compliance: Law 151/2020
+traceability: ISO-8601 Certified
+---
+
+routing:
+  /factory:
+    start:
+      agent: factory_orchestrator
+      fallback: teaching_agent
+      circuit_breaker: 90
+      chain_transitions: ["factory build"]
+      omega_gate: true
+      silent: false
+    profile:
+      agent: library_curator
+      fallback: factory_orchestrator
+      circuit_breaker: 95
+      chain_transitions: []
+      omega_gate: false
+      silent: true
+    build:
+      agent: factory_orchestrator
+      fallback: healing_bot_v2
+      circuit_breaker: 85
+      chain_transitions: ["library scan", "factory test"]
+      omega_gate: false
+      silent: true
+    make:
+      agent: factory_orchestrator
+      fallback: healing_bot_v2
+      circuit_breaker: 80
+      chain_transitions: ["factory status"]
+      omega_gate: true
+      silent: true
+    test:
+      agent: healing_bot_v2
+      fallback: regional_controller_bridge
+      circuit_breaker: 90
+      chain_transitions: ["factory check"]
+      omega_gate: false
+      silent: true
+    check:
+      agent: healing_bot_v2
+      fallback: library_curator
+      circuit_breaker: 85
+      chain_transitions: ["factory repair"]
+      omega_gate: false
+      silent: true
+    sync:
+      agent: factory_orchestrator
+      fallback: swarm_router_v3
+      circuit_breaker: 95
+      chain_transitions: []
+      omega_gate: false
+      silent: true
+    assign:
+      agent: swarm_router_v3
+      fallback: factory_orchestrator
+      circuit_breaker: 80
+      chain_transitions: ["dev implement"]
+      omega_gate: true
+      silent: true
+    suggest:
+      agent: library_curator
+      fallback: teaching_agent
+      circuit_breaker: 95
+      chain_transitions: []
+      omega_gate: false
+      silent: true
+    repair:
+      agent: healing_bot_v2
+      fallback: registry_guardian
+      circuit_breaker: 75
+      chain_transitions: ["factory status"]
+      omega_gate: true
+      silent: true
+    help:
+      agent: teaching_agent
+      fallback: factory_orchestrator
+      circuit_breaker: 100
+      chain_transitions: []
+      omega_gate: false
+      silent: false
+    status:
+      agent: factory_orchestrator
+      fallback: healing_bot_v2
+      circuit_breaker: 100
+      chain_transitions: []
+      omega_gate: false
+      silent: true
+
+  /library:
+    create:
+      agent: library_curator
+      fallback: teaching_agent
+      circuit_breaker: 90
+      chain_transitions: ["library test"]
+      omega_gate: true
+      silent: false
+    scan:
+      agent: library_curator
+      fallback: healing_bot_v2
+      circuit_breaker: 85
+      chain_transitions: ["library report"]
+      omega_gate: false
+      silent: true
+    test:
+      agent: library_curator
+      fallback: regional_controller_bridge
+      circuit_breaker: 90
+      chain_transitions: ["library fix"]
+      omega_gate: false
+      silent: true
+    fix:
+      agent: healing_bot_v2
+      fallback: registry_guardian
+      circuit_breaker: 75
+      chain_transitions: ["library scan"]
+      omega_gate: true
+      silent: true
+    improve:
+      agent: library_curator
+      fallback: teaching_agent
+      circuit_breaker: 85
+      chain_transitions: ["library test"]
+      omega_gate: true
+      silent: true
+    agent:
+      agent: registry_guardian
+      fallback: library_curator
+      circuit_breaker: 90
+      chain_transitions: ["library scan"]
+      omega_gate: true
+      silent: true
+    skill:
+      agent: library_curator
+      fallback: registry_guardian
+      circuit_breaker: 90
+      chain_transitions: ["library scan"]
+      omega_gate: true
+      silent: true
+    rule:
+      agent: registry_guardian
+      fallback: regional_controller_bridge
+      circuit_breaker: 95
+      chain_transitions: []
+      omega_gate: true
+      silent: true
+    profile:
+      agent: library_curator
+      fallback: factory_orchestrator
+      circuit_breaker: 95
+      chain_transitions: []
+      omega_gate: true
+      silent: true
+    maintain:
+      agent: registry_guardian
+      fallback: healing_bot_v2
+      circuit_breaker: 80
+      chain_transitions: []
+      omega_gate: true
+      silent: true
+    report:
+      agent: library_curator
+      fallback: factory_orchestrator
+      circuit_breaker: 100
+      chain_transitions: []
+      omega_gate: false
+      silent: true
+    help:
+      agent: teaching_agent
+      fallback: library_curator
+      circuit_breaker: 100
+      chain_transitions: []
+      omega_gate: false
+      silent: false

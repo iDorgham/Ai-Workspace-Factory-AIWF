@@ -1,0 +1,46 @@
+{
+  "spec_id": "DEV-18G-governance-protocols",
+  "spec_version": "1.0.0",
+  "sdd_version": "v21.0.0",
+  "planning_type": "development",
+  "phase_name": "Governance Protocol Hardening",
+  "phase_number": "18G",
+  "topic": "Governance health checks, SDD gate enforcement, and omega gate v3 specs",
+  "status": "pending",
+  "created": "2026-05-01T00:00:00Z",
+  "reasoning_hash": "sha256:18g-governance-phase-spec-2026-05-01",
+  "law_151_scope": true,
+  "owner_agent": "registry_guardian",
+  "goals": [
+    "Ship governance_health_check.py and sdd_gate_enforcer.py per tasks.json",
+    "Keep governance contracts indexed and auditable under .ai/governance/",
+    "Satisfy v21 density gate for this phase folder before any manifest active promotion"
+  ],
+  "acceptance_criteria": [
+    {
+      "id": "AC-01",
+      "description": "spec_density_gate_v2 returns PASS for .ai/plan/development/18_governance",
+      "verifiable": true,
+      "test_ref": "validation/audit_checklist.md#AC-01"
+    },
+    {
+      "id": "AC-02",
+      "description": "regional_compliance.md reflects Law 151/2020 for governance telemetry paths",
+      "verifiable": true,
+      "test_ref": "validation/audit_checklist.md#AC-02"
+    }
+  ],
+  "timeline": {
+    "estimated_days": 21,
+    "start_date": "2026-05-01",
+    "end_date": "2026-05-22"
+  },
+  "density_gate": {
+    "minimum_files": 12,
+    "enforced_by": "spec_density_gate_v2",
+    "c4_required": true,
+    "regional_compliance_required": true
+  },
+  "dependencies": [],
+  "blocks": []
+}

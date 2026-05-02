@@ -1,0 +1,654 @@
+{
+  "_meta": {
+    "version": "3.2.0",
+    "description": "Explicit input/output contracts for every sub-agent in the Sovereign workspace. Agents must validate inputs against these schemas before execution.",
+    "last_updated": "2026-04-13",
+    "owner": "guide-agent",
+    "deprecated_monolith": true,
+    "canonical_registry": ".ai/registry/subagents.registry.json",
+    "canonical_contract_directory": ".ai/subagents/",
+    "legacy_compat_map": ".ai/compat/subagents.legacy-map.json"
+  },
+
+  "brand-consultant": {
+    "parent_agent": "brand-agent",
+    "trigger": "/brand",
+    "script": ".ai/scripts/brand/brand_consultant.py",
+    "protocol": ".ai/brand-discovery.md",
+    "single_responsibility": "Run structured brand discovery interview and generate all brand foundation files",
+    "input": {
+      "required": {
+        "questions_source": "path — .ai/templates/brand-discovery/questions.json",
+        "user_interaction": "interactive — CLI session with the workspace operator"
+      },
+      "optional": {
+        "existing_market_positioning": "path — content/sovereign/reference/market-positioning.md (versioned if present)"
+      }
+    },
+    "output": {
+      "market_positioning": "content/sovereign/reference/market-positioning.md — studio niche, clients, USPs, pricing, differentiators",
+      "style_rules": "content/sovereign/reference/brand-voice/style-rules.md — tone rules, spectrum scores, language rules",
+      "glossary": "content/sovereign/reference/brand-voice/glossary.md — preferred vocabulary, prohibited terms",
+      "tone_examples": "content/sovereign/reference/brand-voice/tone-examples.md — on-brand vs off-brand reference",
+      "voice_refinement": "content/sovereign/reference/brand-voice/voice-refinement.md — session 0 refinement log",
+      "session_log": ".ai/logs/brand-session.json — full answer record"
+    },
+    "interview_structure": {
+      "total_questions": 28,
+      "phases": 7,
+      "question_types": ["single_choice", "single_choice_with_other", "multi_choice", "multi_choice_with_other", "open_text", "spectrum_grid"],
+      "required_questions": 18,
+      "optional_questions": 10
+    },
+    "validation": {
+      "required_fields_enforced": true,
+      "max_selections_enforced": true,
+      "no_partial_file_writes": true,
+      "existing_files_versioned_before_overwrite": true,
+      "interruption_safe": true
+    },
+    "pipeline_rule": "MUST run before /create if market-positioning.md is empty or missing",
+    "error_owner": "brand-consultant",
+    "escalates_to": "brand-agent",
+    "error_modes": {
+      "questions_json_missing": "HALT — print path, sys.exit(1)",
+      "file_write_failure": "retry 3x — log to workflow.jsonl — skip file, continue session",
+      "user_interrupts": "exit cleanly — no partial files written",
+      "duplicate_run": "version existing files (_v2, _v3) before overwriting"
+    }
+  },
+
+  "discovery-engine": {
+    "parent_agent": "research-agent",
+    "trigger": "/research competitors",
+    "single_responsibility": "Web discovery and relevance scoring of competitor candidates",
+    "input": {
+      "required": {
+        "brand_positioning": "string — Sovereign niche, tier, geo, services from market-positioning.md",
+        "existing_slugs": "array<string> — slugs already in index.json to avoid duplicates"
+      },
+      "optional": {
+        "seed_urls": "array<string> — manual competitor URLs provided by user"
+      }
+    },
+    "output": {
+      "candidate_competitors": "array<{name: string, url: string, niche: string, confidence_score: float, reason: string}>"
+    },
+    "validation": {
+      "confidence_score_minimum": 0.70,
+      "site_response_timeout_seconds": 5,
+      "minimum_candidates_before_user_prompt": 3
+    },
+    "error_owner": "discovery-engine",
+    "escalates_to": "research-agent"
+  },
+
+  "profile-builder": {
+    "parent_agent": "research-agent",
+    "trigger": "/research competitors (after discovery-engine)",
+    "single_responsibility": "Extract structured profile data from each competitor site",
+    "input": {
+      "required": {
+        "candidate_competitors": "array<{name, url, niche, confidence_score}> — from discovery-engine"
+      }
+    },
+    "output": {
+      "competitor_profiles": "array<{slug: string, name: string, url: string, niche: string, services: array<string>, contact: {email?, phone?, address?}, socials: {instagram?, linkedin?, facebook?}, positioning_summary: string}>",
+      "index_entries": "array<{slug, url, niche, last_scraped: null, sync_enabled: true, status: 'active'}>"
+    },
+    "validation": {
+      "minimum_data_points_per_profile": 3,
+      "pii_must_be_redacted": true,
+      "no_duplicate_slugs_in_output": true
+    },
+    "writes": ["content/sovereign/scraped/[slug]/info.md", "content/sovereign/scraped/index.json"],
+    "error_owner": "profile-builder",
+    "escalates_to": "research-agent"
+  },
+
+  "delta-detector": {
+    "parent_agent": "scraper-agent",
+    "trigger": "/sync, /scrape * (first step in pipeline)",
+    "single_responsibility": "Detect content changes only — reads only, never writes",
+    "input": {
+      "required": {
+        "index_json": "object — full content/sovereign/scraped/index.json",
+        "sync_status_per_competitor": "object<slug, {last_sync: ISO8601, url_hashes: object<url, hash>, total_content: int}>"
+      }
+    },
+    "output": {
+      "delta_payload": "object<slug, {new_urls: array<string>, updated_urls: array<string>, deleted_urls: array<string>}>"
+    },
+    "validation": {
+      "false_positive_rate_maximum": 0.10,
+      "only_include_deltas_older_than_hours": 24,
+      "sitemap_fallback": "RSS",
+      "if_both_fail": "mark_competitor_stale"
+    },
+    "writes": [],
+    "reads": ["content/sovereign/scraped/index.json", "content/sovereign/scraped/[slug]/sync-status.json"],
+    "error_owner": "delta-detector",
+    "escalates_to": "scraper-agent"
+  },
+
+  "ethical-crawler": {
+    "parent_agent": "scraper-agent",
+    "trigger": "/scrape *, /sync (after delta-detector)",
+    "single_responsibility": "Fetch URLs ethically — robots.txt compliance, rate limiting, PII filtering",
+    "input": {
+      "required": {
+        "delta_payload": "object<slug, {new_urls, updated_urls}> — from delta-detector",
+        "robots_txt_per_domain": "object<domain, rules>"
+      }
+    },
+    "output": {
+      "raw_pages": "array<{url: string, html: string, status_code: int, fetched_at: ISO8601}>",
+      "compliance_log": "array<{url, robots_allowed: bool, skipped_reason?: string}>"
+    },
+    "validation": {
+      "robots_txt_compliance": "100% — never bypass",
+      "minimum_delay_between_requests_seconds": 2,
+      "retry_on_429": [5, 10, 20],
+      "max_retries_per_url": 3,
+      "pii_patterns_filtered": ["email", "phone", "full_name", "address"],
+      "block_if_robots_disallows": true
+    },
+    "writes": [".ai/logs/scrape-audit.jsonl (append only)"],
+    "error_owner": "ethical-crawler",
+    "escalates_to": "scraper-agent"
+  },
+
+  "content-parser": {
+    "parent_agent": "scraper-agent",
+    "trigger": "/scrape *, /sync (after ethical-crawler)",
+    "single_responsibility": "Convert raw HTML to structured Markdown with metadata",
+    "input": {
+      "required": {
+        "raw_pages": "array<{url, html, status_code, fetched_at}> — from ethical-crawler"
+      }
+    },
+    "output": {
+      "parsed_content": "array<{file_path: string, metadata: {url, title, publish_date, word_count, content_type}, body: string, links: array<string>, image_refs: array<string>}>"
+    },
+    "validation": {
+      "malformed_html_tolerance_percent": 5,
+      "skip_and_log_if_parse_fails": true,
+      "valid_markdown_required": true
+    },
+    "writes": ["content/sovereign/scraped/[slug]/scraped/content/[type]/[slug].md"],
+    "error_owner": "content-parser",
+    "escalates_to": "scraper-agent"
+  },
+
+  "asset-handler": {
+    "parent_agent": "scraper-agent",
+    "trigger": "/scrape *, /sync (after content-parser)",
+    "single_responsibility": "Download images, convert to WebP, deduplicate by MD5 hash",
+    "input": {
+      "required": {
+        "image_refs": "array<string> — image URLs from parsed content",
+        "competitor_slug": "string"
+      }
+    },
+    "output": {
+      "asset_manifest": "object<original_url, {local_path: string, format: 'webp', md5: string, size_kb: int, status: 'saved'|'duplicate'|'failed'>}"
+    },
+    "validation": {
+      "deduplicate_by_md5": true,
+      "target_format": "webp",
+      "skip_on_conversion_failure": true,
+      "log_all_failures": true
+    },
+    "writes": ["content/sovereign/scraped/[slug]/scraped/images/", "content/sovereign/scraped/[slug]/scraped/images/manifest.json"],
+    "error_owner": "asset-handler",
+    "escalates_to": "scraper-agent"
+  },
+
+  "sync-state-writer": {
+    "parent_agent": "scraper-agent",
+    "trigger": "/sync, /scrape * (final step — ONLY after all scraping completes and validates)",
+    "single_responsibility": "SOLE writer of sync-status.json. Runs last.",
+    "input": {
+      "required": {
+        "delta_payload": "object — from delta-detector",
+        "scrape_results": "object<slug, {files_written: int, errors: array}>",
+        "competitor_slug": "string",
+        "timestamp": "ISO8601"
+      }
+    },
+    "output": {
+      "sync_status": "object<{last_sync: ISO8601, total_content: int, new_since_last: int, scrape_state: 'clean'|'partial'|'error', url_hashes: object<url, hash>, errors: array}>"
+    },
+    "validation": {
+      "timestamp_must_be_within_minutes": 5,
+      "counts_must_match_actual_files": true,
+      "rollback_if_write_fails_3x": true
+    },
+    "writes": ["content/sovereign/scraped/[slug]/sync-status.json (AUTHORITATIVE — no other agent writes this)"],
+    "error_owner": "sync-state-writer",
+    "escalates_to": "scraper-agent",
+    "critical_note": "If write fails 3x: rollback all scraped files from this run, preserve old sync-status.json"
+  },
+
+  "blueprint-architect": {
+    "parent_agent": "creator-agent",
+    "trigger": "/create * (first step)",
+    "single_responsibility": "Select content structure based on competitor gap analysis and topic",
+    "input": {
+      "required": {
+        "topic": "string — from user command",
+        "content_type": "enum: website-pages | blog-posts | projects | landing-pages",
+        "brand_positioning": "string — from content/sovereign/reference/market-positioning.md"
+      },
+      "optional": {
+        "competitor_gap_analysis": "object — structural patterns from scraped competitor content",
+        "keyword_targets": "array<string> — from content/sovereign/_references/keyword-maps.md",
+        "template": "string — from .ai/templates/content-blueprints/[type].md"
+      }
+    },
+    "output": {
+      "outline": "object<{sections: array<{heading: string, purpose: string, keywords: array<string>, inspiration_source?: string}>, estimated_word_count: int, target_keywords: array<string>}>"
+    },
+    "validation": {
+      "outline_structural_similarity_to_any_competitor_maximum": 0.80,
+      "minimum_sections": 4,
+      "keywords_must_be_present": true
+    },
+    "error_owner": "blueprint-architect",
+    "escalates_to": "creator-agent"
+  },
+
+  "content-generator": {
+    "parent_agent": "creator-agent",
+    "trigger": "/create * (after blueprint-architect)",
+    "single_responsibility": "Write original Markdown body. Check originality only.",
+    "input": {
+      "required": {
+        "outline": "object — from blueprint-architect",
+        "brand_voice_rules": "string — from content/sovereign/reference/brand-voice/style-rules.md",
+        "keyword_targets": "array<string>"
+      }
+    },
+    "output": {
+      "draft_markdown": "string — full Markdown with YAML frontmatter",
+      "frontmatter": "object<{title, meta_description, keywords: array, author, created_at: ISO8601, version: 1, tone_score: null, originality_score: null, status: 'draft'}>",
+      "originality_report": "object<{score: float, flagged_passages: array<{text, similarity_source}>}>"
+    },
+    "validation": {
+      "semantic_similarity_maximum": 0.15,
+      "keyword_density_range": [0.01, 0.02],
+      "retry_on_similarity_breach": true,
+      "max_retries": 2,
+      "retry_strategy": "structural_shift_with_new_examples"
+    },
+    "writes": ["content/[type]/[slug].md (draft)"],
+    "error_owner": "content-generator",
+    "escalates_to": "creator-agent"
+  },
+
+  "brand-voice-applier": {
+    "parent_agent": "creator-agent",
+    "trigger": "/create * (after content-generator), /polish (via seo-agent hand-off)",
+    "single_responsibility": "Apply and validate brand voice compliance. Block if < 92%.",
+    "input": {
+      "required": {
+        "draft_markdown": "string — from content-generator",
+        "style_rules": "string — from content/sovereign/reference/brand-voice/style-rules.md",
+        "glossary": "string — from content/sovereign/reference/brand-voice/glossary.md"
+      }
+    },
+    "output": {
+      "adjusted_markdown": "string — tone-adjusted Markdown",
+      "tone_report": "object<{compliance_score: float, drift_flags: array<{location, rule_violated, severity}>, applied_rules: array<string>}>"
+    },
+    "validation": {
+      "compliance_threshold": 0.92,
+      "max_retries_on_failure": 2,
+      "block_export_if_below_threshold": true,
+      "flag_for_review_after_max_retries": true
+    },
+    "error_owner": "brand-voice-applier",
+    "escalates_to": "creator-agent"
+  },
+
+  "comparison-analyst": {
+    "parent_agent": "creator-agent",
+    "trigger": "/compare sovereign vs competitor [name]",
+    "single_responsibility": "Generate structural, tonal, and keyword diff reports",
+    "input": {
+      "required": {
+        "sovereign_content": "string — Markdown from content/",
+        "competitor_content": "string — from content/sovereign/scraped/[slug]/scraped/content/ OR live fetch"
+      },
+      "optional": {
+        "brand_voice_matrix": "object — from content/sovereign/reference/brand-voice/"
+      }
+    },
+    "output": {
+      "diff_report": "object<{sections: array<{dimension: 'structure'|'tone'|'keywords'|'cta', sovereign: string, competitor: string, gap: string, recommendation: string}>, overall_alignment_percent: float}>"
+    },
+    "validation": {
+      "all_diffs_must_be_actionable": true,
+      "minimum_dimensions_analyzed": 4
+    },
+    "writes": ["content/sovereign/comparisons/sovereign_vs_[slug].md", "content/sovereign/comparisons/diff-logs.jsonl (append)"],
+    "error_owner": "comparison-analyst",
+    "escalates_to": "creator-agent"
+  },
+
+  "keyword-auditor": {
+    "parent_agent": "seo-agent",
+    "trigger": "/polish content in content/",
+    "single_responsibility": "Keyword density, placement, and cannibalization checks",
+    "input": {
+      "required": {
+        "markdown_content": "string",
+        "target_keywords": "array<string>",
+        "all_content_files": "array<{file_path, keywords}> — for cannibalization check"
+      }
+    },
+    "output": {
+      "keyword_report": "object<{density: float, placement_valid: bool, cannibalization_flags: array<{keyword, files_conflicting: array<string>}>, gaps: array<string>}>"
+    },
+    "validation": {
+      "target_density_range": [0.01, 0.02],
+      "primary_keyword_must_be_in_h1_and_meta": true,
+      "cannibalization_requires_human_review": true
+    },
+    "error_owner": "keyword-auditor",
+    "escalates_to": "seo-agent"
+  },
+
+  "technical-auditor": {
+    "parent_agent": "seo-agent",
+    "trigger": "/polish content in content/",
+    "single_responsibility": "H-structure, meta generation, readability scoring",
+    "input": {
+      "required": {
+        "markdown_content": "string",
+        "target_keyword": "string"
+      }
+    },
+    "output": {
+      "seo_meta": "object<{title: string, meta_description: string, h_structure_valid: bool, heading_count: object<h1: int, h2: int, h3: int>, flesch_kincaid_score: float, word_count: int}>",
+      "readability_fixes": "array<{paragraph_index: int, issue: string, suggested_fix: string}>"
+    },
+    "validation": {
+      "flesch_kincaid_minimum": 65,
+      "h1_count_must_be_exactly_1": true,
+      "meta_description_length_range": [120, 155],
+      "auto_simplify_on_readability_fail": true,
+      "max_auto_fix_passes": 2
+    },
+    "writes": ["content/[type]/seo-meta.json"],
+    "error_owner": "technical-auditor",
+    "escalates_to": "seo-agent"
+  },
+
+  "image-seo-auditor": {
+    "parent_agent": "seo-agent",
+    "trigger": "/optimize images in content/",
+    "single_responsibility": "Alt-text generation, WebP conversion, lazy-load, schema injection",
+    "input": {
+      "required": {
+        "image_refs": "array<{markdown_path, image_src, context_text}>"
+      },
+      "optional": {
+        "target_keyword": "string — for keyword-aware alt-text"
+      }
+    },
+    "output": {
+      "optimized_refs": "array<{original_src, webp_path, alt_text, lazy_load: true, schema_type: string}>",
+      "assets_seo_json": "object<{image_path: {alt, format, size_kb, schema, lazy_load, wcag_contrast_pass}}>"
+    },
+    "validation": {
+      "alt_text_coverage": "100%",
+      "alt_text_max_chars": 125,
+      "webp_conversion": "100%",
+      "lazy_load_attribute": "100%",
+      "wcag_aa_contrast_check": "sampled_30_percent"
+    },
+    "writes": ["content/assets-seo.json", "updated Markdown files (image refs updated in-place)"],
+    "error_owner": "image-seo-auditor",
+    "escalates_to": "seo-agent"
+  },
+
+  "tone-analyzer": {
+    "parent_agent": "brand-agent",
+    "trigger": "/extract brand voice from [source]",
+    "single_responsibility": "Extract lexicon, pacing, CTA style from source text",
+    "input": {
+      "required": {
+        "source_text": "string — at least 10 sample passages"
+      }
+    },
+    "output": {
+      "voice_profile": "object<{lexicon: array<string>, sentence_avg_words: float, tone_intensity: 'formal'|'conversational'|'authoritative'|'warm', cta_style: string, adjective_density: float, examples: array<string>}>"
+    },
+    "validation": {
+      "minimum_samples_analyzed": 10,
+      "cluster_match_required": true
+    },
+    "writes": ["content/sovereign/reference/brand-voice/voice-refinement.md"],
+    "error_owner": "tone-analyzer",
+    "escalates_to": "brand-agent"
+  },
+
+  "drift-detector": {
+    "parent_agent": "brand-agent",
+    "trigger": "/refine brand voice",
+    "single_responsibility": "Scan recent content files for tone violations against current style rules",
+    "input": {
+      "required": {
+        "content_files": "array<{path, markdown}> — recent files from content/",
+        "style_rules": "string — from content/sovereign/reference/brand-voice/style-rules.md"
+      }
+    },
+    "output": {
+      "drift_report": "object<{violations: array<{file_path, line, rule_name, severity: 'minor'|'major', excerpt}>, false_positive_rate_estimate: float}>"
+    },
+    "validation": {
+      "false_positive_rate_maximum": 0.20,
+      "flag_for_manual_review_if_exceeded": true
+    },
+    "error_owner": "drift-detector",
+    "escalates_to": "brand-agent"
+  },
+
+  "rule-updater": {
+    "parent_agent": "brand-agent",
+    "trigger": "/refine brand voice (after drift-detector)",
+    "single_responsibility": "Merge new patterns into style-rules.md, resolve conflicts",
+    "input": {
+      "required": {
+        "drift_report": "object — from drift-detector",
+        "existing_style_rules": "string"
+      }
+    },
+    "output": {
+      "updated_style_rules": "string — Markdown with new/updated rules",
+      "conflict_report": "array<{rule_a, rule_b, conflict_description}>"
+    },
+    "validation": {
+      "no_rule_conflicts_in_output": true,
+      "test_new_rules_against_minimum_samples": 3,
+      "never_delete_rules": true,
+      "deprecate_with_tag_instead": "[DEPRECATED]"
+    },
+    "writes": ["content/sovereign/reference/brand-voice/style-rules.md", "content/sovereign/reference/brand-voice/glossary.md"],
+    "error_owner": "rule-updater",
+    "escalates_to": "brand-agent"
+  },
+
+  "quality-checker": {
+    "parent_agent": "workflow-agent",
+    "trigger": "/review",
+    "single_responsibility": "Run all 5 quality gates IN PARALLEL. Never sequentially.",
+    "input": {
+      "required": {
+        "staged_content": "array<{file_path, markdown, metadata}> — files with status: 'draft'"
+      }
+    },
+    "output": {
+      "quality_report": "object<{reviewed_at: ISO8601, content_files: array<string>, gates: {seo: {passed, score, violations}, brand: {passed, score, violations}, readability: {passed, score, violations}, image_seo: {passed, coverage_percent, violations}, originality: {passed, score, violations}}, overall_pass: bool}>"
+    },
+    "validation": {
+      "execution_mode": "parallel — all 5 gates simultaneously",
+      "seo_threshold": 0.85,
+      "brand_threshold": 0.92,
+      "readability_threshold": 65,
+      "image_seo_threshold": 1.00,
+      "originality_threshold": 0.15,
+      "all_gates_must_run_even_if_one_fails": true
+    },
+    "writes": [".ai/logs/quality-report.json (overwrite)", ".ai/logs/quality-report-[timestamp].json (backup)"],
+    "error_owner": "quality-checker",
+    "escalates_to": "workflow-agent"
+  },
+
+  "approval-gate": {
+    "parent_agent": "workflow-agent",
+    "trigger": "/approve",
+    "single_responsibility": "Check quality-report.json, lock approved content",
+    "input": {
+      "required": {
+        "quality_report": "object — from .ai/logs/quality-report.json",
+        "content_metadata": "object — YAML frontmatter from content files"
+      }
+    },
+    "output": {
+      "approval_result": "object<{approved: bool, approved_at: ISO8601|null, failed_gates: array<string>}>"
+    },
+    "validation": {
+      "all_gates_must_pass": true,
+      "quality_report_must_exist": true,
+      "block_if_any_gate_fails": true
+    },
+    "writes": ["content/[type]/[slug].md frontmatter (status: 'approved', approved_at)"],
+    "error_owner": "approval-gate",
+    "escalates_to": "workflow-agent"
+  },
+
+  "export-packager": {
+    "parent_agent": "workflow-agent",
+    "trigger": "/export",
+    "single_responsibility": "Package approved content into CSV and CMS ZIP",
+    "input": {
+      "required": {
+        "approved_content": "array<{file_path, markdown, metadata}> — status must be 'approved'",
+        "csv_schema": "object — from .ai/templates/csv-schemas/content-export.json"
+      }
+    },
+    "output": {
+      "csv_export": "string — path to content/sovereign/outputs/csv-exports/[slug].csv",
+      "cms_pack": "string — path to content/sovereign/outputs/cms-packs/[slug].zip"
+    },
+    "validation": {
+      "block_if_status_not_approved": true,
+      "csv_schema_match_required": "100%",
+      "version_output_if_already_exists": true
+    },
+    "writes": ["content/sovereign/outputs/csv-exports/", "content/sovereign/outputs/cms-packs/"],
+    "error_owner": "export-packager",
+    "escalates_to": "workflow-agent"
+  },
+
+  "archive-manager": {
+    "parent_agent": "workflow-agent",
+    "trigger": "/archive old content",
+    "single_responsibility": "Compress files > 30 days old, update archive index with checksums",
+    "input": {
+      "required": {
+        "content_files": "array<{path, created_at}> — all files in content/ and content/sovereign/scraped/",
+        "cutoff_days": 30
+      }
+    },
+    "output": {
+      "archived_files": "array<{original_path, archive_path, checksum_sha256, archived_at: ISO8601}>",
+      "archive_index_entry": "object<{pointer: {original_path, archived_path, checksum, archived_at}}>"
+    },
+    "validation": {
+      "minimum_age_days": 30,
+      "checksum_verification_after_compression": true,
+      "rollback_if_checksum_fails": true,
+      "never_archive_active_content": true
+    },
+    "writes": ["archive/[type]/*.md.gz", "archive/archive-index.json (append)"],
+    "error_owner": "archive-manager",
+    "escalates_to": "workflow-agent"
+  },
+
+  "trend-miner": {
+    "parent_agent": "research-agent",
+    "trigger": "/intel market snapshot, /intel opportunities",
+    "single_responsibility": "Identify recurring market signals across competitor profiles and scraped content",
+    "input": {
+      "required": {
+        "competitor_profiles": "array<{slug, niche, services, markets, positioning_summary}>",
+        "scraped_summaries": "array<{slug, content_type, publish_date, topics, keywords}>"
+      }
+    },
+    "output": {
+      "trend_report": "object<{themes: array<{theme, frequency, evidence_count, confidence}>, emerging_topics: array<string>, declining_topics: array<string>}>"
+    },
+    "validation": {
+      "minimum_competitors_for_trend_inference": 2,
+      "minimum_evidence_per_theme": 2,
+      "confidence_range": [0, 1]
+    },
+    "writes": [".ai/logs/intelligence-report.jsonl (append)"],
+    "error_owner": "trend-miner",
+    "escalates_to": "research-agent"
+  },
+
+  "opportunity-scorer": {
+    "parent_agent": "research-agent",
+    "trigger": "/intel opportunities",
+    "single_responsibility": "Score whitespace opportunities using market demand, competitor saturation, and strategic fit",
+    "input": {
+      "required": {
+        "trend_report": "object — from trend-miner",
+        "brand_positioning": "string — from content/sovereign/reference/market-positioning.md",
+        "competitor_coverage": "array<{topic, competitors_covering, content_volume_hint}>"
+      }
+    },
+    "output": {
+      "opportunity_scores": "array<{opportunity, score: float, confidence: float, rationale: string, suggested_command: string}>"
+    },
+    "validation": {
+      "score_range": [0, 100],
+      "confidence_range": [0, 1],
+      "must_include_rationale": true
+    },
+    "writes": ["content/sovereign/comparisons/opportunity-map.md"],
+    "error_owner": "opportunity-scorer",
+    "escalates_to": "research-agent"
+  },
+
+  "intel-synthesizer": {
+    "parent_agent": "research-agent",
+    "trigger": "/intel competitor [name], /intel market snapshot",
+    "single_responsibility": "Synthesize signals and scores into operator-ready intelligence briefs",
+    "input": {
+      "required": {
+        "target_scope": "enum: competitor | market",
+        "trend_report": "object — from trend-miner",
+        "opportunity_scores": "array — optional for market snapshot, required for opportunities",
+        "target_competitor_slug": "string — required when scope is competitor"
+      }
+    },
+    "output": {
+      "intel_brief": "object<{summary: string, key_signals: array<string>, risks: array<string>, recommended_next_commands: array<string>}>"
+    },
+    "validation": {
+      "minimum_recommendations": 2,
+      "must_reference_evidence": true
+    },
+    "writes": [
+      "content/sovereign/scraped/[slug]/analysis/intel-brief.md",
+      ".ai/logs/intelligence-report.jsonl (append)"
+    ],
+    "error_owner": "intel-synthesizer",
+    "escalates_to": "research-agent"
+  }
+}

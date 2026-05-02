@@ -11,7 +11,7 @@
 - [x] `.ai/tool-adapters/claude_adapter.md` — Claude implementation
 - [x] `.ai/tool-adapters/gemini_adapter.md` — Gemini implementation
 - [x] `.ai/tool-adapters/_fallback_routing.md` — Tool selection logic
-- [x] `.ai/commands_multi_tool.md` — Updated router with tool rankings
+- [x] `.ai/commands/commands.md` — Updated router with tool rankings
 - [x] `.ai/data_ownership_multi_tool.md` — Multi-tool versioning rules
 
 ### Documentation & Guides
@@ -41,7 +41,7 @@
 
 **Verification:**
 - [ ] guide-agent can load `.ai/tool-adapters/interface.json`
-- [ ] guide-agent can load `.ai/commands_multi_tool.md`
+- [ ] guide-agent can load `.ai/commands/commands.md`
 - [ ] guide-agent understands fallback chain logic from `_fallback_routing.md`
 
 **Status:** ⏳ Awaiting user confirmation to proceed
@@ -98,7 +98,7 @@ cp .ai/data_ownership.md .ai/archive/data-ownership_v3.2.0.md
 - `.ai/tool-adapters/claude_adapter.md` — Claude rules
 - `.ai/tool-adapters/gemini_adapter.md` — Gemini rules
 - `.ai/tool-adapters/_fallback_routing.md` — Tool selection logic
-- `.ai/commands_multi_tool.md` — Command router (replace old commands.md)
+- `.ai/commands/commands.md` — Command router (replace old commands.md)
 - `.ai/data_ownership_multi_tool.md` — File ownership rules (replace old data_ownership.md)
 ```
 
@@ -244,7 +244,7 @@ To pass Phase 1 to another AI system:
 
 1. **Copy these files to their workspace:**
    - Everything in `.ai/tool-adapters/`
-   - `commands_multi_tool.md`
+   - `commands.md`
    - `data_ownership_multi_tool.md`
    - All guide documents
 

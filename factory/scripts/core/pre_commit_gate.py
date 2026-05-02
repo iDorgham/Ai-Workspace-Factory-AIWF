@@ -21,8 +21,17 @@ import sys
 from pathlib import Path
 
 # ── Paths ──────────────────────────────────────────────────────────────────────
-REPO_ROOT = Path(__file__).resolve().parents[3]
-DRIFT_CHECK = REPO_ROOT / "factory/library/10_engineering_devops/01_software_engineering/developing/scripts/check_mirror_drift.py"
+def _repo_root() -> Path:
+    """Resolve repo root whether this file lives under .git/hooks/ or factory/scripts/."""
+    here = Path(__file__).resolve()
+    for ancestor in [here, *here.parents]:
+        if (ancestor / ".git").is_dir():
+            return ancestor
+    return here.parents[2]
+
+
+REPO_ROOT = _repo_root()
+DRIFT_CHECK = REPO_ROOT / "factory/library/_legacy_pillars/10_engineering_devops/01_software_engineering/developing/scripts/check_mirror_drift.py"
 DENSITY_GATE = REPO_ROOT / "factory/scripts/core/spec_density_gate_v2.py"
 
 # ── Check 1: snake_case naming ─────────────────────────────────────────────────
@@ -35,8 +44,16 @@ def check_snake_case() -> bool:
         return True
 
     violations = []
-    skip_prefixes = (".github/", "docs/", "factory/library/scripts/tool_adapters/")
-    skip_names = {"README", "TOMBSTONE", "CHANGELOG", "LICENSE", "Makefile"}
+    skip_prefixes = (
+        ".github/",
+        "docs/",
+        "factory/library/scripts/tool_adapters/",
+        # Gitignored IDE tree; only rare commits touch it (e.g. stop tracking accidental adds).
+        ".cursor/",
+    )
+    skip_names = {"README", "TOMBSTONE", "CHANGELOG", "LICENSE", "Makefile", "AGENTS"}
+    # v21 SDD / C4 diagrams use hyphenated basenames required by spec_density_gate_v2.py
+    allow_hyphenated_stems = {"c4-context", "c4-containers"}
 
     for f in files:
         if any(f.startswith(p) for p in skip_prefixes):
@@ -44,7 +61,11 @@ def check_snake_case() -> bool:
         basename = Path(f).name
         if "." in basename:
             name_part = basename.split(".")[0]
+            if not name_part:
+                continue  # e.g. `.gitignore` → stem ""
             if name_part in skip_names:
+                continue
+            if name_part in allow_hyphenated_stems:
                 continue
             if not re.match(r"^[a-z0-9_]+$", name_part):
                 violations.append(f)
@@ -84,13 +105,12 @@ def check_placeholders() -> bool:
     print("🔍 Checking for TODO_PLACEHOLDER strings...")
     try:
         subprocess.check_call([
-            "git", "grep", "--cached", "-q", "TODO_" + "PLACEHOLDER",
+            "git", "grep", "--cached", "-q", "TODO_PLACEHOLDER",
             "--", ".",
             ":!factory/scripts/core/pre_commit_gate.py",
             ":!factory/scripts/core/validate.py",
             ":!factory/scripts/core/pre_commit_hook_v2.py",
             ":!docs/**",
-            ":!README.md",
             ":!**/__pycache__/**"
         ])
         print("❌ TODO_PLACEHOLDER detected in staged changes.")

@@ -11,4 +11,4 @@
 
 ---
 *Last Sync: {{TIMESTAMP}}*
-*Archive Link: [Dashboard Historical Archives](archive/)*
+*Archive Link: Dashboard Historical Archives (`archive/`)*

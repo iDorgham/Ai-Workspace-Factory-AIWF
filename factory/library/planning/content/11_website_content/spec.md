@@ -24,8 +24,8 @@ This phase defines the **Information Architecture (IA)** and **Content Strategy*
 ---
 
 ## 3. Specifications Index (The 5 Pillars)
-1. **Sitemap Architecture**: [sitemap-architecture.spec.yaml](file:///Users/Dorgham/Documents/Work/Devleopment/AIWF/plan/11-website-content/sitemap-architecture.spec.yaml)
-2. **Navigation Flow**: [navigation-flow.spec.yaml](file:///Users/Dorgham/Documents/Work/Devleopment/AIWF/plan/11-website-content/navigation-flow.spec.yaml)
-3. **Component Content**: [component-content.spec.yaml](file:///Users/Dorgham/Documents/Work/Devleopment/AIWF/plan/11-website-content/component-content.spec.yaml)
-4. **SEO Optimization**: [seo-optimization.spec.yaml](file:///Users/Dorgham/Documents/Work/Devleopment/AIWF/plan/11-website-content/seo-optimization.spec.yaml)
-5. **Brand Voice Manifest**: [brand-voice-manifest.spec.yaml](file:///Users/Dorgham/Documents/Work/Devleopment/AIWF/plan/11-website-content/brand-voice-manifest.spec.yaml)
+1. **Sitemap Architecture**: sitemap-architecture.spec.yaml (`file:///Users/Dorgham/Documents/Work/Devleopment/AIWF/plan/11-website-content/sitemap-architecture.spec.yaml`)
+2. **Navigation Flow**: navigation-flow.spec.yaml (`file:///Users/Dorgham/Documents/Work/Devleopment/AIWF/plan/11-website-content/navigation-flow.spec.yaml`)
+3. **Component Content**: component-content.spec.yaml (`file:///Users/Dorgham/Documents/Work/Devleopment/AIWF/plan/11-website-content/component-content.spec.yaml`)
+4. **SEO Optimization**: seo-optimization.spec.yaml (`file:///Users/Dorgham/Documents/Work/Devleopment/AIWF/plan/11-website-content/seo-optimization.spec.yaml`)
+5. **Brand Voice Manifest**: brand-voice-manifest.spec.yaml (`file:///Users/Dorgham/Documents/Work/Devleopment/AIWF/plan/11-website-content/brand-voice-manifest.spec.yaml`)

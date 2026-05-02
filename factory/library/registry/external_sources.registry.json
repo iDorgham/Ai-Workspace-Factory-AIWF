@@ -1,0 +1,62 @@
+{
+  "version": "1.0.0",
+  "updated_at": "2026-04-30T00:00:00Z",
+  "license_allowlist": [
+    "MIT",
+    "Apache-2.0",
+    "BSD-2-Clause",
+    "BSD-3-Clause"
+  ],
+  "sources": [
+    {
+      "id": "awesome-claude-code-subagents",
+      "kind": "subagents_categories",
+      "url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+      "branch": "main",
+      "license": "MIT",
+      "tier": "curated",
+      "enabled": true,
+      "target": "factory/library/subagents/claude"
+    },
+    {
+      "id": "awesome-codex-subagents",
+      "kind": "subagents_categories",
+      "url": "https://github.com/VoltAgent/awesome-codex-subagents",
+      "branch": "main",
+      "license": "MIT",
+      "tier": "curated",
+      "enabled": true,
+      "target": "factory/library/subagents/codex"
+    },
+    {
+      "id": "awesome-design-md",
+      "kind": "design_catalog",
+      "url": "https://github.com/VoltAgent/awesome-design-md",
+      "branch": "main",
+      "license": "MIT",
+      "tier": "curated",
+      "enabled": true,
+      "target": "factory/library/design"
+    },
+    {
+      "id": "awesome-claude-design",
+      "kind": "design_catalog",
+      "url": "https://github.com/rohitg00/awesome-claude-design",
+      "branch": "main",
+      "license": "MIT",
+      "tier": "community",
+      "enabled": true,
+      "target": "factory/library/design"
+    },
+    {
+      "id": "getdesign-md",
+      "kind": "design_index",
+      "url": "https://getdesign.md/",
+      "branch": "",
+      "license": "unknown",
+      "tier": "community",
+      "enabled": true,
+      "target": "factory/library/design"
+    }
+  ]
+}

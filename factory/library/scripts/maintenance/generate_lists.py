@@ -22,4 +22,4 @@ with open('cleanup_lists.txt', 'w') as f:
     f.write("\n".join(rm_commands))
     f.write("\n\n# Phase 2: MV Commands\n")
     # For taxonomies... we can just assume moving seo into 07-visibility-optimization/seo if not already there
-    f.write("mv 'factory/library/02-web-platforms/seo' 'factory/library/07-visibility-optimization/seo-technical' 2>/dev/null || true\n")
+    f.write("mv 'factory/library/_legacy_pillars/02-web-platforms/seo' 'factory/library/07-visibility-optimization/seo-technical' 2>/dev/null || true\n")

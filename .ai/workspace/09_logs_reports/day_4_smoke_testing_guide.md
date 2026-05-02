@@ -124,7 +124,7 @@ Validate: workflow.jsonl has tool=qwen
 ```bash
 # Verify all files exist
 ls -la .ai/scripts/tool-router.py
-ls -la .ai/commands_multi_tool.md
+ls -la .ai/commands/commands.md
 ls -la tests/day-3-tool-router-tests.json
 
 # Verify Phase 2a still working

@@ -48,10 +48,34 @@ def check_snake_case() -> bool:
         ".github/",
         "docs/",
         "factory/library/scripts/tool_adapters/",
+        # Archived pillar tree: historical filenames (kebab-case, role playbooks, etc.).
+        "factory/library/_legacy_pillars/",
         # Gitignored IDE tree; only rare commits touch it (e.g. stop tracking accidental adds).
         ".cursor/",
+        # Third-party / catalog template filenames use kebab-case stems by convention.
+        ".ai/templates/subagents/",
+        "factory/templates/subagents/",
+        "factory/library/templates/subagents/",
+        "factory/library/templates/workspace_imports/",
+        # Registry-style mirrors of Claude subagent packs (kebab-case filenames).
+        "factory/library/subagents/",
+        # Human-facing subcommand docs often use hyphenated stems.
+        "factory/library/subcommands/",
+        # Generated ledgers and audit reports may use hyphenated basenames.
+        ".ai/logs/",
     )
-    skip_names = {"README", "TOMBSTONE", "CHANGELOG", "LICENSE", "Makefile", "AGENTS"}
+    skip_names = {
+        "README",
+        "TOMBSTONE",
+        "CHANGELOG",
+        "LICENSE",
+        "Makefile",
+        "AGENTS",
+        # Canonical library agent/skill filenames (stems are not snake_case tokens).
+        "AGENT",
+        "SKILL",
+        "RULE",
+    }
     # v21 SDD / C4 diagrams use hyphenated basenames required by spec_density_gate_v2.py
     allow_hyphenated_stems = {"c4-context", "c4-containers"}
 

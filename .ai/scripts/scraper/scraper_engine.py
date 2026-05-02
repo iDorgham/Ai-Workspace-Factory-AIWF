@@ -435,6 +435,8 @@ def run_scrape(scope: str = "all", competitor_slug: str = None) -> dict:
             continue
 
         urls_to_fetch = delta.get("new_urls", []) + delta.get("updated_urls", [])
+        files_written = []
+        errors = []
         if scope == "projects" and not urls_to_fetch:
             # Fallback for project scraping: extract project links from homepage
             # so "/scrape all competitors projects" can still collect content
@@ -459,8 +461,6 @@ def run_scrape(scope: str = "all", competitor_slug: str = None) -> dict:
                     urls_to_fetch = extract_project_links_from_homepage(website, home_html)
                 elif home_status not in (200,):
                     errors.append({"url": website, "status": home_status, "reason": "homepage_fetch_failed"})
-        files_written = []
-        errors = []
 
         for url in urls_to_fetch:
             content_type = detect_content_type(url)
@@ -503,7 +503,11 @@ def run_scrape(scope: str = "all", competitor_slug: str = None) -> dict:
     # Write sync state ONLY after all scraping completes
     from sync_state_writer import write_sync_state
     for slug, result in results.items():
-        write_sync_state(slug, result, all_deltas.get(slug, {}))
+        persisted = write_sync_state(slug, result, all_deltas.get(slug, {}))
+        if not persisted:
+            result["status"] = "partial"
+            result.setdefault("errors", []).append({"reason": "sync_state_write_failed"})
+            total_errors += 1
 
     # Log sync delta
     log_sync_delta(delta_payload, results, scope)

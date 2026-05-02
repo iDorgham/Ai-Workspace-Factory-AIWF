@@ -489,10 +489,11 @@ version: 1.0.0
 - **skills:17-performance-marketing-growth/growth-economics/growth-economics-roi-physics**: [growth-economics-roi-physics](./17-performance-marketing-growth/growth-economics/skills/growth-economics-roi-physics/SKILL.md)
 - **skills:17-performance-marketing-growth/traditional-media-ops/offline-media-negotiation-mastery**: [offline-media-negotiation-mastery](./17-performance-marketing-growth/traditional-media-ops/skills/offline-media-negotiation-mastery/SKILL.md)
 - **skills:11-website-content/content-synthesis**: [content-synthesis](../../.ai/skills/content-synthesis/SKILL.md)
+- **skills:factory-library/egyptian-arabic-content-master**: [egyptian-arabic-content-master](../skills/manifests/egyptian_arabic_content_master/skill.md)
 
 - **templates:10-operations-qa/execution/MASTER_AUDIT_PRESENTATION_TEMPLATE**: [MASTER_AUDIT_PRESENTATION_TEMPLATE](./10-operations-qa/execution/templates/MASTER_AUDIT_PRESENTATION_TEMPLATE.md)
 - **templates:10-engineering-devops/distribution-scaffolding/Dockerfile**: [Dockerfile](./10-engineering-devops/distribution-scaffolding/Dockerfile)
 - **templates:10-engineering-devops/distribution-scaffolding/k8s-deployment**: [k8s-deployment](./10-engineering-devops/distribution-scaffolding/k8s-deployment.yaml)
 
 ---
-*Total Components: 491*
+*Total Components: 492*

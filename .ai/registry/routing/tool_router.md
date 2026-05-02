@@ -75,7 +75,7 @@ def explain_routing_mode(command, tool_registry):
     # e.g., "/create blog-posts" → command_type = "create_blog_posts"
     
     # Step 2: Load command routing rules
-    command_routing = load_json(".ai/commands_multi_tool.md")
+    command_routing = load_json(".ai/commands/commands.md")
     preferred_ranking = command_routing.get(command_type, [])
     
     # Step 3: Filter to available tools only
@@ -241,7 +241,7 @@ def parallel_execution_mode(command, tool_registry):
     
     # Step 1: Get top 2 available tools
     command_type = parse_command_type(command)
-    command_routing = load_json(".ai/commands_multi_tool.md")
+    command_routing = load_json(".ai/commands/commands.md")
     preferred_ranking = command_routing.get(command_type, [])
     available_tools = tool_registry["available_tools"]
     actual_ranking = [t for t in preferred_ranking if t in available_tools]
@@ -353,7 +353,7 @@ def normal_execution_mode(command, preferred_tool=None, tool_registry=None):
     
     # Step 1: Get ranking
     command_type = parse_command_type(command)
-    command_routing = load_json(".ai/commands_multi_tool.md")
+    command_routing = load_json(".ai/commands/commands.md")
     preferred_ranking = command_routing.get(command_type, [])
     available_tools = tool_registry["available_tools"]
     actual_ranking = [t for t in preferred_ranking if t in available_tools]

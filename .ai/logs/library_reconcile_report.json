@@ -1,0 +1,673 @@
+{
+  "timestamp": "2026-04-30T20:24:48.452151+00:00",
+  "scanned_sources": [
+    ".antigravity",
+    ".claude",
+    ".cursor",
+    ".ai"
+  ],
+  "incoming_candidates": 1214,
+  "added": 94,
+  "skipped_duplicate": 1120,
+  "replaced_weaker_import": 0,
+  "details": [
+    {
+      "action": "added",
+      "artifact": "subagents",
+      "key": "quality-checker",
+      "src": ".ai/subagents/quality_checker.md",
+      "dst": "factory/library/subagents/workspace_imports/ai/subagents/quality_checker.md"
+    },
+    {
+      "action": "added",
+      "artifact": "subagents",
+      "key": "comparison-analyst",
+      "src": ".ai/subagents/comparison_analyst.md",
+      "dst": "factory/library/subagents/workspace_imports/ai/subagents/comparison_analyst.md"
+    },
+    {
+      "action": "added",
+      "artifact": "subagents",
+      "key": "intel-synthesizer",
+      "src": ".ai/subagents/intel_synthesizer.md",
+      "dst": "factory/library/subagents/workspace_imports/ai/subagents/intel_synthesizer.md"
+    },
+    {
+      "action": "added",
+      "artifact": "subagents",
+      "key": "opportunity-scorer",
+      "src": ".ai/subagents/opportunity_scorer.md",
+      "dst": "factory/library/subagents/workspace_imports/ai/subagents/opportunity_scorer.md"
+    },
+    {
+      "action": "added",
+      "artifact": "subagents",
+      "key": "brand-voice-applier",
+      "src": ".ai/subagents/brand_voice_applier.md",
+      "dst": "factory/library/subagents/workspace_imports/ai/subagents/brand_voice_applier.md"
+    },
+    {
+      "action": "added",
+      "artifact": "subagents",
+      "key": "blueprint-architect",
+      "src": ".ai/subagents/blueprint_architect.md",
+      "dst": "factory/library/subagents/workspace_imports/ai/subagents/blueprint_architect.md"
+    },
+    {
+      "action": "added",
+      "artifact": "subagents",
+      "key": "image-seo-auditor",
+      "src": ".ai/subagents/image_seo_auditor.md",
+      "dst": "factory/library/subagents/workspace_imports/ai/subagents/image_seo_auditor.md"
+    },
+    {
+      "action": "added",
+      "artifact": "subagents",
+      "key": "content-parser",
+      "src": ".ai/subagents/content_parser.md",
+      "dst": "factory/library/subagents/workspace_imports/ai/subagents/content_parser.md"
+    },
+    {
+      "action": "added",
+      "artifact": "subagents",
+      "key": "discovery-engine",
+      "src": ".ai/subagents/discovery_engine.md",
+      "dst": "factory/library/subagents/workspace_imports/ai/subagents/discovery_engine.md"
+    },
+    {
+      "action": "added",
+      "artifact": "subagents",
+      "key": "asset-handler",
+      "src": ".ai/subagents/asset_handler.md",
+      "dst": "factory/library/subagents/workspace_imports/ai/subagents/asset_handler.md"
+    },
+    {
+      "action": "added",
+      "artifact": "subagents",
+      "key": "content-generator",
+      "src": ".ai/subagents/content_generator.md",
+      "dst": "factory/library/subagents/workspace_imports/ai/subagents/content_generator.md"
+    },
+    {
+      "action": "added",
+      "artifact": "subagents",
+      "key": "ethical-crawler",
+      "src": ".ai/subagents/ethical_crawler.md",
+      "dst": "factory/library/subagents/workspace_imports/ai/subagents/ethical_crawler.md"
+    },
+    {
+      "action": "added",
+      "artifact": "subagents",
+      "key": "technical-auditor",
+      "src": ".ai/subagents/technical_auditor.md",
+      "dst": "factory/library/subagents/workspace_imports/ai/subagents/technical_auditor.md"
+    },
+    {
+      "action": "added",
+      "artifact": "subagents",
+      "key": "export-packager",
+      "src": ".ai/subagents/export_packager.md",
+      "dst": "factory/library/subagents/workspace_imports/ai/subagents/export_packager.md"
+    },
+    {
+      "action": "added",
+      "artifact": "subagents",
+      "key": "approval-gate",
+      "src": ".ai/subagents/approval_gate.md",
+      "dst": "factory/library/subagents/workspace_imports/ai/subagents/approval_gate.md"
+    },
+    {
+      "action": "added",
+      "artifact": "subagents",
+      "key": "keyword-auditor",
+      "src": ".ai/subagents/keyword_auditor.md",
+      "dst": "factory/library/subagents/workspace_imports/ai/subagents/keyword_auditor.md"
+    },
+    {
+      "action": "added",
+      "artifact": "subagents",
+      "key": "delta-detector",
+      "src": ".ai/subagents/delta_detector.md",
+      "dst": "factory/library/subagents/workspace_imports/ai/subagents/delta_detector.md"
+    },
+    {
+      "action": "added",
+      "artifact": "subagents",
+      "key": "sync-state-writer",
+      "src": ".ai/subagents/sync_state_writer.md",
+      "dst": "factory/library/subagents/workspace_imports/ai/subagents/sync_state_writer.md"
+    },
+    {
+      "action": "added",
+      "artifact": "subagents",
+      "key": "trend-miner",
+      "src": ".ai/subagents/trend_miner.md",
+      "dst": "factory/library/subagents/workspace_imports/ai/subagents/trend_miner.md"
+    },
+    {
+      "action": "added",
+      "artifact": "subagents",
+      "key": "tone-analyzer",
+      "src": ".ai/subagents/tone_analyzer.md",
+      "dst": "factory/library/subagents/workspace_imports/ai/subagents/tone_analyzer.md"
+    },
+    {
+      "action": "added",
+      "artifact": "subagents",
+      "key": "archive-manager",
+      "src": ".ai/subagents/archive_manager.md",
+      "dst": "factory/library/subagents/workspace_imports/ai/subagents/archive_manager.md"
+    },
+    {
+      "action": "added",
+      "artifact": "subagents",
+      "key": "profile-builder",
+      "src": ".ai/subagents/profile_builder.md",
+      "dst": "factory/library/subagents/workspace_imports/ai/subagents/profile_builder.md"
+    },
+    {
+      "action": "added",
+      "artifact": "subagents",
+      "key": "rule-updater",
+      "src": ".ai/subagents/rule_updater.md",
+      "dst": "factory/library/subagents/workspace_imports/ai/subagents/rule_updater.md"
+    },
+    {
+      "action": "added",
+      "artifact": "subagents",
+      "key": "brand-consultant",
+      "src": ".ai/subagents/brand_consultant.md",
+      "dst": "factory/library/subagents/workspace_imports/ai/subagents/brand_consultant.md"
+    },
+    {
+      "action": "added",
+      "artifact": "subagents",
+      "key": "drift-detector",
+      "src": ".ai/subagents/drift_detector.md",
+      "dst": "factory/library/subagents/workspace_imports/ai/subagents/drift_detector.md"
+    },
+    {
+      "action": "added",
+      "artifact": "scripts",
+      "key": "paths",
+      "src": ".ai/scripts/paths.py",
+      "dst": "factory/library/scripts/workspace_imports/ai/scripts/paths.py"
+    },
+    {
+      "action": "added",
+      "artifact": "scripts",
+      "key": "factory-materialize",
+      "src": ".ai/scripts/factory_materialize.sh",
+      "dst": "factory/library/scripts/workspace_imports/ai/scripts/factory_materialize.sh"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "master-guide",
+      "src": ".ai/agents/core/master_guide.md",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/core/master_guide.md"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "factory-orchestrator",
+      "src": ".ai/agents/core/factory_orchestrator.md",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/core/factory_orchestrator.md"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "antigravity",
+      "src": ".ai/agents/core/antigravity.md",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/core/antigravity.md"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "healing-bot-v2",
+      "src": ".ai/agents/core/healing_bot_v2.md",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/core/healing_bot_v2.md"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "swarm-router-v3",
+      "src": ".ai/agents/core/swarm_router_v3.md",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/core/swarm_router_v3.md"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "teaching",
+      "src": ".ai/agents/core/teaching.md",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/core/teaching.md"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "library-curator",
+      "src": ".ai/agents/core/library_curator.md",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/core/library_curator.md"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "recursive-engine",
+      "src": ".ai/agents/core/recursive_engine.json",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/core/recursive_engine.json"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "registry-guardian",
+      "src": ".ai/agents/core/registry_guardian.md",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/core/registry_guardian.md"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "dependency-resolver",
+      "src": ".ai/agents/specialized/dependency_resolver.md",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/specialized/dependency_resolver.md"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "integrity-auditor",
+      "src": ".ai/agents/specialized/integrity_auditor.md",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/specialized/integrity_auditor.md"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "migration-upgrader",
+      "src": ".ai/agents/specialized/migration_upgrader.md",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/specialized/migration_upgrader.md"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "brand",
+      "src": ".ai/agents/specialized/brand.md",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/specialized/brand.md"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "creator",
+      "src": ".ai/agents/specialized/creator.md",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/specialized/creator.md"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "workflow",
+      "src": ".ai/agents/specialized/workflow.md",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/specialized/workflow.md"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "content-planner",
+      "src": ".ai/agents/specialized/content_planner.md",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/specialized/content_planner.md"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "revenue-orchestrator",
+      "src": ".ai/agents/specialized/revenue_orchestrator.md",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/specialized/revenue_orchestrator.md"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "neural-fabric-sync",
+      "src": ".ai/agents/specialized/neural_fabric_sync.md",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/specialized/neural_fabric_sync.md"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "seo-research",
+      "src": ".ai/agents/specialized/seo_research.md",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/specialized/seo_research.md"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "memory-manager",
+      "src": ".ai/agents/specialized/memory_manager.md",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/specialized/memory_manager.md"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "security-auditor",
+      "src": ".ai/agents/specialized/security_auditor.md",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/specialized/security_auditor.md"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "research",
+      "src": ".ai/agents/specialized/research.md",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/specialized/research.md"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "seo",
+      "src": ".ai/agents/specialized/seo.md",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/specialized/seo.md"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "documentation-architect",
+      "src": ".ai/agents/specialized/documentation_architect.md",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/specialized/documentation_architect.md"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "scraper",
+      "src": ".ai/agents/specialized/scraper.md",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/specialized/scraper.md"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "profile-architect",
+      "src": ".ai/agents/specialized/profile_architect.md",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/specialized/profile_architect.md"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "legal-content-writer",
+      "src": ".ai/agents/specialized/legal_content_writer.md",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/specialized/legal_content_writer.md"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "spec-architect",
+      "src": ".ai/agents/specialized/spec_architect.md",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/specialized/spec_architect.md"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "source-sync-manager",
+      "src": ".ai/agents/specialized/source_sync_manager.md",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/specialized/source_sync_manager.md"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "deployment-specialist",
+      "src": ".ai/agents/specialized/deployment_specialist.md",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/specialized/deployment_specialist.md"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "workspace-composer",
+      "src": ".ai/agents/specialized/workspace_composer.md",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/specialized/workspace_composer.md"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "brainstorm",
+      "src": ".ai/agents/specialized/brainstorm.md",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/specialized/brainstorm.md"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "validation-auditor",
+      "src": ".ai/agents/specialized/validation_auditor.md",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/specialized/validation_auditor.md"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "registry",
+      "src": ".ai/agents/registry/registry.yaml",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/registry/registry.yaml"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "routing-map",
+      "src": ".ai/agents/registry/routing_map.yaml",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/registry/routing_map.yaml"
+    },
+    {
+      "action": "added",
+      "artifact": "agents",
+      "key": "sub-agent-contracts",
+      "src": ".ai/agents/registry/sub_agent_contracts.json",
+      "dst": "factory/library/agents/workspace_imports/ai/agents/registry/sub_agent_contracts.json"
+    },
+    {
+      "action": "added",
+      "artifact": "templates",
+      "key": "regional-compliance",
+      "src": ".ai/plan/templates/sdd/base_template/regional_compliance.md",
+      "dst": "factory/library/templates/workspace_imports/ai/plan/templates/sdd/base_template/regional_compliance.md"
+    },
+    {
+      "action": "added",
+      "artifact": "templates",
+      "key": "phase-spec",
+      "src": ".ai/plan/templates/sdd/base_template/phase.spec.json",
+      "dst": "factory/library/templates/workspace_imports/ai/plan/templates/sdd/base_template/phase.spec.json"
+    },
+    {
+      "action": "added",
+      "artifact": "templates",
+      "key": "domain-model",
+      "src": ".ai/plan/templates/sdd/base_template/domain_model.md",
+      "dst": "factory/library/templates/workspace_imports/ai/plan/templates/sdd/base_template/domain_model.md"
+    },
+    {
+      "action": "added",
+      "artifact": "templates",
+      "key": "tasks",
+      "src": ".ai/plan/templates/sdd/base_template/tasks.json",
+      "dst": "factory/library/templates/workspace_imports/ai/plan/templates/sdd/base_template/tasks.json"
+    },
+    {
+      "action": "added",
+      "artifact": "templates",
+      "key": "requirements-spec",
+      "src": ".ai/plan/templates/sdd/base_template/requirements.spec.md",
+      "dst": "factory/library/templates/workspace_imports/ai/plan/templates/sdd/base_template/requirements.spec.md"
+    },
+    {
+      "action": "added",
+      "artifact": "templates",
+      "key": "user-prompt",
+      "src": ".ai/plan/templates/sdd/base_template/prompt_library/user_prompt.md",
+      "dst": "factory/library/templates/workspace_imports/ai/plan/templates/sdd/base_template/prompt_library/user_prompt.md"
+    },
+    {
+      "action": "added",
+      "artifact": "templates",
+      "key": "system-prompt",
+      "src": ".ai/plan/templates/sdd/base_template/prompt_library/system_prompt.md",
+      "dst": "factory/library/templates/workspace_imports/ai/plan/templates/sdd/base_template/prompt_library/system_prompt.md"
+    },
+    {
+      "action": "added",
+      "artifact": "templates",
+      "key": "api-contract",
+      "src": ".ai/plan/templates/sdd/base_template/contracts/api_contract.md",
+      "dst": "factory/library/templates/workspace_imports/ai/plan/templates/sdd/base_template/contracts/api_contract.md"
+    },
+    {
+      "action": "added",
+      "artifact": "templates",
+      "key": "content-contract",
+      "src": ".ai/plan/templates/sdd/base_template/contracts/content_contract.md",
+      "dst": "factory/library/templates/workspace_imports/ai/plan/templates/sdd/base_template/contracts/content_contract.md"
+    },
+    {
+      "action": "added",
+      "artifact": "templates",
+      "key": "state-contract",
+      "src": ".ai/plan/templates/sdd/base_template/contracts/state_contract.md",
+      "dst": "factory/library/templates/workspace_imports/ai/plan/templates/sdd/base_template/contracts/state_contract.md"
+    },
+    {
+      "action": "added",
+      "artifact": "templates",
+      "key": "copy-framework",
+      "src": ".ai/plan/templates/sdd/base_template/templates/copy_framework.md",
+      "dst": "factory/library/templates/workspace_imports/ai/plan/templates/sdd/base_template/templates/copy_framework.md"
+    },
+    {
+      "action": "added",
+      "artifact": "templates",
+      "key": "kpi-tracker",
+      "src": ".ai/plan/templates/sdd/base_template/validation/kpi_tracker.md",
+      "dst": "factory/library/templates/workspace_imports/ai/plan/templates/sdd/base_template/validation/kpi_tracker.md"
+    },
+    {
+      "action": "added",
+      "artifact": "templates",
+      "key": "audit-checklist",
+      "src": ".ai/plan/templates/sdd/base_template/validation/audit_checklist.md",
+      "dst": "factory/library/templates/workspace_imports/ai/plan/templates/sdd/base_template/validation/audit_checklist.md"
+    },
+    {
+      "action": "added",
+      "artifact": "templates",
+      "key": "content-brief-template",
+      "src": ".ai/plan/content/phase-05-validation-handoff/templates/content_brief_template.md",
+      "dst": "factory/library/templates/workspace_imports/ai/plan/content/phase-05-validation-handoff/templates/content_brief_template.md"
+    },
+    {
+      "action": "added",
+      "artifact": "templates",
+      "key": "c-03-x-launch",
+      "src": ".ai/plan/content/phase-03-detailed-design/templates/content_briefs/C-03-X-LAUNCH.md",
+      "dst": "factory/library/templates/workspace_imports/ai/plan/content/phase-03-detailed-design/templates/content_briefs/C-03-X-LAUNCH.md"
+    },
+    {
+      "action": "added",
+      "artifact": "templates",
+      "key": "c-11-x-multilll",
+      "src": ".ai/plan/content/phase-03-detailed-design/templates/content_briefs/C-11-X-MULTILLL.md",
+      "dst": "factory/library/templates/workspace_imports/ai/plan/content/phase-03-detailed-design/templates/content_briefs/C-11-X-MULTILLL.md"
+    },
+    {
+      "action": "added",
+      "artifact": "templates",
+      "key": "c-10-li-7cli",
+      "src": ".ai/plan/content/phase-03-detailed-design/templates/content_briefs/C-10-LI-7CLI.md",
+      "dst": "factory/library/templates/workspace_imports/ai/plan/content/phase-03-detailed-design/templates/content_briefs/C-10-LI-7CLI.md"
+    },
+    {
+      "action": "added",
+      "artifact": "templates",
+      "key": "c-09-devto",
+      "src": ".ai/plan/content/phase-03-detailed-design/templates/content_briefs/C-09-DEVTO.md",
+      "dst": "factory/library/templates/workspace_imports/ai/plan/content/phase-03-detailed-design/templates/content_briefs/C-09-DEVTO.md"
+    },
+    {
+      "action": "added",
+      "artifact": "templates",
+      "key": "c-02-li-launch",
+      "src": ".ai/plan/content/phase-03-detailed-design/templates/content_briefs/C-02-LI-LAUNCH.md",
+      "dst": "factory/library/templates/workspace_imports/ai/plan/content/phase-03-detailed-design/templates/content_briefs/C-02-LI-LAUNCH.md"
+    },
+    {
+      "action": "added",
+      "artifact": "templates",
+      "key": "c-07-ar-li",
+      "src": ".ai/plan/content/phase-03-detailed-design/templates/content_briefs/C-07-AR-LI.md",
+      "dst": "factory/library/templates/workspace_imports/ai/plan/content/phase-03-detailed-design/templates/content_briefs/C-07-AR-LI.md"
+    },
+    {
+      "action": "added",
+      "artifact": "templates",
+      "key": "c-12-gh-mena",
+      "src": ".ai/plan/content/phase-03-detailed-design/templates/content_briefs/C-12-GH-MENA.md",
+      "dst": "factory/library/templates/workspace_imports/ai/plan/content/phase-03-detailed-design/templates/content_briefs/C-12-GH-MENA.md"
+    },
+    {
+      "action": "added",
+      "artifact": "templates",
+      "key": "c-08-ar-mena",
+      "src": ".ai/plan/content/phase-03-detailed-design/templates/content_briefs/C-08-AR-MENA.md",
+      "dst": "factory/library/templates/workspace_imports/ai/plan/content/phase-03-detailed-design/templates/content_briefs/C-08-AR-MENA.md"
+    },
+    {
+      "action": "added",
+      "artifact": "templates",
+      "key": "c-04-li-12spec",
+      "src": ".ai/plan/content/phase-03-detailed-design/templates/content_briefs/C-04-LI-12SPEC.md",
+      "dst": "factory/library/templates/workspace_imports/ai/plan/content/phase-03-detailed-design/templates/content_briefs/C-04-LI-12SPEC.md"
+    },
+    {
+      "action": "added",
+      "artifact": "templates",
+      "key": "c-06-li-law151",
+      "src": ".ai/plan/content/phase-03-detailed-design/templates/content_briefs/C-06-LI-LAW151.md",
+      "dst": "factory/library/templates/workspace_imports/ai/plan/content/phase-03-detailed-design/templates/content_briefs/C-06-LI-LAW151.md"
+    },
+    {
+      "action": "added",
+      "artifact": "templates",
+      "key": "c-05-x-arch",
+      "src": ".ai/plan/content/phase-03-detailed-design/templates/content_briefs/C-05-X-ARCH.md",
+      "dst": "factory/library/templates/workspace_imports/ai/plan/content/phase-03-detailed-design/templates/content_briefs/C-05-X-ARCH.md"
+    },
+    {
+      "action": "added",
+      "artifact": "templates",
+      "key": "c-01-readme",
+      "src": ".ai/plan/content/phase-03-detailed-design/templates/content_briefs/C-01-README.md",
+      "dst": "factory/library/templates/workspace_imports/ai/plan/content/phase-03-detailed-design/templates/content_briefs/C-01-README.md"
+    },
+    {
+      "action": "added",
+      "artifact": "templates",
+      "key": "persona-research-template",
+      "src": ".ai/plan/content/phase-01-discovery/templates/persona_research_template.md",
+      "dst": "factory/library/templates/workspace_imports/ai/plan/content/phase-01-discovery/templates/persona_research_template.md"
+    },
+    {
+      "action": "added",
+      "artifact": "templates",
+      "key": "boilerplate-structure",
+      "src": ".ai/plan/development/03_scaling/templates/boilerplate_structure.yaml",
+      "dst": "factory/library/templates/workspace_imports/ai/plan/development/03_scaling/templates/boilerplate_structure.yaml"
+    },
+    {
+      "action": "added",
+      "artifact": "scripts",
+      "key": "check-semantic-drift",
+      "src": ".ai/compat/migrations/check_semantic_drift.py",
+      "dst": "factory/library/scripts/workspace_imports/ai/compat/migrations/check_semantic_drift.py"
+    },
+    {
+      "action": "added",
+      "artifact": "scripts",
+      "key": "check-agent-parity",
+      "src": ".ai/compat/migrations/check_agent_parity.py",
+      "dst": "factory/library/scripts/workspace_imports/ai/compat/migrations/check_agent_parity.py"
+    },
+    {
+      "action": "added",
+      "artifact": "scripts",
+      "key": "validate-registry",
+      "src": ".ai/compat/migrations/validate_registry.py",
+      "dst": "factory/library/scripts/workspace_imports/ai/compat/migrations/validate_registry.py"
+    }
+  ]
+}

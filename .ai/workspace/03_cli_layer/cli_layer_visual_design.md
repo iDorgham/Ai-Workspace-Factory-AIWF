@@ -293,7 +293,7 @@ MODE 3: EXPLAIN (New, Phase 2)
 Time →
  0s  Parse command type: /create blog-posts
  │
- 0.1s Load ranking from commands_multi_tool.md
+ 0.1s Load ranking from commands.md
  │
  0.2s Get performance metrics from logs
  │
@@ -701,7 +701,7 @@ USER COMMAND:
 
 SYSTEM EXECUTES:
   1. Parse: command = /create blog-posts
-  2. Load: .ai/commands_multi_tool.md
+  2. Load: .ai/commands/commands.md
   3. Find: tool rankings for "blog-posts"
   4. Load: .ai/tool-adapters/ specs
   5. Get: logs/tool-performance.jsonl metrics

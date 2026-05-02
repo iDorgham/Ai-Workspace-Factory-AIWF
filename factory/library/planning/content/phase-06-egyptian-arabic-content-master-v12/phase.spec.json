@@ -1,0 +1,27 @@
+{
+  "spec_id": "content-egyptian-arabic-content-master-v12",
+  "spec_version": "1.0.0",
+  "sdd_version": "v21.0.0",
+  "planning_type": "content",
+  "phase_name": "Egyptian Arabic Content Master v1.2",
+  "phase_number": "06",
+  "topic": "Skill pack evolution: brief schema, optional router, vertical stubs, Masri rubric, factory↔.ai sync",
+  "status": "completed",
+  "created": "2026-05-02T12:00:00Z",
+  "reasoning_hash": "sha256:phase-06-egyptian-arabic-content-master-v12-2026-05-02",
+  "law_151_scope": true,
+  "owner_agent": "spec_architect_v2",
+  "goals": [
+    "Instantiate v1.2 SDD outline under .ai/plan/content/ before mutating live factory pack",
+    "Record contracts (brief_schema, pack_router_map) and validation rubric for Masri QA",
+    "Gate phase with spec_density_gate_v2; final operational step mirrors factory skill to .ai/skills via rsync"
+  ],
+  "density_gate": {
+    "minimum_files": 12,
+    "enforced_by": "spec_density_gate_v2",
+    "c4_required": true,
+    "regional_compliance_required": true
+  },
+  "dependencies": [],
+  "blocks": []
+}

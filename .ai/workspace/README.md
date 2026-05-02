@@ -8,11 +8,11 @@ This folder contains all system documentation, configuration, and reference mate
 
 ## Source of truth
 
-- **Runtime contracts, command routing, adapters, memory:** repository **`.ai/`** at the repo root (for example `.ai/agents.md`, `.ai/commands_multi_tool.md`, `.ai/cli-layer/`, `.ai/tool-adapters/`, `.ai/memory/state.json`).
+- **Runtime contracts, command routing, adapters, memory:** repository **`.ai/`** at the repo root (for example `.ai/agents.md`, `.ai/commands/commands.md`, `.ai/cli-layer/`, `.ai/tool-adapters/`, `.ai/memory/state.json`).
 - **`.ai/workspace/`:** curated docs, templates, QA assets, and phase write-ups. Not every numbered “virtual” section exists as a subfolder here; when in doubt, follow the paths below or open `.ai/`.
 - **Operational JSON / JSONL logs:** **`.ai/logs/`** (append-only audit trails, test exports, path-integrity reports).
-- **Active content projects:** [`content/README.md`](../../content/README.md) (canonical `content/<slug>/` list and `active_project` values).
-- **HTML quick guide (browser):** [`docs/workspace-user-guide/index.html`](../../docs/workspace-user-guide/index.html) — overview, full command routing table, CLI flags, and local verification (open the file locally; uses `assets/guide.css` beside it).
+- **Active content projects:** `content/README.md` (`../../content/README.md`) (canonical `content/<slug>/` list and `active_project` values).
+- **HTML quick guide (browser):** `docs/workspace-user-guide/index.html` (`../../docs/workspace-user-guide/index.html`) — overview, full command routing table, CLI flags, and local verification (open the file locally; uses `assets/guide.css` beside it).
 
 ### Cleanup policy (hygiene vs triage)
 

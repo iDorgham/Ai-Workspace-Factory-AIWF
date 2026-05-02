@@ -1,0 +1,46 @@
+{
+  "spec_id": "DEV-10-neural-fabric",
+  "spec_version": "1.0.0",
+  "sdd_version": "v21.0.0",
+  "planning_type": "development",
+  "phase_name": "Neural Fabric (v15.0)",
+  "phase_number": "10",
+  "topic": "Local and distributed neural execution fabric for AIWF runners",
+  "status": "active",
+  "created": "2026-05-01T00:00:00Z",
+  "reasoning_hash": "sha256:10-neural-fabric-phase-spec-2026-05-01",
+  "law_151_scope": true,
+  "owner_agent": "spec_architect_v2",
+  "goals": [
+    "Harden neural runner contracts and model registry schema",
+    "Ship latent synthesis loop with observability hooks",
+    "Meet v21 SDD density and C4 requirements for this phase folder"
+  ],
+  "acceptance_criteria": [
+    {
+      "id": "AC-01",
+      "description": "All neural_*.spec.json artifacts referenced from design.md and domain_model.md",
+      "verifiable": true,
+      "test_ref": "validation/audit_checklist.md#AC-01"
+    },
+    {
+      "id": "AC-02",
+      "description": "tasks.json carries at least five trackable tasks with clear owners and outputs",
+      "verifiable": true,
+      "test_ref": "validation/audit_checklist.md#AC-02"
+    }
+  ],
+  "timeline": {
+    "estimated_days": 21,
+    "start_date": "2026-05-01",
+    "end_date": "2026-05-22"
+  },
+  "density_gate": {
+    "minimum_files": 12,
+    "enforced_by": "spec_density_gate_v2",
+    "c4_required": true,
+    "regional_compliance_required": true
+  },
+  "dependencies": [],
+  "blocks": []
+}

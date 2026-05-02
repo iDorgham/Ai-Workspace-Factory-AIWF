@@ -22,7 +22,7 @@
 > An industrial-grade AI orchestration engine that builds, governs, and scales  
 > sovereign digital verticals — from a single command to a production-ready ecosystem.
 
-[📖 PRD](docs/PRD.md) · [🗺️ Long-Term Roadmap](docs/ROADMAP_LONGTERM.md) · [🎮 Guide Reference](.ai/commands/guide_humanize.md) · [⚙️ Changelog](.ai/logs/)
+[📖 PRD](docs/PRD.md) · [🗺️ Long-Term Roadmap](docs/ROADMAP_LONGTERM.md) · [🎮 Guide Reference](.ai/commands/guide.md) · [⚙️ Changelog](.ai/logs/)
 
 </div>
 
@@ -394,7 +394,7 @@ Workspace-to-library promotions require 3-agent consensus + governor approval vi
 
 Governor: **Dorgham** · Compliance: **Law 151/2020** · Region: **MENA-SOIL**
 
-*[PRD](docs/PRD.md) · [Long-Term Roadmap](docs/ROADMAP_LONGTERM.md) · [Guide Reference](.ai/commands/guide_humanize.md)*
+*[PRD](docs/PRD.md) · [Long-Term Roadmap](docs/ROADMAP_LONGTERM.md) · [Guide Reference](.ai/commands/guide.md)*
 
 **Sovereign Intelligence. Absolute Equilibrium.**
 

@@ -76,7 +76,7 @@
                     ┌─────────┴─────────┐
                     │                   │
             Look up in          Parse parameters
-         commands_multi_tool.md  (topic, audience)
+         commands.md  (topic, audience)
                     │                   │
                     └─────────┬─────────┘
                               ↓

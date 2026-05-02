@@ -47,7 +47,7 @@ Step 15: Update per-tool state
 ```
 
 ### 3. Commands Router (Update)
-**File:** `.ai/commands_multi_tool.md`
+**File:** `.ai/commands/commands.md`
 
 Add 6-tool rankings for each command type:
 ```
@@ -93,7 +93,7 @@ content/sovereign/blog-posts/[slug]_[tool]_v[version].md (codex output)
 
 ### Day 3: Commands & Routing
 
-- [ ] Update commands_multi_tool.md with 6-tool rankings
+- [ ] Update commands.md with 6-tool rankings
 - [ ] Update data-ownership rules for 6 tool outputs
 - [ ] Update logging format to include tool metadata
 - [ ] Create error response templates

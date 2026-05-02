@@ -1,20 +1,49 @@
 {
-  "phase": 9,
+  "phase": "10-neural-fabric",
   "slug": "neural-fabric",
+  "version": "21.0.0",
+  "planning_type": "development",
+  "reasoning_hash": "sha256:neural-fabric-tasks-expand-2026-05-01",
   "tasks": [
     {
       "id": "T-9-01",
-      "name": "Local LLM Backend",
+      "title": "Local LLM Backend",
       "description": "Integrate llama.cpp/MLX into the factory runner.",
       "status": "pending",
-      "priority": "P0"
+      "priority": "P0",
+      "dependencies": []
     },
     {
       "id": "T-9-02",
-      "name": "Latent Synthesis Loop",
+      "title": "Latent Synthesis Loop",
       "description": "Implement autonomous candidate project generation.",
       "status": "pending",
-      "priority": "P1"
+      "priority": "P1",
+      "dependencies": []
+    },
+    {
+      "id": "T-9-03",
+      "title": "Neural runner contract alignment",
+      "description": "Align neural_runner_contract.spec.json with api_contract.md and state flows in contracts/.",
+      "status": "pending",
+      "priority": "P1",
+      "dependencies": ["T-9-01"]
+    },
+    {
+      "id": "T-9-04",
+      "title": "Law 151/2020 regional compliance pass",
+      "description": "Complete regional_compliance.md for neural inference data paths and MENA residency notes.",
+      "status": "pending",
+      "priority": "P1",
+      "dependencies": ["T-9-02"]
+    },
+    {
+      "id": "T-9-05",
+      "title": "Spec density gate validation",
+      "description": "Run factory/scripts/core/spec_density_gate_v2.py on this phase; capture validation/density_gate_report.json when using --write-report.",
+      "status": "pending",
+      "priority": "P2",
+      "dependencies": ["T-9-03", "T-9-04"]
     }
   ]
 }

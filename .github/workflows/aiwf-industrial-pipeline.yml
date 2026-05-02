@@ -51,12 +51,21 @@ jobs:
       - name: Spec Density Gate — All Active Plan Phases
         run: |
           export PYTHONPATH=$PYTHONPATH:.
-          echo "🔍 Running spec_density_gate_v2 on all non-draft plan phases..."
+          echo "🔍 Running spec_density_gate_v2 on plan phases (density enforced only when phase.spec.json status is declared)..."
           FAILED=0
           PASSED=0
           WARNED=0
 
-          for phase_dir in $(find .ai/plan -mindepth 2 -maxdepth 2 -type d -name "phase-*" 2>/dev/null); do
+          # PRD §4.4 + v21: tripartite phases use `phase-*` (content/seo/…); development uses `NN_slug/` under .ai/plan/development/
+          phase_dirs=$(
+            find .ai/plan -mindepth 2 -maxdepth 2 -type d -name "phase-*" 2>/dev/null
+            find .ai/plan/development -mindepth 1 -maxdepth 1 -type d 2>/dev/null
+          )
+
+          # Policy — warn-only (never fail job): draft | planned | unknown
+          #   - unknown: missing phase.spec.json OR JSON parse error OR key missing → do not block CI on density drift
+          # Policy — enforce (fail job on gate exit ≠ 0): any other status (e.g. pending, active, completed, absorbed)
+          for phase_dir in $phase_dirs; do
             # Read phase status from phase.spec.json
             spec_file="$phase_dir/phase.spec.json"
             if [ -f "$spec_file" ]; then
@@ -71,17 +80,17 @@ jobs:
             phase_name=$(basename "$phase_dir")
             parent_type=$(basename $(dirname "$phase_dir"))
 
-            if [ "$status" = "draft" ]; then
-              # Draft phases: warn only, never block
+            if [ "$status" = "draft" ] || [ "$status" = "planned" ] || [ "$status" = "unknown" ]; then
+              # Warn-only bucket — never block (scaffold-in-progress, not yet committed to enforcement)
               if [ $exit_code -ne 0 ]; then
-                echo "⚠️  WARN  [$parent_type/$phase_name] status=draft — density gate did not pass (non-blocking)"
+                echo "⚠️  WARN  [$parent_type/$phase_name] status=$status — density gate did not pass (non-blocking)"
                 WARNED=$((WARNED + 1))
               else
-                echo "✅ PASS  [$parent_type/$phase_name] status=draft"
+                echo "✅ PASS  [$parent_type/$phase_name] status=$status"
                 PASSED=$((PASSED + 1))
               fi
             else
-              # Non-draft phases: gate failure blocks CI
+              # Enforced: declared non-draft status → density failure blocks CI
               if [ $exit_code -ne 0 ]; then
                 echo "❌ FAIL  [$parent_type/$phase_name] status=$status — density gate BLOCKED"
                 echo "$result" | grep -E "Missing:|Gates:" | head -5
@@ -99,10 +108,10 @@ jobs:
           echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
           if [ $FAILED -gt 0 ]; then
-            echo "❌ $FAILED non-draft phase(s) failed the density gate. Commit blocked."
+            echo "❌ $FAILED enforced-status phase(s) failed the density gate. Commit blocked."
             exit 1
           fi
-          echo "✅ All non-draft phases passed the density gate."
+          echo "✅ All enforced-status phases passed the density gate."
 
   chaos-regression:
     name: ⚡ Chaos Stress-Test

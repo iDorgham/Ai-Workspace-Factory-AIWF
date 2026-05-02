@@ -5,11 +5,11 @@ AIWF Industrial Mirror Sync v1.0.0
 Deep outbound mirror: .ai/ → factory/library/
 
 Mappings:
-  .ai/agents/     -> factory/library/00_core_orchestration/registry/agents/
+  .ai/agents/     -> factory/library/_legacy_pillars/00_core_orchestration/registry/agents/
   .ai/commands/   -> factory/library/commands/
-  .ai/governance/ -> factory/library/00_core_orchestration/omega_singularity/governance/
+  .ai/governance/ -> factory/library/_legacy_pillars/00_core_orchestration/omega_singularity/governance/
   .ai/plan/       -> factory/library/planning/
-  .ai/skills/     -> factory/library/00_core_orchestration/skills/manifests/
+  .ai/skills/     -> factory/library/skills/manifests/
   .ai/templates/  -> factory/library/templates/
   .ai/registry/   -> factory/library/registry/
 
@@ -35,7 +35,7 @@ MAPPINGS = {
     "commands": "commands",
     "governance": "00_core_orchestration/omega_singularity/governance",
     "plan": "planning",
-    "skills": "00_core_orchestration/skills/manifests",
+    "skills": "skills/manifests",
     "templates": "templates",
     "registry": "registry",
 }

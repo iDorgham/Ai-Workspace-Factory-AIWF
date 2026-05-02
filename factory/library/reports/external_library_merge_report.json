@@ -1,0 +1,97 @@
+{
+  "timestamp": "2026-04-30T19:54:37.461331+00:00",
+  "manifest": "factory/library/registry/external_sources.registry.json",
+  "imported_sources": [
+    {
+      "id": "awesome-claude-code-subagents",
+      "kind": "subagents_categories",
+      "url": "https://github.com/VoltAgent/awesome-claude-code-subagents",
+      "target": "factory/library/subagents/claude",
+      "tier": "curated",
+      "status": "processed",
+      "detected_license": "MIT",
+      "items": 144
+    },
+    {
+      "id": "awesome-codex-subagents",
+      "kind": "subagents_categories",
+      "url": "https://github.com/VoltAgent/awesome-codex-subagents",
+      "target": "factory/library/subagents/codex",
+      "tier": "curated",
+      "status": "processed",
+      "detected_license": "MIT",
+      "items": 0
+    },
+    {
+      "id": "awesome-design-md",
+      "kind": "design_catalog",
+      "url": "https://github.com/VoltAgent/awesome-design-md",
+      "target": "factory/library/design",
+      "tier": "curated",
+      "status": "processed",
+      "detected_license": "MIT",
+      "items": 59
+    },
+    {
+      "id": "awesome-claude-design",
+      "kind": "design_catalog",
+      "url": "https://github.com/rohitg00/awesome-claude-design",
+      "target": "factory/library/design",
+      "tier": "community",
+      "status": "processed",
+      "detected_license": "MIT",
+      "items": 0
+    },
+    {
+      "id": "getdesign-md",
+      "kind": "design_index",
+      "url": "https://getdesign.md/",
+      "target": "factory/library/design",
+      "tier": "community",
+      "status": "tracked_index_only",
+      "detected_license": "unknown",
+      "items": 0
+    }
+  ],
+  "targets": {
+    "factory/library/subagents/claude": {
+      "kind": "subagents_categories",
+      "selected_count": 144,
+      "summary": {
+        "count": 144,
+        "categories": 10
+      }
+    },
+    "factory/library/subagents/codex": {
+      "kind": "subagents_categories",
+      "selected_count": 0,
+      "summary": {
+        "count": 0,
+        "categories": 0
+      }
+    },
+    "factory/library/design": {
+      "kind": "design_catalog",
+      "selected_count": 59,
+      "summary": {
+        "count": 59
+      }
+    }
+  },
+  "skipped_sources": [],
+  "template_sync": [
+    "factory/library/templates/subagents/claude",
+    ".ai/templates/subagents/claude",
+    "factory/templates/subagents/claude",
+    "factory/library/templates/subagents/codex",
+    ".ai/templates/subagents/codex",
+    "factory/templates/subagents/codex",
+    "factory/library/templates/design",
+    ".ai/templates/design",
+    "factory/templates/design"
+  ],
+  "validation": {
+    "duplicate_keys": "pass",
+    "license_policy": "pass"
+  }
+}

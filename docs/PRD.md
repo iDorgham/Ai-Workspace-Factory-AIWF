@@ -140,7 +140,7 @@ Before v21, SDD existed only for the `development/` plan type. v21 expanded to 8
 │       └── sub_agent_contracts.json
 │
 ├── commands/
-│   ├── guide_humanize.md   # Antigravity v3.0.0 — full /guide command spec
+│   ├── guide.md   # Merged `/guide` registry + Antigravity humanization (single source)
 │   ├── dev.md              # /dev command spec
 │   ├── plan.md             # /plan command spec
 │   ├── git.md              # /git command spec
@@ -448,7 +448,7 @@ Subagents operate under T1 direction. Key subagents:
 
 ### 5.5 Antigravity v3.0 — Humanization Engine
 
-Antigravity is the root intelligence persona, active only on `/guide` triggers. Full spec: `.ai/commands/guide_humanize.md`.
+Antigravity is the root intelligence persona, active only on `/guide` triggers. Full spec: `.ai/commands/guide.md`.
 
 **Response Architecture (Anchor → Explore → Extend):**
 1. **Anchor** — connect to prior session context or stated interest
@@ -481,7 +481,7 @@ Antigravity is the root intelligence persona, active only on `/guide` triggers. 
 
 ### 6.1 `/guide` — Antigravity Intelligence Layer
 
-Full spec: `.ai/commands/guide_humanize.md` (v3.0.0)
+Full spec: `.ai/commands/guide.md` (registry + humanization; see file frontmatter)
 
 ```
 /guide ping                          → Activation check (v3.0 / v21.0.0 context)

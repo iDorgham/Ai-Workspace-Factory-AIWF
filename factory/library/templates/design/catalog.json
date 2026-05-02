@@ -1,0 +1,1127 @@
+{
+  "generated_at": "2026-04-30T19:54:46.637389+00:00",
+  "type": "design_catalog",
+  "providers": [
+    {
+      "provider": "airbnb",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "c2aec65a40059add97707875968181a46c6bd4548e5210f5e68f74b8ab6cf9de",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "c2aec65a40059add97707875968181a46c6bd4548e5210f5e68f74b8ab6cf9de",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "airtable",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "09c4233119968df9fae0de07de037a68a4414a98e3842172f158b2b1a3808915",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "09c4233119968df9fae0de07de037a68a4414a98e3842172f158b2b1a3808915",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "apple",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "6e42cde879791b62dffab3b43575b0ef957c0072e9f080d0ca5c790643b15208",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "6e42cde879791b62dffab3b43575b0ef957c0072e9f080d0ca5c790643b15208",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "bmw",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "425e64ae4b4fc7c01afa249cf33ad50b2bb06c2b1b8f3a3f136894c6377b5c35",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "425e64ae4b4fc7c01afa249cf33ad50b2bb06c2b1b8f3a3f136894c6377b5c35",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "cal",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "1cb3ac2cf13cfd05cfabf5874528ed549044b5e9eb4e8de2d8693b7ddcf8be30",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "1cb3ac2cf13cfd05cfabf5874528ed549044b5e9eb4e8de2d8693b7ddcf8be30",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "claude",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "3a9dca099083e06a1937dc56717fb9139f49c112a013fb3d7c4399e39d537a9a",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "3a9dca099083e06a1937dc56717fb9139f49c112a013fb3d7c4399e39d537a9a",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "clay",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "e44beb1bd58f28c6a57cfd47ee193ca6f33d34bc1692fd49f6336f8a11e66d82",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "e44beb1bd58f28c6a57cfd47ee193ca6f33d34bc1692fd49f6336f8a11e66d82",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "clickhouse",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "4f6debdce6b7f4b00b1289e20c124ecaab7992217256b79c5cb506e70fd847a0",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "4f6debdce6b7f4b00b1289e20c124ecaab7992217256b79c5cb506e70fd847a0",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "cohere",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "9bb5a9d923ab465ed527df50287411e6d6fb36b5dd6b7e94ff0fb8e94faf3b80",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "9bb5a9d923ab465ed527df50287411e6d6fb36b5dd6b7e94ff0fb8e94faf3b80",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "coinbase",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "4524c69f8311f8ee8a0e8d61f293fe810cfc96779f104d6aba0f1da8ce2b9251",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "4524c69f8311f8ee8a0e8d61f293fe810cfc96779f104d6aba0f1da8ce2b9251",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "composio",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "ac2f8c0819108e8ddb2446280334603e523efa72bb6ee38f014d49e1bc208631",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "ac2f8c0819108e8ddb2446280334603e523efa72bb6ee38f014d49e1bc208631",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "cursor",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "c2ff9050e5487a7672875c478bad985fb757abbb20d664daf62f24b091d515cd",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "c2ff9050e5487a7672875c478bad985fb757abbb20d664daf62f24b091d515cd",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "elevenlabs",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "44784fb31d71fa3888776a47ac5c41ab3724406b23866aaa42b8f7bbc4d727cb",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "44784fb31d71fa3888776a47ac5c41ab3724406b23866aaa42b8f7bbc4d727cb",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "expo",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "0fe349e0ffc53c12f135beb4566c1886be964cc0990dfd21422ab8622e81aa6c",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "0fe349e0ffc53c12f135beb4566c1886be964cc0990dfd21422ab8622e81aa6c",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "ferrari",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "516c4208d509a19620645b15a48b1dc63d5b5b9ced6405306093467f389b5480",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "516c4208d509a19620645b15a48b1dc63d5b5b9ced6405306093467f389b5480",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "figma",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "1dd65468a31a6f4c4f4c7cad8212607d3ef1db72fd5775c72af9e5f62d8b9849",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "1dd65468a31a6f4c4f4c7cad8212607d3ef1db72fd5775c72af9e5f62d8b9849",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "framer",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "876b6ba72c59b437c3e130812908b2a0a60d98e9b438a8989ac8363acda4e2dd",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "876b6ba72c59b437c3e130812908b2a0a60d98e9b438a8989ac8363acda4e2dd",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "hashicorp",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "5fb38a5e778a76cff7b8833df8f76da5ec2c5095e084f263284f33b22cbd8c1a",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "5fb38a5e778a76cff7b8833df8f76da5ec2c5095e084f263284f33b22cbd8c1a",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "ibm",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "7d68e769fd8e6f4f05fc7dafba3ec2748a800b9a3d3e41272f16d3489de3b086",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "7d68e769fd8e6f4f05fc7dafba3ec2748a800b9a3d3e41272f16d3489de3b086",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "intercom",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "da6368a17612be8061ca55d901f6e17c744709b13060616a2ca455a177d4d3b0",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "da6368a17612be8061ca55d901f6e17c744709b13060616a2ca455a177d4d3b0",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "kraken",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "66943eb3d5dee6b2c3f737d5d02d836b99e7377b56ec42770866715a35a9dda8",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "66943eb3d5dee6b2c3f737d5d02d836b99e7377b56ec42770866715a35a9dda8",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "lamborghini",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "2e61aaead5732c50799d8264341c7e933cce28d7b3e2b99a637aef783dcc5b48",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "2e61aaead5732c50799d8264341c7e933cce28d7b3e2b99a637aef783dcc5b48",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "linear.app",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "23f3395f16ed954d9031ec39067d8d96917c9bea0d2f78fd73b880392e63b512",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "23f3395f16ed954d9031ec39067d8d96917c9bea0d2f78fd73b880392e63b512",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "lovable",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "aadca914496397377b7608a1d8ac4048878342e290e9c916b23230c06594fd8f",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "aadca914496397377b7608a1d8ac4048878342e290e9c916b23230c06594fd8f",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "minimax",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "9881519a344fb8c0ed44f4c61f179315c4df736dde6e46fcad0a9182fc6f8811",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "9881519a344fb8c0ed44f4c61f179315c4df736dde6e46fcad0a9182fc6f8811",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "mintlify",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "dbfdaf96f6a9bc65f593a19344effcc4108b7ebd1c053b7ea16c97b0e76a2a10",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "dbfdaf96f6a9bc65f593a19344effcc4108b7ebd1c053b7ea16c97b0e76a2a10",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "miro",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "9ca6a05493a7bee232eeadca8bcfd2491f1309d1650d6ad595c48a3f17c234b6",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "9ca6a05493a7bee232eeadca8bcfd2491f1309d1650d6ad595c48a3f17c234b6",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "mistral.ai",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "f68b8a7b9a0b1606253c19b53c146dae9b95d10fea300055621850841f16c535",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "f68b8a7b9a0b1606253c19b53c146dae9b95d10fea300055621850841f16c535",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "mongodb",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "34626e4d42eada720f864bd9b5922eadadb6c3a7cac39b0a72851af842f8cc1c",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "34626e4d42eada720f864bd9b5922eadadb6c3a7cac39b0a72851af842f8cc1c",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "notion",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "7b919807d2ee23c811b793d110b5932e83210d6fe4421c7ee366570098346365",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "7b919807d2ee23c811b793d110b5932e83210d6fe4421c7ee366570098346365",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "nvidia",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "2ff4080794ac07bd6d3d64bc0d099da8484094f902b127b684d14453584ce9f1",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "2ff4080794ac07bd6d3d64bc0d099da8484094f902b127b684d14453584ce9f1",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "ollama",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "773e15592274585d0aa2f4d9a772c9ad98129e4486178e72767aca78f162eca8",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "773e15592274585d0aa2f4d9a772c9ad98129e4486178e72767aca78f162eca8",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "opencode.ai",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "d0947a96a6fcfd5645b79eafbf810f205027fad34b257ca68dae910621e52487",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "d0947a96a6fcfd5645b79eafbf810f205027fad34b257ca68dae910621e52487",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "pinterest",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "03b7023604ba6e80f6ede2042f36e340c65ca00b21e5b6578dfe118e35b2a885",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "03b7023604ba6e80f6ede2042f36e340c65ca00b21e5b6578dfe118e35b2a885",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "posthog",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "259adcb506ee17854f90bc8250a2895af4bc86fd4ca7d23ebc2ade71de157c54",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "259adcb506ee17854f90bc8250a2895af4bc86fd4ca7d23ebc2ade71de157c54",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "raycast",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "81bc56505df1b84e19d00a1e1acef26b10f4f6967d2da911aca23cd231559016",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "81bc56505df1b84e19d00a1e1acef26b10f4f6967d2da911aca23cd231559016",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "renault",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "8b1a804a6bf227512d1867d9cbf8fda663c7093ccedd96e736a65f291305af98",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "8b1a804a6bf227512d1867d9cbf8fda663c7093ccedd96e736a65f291305af98",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "replicate",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "5e6f5a694d1bbbcc6bd7bc4d4aeaab0291f3d05f59544a75df759cc4c930dcdf",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "5e6f5a694d1bbbcc6bd7bc4d4aeaab0291f3d05f59544a75df759cc4c930dcdf",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "resend",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "2f33d7b59b44c0c0d00975d6efaac4281842591b3009e87aa7f09377a2538a4f",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "2f33d7b59b44c0c0d00975d6efaac4281842591b3009e87aa7f09377a2538a4f",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "revolut",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "f161aeafc11da900697ea0ba5a39efb3c2d25009c4cde5bd78e93c53732262ce",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "f161aeafc11da900697ea0ba5a39efb3c2d25009c4cde5bd78e93c53732262ce",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "runwayml",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "6e1a88ee458985a2cc0cb1fda276ce5ca66b5581cb2ed7a30f09cf16e1907861",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "6e1a88ee458985a2cc0cb1fda276ce5ca66b5581cb2ed7a30f09cf16e1907861",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "sanity",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "6338f6ec6d8c48bc2a2bb73318a5a0dbdfa4253ea529c9e36488f1a13def7d1e",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "6338f6ec6d8c48bc2a2bb73318a5a0dbdfa4253ea529c9e36488f1a13def7d1e",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "semrush",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "a690831bf92d7f053fe5ebc2a5e2fab65a47ca75362dde73b559e37c23af12aa",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "a690831bf92d7f053fe5ebc2a5e2fab65a47ca75362dde73b559e37c23af12aa",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "sentry",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "3ec881357ceeb79a4c83a9fa2cfbdcf84d0179f135eba638de240eebeff8a127",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "3ec881357ceeb79a4c83a9fa2cfbdcf84d0179f135eba638de240eebeff8a127",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "spacex",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "6c0161c5edecd2c63aae7c016687c1f1351fa1e69a864682d2ebecd2cfa79580",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "6c0161c5edecd2c63aae7c016687c1f1351fa1e69a864682d2ebecd2cfa79580",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "spotify",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "4e9d66fe074cee986e5651776cc8d6aa4e6c8d91b69d5405a4aa0e464688c85d",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "4e9d66fe074cee986e5651776cc8d6aa4e6c8d91b69d5405a4aa0e464688c85d",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "stripe",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "509dfb359d27e240b5158012c55b3666789013e6a63847ec0625393b89441b04",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "509dfb359d27e240b5158012c55b3666789013e6a63847ec0625393b89441b04",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "supabase",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "48584353e2b866cca85bcbfd6fd696d949793b06586f7f7d83a2ffb146fc2261",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "48584353e2b866cca85bcbfd6fd696d949793b06586f7f7d83a2ffb146fc2261",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "superhuman",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "ff90b3596bf01675ae46f92d8a340952edac76138f6c1c9e243f4c66d72223fd",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "ff90b3596bf01675ae46f92d8a340952edac76138f6c1c9e243f4c66d72223fd",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "tesla",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "530b5d60381a5a4a22951ea7cafb7fb5ff68752fbce842e8267f3c0e56304c05",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "530b5d60381a5a4a22951ea7cafb7fb5ff68752fbce842e8267f3c0e56304c05",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "together.ai",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "d90bb234c312a536c798f14c8dcd62c8734ce78e97e5176cb2296e0a80e73f2a",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "d90bb234c312a536c798f14c8dcd62c8734ce78e97e5176cb2296e0a80e73f2a",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "uber",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "3a04e35b58e17a6e9cee960d5be9a36da7c0de1149e917be2356e9331625d927",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "3a04e35b58e17a6e9cee960d5be9a36da7c0de1149e917be2356e9331625d927",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "vercel",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "41fa72833346dedd876b7174d644441e0c05106274144c0f5857833535638003",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "41fa72833346dedd876b7174d644441e0c05106274144c0f5857833535638003",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "voltagent",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "020efda3338479af7955e22f00fe80513a3e5d5cbdee91cd0a1052a31b9be1a0",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "020efda3338479af7955e22f00fe80513a3e5d5cbdee91cd0a1052a31b9be1a0",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "warp",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "adceef2d274daf82b31abda6c07fd6f65ef4e91ee6ac80551ecea68468030a40",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "adceef2d274daf82b31abda6c07fd6f65ef4e91ee6ac80551ecea68468030a40",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "webflow",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "89b74e84bd1db28a58e9f7a405e9a9c5def032960aafc00839e9dac018b345ed",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "89b74e84bd1db28a58e9f7a405e9a9c5def032960aafc00839e9dac018b345ed",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "wise",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "ad431c1c918ebcf10f55684812a103e2045dffa3cd85fcc83f1355bfd5c2a1ad",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "ad431c1c918ebcf10f55684812a103e2045dffa3cd85fcc83f1355bfd5c2a1ad",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "x.ai",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "7d6de234ce4b289a2b5c344ec804021b21a611c0a4c67a2b55c5a5536bdfcc2b",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "7d6de234ce4b289a2b5c344ec804021b21a611c0a4c67a2b55c5a5536bdfcc2b",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "zapier",
+      "provenance": [
+        {
+          "source_id": "local-existing",
+          "tier": "local",
+          "digest": "92df2b7bfd44f42e1e3e3e81dff800ab647c57994139357722021e769c567f3e",
+          "license": "n/a",
+          "selected": true
+        },
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "92df2b7bfd44f42e1e3e3e81dff800ab647c57994139357722021e769c567f3e",
+          "license": "MIT",
+          "selected": false
+        }
+      ]
+    }
+  ]
+}

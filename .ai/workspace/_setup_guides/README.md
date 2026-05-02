@@ -58,7 +58,7 @@ Start here when setting up a new session or environment.
 1. Reference `PHASE_1_SETUP_GUIDE.md` (tool integration section)
 2. Add tool adapter in `../04-tool-adapters/`
 3. Update `tool-registry.json`
-4. Update `commands_multi_tool.md` with rankings
+4. Update `commands.md` with rankings
 5. Run tests in `../08-testing/`
 6. Done!
 

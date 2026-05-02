@@ -368,6 +368,7 @@ def log_review(overall_pass: bool, duration_ms: int, file_count: int) -> None:
         "duration_ms": duration_ms,
         "files_reviewed": file_count,
     }
+    WORKFLOW_LOG.parent.mkdir(parents=True, exist_ok=True)
     with open(WORKFLOW_LOG, "a") as f:
         f.write(json.dumps(entry) + "\n")
 

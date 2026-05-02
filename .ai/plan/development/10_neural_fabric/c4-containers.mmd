@@ -1,0 +1,37 @@
+%%{init: {"theme": "default"}}%%
+C4Container
+  title Container Architecture — {{TOPIC}} ({{PLANNING_TYPE}})
+
+  Person(user, "{{ACTOR_1}}", "{{ACTOR_1_DESCRIPTION}}")
+
+  %% ── System Boundary ───────────────────────────────────────────────────────
+  System_Boundary(aiwf, "AIWF v21.0.0") {
+
+    Container(orchestrator, "factory_orchestrator", "Python / AIWF Agent", "Routes commands, enforces OMEGA Gate v3, coordinates all agents")
+    Container(spec_arch, "spec_architect_v2", "Python / AIWF Agent", "Generates SDD structures, enforces density gate, C4 validation")
+    Container(plan_store, "Plan Store", ".ai/plan/ filesystem", "Versioned planning artifacts, phase folders, spec files")
+    Container(lib_mirror, "Library Mirror", "factory/library/planning/", "Industrial archive of all planning outputs via mirror sync")
+    Container(dashboard, "Dashboard", "Markdown + JSON", "Live phase health, C4 rendering, orchestration monitor")
+
+    %% Add type-specific containers here:
+    Container({{CONTAINER_1}}, "{{CONTAINER_1_NAME}}", "{{TECH}}", "{{RESPONSIBILITY}}")
+    Container({{CONTAINER_2}}, "{{CONTAINER_2_NAME}}", "{{TECH}}", "{{RESPONSIBILITY}}")
+  }
+
+  %% ── External Boundary ────────────────────────────────────────────────────
+  System_Ext(cli_tools, "Multi-CLI Adapters", "Claude / Gemini / Qwen / Kilo / OpenCode / Copilot / Codex")
+  System_Ext(git, "Git / GitHub Actions", "Version control + CI/CD sovereign pipeline")
+
+  %% ── Relationships ─────────────────────────────────────────────────────────
+  Rel(user, orchestrator, "Invokes /plan command", "CLI")
+  Rel(orchestrator, spec_arch, "Delegates planning task", "Internal")
+  Rel(spec_arch, plan_store, "Writes spec files", "Filesystem")
+  Rel(plan_store, lib_mirror, "Mirrors on commit", "Mirror Sync")
+  Rel(plan_store, dashboard, "Feeds health data", "JSON read")
+  Rel(cli_tools, spec_arch, "Generates content via prompt_library", "API / local")
+  Rel(orchestrator, git, "Commits via sovereign commit protocol", "Git + reasoning hash")
+
+  UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")
+
+%% NOTE: Keep total elements ≤30 including relationships implied by arrows.
+%% Every container: Name + Technology + 1-line description. No orphan nodes.

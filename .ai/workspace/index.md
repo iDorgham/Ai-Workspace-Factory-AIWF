@@ -33,7 +33,7 @@ Runtime contracts, adapters, templates, logs, and live session state are **not**
 | Tool adapters + registry | `.ai/tool-adapters/`, `.ai/tool-registry.json` |
 | Session memory | `.ai/memory/state.json` |
 | Append-only / audit logs | `.ai/logs/` |
-| Active `content/<slug>/` projects (table + slugs) | [`content/README.md`](../../content/README.md) |
+| Active `content/<slug>/` projects (table + slugs) | `content/README.md` (`../../content/README.md`) |
 
 ---
 

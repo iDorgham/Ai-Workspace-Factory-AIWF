@@ -26,7 +26,7 @@ Use `.ai/workspace/` for guides and reports, and `.ai/` for live agent contracts
 → `.ai/workspace/_quick-reference/QUICK_REFERENCE.md`
 
 ### Prefer HTML in a browser?
-→ [docs/workspace-user-guide/index.html](../../docs/workspace-user-guide/index.html) (multi-page: overview, commands/routing, local verification).
+→ docs/workspace-user-guide/index.html (`../../docs/workspace-user-guide/index.html`) (multi-page: overview, commands/routing, local verification).
 
 ### Setting Up Workspace? (30 minutes)
 → `.ai/workspace/_setup-guides/README.md`

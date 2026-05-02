@@ -1,0 +1,28 @@
+%%{init: {"theme": "default"}}%%
+C4Context
+  title System Context — {{TOPIC}} ({{PLANNING_TYPE}})
+
+  %% ── Actors ────────────────────────────────────────────────────────────────
+  Person(user, "{{ACTOR_1}}", "{{ACTOR_1_DESCRIPTION}}")
+  Person_Ext(external_user, "{{EXTERNAL_ACTOR}}", "{{EXTERNAL_ACTOR_DESC}}")
+
+  %% ── System Boundary ───────────────────────────────────────────────────────
+  System_Boundary(aiwf, "AIWF v21.0.0") {
+    System(core, "{{CORE_SYSTEM}}", "{{CORE_SYSTEM_DESC}}")
+  }
+
+  %% ── External Systems ──────────────────────────────────────────────────────
+  System_Ext(ext1, "{{EXTERNAL_SYSTEM_1}}", "{{EXT_SYS_1_DESC}}")
+  System_Ext(ext2, "{{EXTERNAL_SYSTEM_2}}", "{{EXT_SYS_2_DESC}}")
+
+  %% ── Relationships (unidirectional, action-verb labels) ────────────────────
+  Rel(user, core, "Triggers", "CLI / API")
+  Rel(core, ext1, "Reads from", "HTTPS / JSON")
+  Rel(core, ext2, "Deploys to", "API")
+  Rel(external_user, core, "Requests", "HTTPS")
+
+  %% ── Law 151/2020 boundary note ────────────────────────────────────────────
+  UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")
+
+%% NOTE: Keep total elements ≤25. Add legend if >10 distinct element types.
+%% Law 151/2020: All data flows crossing Egypt/MENA boundary must be annotated.

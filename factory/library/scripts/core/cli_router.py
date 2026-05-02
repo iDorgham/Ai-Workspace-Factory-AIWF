@@ -33,11 +33,20 @@ from paths import (  # noqa: E402
 WORKSPACE_ROOT = REPO_ROOT
 TOOL_ROUTER_PATH = scripts_dir() / "tool_router_v2.py"
 TOOL_REGISTRY_PATH = REPO_ROOT / ".ai" / "tool-registry.json"
+# Canonical tool-ranking schema (must stay aligned with `commands.md` narrative).
+COMMAND_ROUTING_PATH = REPO_ROOT / ".ai" / "registry" / "routing" / "command_routing.json"
 
 spec = importlib.util.spec_from_file_location("tool_router_v2", TOOL_ROUTER_PATH)
-tool_router_module = importlib.util.module_from_spec(spec)
-spec.loader.exec_module(tool_router_module)
-ToolRouter = tool_router_module.ToolRouter
+TOOL_ROUTER_LOAD_ERROR = None
+ToolRouter = None
+try:
+    tool_router_module = importlib.util.module_from_spec(spec) if spec else None
+    if not spec or not spec.loader or not tool_router_module:
+        raise ImportError(f"invalid_spec:{TOOL_ROUTER_PATH}")
+    spec.loader.exec_module(tool_router_module)
+    ToolRouter = tool_router_module.ToolRouter
+except Exception as exc:
+    TOOL_ROUTER_LOAD_ERROR = str(exc)
 
 _P = active_project()
 _REF = f"content/{_P}/reference"
@@ -249,7 +258,35 @@ COMMAND_PATTERNS = [
         "requires_context": [f"{_SCR}/index.json"],
         "output_paths": [f"{_SCR}/"],
     },
+    {
+        "pattern": r"^/design(?:\s+(list|install|use))?(?:\s+(.+))?$",
+        "intent": "design_catalog",
+        "primary_agent": "guide-agent",
+        "sub_agents": ["blueprint-architect"],
+        "requires_context": ["factory/library/design/README.md"],
+        "output_paths": ["factory/library/design/", ".ai/templates/design/"],
+    },
 ]
+
+
+def validate_command_routing_schema() -> list[str]:
+    """Compile every regex in `command_routing.json`; return human-readable warnings."""
+    warnings: list[str] = []
+    if not COMMAND_ROUTING_PATH.is_file():
+        warnings.append(f"missing_routing_schema:{COMMAND_ROUTING_PATH}")
+        return warnings
+    try:
+        data = json.loads(COMMAND_ROUTING_PATH.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        return [f"invalid_command_routing_json:{exc}"]
+    for rule in data.get("commands", []):
+        rid = rule.get("id", "<no-id>")
+        for pat in rule.get("patterns", []):
+            try:
+                re.compile(pat)
+            except re.error as exc:
+                warnings.append(f"{rid}:bad_pattern:{pat!r}:{exc}")
+    return warnings
 
 
 def parse_command(raw_command: str) -> dict:
@@ -306,7 +343,7 @@ def parse_command(raw_command: str) -> dict:
             f"I didn't recognize that command. Available commands: "
             f"/brand, /research competitors, /scrape, /sync, /create, /compare, "
             f"/polish, /optimize, /review, /approve, /revise, /export, /archive, "
-            f"/memory save|load|clear, /budget check. "
+            f"/memory save|load|clear, /budget check, /design. "
             f"Start with /brand if you haven't set up your brand foundation yet."
         ),
     }
@@ -358,11 +395,17 @@ def build_tool_execution(raw_command: str, intent: str) -> dict:
     command_without_flags, flags = parse_cli_flags(raw_command)
     if intent not in {"research_competitors", "scrape_all", "scrape_single", "sync"}:
         return {"status": "skipped", "reason": "intent_not_accuracy_routed"}
+    if TOOL_ROUTER_LOAD_ERROR:
+        return {"status": "skipped", "reason": "tool_router_unavailable", "details": TOOL_ROUTER_LOAD_ERROR}
     if not TOOL_REGISTRY_PATH.exists():
         return {"status": "skipped", "reason": "tool_registry_missing"}
     with open(TOOL_REGISTRY_PATH) as f:
         tool_registry = json.load(f)
-    router = ToolRouter(tool_registry=tool_registry, command_routing={})
+    router = ToolRouter(
+        tool_registry=tool_registry,
+        command_routing={},
+        routing_schema_path=str(COMMAND_ROUTING_PATH),
+    )
     result = router.route_command(command_without_flags, flags)
     return result
 
@@ -396,6 +439,10 @@ def extract_entities(command: str, intent: str, match) -> dict:
     elif intent == "intelligence_operation" and groups:
         entities["type"] = groups[0].strip()
         entities["target"] = groups[1].strip() if len(groups) > 1 and groups[1] else None
+    elif intent == "design_catalog":
+        action = groups[0].strip() if groups and groups[0] else "list"
+        entities["action"] = action
+        entities["design"] = groups[1].strip() if len(groups) > 1 and groups[1] else None
 
     return entities
 
@@ -425,6 +472,7 @@ def get_clarifying_question(intent: str, missing: list) -> str:
         "extract_brand_voice": "Please provide the source text or URL to extract tone from. Paste it directly or share a file path.",
         "intelligence_operation": "Which competitor or market segment should I analyze for this intelligence brief?",
         "antigravity_operation": "Should I perform a status check, synchronize commands, or process new transcripts for learning?",
+        "design_catalog": "Run `/design list` to see available design packs, then choose one with `/design use <pack-name>`.",
     }
     return questions.get(intent, f"Some required context is missing: {', '.join(missing[:2])}. Can you provide this before we proceed?")
 
@@ -473,6 +521,11 @@ def log_routing(payload: dict) -> None:
 
 
 if __name__ == "__main__":
+    _rw = validate_command_routing_schema()
+    if _rw:
+        print("command_routing.json validation:")
+        for line in _rw:
+            print(f"  - {line}")
     # Quick self-test
     test_commands = [
         "/research competitors",

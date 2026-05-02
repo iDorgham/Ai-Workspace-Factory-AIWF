@@ -296,192 +296,192 @@
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/cloud-architecture/skills/external/serverless-databases/serverless-db-physics/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/cloud-architecture/skills/external/serverless-databases/serverless-db-physics/SKILL.md",
       "lines": 31,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/cloud-architecture/skills/external/cloudflare/cloudflare-official-mastery/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/cloud-architecture/skills/external/cloudflare/cloudflare-official-mastery/SKILL.md",
       "lines": 28,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/cloud-architecture/skills/external/microsoft-azure/azure-cloud-physics/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/cloud-architecture/skills/external/microsoft-azure/azure-cloud-physics/SKILL.md",
       "lines": 30,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/cloud-architecture/skills/external/firebase/firebase-platform-mastery/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/cloud-architecture/skills/external/firebase/firebase-platform-mastery/SKILL.md",
       "lines": 29,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/render-props-pattern/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/render-props-pattern/SKILL.md",
       "lines": 22,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/react-composition-2026/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/react-composition-2026/SKILL.md",
       "lines": 27,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/compound-pattern/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/compound-pattern/SKILL.md",
       "lines": 26,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/static-rendering/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/static-rendering/SKILL.md",
       "lines": 23,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/hooks-pattern/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/hooks-pattern/SKILL.md",
       "lines": 27,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/client-side-rendering/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/client-side-rendering/SKILL.md",
       "lines": 23,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/progressive-hydration/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/progressive-hydration/SKILL.md",
       "lines": 23,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/server-side-rendering/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/server-side-rendering/SKILL.md",
       "lines": 23,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/react-2026/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/react-2026/SKILL.md",
       "lines": 27,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/ai-ui-patterns/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/ai-ui-patterns/SKILL.md",
       "lines": 28,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/react-selective-hydration/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/react-selective-hydration/SKILL.md",
       "lines": 22,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/react-server-components/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/react-server-components/SKILL.md",
       "lines": 27,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/incremental-static-rendering/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/incremental-static-rendering/SKILL.md",
       "lines": 26,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/react-render-optimization/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/react-render-optimization/SKILL.md",
       "lines": 27,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/hoc-pattern/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/hoc-pattern/SKILL.md",
       "lines": 27,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/react-data-fetching/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/react-data-fetching/SKILL.md",
       "lines": 27,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/web-developing/skills/react-patterns/presentational-container-pattern/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/presentational-container-pattern/SKILL.md",
       "lines": 30,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/web-developing/skills/cms-mastery/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/cms-mastery/SKILL.md",
       "lines": 39,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/web-developing/skills/framer-mastery/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/framer-mastery/SKILL.md",
       "lines": 39,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/web-developing/skills/external/vercel/vercel-official-mastery/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/external/vercel/vercel-official-mastery/SKILL.md",
       "lines": 44,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/web-developing/skills/external/design-excellence/sleek-ui-design-protocols/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/external/design-excellence/sleek-ui-design-protocols/SKILL.md",
       "lines": 30,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/web-developing/skills/external/nextjs-mastery/nextjs-2026-patterns/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/external/nextjs-mastery/nextjs-2026-patterns/SKILL.md",
       "lines": 32,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/web-developing/skills/external/patterns-dev/react-design-patterns/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/external/patterns-dev/react-design-patterns/SKILL.md",
       "lines": 32,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/web-developing/skills/bilingual-nextjs-performance/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/bilingual-nextjs-performance/SKILL.md",
       "lines": 17,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/web-developing/skills/front-end-website-builders/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/front-end-website-builders/SKILL.md",
       "lines": 39,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/web-developing/skills/live-website-builders/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/live-website-builders/SKILL.md",
       "lines": 39,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/web-developing/skills/responsive-grid-systems/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/responsive-grid-systems/SKILL.md",
       "lines": 39,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/web-developing/skills/modern-frontend-frameworks/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/modern-frontend-frameworks/SKILL.md",
       "lines": 39,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/web-developing/skills/animation-frameworks/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/animation-frameworks/SKILL.md",
       "lines": 39,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/app-developing/skills/cross-platform-native-patterns/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/app-developing/skills/cross-platform-native-patterns/SKILL.md",
       "lines": 16,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/app-developing/skills/app-developing-mastery/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/app-developing/skills/app-developing-mastery/SKILL.md",
       "lines": 19,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/app-developing/skills/external/expo/expo-mobile-optimization/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/app-developing/skills/external/expo/expo-mobile-optimization/SKILL.md",
       "lines": 30,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/api-design/skills/api-contracts/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/api-design/skills/api-contracts/SKILL.md",
       "lines": 39,
       "type": "skill"
     },
     {
-      "path": "factory/library/02-web-platforms/api-design/skills/api-gateway-mastery/SKILL.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/api-design/skills/api-gateway-mastery/SKILL.md",
       "lines": 39,
       "type": "skill"
     },
@@ -856,47 +856,47 @@
       "type": "skill"
     },
     {
-      "path": "factory/library/06-branding/brand-strategy/skills/mena-strategic-brand-voice/SKILL.md",
+      "path": "factory/library/_legacy_pillars/06-branding/brand-strategy/skills/mena-strategic-brand-voice/SKILL.md",
       "lines": 29,
       "type": "skill"
     },
     {
-      "path": "factory/library/06-branding/brand-strategy/skills/multi-persona-branding-mastery/SKILL.md",
+      "path": "factory/library/_legacy_pillars/06-branding/brand-strategy/skills/multi-persona-branding-mastery/SKILL.md",
       "lines": 35,
       "type": "skill"
     },
     {
-      "path": "factory/library/06-branding/brand-strategy/skills/branding-mastery/SKILL.md",
+      "path": "factory/library/_legacy_pillars/06-branding/brand-strategy/skills/branding-mastery/SKILL.md",
       "lines": 23,
       "type": "skill"
     },
     {
-      "path": "factory/library/06-branding/modern-ai-branding/skills/ai-avatar-branding-logic/SKILL.md",
+      "path": "factory/library/_legacy_pillars/06-branding/modern-ai-branding/skills/ai-avatar-branding-logic/SKILL.md",
       "lines": 30,
       "type": "skill"
     },
     {
-      "path": "factory/library/06-branding/brand-governance/skills/w3c-brand-token-system/SKILL.md",
+      "path": "factory/library/_legacy_pillars/06-branding/brand-governance/skills/w3c-brand-token-system/SKILL.md",
       "lines": 36,
       "type": "skill"
     },
     {
-      "path": "factory/library/06-branding/visual-identity/skills/arabic-typography-rtl-physics/SKILL.md",
+      "path": "factory/library/_legacy_pillars/06-branding/visual-identity/skills/arabic-typography-rtl-physics/SKILL.md",
       "lines": 35,
       "type": "skill"
     },
     {
-      "path": "factory/library/06-branding/visual-identity/skills/golden-ratio/SKILL.md",
+      "path": "factory/library/_legacy_pillars/06-branding/visual-identity/skills/golden-ratio/SKILL.md",
       "lines": 39,
       "type": "skill"
     },
     {
-      "path": "factory/library/06-branding/visual-identity/skills/visual-identity-design-mastery/SKILL.md",
+      "path": "factory/library/_legacy_pillars/06-branding/visual-identity/skills/visual-identity-design-mastery/SKILL.md",
       "lines": 33,
       "type": "skill"
     },
     {
-      "path": "factory/library/06-branding/visual-identity/skills/design-trends-2026/SKILL.md",
+      "path": "factory/library/_legacy_pillars/06-branding/visual-identity/skills/design-trends-2026/SKILL.md",
       "lines": 39,
       "type": "skill"
     },
@@ -2078,27 +2078,27 @@
       "type": "agent"
     },
     {
-      "path": "factory/library/02-web-platforms/cloud-architecture/agents/SentinelCloudArchitecture/AGENT.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/cloud-architecture/agents/SentinelCloudArchitecture/AGENT.md",
       "lines": 17,
       "type": "agent"
     },
     {
-      "path": "factory/library/02-web-platforms/web-developing/agents/SentinelWebDeveloping/AGENT.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/web-developing/agents/SentinelWebDeveloping/AGENT.md",
       "lines": 59,
       "type": "agent"
     },
     {
-      "path": "factory/library/02-web-platforms/app-developing/agents/SentinelAppDeveloping/AGENT.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/app-developing/agents/SentinelAppDeveloping/AGENT.md",
       "lines": 17,
       "type": "agent"
     },
     {
-      "path": "factory/library/02-web-platforms/api-design/agents/SentinelApiDesign/AGENT.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/api-design/agents/SentinelApiDesign/AGENT.md",
       "lines": 17,
       "type": "agent"
     },
     {
-      "path": "factory/library/02-web-platforms/saas-platforms/agents/SentinelSaasPlatforms/AGENT.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/saas-platforms/agents/SentinelSaasPlatforms/AGENT.md",
       "lines": 59,
       "type": "agent"
     },
@@ -2188,22 +2188,22 @@
       "type": "agent"
     },
     {
-      "path": "factory/library/06-branding/brand-strategy/agents/BrandDirector/AGENT.md",
+      "path": "factory/library/_legacy_pillars/06-branding/brand-strategy/agents/BrandDirector/AGENT.md",
       "lines": 31,
       "type": "agent"
     },
     {
-      "path": "factory/library/06-branding/agency-ops/agents/SentinelAgencyOps/AGENT.md",
+      "path": "factory/library/_legacy_pillars/06-branding/agency-ops/agents/SentinelAgencyOps/AGENT.md",
       "lines": 17,
       "type": "agent"
     },
     {
-      "path": "factory/library/06-branding/brand-governance/agents/DesignSystem/AGENT.md",
+      "path": "factory/library/_legacy_pillars/06-branding/brand-governance/agents/DesignSystem/AGENT.md",
       "lines": 15,
       "type": "agent"
     },
     {
-      "path": "factory/library/06-branding/brand-governance/agents/BrandGuardian/AGENT.md",
+      "path": "factory/library/_legacy_pillars/06-branding/brand-governance/agents/BrandGuardian/AGENT.md",
       "lines": 15,
       "type": "agent"
     },

@@ -16,26 +16,25 @@ class OmegaReleaseGate:
             "test_coverage_80", "spec_density_5", "lint_clean",
             "security_scan_pass", "dependency_audit_pass", "governance_hash_match"
         ]
+        self.script_checks = {
+            "path_integrity": ("factory/library/scripts/maintenance/audit_path_integrity.py", []),
+            "mirror_drift_0": ("factory/library/_legacy_pillars/10_engineering_devops/01_software_engineering/developing/scripts/check_mirror_drift.py", ["--threshold", "0"]),
+            "law151_certified": ("factory/library/scripts/maintenance/healing.py", []),
+            "health_score_95": ("factory/scripts/maintenance/health_scorer.py", ["--min-score", "95"]),
+            "spec_density_5": ("factory/scripts/core/spec_density_gate_v2.py", []),
+        }
 
     def check_all(self):
         print("🏛️  [OMEGA GATE] Initializing 12-point release audit...")
         
-        # 1. Path Integrity
-        self.results["path_integrity"] = self._run_audit("factory/library/scripts/maintenance/audit_path_integrity.py")
-        
-        # 2. Mirror Drift (must be 0 for release)
-        self.results["mirror_drift_0"] = self._run_audit("factory/library/10_engineering_devops/01_software_engineering/developing/scripts/check_mirror_drift.py", ["--threshold", "0"])
-        
-        # 3. Spec Density (mocked/simplified)
-        self.results["spec_density_5"] = True # Simplified for now
-        
-        # 4. Law 151 Residency
-        self.results["law151_certified"] = self._run_audit("factory/library/scripts/maintenance/healing.py")
-
-        # ... (Other points mocked or simplified)
         for point in self.points:
-            if point not in self.results:
-                self.results[point] = True # Default pass for mocked points
+            check = self.script_checks.get(point)
+            if not check:
+                print(f"No configured audit for {point}. Failing closed.")
+                self.results[point] = False
+                continue
+            script_path, args = check
+            self.results[point] = self._run_audit(script_path, args)
 
         print("\n📝 Gate Status Details:")
         for point in self.points:
@@ -52,10 +51,12 @@ class OmegaReleaseGate:
             print("❌ OMEGA GATE FAILED. Blocked by non-compliance.")
             return False
 
-    def _run_audit(self, script_path, args=[]):
+    def _run_audit(self, script_path, args=None):
+        if args is None:
+            args = []
         full_path = REPO_ROOT / script_path
         if not full_path.exists():
-            print(f"⚠️  Missing audit script: {script_path}")
+            print(f"Missing audit script: {script_path}")
             return False
         try:
             subprocess.check_call(["python3", str(full_path)] + args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)

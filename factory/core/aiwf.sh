@@ -7,23 +7,23 @@ ARGS=$@
 
 case $COMMAND in
     "/plan")
-        python3 factory/scripts/plan_content.py $ARGS
+        python3 factory/scripts/automation/plan_content.py $ARGS
         ;;
     "/create")
-        python3 factory/scripts/compose.py $ARGS
+        python3 factory/scripts/core/compose.py $ARGS
         ;;
     "/dev")
         python3 factory/core/runner.py $ARGS
         ;;
     "/audit")
-        python3 factory/scripts/health_scorer.py $ARGS
+        python3 factory/scripts/maintenance/health_scorer.py $ARGS
         ;;
     "/git")
         # Route to security sentinel if flags are present
         if [[ "$*" == *"--security-fix"* ]] || [[ "$*" == *"--action-fix"* ]]; then
             python3 factory/core/security_sentinel.py --action fix --path .
         else
-            python3 factory/scripts/omega_release.py $ARGS
+            python3 factory/scripts/core/omega_release.py $ARGS
         fi
         ;;
     "/deploy")
@@ -54,13 +54,22 @@ case $COMMAND in
         python3 factory/core/omega_gate.py $ARGS
         ;;
     "/guide")
-        python3 factory/scripts/swarm.py $ARGS
+        python3 factory/scripts/core/swarm.py $ARGS
         ;;
     "/help")
-        cat docs/context/system-prompt.md
+        echo "AIWF commands:"
+        echo "  /plan      /create    /dev      /audit"
+        echo "  /git       /deploy    /revenue  /sync"
+        echo "  /master    /chaos     /health   /gate"
+        echo "  /guide     /help"
+        echo ""
+        echo "Examples:"
+        echo "  /plan phase-02/agent-router"
+        echo "  /create spec --type api"
+        echo "  /git --security-fix"
         ;;
     *)
         echo "Unknown command: $COMMAND"
-        echo "Usage: /plan, /create, /dev, /audit, /git, /guide, /help"
+        echo "Usage: /plan, /create, /dev, /audit, /git, /deploy, /revenue, /sync, /master, /chaos, /health, /gate, /guide, /help"
         ;;
 esac

@@ -126,7 +126,7 @@ User Input
   - [ ] Test parsing with sample inputs
 
 - [ ] **Day 4: Commands Router Update**
-  - [ ] Update `.ai/commands_multi_tool.md` with 6-tool rankings
+  - [ ] Update `.ai/commands/commands.md` with 6-tool rankings
   - [ ] Verify tool rankings per command type
   - [ ] Update fallback chains for each command
 

@@ -69,8 +69,9 @@ phases:
   - id: 10
     slug: "neural-fabric"
     name: "Neural Fabric (v15.0)"
-    status: "active"
+    status: "pending"
     path: "plan/development/10_neural_fabric/"
+    integrity_note: "Reconciled 2026-05-01 — removed dual-active with phase 18; active_phase remains 18 (singularity). Folder scaffolded for v21 density gate."
 
   - id: 11
     slug: "website-content"
@@ -123,9 +124,9 @@ phases:
   - id: "18G"
     slug: "governance-protocols"
     name: "Governance Protocol Hardening"
-    status: "draft"
+    status: "pending"
     path: "plan/development/18_governance/"
-    integrity_note: "Registered 2026-04-25 — empty folder, needs spec.md and tasks.json before activation"
+    integrity_note: "2026-05-01 — v21 scaffold + density_gate PASS (validation/density_gate_report.json). Manifest active_phase remains 18 (singularity); 18G is pending until explicit promote to active (avoid dual manifest active with phase 18)."
     prerequisite_of: 19
 
   - id: 19

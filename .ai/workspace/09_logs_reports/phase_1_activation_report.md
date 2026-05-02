@@ -35,7 +35,7 @@ All files created and ready:
 | **Claude Adapter** | `.ai/tool-adapters/claude_adapter.md` | ✅ Active | Claude implementation + constraints |
 | **Gemini Adapter** | `.ai/tool-adapters/gemini_adapter.md` | ✅ Active | Gemini implementation + API rules |
 | **Fallback Routing** | `.ai/tool-adapters/_fallback_routing.md` | ✅ Active | Decision tree for tool selection |
-| **Command Router** | `.ai/commands_multi_tool.md` | ✅ Active | Tool rankings per command type |
+| **Command Router** | `.ai/commands/commands.md` | ✅ Active | Tool rankings per command type |
 | **Data Ownership** | `.ai/data_ownership_multi_tool.md` | ✅ Active | File versioning rules |
 
 ### 3. State Management Initialized
@@ -63,7 +63,7 @@ All files created and ready:
 
 When you issue a command:
 1. **Parse command type** — e.g., `/create blog-posts` → Type: "blog-posts"
-2. **Look up tool ranking** — Check `.ai/commands_multi_tool.md`
+2. **Look up tool ranking** — Check `.ai/commands/commands.md`
    - Rank 1: Claude (best for content quality)
    - Rank 2: Gemini (fallback, cheaper, multimodal)
    - Rank 3: Copilot (Phase 2)
@@ -242,7 +242,7 @@ tail -2 logs/workflow.jsonl | python3 -m json.tool
 
 ### Daily Use
 - `CLAUDE.md` — Session startup (updated with Phase 1)
-- `.ai/commands_multi_tool.md` — Current command routing
+- `.ai/commands/commands.md` — Current command routing
 - `.ai/QUICK_REFERENCE.md` — Tool rankings by command
 
 ### Monitoring

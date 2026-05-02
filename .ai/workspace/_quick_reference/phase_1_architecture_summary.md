@@ -97,7 +97,7 @@ Command → guide-agent → Rank tools → Claude (primary) → Success? → Don
 | `claude_adapter.md` | Claude's specific implementation | 350 lines |
 | `gemini_adapter.md` | Gemini's specific implementation | 350 lines |
 | `_fallback_routing.md` | Tool selection + fallback decision tree | 400 lines |
-| `.ai/commands_multi_tool.md` | Updated command router with tool ranks | 500 lines |
+| `.ai/commands/commands.md` | Updated command router with tool ranks | 500 lines |
 
 ### Governance (Data Rules)
 | File | Purpose | Size |
@@ -299,7 +299,7 @@ Before writing, check:
 Example:
   Gemini (creator-agent) wants to write: content/sovereign/blog-posts/[slug].md
   ✅ creator-agent → allowed to write to content/
-  ✅ Gemini → allowed (in commands_multi_tool.md)
+  ✅ Gemini → allowed (in commands.md)
   ✅ Path should be: post_1_gemini_v1.md ← tool-versioned
   ✅ Backup: .ai/memory/polish-backup/post_1_[timestamp].md
   ✅ Conflict resolution: version_branch (coexist; user chooses)
@@ -317,7 +317,7 @@ Example:
 ## Backward Compatibility
 
 **Old commands still work:**
-- `/create blog-posts` still works (routes to Claude per commands_multi_tool.md)
+- `/create blog-posts` still works (routes to Claude per commands.md)
 - Brand voice validation still 94%+ (Claude is Rank 1)
 - Export format unchanged (same CSV/CMS pack output)
 
@@ -423,7 +423,7 @@ Example:
 - Versioning strategy prevents data loss
 
 **Scalability:** ✅  
-- Adding new tool = 1 adapter file + 3 lines in commands_multi_tool.md
+- Adding new tool = 1 adapter file + 3 lines in commands.md
 - State management scales linearly with tool count
 - Fallback logic doesn't degrade with more tools
 

@@ -119,7 +119,7 @@ Return both outputs + comparison
 ### Task 2: Create Command Routing Rules
 **Time:** ~15 min  
 **Input:** Tool registry + existing command system  
-**Output:** `.ai/commands_multi_tool.md` (tool rankings per command)
+**Output:** `.ai/commands/commands.md` (tool rankings per command)
 
 **Content:** Mapping of commands to tool rankings
 ```json
@@ -221,7 +221,7 @@ Return both outputs + comparison
 
 ### New Files
 - [ ] `.ai/scripts/tool-router.py` (350+ lines)
-- [ ] `.ai/commands_multi_tool.md` (command → tool rankings)
+- [ ] `.ai/commands/commands.md` (command → tool rankings)
 - [ ] `tests/day-3-tool-router-tests.json` (12 test cases)
 - [ ] `.ai/scripts/test-tool-router.py` (400+ lines)
 - [ ] `logs/day-[day]-[report]-results.json` (generated)

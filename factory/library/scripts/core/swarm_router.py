@@ -3,7 +3,6 @@ import os
 import sys
 import json
 import time
-import random
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -21,16 +20,25 @@ def log_event(message, hash_id):
         f.write(f"- **{timestamp}** {hash_id}: {message}\n")
 
 def get_swarm_consensus(alias: str):
-    # Simulated agents
+    alias_lower = alias.strip().lower()
+
+    alias_map = {}
+    if ALIAS_TABLE.exists():
+        try:
+            alias_map = json.loads(ALIAS_TABLE.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            alias_map = {}
+
+    alias_known = alias_lower in alias_map
+
+    # Deterministic policy votes
     agents = ["SEO_AGENT", "BRAND_AGENT", "COMPLIANCE_AGENT"]
-    votes = {}
-    
-    # Simulate weighted voting based on "alias" complexity
-    # In a real scenario, this would be LLM calls or rule-based checks
-    for agent in agents:
-        # 90% chance of approval for standard aliases
-        votes[agent] = "YES" if random.random() < 0.9 else "NO"
-    
+    votes = {
+        "SEO_AGENT": "YES" if alias_known else "NO",
+        "BRAND_AGENT": "YES" if alias_known else "NO",
+        "COMPLIANCE_AGENT": "YES" if alias_known and alias_lower.startswith("/") else "NO",
+    }
+
     yes_votes = list(votes.values()).count("YES")
     consensus_met = yes_votes >= 2 # 2/3 majority
     confidence = (yes_votes / len(agents)) * 100
@@ -63,7 +71,6 @@ def main():
         print("⚠️  Bypassing swarm. Using legacy deterministic routing.")
         result = {"alias": alias, "consensus_met": True, "confidence": 100, "votes": {"MANUAL": "YES"}}
     else:
-        # Simulate 150ms latency
         time.sleep(0.1)
         result = get_swarm_consensus(alias)
 

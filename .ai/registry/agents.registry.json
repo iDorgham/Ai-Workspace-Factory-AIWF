@@ -147,27 +147,27 @@
     },
     {
       "meta": {},
-      "path": "factory/library/02-web-platforms/cloud-architecture/agents/SentinelCloudArchitecture/AGENT.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/cloud-architecture/agents/SentinelCloudArchitecture/AGENT.md",
       "status": "active"
     },
     {
       "meta": {},
-      "path": "factory/library/02-web-platforms/web-developing/agents/SentinelWebDeveloping/AGENT.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/web-developing/agents/SentinelWebDeveloping/AGENT.md",
       "status": "active"
     },
     {
       "meta": {},
-      "path": "factory/library/02-web-platforms/app-developing/agents/SentinelAppDeveloping/AGENT.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/app-developing/agents/SentinelAppDeveloping/AGENT.md",
       "status": "active"
     },
     {
       "meta": {},
-      "path": "factory/library/02-web-platforms/api-design/agents/SentinelApiDesign/AGENT.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/api-design/agents/SentinelApiDesign/AGENT.md",
       "status": "active"
     },
     {
       "meta": {},
-      "path": "factory/library/02-web-platforms/saas-platforms/agents/SentinelSaasPlatforms/AGENT.md",
+      "path": "factory/library/_legacy_pillars/02-web-platforms/saas-platforms/agents/SentinelSaasPlatforms/AGENT.md",
       "status": "active"
     },
     {
@@ -342,22 +342,22 @@
     },
     {
       "meta": {},
-      "path": "factory/library/06-branding/brand-strategy/agents/BrandDirector/AGENT.md",
+      "path": "factory/library/_legacy_pillars/06-branding/brand-strategy/agents/BrandDirector/AGENT.md",
       "status": "active"
     },
     {
       "meta": {},
-      "path": "factory/library/06-branding/agency-ops/agents/SentinelAgencyOps/AGENT.md",
+      "path": "factory/library/_legacy_pillars/06-branding/agency-ops/agents/SentinelAgencyOps/AGENT.md",
       "status": "active"
     },
     {
       "meta": {},
-      "path": "factory/library/06-branding/brand-governance/agents/DesignSystem/AGENT.md",
+      "path": "factory/library/_legacy_pillars/06-branding/brand-governance/agents/DesignSystem/AGENT.md",
       "status": "active"
     },
     {
       "meta": {},
-      "path": "factory/library/06-branding/brand-governance/agents/BrandGuardian/AGENT.md",
+      "path": "factory/library/_legacy_pillars/06-branding/brand-governance/agents/BrandGuardian/AGENT.md",
       "status": "active"
     },
     {

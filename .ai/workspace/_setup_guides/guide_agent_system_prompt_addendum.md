@@ -13,7 +13,7 @@ Check if multi-tool files exist:
 ✅ .ai/tool-adapters/claude_adapter.md
 ✅ .ai/tool-adapters/gemini_adapter.md
 ✅ .ai/tool-adapters/_fallback_routing.md
-✅ .ai/commands_multi_tool.md
+✅ .ai/commands/commands.md
 ✅ .ai/data_ownership_multi_tool.md
 ✅ .ai/memory/multi-tool-state/ (directory)
   ├─ claude.session.json
@@ -31,7 +31,7 @@ Before routing ANY command:
 ```
 READ: .ai/tool-adapters/interface.json
 READ: .ai/tool-adapters/_fallback_routing.md
-READ: .ai/commands_multi_tool.md
+READ: .ai/commands/commands.md
 READ: .ai/data_ownership_multi_tool.md
 ```
 
@@ -44,7 +44,7 @@ When user issues command:
 command = "/create blog-posts about sustainable design"
 command_type = "/create blog-posts"
 
-# Look up in commands_multi_tool.md
+# Look up in commands.md
 rankings = {
   "rank_1": "claude",      # Primary
   "rank_2": "gemini",      # Fallback 1
@@ -230,7 +230,7 @@ logs/tool-performance.jsonl:
 
 Every response ends with:
 ```
-💡 Suggested Next Step: [exact command from commands_multi_tool.md]
+💡 Suggested Next Step: [exact command from commands.md]
 ```
 
 ---
@@ -326,7 +326,7 @@ At end of each week:
 User: "/create blog-posts about sustainable interior design"
 
 1. Parse: command_type = "/create blog-posts"
-2. Lookup in commands_multi_tool.md: Rank 1 = Claude, Rank 2 = Gemini, Rank 3 = Copilot
+2. Lookup in commands.md: Rank 1 = Claude, Rank 2 = Gemini, Rank 3 = Copilot
 3. Load .ai/tool-adapters/claude_adapter.md
 4. Load .ai/memory/multi-tool-state/claude.session.json (tokens_used=0)
 5. Inject context: brand_voice, market_positioning, keyword_maps
@@ -384,7 +384,7 @@ Test 5: Manual fallback trigger (test fallback chain)
 ## Deactivation (Emergency)
 
 If Phase 1 causes issues:
-1. Stop loading `.ai/commands_multi_tool.md`
+1. Stop loading `.ai/commands/commands.md`
 2. Switch back to `.ai/commands.md`
 3. Route all commands to Claude (monolithic mode)
 4. No state loss (old `.ai/memory/state.json` still works)
@@ -414,7 +414,7 @@ Zero breaking changes. Fully backward compatible.
 1. `.ai/tool-adapters/interface.json` — What every tool must implement
 2. `.ai/tool-adapters/claude_adapter.md` — Claude's rules
 3. `.ai/tool-adapters/_fallback_routing.md` — When to switch tools
-4. `.ai/commands_multi_tool.md` — Tool rankings per command
+4. `.ai/commands/commands.md` — Tool rankings per command
 5. `.ai/data_ownership_multi_tool.md` — File versioning rules
 
 ---

@@ -1,0 +1,15 @@
+{
+  "issues": [
+    {
+      "file": ".github/workflows/aiwf-industrial-pipeline.yml",
+      "kind": "uses",
+      "target": "./.github/workflows/self_heal.yml"
+    },
+    {
+      "file": ".github/workflows/aiwf-industrial-pipeline.yml",
+      "kind": "path",
+      "target": ".ai/logs/health-audit-report.md"
+    }
+  ],
+  "count": 2
+}

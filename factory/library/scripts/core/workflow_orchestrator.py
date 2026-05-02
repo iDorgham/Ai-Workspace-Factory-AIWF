@@ -82,8 +82,14 @@ HARD_BLOCKS = {
 def load_state() -> dict:
     """Load current session state."""
     if STATE_PATH.exists():
-        with open(STATE_PATH) as f:
-            return json.load(f)
+        try:
+            with open(STATE_PATH) as f:
+                loaded = json.load(f)
+            if isinstance(loaded, dict):
+                return loaded
+            log_action("state_load_invalid", "system", "workflow-agent", "failed", details={"reason": "state_not_dict"})
+        except (json.JSONDecodeError, OSError) as exc:
+            log_action("state_load_failed", "system", "workflow-agent", "failed", details={"error": str(exc)})
     return {}
 
 
@@ -127,9 +133,39 @@ def log_skill_action(intent: str, skill: str, status: str, retries: int, details
 
 def load_skill_map() -> dict:
     if SKILL_MAP_PATH.exists():
-        with open(SKILL_MAP_PATH) as f:
-            return json.load(f)
+        try:
+            with open(SKILL_MAP_PATH) as f:
+                loaded = json.load(f)
+            if isinstance(loaded, dict):
+                return loaded
+            log_action("skill_map_invalid", "system", "workflow-agent", "failed", details={"reason": "skill_map_not_dict"})
+        except (json.JSONDecodeError, OSError) as exc:
+            log_action("skill_map_load_failed", "system", "workflow-agent", "failed", details={"error": str(exc)})
     return {}
+
+
+def validate_routing_payload(routing_payload: dict) -> dict | None:
+    """Validate minimal payload contract before orchestration."""
+    if not isinstance(routing_payload, dict):
+        return {"code": "invalid_payload", "reason": "routing_payload must be an object"}
+
+    if not routing_payload.get("intent") or not isinstance(routing_payload.get("intent"), str):
+        return {"code": "invalid_payload", "reason": "missing_or_invalid_intent"}
+
+    if not routing_payload.get("primary_agent") or not isinstance(routing_payload.get("primary_agent"), str):
+        return {"code": "invalid_payload", "reason": "missing_or_invalid_primary_agent"}
+
+    status = routing_payload.get("status", "ready")
+    if status not in {"ready", "needs_context", "unrecognized"}:
+        return {"code": "invalid_payload", "reason": "invalid_status"}
+
+    if "sub_agents" in routing_payload and not isinstance(routing_payload.get("sub_agents", []), list):
+        return {"code": "invalid_payload", "reason": "invalid_sub_agents"}
+
+    if "entities" in routing_payload and not isinstance(routing_payload.get("entities", {}), dict):
+        return {"code": "invalid_payload", "reason": "invalid_entities"}
+
+    return None
 
 
 def check_hard_block(intent: str, state: dict) -> dict | None:
@@ -217,6 +253,16 @@ def orchestrate(routing_payload: dict) -> dict:
     Returns:
         Execution context dict for the primary agent to act on
     """
+    payload_error = validate_routing_payload(routing_payload)
+    if payload_error:
+        log_action("execution_rejected", "unknown", "workflow-agent", payload_error["code"], details=payload_error)
+        return {
+            "status": payload_error["code"],
+            "blocked_reason": payload_error["reason"],
+            "recommendation": "Check command routing payload schema before orchestration.",
+            "suggested_next_step": "Retry command after payload validation.",
+        }
+
     intent = routing_payload.get("intent")
     agent = routing_payload.get("primary_agent")
     start_time = datetime.now(timezone.utc)
@@ -278,10 +324,8 @@ def orchestrate(routing_payload: dict) -> dict:
     pipeline_state["last_agent"] = agent
     pipeline_state["last_status"] = "in_progress"
 
-    stages_completed = pipeline_state.get("stages_completed", [])
-    if stage and stage not in stages_completed:
-        stages_completed.append(stage)
-    pipeline_state["stages_completed"] = stages_completed
+    if not isinstance(pipeline_state.get("stages_completed"), list):
+        pipeline_state["stages_completed"] = []
 
     state["pipeline_state"] = pipeline_state
     state["suggested_next_step"] = get_next_suggested_step(intent, "in_progress")
@@ -324,6 +368,13 @@ def finalize(context: dict, result: dict) -> dict:
     state = load_state()
     pipeline_state = state.get("pipeline_state", {})
     pipeline_state["last_status"] = status
+    stage = context.get("pipeline_stage")
+    stages_completed = pipeline_state.get("stages_completed", [])
+    if not isinstance(stages_completed, list):
+        stages_completed = []
+    if stage and status in {"success", "passed", "completed"} and stage not in stages_completed:
+        stages_completed.append(stage)
+    pipeline_state["stages_completed"] = stages_completed
     state["pipeline_state"] = pipeline_state
 
     # Update workspace counters based on intent

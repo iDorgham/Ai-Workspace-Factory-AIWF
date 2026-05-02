@@ -16,7 +16,7 @@
 2. `claude_adapter.md` — Claude's specific implementation
 3. `gemini_adapter.md` — Gemini's specific implementation
 4. `_fallback_routing.md` — Decision logic for tool selection + fallback chains
-5. `commands_multi_tool.md` — Updated command router with tool rankings
+5. `commands.md` — Updated command router with tool rankings
 
 **Two revised ownership/data files:**
 1. `data_ownership_multi_tool.md` — File ownership rules for multi-tool world
@@ -31,7 +31,7 @@ User: "/create blog-posts about sustainable design"
            ↓
      guide-agent parses command
            ↓
-     Looks up in commands_multi_tool.md:
+     Looks up in commands.md:
      - Rank 1: Claude
      - Rank 2: Gemini
      - Rank 3: Copilot
@@ -61,7 +61,7 @@ User: "/create blog-posts about sustainable design"
 │   ├── codex_adapter.md              ← (Phase 2, planned)
 │   └── _fallback_routing.md          ← Tool selection logic
 │
-├── commands_multi_tool.md            ← REVISED (tool rankings added)
+├── commands.md            ← REVISED (tool rankings added)
 ├── data_ownership_multi_tool.md      ← REVISED (tool-aware versioning)
 │
 └── (existing files unchanged)
@@ -183,13 +183,13 @@ content/sovereign/blog-posts/[slug]_[tool]_v[version].md  (Gemini's output)
 - guide-agent loads `.ai/commands.md` (Claude-only)
 
 **New behavior:**
-- guide-agent loads `.ai/commands_multi_tool.md` (Claude + Gemini + Copilot)
+- guide-agent loads `.ai/commands/commands.md` (Claude + Gemini + Copilot)
 - Selects tool based on rank
 - Passes request to correct adapter
 
 **Action item:** Update guide-agent system prompt to:
 ```markdown
-Load .ai/commands_multi_tool.md instead of .ai/commands.md
+Load .ai/commands/commands.md instead of .ai/commands.md
 Check .ai/tool-adapters/[tool]-adapter.md for execution details
 Follow fallback logic in .ai/tool-adapters/_fallback_routing.md
 ```
@@ -233,7 +233,7 @@ Add to guide-agent system prompt:
 ## Multi-Tool Execution (Phase 1)
 
 ### Tool Selection
-1. Read `commands_multi_tool.md` for command routing
+1. Read `commands.md` for command routing
 2. Check tool rankings (Rank 1, 2, 3)
 3. Load corresponding adapter (`.ai/tool-adapters/[tool]-adapter.md`)
 4. Read tool-specific state: `.ai/memory/multi-tool-state/[tool].session.json`
@@ -338,7 +338,7 @@ Add to guide-agent system prompt:
 - ✅ `.ai/tool-adapters/claude_adapter.md` — In use
 - ✅ `.ai/tool-adapters/gemini_adapter.md` — In use
 - ✅ `.ai/tool-adapters/_fallback_routing.md` — In use
-- ✅ `.ai/commands_multi_tool.md` — New primary commands file
+- ✅ `.ai/commands/commands.md` — New primary commands file
 - ✅ `.ai/data_ownership_multi_tool.md` — New ownership rules
 
 ### Archive (Reference Only)
@@ -369,7 +369,7 @@ Add to guide-agent system prompt:
 
 **If guide-agent can't find adapters:**
 - Check `.ai/tool-adapters/` directory exists
-- Verify file paths in commands_multi_tool.md match actual paths
+- Verify file paths in commands.md match actual paths
 - Check guide-agent has read permission
 
 **If state not syncing:**
@@ -393,7 +393,7 @@ Add to guide-agent system prompt:
 **To upgrade adapters (Phase 2):**
 1. Add new adapter file to `.ai/tool-adapters/`
 2. Update `interface.json` with new tool spec
-3. Update `commands_multi_tool.md` with new rankings
+3. Update `commands.md` with new rankings
 4. Test with new tool; log performance
 5. Increment Phase to 2.0.0
 

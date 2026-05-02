@@ -261,7 +261,7 @@ Available tools: copilot, codex, gemini, qwen
 **Purpose:** Show why a tool would be selected (without executing)
 
 **Behavior:**
-- Looks up command in commands_multi_tool.md
+- Looks up command in commands.md (MULTI-TOOL RANKINGS section)
 - Shows tool ranking with performance metrics
 - Returns explanation only, no content created
 - Takes ~0.3s (no command execution)
