@@ -7,7 +7,7 @@
 
 | Area | Action |
 | :--- | :--- |
-| Branding guide | Replaced sole reliance on `_legacy_pillars/06-branding` with **canonical** `factory/library/templates/brand_discovery`; legacy pillar noted as optional archive. |
+| Branding guide | Replaced sole reliance on `archive/legacy_pillars/06-branding` with **canonical** `factory/library/templates/brand_discovery`; legacy pillar noted as optional archive. |
 | Subagent registry | Added **`.ai/registry/subagents.registry.json`** (copy of repo `.ai` registry) to every template. |
 | Subagent contracts | Added **`.ai/agents/registry/sub_agent_contracts.json`** to every template; agent docs now cite this path explicitly. |
 | Routing docs | **`multi_tool.md`** and **`data_ownership_multi_tool.md`** list registry + contracts + factory canonical mirror. |

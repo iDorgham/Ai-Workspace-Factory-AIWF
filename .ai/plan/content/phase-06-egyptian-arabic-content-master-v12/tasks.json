@@ -42,7 +42,7 @@
       "title": "Bump skill_manifest + registry manifest to 1.2.0",
       "status": "completed",
       "priority": "P0",
-      "description": "Update skill_manifest.json, factory/library/skills/manifests/egyptian_arabic_content_master/skill.md, and egyptian_arabic_content_master.md pointers for v1.2 capabilities.",
+      "description": "Update skill_manifest.json, factory/library/skills/egyptian_arabic_content_master/skill.md, and egyptian_arabic_content_master.md pointers for v1.2 capabilities.",
       "output": "factory/library/skills/egyptian_arabic_content_master/skill_manifest.json",
       "dependencies": ["T-C06-03"],
       "agent": "spec_architect_v2"

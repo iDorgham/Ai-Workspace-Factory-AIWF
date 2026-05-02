@@ -2546,207 +2546,207 @@
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/cloud-architecture/skills/external/serverless-databases/serverless-db-physics/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/cloud-architecture/skills/external/serverless-databases/serverless-db-physics/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/cloud-architecture/skills/external/cloudflare/cloudflare-official-mastery/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/cloud-architecture/skills/external/cloudflare/cloudflare-official-mastery/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/cloud-architecture/skills/external/supabase/supabase-official-mastery/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/cloud-architecture/skills/external/supabase/supabase-official-mastery/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/cloud-architecture/skills/external/microsoft-azure/azure-cloud-physics/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/cloud-architecture/skills/external/microsoft-azure/azure-cloud-physics/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/cloud-architecture/skills/external/firebase/firebase-platform-mastery/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/cloud-architecture/skills/external/firebase/firebase-platform-mastery/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/cloud-architecture/skills/cloud-architecture-mastery/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/cloud-architecture/skills/cloud-architecture-mastery/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/render-props-pattern/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/render-props-pattern/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/react-composition-2026/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/react-composition-2026/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/compound-pattern/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/compound-pattern/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/static-rendering/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/static-rendering/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/hooks-pattern/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/hooks-pattern/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/client-side-rendering/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/client-side-rendering/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/progressive-hydration/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/progressive-hydration/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/server-side-rendering/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/server-side-rendering/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/react-2026/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/react-2026/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/ai-ui-patterns/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/ai-ui-patterns/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/react-selective-hydration/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/react-selective-hydration/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/react-server-components/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/react-server-components/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/incremental-static-rendering/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/incremental-static-rendering/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/react-render-optimization/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/react-render-optimization/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/hoc-pattern/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/hoc-pattern/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/react-data-fetching/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/react-data-fetching/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/presentational-container-pattern/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/presentational-container-pattern/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/web-developing-mastery/core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/web-developing-mastery/core.py",
       "reference": " 0.1,   # score\n        }\n        \n        passes = {}\n        for metric, value in metrics_data.items():\n            if metric in thresholds:\n                passes[metric] = value <= thresholds[metric]\n        \n        score = (sum(passes.values()) / len(thresholds)) * 100 if thresholds else 100\n        \n        return ",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/web-developing-mastery/core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/web-developing-mastery/core.py",
       "reference": " score >= 90\n        }\n\n    def validate_accessibility(self, html: str) -> List[str]",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/web-developing-mastery/core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/web-developing-mastery/core.py",
       "reference": "\n            \n        return violations\n\n    def audit_logical_properties(self, css_content: str) -> List[str]",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/web-developing-mastery/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/web-developing-mastery/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/external/vercel/vercel-official-mastery/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/external/vercel/vercel-official-mastery/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/external/design-excellence/sleek-ui-design-protocols/core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/external/design-excellence/sleek-ui-design-protocols/core.py",
       "reference": "shadows = []\n        for i in range(1, layers + 1):\n            offset = i * 2\n            blur = i * 4\n            shadows.append(f",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/external/design-excellence/sleek-ui-design-protocols/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/external/design-excellence/sleek-ui-design-protocols/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/external/nextjs-mastery/nextjs-2026-patterns/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/external/nextjs-mastery/nextjs-2026-patterns/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/external/patterns-dev/react-design-patterns/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/external/patterns-dev/react-design-patterns/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/bilingual-nextjs-performance/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/bilingual-nextjs-performance/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/app-developing/skills/app-developing-mastery/core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/app-developing/skills/app-developing-mastery/core.py",
       "reference": "in profile for profile in build.values())\n        return has_distribution\n\n    def check_universal_links(self, config: Dict[str, Any]) -> List[str]",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/app-developing/skills/app-developing-mastery/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/app-developing/skills/app-developing-mastery/tests/test_core.py",
       "reference": "/assets/icon.png",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/app-developing/skills/app-developing-mastery/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/app-developing/skills/app-developing-mastery/tests/test_core.py",
       "reference": "/assets/splash.png",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/app-developing/skills/app-developing-mastery/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/app-developing/skills/app-developing-mastery/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/app-developing/skills/external/expo/expo-mobile-optimization/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/app-developing/skills/external/expo/expo-mobile-optimization/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/api-design/skills/api-design-mastery/core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/api-design/skills/api-design-mastery/core.py",
       "reference": "def lint_openapi_spec(self, spec: Dict[str, Any]) -> List[str]",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/api-design/skills/api-design-mastery/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/api-design/skills/api-design-mastery/tests/test_core.py",
       "reference": "/test",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/saas-platforms/skills/saas-platforms-mastery/core.py",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/saas-platforms/skills/saas-platforms-mastery/core.py",
       "reference": "in str(config).lower()\n\n    def validate_webhooks(self, endpoints: List[str]) -> List[str]",
       "category": "placeholder"
     },
@@ -3761,62 +3761,62 @@
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/brand-strategy/skills/mena-strategic-brand-voice/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/06-branding/brand-strategy/skills/mena-strategic-brand-voice/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/brand-strategy/skills/brand-grammar-emotional-intent/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/06-branding/brand-strategy/skills/brand-grammar-emotional-intent/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/brand-strategy/skills/multi-persona-branding-mastery/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/06-branding/brand-strategy/skills/multi-persona-branding-mastery/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/brand-strategy/skills/brand-identity-engine/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/06-branding/brand-strategy/skills/brand-identity-engine/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/brand-strategy/skills/branding-mastery/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/06-branding/brand-strategy/skills/branding-mastery/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/modern-ai-branding/skills/ai-avatar-branding-logic/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/06-branding/modern-ai-branding/skills/ai-avatar-branding-logic/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/agency-ops/skills/agency-ops-mastery/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/06-branding/agency-ops/skills/agency-ops-mastery/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/brand-governance/skills/w3c-brand-token-system/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/06-branding/brand-governance/skills/w3c-brand-token-system/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/visual-identity/skills/arabic-typography-rtl-physics/core.py",
+      "file": "factory/library/archive/legacy_pillars/06-branding/visual-identity/skills/arabic-typography-rtl-physics/core.py",
       "reference": "base_leading = 1.4 # Standard English leading\n        if is_arabic:\n            # +25% compensation\n            optimized_leading = base_leading * 1.25\n        else:\n            optimized_leading = base_leading\n            \n        return round(font_size * optimized_leading, 2)\n\n    def audit_rtl_mirroring(self, layout_elements: List[Dict[str, Any]]) -> Dict[str, Any]",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/visual-identity/skills/arabic-typography-rtl-physics/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/06-branding/visual-identity/skills/arabic-typography-rtl-physics/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/visual-identity/skills/visual-identity-design-mastery/core.py",
+      "file": "factory/library/archive/legacy_pillars/06-branding/visual-identity/skills/visual-identity-design-mastery/core.py",
       "reference": " (1 - len(violations) / len(coordinates)) * 100 if coordinates else 100\n        }\n\n    def verify_asset_format(self, asset_metadata: Dict[str, Any]) -> Dict[str, Any]",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/visual-identity/skills/visual-identity-design-mastery/tests/test_core.py",
+      "file": "factory/library/archive/legacy_pillars/06-branding/visual-identity/skills/visual-identity-design-mastery/tests/test_core.py",
       "reference": "__main__",
       "category": "placeholder"
     },
@@ -12696,177 +12696,177 @@
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/DEPARTMENT.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/DEPARTMENT.md",
       "reference": "/api-design/agents/SentinelApiDesign/AGENT.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/DEPARTMENT.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/DEPARTMENT.md",
       "reference": "/app-developing/agents/SentinelAppDeveloping/AGENT.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/DEPARTMENT.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/DEPARTMENT.md",
       "reference": "/cloud-architecture/agents/SentinelCloudArchitecture/AGENT.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/DEPARTMENT.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/DEPARTMENT.md",
       "reference": "/saas-platforms/agents/SentinelSaasPlatforms/AGENT.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/DEPARTMENT.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/DEPARTMENT.md",
       "reference": "/web-developing/agents/SentinelWebDeveloping/AGENT.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/DEPARTMENT.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/DEPARTMENT.md",
       "reference": "/api-design/skills/api-design-mastery/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/DEPARTMENT.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/DEPARTMENT.md",
       "reference": "/app-developing/skills/app-developing-mastery/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/DEPARTMENT.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/DEPARTMENT.md",
       "reference": "/app-developing/skills/expo-mobile-optimization/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/DEPARTMENT.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/DEPARTMENT.md",
       "reference": "/app-developing/skills/expo-offline-sync/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/DEPARTMENT.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/DEPARTMENT.md",
       "reference": "/app-developing/skills/mobile/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/DEPARTMENT.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/DEPARTMENT.md",
       "reference": "/app-developing/skills/mobile-design/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/DEPARTMENT.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/DEPARTMENT.md",
       "reference": "/app-developing/skills/mobile-hardware-access/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/DEPARTMENT.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/DEPARTMENT.md",
       "reference": "/cloud-architecture/skills/cloud-architecture-mastery/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/DEPARTMENT.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/DEPARTMENT.md",
       "reference": "/saas-platforms/skills/saas-platforms-mastery/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/DEPARTMENT.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/DEPARTMENT.md",
       "reference": "/web-developing/skills/bilingual-nextjs-performance/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/DEPARTMENT.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/DEPARTMENT.md",
       "reference": "/web-developing/skills/web-developing-mastery/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/cloud-architecture/README.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/cloud-architecture/README.md",
       "reference": "/agents/SentinelCloudArchitecture/AGENT.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/cloud-architecture/README.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/cloud-architecture/README.md",
       "reference": "/skills/cloud-architecture-mastery/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/cloud-architecture/skills/external/cloudflare/cloudflare-official-mastery/SKILL.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/cloud-architecture/skills/external/cloudflare/cloudflare-official-mastery/SKILL.md",
       "reference": "ai/skills/official-cloudflare-",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/cloud-architecture/skills/external/supabase/supabase-official-mastery/SKILL.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/cloud-architecture/skills/external/supabase/supabase-official-mastery/SKILL.md",
       "reference": "ai/skills/official-supabase-",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/web-developing/README.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/README.md",
       "reference": "/agents/SentinelWebDeveloping/AGENT.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/web-developing/README.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/README.md",
       "reference": "/skills/web-developing-mastery/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/web-developing/README.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/README.md",
       "reference": "/skills/bilingual-nextjs-performance/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/external/vercel/vercel-official-mastery/SKILL.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/external/vercel/vercel-official-mastery/SKILL.md",
       "reference": "ai/skills/official-vercel-",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/app-developing/README.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/app-developing/README.md",
       "reference": "/agents/SentinelAppDeveloping/AGENT.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/app-developing/README.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/app-developing/README.md",
       "reference": "/skills/mobile-design/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/app-developing/README.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/app-developing/README.md",
       "reference": "/skills/mobile-hardware-access/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/app-developing/README.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/app-developing/README.md",
       "reference": "/skills/expo-offline-sync/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/app-developing/README.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/app-developing/README.md",
       "reference": "/skills/app-developing-mastery/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/app-developing/README.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/app-developing/README.md",
       "reference": "/skills/mobile/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/app-developing/README.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/app-developing/README.md",
       "reference": "/skills/expo-mobile-optimization/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/api-design/README.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/api-design/README.md",
       "reference": "/agents/SentinelApiDesign/AGENT.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/api-design/README.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/api-design/README.md",
       "reference": "/skills/api-design-mastery/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/saas-platforms/README.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/saas-platforms/README.md",
       "reference": "/agents/SentinelSaasPlatforms/AGENT.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/02-web-platforms/saas-platforms/README.md",
+      "file": "factory/library/archive/legacy_pillars/02-web-platforms/saas-platforms/README.md",
       "reference": "/skills/saas-platforms-mastery/SKILL.md",
       "category": "placeholder"
     },
@@ -14591,162 +14591,162 @@
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/DEPARTMENT.md",
+      "file": "factory/library/archive/legacy_pillars/06-branding/DEPARTMENT.md",
       "reference": "/agency-ops/agents/SentinelAgencyOps/AGENT.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/DEPARTMENT.md",
+      "file": "factory/library/archive/legacy_pillars/06-branding/DEPARTMENT.md",
       "reference": "/brand-governance/agents/BrandGuardian/AGENT.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/DEPARTMENT.md",
+      "file": "factory/library/archive/legacy_pillars/06-branding/DEPARTMENT.md",
       "reference": "/brand-governance/agents/DesignSystem/AGENT.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/DEPARTMENT.md",
+      "file": "factory/library/archive/legacy_pillars/06-branding/DEPARTMENT.md",
       "reference": "/brand-strategy/agents/BrandDirector/AGENT.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/DEPARTMENT.md",
+      "file": "factory/library/archive/legacy_pillars/06-branding/DEPARTMENT.md",
       "reference": "/agency-ops/skills/agency-ops-mastery/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/DEPARTMENT.md",
+      "file": "factory/library/archive/legacy_pillars/06-branding/DEPARTMENT.md",
       "reference": "/brand-governance/skills/w3c-brand-token-system/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/DEPARTMENT.md",
+      "file": "factory/library/archive/legacy_pillars/06-branding/DEPARTMENT.md",
       "reference": "/brand-strategy/skills/brand-grammar-emotional-intent/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/DEPARTMENT.md",
+      "file": "factory/library/archive/legacy_pillars/06-branding/DEPARTMENT.md",
       "reference": "/brand-strategy/skills/brand/brand-identity-engine/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/DEPARTMENT.md",
+      "file": "factory/library/archive/legacy_pillars/06-branding/DEPARTMENT.md",
       "reference": "/brand-strategy/skills/branding-mastery/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/DEPARTMENT.md",
+      "file": "factory/library/archive/legacy_pillars/06-branding/DEPARTMENT.md",
       "reference": "/brand-strategy/skills/luxury-branding-metrics/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/DEPARTMENT.md",
+      "file": "factory/library/archive/legacy_pillars/06-branding/DEPARTMENT.md",
       "reference": "/brand-strategy/skills/mena-strategic-brand-voice/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/DEPARTMENT.md",
+      "file": "factory/library/archive/legacy_pillars/06-branding/DEPARTMENT.md",
       "reference": "/brand-strategy/skills/multi-persona-branding-mastery/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/DEPARTMENT.md",
+      "file": "factory/library/archive/legacy_pillars/06-branding/DEPARTMENT.md",
       "reference": "/digital-presence/skills/brand-voice-mastery/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/DEPARTMENT.md",
+      "file": "factory/library/archive/legacy_pillars/06-branding/DEPARTMENT.md",
       "reference": "/modern-ai-branding/skills/ai-avatar-branding-logic/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/DEPARTMENT.md",
+      "file": "factory/library/archive/legacy_pillars/06-branding/DEPARTMENT.md",
       "reference": "/visual-identity/skills/arabic-typography-rtl-physics/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/DEPARTMENT.md",
+      "file": "factory/library/archive/legacy_pillars/06-branding/DEPARTMENT.md",
       "reference": "/visual-identity/skills/visual-identity-design-mastery/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/brand-strategy/README.md",
+      "file": "factory/library/archive/legacy_pillars/06-branding/brand-strategy/README.md",
       "reference": "/agents/BrandDirector/AGENT.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/brand-strategy/README.md",
+      "file": "factory/library/archive/legacy_pillars/06-branding/brand-strategy/README.md",
       "reference": "/skills/brand/brand-identity-engine/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/brand-strategy/README.md",
+      "file": "factory/library/archive/legacy_pillars/06-branding/brand-strategy/README.md",
       "reference": "/skills/mena-strategic-brand-voice/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/brand-strategy/README.md",
+      "file": "factory/library/archive/legacy_pillars/06-branding/brand-strategy/README.md",
       "reference": "/skills/brand-grammar-emotional-intent/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/brand-strategy/README.md",
+      "file": "factory/library/archive/legacy_pillars/06-branding/brand-strategy/README.md",
       "reference": "/skills/multi-persona-branding-mastery/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/brand-strategy/README.md",
+      "file": "factory/library/archive/legacy_pillars/06-branding/brand-strategy/README.md",
       "reference": "/skills/luxury-branding-metrics/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/brand-strategy/README.md",
+      "file": "factory/library/archive/legacy_pillars/06-branding/brand-strategy/README.md",
       "reference": "/skills/branding-mastery/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/modern-ai-branding/README.md",
+      "file": "factory/library/archive/legacy_pillars/06-branding/modern-ai-branding/README.md",
       "reference": "/skills/ai-avatar-branding-logic/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/digital-presence/README.md",
+      "file": "factory/library/archive/legacy_pillars/06-branding/digital-presence/README.md",
       "reference": "/skills/brand-voice-mastery/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/agency-ops/README.md",
+      "file": "factory/library/archive/legacy_pillars/06-branding/agency-ops/README.md",
       "reference": "/agents/SentinelAgencyOps/AGENT.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/agency-ops/README.md",
+      "file": "factory/library/archive/legacy_pillars/06-branding/agency-ops/README.md",
       "reference": "/skills/agency-ops-mastery/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/brand-governance/README.md",
+      "file": "factory/library/archive/legacy_pillars/06-branding/brand-governance/README.md",
       "reference": "/agents/DesignSystem/AGENT.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/brand-governance/README.md",
+      "file": "factory/library/archive/legacy_pillars/06-branding/brand-governance/README.md",
       "reference": "/agents/BrandGuardian/AGENT.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/brand-governance/README.md",
+      "file": "factory/library/archive/legacy_pillars/06-branding/brand-governance/README.md",
       "reference": "/skills/w3c-brand-token-system/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/visual-identity/README.md",
+      "file": "factory/library/archive/legacy_pillars/06-branding/visual-identity/README.md",
       "reference": "/skills/arabic-typography-rtl-physics/SKILL.md",
       "category": "placeholder"
     },
     {
-      "file": "factory/library/_legacy_pillars/06-branding/visual-identity/README.md",
+      "file": "factory/library/archive/legacy_pillars/06-branding/visual-identity/README.md",
       "reference": "/skills/visual-identity-design-mastery/SKILL.md",
       "category": "placeholder"
     },

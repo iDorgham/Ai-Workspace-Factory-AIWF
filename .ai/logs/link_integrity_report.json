@@ -5900,207 +5900,207 @@
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/cloud-architecture/skills/external/serverless-databases/serverless-db-physics/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/cloud-architecture/skills/external/serverless-databases/serverless-db-physics/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/cloud-architecture/skills/external/cloudflare/cloudflare-official-mastery/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/cloud-architecture/skills/external/cloudflare/cloudflare-official-mastery/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/cloud-architecture/skills/external/supabase/supabase-official-mastery/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/cloud-architecture/skills/external/supabase/supabase-official-mastery/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/cloud-architecture/skills/external/microsoft-azure/azure-cloud-physics/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/cloud-architecture/skills/external/microsoft-azure/azure-cloud-physics/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/cloud-architecture/skills/external/firebase/firebase-platform-mastery/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/cloud-architecture/skills/external/firebase/firebase-platform-mastery/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/cloud-architecture/skills/cloud-architecture-mastery/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/cloud-architecture/skills/cloud-architecture-mastery/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/render-props-pattern/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/render-props-pattern/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/react-composition-2026/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/react-composition-2026/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/compound-pattern/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/compound-pattern/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/static-rendering/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/static-rendering/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/hooks-pattern/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/hooks-pattern/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/client-side-rendering/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/client-side-rendering/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/progressive-hydration/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/progressive-hydration/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/server-side-rendering/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/server-side-rendering/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/react-2026/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/react-2026/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/ai-ui-patterns/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/ai-ui-patterns/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/react-selective-hydration/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/react-selective-hydration/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/react-server-components/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/react-server-components/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/incremental-static-rendering/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/incremental-static-rendering/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/react-render-optimization/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/react-render-optimization/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/hoc-pattern/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/hoc-pattern/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/react-data-fetching/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/react-data-fetching/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/presentational-container-pattern/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/react-patterns/presentational-container-pattern/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/web-developing-mastery/core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/web-developing-mastery/core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/web-developing-mastery/core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/web-developing-mastery/core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/web-developing-mastery/core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/web-developing-mastery/core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/web-developing-mastery/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/web-developing-mastery/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/external/vercel/vercel-official-mastery/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/external/vercel/vercel-official-mastery/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/external/design-excellence/sleek-ui-design-protocols/core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/external/design-excellence/sleek-ui-design-protocols/core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/external/design-excellence/sleek-ui-design-protocols/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/external/design-excellence/sleek-ui-design-protocols/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/external/nextjs-mastery/nextjs-2026-patterns/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/external/nextjs-mastery/nextjs-2026-patterns/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/external/patterns-dev/react-design-patterns/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/external/patterns-dev/react-design-patterns/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/web-developing/skills/bilingual-nextjs-performance/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/skills/bilingual-nextjs-performance/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/app-developing/skills/app-developing-mastery/core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/app-developing/skills/app-developing-mastery/core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/app-developing/skills/app-developing-mastery/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/app-developing/skills/app-developing-mastery/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/app-developing/skills/app-developing-mastery/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/app-developing/skills/app-developing-mastery/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/app-developing/skills/app-developing-mastery/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/app-developing/skills/app-developing-mastery/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/app-developing/skills/external/expo/expo-mobile-optimization/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/app-developing/skills/external/expo/expo-mobile-optimization/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/api-design/skills/api-design-mastery/core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/api-design/skills/api-design-mastery/core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/api-design/skills/api-design-mastery/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/api-design/skills/api-design-mastery/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/02-web-platforms/saas-platforms/skills/saas-platforms-mastery/core.py"
+      "target": "factory/library/archive/legacy_pillars/02-web-platforms/saas-platforms/skills/saas-platforms-mastery/core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
@@ -7130,62 +7130,62 @@
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/06-branding/brand-strategy/skills/mena-strategic-brand-voice/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/06-branding/brand-strategy/skills/mena-strategic-brand-voice/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/06-branding/brand-strategy/skills/brand-grammar-emotional-intent/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/06-branding/brand-strategy/skills/brand-grammar-emotional-intent/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/06-branding/brand-strategy/skills/multi-persona-branding-mastery/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/06-branding/brand-strategy/skills/multi-persona-branding-mastery/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/06-branding/brand-strategy/skills/brand-identity-engine/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/06-branding/brand-strategy/skills/brand-identity-engine/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/06-branding/brand-strategy/skills/branding-mastery/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/06-branding/brand-strategy/skills/branding-mastery/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/06-branding/modern-ai-branding/skills/ai-avatar-branding-logic/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/06-branding/modern-ai-branding/skills/ai-avatar-branding-logic/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/06-branding/agency-ops/skills/agency-ops-mastery/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/06-branding/agency-ops/skills/agency-ops-mastery/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/06-branding/brand-governance/skills/w3c-brand-token-system/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/06-branding/brand-governance/skills/w3c-brand-token-system/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/06-branding/visual-identity/skills/arabic-typography-rtl-physics/core.py"
+      "target": "factory/library/archive/legacy_pillars/06-branding/visual-identity/skills/arabic-typography-rtl-physics/core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/06-branding/visual-identity/skills/arabic-typography-rtl-physics/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/06-branding/visual-identity/skills/arabic-typography-rtl-physics/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/06-branding/visual-identity/skills/visual-identity-design-mastery/core.py"
+      "target": "factory/library/archive/legacy_pillars/06-branding/visual-identity/skills/visual-identity-design-mastery/core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",
       "kind": "path_ref",
-      "target": "factory/library/_legacy_pillars/06-branding/visual-identity/skills/visual-identity-design-mastery/tests/test_core.py"
+      "target": "factory/library/archive/legacy_pillars/06-branding/visual-identity/skills/visual-identity-design-mastery/tests/test_core.py"
     },
     {
       "file": ".ai/logs/path_integrity_report.json",

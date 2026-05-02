@@ -18,7 +18,7 @@ class OmegaReleaseGate:
         ]
         self.script_checks = {
             "path_integrity": ("factory/library/scripts/maintenance/audit_path_integrity.py", []),
-            "mirror_drift_0": ("factory/library/_legacy_pillars/10_engineering_devops/01_software_engineering/developing/scripts/check_mirror_drift.py", ["--threshold", "0"]),
+            "mirror_drift_0": ("factory/scripts/core/check_mirror_drift.py", ["--threshold", "0"]),
             "law151_certified": ("factory/library/scripts/maintenance/healing.py", []),
             "health_score_95": ("factory/scripts/maintenance/health_scorer.py", ["--min-score", "95"]),
             "spec_density_5": ("factory/scripts/core/spec_density_gate_v2.py", []),

@@ -30,7 +30,7 @@ From the repository root:
 ```bash
 python3 .ai/scripts/audit_path_integrity.py
 python3 .ai/scripts/audit-workspace-integrity.py
-python3 .ai/scripts/check_mirror_drift.py
+python3 factory/scripts/core/check_mirror_drift.py
 python3 .ai/scripts/workspace_health.py
 python3 .ai/scripts/docs_quality_gate.py
 python3 .ai/scripts/test-flag-parser.py

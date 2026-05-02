@@ -1,64 +1,11 @@
 {
-  "generated_at_utc": "2026-04-14T14:34:48.882882+00:00",
-  "repo_root": "/Users/Dorgham/Documents/Work/Devleopment/Sovereign/Sovereign Workspace",
+  "generated_at_utc": "2026-05-02T13:05:59.548013+00:00",
+  "repo_root": "/Users/Dorgham/Documents/Work/Devleopment/AIWF",
   "counts": {
-    "total_files": 373,
-    "markdown_files": 208,
-    "json_files": 75,
-    "projects": 4
+    "total_files": 13191,
+    "markdown_files": 10139,
+    "json_files": 1188,
+    "projects": 0
   },
-  "projects": [
-    {
-      "slug": "dorgham",
-      "name": "Dorgham",
-      "owner": "Dorgham",
-      "status": "active",
-      "path": "content/dorgham",
-      "readme_present": true,
-      "config_present": true,
-      "required_paths_total": 10,
-      "required_paths_missing": [],
-      "markdown_files": 1,
-      "last_modified_utc": "2026-04-14T14:27:07.737727+00:00"
-    },
-    {
-      "slug": "sovereign",
-      "name": "Sovereign",
-      "owner": "Dorgham",
-      "status": "active",
-      "path": "content/sovereign",
-      "readme_present": true,
-      "config_present": true,
-      "required_paths_total": 10,
-      "required_paths_missing": [],
-      "markdown_files": 7,
-      "last_modified_utc": "2026-04-14T14:27:01.452281+00:00"
-    },
-    {
-      "slug": "gateflow",
-      "name": "Gateflow",
-      "owner": "Dorgham",
-      "status": "active",
-      "path": "content/gateflow",
-      "readme_present": true,
-      "config_present": true,
-      "required_paths_total": 10,
-      "required_paths_missing": [],
-      "markdown_files": 1,
-      "last_modified_utc": "2026-04-14T14:27:04.724963+00:00"
-    },
-    {
-      "slug": "mediabubble",
-      "name": "MediaBubble",
-      "owner": "Dorgham",
-      "status": "active",
-      "path": "content/mediabubble",
-      "readme_present": true,
-      "config_present": true,
-      "required_paths_total": 10,
-      "required_paths_missing": [],
-      "markdown_files": 1,
-      "last_modified_utc": "2026-04-14T14:27:10.982086+00:00"
-    }
-  ]
+  "projects": []
 }

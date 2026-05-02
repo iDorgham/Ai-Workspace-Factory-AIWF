@@ -66,8 +66,18 @@ class HealthScorer:
             basename = os.path.basename(root)
             # Exclude legacy pillars, pycache, and generated folders from doc audit
             EXCLUDE_PILARS = ["02-web-platforms", "06-branding", "20_content_strategy", "30_web_platforms", "40_verticals", "50_intelligence_marketing", "planning", "12_meta_engine", "__pycache__", "_gen"]
-            if basename in STRUCTURAL_BUCKETS or ".archive" in root or "dead_weight" in root or "legacy" in root or "skills/manifests" in root or any(p in root for p in EXCLUDE_PILARS):
+            if basename in STRUCTURAL_BUCKETS or ".archive" in root or "dead_weight" in root or "legacy" in root or any(p in root for p in EXCLUDE_PILARS):
                 continue
+            # Skip mirrored skill leaves under library/skills/ (flat manifests), except the canonical rich pack.
+            root_path = Path(root).resolve()
+            skills_root = Path(LIBRARY_DIR).resolve() / "skills"
+            try:
+                if skills_root == root_path or skills_root in root_path.parents:
+                    rel = root_path.relative_to(skills_root)
+                    if rel.parts and rel.parts[0] != "egyptian_arabic_content_master":
+                        continue
+            except ValueError:
+                pass
 
             # Imported design packs: provider folders use design.md (not SKILL/AGENT/README).
             lib_path = Path(LIBRARY_DIR).resolve()

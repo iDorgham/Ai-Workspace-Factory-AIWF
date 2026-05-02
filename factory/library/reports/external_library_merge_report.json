@@ -82,13 +82,10 @@
   "template_sync": [
     "factory/library/templates/subagents/claude",
     ".ai/templates/subagents/claude",
-    "factory/templates/subagents/claude",
     "factory/library/templates/subagents/codex",
     ".ai/templates/subagents/codex",
-    "factory/templates/subagents/codex",
     "factory/library/templates/design",
-    ".ai/templates/design",
-    "factory/templates/design"
+    ".ai/templates/design"
   ],
   "validation": {
     "duplicate_keys": "pass",

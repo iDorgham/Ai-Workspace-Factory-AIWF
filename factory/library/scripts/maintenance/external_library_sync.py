@@ -305,10 +305,10 @@ def write_design_target(
 def sync_templates_for_target(target: Path) -> list[str]:
     rel = target.relative_to(ROOT / "factory/library")
     synced: list[str] = []
+    # Canonical targets live under factory/library/…; mirror only into library/templates and .ai/templates.
     mirrors = [
         ROOT / "factory/library/templates" / rel,
         ROOT / ".ai/templates" / rel,
-        ROOT / "factory/templates" / rel,
     ]
     for dst in mirrors:
         if dst.exists():

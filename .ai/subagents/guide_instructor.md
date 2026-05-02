@@ -12,6 +12,8 @@ Deliver **longer, structured teaching** when an orchestrator or Swarm Router del
 - **Use:** Workflow explicitly requests “deep lesson”, syllabus, or multi-section explainer; or parallel research + teach handoff.
 - **Do not use:** Default for every `/guide` natural-language question — **Antigravity** handles those inline per `.ai/commands/guide.md` **INSTRUCTOR MODE**.
 
+**Peer subagents:** **`.ai/subagents/guide_teacher.md`** (pure pedagogy at scale) · **`.ai/subagents/guide_sdd_guardian.md`** (phase / density / gate audits). Pick **one** delegate per workflow to avoid duplicate long replies.
+
 ## REQUIRED CONTEXT (read first)
 1. `.ai/commands/guide.md` — **INSTRUCTOR MODE** + domain map + footer rules  
 2. `.ai/skills/guide_instructor_domains/skill.md` — pillar → path anchors; spelling (e.g. **Vercel**)

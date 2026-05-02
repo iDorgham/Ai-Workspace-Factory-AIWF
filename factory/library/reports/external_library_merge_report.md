@@ -22,6 +22,5 @@
 - `factory/library/templates/design`
 - `factory/library/templates/subagents/claude`
 - `factory/library/templates/subagents/codex`
-- `factory/templates/design`
-- `factory/templates/subagents/claude`
-- `factory/templates/subagents/codex`
+
+(Design and subagent catalogs are not copied under `factory/templates/`; use `factory/library/design` and `factory/library/subagents/`.)
