@@ -74,8 +74,11 @@ jobs:
               status="unknown"
             fi
 
+            # Command substitution inherits bash -e: a failing gate must not abort the loop before we read $?
+            set +e
             result=$(python3 factory/scripts/core/spec_density_gate_v2.py --phase "$phase_dir" 2>&1)
             exit_code=$?
+            set -e
 
             phase_name=$(basename "$phase_dir")
             parent_type=$(basename $(dirname "$phase_dir"))
