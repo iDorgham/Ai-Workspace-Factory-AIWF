@@ -10,6 +10,7 @@ Mappings:
   .ai/governance/ -> factory/library/_legacy_pillars/00_core_orchestration/omega_singularity/governance/
   .ai/plan/       -> factory/library/planning/
   .ai/skills/     -> factory/library/skills/manifests/
+  .ai/subagents/  -> factory/library/subagents/workspace_imports/ai/subagents/
   .ai/templates/  -> factory/library/templates/
   .ai/registry/   -> factory/library/registry/
 
@@ -36,6 +37,7 @@ MAPPINGS = {
     "governance": "00_core_orchestration/omega_singularity/governance",
     "plan": "planning",
     "skills": "skills/manifests",
+    "subagents": "subagents/workspace_imports/ai/subagents",
     "templates": "templates",
     "registry": "registry",
 }
