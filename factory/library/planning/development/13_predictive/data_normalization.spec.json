@@ -11,7 +11,7 @@
     "logic": {
         "mapping": "Semantic entity linking (e.g., 'Hospitality' -> 'Vertical:Lodging').",
         "transformation": "Apply currency and unit conversions.",
-        "archiving": "Maintain lineage from factory/intake/raw/ to factory/intake/processed/."
+        "archiving": "Maintain lineage from factory/cfg/intake/raw/ to factory/cfg/intake/processed/."
     },
     "reasoning_hash": "sha256:data-norm-spec-102938"
 }

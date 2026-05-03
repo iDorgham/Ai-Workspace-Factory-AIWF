@@ -8,11 +8,15 @@ Detects YAML duplicate keys and ID collisions.
 import sys
 import os
 from datetime import datetime
+from pathlib import Path
+
+_REPO_ROOT = Path(__file__).resolve().parents[3]
+
 
 class RegistryGuardian:
     def __init__(self, registry_path):
         self.registry_path = registry_path
-        self.log_path = "factory/reports/registry_repairs.log"
+        self.log_path = str(_REPO_ROOT / "docs/reports/factory/registry_repairs.log")
 
     def log_repair(self, issue_type, details):
         """Log the repair event with ISO-8601 timestamp."""

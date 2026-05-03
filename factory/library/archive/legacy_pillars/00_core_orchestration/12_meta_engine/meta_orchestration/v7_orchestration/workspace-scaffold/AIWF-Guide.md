@@ -50,7 +50,7 @@ Think of it as a **factory floor**:
 ```
 
 **Outputs:**
-- `docs/01-plans/{date}_{slug}_prd.md` — Your PRD
+- `docs/planning/{date}_{slug}_prd.md` — Your PRD
 - `plan/00-prd/requirements-trace.json` — REQ-ID trace skeleton
 
 **Tips:**

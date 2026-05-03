@@ -261,7 +261,7 @@ commands:
       - "Parse DOM and extract structured fields (JSON/Markdown)"
       - "Clean data and validate against Law 151/2020 privacy rules"
     outputs:
-      - "docs/01-plans/scraped_{date}.json"
+      - "docs/planning/scraped_{date}.json"
     flags:
       - "--output=path"
       - "--format=json|markdown"
@@ -278,7 +278,7 @@ commands:
       - "Generate copy with RTL/MENA awareness"
       - "Apply SEO metadata and keywords"
     outputs:
-      - "docs/01-plans/{date}_{slug}_content.md"
+      - "docs/planning/{date}_{slug}_content.md"
     flags:
       - "--topic=string (required)"
       - "--type=blog|product|doc|social"
@@ -378,7 +378,7 @@ commands:
     steps:
       - "Scrape raw data from target URL"
       - "Synthesize data into SEO-optimized content"
-      - "Provision 5+ items directly to workspace docs/01-plans/"
+      - "Provision 5+ items directly to workspace docs/planning/"
     flags:
       - "--count=N (items to generate)"
       - "--region=egypt|redsea|mena"

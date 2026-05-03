@@ -12,7 +12,7 @@ from datetime import datetime
 class OmegaCore:
     def __init__(self, factory_root):
         self.factory_root = factory_root
-        self.reports_path = os.path.join(factory_root, "factory/reports")
+        self.reports_path = os.path.join(factory_root, "docs/reports/factory")
         self.library_path = os.path.join(factory_root, "factory/library")
 
     def audit_factory(self):

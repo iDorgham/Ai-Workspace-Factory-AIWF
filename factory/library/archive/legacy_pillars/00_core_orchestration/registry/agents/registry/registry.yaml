@@ -16,7 +16,7 @@ agents:
     silent_mode: true
     library_bindings: ["factory/core/factory_manager.py"]
     sovereign_gate: "omega_gate_v2"
-    memory_access: ["workspace-memory.md", "factory/profiles/"]
+    memory_access: ["workspace-memory.md", "factory/shards/"]
 
   - id: library_curator
     tier: T0
@@ -60,7 +60,7 @@ agents:
     silent_mode: true
     library_bindings: ["factory/core/healing_bot.py"]
     sovereign_gate: "registry_guardian"
-    memory_access: ["factory/reports/", "factory/library-index/"]
+    memory_access: ["docs/reports/factory/", "factory/library-index/"]
 
   - id: registry_guardian
     tier: T0
@@ -82,7 +82,7 @@ agents:
     silent_mode: true
     library_bindings: ["factory/core/regional_controller.py"]
     sovereign_gate: "absolute"
-    memory_access: ["factory/config/residency_map.json"]
+    memory_access: ["factory/cfg/config/"]
 
   - id: brainstorm_agent
     tier: T1

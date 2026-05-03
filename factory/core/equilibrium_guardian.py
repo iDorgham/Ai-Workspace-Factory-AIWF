@@ -14,7 +14,7 @@ class EquilibriumGuardian:
         self.factory_root = Path(factory_root)
         self.spec_path = self.factory_root / "plan/15-sync/equilibrium-guardian.spec.json"
         self.syncer = GalaxySyncV2(str(self.factory_root))
-        self.baseline_path = self.factory_root / "factory/reports/equilibrium_baseline.json"
+        self.baseline_path = self.factory_root / "docs/reports/factory/equilibrium_baseline.json"
 
     def load_spec(self):
         with open(self.spec_path, 'r') as f:

@@ -1,7 +1,7 @@
 # Workspace template library sync — reconciliation report
 
 **ISO-8601:** `2026-04-30T22:15:00+00:00`  
-**Scope:** Six templates under `workspaces/templates/` (ASSET_OS_LAB, BRAND_OS_STRATEGY, CORE_OS_SAAS, MENA_OS_BILINGUAL, MOBILE_OS_FORGE, WEB_OS_TITAN).
+**Scope:** Six templates under `factory/shards/` (ASSET_OS_LAB, BRAND_OS_STRATEGY, CORE_OS_SAAS, MENA_OS_BILINGUAL, MOBILE_OS_FORGE, WEB_OS_TITAN).
 
 ## Summary
 
@@ -17,7 +17,7 @@
 
 ## Files changed (pattern)
 
-Per template `workspaces/templates/<T>/`:
+Per template `factory/shards/<T>/`:
 
 - `.ai/docs/guides/saas_materialization_guide.md` (edit)
 - `.ai/docs/protocols/memory_layers.md` (edit)

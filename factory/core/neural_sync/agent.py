@@ -23,7 +23,7 @@ class NeuralSyncAgent:
         logger = logging.getLogger("NeuralSyncAgent")
         logger.setLevel(logging.INFO)
         # Industrial log path within the workspace
-        log_path = os.path.join(os.getcwd(), "factory/logs/neural_sync.log")
+        log_path = os.path.join(os.getcwd(), "factory/cfg/logs/neural_sync.log")
         os.makedirs(os.path.dirname(log_path), exist_ok=True)
         handler = logging.FileHandler(log_path)
         formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')

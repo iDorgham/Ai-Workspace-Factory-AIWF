@@ -48,7 +48,7 @@ class OmegaDashboardLite:
         return data
 
     def get_swarm_data(self):
-        swarm_file = os.path.join(self.factory_root, "factory/reports/swarm_state.json")
+        swarm_file = os.path.join(self.factory_root, "docs/reports/factory/swarm_state.json")
         if os.path.exists(swarm_file):
             import json
             try:

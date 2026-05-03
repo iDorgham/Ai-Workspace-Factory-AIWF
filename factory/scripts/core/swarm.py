@@ -16,7 +16,7 @@ class SwarmRouter:
     def __init__(self, factory_root):
         self.factory_root = factory_root
         self.workspaces_path = os.path.join(factory_root, "workspaces")
-        self.state_file = os.path.join(factory_root, "factory/reports/swarm_state.json")
+        self.state_file = os.path.join(factory_root, "docs/reports/factory/swarm_state.json")
         self.active_processes = {} # pid -> subprocess.Popen object
         self.locks_path = os.path.join(factory_root, ".ai/locks")
         os.makedirs(self.locks_path, exist_ok=True)

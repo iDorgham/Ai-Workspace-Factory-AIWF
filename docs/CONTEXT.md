@@ -10,7 +10,7 @@
 
 ## What this repository is
 
-AIWF is a **spec-driven orchestration factory**: a curated system of agents, skills, commands, planning templates, and automation scripts used to spawn and govern **isolated workspaces** under `workspaces/`. Client and personal shards are materialized from `workspaces/templates/`; the global component library lives under `factory/library/` with canonical intelligence under `.ai/`.
+AIWF is a **spec-driven orchestration factory**: a curated system of agents, skills, commands, planning templates, and automation scripts used to spawn and govern **isolated workspaces** under `workspaces/`. Client and personal shards are materialized from **`factory/shards/`** only (via **`/mat`**). The global component library lives under `factory/library/` with canonical intelligence under `.ai/`. Factory runtime reports live under **`docs/reports/factory/`** (single `docs/` tree at repo root).
 
 ---
 
@@ -31,8 +31,8 @@ AIWF is a **spec-driven orchestration factory**: a curated system of agents, ski
 ## Three-tier layout (mental model)
 
 1. **`.ai/`** — Plans, commands, governance, registries, logs, and **template mirrors** (including `templates/design/` for UI/design provider packs).
-2. **`factory/`** — Executable engine: `factory/scripts/`, `factory/core/`, **`factory/library/`** (agents, skills, design packs, planning mirror, reports), tests, profiles.
-3. **`workspaces/`** — Runtime shards (`clients/`, `personal/`, `templates/`). Template bodies may be gitignored locally; paths and behavior are documented in [workspaces/README.md](../workspaces/README.md).
+2. **`factory/`** — Executable engine: `factory/scripts/`, `factory/core/`, **`factory/library/`** (agents, skills, design packs, planning mirror, reports), **`factory/shards/`** (OS copy sources), **`factory/cfg/`** (config bundle), **`factory/stubs/`** (scaffold seeds), tests.
+3. **`workspaces/`** — Runtime shards (`clients/`, `personal/`). Template bodies live under **`factory/shards/`** (often gitignored); paths and behavior are documented in [workspaces/README.md](../workspaces/README.md).
 
 Cross-cutting documentation: **`docs/`** (this file, PRD, roadmap). Do not store generated audit JSON in the repo root; use **`docs/reports/`**.
 

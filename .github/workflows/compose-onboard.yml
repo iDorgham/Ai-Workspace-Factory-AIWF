@@ -3,7 +3,7 @@ name: Industrial Onboarding Pipeline (v5.1.0)
 on:
   push:
     paths:
-      - 'factory/intake/**.json'
+      - 'factory/cfg/intake/**.json'
   workflow_dispatch:
     inputs:
       client:
@@ -40,8 +40,8 @@ jobs:
             CLIENT_NAME="${{ github.event.inputs.client }}"
             PIPELINE="${{ github.event.inputs.pipeline }}"
           else
-            # For push triggers, detect the changed JSON file in factory/intake/
-            CLIENT_NAME=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }} | grep 'factory/intake/' | head -n 1 | xargs basename -s .json || echo "")
+            # For push triggers, detect the changed JSON file in factory/cfg/intake/
+            CLIENT_NAME=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }} | grep 'factory/cfg/intake/' | head -n 1 | xargs basename -s .json || echo "")
             PIPELINE="sovereign"
           fi
 

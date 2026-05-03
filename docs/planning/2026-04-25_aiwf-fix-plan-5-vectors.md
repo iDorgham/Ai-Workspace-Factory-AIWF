@@ -285,5 +285,5 @@ F1 (Mirror Sync)          ← Foundation: all other fixes produce mutations that
 
 ---
 
-*Governor: Dorgham | Registry: docs/01-plans/2026-04-25_aiwf-fix-plan-5-vectors.md*  
+*Governor: Dorgham | Registry: docs/planning/2026-04-25_aiwf-fix-plan-5-vectors.md*  
 *Traceability: sha256:fix-plan-5-vectors-2026-04-25 | Compliance: Law 151/2020*

@@ -23,7 +23,7 @@
 | Main README | README.md | Overview | Unknown — needs audit | Developer onboarding clarity |
 | PRD 2026-04-24 | .ai/plan/development/00_prd/ | Internal spec | High density; not public | No public-facing version |
 | Dashboard | .ai/dashboard/index.md | Status | 0 strategic patterns | Not suitable for external content |
-| Fix Plans | docs/01-plans/*.md | Governance | SDD-quality, internal | Not adapted for audience consumption |
+| Fix Plans | docs/planning/*.md | Governance | SDD-quality, internal | Not adapted for audience consumption |
 | Health Audit | .ai/logs/health_audit_report.md | Internal | 85/100; internal only | Public health story not told |
 
 ---

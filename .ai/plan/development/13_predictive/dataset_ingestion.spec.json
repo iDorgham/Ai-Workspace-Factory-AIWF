@@ -11,7 +11,7 @@
     "logic": {
         "discovery": "Identify target URLs/APIs for GovTech, Fintech, and HealthTech trends.",
         "extraction": "Parse semantic metadata using Scraper Agent v3 logic.",
-        "storage": "Archive raw data in factory/intake/raw/ and normalized data in factory/intake/processed/."
+        "storage": "Archive raw data in factory/cfg/intake/raw/ and normalized data in factory/cfg/intake/processed/."
     },
     "compliance": {
         "ethics": "Respect robots.txt and public data TOS.",

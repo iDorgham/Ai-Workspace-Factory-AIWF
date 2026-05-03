@@ -46,7 +46,7 @@ class HarvestEngine:
                     ws_path = p
                     break
 
-        output_path = os.path.join(ws_path, f"docs/01-plans/{datetime.now().strftime('%Y%m%d')}_harvested_content.json")
+        output_path = os.path.join(ws_path, f"docs/planning/{datetime.now().strftime('%Y%m%d')}_harvested_content.json")
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         
         with open(output_path, "w") as f:

@@ -12,16 +12,19 @@ class PredictiveEngine:
     def __init__(self, factory_root: str):
         self.factory_root = Path(factory_root)
         self.spec_path = self.factory_root / "plan/13-predictive/predictive-engine.spec.json"
-        self.profiles_path = self.factory_root / "factory/profiles"
+        self.shards_root = self.factory_root / "factory/shards"
 
     def load_spec(self):
         with open(self.spec_path, 'r') as f:
             self.spec = json.load(f)
 
     def analyze_verticals(self):
-        """Analyze available profiles to identify high-potential verticals."""
+        """Analyze available industrial OS templates (shard folders) for scoring."""
         print("🧠 [PREDICTIVE] Analyzing Vertical Equilibrium...")
-        profiles = [p.stem for p in self.profiles_path.glob("*.json")]
+        if self.shards_root.is_dir():
+            profiles = sorted(p.name for p in self.shards_root.iterdir() if p.is_dir())
+        else:
+            profiles = []
         
         # Scoring logic (Mocked for initial implementation)
         rankings = {

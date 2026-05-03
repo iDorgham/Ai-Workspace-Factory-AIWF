@@ -12,8 +12,8 @@ class MarketScraper:
     
     def __init__(self, factory_root: str):
         self.factory_root = Path(factory_root)
-        self.intake_raw = self.factory_root / "factory/intake/raw"
-        self.intake_processed = self.factory_root / "factory/intake/processed"
+        self.intake_raw = self.factory_root / "factory/cfg/intake/raw"
+        self.intake_processed = self.factory_root / "factory/cfg/intake/processed"
         
         # Ensure intake directories exist
         os.makedirs(self.intake_raw, exist_ok=True)

@@ -13,7 +13,7 @@ class OmegaCertificationEngine:
     def __init__(self, factory_root: str):
         self.factory_root = Path(factory_root)
         self.spec_path = self.factory_root / "plan/18-singularity/global-certification.spec.json"
-        self.registry_path = self.factory_root / "factory/reports/sovereign_registry.json"
+        self.registry_path = self.factory_root / "docs/reports/factory/sovereign_registry.json"
 
     def load_spec(self):
         with open(self.spec_path, 'r') as f:

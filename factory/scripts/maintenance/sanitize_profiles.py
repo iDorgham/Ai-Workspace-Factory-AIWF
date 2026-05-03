@@ -2,8 +2,9 @@ import os
 import json
 
 # --- CONFIGURATION ---
-BASE_DIR = "/Users/Dorgham/Documents/Work/Devleopment/AIWF"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 PROFILES_DIR = os.path.join(BASE_DIR, "factory/profiles")
+
 
 def sanitize_profile(path):
     with open(path, "r") as f:
@@ -36,6 +37,9 @@ def sanitize_profile(path):
     return True
 
 if __name__ == "__main__":
+    if not os.path.isdir(PROFILES_DIR):
+        print("ℹ️  factory/profiles/ was retired — nothing to sanitize.")
+        raise SystemExit(0)
     profiles = [f for f in os.listdir(PROFILES_DIR) if f.endswith(".json")]
     processed = 0
     for p in profiles:

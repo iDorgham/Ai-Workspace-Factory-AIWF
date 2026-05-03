@@ -21,7 +21,7 @@ version: 1.0.0
 2. **SEO Research**: Identify target keywords for the given topic.
 3. **Drafting**: Generate AR/EN copy with correct RTL formatting.
 4. **Regional Infusion**: Apply regional flavor if flag is active.
-5. **Output Routing**: Save to `docs/01-plans/` with unified naming template.
+5. **Output Routing**: Save to `docs/planning/` with unified naming template.
 
 ---
 

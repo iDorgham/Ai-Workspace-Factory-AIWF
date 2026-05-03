@@ -39,7 +39,7 @@
 ```
 One command → A fully spec'd, compliant, production-ready sovereign workspace
 
-AIWF v20.2.0 extends the **Industrial OS Galaxy** (six OMEGA-certified workspace templates under `workspaces/templates/`) with a **manifest-driven design catalog** (provider `design.md` packs under `.ai/templates/design/` and `factory/library/design/`). **Spawn a new shard** from the repo root with:
+AIWF v20.2.0 extends the **Industrial OS Galaxy** (six OMEGA-certified workspace templates under **`factory/shards/`**) and a **manifest-driven design catalog** (provider `design.md` packs under `.ai/templates/design/` and `factory/library/design/`). **Spawn a new shard** from the repo root with:
 
 `bash .ai/scripts/factory_materialize.sh` (or **`bash .ai/scripts/bin/materialize.sh`** — same file via convenience symlink)
 
@@ -137,7 +137,8 @@ AIWF/
 │   │        media|branding]/
 │   └── logs/                     ← Audit logs, deployment traces, health reports
 │
-├── factory/                      ← 🏭 Core Engine & Scripts
+├── factory/                      ← 🏭 Core Engine & Scripts (see factory/README.md)
+│   ├── shards/                   ← Industrial OS shard sources for /mat (bodies often gitignored)
 │   ├── core/                     ← P2P node, factory manager, healing bot, neural sync
 │   ├── scripts/
 │   │   ├── core/                 ← spec_density_gate_v2, planning_mirror_sync,
@@ -146,16 +147,11 @@ AIWF/
 │   │   └── maintenance/          ← health_scorer, chaos_validator, log_broadcaster
 │   ├── tests/                    ← Python repo harness (`pytest factory/tests/` from root)
 │   ├── library/                  ← Shared agents, skills, **design/** packs, templates, registry, reports, planning mirror
-│   └── profiles/                 ← 20+ industry workspace profiles
+│   ├── cfg/                      ← Bundled config, manifests, schema, intake, registry, logs
+│   ├── stubs/                    ← Small scaffold seeds (distribution, fintech, …)
+│   └── dashboard/                ← TUI + markdown pages (`pages/`)
 │
 └── workspaces/                   ← 📦 Sovereign shards (see workspaces/README.md)
-    ├── templates/                ← 🌌 Industrial OS templates (v20.2+; local clone content — see .gitignore)
-    │   ├── CORE_OS_SAAS/         ← Full-Stack SaaS Factory
-    │   ├── MOBILE_OS_FORGE/      ← High-Performance Mobile Forge
-    │   ├── WEB_OS_TITAN/         ← Web & Content Dominance Shard
-    │   ├── MENA_OS_BILINGUAL/    ← Ar/En Regional SEO Engine
-    │   ├── ASSET_OS_LAB/         ← GenAI Visual Production Lab
-    │   └── BRAND_OS_STRATEGY/    ← Industrial Brand Engine
     ├── clients/{slug}/           ← Production shards (local-only; use materializer)
     └── personal/{slug}/          ← R&D shards (local-only; tier README tracked)
 ```

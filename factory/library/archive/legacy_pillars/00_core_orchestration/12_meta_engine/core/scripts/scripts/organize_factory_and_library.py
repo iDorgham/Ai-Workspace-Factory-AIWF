@@ -19,7 +19,10 @@ def organize_factory():
     print("[*] Organizing Factory root...")
     move_safe(FACTORY_ROOT / "dna.json", FACTORY_ROOT / "core/dna.json")
     move_safe(FACTORY_ROOT / "aiwf.sh", FACTORY_ROOT / "core/aiwf.sh")
-    move_safe(FACTORY_ROOT / "DEEP_LIBRARY_DOC.md", FACTORY_ROOT / "docs/DEEP_LIBRARY_DOC.md")
+    move_safe(
+        FACTORY_ROOT.parent / "DEEP_LIBRARY_DOC.md",
+        FACTORY_ROOT.parent / "docs/reference/DEEP_LIBRARY_DOC.md",
+    )
 
 def organize_library():
     print("[*] Organizing Factory library...")

@@ -17,7 +17,7 @@ Phase 3 implements the **Headless Runner**, allowing the AIWF core to execute wi
 
 ### [REQ-SAAS-002] — Headless Core Runner
 - **AC**: Execute all v7 commands via `python3 runner.py [cmd]`.
-- **AC**: Log all outputs to `factory/reports/headless_executions.log`.
+- **AC**: Log all outputs to `docs/reports/factory/headless_executions.log`.
 
 ---
 

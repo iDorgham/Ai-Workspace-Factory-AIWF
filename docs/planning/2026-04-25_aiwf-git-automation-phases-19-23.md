@@ -288,7 +288,7 @@ Extends the current 4-check gate in `omega_release.py`:
 
 ### Diagnosis
 
-`/git deploy` is a command stub. `k8s-deployment.yaml` exists in `factory/templates/distribution/` and `factory/library/` but is never invoked from CI. `compose-onboard.yml` creates workspaces but doesn't deploy them. There is no environment promotion logic, no shard-aware routing, and no automated rollback. The CD layer is entirely absent despite full documentation of the intent.
+`/git deploy` is a command stub. `k8s-deployment.yaml` exists in `factory/stubs/distribution/` and `factory/library/` but is never invoked from CI. `compose-onboard.yml` creates workspaces but doesn't deploy them. There is no environment promotion logic, no shard-aware routing, and no automated rollback. The CD layer is entirely absent despite full documentation of the intent.
 
 ### Environment Promotion Model
 
@@ -314,7 +314,7 @@ master (tagged)
 
 1. **Build `deploy.yml` as the sovereign CD workflow.** Trigger: push to `master` after a tag. Jobs in sequence: (1) `shard_router` — resolve each workspace's target region from `residency_map.json`. (2) `deploy_shard` — apply `k8s-deployment.yaml` template with shard-specific env vars as a matrix strategy. (3) `canary_gate` — run smoke tests against canary endpoint. (4) `promote_or_rollback` — based on canary outcome.
 
-2. **Implement `shard_router.py`.** Reads `factory/config/residency_map.json`, maps each workspace slug to its cloud endpoint and region, outputs a JSON deployment matrix consumed by the GitHub Actions matrix strategy. Replaces all hardcoded shard references.
+2. **Implement `shard_router.py`.** Reads `factory/cfg/config/residency_map.json`, maps each workspace slug to its cloud endpoint and region, outputs a JSON deployment matrix consumed by the GitHub Actions matrix strategy. Replaces all hardcoded shard references.
 
 3. **Wire rollback pointer from `omega_release.py` into the CD pipeline.** Every deployment stores its previous tag as `rollback_pointer` in `resilience_ledger.jsonl`. On canary gate failure, the pipeline reads `rollback_pointer` and executes: `git checkout $ROLLBACK_TAG` → redeploy → log restoration event.
 
@@ -412,5 +412,5 @@ Add to `.ai/plan/_manifest.yaml`:
 
 ---
 
-*Governor: Dorgham | Registry: docs/01-plans/2026-04-25_aiwf-git-automation-phases-19-23.md*  
+*Governor: Dorgham | Registry: docs/planning/2026-04-25_aiwf-git-automation-phases-19-23.md*  
 *Traceability: sha256:git-automation-phases-19-23-2026-04-25 | Compliance: Law 151/2020*

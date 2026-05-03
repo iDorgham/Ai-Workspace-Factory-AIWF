@@ -5,16 +5,22 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-# Repo root: walk up until workspaces/templates exists (works from .ai/scripts or factory mirror path).
+# Repo root: walk up until factory/ + workspaces/ exist (AIWF layout).
 FACTORY_ROOT="$SCRIPT_DIR"
-while [[ "$FACTORY_ROOT" != "/" && ! -d "$FACTORY_ROOT/workspaces/templates" ]]; do
+while [[ "$FACTORY_ROOT" != "/" ]]; do
+    if [[ -d "$FACTORY_ROOT/factory" ]] && [[ -d "$FACTORY_ROOT/workspaces" ]]; then
+        break
+    fi
     FACTORY_ROOT="$(cd "$FACTORY_ROOT/.." && pwd)"
 done
-if [[ ! -d "$FACTORY_ROOT/workspaces/templates" ]]; then
-    echo "❌ Could not find AIWF repo root (no workspaces/templates). Run from the factory checkout."
+CANON_TEMPLATES="$FACTORY_ROOT/factory/shards"
+if [[ ! -d "$CANON_TEMPLATES" ]] || [[ -z "$(find "$CANON_TEMPLATES" -mindepth 1 -maxdepth 1 -type d 2>/dev/null | head -1)" ]]; then
+    echo "❌ No industrial OS template directories under:"
+    echo "   $CANON_TEMPLATES"
+    echo "   Add trees such as CORE_OS_SAAS, WEB_OS_TITAN, … — see factory/shards/README.md"
     exit 1
 fi
-TEMPLATE_DIR="$FACTORY_ROOT/workspaces/templates"
+TEMPLATE_DIR="$CANON_TEMPLATES"
 CLIENTS_DIR="$FACTORY_ROOT/workspaces/clients"
 PERSONAL_DIR="$FACTORY_ROOT/workspaces/personal"
 
@@ -143,6 +149,8 @@ echo "🧬 Localizing intelligence fabric..."
 TEMPLATE_NAME=$(basename "$SELECTED_TEMPLATE")
 grep -rl "$TEMPLATE_NAME" "$TARGET_PATH" | xargs sed -i '' "s|$TEMPLATE_NAME|$TARGET_NAME|g" 2>/dev/null || true
 grep -rl "workspaces/templates" "$TARGET_PATH" | xargs sed -i '' "s|workspaces/templates|workspaces/$(basename "$TARGET_PARENT")|g" 2>/dev/null || true
+grep -rl "factory/shards" "$TARGET_PATH" | xargs sed -i '' "s|factory/shards|workspaces/$(basename "$TARGET_PARENT")|g" 2>/dev/null || true
+grep -rl "factory/workspace_templates/os_shards" "$TARGET_PATH" | xargs sed -i '' "s|factory/workspace_templates/os_shards|workspaces/$(basename "$TARGET_PARENT")|g" 2>/dev/null || true
 
 cd "$TARGET_PATH"
 if [[ -x ./.ai/scripts/01_core/workspace_sanitize.sh ]]; then

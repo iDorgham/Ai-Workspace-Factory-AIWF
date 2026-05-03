@@ -31,13 +31,13 @@ The industrial galaxy is organized into distinct, high-fidelity tiers:
 
 ### 2. Core Tier (The Factory)
 - **`factory/`**: Industrial core containing orchestration logic, library pillars (including **`factory/library/core_orchestration/`** for the outbound agents/governance mirror), **`factory/scripts/`**, and the **`factory/tests/`** Python harness.
-- **`dashboard/`**: Real-time KPI monitoring and strategic visualization layer.
+- **`factory/dashboard/pages/`**: Markdown KPI / project views (root `dashboard/` removed; TUI code stays under `factory/dashboard/`).
 - **`docs/`**: Professional documentation suite (PRDs, Roadmaps, Certifications) plus **`docs/reports/`** for generated JSON/text (e.g. library audit output — not the repo root).
 
 ### 3. Production Tier (The Galaxy)
 - **`workspaces/clients/`**: Secure, isolated shards for external client projects.
 - **`workspaces/personal/`**: High-velocity shards for internal experimentation and R&D.
-- **`workspaces/templates/`**: Six industrial OS templates; new shards are spawned with **`.ai/scripts/factory_materialize.sh`** (same as **`.ai/scripts/bin/materialize.sh`**; Cursor **`/mat`** / **`/factory materialize`**) into `clients/` or `personal/` using interactive template + layer + slug prompts.
+- **`factory/shards/`**: Six industrial OS templates; new shards are spawned with **`.ai/scripts/factory_materialize.sh`** (same as **`.ai/scripts/bin/materialize.sh`**; Cursor **`/mat`** / **`/factory materialize`**) into `clients/` or `personal/` using interactive template + layer + slug prompts.
 
 ---
 

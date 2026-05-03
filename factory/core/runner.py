@@ -15,7 +15,7 @@ class HeadlessRunner:
     def __init__(self, factory_root):
         self.factory_root = factory_root
         self.scripts_path = os.path.join(factory_root, "factory/scripts")
-        self.log_path = os.path.join(factory_root, "factory/reports/headless_executions.log")
+        self.log_path = os.path.join(factory_root, "docs/reports/factory/headless_executions.log")
 
     def log_execution(self, command, status, output):
         """Log execution details to the global factory log."""

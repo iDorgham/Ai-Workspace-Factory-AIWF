@@ -5,7 +5,7 @@
 
 ## 🏗️ OVERVIEW
 
-The `workspaces/` directory is the physical manifestation of the **AI Workspace Factory**: templates you copy from, plus **client** and **personal** tiers where real project trees live. Each shard can be geofenced and governed per **Law 151/2020** when MENA applies.
+The `workspaces/` directory is the physical manifestation of the **AI Workspace Factory**: **client** and **personal** tiers where real project trees live, materialized from **`factory/shards/`** via **`/mat`**. Each shard can be geofenced and governed per **Law 151/2020** when MENA applies.
 
 ---
 
@@ -26,16 +26,16 @@ The `workspaces/` directory is the physical manifestation of the **AI Workspace 
 - **Governance**: Optional tier-level [`personal/metadata.json`](personal/metadata.json) + [`personal/README.md`](personal/README.md).
 - **Audit**: Periodic structural health checks on important shards.
 
-### 3. 🌌 `templates/` [INDUSTRIAL OS REGISTRY]
+### 3. 🌌 Industrial OS templates [FACTORY-HOSTED]
 
-- **Six** OMEGA-style starter trees (e.g. **CORE_OS_SAAS**, **WEB_OS_TITAN**, …) under `workspaces/templates/<NAME>/`.
-- **Source of truth** for `/init`-style materialization; not edited as live production code.
+- **Six** OMEGA-style starter trees (e.g. **CORE_OS_SAAS**, **WEB_OS_TITAN**, …) live under **`factory/shards/<NAME>/`** (canonical for **`/mat`**).
+- **Source of truth** for materialization; not edited as live production code inside `clients/` or `personal/`.
 
 ---
 
 ## 🚀 Materializing a new workspace
 
-From the **AIWF repository root** (directory that contains `workspaces/templates/`):
+From the **AIWF repository root** (directory that contains **`factory/`** and **`workspaces/`**):
 
 ```bash
 bash .ai/scripts/factory_materialize.sh
@@ -53,17 +53,17 @@ bash .ai/scripts/factory_materialize.sh
 | 2 | Layer | `0` / `clients` / `client` / `mena-locked`, or `1` / `personal` / `private` / `rnd` / `rd`. |
 | 3 | Workspace name | Final **slug** for `workspaces/<layer>/<slug>/`. |
 
-The script finds the repo root automatically (walks upward until `workspaces/templates/` exists). After copy + path localization it runs template **sanitize** (if present), **`git init`**, and an initial commit.
+The script finds the repo root automatically (walks upward until **`factory/`** and **`workspaces/`** exist). After copy + path localization it runs template **sanitize** (if present), **`git init`**, and an initial commit.
 
 ---
 
 ## 📌 Git tracking (this repository)
 
-Root **`.gitignore`** uses `workspaces/*` with a small **allowlist**. In practice:
+Root **`.gitignore`** uses `workspaces/*` with a small **allowlist**, and **`factory/shards/*`** (shard bodies are large, local-only by default). In practice:
 
-- **`workspaces/templates/`** — the whole tree is **not committed** (ignored like slug folders); keep templates in your working copy or supply them via your own distribution policy.
+- **`factory/shards/`** — bodies usually **not committed**; keep shards in your working copy or restore from your distribution pipeline.
 - **`workspaces/clients/<slug>/`** and **`workspaces/personal/<slug>/`** — **not committed**.
-- **Committed** paths: `workspaces/README.md` (this file), `workspaces/.gitkeep`, `workspaces/clients/README.md`, `workspaces/personal/README.md`, `workspaces/personal/metadata.json`.
+- **Committed** paths: `workspaces/README.md` (this file), `workspaces/.gitkeep`, `workspaces/clients/README.md`, `workspaces/personal/README.md`, `workspaces/personal/metadata.json`, plus `factory/shards/README.md` and `factory/shards/.gitkeep`.
 
 ---
 

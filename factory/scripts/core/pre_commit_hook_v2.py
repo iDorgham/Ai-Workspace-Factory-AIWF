@@ -68,7 +68,7 @@ def check_snake_case() -> bool:
         # Workspace audit snapshots and index trees (mixed naming; generated or hand-maintained).
         ".ai/workspace/",
         # /init template packs mirror upstream kebab-case subagent filenames.
-        "factory/templates/subagents/",
+        "factory/stubs/subagents/",
         # Outbound mirror of `.cursor/rules/` (hyphenated .mdc stems match IDE conventions).
         "factory/library/rules/workspace_imports/",
         # Vendored third-party skills/agents from public GitHub repos (upstream kebab-case).

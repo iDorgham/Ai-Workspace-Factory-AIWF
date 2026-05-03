@@ -9,9 +9,9 @@
         "Health-check endpoints for automated shard monitoring."
     ],
     "components": {
-        "docker": "factory/templates/distribution/Dockerfile",
-        "k8s_deployment": "factory/templates/distribution/k8s-deployment.yaml",
-        "k8s_service": "factory/templates/distribution/k8s-service.yaml"
+        "docker": "factory/stubs/distribution/Dockerfile",
+        "k8s_deployment": "factory/stubs/distribution/k8s-deployment.yaml",
+        "k8s_service": "factory/stubs/distribution/k8s-service.yaml"
     },
     "reasoning_hash": "sha256:cloud-scaff-spec-293847"
 }

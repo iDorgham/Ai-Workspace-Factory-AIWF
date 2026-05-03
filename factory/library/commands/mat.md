@@ -1,18 +1,18 @@
 ---
 type: command-registry
 tier: OMEGA
-version: 1.1.0
+version: 1.2.0
 compliance: Law 151/2020
 traceability: ISO-8601 Certified
 ---
 
 # `/mat`
 
-**Mat**erialize a new workspace from an industrial template under `workspaces/templates/` into `workspaces/clients/` or `workspaces/personal/`.
+**Mat**erialize a new workspace from an industrial OS template under **`factory/shards/`** into `workspaces/clients/` or `workspaces/personal/`.
 
 ## Flow (interactive terminal)
 
-Run from the **AIWF repository root** (where `workspaces/templates/` exists):
+Run from the **AIWF repository root** (where `factory/` exists):
 
 ```bash
 bash .ai/scripts/factory_materialize.sh
@@ -30,7 +30,7 @@ The script **prints** templates with indices, then asks **in order**:
 
 3. **New workspace name** — final prompt: **slug** for the new folder under that layer (e.g. `my_saas`).
 
-`FACTORY_ROOT` is discovered by walking up from the script until `workspaces/templates` is found (no hardcoded path).
+`FACTORY_ROOT` is discovered by walking up from the script until **`factory/`** and **`workspaces/`** exist (no hardcoded path).
 
 ## Notes
 

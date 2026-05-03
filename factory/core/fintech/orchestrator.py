@@ -17,7 +17,7 @@ class RevenueOrchestrator:
     def _setup_logger(self):
         logger = logging.getLogger("RevenueOrchestrator")
         logger.setLevel(logging.INFO)
-        log_path = os.path.join(os.getcwd(), "factory/logs/revenue_orchestrator.log")
+        log_path = os.path.join(os.getcwd(), "factory/cfg/logs/revenue_orchestrator.log")
         os.makedirs(os.path.dirname(log_path), exist_ok=True)
         handler = logging.FileHandler(log_path)
         formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')

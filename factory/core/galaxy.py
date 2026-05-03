@@ -27,7 +27,7 @@ class GalaxyOrchestrator:
         try:
             # 1. Inherit DNA (Core Library & Omega Logic)
             os.makedirs(target_path, exist_ok=True)
-            core_folders = ["factory/core", "factory/library", "factory/profiles", "plan"]
+            core_folders = ["factory/core", "factory/library", "factory/shards", "plan"]
             
             for folder in core_folders:
                 src = os.path.join(self.master_root, folder)

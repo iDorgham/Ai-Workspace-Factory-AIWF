@@ -15,7 +15,6 @@ from factory.core.regional_controller import RegionalController
 # --- CONFIGURATION ---
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 LIBRARY_DIR = os.path.join(BASE_DIR, "factory/library")
-PROFILES_DIR = os.path.join(BASE_DIR, "factory/profiles")
 REPORT_PATH = os.path.join(BASE_DIR, ".ai/logs/health-audit-report.md")
 
 # Structural buckets that don't require their own SKILL.md
@@ -110,25 +109,9 @@ class HealthScorer:
                     self.findings.append(f"FILE_POLLUTION: {os.path.join(root, f)}")
 
     def audit_profiles(self):
-        print("🔍 Auditing Composition Profiles...")
-        if not os.path.exists(PROFILES_DIR):
-            return
-
-        profiles = [f for f in os.listdir(PROFILES_DIR) if f.endswith(".json")]
-        self.stats["total_profiles"] = len(profiles)
-
-        for p in profiles:
-            p_path = os.path.join(PROFILES_DIR, p)
-            try:
-                with open(p_path, "r") as f:
-                    data = json.load(f)
-                    if "name" not in data and "profile_name" not in data:
-                        self.deductions["schema"] += 1.0
-                        self.findings.append(f"SCHEMA_WARN: {p} (Missing name field)")
-            except Exception as e:
-                self.deductions["schema"] += 5.0
-                self.stats["violations"] += 1
-                self.findings.append(f"INVALID_JSON: {p} ({str(e)})")
+        """Legacy `factory/profiles/` JSON packs were removed; materialization uses industrial OS trees."""
+        print("🔍 Composition profiles: skipped (retired — use factory/shards + /mat).")
+        self.stats["total_profiles"] = 0
 
     def audit_data_residue(self, workspace_path, shard_id):
         """

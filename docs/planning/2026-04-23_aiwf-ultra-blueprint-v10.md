@@ -20,7 +20,7 @@ Implement the **Hot-Sync Protocol** to unify all active workspaces under the v7.
   - **Logic**: Snapshot current `.ai/` → Branch `sync/v7.2.0` → Apply library diff → Run validation gates → Report.
 - `/scrape [url] --output=[path]`:
   - **Logic**: Autonomous data harvester (T1: Scrape Specialist). Can bypass common anti-bot patterns to fetch data for blogs, product catalogs, or competitor analysis.
-  - **Auto-Routing**: Saved to `docs/01-plans/scraped_{date}.json`.
+  - **Auto-Routing**: Saved to `docs/planning/scraped_{date}.json`.
 - `/content [type] --topic="X"`:
   - **Logic**: Generates SEO-optimized blogs, product descriptions (e-commerce), or documentation. 
   - **Integration**: Feeds directly into SaaS frontend `/dev` cycles.

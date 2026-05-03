@@ -18,7 +18,7 @@ class VerticalOrchestrator:
         logger = logging.getLogger("VerticalOrchestrator")
         logger.setLevel(logging.INFO)
         import os
-        log_path = os.path.join(os.getcwd(), "factory/logs/vertical_orchestrator.log")
+        log_path = os.path.join(os.getcwd(), "factory/cfg/logs/vertical_orchestrator.log")
         os.makedirs(os.path.dirname(log_path), exist_ok=True)
         handler = logging.FileHandler(log_path)
         formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')

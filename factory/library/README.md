@@ -2,7 +2,7 @@
 
 This directory is the **global component library** for AIWF: agents, skills, templates, design packs, registries, and mirrored planning artifacts. Workspaces consume from here; they do not fork the library as a competing source of truth.
 
-**See also:** [docs/CONTEXT.md](../../docs/CONTEXT.md) (orientation), [docs/PRD.md](../../docs/PRD.md) §3.3 and §4.8 (full protocol).
+**See also:** [docs/CONTEXT.md](../../docs/CONTEXT.md) (orientation), [docs/PRD.md](../../docs/PRD.md) §3.3 and §4.8 (full protocol). **Industrial OS shard sources** (not under `library/`): sibling **`../shards/`** + **`bash .ai/scripts/factory_materialize.sh`**.
 
 ---
 
@@ -27,7 +27,6 @@ This directory is the **global component library** for AIWF: agents, skills, tem
 | Folder | Role |
 |--------|------|
 | `registry/` | `external_sources.registry.json`, `skills.registry.json`, and related aggregate JSON |
-| `profiles/` | Workspace profile JSON (also see `factory/profiles/`) |
 | `planning/` | Mirror of `.ai/plan/` (`planning_mirror_sync.py` target); includes `sync_manifest.json` |
 | `mirror/` | Mirror/auxiliary payloads per outbound mirror protocol |
 | `reports/` | `external_library_merge_report.json` / `.md` and similar merge or audit outputs |

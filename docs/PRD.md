@@ -87,8 +87,8 @@ AIWF is not a code generator. It is a **self-learning neural factory** that:
 | v20.0 | OMEGA Equilibrium | 2026-04-25 | Complete | 12-point release gate; sovereign git ops; geofencing; swarm mutex safety |
 | **v20.1** | **Industrial Shards** | **2026-04-29** | **Complete** | **Industrial shard spawning; `.ai/scripts/factory_materialize.sh` + `/mat`; 6-template OS galaxy** |
 | **v20.2** | **Design Library Equilibrium** | **2026-05-03** | **Current** | **Manifest-driven `external_library_sync`; expanded `templates/design/` + `factory/library/design/`; `nexu_open_design` vendored bundle; pre-commit path exemptions for third-party stems** |
-| v21.0 | Neural Fabric | Planned | Pipeline | Tripartite Planning Singularity; 8 plan types; spec_density_gate_v2 |
-| v22.0+ | Quantum Sovereignty | Future | Planned | See [ROADMAP_LONGTERM.md](ROADMAP_LONGTERM.md) |
+| v21.0 | Neural Fabric | 2026-12-31 | Pending | Tripartite Planning Singularity; 8 plan types; spec_density_gate_v2 |
+| v22.0+ | Quantum Sovereignty | 2027-01-01 | Pending | Long-horizon program; see [ROADMAP_LONGTERM.md](ROADMAP_LONGTERM.md) (v22.0–v35.0+) |
 
 ### 2.2 Architectural Inflection Points
 
@@ -161,7 +161,7 @@ Before v21, SDD existed only for the `development/` plan type. v21 expanded to 8
 │   └── SDD_PROTOCOLS.md    # SDD lifecycle, density gate rules, C4 requirements
 │
 ├── scripts/
-│   ├── factory_materialize.sh   # Interactive shard spawn; discovers repo via workspaces/templates/
+│   ├── factory_materialize.sh   # Interactive shard spawn; discovers repo via factory/shards/
 │   └── bin/materialize.sh       # Symlink — same script (documented as /mat convenience)
 │
 ├── plan/
@@ -206,7 +206,7 @@ factory/
 │   │   └── registry_guardian.py      # Schema collision prevention
 │   │
 │   ├── automation/
-│   │   ├── saas_scaffolder.py         # Workspace provisioning from profiles
+│   │   ├── saas_scaffolder.py         # Workspace provisioning (boilerplate copy)
 │   │   └── compose.py                 # Factory initialization and registry setup
 │   │
 │   └── maintenance/
@@ -228,15 +228,11 @@ factory/
 │   │   └── sync_manifest.json         # Sync history (last 50 runs) + reasoning hashes
 │   └── [00-core|01-data|03-fintech|04-hospitality|05-medical|07-meta-engine]/
 │
-├── profiles/                          # 20+ industry workspace provisioning profiles
-│   ├── redsea-tourism-booking.json
-│   ├── fintech-compliance-launch.json
-│   ├── medical-pharmacy-ops.json
-│   └── [18 additional profiles]
+├── shards/                            # Industrial OS shard sources (/mat copy source)
 │
 ```
 
-**Workspace materialization** lives under **`.ai/scripts/`**: **`factory_materialize.sh`** (same content as **`.ai/scripts/bin/materialize.sh`**; documented slash: **`/mat`** / **`/factory materialize`**). The script is not under `factory/` — it discovers the repo root by locating `workspaces/templates/`.
+**Workspace materialization** lives under **`.ai/scripts/`**: **`factory_materialize.sh`** (same content as **`.ai/scripts/bin/materialize.sh`**; documented slash: **`/mat`** / **`/factory materialize`**). The script is not under `factory/` — it discovers the repo root by locating **`factory/`** + **`workspaces/`**, then reads template trees from **`factory/shards/`** only.
 
 ### 3.4 Tier 3 — `workspaces/` Execution Layer
 
@@ -244,13 +240,7 @@ Each client workspace is a fully isolated sovereign unit:
 
 ```
 workspaces/
-├── templates/                 # 🌌 Industrial OS Shard Registry (v20.2)
-│   ├── CORE_OS_SAAS/          # Full-Stack SaaS Factory
-│   ├── MOBILE_OS_FORGE/       # High-Performance Mobile Forge
-│   ├── WEB_OS_TITAN/          # Web Design & Content Dominance
-│   ├── MENA_OS_BILINGUAL/     # Ar/En Regional SEO Node
-│   ├── ASSET_OS_LAB/          # GenAI Visual Asset Lab
-│   └── BRAND_OS_STRATEGY/     # Industrial Brand Engine
+├── (no templates/ mirror)      # Canonical OS trees: factory/shards/ only
 ├── clients/{slug}/            # Each workspace: fully isolated sovereign unit
 │   ├── metadata.json          # workspace_slug, workspace_type, region, law_151_active,
 │   │                          #   compliance_profile, created_at, factory_version
@@ -915,14 +905,16 @@ python3 factory/library/scripts/maintenance/import_nexu_open_design_skills.py
 python3 factory/scripts/analytics/rebuild_canonical_registries.py
 ```
 
-### 11.4 Workspace Profiles (20+)
+### 11.4 Industrial OS templates & shard metadata
 
-Profiles in `factory/profiles/` define the workspace scaffold:
+**Templates:** Six OMEGA-style trees under **`factory/shards/`** (e.g. `CORE_OS_SAAS`, `WEB_OS_TITAN`). **`bash .ai/scripts/factory_materialize.sh`** (`/mat`) copies one tree into `workspaces/clients/<slug>/` or `workspaces/personal/<slug>/`. **`workspaces/templates/`** is not used; keep all shard sources under **`factory/shards/`** (see `factory/shards/README.md`).
+
+**Per-shard metadata** after materialization (example `metadata.json` fields):
 
 ```json
 {
-  "profile_slug": "redsea-tourism-booking",
-  "workspace_type": "hospitality",
+  "workspace_slug": "my_saas",
+  "workspace_type": "client",
   "region": "MENA",
   "law_151_active": true,
   "components": ["booking_engine", "tax_calculator", "payment_router"],
@@ -931,6 +923,8 @@ Profiles in `factory/profiles/` define the workspace scaffold:
   "compliance_profile": "egypt-pdpl-v1"
 }
 ```
+
+**Retired:** JSON packs under `factory/profiles/` — removed; do not reference in new automation.
 
 ---
 

@@ -20,7 +20,7 @@ class TeachingEngine:
         print("3. /factory make   -> Materialization")
         print("\n[DRY-RUN SIMULATION]")
         print("Command: /factory start acme --region=mena")
-        print("Effect: Creates factory/intake/acme/discovery.json")
+        print("Effect: Creates factory/cfg/intake/acme/discovery.json")
 
 if __name__ == "__main__":
     engine = TeachingEngine("/factory")

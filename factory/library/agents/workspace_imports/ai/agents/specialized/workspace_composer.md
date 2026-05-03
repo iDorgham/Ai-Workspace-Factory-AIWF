@@ -10,7 +10,7 @@ Compose sovereign workspaces from **library-first** components: profiles, manife
 
 ## INPUTS
 - Target slug, template id, layer flags from materialize / factory scripts.
-- `factory/profiles/`, `factory/library/` indexes, and `.ai/plan/` manifests when SDD-gated.
+- `factory/shards/`, `factory/library/` indexes, and `.ai/plan/` manifests when SDD-gated.
 
 ## OUTPUTS
 - Deterministic folder layout under `workspaces/<clients|personal>/<slug>/` with `.ai/` subtree and symlinks per template.

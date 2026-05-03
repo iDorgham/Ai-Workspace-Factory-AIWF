@@ -21,7 +21,7 @@ version: 1.0.0
 2. **Scrape Engine Init**: Scrape Specialist identifies the site structure.
 3. **Data Harvesting**: Extraction of structured fields.
 4. **Law 151/2020 Check**: Audit for PII or sensitive Egyptian data.
-5. **Output Routing**: Save result to `docs/01-plans/` or specified path.
+5. **Output Routing**: Save result to `docs/planning/` or specified path.
 
 ---
 

@@ -66,7 +66,7 @@ All documents created inside `docs/` follow this convention:
 
 ### Examples
 ```
-docs/01-plans/2026-04-23_00-prd_requirements.md
+docs/planning/2026-04-23_aiwf-v7.2-prd.md
 docs/02-specs/2026-04-23_01-hotel-booking_spec.md
 docs/03-architecture/2026-04-23_01-hotel-booking_design.md
 docs/03-architecture/2026-04-23_01-hotel-booking_db-schema.sql
@@ -101,7 +101,7 @@ docs/06-releases/2026-04-23_v1.0.0_release_notes.md
 When any command generates a document, it is auto-routed to the correct `docs/` category using this logic:
 
 ```
-/do output      → docs/01-plans/{date}_{slug}_prd.md
+/do output      → docs/planning/{date}_{slug}_prd.md
 /plan spec.md   → docs/02-specs/{date}_{slug}_spec.md
 /plan design.md → docs/03-architecture/{date}_{slug}_design.md
 /plan contracts → docs/04-contracts/{date}_{slug}_{type}.yaml

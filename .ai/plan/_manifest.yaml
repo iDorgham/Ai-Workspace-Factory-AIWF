@@ -134,35 +134,35 @@ phases:
     name: "Sovereign Commit Automation (v20.0)"
     status: "planned"
     path: "plan/development/19_sovereign_commit/"
-    sdd_doc: "docs/01-plans/2026-04-25_aiwf-git-automation-phases-19-23.md"
+    sdd_doc: "docs/planning/2026-04-25_aiwf-git-automation-phases-19-23.md"
 
   - id: 20
     slug: "push-pull-sovereignty"
     name: "Push/Pull Sovereignty (v20.1)"
     status: "planned"
     path: "plan/development/20_push_pull/"
-    sdd_doc: "docs/01-plans/2026-04-25_aiwf-git-automation-phases-19-23.md"
+    sdd_doc: "docs/planning/2026-04-25_aiwf-git-automation-phases-19-23.md"
 
   - id: 21
     slug: "actions-error-recovery"
     name: "CI/CD Actions Error Recovery (v20.2)"
     status: "planned"
     path: "plan/development/21_actions_recovery/"
-    sdd_doc: "docs/01-plans/2026-04-25_aiwf-git-automation-phases-19-23.md"
+    sdd_doc: "docs/planning/2026-04-25_aiwf-git-automation-phases-19-23.md"
 
   - id: 22
     slug: "tags-release-gates"
     name: "Tags & Release Gates (v20.3)"
     status: "planned"
     path: "plan/development/22_tags_release/"
-    sdd_doc: "docs/01-plans/2026-04-25_aiwf-git-automation-phases-19-23.md"
+    sdd_doc: "docs/planning/2026-04-25_aiwf-git-automation-phases-19-23.md"
 
   - id: 23
     slug: "sovereign-cd"
     name: "Sovereign Continuous Deployment (v20.4)"
     status: "planned"
     path: "plan/development/23_sovereign_cd/"
-    sdd_doc: "docs/01-plans/2026-04-25_aiwf-git-automation-phases-19-23.md"
+    sdd_doc: "docs/planning/2026-04-25_aiwf-git-automation-phases-19-23.md"
 
 active_phase: 18
 omega_gate_status: "verified"
@@ -174,7 +174,7 @@ aiwf_version: "v21.0.0"
 planning_system:
   version: "v21.0.0"
   name: "Tripartite Planning Singularity"
-  sdd_doc: "docs/01-plans/2026-04-25_aiwf-v21-tripartite-planning-singularity.md"
+  sdd_doc: "docs/planning/2026-04-25_aiwf-v21-tripartite-planning-singularity.md"
   reasoning_hash: "sha256:v21-planning-system-2026-04-25"
   registered: "2026-04-25"
 

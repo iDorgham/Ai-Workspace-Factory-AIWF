@@ -31,6 +31,11 @@ workspaces/personal/*
 workspaces/clients/*
 !workspaces/clients/README.md
 
+# Industrial OS shard bodies (large; local working copy — same idea as workspaces/*)
+factory/shards/*
+!factory/shards/.gitkeep
+!factory/shards/README.md
+
 # AIWF Intelligence Layer (MUST BE TRACKED)
 # We remove .ai/ from the ignore list
 .ruff_cache
