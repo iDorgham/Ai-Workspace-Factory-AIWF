@@ -1,13 +1,13 @@
 # 🏛️ AIWF — Product Requirements Document
-## AI Workspace Factory · v20.1.0 OMEGA EQUILIBRIUM
+## AI Workspace Factory · v20.2.0 OMEGA EQUILIBRIUM
 
 **Document Type:** Comprehensive PRD — Self-Contained Reconstruction Reference  
-**Version:** 20.1.0  
+**Version:** 20.2.0  
 **Status:** OMEGA CERTIFIED  
 **Governor:** Dorgham  
 **Created:** 2026-04-25  
-**Updated:** 2026-04-29  
-**Traceability Hash:** sha256:prd-v20-1-final-2026-04-29  
+**Updated:** 2026-05-03  
+**Traceability Hash:** sha256:prd-v20-2-design-library-2026-05-03  
 **Compliance:** Law 151/2020 — Egypt/MENA Data Residency Enforced  
 
 > **Purpose of this document:** A self-contained, high-fidelity PRD sufficient for another AI agent or engineering team to reconstruct the AIWF project from scratch with full fidelity. Every protocol, agent, architecture decision, and acceptance criterion is documented here.
@@ -19,7 +19,8 @@
 1. [Executive Summary & Vision](#1-executive-summary--vision)
 2. [Historical Evolution & Version Timeline](#2-historical-evolution--version-timeline)
 3. [Core Architecture — Three-Tier System](#3-core-architecture--three-tier-system)
-4. [Key Protocols](#4-key-protocols)
+4. [Key Protocols](#4-key-protocols)  
+   - [4.8 External design catalog and vendored bundles](#48-external-design-catalog-and-vendored-skill-bundles)
 5. [Agent Registry](#5-agent-registry)
 6. [9-Core Command Tree](#6-9-core-command-tree)
 7. [Tripartite SDD Planning System](#7-tripartite-sdd-planning-system)
@@ -84,7 +85,8 @@ AIWF is not a code generator. It is a **self-learning neural factory** that:
 | v16–v18 | Governance & Integrity | 2026-04-25 | Complete | Governance phase; 5-vector fix plan; structural integrity hardening |
 | v19.x | Sovereign Commit | 2026-04-25 | Complete | Pre-commit gate; reasoning hash; 3-step FSM commit chain |
 | v20.0 | OMEGA Equilibrium | 2026-04-25 | Complete | 12-point release gate; sovereign git ops; geofencing; swarm mutex safety |
-| **v20.1** | **Industrial Shards** | **2026-04-29** | **Current** | **Industrial shard spawning; `.ai/scripts/factory_materialize.sh` + `/mat`; 6-template OS galaxy** |
+| **v20.1** | **Industrial Shards** | **2026-04-29** | **Complete** | **Industrial shard spawning; `.ai/scripts/factory_materialize.sh` + `/mat`; 6-template OS galaxy** |
+| **v20.2** | **Design Library Equilibrium** | **2026-05-03** | **Current** | **Manifest-driven `external_library_sync`; expanded `templates/design/` + `factory/library/design/`; `nexu_open_design` vendored bundle; pre-commit path exemptions for third-party stems** |
 | v21.0 | Neural Fabric | Planned | Pipeline | Tripartite Planning Singularity; 8 plan types; spec_density_gate_v2 |
 | v22.0+ | Quantum Sovereignty | Future | Planned | See [ROADMAP_LONGTERM.md](ROADMAP_LONGTERM.md) |
 
@@ -124,7 +126,7 @@ Before v21, SDD existed only for the `development/` plan type. v21 expanded to 8
 └─────────────────────────────────────────────────────────┘
 ```
 
-**Cross-cutting (repo root):** `docs/` holds human-facing specs (`PRD.md`, `ROADMAP_LONGTERM.md`, …) and **`docs/reports/`** for generated machine output (e.g. library **`audit_report.json`**). The factory Python harness lives under **`factory/tests/`** (`pytest factory/tests/` from the repo root).
+**Cross-cutting (repo root):** `docs/` holds human-facing specs (`PRD.md`, **`CONTEXT.md`** — fast agent/human orientation, `ROADMAP_LONGTERM.md`, …) and **`docs/reports/`** for generated machine output (e.g. library **`audit_report.json`**). The factory Python harness lives under **`factory/tests/`** (`pytest factory/tests/` from the repo root).
 
 ### 3.2 Tier 1 — `.ai/` Metadata Layer
 
@@ -140,6 +142,12 @@ Before v21, SDD existed only for the `development/` plan type. v21 expanded to 8
 │       ├── registry.yaml         # Canonical agent registry (id, tier, capabilities, bindings)
 │       ├── routing_map.yaml      # Command → agent routing
 │       └── sub_agent_contracts.json
+│
+├── registry/                 # JSON registries (skills, subagents, commands, schemas, adapters)
+│
+├── templates/
+│   ├── design/               # Per-provider design.md packs + catalog.json + README (external_library_sync)
+│   └── subagents/          # Claude/Codex catalog mirrors (upstream kebab-case filenames)
 │
 ├── commands/
 │   ├── guide.md   # Merged `/guide` registry + Antigravity humanization (single source)
@@ -210,8 +218,12 @@ factory/
 │
 ├── library/
 │   ├── agents/                        # Shared agent definitions
-│   ├── skills/                        # Synthesized skill shards
-│   ├── templates/                     # Industrial blueprints
+│   ├── skills/                        # Sovereign skills + vendored trees (github_imports/, nexu_open_design/)
+│   ├── design/                        # Mirror of .ai/templates/design/ (provider design.md packs)
+│   ├── templates/                     # Industrial blueprints + design/subagents mirrors
+│   ├── registry/                      # external_sources.registry.json, *.registry.json aggregates
+│   ├── reports/                       # external_library_merge_report.{json,md}, other merge audits
+│   ├── scripts/maintenance/           # external_library_sync.py, import_nexu_open_design_skills.py, …
 │   ├── planning/                      # Mirror of .ai/plan/ (planning_mirror_sync target)
 │   │   └── sync_manifest.json         # Sync history (last 50 runs) + reasoning hashes
 │   └── [00-core|01-data|03-fintech|04-hospitality|05-medical|07-meta-engine]/
@@ -232,7 +244,7 @@ Each client workspace is a fully isolated sovereign unit:
 
 ```
 workspaces/
-├── templates/                 # 🌌 Industrial OS Shard Registry (v20.1)
+├── templates/                 # 🌌 Industrial OS Shard Registry (v20.2)
 │   ├── CORE_OS_SAAS/          # Full-Stack SaaS Factory
 │   ├── MOBILE_OS_FORGE/       # High-Performance Mobile Forge
 │   ├── WEB_OS_TITAN/          # Web Design & Content Dominance
@@ -320,7 +332,7 @@ python3 factory/scripts/core/planning_mirror_sync.py --dry-run
 ```
 
 **3-Step FSM (`chain_executor.py`):**
-1. `integrity_auditor` — snake_case naming + mirror drift check + no `TODO_P_L_A_C_E_H_O_L_D_E_R`
+1. `integrity_auditor` — snake_case naming (with vendored `skip_prefixes`) + mirror drift check + no `TODO_P_L_A_C_E_H_O_L_D_E_R`
 2. `documentation_architect` — README/PRD evolution check + append-only validation
 3. `registry_guardian` — reasoning hash generation + commit execution
 
@@ -346,7 +358,7 @@ No version ships without passing all 12 gates. Script: `factory/scripts/core/ome
 | Data Residency | G3 | Law 151 geofencing active on all MENA workspaces | 100% |
 | Reasoning Hash | G4 | Last N commits carry hash | 100% |
 | Spec Density | G5 | All non-draft phases ≥12 files, C4 present | EXIT 0 on gate |
-| Naming Convention | G6 | All files/identifiers snake_case | Zero violations |
+| Naming Convention | G6 | snake_case on staged first-party paths | Zero violations outside `skip_prefixes` in `factory/scripts/core/pre_commit_gate.py` (includes `github_imports/`, `nexu_open_design/`) |
 | Agent Registry | G7 | No ID collisions in registry.yaml | Zero collisions |
 | Pre-commit Hook | G8 | `.git/hooks/pre-commit` installed and active | Present + executable |
 | Planning Mirror | G9 | `sync_manifest.json` timestamp < 24h | Current |
@@ -419,6 +431,31 @@ All optional network connections (Omega Relay port 9001, P2P peers) must use non
 - `p2p_node.connect_to_peer()` — `PEER_CONNECT_TIMEOUT_S = 2.0` — prevents factory freeze
 - All relay calls must time out in ≤1s and be non-blocking
 - Relay absence is non-fatal; silently skipped
+
+### 4.8 External Design Catalog and Vendored Skill Bundles
+
+**Purpose:** Keep UI/design “provider packs” and selected third-party skill trees current without breaking sovereign naming rules for first-party code.
+
+**Design catalog (provider packs):**
+
+- **Source of truth (templates):** `.ai/templates/design/<provider>/design.md` plus aggregate **`catalog.json`** and **`README.md`** (regenerated; do not hand-edit provider lists without re-running sync).
+- **Outbound mirrors:** `factory/library/design/` and `factory/library/templates/design/` stay aligned with `.ai/templates/design/` via `industrial_mirror_sync.py` and/or the external sync pipeline.
+
+**Manifest-driven external ingest:**
+
+- **Manifest:** `factory/library/registry/external_sources.registry.json` — declares Git URLs, branches, categories (e.g. design packs, skills), and merge tier.
+- **Script:** `factory/library/scripts/maintenance/external_library_sync.py` — clones or updates upstream shallow repos, performs smart merge, refreshes catalogs, and writes **`factory/library/reports/external_library_merge_report.json`** (machine) and **`.md`** (human summary).
+- **Optional importer:** `factory/library/scripts/maintenance/import_nexu_open_design_skills.py` — stages Nexu Open Design-style multi-skill bundles under `factory/library/skills/nexu_open_design/`.
+
+**Registry aggregation:**
+
+- `factory/scripts/analytics/rebuild_canonical_registries.py` rebuilds canonical JSON registries (e.g. skills) when library membership changes materially.
+
+**Pre-commit interaction:**
+
+- The sovereign commit gate enforces **snake_case file stems** on staged paths except **documented prefix exemptions** (same class as `factory/library/skills/github_imports/`): vendored trees may retain upstream kebab-case. **`factory/library/skills/nexu_open_design/`** is exempted as bundled third-party content. First-party `.ai/` and `factory/` paths outside those prefixes remain strict.
+
+**Acceptance:** After a sync run, `catalog.json` parses as JSON; merge report timestamps advance; `pytest factory/tests/` remains green; no secrets in merge reports.
 
 ---
 
@@ -714,12 +751,14 @@ jobs:
 Installed as `.git/hooks/pre-commit` (symlink → `factory/scripts/core/pre_commit_gate.py`)
 
 **Checks:**
-1. All staged files use `snake_case` naming
-2. Mirror drift delta < threshold
+1. Staged paths must use `snake_case` **file stems** except under **skip prefixes** defined in `pre_commit_gate.py` / `pre_commit_hook_v2.py` (e.g. `docs/`, `.github/`, `factory/library/skills/github_imports/`, **`factory/library/skills/nexu_open_design/`**, `.ai/templates/subagents/`, `.ai/logs/`, … — see source for the authoritative list).
+2. Mirror drift delta < threshold (`check_mirror_drift.py`)
 3. No `TODO_P_L_A_C_E_H_O_L_D_E_R` strings in staged content
 4. Spec density gate on any modified plan phases
 
 **Exit behavior:** Exit code 1 blocks commit entirely.
+
+**Installer:** Copy `factory/scripts/core/pre_commit_hook_v2.py` to `.git/hooks/pre-commit` and `chmod +x` per script header (some clones symlink directly to `pre_commit_gate.py`).
 
 ### 8.4 Versioning Schema
 
@@ -857,6 +896,25 @@ python3 factory/scripts/core/omega_release_gate.py --all
 # Returns: exit 0 (OMEGA EQUILIBRIUM), 1 (gate failure)
 ```
 
+**`external_library_sync.py`**
+```python
+# Usage (from repo root; writes reports under factory/library/reports/):
+python3 factory/library/scripts/maintenance/external_library_sync.py
+# Manifest: factory/library/registry/external_sources.registry.json
+```
+
+**`import_nexu_open_design_skills.py`**
+```python
+# Optional: vendor Nexu Open Design skill bundle under factory/library/skills/nexu_open_design/
+python3 factory/library/scripts/maintenance/import_nexu_open_design_skills.py
+```
+
+**`rebuild_canonical_registries.py`**
+```python
+# Usage: refresh .ai/registry and factory/library/registry JSON aggregates
+python3 factory/scripts/analytics/rebuild_canonical_registries.py
+```
+
 ### 11.4 Workspace Profiles (20+)
 
 Profiles in `factory/profiles/` define the workspace scaffold:
@@ -969,8 +1027,8 @@ python3 factory/scripts/core/omega_release_gate.py --all
 
 ---
 
-*Governor: Dorgham · PRD Version: 21.0.0 · Date: 2026-04-28*  
-*Evolution Hash: sha256:prd-v21-final-2026-04-28*  
+*Governor: Dorgham · PRD Version: 20.2.0 · Date: 2026-05-03*  
+*Evolution Hash: sha256:prd-v20-2-design-library-2026-05-03*  
 *Law 151/2020 Enforced — All context processed on MENA-SOIL*
 
 **Sovereign Intelligence. Absolute Equilibrium.**

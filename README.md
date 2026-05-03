@@ -4,7 +4,7 @@
 
 # 🏛️ AI WORKSPACE FACTORY
 
-<img src="https://img.shields.io/badge/Version-v20.1.0-2563EB?style=for-the-badge" alt="version"/>
+<img src="https://img.shields.io/badge/Version-v20.2.0-2563EB?style=for-the-badge" alt="version"/>
 <img src="https://img.shields.io/badge/Status-OMEGA_EQUILIBRIUM-8B5CF6?style=for-the-badge" alt="status"/>
 <img src="https://img.shields.io/badge/Audit_Score-100%2F100-F59E0B?style=for-the-badge" alt="audit"/>
 <img src="https://img.shields.io/badge/Compliance-Law_151%2F2020-10B981?style=for-the-badge" alt="compliance"/>
@@ -22,7 +22,7 @@
 > An industrial-grade AI orchestration engine that builds, governs, and scales  
 > sovereign digital verticals — from a single command to a production-ready ecosystem.
 
-[📖 PRD](docs/PRD.md) · [🗺️ Long-Term Roadmap](docs/ROADMAP_LONGTERM.md) · [🎮 Guide Reference](.ai/commands/guide.md) · [⚙️ Changelog](.ai/logs/)
+[📖 PRD](docs/PRD.md) · [🧭 Context](docs/CONTEXT.md) · [📚 Docs index](docs/README.md) · [🗺️ Long-Term Roadmap](docs/ROADMAP_LONGTERM.md) · [🎮 Guide Reference](.ai/commands/guide.md) · [⚙️ Changelog](.ai/logs/)
 
 </div>
 
@@ -39,7 +39,7 @@
 ```
 One command → A fully spec'd, compliant, production-ready sovereign workspace
 
-AIWF v20.1.0 introduces the **Industrial OS Galaxy** — six OMEGA-certified workspace templates under `workspaces/templates/`. **Spawn a new shard** from the repo root with:
+AIWF v20.2.0 extends the **Industrial OS Galaxy** (six OMEGA-certified workspace templates under `workspaces/templates/`) with a **manifest-driven design catalog** (provider `design.md` packs under `.ai/templates/design/` and `factory/library/design/`). **Spawn a new shard** from the repo root with:
 
 `bash .ai/scripts/factory_materialize.sh` (or **`bash .ai/scripts/bin/materialize.sh`** — same file via convenience symlink)
 
@@ -63,6 +63,7 @@ Generated audits and similar artifacts go under **`docs/reports/`** (not the rep
 | 🛡️ **Self-Healing Architecture** | Healing Bot v2 detects structural drift and auto-remediates within 100ms |
 | 🚀 **12-Point OMEGA Release Gate** | No version ships without passing mirror drift, path integrity, residency, traceability, and 8 other certification checks |
 | 🌐 **P2P Node Engine** | Factory-internal peer discovery and secure component exchange across nodes |
+| 🎨 **Design Catalog & External Sync** | Provider-level `design.md` packs, `catalog.json`, and `external_library_sync.py` merge reports under `factory/library/reports/` — keeps UI guidance library-current |
 
 ---
 
@@ -118,9 +119,11 @@ graph TD
 
 ```
 AIWF/
-├── docs/                         ← PRD, roadmap, context; **`docs/reports/`** = generated audits (not repo root)
+├── docs/                         ← PRD, CONTEXT, roadmap, **docs/README.md** index; **`docs/reports/`** = generated audits (not repo root)
 ├── .ai/                          ← 🧠 Metadata & Intelligence Layer
 │   ├── agents/                   ← Agent registry, routing map, sub-agent contracts
+│   ├── registry/                 ← JSON registries (skills, subagents, schemas, adapters)
+│   ├── templates/design/        ← Provider UI/design packs (`design.md` per provider) + catalog
 │   ├── commands/                 ← 9-core command specs (guide, dev, plan, git…)
 │   ├── scripts/                  ← `factory_materialize.sh` (+ **`bin/materialize.sh`** symlink for `/mat`)
 │   ├── governance/               ← Versioning policy, SDD protocols, compliance
@@ -142,11 +145,11 @@ AIWF/
 │   │   ├── automation/           ← saas_scaffolder, workspace provisioner
 │   │   └── maintenance/          ← health_scorer, chaos_validator, log_broadcaster
 │   ├── tests/                    ← Python repo harness (`pytest factory/tests/` from root)
-│   ├── library/                  ← Shared agents, skills, templates, planning mirror
+│   ├── library/                  ← Shared agents, skills, **design/** packs, templates, registry, reports, planning mirror
 │   └── profiles/                 ← 20+ industry workspace profiles
 │
 └── workspaces/                   ← 📦 Sovereign shards (see workspaces/README.md)
-    ├── templates/                ← 🌌 Industrial OS templates (v20.1; local clone content — see .gitignore)
+    ├── templates/                ← 🌌 Industrial OS templates (v20.2+; local clone content — see .gitignore)
     │   ├── CORE_OS_SAAS/         ← Full-Stack SaaS Factory
     │   ├── MOBILE_OS_FORGE/      ← High-Performance Mobile Forge
     │   ├── WEB_OS_TITAN/         ← Web & Content Dominance Shard
@@ -369,7 +372,8 @@ feat(content): add phase-03 detailed design
 |---------|---------|--------|---------|
 | v19.x | Sovereign Commit | ✅ Complete | Pre-commit hook, reasoning hash, FSM chain executor |
 | v20.0 | OMEGA Equilibrium | ✅ Complete | 12-point gate, sovereign git ops, geofencing, swarm safety |
-| **v21.0** | **Neural Fabric** | ✅ **Current** | **Tripartite Planning Singularity, 8 plan types, density gate v2, multi-CLI** |
+| **v20.2** | **Design Library Equilibrium** | ✅ **Current** | **External library sync, expanded design catalog, vendored `nexu_open_design`, pre-commit exemptions for third-party stems** |
+| v21.0 | Neural Fabric | 🏗️ Planned | Tripartite Planning Singularity, 8 plan types, density gate v2, multi-CLI |
 | v22.0 | COSMIC ANCHOR | 🏗️ Planned | Multi-cloud autonomy, distributed P2P library, quantum-safe encryption |
 | v23.0 | NEURAL BRIDGE | 🔭 Research | Factory-as-a-Service, zero-draft PRD, 60-second workspace |
 | v24.0 | GALAXY SWARM | 🌌 Vision | Cross-instance P2P sync, infinite context engine, agent bidding |
@@ -383,7 +387,7 @@ feat(content): add phase-03 detailed design
 
 AIWF operates under a **Sovereign Commit Protocol**. All contributions must:
 
-1. Pass the pre-commit gate (`snake_case` enforcement, no `TODO_P_L_A_C_E_H_O_L_D_E_R`, mirror drift < threshold)
+1. Pass the pre-commit gate (`snake_case` on first-party paths; documented **skip prefixes** for vendored trees such as `factory/library/skills/github_imports/` and `factory/library/skills/nexu_open_design/`; no `TODO_P_L_A_C_E_H_O_L_D_E_R`; mirror drift < threshold)
 2. Carry a reasoning hash in the commit message
 3. Include a Law 151/2020 certification flag for MENA-touching changes
 4. Pass spec density gate on all modified plan phases (exit code 0)
@@ -401,11 +405,11 @@ Workspace-to-library promotions require 3-agent consensus + governor approval vi
 
 ---
 
-🏛️ **AI Workspace Factory** · v20.1.0 · OMEGA EQUILIBRIUM
+🏛️ **AI Workspace Factory** · v20.2.0 · OMEGA EQUILIBRIUM
 
 Governor: **Dorgham** · Compliance: **Law 151/2020** · Region: **MENA-SOIL**
 
-*[PRD](docs/PRD.md) · [Long-Term Roadmap](docs/ROADMAP_LONGTERM.md) · [Guide Reference](.ai/commands/guide.md)*
+*[PRD](docs/PRD.md) · [Context](docs/CONTEXT.md) · [Docs index](docs/README.md) · [Long-Term Roadmap](docs/ROADMAP_LONGTERM.md) · [Guide Reference](.ai/commands/guide.md)*
 
 **Sovereign Intelligence. Absolute Equilibrium.**
 

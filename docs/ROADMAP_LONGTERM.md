@@ -2,13 +2,15 @@
 ## Path to Omega Singularity
 
 **Classification**: Sovereign Technical Directive  
-**Author**: Master Guide | AIWF v21.0.0 Neural Fabric  
-**Issued**: 2026-04-28T07:45:00+03:00  
+**Author**: Master Guide | AIWF v20.2.0 (Design Library Equilibrium baseline)  
+**Issued**: 2026-05-03T00:00:00+00:00  
 **Horizon**: 2026–2035+  
 **Governor**: Dorgham  
 **Compliance Baseline**: Law 151/2020 (MENA-SOIL) | AES-256-GCM | SHA-256 Reasoning Chain  
-**Reasoning Hash**: `sha256:roadmap-longterm-v22-v35-omega-singularity-2026-04-28`  
+**Reasoning Hash**: `sha256:roadmap-longterm-v22-v35-omega-singularity-2026-05-03`  
 **Status**: AUTHORITATIVE — Supersedes all prior directional documents  
+
+**Related:** Current-release behavior and gates are defined in [PRD.md](PRD.md) and summarized in [CONTEXT.md](CONTEXT.md).
 
 > *"The factory that builds itself becomes the factory that builds everything."*
 
