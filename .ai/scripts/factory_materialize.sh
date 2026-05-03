@@ -148,9 +148,11 @@ cp -R "$SELECTED_TEMPLATE" "$TARGET_PATH"
 echo "🧬 Localizing intelligence fabric..."
 TEMPLATE_NAME=$(basename "$SELECTED_TEMPLATE")
 grep -rl "$TEMPLATE_NAME" "$TARGET_PATH" | xargs sed -i '' "s|$TEMPLATE_NAME|$TARGET_NAME|g" 2>/dev/null || true
-grep -rl "workspaces/templates" "$TARGET_PATH" | xargs sed -i '' "s|workspaces/templates|workspaces/$(basename "$TARGET_PARENT")|g" 2>/dev/null || true
-grep -rl "factory/shards" "$TARGET_PATH" | xargs sed -i '' "s|factory/shards|workspaces/$(basename "$TARGET_PARENT")|g" 2>/dev/null || true
-grep -rl "factory/workspace_templates/os_shards" "$TARGET_PATH" | xargs sed -i '' "s|factory/workspace_templates/os_shards|workspaces/$(basename "$TARGET_PARENT")|g" 2>/dev/null || true
+# Intentionally do not rewrite factory/shards, workspaces/templates, or legacy
+# factory/workspace_templates/os_shards to workspaces/<layer>: from inside
+# workspaces/{clients,personal}/<slug>/ those targets are wrong and nested files
+# would need depth-specific ../../... paths anyway. Keep canonical repo-root paths
+# in copied docs; authors may add relative links where needed.
 
 cd "$TARGET_PATH"
 if [[ -x ./.ai/scripts/01_core/workspace_sanitize.sh ]]; then

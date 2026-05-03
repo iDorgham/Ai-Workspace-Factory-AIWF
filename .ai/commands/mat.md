@@ -34,6 +34,7 @@ The script **prints** templates with indices, then asks **in order**:
 
 ## Notes
 
+- After copy, the script renames **only** the template **folder basename** to your chosen **slug** inside text files. It does **not** rewrite **`factory/shards`**, **`workspaces/templates`**, or legacy **`factory/workspace_templates/os_shards`** strings: a single replacement cannot be correct for every file depth under the new shard, and rewriting to `workspaces/<layer>` was incorrect from inside `workspaces/<layer>/<slug>/`.
 - Same engine as **`/factory materialize`** — shorter slash for daily use.
 - Use Cursor **Terminal** (or any TTY); chat stdin is not reliable for `read`.
 - After success: open the new folder in Cursor and continue shard onboarding (e.g. `/git onboard` if defined there).
