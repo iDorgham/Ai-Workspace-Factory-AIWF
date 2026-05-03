@@ -66,4 +66,4 @@ This skill maps Workspace Factory tasks and commands to the right MCP tools. Use
 - **GitHub** — repo, issues, PRs (Docker or remote)
 - **Postgres / Neon** — DB introspection, read-only queries
 
-**Config:** `docs/MCP_SETUP.md`, `.antigravity/mcp.json` (project), `~/.antigravity/mcp.json` (global)
+**Config:** `docs/guides/MCP_SETUP.md`, `.antigravity/mcp.json` (project), `~/.antigravity/mcp.json` (global)

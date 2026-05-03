@@ -27,7 +27,9 @@ def render_structure_map():
             for p in projects:
                 p_path = os.path.join(c_path, p)
                 has_ai = "✅ .ai/" if os.path.exists(os.path.join(p_path, ".ai")) else "❌ NO .ai/"
-                has_prd = "📄 PRD.md" if os.path.exists(os.path.join(p_path, "docs/PRD.md")) else "🚧 No PRD"
+                _prd = os.path.join(p_path, "docs/product/PRD.md")
+                _prd_legacy = os.path.join(p_path, "docs/PRD.md")
+                has_prd = "📄 PRD.md" if (os.path.isfile(_prd) or os.path.isfile(_prd_legacy)) else "🚧 No PRD"
                 print(f"│   └── {p:<25} {has_ai} | {has_prd}")
     print("")
 

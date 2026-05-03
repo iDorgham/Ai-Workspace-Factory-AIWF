@@ -1,6 +1,6 @@
 # `factory/` — AIWF engine layer
 
-Executable Python packages, automation scripts, tests, the **global library**, and **industrial OS shard sources** under **`factory/shards/`**. Canonical human specs live in repo-root **`docs/`** (`docs/PRD.md`, `docs/CONTEXT.md`, …); runtime logs and factory-generated artifacts go under **`docs/reports/`** (including **`docs/reports/factory/`**).
+Executable Python packages, automation scripts, tests, the **global library**, and **industrial OS shard sources** under **`factory/shards/`**. Canonical human specs live under **`docs/`** (`docs/product/PRD.md`, `docs/overview/CONTEXT.md`, …); runtime logs and factory-generated artifacts go under **`docs/reports/`** (including **`docs/reports/factory/`**).
 
 ---
 
@@ -38,4 +38,4 @@ Do not flatten these into one folder without a dedicated migration (imports and 
 ## Related
 
 - Materialize: `bash .ai/scripts/factory_materialize.sh` (repo root).
-- Orientation: `docs/CONTEXT.md` · Full spec: `docs/PRD.md`.
+- Orientation: `docs/overview/CONTEXT.md` · Full spec: `docs/product/PRD.md`.

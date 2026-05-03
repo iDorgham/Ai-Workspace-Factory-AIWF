@@ -23,7 +23,8 @@ def log_scaffolding(action, details):
 class AppScaffolder:
     def __init__(self, project_path):
         self.project_path = project_path
-        self.prd_path = os.path.join(project_path, "docs/PRD.md")
+        _prd = os.path.join(project_path, "docs/product/PRD.md")
+        self.prd_path = _prd if os.path.isfile(_prd) else os.path.join(project_path, "docs/PRD.md")
 
     def resolve_profile(self):
         """Extract the profile name from the PRD or directory metadata."""

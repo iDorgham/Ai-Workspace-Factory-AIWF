@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="docs/assets/banner-3.png" alt="AIWF Industrial Banner" width="100%">
-
 # 🏛️ AI WORKSPACE FACTORY
 
 <img src="https://img.shields.io/badge/Version-v20.2.0-2563EB?style=for-the-badge" alt="version"/>
@@ -22,7 +20,7 @@
 > An industrial-grade AI orchestration engine that builds, governs, and scales  
 > sovereign digital verticals — from a single command to a production-ready ecosystem.
 
-[📖 PRD](docs/PRD.md) · [🧭 Context](docs/CONTEXT.md) · [📚 Docs index](docs/README.md) · [🗺️ Long-Term Roadmap](docs/ROADMAP_LONGTERM.md) · [🎮 Guide Reference](.ai/commands/guide.md) · [⚙️ Changelog](.ai/logs/)
+[📖 PRD](docs/product/PRD.md) · [🧭 Context](docs/overview/CONTEXT.md) · [📚 Docs index](docs/README.md) · [🗺️ Long-Term Roadmap](docs/product/ROADMAP_LONGTERM.md) · [🎮 Guide Reference](.ai/commands/guide.md) · [⚙️ Changelog](.ai/logs/)
 
 </div>
 
@@ -119,7 +117,7 @@ graph TD
 
 ```
 AIWF/
-├── docs/                         ← PRD, CONTEXT, roadmap, **docs/README.md** index; **`docs/reports/`** = generated audits (not repo root)
+├── docs/                         ← **README.md** hub; **product/** PRD+roadmap; **overview/** CONTEXT; **guides/**; **planning/**; **reports/** (generated)
 ├── .ai/                          ← 🧠 Metadata & Intelligence Layer
 │   ├── agents/                   ← Agent registry, routing map, sub-agent contracts
 │   ├── registry/                 ← JSON registries (skills, subagents, schemas, adapters)
@@ -375,7 +373,7 @@ feat(content): add phase-03 detailed design
 | v24.0 | GALAXY SWARM | 🌌 Vision | Cross-instance P2P sync, infinite context engine, agent bidding |
 | v30+ | OMEGA SINGULARITY | 🌌 Long-term | Self-architecting core, market-aware synthesis, zero-human operations |
 
-→ **[Full Long-Term Roadmap (v22→v30+) →](docs/ROADMAP_LONGTERM.md)**
+→ **[Full Long-Term Roadmap (v22→v30+) →](docs/product/ROADMAP_LONGTERM.md)**
 
 ---
 
@@ -405,7 +403,7 @@ Workspace-to-library promotions require 3-agent consensus + governor approval vi
 
 Governor: **Dorgham** · Compliance: **Law 151/2020** · Region: **MENA-SOIL**
 
-*[PRD](docs/PRD.md) · [Context](docs/CONTEXT.md) · [Docs index](docs/README.md) · [Long-Term Roadmap](docs/ROADMAP_LONGTERM.md) · [Guide Reference](.ai/commands/guide.md)*
+*[PRD](docs/product/PRD.md) · [Context](docs/overview/CONTEXT.md) · [Docs index](docs/README.md) · [Long-Term Roadmap](docs/product/ROADMAP_LONGTERM.md) · [Guide Reference](.ai/commands/guide.md)*
 
 **Sovereign Intelligence. Absolute Equilibrium.**
 

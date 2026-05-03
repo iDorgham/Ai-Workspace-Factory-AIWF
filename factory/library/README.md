@@ -2,7 +2,7 @@
 
 This directory is the **global component library** for AIWF: agents, skills, templates, design packs, registries, and mirrored planning artifacts. Workspaces consume from here; they do not fork the library as a competing source of truth.
 
-**See also:** [docs/CONTEXT.md](../../docs/CONTEXT.md) (orientation), [docs/PRD.md](../../docs/PRD.md) §3.3 and §4.8 (full protocol). **Industrial OS shard sources** (not under `library/`): sibling **`../shards/`** + **`bash .ai/scripts/factory_materialize.sh`**.
+**See also:** [docs/overview/CONTEXT.md](../../docs/overview/CONTEXT.md) (orientation), [docs/product/PRD.md](../../docs/product/PRD.md) §3.3 and §4.8 (full protocol). **Industrial OS shard sources** (not under `library/`): sibling **`../shards/`** + **`bash .ai/scripts/factory_materialize.sh`**.
 
 ---
 

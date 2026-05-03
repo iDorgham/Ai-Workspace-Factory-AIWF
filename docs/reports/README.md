@@ -20,6 +20,6 @@ Runtime logs and JSON state previously under **`factory/reports/`** now live her
 |----------|-------------|
 | `external_library_merge_report.json` / `.md` | `python3 factory/library/scripts/maintenance/external_library_sync.py` |
 
-Orientation: [docs/CONTEXT.md](../CONTEXT.md) · Full spec: [docs/PRD.md](../PRD.md) §4.8.
+Orientation: [docs/overview/CONTEXT.md](../overview/CONTEXT.md) · Full spec: [docs/product/PRD.md](../product/PRD.md) §4.8.
 
 Add new report types here (e.g. `similarity_scan.json`) rather than writing to the repo root.
