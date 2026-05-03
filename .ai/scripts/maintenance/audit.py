@@ -22,7 +22,7 @@ def audit():
         # Look for agents and skills
         for f in files:
             path = os.path.join(root, f)
-            if f == 'SKILL.md':
+            if f in ('SKILL.md', 'skill.md'):
                 with open(path, 'r', encoding='utf-8') as file:
                     content = file.readlines()
                     lines = len([l for l in content if l.strip()])

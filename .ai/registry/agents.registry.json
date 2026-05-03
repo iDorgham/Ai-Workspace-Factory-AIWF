@@ -1,1142 +1,551 @@
 {
+  "_meta": {
+    "version": "2.0.0",
+    "source": "rebuild_canonical_registries.py"
+  },
   "agents": [
     {
+      "id": "antigravity-agent",
+      "path": ".ai/agents/core/antigravity.md",
+      "tier": 1,
+      "role": "antigravity-agent",
+      "single_responsibility": "See antigravity.md",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
       "meta": {},
-      "path": "factory/library/15-music-sound-engineering/music-production/agents/MusicProducer/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/10-operations-qa/training/agents/SentinelTraining/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/10-operations-qa/project-management/agents/SentinelProjectManagement/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/10-operations-qa/execution/agents/SentinelExecution/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/10-operations-qa/execution/agents/Router/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/10-operations-qa/execution/agents/ErrorDetective/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/10-operations-qa/execution/agents/DependencyManager/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/10-operations-qa/execution/agents/Guide/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/10-operations-qa/execution/agents/AssetOptimizer/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/10-operations-qa/execution/agents/PromptOptimizer/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/10-operations-qa/execution/agents/WorkflowAgent/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/10-operations-qa/execution/agents/Automation/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/10-operations-qa/execution/agents/Orchestrator/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/10-operations-qa/execution/agents/MemoryManager/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/10-operations-qa/execution/agents/Debugger/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/10-operations-qa/execution/agents/Optimizer/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/10-operations-qa/execution/agents/ClientPreview/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/10-operations-qa/execution/agents/RuntimeOrchestrator/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/10-operations-qa/execution/agents/Retro/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/10-operations-qa/execution/agents/ProductManager/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/10-operations-qa/quality-assurance/agents/SentinelQualityAssurance/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/10-operations-qa/supply-chain/agents/SentinelSupplyChain/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/10-operations-qa/performance-ops/agents/Admin/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/10-operations-qa/performance-ops/agents/VisualQa/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/10-operations-qa/performance-ops/agents/EscalationHandler/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/10-operations-qa/performance-ops/agents/Reviewer/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/10-operations-qa/performance-ops/agents/RetroFacilitator/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/10-operations-qa/performance-ops/agents/MetricsAgent/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/10-operations-qa/performance-ops/agents/Automation/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/archive/legacy_pillars/02-web-platforms/cloud-architecture/agents/SentinelCloudArchitecture/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/archive/legacy_pillars/02-web-platforms/web-developing/agents/SentinelWebDeveloping/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/archive/legacy_pillars/02-web-platforms/app-developing/agents/SentinelAppDeveloping/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/archive/legacy_pillars/02-web-platforms/api-design/agents/SentinelApiDesign/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/archive/legacy_pillars/02-web-platforms/saas-platforms/agents/SentinelSaasPlatforms/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/devops/agents/SentinelDevops/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/ios-apple/agents/SentinelIosApple/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/developing/agents/MlEngineer/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/developing/agents/Security/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/developing/agents/Mobile/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/developing/agents/SentinelDeveloping/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/developing/agents/Frontend/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/developing/agents/MultiTenantArchitect/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/developing/agents/PerformanceEngineer/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/developing/agents/Reviewer/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/developing/agents/Backend/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/developing/agents/GrowthEngineer/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/developing/agents/WorkspaceManager/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/developing/agents/Escalation/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/developing/agents/ContextSlicer/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/developing/agents/DBA/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/developing/agents/DataArchitect/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/developing/agents/IntegrationSpecialist/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/developing/agents/LegalReview/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/developing/agents/ContractLock/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/developing/agents/Risk/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/developing/agents/I18n/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/developing/agents/Devops/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/developing/agents/QA/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/developing/agents/Cortex/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/developing/agents/ComplianceOfficer/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/backend/agents/SentinelBackend/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/testing/agents/SentinelTesting/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/engineering-core/agents/ErrorDetective/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/engineering-core/agents/Frontend/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/engineering-core/agents/SentinelEngineeringCore/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/engineering-core/agents/Backend/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/engineering-core/agents/DBA/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/01-software-engineering/engineering-core/agents/QA/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/archive/legacy_pillars/06-branding/brand-strategy/agents/BrandDirector/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/archive/legacy_pillars/06-branding/agency-ops/agents/SentinelAgencyOps/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/archive/legacy_pillars/06-branding/brand-governance/agents/DesignSystem/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/archive/legacy_pillars/06-branding/brand-governance/agents/BrandGuardian/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/03-security-compliance/fintech-banking/agents/FintechStrategist/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/03-security-compliance/identity/agents/SentinelIdentity/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/03-security-compliance/mena-regulatory-compliance/agents/RiskAgent/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/03-security-compliance/mena-regulatory-compliance/agents/ContractLock/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/03-security-compliance/fintech-compliance/agents/SentinelFintechCompliance/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/03-security-compliance/cyber-security/agents/Security/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/03-security-compliance/cyber-security/agents/SentinelCyberSecurity/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/03-security-compliance/data-sovereignty/agents/SentinelDataSovereignty/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/03-security-compliance/legal-tech/agents/SentinelLegalTech/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/09-social-engagement/social-media/agents/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/09-social-engagement/social-media/agents/SentinelSocialMedia/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/09-social-engagement/community-engagement/agents/SentinelCommunityEngagement/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/09-social-engagement/viral-loops/agents/SentinelViralLoops/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/09-social-engagement/influencer-ops/agents/SentinelInfluencerOps/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {
-        "audit_tier": 1,
-        "dependencies": [
-          "core-orchestration"
-        ],
-        "power_score": 95,
-        "quality_status": "omega",
-        "version": "4.1.0"
-      },
-      "path": "factory/library/09-social-engagement/agents/social-media-specialist/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/11-industry-verticals/education-lms/agents/SentinelEducationLms/AGENT.md",
-      "status": "active"
-    },
-    {
+      "status": "active"
+    },
+    {
+      "id": "brainstorm-agent",
+      "path": ".ai/agents/specialized/brainstorm.md",
+      "tier": 1,
+      "role": "brainstorm-agent",
+      "single_responsibility": "See brainstorm.md",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
       "meta": {},
-      "path": "factory/library/11-industry-verticals/hospital-clinic/agents/SentinelHospitalClinic/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {
-        "audit_tier": 1,
-        "dependencies": [
-          "core-orchestration"
-        ],
-        "power_score": 97,
-        "quality_status": "omega",
-        "version": "11.0.0"
-      },
-      "path": "factory/library/11-industry-verticals/real-estate-dev/agents/SentinelRealEstateDev/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {
-        "audit_tier": 1,
-        "dependencies": [
-          "core-orchestration"
-        ],
-        "power_score": 93,
-        "quality_status": "omega",
-        "version": "11.0.0"
-      },
-      "path": "factory/library/11-industry-verticals/real-estate-dev/agents/PropertyAnalyst/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/11-industry-verticals/fitness-wellness/agents/SentinelFitnessWellness/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {
-        "audit_tier": 1,
-        "dependencies": [
-          "core-orchestration"
-        ],
-        "power_score": 96,
-        "quality_status": "omega",
-        "version": "4.1.0"
-      },
-      "path": "factory/library/11-industry-verticals/legal-brokerage/agents/LegalCounsel/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {
-        "audit_tier": 1,
-        "dependencies": [
-          "core-orchestration"
-        ],
-        "power_score": 97,
-        "quality_status": "omega",
-        "version": "4.1.0"
-      },
-      "path": "factory/library/11-industry-verticals/legal-brokerage/agents/SentinelLegalBrokerage/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {
-        "audit_tier": 1,
-        "dependencies": [
-          "core-orchestration"
-        ],
-        "power_score": 94,
-        "quality_status": "omega",
-        "version": "4.1.0"
-      },
-      "path": "factory/library/11-industry-verticals/lodging-hotel/agents/SentinelLodgingHotel/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {
-        "audit_tier": 1,
-        "dependencies": [
-          "core-orchestration"
-        ],
-        "power_score": 96,
-        "quality_status": "omega",
-        "version": "11.0.0"
-      },
-      "path": "factory/library/11-industry-verticals/islamic-finance/agents/SentinelIslamicFinance/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/11-industry-verticals/f-and-b-ops/agents/SentinelFAndBOps/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {
-        "audit_tier": 1,
-        "dependencies": [
-          "core-orchestration"
-        ],
-        "power_score": 98,
-        "quality_status": "omega",
-        "version": "11.0.0"
-      },
-      "path": "factory/library/11-industry-verticals/healthtech-pharma/agents/SentinelHealthtechPharma/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/11-industry-verticals/healthtech-pharma/agents/HealthConsultant/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/11-industry-verticals/crypto-web3/agents/SentinelCryptoWeb3/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/11-industry-verticals/crypto-web3/agents/Web3Architect/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {
-        "audit_tier": 1,
-        "dependencies": [
-          "core-orchestration"
-        ],
-        "power_score": 99,
-        "quality_status": "omega",
-        "version": "11.0.0"
-      },
-      "path": "factory/library/11-industry-verticals/ecommerce-retail/agents/SentinelEcommerceRetail/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/11-industry-verticals/agency-creative/agents/SentinelAgencyCreative/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/11-industry-verticals/ai-automation-lab/agents/SentinelAiAutomationLab/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {
-        "audit_tier": 1,
-        "dependencies": [
-          "core-orchestration"
-        ],
-        "power_score": 94,
-        "quality_status": "omega",
-        "version": "4.1.0"
-      },
-      "path": "factory/library/11-industry-verticals/tourism-travel/agents/SentinelTourismTravel/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {
-        "audit_tier": 1,
-        "dependencies": [
-          "core-orchestration"
-        ],
-        "power_score": 94,
-        "quality_status": "omega",
-        "version": "4.1.0"
-      },
-      "path": "factory/library/11-industry-verticals/real-estate-brokerage/agents/SentinelRealEstateBrokerage/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/04-business-strategy/sales-revenue/agents/SentinelSalesRevenue/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/04-business-strategy/growth-strategy/agents/SentinelGrowthStrategy/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/04-business-strategy/venture-design/agents/SentinelVentureDesign/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/04-business-strategy/business/agents/Forecasting/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/04-business-strategy/business/agents/Founder/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/04-business-strategy/business/agents/TravelAgent/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/04-business-strategy/business/agents/HospitalityDomainExpert/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/04-business-strategy/business/agents/BusinessAnalyst/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/04-business-strategy/business/agents/VentureArchitect/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/04-business-strategy/business/agents/SentinelBusiness/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/04-business-strategy/business/agents/Venture/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {
-        "audit_tier": 1,
-        "dependencies": [
-          "core-orchestration"
-        ],
-        "power_score": 95,
-        "quality_status": "omega",
-        "version": "4.1.0"
-      },
-      "path": "factory/library/04-business-strategy/agents/account-manager/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/04-business-strategy/finance-ops/agents/SentinelFinanceOps/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/08-media-production/image-production/agents/SentinelImageProduction/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/08-media-production/design/agents/DesignDirector/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/08-media-production/design/agents/DesignSystem/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/08-media-production/ai-generative-media/agents/SentinelAiGenerativeMedia/AGENT.md",
-      "status": "active"
-    },
-    {
+      "status": "active"
+    },
+    {
+      "id": "brand-agent",
+      "path": ".ai/agents/specialized/brand.md",
+      "tier": 1,
+      "role": "brand-agent",
+      "single_responsibility": "See brand.md",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
       "meta": {},
-      "path": "factory/library/08-media-production/visual-design/agents/SentinelVisualDesign/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {
-        "audit_tier": 1,
-        "dependencies": [
-          "core-orchestration"
-        ],
-        "power_score": 95,
-        "quality_status": "omega",
-        "version": "4.1.0"
-      },
-      "path": "factory/library/08-media-production/agents/stylist/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {
-        "audit_tier": 1,
-        "dependencies": [
-          "core-orchestration"
-        ],
-        "power_score": 95,
-        "quality_status": "omega",
-        "version": "4.1.0"
-      },
-      "path": "factory/library/08-media-production/agents/creative-director/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {
-        "audit_tier": 1,
-        "dependencies": [
-          "core-orchestration"
-        ],
-        "power_score": 95,
-        "quality_status": "omega",
-        "version": "4.1.0"
-      },
-      "path": "factory/library/08-media-production/agents/cinematographer/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {
-        "audit_tier": 1,
-        "dependencies": [
-          "core-orchestration"
-        ],
-        "power_score": 95,
-        "quality_status": "omega",
-        "version": "4.1.0"
-      },
-      "path": "factory/library/08-media-production/agents/vfx-artist/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {
-        "audit_tier": 1,
-        "dependencies": [
-          "core-orchestration"
-        ],
-        "power_score": 95,
-        "quality_status": "omega",
-        "version": "4.1.0"
-      },
-      "path": "factory/library/08-media-production/agents/digital-artist/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {
-        "audit_tier": 1,
-        "dependencies": [
-          "core-orchestration"
-        ],
-        "power_score": 95,
-        "quality_status": "omega",
-        "version": "4.1.0"
-      },
-      "path": "factory/library/08-media-production/agents/motion-designer/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {
-        "audit_tier": 1,
-        "dependencies": [
-          "core-orchestration"
-        ],
-        "power_score": 95,
-        "quality_status": "omega",
-        "version": "4.1.0"
-      },
-      "path": "factory/library/08-media-production/agents/art-director/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {
-        "audit_tier": 1,
-        "dependencies": [
-          "core-orchestration"
-        ],
-        "power_score": 95,
-        "quality_status": "omega",
-        "version": "4.1.0"
-      },
-      "path": "factory/library/08-media-production/agents/video-editor/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/08-media-production/audio-tech/agents/SentinelAudioTech/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/08-media-production/3d-production/agents/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/08-media-production/3d-production/agents/3DTechnicalArtist/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/08-media-production/3d-production/agents/Sentinel3dProduction/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/08-media-production/video-production/agents/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/08-media-production/video-production/agents/SentinelVideoProduction/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/12-meta-engine/blueprints/agents/SentinelBlueprints/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/12-meta-engine/tools-ai/agents/SentinelToolsAi/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/12-meta-engine/library-taxonomy/agents/SentinelLibraryTaxonomy/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/12-meta-engine/scripts/agents/SentinelScripts/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/12-meta-engine/meta-orchestration/agents/Router/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/12-meta-engine/meta-orchestration/agents/Guide/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/12-meta-engine/meta-orchestration/agents/ContextSlicer/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/12-meta-engine/meta-orchestration/agents/Orchestrator/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/12-meta-engine/meta-orchestration/agents/SentinelMetaOrchestration/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {},
-      "path": "factory/library/12-meta-engine/meta-orchestration/agents/Cortex/AGENT.md",
-      "status": "active"
-    },
-    {
+      "status": "active"
+    },
+    {
+      "id": "chaos-validator",
+      "path": ".ai/agents/core/chaos_validator.json",
+      "tier": 1,
+      "role": "chaos-validator",
+      "single_responsibility": "See chaos_validator.json",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
       "meta": {},
-      "path": "factory/library/05-data-analytics/ai-automation-ops/agents/SentinelAiAutomationOps/AGENT.md",
-      "status": "active"
-    },
-    {
+      "status": "active"
+    },
+    {
+      "id": "content-planner-agent",
+      "path": ".ai/agents/specialized/content_planner.md",
+      "tier": 1,
+      "role": "content-planner-agent",
+      "single_responsibility": "See content_planner.md",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
       "meta": {},
-      "path": "factory/library/05-data-analytics/analysis/agents/Analytics/AGENT.md",
-      "status": "active"
-    },
-    {
+      "status": "active"
+    },
+    {
+      "id": "creator-agent",
+      "path": ".ai/agents/specialized/creator.md",
+      "tier": 1,
+      "role": "creator-agent",
+      "single_responsibility": "See creator.md",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
       "meta": {},
-      "path": "factory/library/05-data-analytics/analysis/agents/Metrics/AGENT.md",
-      "status": "active"
-    },
-    {
+      "status": "active"
+    },
+    {
+      "id": "dependency-resolver-agent",
+      "path": ".ai/agents/specialized/dependency_resolver.md",
+      "tier": 1,
+      "role": "dependency-resolver-agent",
+      "single_responsibility": "See dependency_resolver.md",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
       "meta": {},
-      "path": "factory/library/05-data-analytics/analysis/agents/Scraper/AGENT.md",
       "status": "active"
     },
     {
+      "id": "deployment-specialist-agent",
+      "path": ".ai/agents/specialized/deployment_specialist.md",
+      "tier": 1,
+      "role": "deployment-specialist-agent",
+      "single_responsibility": "See deployment_specialist.md",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
       "meta": {},
-      "path": "factory/library/05-data-analytics/analysis/agents/UxResearcher/AGENT.md",
       "status": "active"
     },
     {
+      "id": "documentation-architect-agent",
+      "path": ".ai/agents/specialized/documentation_architect.md",
+      "tier": 1,
+      "role": "documentation-architect-agent",
+      "single_responsibility": "See documentation_architect.md",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
       "meta": {},
-      "path": "factory/library/05-data-analytics/analysis/agents/Researcher/AGENT.md",
       "status": "active"
     },
     {
+      "id": "factory-orchestrator",
+      "path": ".ai/agents/core/factory_orchestrator.md",
+      "tier": 1,
+      "role": "factory-orchestrator",
+      "single_responsibility": "See factory_orchestrator.md",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
       "meta": {},
-      "path": "factory/library/05-data-analytics/analysis/agents/KnowledgeSynthesizer/AGENT.md",
       "status": "active"
     },
     {
+      "id": "guide-agent",
+      "path": ".ai/agents/core/master_guide.md",
+      "tier": 1,
+      "role": "guide-agent",
+      "single_responsibility": "See master_guide.md",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
       "meta": {},
-      "path": "factory/library/05-data-analytics/analysis/agents/IntelSynthesizer/AGENT.md",
       "status": "active"
     },
     {
+      "id": "healing-bot-v2",
+      "path": ".ai/agents/core/healing_bot_v2.md",
+      "tier": 1,
+      "role": "healing-bot-v2",
+      "single_responsibility": "See healing_bot_v2.md",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
       "meta": {},
-      "path": "factory/library/05-data-analytics/analysis/agents/SentinelAnalysis/AGENT.md",
       "status": "active"
     },
     {
+      "id": "integrity-auditor-agent",
+      "path": ".ai/agents/specialized/integrity_auditor.md",
+      "tier": 1,
+      "role": "integrity-auditor-agent",
+      "single_responsibility": "See integrity_auditor.md",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
       "meta": {},
-      "path": "factory/library/05-data-analytics/analysis/agents/Tutor/AGENT.md",
       "status": "active"
     },
     {
+      "id": "legal-content-writer-agent",
+      "path": ".ai/agents/specialized/legal_content_writer.md",
+      "tier": 1,
+      "role": "legal-content-writer-agent",
+      "single_responsibility": "See legal_content_writer.md",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
       "meta": {},
-      "path": "factory/library/05-data-analytics/market-research/agents/SentinelMarketResearch/AGENT.md",
       "status": "active"
     },
     {
+      "id": "library-curator",
+      "path": ".ai/agents/core/library_curator.md",
+      "tier": 1,
+      "role": "library-curator",
+      "single_responsibility": "See library_curator.md",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
       "meta": {},
-      "path": "factory/library/05-data-analytics/cultural-intelligence/agents/SentinelCulturalIntelligence/AGENT.md",
       "status": "active"
     },
     {
+      "id": "memory-manager-agent",
+      "path": ".ai/agents/specialized/memory_manager.md",
+      "tier": 1,
+      "role": "memory-manager-agent",
+      "single_responsibility": "See memory_manager.md",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
       "meta": {},
-      "path": "factory/library/14-ai-intelligence/ai-enterprise/agents/AiOps/AGENT.md",
       "status": "active"
     },
     {
+      "id": "migration-upgrader-agent",
+      "path": ".ai/agents/specialized/migration_upgrader.md",
+      "tier": 1,
+      "role": "migration-upgrader-agent",
+      "single_responsibility": "See migration_upgrader.md",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
       "meta": {},
-      "path": "factory/library/13-gaming-entertainment/game-engines/agents/GameArchitect/AGENT.md",
       "status": "active"
     },
     {
+      "id": "neural-fabric-sync-agent",
+      "path": ".ai/agents/specialized/neural_fabric_sync.md",
+      "tier": 1,
+      "role": "neural-fabric-sync-agent",
+      "single_responsibility": "See neural_fabric_sync.md",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
       "meta": {},
-      "path": "factory/library/07-visibility-optimization/traditional-seo/agents/VisibilityArchitect/AGENT.md",
       "status": "active"
     },
     {
+      "id": "profile-architect-agent",
+      "path": ".ai/agents/specialized/profile_architect.md",
+      "tier": 1,
+      "role": "profile-architect-agent",
+      "single_responsibility": "See profile_architect.md",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
       "meta": {},
-      "path": "factory/library/07-visibility-optimization/seo/agents/SEO/AGENT.md",
       "status": "active"
     },
     {
+      "id": "recursive-engine",
+      "path": ".ai/agents/core/recursive_engine.json",
+      "tier": 1,
+      "role": "recursive-engine",
+      "single_responsibility": "See recursive_engine.json",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
       "meta": {},
-      "path": "factory/library/07-visibility-optimization/seo/agents/SentinelSeo/AGENT.md",
       "status": "active"
     },
     {
+      "id": "registry-guardian",
+      "path": ".ai/agents/core/registry_guardian.md",
+      "tier": 1,
+      "role": "registry-guardian",
+      "single_responsibility": "See registry_guardian.md",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
       "meta": {},
-      "path": "factory/library/17-performance-marketing-growth/digital-ads-mastery/agents/AdStrategist/AGENT.md",
       "status": "active"
     },
     {
+      "id": "research-agent",
+      "path": ".ai/agents/specialized/research.md",
+      "tier": 1,
+      "role": "research-agent",
+      "single_responsibility": "See research.md",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
       "meta": {},
-      "path": "factory/library/17-performance-marketing-growth/digital-ads-mastery/agents/MediaBuyer/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {
-        "audit_tier": 1,
-        "dependencies": [
-          "core-orchestration"
-        ],
-        "power_score": 95,
-        "quality_status": "omega",
-        "version": "4.1.0"
-      },
-      "path": "factory/library/17-performance-marketing-growth/agents/digital-advertising-specialist/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {
-        "audit_tier": 1,
-        "dependencies": [
-          "core-orchestration"
-        ],
-        "power_score": 95,
-        "quality_status": "omega",
-        "version": "4.1.0"
-      },
-      "path": "factory/library/17-performance-marketing-growth/agents/senior-digital-marketing/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {
-        "audit_tier": 1,
-        "dependencies": [
-          "core-orchestration"
-        ],
-        "power_score": 95,
-        "quality_status": "omega",
-        "version": "4.1.0"
-      },
-      "path": "factory/library/17-performance-marketing-growth/agents/senior-marketing-specialist/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {
-        "audit_tier": 1,
-        "dependencies": [
-          "core-orchestration"
-        ],
-        "power_score": 95,
-        "quality_status": "omega",
-        "version": "4.1.0"
-      },
-      "path": "factory/library/17-performance-marketing-growth/agents/media-buyer/AGENT.md",
       "status": "active"
     },
     {
-      "meta": {
-        "audit_tier": 1,
-        "dependencies": [
-          "core-orchestration"
-        ],
-        "power_score": 95,
-        "quality_status": "omega",
-        "version": "4.1.0"
-      },
-      "path": "factory/library/17-performance-marketing-growth/agents/marketing-manager/AGENT.md",
-      "status": "active"
-    },
-    {
+      "id": "revenue-orchestrator-agent",
+      "path": ".ai/agents/specialized/revenue_orchestrator.md",
+      "tier": 1,
+      "role": "revenue-orchestrator-agent",
+      "single_responsibility": "See revenue_orchestrator.md",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
       "meta": {},
-      "path": "factory/library/16-content-dominance/social-content/agents/Content/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {
-        "audit_tier": 1,
-        "dependencies": [
-          "core-orchestration"
-        ],
-        "power_score": 95,
-        "quality_status": "omega",
-        "version": "4.1.0"
-      },
-      "path": "factory/library/16-content-dominance/agents/arabic-content-creator/AGENT.md",
       "status": "active"
     },
     {
+      "id": "scraper-agent",
+      "path": ".ai/agents/specialized/scraper.md",
+      "tier": 1,
+      "role": "scraper-agent",
+      "single_responsibility": "See scraper.md",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
       "meta": {},
-      "path": "factory/library/16-content-dominance/written-content/agents/ContentDirector/AGENT.md",
       "status": "active"
     },
     {
+      "id": "security-auditor-agent",
+      "path": ".ai/agents/specialized/security_auditor.md",
+      "tier": 1,
+      "role": "security-auditor-agent",
+      "single_responsibility": "See security_auditor.md",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
       "meta": {},
-      "path": "factory/library/16-content-dominance/written-content/agents/SentinelCopywriting/AGENT.md",
       "status": "active"
     },
     {
+      "id": "seo-agent",
+      "path": ".ai/agents/specialized/seo.md",
+      "tier": 1,
+      "role": "seo-agent",
+      "single_responsibility": "See seo.md",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
       "meta": {},
-      "path": "factory/library/16-content-dominance/video-narrative/agents/Creator/AGENT.md",
       "status": "active"
     },
     {
+      "id": "seo-research-agent",
+      "path": ".ai/agents/specialized/seo_research.md",
+      "tier": 1,
+      "role": "seo-research-agent",
+      "single_responsibility": "See seo_research.md",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
       "meta": {},
-      "path": "factory/library/16-content-dominance/video-narrative/agents/Content/AGENT.md",
       "status": "active"
     },
     {
+      "id": "source-sync-manager-agent",
+      "path": ".ai/agents/specialized/source_sync_manager.md",
+      "tier": 1,
+      "role": "source-sync-manager-agent",
+      "single_responsibility": "See source_sync_manager.md",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
+      "meta": {},
+      "status": "active"
+    },
+    {
+      "id": "spec-architect-agent",
+      "path": ".ai/agents/specialized/spec_architect.md",
+      "tier": 1,
+      "role": "spec-architect-agent",
+      "single_responsibility": "See spec_architect.md",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
+      "meta": {},
+      "status": "active"
+    },
+    {
+      "id": "swarm-router-v3",
+      "path": ".ai/agents/core/swarm_router_v3.md",
+      "tier": 1,
+      "role": "swarm-router-v3",
+      "single_responsibility": "See swarm_router_v3.md",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
+      "meta": {},
+      "status": "active"
+    },
+    {
+      "id": "teaching-agent",
+      "path": ".ai/agents/core/teaching.md",
+      "tier": 1,
+      "role": "teaching-agent",
+      "single_responsibility": "See teaching.md",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
+      "meta": {},
+      "status": "active"
+    },
+    {
+      "id": "validation-auditor-agent",
+      "path": ".ai/agents/specialized/validation_auditor.md",
+      "tier": 1,
+      "role": "validation-auditor-agent",
+      "single_responsibility": "See validation_auditor.md",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
+      "meta": {},
+      "status": "active"
+    },
+    {
+      "id": "workflow-agent",
+      "path": ".ai/agents/specialized/workflow.md",
+      "tier": 1,
+      "role": "workflow-agent",
+      "single_responsibility": "See workflow.md",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
+      "meta": {},
+      "status": "active"
+    },
+    {
+      "id": "workspace-composer-agent",
+      "path": ".ai/agents/specialized/workspace_composer.md",
+      "tier": 1,
+      "role": "workspace-composer-agent",
+      "single_responsibility": "See workspace_composer.md",
+      "owns": [],
+      "triggers": [],
+      "subagents": [],
+      "input_contract": [],
+      "output_contract": [],
+      "validation_gates": [],
+      "error_handling": [],
       "meta": {},
-      "path": "factory/library/16-content-dominance/video-narrative/agents/SentinelContentCreation/AGENT.md",
-      "status": "active"
-    },
-    {
-      "path": "factory/library/07-meta/agents/symbolic-logic-orchestrator/AGENT.md",
-      "tier": "Tier 1",
-      "status": "STRUCTURAL"
-    },
-    {
-      "meta": {
-        "audit_tier": 1,
-        "dependencies": ["core-orchestration"],
-        "power_score": 99,
-        "quality_status": "omega",
-        "version": "11.0.0"
-      },
-      "path": "factory/library/11-industry-verticals/energy-renewables/agents/SentinelEnergyTech/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {
-        "audit_tier": 1,
-        "dependencies": ["core-orchestration"],
-        "power_score": 98,
-        "quality_status": "omega",
-        "version": "11.0.0"
-      },
-      "path": "factory/library/11-industry-verticals/gov-public-sector/agents/SentinelGovPublicSector/AGENT.md",
-      "status": "active"
-    },
-    {
-      "meta": {
-        "audit_tier": 1,
-        "quality_status": "omega",
-        "version": "11.0.0"
-      },
-      "path": "factory/library/11-industry-verticals/gov-public-sector/agents/DigitalTransformationConsultant/AGENT.md",
       "status": "active"
     }
   ]

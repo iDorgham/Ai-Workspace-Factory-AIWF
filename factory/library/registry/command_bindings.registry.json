@@ -81,7 +81,7 @@
       "pattern_refs": ["brand"],
       "primary_agent": "brand-agent",
       "subagent_pipeline": ["discovery-engine"],
-      "skill_refs": ["marketing-brand-strategy"]
+      "skill_refs": ["marketing-brand-voice"]
     },
     {
       "id": "extract_brand_voice",
@@ -157,7 +157,7 @@
       "id": "review",
       "pattern_refs": ["review"],
       "primary_agent": "workflow-agent",
-      "subagent_pipeline": ["voice-validator", "seo-optimizer"],
+      "subagent_pipeline": ["quality-checker", "keyword-auditor", "technical-auditor"],
       "skill_refs": []
     },
     {

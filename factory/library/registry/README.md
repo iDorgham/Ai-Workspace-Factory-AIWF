@@ -6,7 +6,7 @@ This directory is the canonical source of runtime-discoverable orchestration def
 - `agents.registry.json`: one entry per agent definition file.
 - `subagents.registry.json`: one entry per sub-agent contract file.
 - `skills.registry.json`: one entry per .ai/workspace/[external-path] skill handle.
-- `command-bindings.registry.json`: command IDs mapped to agent + sub-agent pipelines.
+- `command_bindings.registry.json`: command IDs mapped to agent + sub-agent pipelines.
 
 ## Schema Contracts
 - `schemas/agent.schema.json`

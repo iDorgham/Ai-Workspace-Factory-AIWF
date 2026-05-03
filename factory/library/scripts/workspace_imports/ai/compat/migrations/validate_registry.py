@@ -4,7 +4,15 @@ from pathlib import Path
 from collections import Counter
 
 
-ROOT = Path(__file__).resolve().parents[2]
+def _repo_root() -> Path:
+    here = Path(__file__).resolve()
+    for p in here.parents:
+        if (p / "AGENTS.md").is_file():
+            return p
+    return here.parents[8]
+
+
+ROOT = _repo_root()
 
 
 def load_json(path: Path):
@@ -32,7 +40,7 @@ def main():
     agents = load_json(ROOT / ".ai/registry/agents.registry.json")["agents"]
     subagents = load_json(ROOT / ".ai/registry/subagents.registry.json")["subagents"]
     skills = load_json(ROOT / ".ai/registry/skills.registry.json")["skills"]
-    bindings = load_json(ROOT / ".ai/registry/command-bindings.registry.json")["bindings"]
+    bindings = load_json(ROOT / ".ai/registry/command_bindings.registry.json")["bindings"]
 
     assert_no_dupes(agents, "agents")
     assert_no_dupes(subagents, "subagents")
