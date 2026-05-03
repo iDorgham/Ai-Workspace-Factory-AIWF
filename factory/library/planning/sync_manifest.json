@@ -65,11 +65,29 @@
       "types_missing": [],
       "files_copied": 264,
       "files_excluded": 0
+    },
+    {
+      "timestamp": "2026-05-03T00:48:00.608836+00:00",
+      "reasoning_hash": "sha256:8478ca5a715fe4f2",
+      "dry_run": false,
+      "types_synced": [
+        "development",
+        "content",
+        "seo",
+        "social_media",
+        "marketing",
+        "business",
+        "media",
+        "branding"
+      ],
+      "types_missing": [],
+      "files_copied": 330,
+      "files_excluded": 0
     }
   ],
   "last_sync": {
-    "timestamp": "2026-04-28T22:25:06.447909+00:00",
-    "reasoning_hash": "sha256:5e1b4c36f96180a2",
+    "timestamp": "2026-05-03T00:48:00.608836+00:00",
+    "reasoning_hash": "sha256:8478ca5a715fe4f2",
     "dry_run": false,
     "types_synced": [
       "development",
@@ -82,7 +100,7 @@
       "branding"
     ],
     "types_missing": [],
-    "files_copied": 264,
+    "files_copied": 330,
     "files_excluded": 0
   }
 }
