@@ -20,11 +20,11 @@ AIWF is a **spec-driven orchestration factory**: a curated system of agents, ski
 |------|----------|
 | Full product spec, gates, compliance | [docs/product/PRD.md](../product/PRD.md) |
 | Long-range evolution | [docs/product/ROADMAP_LONGTERM.md](../product/ROADMAP_LONGTERM.md) |
-| Agent registry and workspace rules | [AGENTS.md](../AGENTS.md) (repo root) |
-| Slash commands and humanized `/guide` | [.ai/commands/guide.md](../.ai/commands/guide.md) |
-| Active planning phases and manifest | [.ai/plan/_manifest.yaml](../.ai/plan/_manifest.yaml) |
-| Generated audits and machine reports | [docs/reports/](reports/) |
-| Workspace spawn script | [.ai/scripts/factory_materialize.sh](../.ai/scripts/factory_materialize.sh) (alias: `bin/materialize.sh`) |
+| Agent registry and workspace rules | [AGENTS.md](../../AGENTS.md) (repo root) |
+| Slash commands and humanized `/guide` | [.ai/commands/guide.md](../../.ai/commands/guide.md) |
+| Active planning phases and manifest | [.ai/plan/_manifest.yaml](../../.ai/plan/_manifest.yaml) |
+| Generated audits and machine reports | [docs/reports/](../reports/) |
+| Workspace spawn script | [.ai/scripts/factory_materialize.sh](../../.ai/scripts/factory_materialize.sh) (alias: `bin/materialize.sh`) |
 
 ---
 
@@ -32,7 +32,7 @@ AIWF is a **spec-driven orchestration factory**: a curated system of agents, ski
 
 1. **`.ai/`** — Plans, commands, governance, registries, logs, and **template mirrors** (including `templates/design/` for UI/design provider packs).
 2. **`factory/`** — Executable engine: `factory/scripts/`, `factory/core/`, **`factory/library/`** (agents, skills, design packs, planning mirror, reports), **`factory/shards/`** (OS copy sources), **`factory/cfg/`** (config bundle), **`factory/stubs/`** (scaffold seeds), tests.
-3. **`workspaces/`** — Runtime shards (`clients/`, `personal/`). Template bodies live under **`factory/shards/`** (often gitignored); paths and behavior are documented in [workspaces/README.md](../workspaces/README.md).
+3. **`workspaces/`** — Runtime shards (`clients/`, `personal/`). Template bodies live under **`factory/shards/`** (often gitignored); paths and behavior are documented in [workspaces/README.md](../../workspaces/README.md).
 
 Cross-cutting documentation: **`docs/`** (this file, PRD, roadmap). Do not store generated audit JSON in the repo root; use **`docs/reports/`**.
 

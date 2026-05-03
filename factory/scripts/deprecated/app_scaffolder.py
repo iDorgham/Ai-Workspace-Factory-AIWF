@@ -24,7 +24,12 @@ class AppScaffolder:
     def __init__(self, project_path):
         self.project_path = project_path
         _prd = os.path.join(project_path, "docs/product/PRD.md")
-        self.prd_path = _prd if os.path.isfile(_prd) else os.path.join(project_path, "docs/PRD.md")
+        _canonical = os.path.join(project_path, "docs/product/PRD.md")
+        self.prd_path = _prd if os.path.isfile(_prd) else (
+            _canonical if os.path.isfile(_canonical) else os.path.join(
+                project_path, "docs/archive/legacy-root-redirects/PRD.md"
+            )
+        )
 
     def resolve_profile(self):
         """Extract the profile name from the PRD or directory metadata."""

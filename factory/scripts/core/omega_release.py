@@ -27,7 +27,9 @@ class OmegaReleaseGate:
         """Final industrial audit before release."""
         checklist = {
             "PRD_EXISTS": os.path.isfile(os.path.join(self.project_path, "docs/product/PRD.md"))
-            or os.path.isfile(os.path.join(self.project_path, "docs/PRD.md")),
+            or os.path.isfile(
+                os.path.join(self.project_path, "docs/archive/legacy-root-redirects/PRD.md")
+            ),
             "SRC_INITIALIZED": os.path.exists(os.path.join(self.project_path, "src")),
             "CONFIG_VALID": os.path.exists(os.path.join(self.project_path, "industrial.config.json")),
             "SOVEREIGN_ISOLATION": os.path.exists(os.path.join(self.project_path, ".ai"))

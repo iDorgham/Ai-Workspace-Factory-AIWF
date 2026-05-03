@@ -118,7 +118,7 @@ Before v21, SDD existed only for the `development/` plan type. v21 expanded to 8
 ├─────────────────────────────────────────────────────────┤
 │  TIER 2 — CORE ENGINE & SCRIPTS  (factory/)             │
 │  Orchestration scripts · Global library                  │
-│  Workspace profiles · CI/CD hooks                        │
+│  Shards / cfg / stubs · CI/CD hooks                     │
 ├─────────────────────────────────────────────────────────┤
 │  TIER 3 — EXECUTION ENVIRONMENTS  (workspaces/)         │
 │  Sovereign client workspaces                             │
@@ -126,7 +126,7 @@ Before v21, SDD existed only for the `development/` plan type. v21 expanded to 8
 └─────────────────────────────────────────────────────────┘
 ```
 
-**Cross-cutting (repo root):** `docs/` holds human-facing specs (`PRD.md`, **`CONTEXT.md`** — fast agent/human orientation, `ROADMAP_LONGTERM.md`, …) and **`docs/reports/`** for generated machine output (e.g. library **`audit_report.json`**). The factory Python harness lives under **`factory/tests/`** (`pytest factory/tests/` from the repo root).
+**Cross-cutting (repo root):** `docs/` holds human-facing specs by category — **`docs/product/PRD.md`**, **`docs/overview/CONTEXT.md`**, **`docs/product/ROADMAP_LONGTERM.md`**, plus **`docs/guides/`**, **`docs/planning/`**, **`docs/context/`**, … — and **`docs/reports/`** for generated machine output (e.g. library **`audit_report.json`**). Index: **`docs/README.md`**. The factory Python harness lives under **`factory/tests/`** (`pytest factory/tests/` from the repo root).
 
 ### 3.2 Tier 1 — `.ai/` Metadata Layer
 

@@ -76,9 +76,9 @@ Human-facing specifications for the **AI Workspace Factory (AIWF)**. Generated m
 
 ---
 
-## Shortcuts (stubs)
+## Legacy URLs
 
-These root-level files redirect to the categories above: [CONTEXT.md](CONTEXT.md), [PRD.md](PRD.md), [ROADMAP_LONGTERM.md](ROADMAP_LONGTERM.md), [MCP_SETUP.md](MCP_SETUP.md).
+Root-level **`docs/CONTEXT.md`**, **`docs/PRD.md`**, **`docs/ROADMAP_LONGTERM.md`**, and **`docs/MCP_SETUP.md`** were **archived** under **[`archive/legacy-root-redirects/`](archive/legacy-root-redirects/README.md)** (same “moved” stubs). Prefer the category paths in the tables above for all new links and automation.
 
 ---
 
