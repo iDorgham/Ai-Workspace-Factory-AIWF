@@ -1,7 +1,19 @@
 {
-  "generated_at": "2026-04-30T19:54:46.637389+00:00",
+  "generated_at": "2026-05-03T01:21:24.959935+00:00",
   "type": "design_catalog",
   "providers": [
+    {
+      "provider": "agentic",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "ce14e4eeab155ae072d31859a3a1867cc793ec2a725d0a5826ceaf417e919309",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
     {
       "provider": "airbnb",
       "provenance": [
@@ -15,8 +27,15 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "c2aec65a40059add97707875968181a46c6bd4548e5210f5e68f74b8ab6cf9de",
+          "digest": "1403d136972fa854ebfd613d1929d61e279af558b6ab393e4bdede1b08570623",
           "license": "MIT",
+          "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "4cd7b1972080ebeb2c360b27271e1d898c153c46c9d7f038ed512bb5130577fc",
+          "license": "Apache-2.0",
           "selected": false
         }
       ]
@@ -34,9 +53,28 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "09c4233119968df9fae0de07de037a68a4414a98e3842172f158b2b1a3808915",
+          "digest": "9d7177378fe35a29e387ccf9255f8d92ea1fb7167dc2fd8b43b02c05fe57c6b9",
           "license": "MIT",
           "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "2bf4a6f853c23c8cf04f890654ad3cebec849a98de1655425b65e3ad25b69476",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "ant",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "c41abccc721cf0eb6f2a0bf2e9282be3bcbdaf649adc1320b86f8df9721a0aa0",
+          "license": "Apache-2.0",
+          "selected": true
         }
       ]
     },
@@ -53,8 +91,82 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "6e42cde879791b62dffab3b43575b0ef957c0072e9f080d0ca5c790643b15208",
+          "digest": "180ddcdc4d2124fc6d9723236f0d345329e84eed0fea2a2ee4ed34f6752f2fa0",
           "license": "MIT",
+          "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "001c06b02855b8443b397bfef583be5dedfd96391dcae94d7e3050e64841ed4d",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "application",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "129690c16ee13cc430e7fd4bbc310078ca058269990f800f7142f9c5c7628ed8",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "arc",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "59eec6f733a4a55f95f3c1e7b6cb329349c9b3f1774d74042146ad42809f430f",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "artistic",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "93e7d039b0465848ca0c00ca0546552ad9c6c70bbb3f991e18a9303d7844f8fa",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "bento",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "ee9bf8da9e4f7615e22d4417a39540891b9312ce63b318ce480dfb6441ca8f59",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "binance",
+      "provenance": [
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "02e3d8f4aa25bb1ce1e51b40c9070f3a619c9583c587751cc77e1f04b82f3072",
+          "license": "MIT",
+          "selected": true
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "7e86c5ac3bb21e1a8f210dab37cf6f5fad0252015ce8959afe5ddffca55abde8",
+          "license": "Apache-2.0",
           "selected": false
         }
       ]
@@ -72,9 +184,83 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "425e64ae4b4fc7c01afa249cf33ad50b2bb06c2b1b8f3a3f136894c6377b5c35",
+          "digest": "1231f1076d701afc47d512560c72548540111633990e9d020729b535672f8c3a",
           "license": "MIT",
           "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "f04fb9e29769c567674bfbba43bebaa01760f303d5bd544770dd80bdf7e807fb",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "bmw-m",
+      "provenance": [
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "97263ccae3b6f9eb15b84afb27652a4e5cf37f53841131842fa5a546d9043648",
+          "license": "MIT",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "bold",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "91ccb39dbfdf2388d28c4dad2a8b88bf4340a98c0e72dd2a829d26507ecc1f8c",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "brutalism",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "c0abb32cad80011f3001bd9645f2a2478f52ddcd9928a4624767148f786c818a",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "bugatti",
+      "provenance": [
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "c52cc8463568ffe3af4fb0c103bcabf992c6a578588b0141435a8a4b0dd44a99",
+          "license": "MIT",
+          "selected": true
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "67f88865f620c03d2582af03fa2a1ca87599633deaab240035feb1ab8255cd05",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "cafe",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "e26e9bf3a43cf547a985d1b879a8b4bb36033cb95185c6f900380a74e5722ddf",
+          "license": "Apache-2.0",
+          "selected": true
         }
       ]
     },
@@ -91,9 +277,28 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "1cb3ac2cf13cfd05cfabf5874528ed549044b5e9eb4e8de2d8693b7ddcf8be30",
+          "digest": "6a50c3a7cdfcf51f2a343b384939c6d7d67552cc0f4d317af06cb7a3327ba54a",
           "license": "MIT",
           "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "520e5c64e4dc6e368e4870ae2b0470225d587a41e426399475046e3932c690a1",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "canva",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "0dd369bc89b510773c577d494eb7f4e7c6363444a900198d2e99c2d670c16b56",
+          "license": "Apache-2.0",
+          "selected": true
         }
       ]
     },
@@ -110,8 +315,15 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "3a9dca099083e06a1937dc56717fb9139f49c112a013fb3d7c4399e39d537a9a",
+          "digest": "02952426a638db620cd759767b624831ebcb433aa9f2c001735454cd960395e8",
           "license": "MIT",
+          "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "79063565b490ace245dbca4d134c5aff849d16b7004c1e8e23cea1ea98fa7eb5",
+          "license": "Apache-2.0",
           "selected": false
         }
       ]
@@ -129,9 +341,40 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "e44beb1bd58f28c6a57cfd47ee193ca6f33d34bc1692fd49f6336f8a11e66d82",
+          "digest": "0b9d3120577705e5c49ec98d9cb19c02ffce6137ea0aad89877714b8b9a80434",
           "license": "MIT",
           "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "885f8be9e2d5c61b4cd024c9d5c308a791a0d4b0d464a2015094b67884890375",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "claymorphism",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "f1154851ecdeb2e8356e097e1675a5db6c102c0df4cf11d4df27cd7e710b1cbc",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "clean",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "a24ab35183490435c5a7aad7d372155a82a8d36c65872433385cebdbe02bfd54",
+          "license": "Apache-2.0",
+          "selected": true
         }
       ]
     },
@@ -148,8 +391,15 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "4f6debdce6b7f4b00b1289e20c124ecaab7992217256b79c5cb506e70fd847a0",
+          "digest": "a794638be5d62573ae709e74b06ad510081fa124ece9e37f254c3dcd941faf17",
           "license": "MIT",
+          "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "71b0f6cf864dd276afe3d8d3c93f8b6c969006fc8fd25b667b39ea07f32df496",
+          "license": "Apache-2.0",
           "selected": false
         }
       ]
@@ -167,8 +417,15 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "9bb5a9d923ab465ed527df50287411e6d6fb36b5dd6b7e94ff0fb8e94faf3b80",
+          "digest": "027ea4d745cfb8f733439b053eae0b0fa9d3a72750f708ed144d256364e04fdc",
           "license": "MIT",
+          "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "c0a7270cd888b74a4cebb9621f075f9f2e2bca9712723110e890fe2366032668",
+          "license": "Apache-2.0",
           "selected": false
         }
       ]
@@ -186,9 +443,28 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "4524c69f8311f8ee8a0e8d61f293fe810cfc96779f104d6aba0f1da8ce2b9251",
+          "digest": "753e37b87b29fb1edce36b74a72d353ef866f992aefdae08a7f5da165c485924",
           "license": "MIT",
           "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "52d6851e1cf6701d7b2344d148868e12f46b08ac80a65a31026e08e8ea6af66c",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "colorful",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "079966ac25cd11f71b2cb4f657da51b6cdf93edf95fe051a00495a2336bbb330",
+          "license": "Apache-2.0",
+          "selected": true
         }
       ]
     },
@@ -205,9 +481,64 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "ac2f8c0819108e8ddb2446280334603e523efa72bb6ee38f014d49e1bc208631",
+          "digest": "cf5f50875d709a7c47b69051bae6ad35b8dc315a6c90523740909e00269fe2fe",
           "license": "MIT",
           "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "c844f7873b28076dcce380204f5c79fbf3b63ce48a4f435907a36ad02bf5337d",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "contemporary",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "09aa3e111754ea8b6c55669da8b455e8731f2cd823ccd35b4755f921e04de12f",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "corporate",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "3c8c80294a48d3295738d8575e93f0cd5d85f092eae3fc9e192cb39864f0453b",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "cosmic",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "049ccd1019dc8ad9425b5b1aba8c7395c78cd6c8d21bcdead7e8e2e61803fa3c",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "creative",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "b374f6485153043b9eb07c2d5d56aa189f5721354d66791d88df2f80d43e9032",
+          "license": "Apache-2.0",
+          "selected": true
         }
       ]
     },
@@ -224,9 +555,124 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "c2ff9050e5487a7672875c478bad985fb757abbb20d664daf62f24b091d515cd",
+          "digest": "e113a74498b96bab7a43fe9e3c422063cf7d332c869df508fe67cccb0c814a8f",
           "license": "MIT",
           "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "66f4f737a2fbc17cd37489f321bbfa799b202a28bcf0df2b86a70b7773926a69",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "dashboard",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "b87278ceecc58ad91ac97c14a1b8d657782f498f652e8100b9caf546742de4c2",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "default",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "aeba1b5aa9db00f7e08616c0ffb2ee3408ff96edaa2fc26709743eecf13045d7",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "discord",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "1379f6462fcf258c3f46df692178a96b77188a11ce53bc7873e88f7705bdde76",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "dithered",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "b5988f7803ec4fbfae0ce58b2427f8885a829d8a89a45b7086750902be14049e",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "doodle",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "333571b701df06cc05d6374f2d75fbd413fe7cce14020a7cd40882b957b086e4",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "dramatic",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "40756ea224d42ae4a579cc6c771226b0d9d20e48b953f49e221dfd1382791d16",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "duolingo",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "6a7a3897b89024bae75f0678652748041d5df7581e5ef3783b0bd59c9fd3823b",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "editorial",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "fc2b9e3dddf4911796911cd0d11b8a02f039d74a96a361e67fea4fc2b1775e31",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "elegant",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "aab8a3bce10d8fac8763b7dee99168083963e1a0ec79c18546be75b46dd36cae",
+          "license": "Apache-2.0",
+          "selected": true
         }
       ]
     },
@@ -243,9 +689,40 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "44784fb31d71fa3888776a47ac5c41ab3724406b23866aaa42b8f7bbc4d727cb",
+          "digest": "fade13e791cb40ff08073a01b354174d3a261ef79c6a4bc0773da140275e0009",
           "license": "MIT",
           "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "272e7f135ed7413ed666907c23a4d7ef2f4b7940fd5b796ae1b736927f45e011",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "energetic",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "86ef6124eccf8d85f9ba66d48cff44031fdeb67b470aea7186da0cdf815ba168",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "enterprise",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "13b943a0c0de43ac84bbb0951ae13f7d613d2cbf2279ff08e0ced3e187b11cf7",
+          "license": "Apache-2.0",
+          "selected": true
         }
       ]
     },
@@ -262,9 +739,40 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "0fe349e0ffc53c12f135beb4566c1886be964cc0990dfd21422ab8622e81aa6c",
+          "digest": "6d011ef46401f8943325d95d491eabe61de67b34f1dce15ea273045c43acca38",
           "license": "MIT",
           "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "a1135f6a50e65ade8d129422922d7f63df41ed2929c2507e893e2582048c2849",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "expressive",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "6c7b3bd5952e1857a96485c692652e06ca29826fcf98e28884f12b6e36b361fe",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "fantasy",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "27fc64237cab1aa8c4de24463ff92987ad46c541e7f91448d4397773353f126f",
+          "license": "Apache-2.0",
+          "selected": true
         }
       ]
     },
@@ -281,8 +789,15 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "516c4208d509a19620645b15a48b1dc63d5b5b9ced6405306093467f389b5480",
+          "digest": "57e2817bc2bc5b433a1d107759246f3fba294d846c3fdd253ea3ffd49b3ba93e",
           "license": "MIT",
+          "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "b77c3efadbc1a2f761ca5c66919d186e749067aa2c73c936b41708d35f7f1a3a",
+          "license": "Apache-2.0",
           "selected": false
         }
       ]
@@ -300,9 +815,28 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "1dd65468a31a6f4c4f4c7cad8212607d3ef1db72fd5775c72af9e5f62d8b9849",
+          "digest": "9732337f9c48ba3e1b484d52c031c50893b564906e35190dcce95111ee3ad1f0",
           "license": "MIT",
           "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "69ec480da3a8befab7b44ffd5cc4deca0c8ae8ac5ee690335413063fa1a38292",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "flat",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "9d2d86cb15bfbb3f94748e06452f5a55023db2053cb62888a902f8b6d923bcf6",
+          "license": "Apache-2.0",
+          "selected": true
         }
       ]
     },
@@ -319,9 +853,76 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "876b6ba72c59b437c3e130812908b2a0a60d98e9b438a8989ac8363acda4e2dd",
+          "digest": "846df812b363df5694995961f26b6d7b529d87f95659d5fcacc2e721e95c7828",
           "license": "MIT",
           "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "35d8767071c0d155864e1abbceb6c874b6c461986092e0bceb9f8bdf6dfdf0cc",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "friendly",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "837c798e10342a6e1281fdeeb05fc80ce4b74d1467543155bf6db13c935c4ce2",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "futuristic",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "7aca9e082a2c20876331e7aca13e3c16847e3f51c37db19612e009a247bde376",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "github",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "80ea326a67e80bc613a68b45c290bad3e3ddd4fd170a75393b6bf793bc5e7cc3",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "glassmorphism",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "e2c75dbd21f932336d59767c2042551cc859780248f17857b3da2334e82388f6",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "gradient",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "7af0a637064eb9b0bd4244e93792adc1948e79cd4939c0dd36610298ce496c54",
+          "license": "Apache-2.0",
+          "selected": true
         }
       ]
     },
@@ -338,9 +939,28 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "5fb38a5e778a76cff7b8833df8f76da5ec2c5095e084f263284f33b22cbd8c1a",
+          "digest": "d72244b8f6d14c134733106141397d3d1a76443e715c16b650afee2d39d335b1",
           "license": "MIT",
           "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "7532880ef6c1bd586a5fb6229563b69f26ee841994f5616c698e0316813042c6",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "huggingface",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "05c7db306e32965ec1407f886808b17c2ef38e537186df825d3373481ab5f240",
+          "license": "Apache-2.0",
+          "selected": true
         }
       ]
     },
@@ -357,8 +977,15 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "7d68e769fd8e6f4f05fc7dafba3ec2748a800b9a3d3e41272f16d3489de3b086",
+          "digest": "fb6672e8cb559326df356559f636ff1607287de62abb6fccf8509fed38329592",
           "license": "MIT",
+          "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "eab18ea70c2e4da497a2e90a25e6e9919ac18a4136f1dcd35ce838c37c2586da",
+          "license": "Apache-2.0",
           "selected": false
         }
       ]
@@ -376,9 +1003,28 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "da6368a17612be8061ca55d901f6e17c744709b13060616a2ca455a177d4d3b0",
+          "digest": "1bd4ddddc0ef470faf05b14573d2e66836ed44d4750c872d32884fb78989ebdd",
           "license": "MIT",
           "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "00015191406ee315f7d9ef97a72f5272d9f47ce6fa7899332584a1990800aa72",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "kami",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "1699afb7a8edaab78f6829a140c273b7556ec730a8dd5a0e797642735ccf8cd5",
+          "license": "Apache-2.0",
+          "selected": true
         }
       ]
     },
@@ -395,8 +1041,15 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "66943eb3d5dee6b2c3f737d5d02d836b99e7377b56ec42770866715a35a9dda8",
+          "digest": "41bcbd5642c926a549f0d50f1151484c5776b4536233240c8415cfb79bcf1f38",
           "license": "MIT",
+          "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "8b9a1b5eebcce82881debd4ab815e780ba98b091fc9568475ddfb36be94c0c24",
+          "license": "Apache-2.0",
           "selected": false
         }
       ]
@@ -414,9 +1067,40 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "2e61aaead5732c50799d8264341c7e933cce28d7b3e2b99a637aef783dcc5b48",
+          "digest": "9aa68c53b481a0befdf72859db5625f85454122294509989aa58414aaee04b34",
           "license": "MIT",
           "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "ee84e6d0b5a779f53032fa8fec721c632d936a05006e97101150a882e43d7178",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "levels",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "84c9e015136ad981bf1c4c67e9268d489abfac45d31153f6771d7d3549a2fc56",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "linear-app",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "4c7264d8bc0e26de761c550e9f0445b0e7d92078c1a288f3fdb604b4f6df8fb7",
+          "license": "Apache-2.0",
+          "selected": true
         }
       ]
     },
@@ -433,9 +1117,21 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "23f3395f16ed954d9031ec39067d8d96917c9bea0d2f78fd73b880392e63b512",
+          "digest": "6cc606ace1a1d627a4a02f840c1c82cc6decd86e5a0f8bdd8c1fe14630909754",
           "license": "MIT",
           "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "lingo",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "9d86b1386ecc5d568e5b708b442aa126a6405d94f3b15087b4b75d0c040af4c0",
+          "license": "Apache-2.0",
+          "selected": true
         }
       ]
     },
@@ -452,9 +1148,90 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "aadca914496397377b7608a1d8ac4048878342e290e9c916b23230c06594fd8f",
+          "digest": "92790895c833104072643929ba56ebbf42c8f88ffb7bff1926462545d0ace6c7",
           "license": "MIT",
           "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "8a568b388dca500e2eeb631eb05c6d10b7f64a6bdbd7401634a86ec4e1fd5191",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "luxury",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "e7f76af89a7233b000373b5ca00f23b62ab1450c895f664d7d829647ddcde6f0",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "mastercard",
+      "provenance": [
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "e76ceaa187f43bd24b8338d2b2314e71e9225b36492e40f32a55782281a10437",
+          "license": "MIT",
+          "selected": true
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "ba5a4f889cd52286b87cd06ebb9646ed91ea631dc6249491c0d27dde940f05c6",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "material",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "689368b14fc1c48c4d792f9c90e4369a582d9259e05a768d3d4966484fd56a1c",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "meta",
+      "provenance": [
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "a7b2e3925016f8abe52da6e9d30122974db1a97b4c994c1c52f97b74f86891c3",
+          "license": "MIT",
+          "selected": true
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "1d981f34450ed843495c5d1680b7c8e4ff13a48851c17001a376941c6b45a547",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "minimal",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "70f28c2c184ed4634d1d1ab03a88fd940aca526f4c04603209caf03561d6d6bb",
+          "license": "Apache-2.0",
+          "selected": true
         }
       ]
     },
@@ -471,8 +1248,15 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "9881519a344fb8c0ed44f4c61f179315c4df736dde6e46fcad0a9182fc6f8811",
+          "digest": "71beb5cead05f8ea8f8e2836acd52f6c0e0afa5245001ee17b3132bb5316571b",
           "license": "MIT",
+          "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "2960199d25c4b9a1fd8bc4756d998ee49c6315d7db23ad7ac0e274365f91ac9e",
+          "license": "Apache-2.0",
           "selected": false
         }
       ]
@@ -490,8 +1274,15 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "dbfdaf96f6a9bc65f593a19344effcc4108b7ebd1c053b7ea16c97b0e76a2a10",
+          "digest": "454ec0a488febc94a2513da32014dd252d2a88997656ca1a66c2de7ec508ce82",
           "license": "MIT",
+          "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "ada2deafc02f37cc83570319e5309e767164a6a52b1b097d85f667bfa0c911df",
+          "license": "Apache-2.0",
           "selected": false
         }
       ]
@@ -509,9 +1300,28 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "9ca6a05493a7bee232eeadca8bcfd2491f1309d1650d6ad595c48a3f17c234b6",
+          "digest": "292a279acfac78d0995f9b96307b6ebb5e4581f34f328f150dd4e5163583aa7a",
           "license": "MIT",
           "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "51f348feaf10f92873854e49dccb1c03a32bbb573f1de0bc87981d4d540f91d8",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "mistral-ai",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "59424032ca98c9d00103a9dc65e3a0a25de1bf44c7e618cdb094376af72b84c1",
+          "license": "Apache-2.0",
+          "selected": true
         }
       ]
     },
@@ -528,9 +1338,21 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "f68b8a7b9a0b1606253c19b53c146dae9b95d10fea300055621850841f16c535",
+          "digest": "1fc0dd11455277a517176c3a7d69f7032f17baefc6fd64f8287c6ac9cfa39c15",
           "license": "MIT",
           "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "modern",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "f3ac67da20238e79f0b63fd90b03aa75d08d1263780602b360b5d2eac215de1f",
+          "license": "Apache-2.0",
+          "selected": true
         }
       ]
     },
@@ -547,8 +1369,82 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "34626e4d42eada720f864bd9b5922eadadb6c3a7cac39b0a72851af842f8cc1c",
+          "digest": "0b4ff4eb3260b328b04a9f4764e2c74cf33aa132bed7bc9fad6eddcc5b2ef960",
           "license": "MIT",
+          "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "8ade6a733fe3d4d264d3ce13dc8720203898c514568f39e9fcd26438c34a2ec7",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "mono",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "e9f9b45362e23e70c7147003ade1214a83f524b623f5c29ab7174d8eb45ffdd9",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "neobrutalism",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "f6f9e7021c231dcb42ab647770c5a5ff2df485e06bc582acae44fbb7ebb6583e",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "neon",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "0e118c1a6b97210dac891eb7bd3a5047e0abc247aa8942542131053b89b7dc52",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "neumorphism",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "e0dbc739d3ddedcc43e04462a29cedb4ab97ab4fc4c68c7692fbdbf853334863",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "nike",
+      "provenance": [
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "b5da8d046d89d28ad8e84dbc2522eff745ce36ff38545953170e781be600e397",
+          "license": "MIT",
+          "selected": true
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "44b623b34e5b6cabd50f2fe391578f05dbd2fe91ee517f1e38c2c1e4ed9f647a",
+          "license": "Apache-2.0",
           "selected": false
         }
       ]
@@ -566,8 +1462,15 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "7b919807d2ee23c811b793d110b5932e83210d6fe4421c7ee366570098346365",
+          "digest": "ea0d45f2ac0a1c42bda6d5c1240790e32dfec52455ffda27737e63e9559afe6f",
           "license": "MIT",
+          "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "94c550cc035a90aa08b6645e7b3105d2e579453f8415e57b3639319fdb7e5b23",
+          "license": "Apache-2.0",
           "selected": false
         }
       ]
@@ -585,8 +1488,15 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "2ff4080794ac07bd6d3d64bc0d099da8484094f902b127b684d14453584ce9f1",
+          "digest": "1e16ff99df8fc734b74d80e787e22afa39954b372dff127d7b4d91ccde18d74f",
           "license": "MIT",
+          "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "f1000c03abd65cd10835069bffc2e3e6f9a704e53e9e16d7134e12e2aa3d5fb9",
+          "license": "Apache-2.0",
           "selected": false
         }
       ]
@@ -604,9 +1514,40 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "773e15592274585d0aa2f4d9a772c9ad98129e4486178e72767aca78f162eca8",
+          "digest": "1aab35abb93a43128b1f3d94c5b5ff8718e7c38fdcdc84ffb859191779b92643",
           "license": "MIT",
           "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "a40ef634612c07706462e081b1b77ba18915faa60d2dea1a19c2945aa448b3f7",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "openai",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "d9abf17a413c5b07bfd6e3306347a51b41b298470ca1d0fc37af2698250da76f",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "opencode-ai",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "beaa5092524e38e89825f4f59818e2b2dfdf86b6344c734c1fba3295d2d7bc90",
+          "license": "Apache-2.0",
+          "selected": true
         }
       ]
     },
@@ -623,9 +1564,45 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "d0947a96a6fcfd5645b79eafbf810f205027fad34b257ca68dae910621e52487",
+          "digest": "b2b4e1cb465ce43221af95b17e7ad89de2b8faa96d8762997579f9ea157c739d",
           "license": "MIT",
           "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "pacman",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "61e11bcf09a3f3943739d07f16248d9cdfc8e98892c2a9a4a1d09b60a5a7e243",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "paper",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "aa4d8b38f35a8264b90d3a8a216857860a32fa4d870f3fa8c6d77bd53955923f",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "perspective",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "69196e2707b397e70c43cab0b4f2affe0830c04eae9bda2149be734deab3435e",
+          "license": "Apache-2.0",
+          "selected": true
         }
       ]
     },
@@ -642,8 +1619,34 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "03b7023604ba6e80f6ede2042f36e340c65ca00b21e5b6578dfe118e35b2a885",
+          "digest": "1c2a57d07bcb3eaf1f1eb92949cbe5b166ba6705ed8d55ebc17538c2ccc39042",
           "license": "MIT",
+          "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "e6cb634aca8404b43b9eaeaf650bb64b0d26b1240bb3c33da643fded1fe1ecaa",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "playstation",
+      "provenance": [
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "2045537c7cbf5e67ab9b6f0ad229b6e6b0e28b3ead6c768956cbd88deab419d4",
+          "license": "MIT",
+          "selected": true
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "aa328bc329428dd69daee224a64d8ad793dbdd340d9bb1cb8df2794dbbafabd6",
+          "license": "Apache-2.0",
           "selected": false
         }
       ]
@@ -661,9 +1664,52 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "259adcb506ee17854f90bc8250a2895af4bc86fd4ca7d23ebc2ade71de157c54",
+          "digest": "11f48a3e48d5e4dc548501e84157c76925a02ff4e970040bb07248082d285b68",
           "license": "MIT",
           "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "a42b20545c777f732d6b9a0e24d877b229e84ce10a0e9e3ef9f058ea2c86fc5b",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "premium",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "4bece56047e4faac9efc18afc38f067d4087fa33cf8a62477b2878beb794bbad",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "professional",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "c3c652fdf2c08441088b79b859ed0e25a48c0bcd679333b7bc909e7199e61cb6",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "publication",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "f0aaeed691caeecf624bb510482baee6a5d1fe2593ac72b87e691c3009e37b03",
+          "license": "Apache-2.0",
+          "selected": true
         }
       ]
     },
@@ -680,9 +1726,28 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "81bc56505df1b84e19d00a1e1acef26b10f4f6967d2da911aca23cd231559016",
+          "digest": "ddaa2ab21193f71ed5fd514f44ba2a2bed406632ea06bcda003b6efa610ac4c7",
           "license": "MIT",
           "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "20e65e05ed2eee597dcdb6c7b056bd70842d786c0888592dda255ef672d8dd60",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "refined",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "04d7d749077655c0007bcd91851df1a6b9620d898c66c0213a531b5a9f7389be",
+          "license": "Apache-2.0",
+          "selected": true
         }
       ]
     },
@@ -699,8 +1764,15 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "8b1a804a6bf227512d1867d9cbf8fda663c7093ccedd96e736a65f291305af98",
+          "digest": "1317fe52ab6069656228babc60a50bb2477471f3cdfa47d56e8a6ce365e87821",
           "license": "MIT",
+          "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "db03bb3402edff5e5e84395856777ea6629c40e12fc737c5ae935de5d613be37",
+          "license": "Apache-2.0",
           "selected": false
         }
       ]
@@ -718,8 +1790,15 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "5e6f5a694d1bbbcc6bd7bc4d4aeaab0291f3d05f59544a75df759cc4c930dcdf",
+          "digest": "0acdabc7e6356a3e984d762c2f7dfe9a667c0c0d8ef65d47a2c35d9ee8e7604e",
           "license": "MIT",
+          "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "c3932771f83333f143774ac5d18cf57e9a4083d1e6af7daec605bac715a62dfd",
+          "license": "Apache-2.0",
           "selected": false
         }
       ]
@@ -737,9 +1816,28 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "2f33d7b59b44c0c0d00975d6efaac4281842591b3009e87aa7f09377a2538a4f",
+          "digest": "adc5ce75f1f78cd82790633c5a47e4619704c2b90ae4677e4852938307aa3f66",
           "license": "MIT",
           "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "c6c22baba6e185d30e8da94dac45ebf5d1ae0f21ec88f5e1b3ceeacc14bfe00e",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "retro",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "ba3fdc8e5be058513ea6ff5f19938db831e94d7bbfc03da8383327a2f7e3a86e",
+          "license": "Apache-2.0",
+          "selected": true
         }
       ]
     },
@@ -756,8 +1854,15 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "f161aeafc11da900697ea0ba5a39efb3c2d25009c4cde5bd78e93c53732262ce",
+          "digest": "4307f51490c857d08ba51eb3b1a3c9190b1c0bc4f3c69f8aab220cf776b47203",
           "license": "MIT",
+          "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "62501c2f1441717ee7e93f7df4f8acd637cdd25bc983db45c5d6c69be10a797a",
+          "license": "Apache-2.0",
           "selected": false
         }
       ]
@@ -775,8 +1880,15 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "6e1a88ee458985a2cc0cb1fda276ce5ca66b5581cb2ed7a30f09cf16e1907861",
+          "digest": "b0e69bf643f89bb57ac0b82a3bf025e59ff1478c244cb0528ad1e38b3f80dac9",
           "license": "MIT",
+          "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "f873f90495a932a50d899f72600c231c76b3e706cdb17f90188747ad36613afc",
+          "license": "Apache-2.0",
           "selected": false
         }
       ]
@@ -794,8 +1906,15 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "6338f6ec6d8c48bc2a2bb73318a5a0dbdfa4253ea529c9e36488f1a13def7d1e",
+          "digest": "ea1c442de2b23443f79af46524a81f33951606c8ff043ea9c25ba886264fbdd8",
           "license": "MIT",
+          "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "52354c55c1c62dd16aeffc037fad7494a6de918a59bd65843ebcb9e6357928fa",
+          "license": "Apache-2.0",
           "selected": false
         }
       ]
@@ -809,13 +1928,6 @@
           "digest": "a690831bf92d7f053fe5ebc2a5e2fab65a47ca75362dde73b559e37c23af12aa",
           "license": "n/a",
           "selected": true
-        },
-        {
-          "source_id": "awesome-design-md",
-          "tier": "curated",
-          "digest": "a690831bf92d7f053fe5ebc2a5e2fab65a47ca75362dde73b559e37c23af12aa",
-          "license": "MIT",
-          "selected": false
         }
       ]
     },
@@ -832,9 +1944,83 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "3ec881357ceeb79a4c83a9fa2cfbdcf84d0179f135eba638de240eebeff8a127",
+          "digest": "039e58dfc831e97bc52514fba372ee7bd205f5f4a8bfea2720f386b85f1d00f0",
           "license": "MIT",
           "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "a5140c9bbf0bd45426646f087691abed9f8bd70d94d3e4368745622e5163cdaa",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "shadcn",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "6fcc1709c608fd815944c17a8919c8ed4e28a29f02f6a4927a9bcb0ecc9aa943",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "shopify",
+      "provenance": [
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "4cdb6d902d5b9c0ef209077bacd602bc2bc9777d594ada42adeb24477982ed77",
+          "license": "MIT",
+          "selected": true
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "ab10135212d6d8a0eaf4003f29cf5072f9390c27fb5e109a7bb8d4e2a28f4931",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "simple",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "20f4214be65d854fb71da9fabcb5256d3bbc8a1a4de8e4a32b7a03e70a450af7",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "skeumorphism",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "258614e400520f95a4c1d722ad5633c4a2a10be52de8e326e68837260aabd3ff",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "sleek",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "cf29cb7c9e679f02c2311a664d95cffd64009b858b363fdd19b492ad1a98649f",
+          "license": "Apache-2.0",
+          "selected": true
         }
       ]
     },
@@ -851,9 +2037,28 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "6c0161c5edecd2c63aae7c016687c1f1351fa1e69a864682d2ebecd2cfa79580",
+          "digest": "4e3e3c2a8202f8d4d09d38301bca94c9653085431132d37b7ad55c4afbfdce07",
           "license": "MIT",
           "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "ead7689f96a1c44f43cee4831b1525d52757c6aca820b9cf85569651d46ab0b7",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "spacious",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "6dc6e07b5890d214c171cc74c8a7491f3e26ab1294921fac0b089b29229f93a0",
+          "license": "Apache-2.0",
+          "selected": true
         }
       ]
     },
@@ -870,9 +2075,47 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "4e9d66fe074cee986e5651776cc8d6aa4e6c8d91b69d5405a4aa0e464688c85d",
+          "digest": "72e964a6cf551d0603f9854f2f42ee08e97ad4d9e17e037f50f6233508288295",
           "license": "MIT",
           "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "d7f3bc8413a01de9ef15cac8807990be3561f1897c37d1db9ccf23d84b5b1386",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "starbucks",
+      "provenance": [
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "e20338ee10226c63cf2588207288c08e12d60754a53f681657adaf364dfe8fa7",
+          "license": "MIT",
+          "selected": true
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "25b116f858b197796ed4962457d07c9f0484e2d3c8e9a7604928358957bd61a3",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "storytelling",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "79089b7ba5171656f2576e39425b9557afe392af4167395192527a8f338af1bc",
+          "license": "Apache-2.0",
+          "selected": true
         }
       ]
     },
@@ -889,8 +2132,15 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "509dfb359d27e240b5158012c55b3666789013e6a63847ec0625393b89441b04",
+          "digest": "a1ee8c949bd3893e1b66972379ec3fb5cb1730ac294188cf808035f29e2fdaef",
           "license": "MIT",
+          "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "66dea910aa4e4d7a2cbda9ad93496da5d464f40f343e7a14b8b8029d873535ae",
+          "license": "Apache-2.0",
           "selected": false
         }
       ]
@@ -908,8 +2158,15 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "48584353e2b866cca85bcbfd6fd696d949793b06586f7f7d83a2ffb146fc2261",
+          "digest": "8c5aba1513d6bf8e6a9a5fafd1b449d644fd05b4159e8671b411909af54be12d",
           "license": "MIT",
+          "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "341a8ad07bedf9134060f4c279007d6f920483e3b846ab6ce1d95a7c7b5b6914",
+          "license": "Apache-2.0",
           "selected": false
         }
       ]
@@ -927,8 +2184,15 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "ff90b3596bf01675ae46f92d8a340952edac76138f6c1c9e243f4c66d72223fd",
+          "digest": "7888fd7aafe6a2aa164877d049b0ca65e151ba739a3b8144d914382869a8f83c",
           "license": "MIT",
+          "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "93f9375d392f77255f9a98640b53f181076515378b83326782c6e6e12dc51f8e",
+          "license": "Apache-2.0",
           "selected": false
         }
       ]
@@ -946,9 +2210,59 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "530b5d60381a5a4a22951ea7cafb7fb5ff68752fbce842e8267f3c0e56304c05",
+          "digest": "19f2f7e6073d708f46d2512e6bab3c7c417cf2b4d9f57ff6ec6f2e056ea942b0",
           "license": "MIT",
           "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "ee98b4b8acb7a0e5d25921e085661bb855e3dbd04c98a5f2885c458a680594e3",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "tetris",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "1df18ad978601796a78740a7705a41b7793fc8ad65041e46218d406b09c5dec8",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "theverge",
+      "provenance": [
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "5da2c3116e6845826b043ac115a80896a399efda2cebc0188981fba2ef9bb526",
+          "license": "MIT",
+          "selected": true
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "094db6e7a6369bef4539f7319b5bca116ed1b8e8784c51f8f36be84e566b46ce",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "together-ai",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "e1b6715a344774cf315eb011bc67252871531b0d8d8c55f650cb5a92aac52b4b",
+          "license": "Apache-2.0",
+          "selected": true
         }
       ]
     },
@@ -965,7 +2279,7 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "d90bb234c312a536c798f14c8dcd62c8734ce78e97e5176cb2296e0a80e73f2a",
+          "digest": "de73655128f9f7eea5d3bc88c592ddbf5dbde2875ebee7ac058111268d5d2249",
           "license": "MIT",
           "selected": false
         }
@@ -984,8 +2298,15 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "3a04e35b58e17a6e9cee960d5be9a36da7c0de1149e917be2356e9331625d927",
+          "digest": "e25c644ae3a5edd34834b283ff001b6b0a213c2f9c875387e3d9f4bfbe3e6a4a",
           "license": "MIT",
+          "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "1defaaf4677a0ffd9bcd799ac58a8558dedd08e0066900741e1992d99f860dbc",
+          "license": "Apache-2.0",
           "selected": false
         }
       ]
@@ -1003,8 +2324,58 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "41fa72833346dedd876b7174d644441e0c05106274144c0f5857833535638003",
+          "digest": "66cefda964967ac09981fbb28be965afe256053859976caabac897d8e1d232df",
           "license": "MIT",
+          "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "17d533f0ff2e1b5d9be3e69335ab7fc599d1ddf52bc9ac2f2dd36479676cbd3d",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "vibrant",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "9490208fa86bfb8733d23979741bdf2a8b18db6caf4ea4cb7402fb0d3ceb1f45",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "vintage",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "e6fcac37919ecb4458748a814ec39b6038ca85d1ee5e1acf2d36b6e133ca894a",
+          "license": "Apache-2.0",
+          "selected": true
+        }
+      ]
+    },
+    {
+      "provider": "vodafone",
+      "provenance": [
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "1da627c5e52cd03a5229905af005d0074c289a552c2e829acf21d4406eacc26b",
+          "license": "MIT",
+          "selected": true
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "53a9b5279d5405a16952eaa9477f363519710a80a58db7d87fb6570327ccc860",
+          "license": "Apache-2.0",
           "selected": false
         }
       ]
@@ -1022,9 +2393,28 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "020efda3338479af7955e22f00fe80513a3e5d5cbdee91cd0a1052a31b9be1a0",
+          "digest": "528f2319bbe4d094785fccfb2e91706ccd8c18cb25ba9a0f2f5b539c1d62cbfe",
           "license": "MIT",
           "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "2f58cadf75642185b09493a7bf00e81461acd67bdd543c021b22e254e3b2a32f",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "warm-editorial",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "d478c0b23c15f0ef6b8863048d7ac809d0627216aa1efd6c303c242c6c470a5d",
+          "license": "Apache-2.0",
+          "selected": true
         }
       ]
     },
@@ -1041,8 +2431,15 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "adceef2d274daf82b31abda6c07fd6f65ef4e91ee6ac80551ecea68468030a40",
+          "digest": "e8132fd3b17684cabc5df2f2cb2119db708c90f4f825a51600aeb3cbca300706",
           "license": "MIT",
+          "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "41e2006c2ee0c018673f8eed59de198d8ae08b0a4d3bca2a6bdf90a323e6463c",
+          "license": "Apache-2.0",
           "selected": false
         }
       ]
@@ -1060,8 +2457,34 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "89b74e84bd1db28a58e9f7a405e9a9c5def032960aafc00839e9dac018b345ed",
+          "digest": "32c93aac0d780bdda767b4b7c4b8d8d5d417b22a6f4f4fb9161adc0c68c72d0b",
           "license": "MIT",
+          "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "0610a10e26546550ee70e8e1804d1222aaff6b355b68eacf8cab95f395516aba",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "wired",
+      "provenance": [
+        {
+          "source_id": "awesome-design-md",
+          "tier": "curated",
+          "digest": "8b34eb6fc86d5fd35b4463a88be6f675d9d8767d269c419a6209624df7e69cbf",
+          "license": "MIT",
+          "selected": true
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "2c370c20aec5d1a8ccb42e8788cb68b768f0f26f69e0e7f995f468fd96cac57f",
+          "license": "Apache-2.0",
           "selected": false
         }
       ]
@@ -1079,9 +2502,28 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "ad431c1c918ebcf10f55684812a103e2045dffa3cd85fcc83f1355bfd5c2a1ad",
+          "digest": "c6efbcaa4cd1eb27bf7d9da6762afb7ae24142e1de04fae67149ece9f19b0a94",
           "license": "MIT",
           "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "71f1c384405e4641784aa0917b3eebb1ccb478fe11ea0cd6098b4979d4aaf59f",
+          "license": "Apache-2.0",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "x-ai",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "83107b1981e877d7e772f6bfc383b68d1349a84882e22e0c2cba0409e70d82e6",
+          "license": "Apache-2.0",
+          "selected": true
         }
       ]
     },
@@ -1098,9 +2540,21 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "7d6de234ce4b289a2b5c344ec804021b21a611c0a4c67a2b55c5a5536bdfcc2b",
+          "digest": "093c6bc1a697b1a72526687d20b4b69108dcccfc4649652a3c7eb29f7109de91",
           "license": "MIT",
           "selected": false
+        }
+      ]
+    },
+    {
+      "provider": "xiaohongshu",
+      "provenance": [
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "e1a103ef765f4dd20d814372d7d18f3a5e99bfcce085537bb289d5d59b4bc2d9",
+          "license": "Apache-2.0",
+          "selected": true
         }
       ]
     },
@@ -1117,8 +2571,15 @@
         {
           "source_id": "awesome-design-md",
           "tier": "curated",
-          "digest": "92df2b7bfd44f42e1e3e3e81dff800ab647c57994139357722021e769c567f3e",
+          "digest": "21b745a272a222d354db2f15cf1381ba99a87ff21226dfdcc1c4643ddea9fc44",
           "license": "MIT",
+          "selected": false
+        },
+        {
+          "source_id": "nexu-open-design",
+          "tier": "community",
+          "digest": "01a80cc76a4c32defdca2efa34ebb34ba5a14ee6553894252a705d8e52228de4",
+          "license": "Apache-2.0",
           "selected": false
         }
       ]

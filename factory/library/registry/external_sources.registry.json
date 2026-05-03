@@ -49,6 +49,16 @@
       "target": "factory/library/design"
     },
     {
+      "id": "nexu-open-design",
+      "kind": "design_catalog",
+      "url": "https://github.com/nexu-io/open-design",
+      "branch": "main",
+      "license": "Apache-2.0",
+      "tier": "community",
+      "enabled": true,
+      "target": "factory/library/design"
+    },
+    {
       "id": "getdesign-md",
       "kind": "design_index",
       "url": "https://getdesign.md/",

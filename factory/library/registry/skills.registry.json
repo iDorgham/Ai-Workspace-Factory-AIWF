@@ -285,6 +285,438 @@
       "meta": {}
     },
     {
+      "id": "nexu-open-design-audio-jingle",
+      "path": "factory/library/skills/nexu_open_design/audio-jingle/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-blog-post",
+      "path": "factory/library/skills/nexu_open_design/blog-post/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-critique",
+      "path": "factory/library/skills/nexu_open_design/critique/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-dashboard",
+      "path": "factory/library/skills/nexu_open_design/dashboard/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-dating-web",
+      "path": "factory/library/skills/nexu_open_design/dating-web/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-design-brief",
+      "path": "factory/library/skills/nexu_open_design/design-brief/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-digital-eguide",
+      "path": "factory/library/skills/nexu_open_design/digital-eguide/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-docs-page",
+      "path": "factory/library/skills/nexu_open_design/docs-page/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-email-marketing",
+      "path": "factory/library/skills/nexu_open_design/email-marketing/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-eng-runbook",
+      "path": "factory/library/skills/nexu_open_design/eng-runbook/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-finance-report",
+      "path": "factory/library/skills/nexu_open_design/finance-report/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-gamified-app",
+      "path": "factory/library/skills/nexu_open_design/gamified-app/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-guizang-ppt",
+      "path": "factory/library/skills/nexu_open_design/guizang-ppt/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-hatch-pet",
+      "path": "factory/library/skills/nexu_open_design/hatch-pet/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-hr-onboarding",
+      "path": "factory/library/skills/nexu_open_design/hr-onboarding/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-html-ppt",
+      "path": "factory/library/skills/nexu_open_design/html-ppt/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-html-ppt-course-module",
+      "path": "factory/library/skills/nexu_open_design/html-ppt-course-module/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-html-ppt-dir-key-nav-minimal",
+      "path": "factory/library/skills/nexu_open_design/html-ppt-dir-key-nav-minimal/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-html-ppt-graphify-dark-graph",
+      "path": "factory/library/skills/nexu_open_design/html-ppt-graphify-dark-graph/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-html-ppt-hermes-cyber-terminal",
+      "path": "factory/library/skills/nexu_open_design/html-ppt-hermes-cyber-terminal/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-html-ppt-knowledge-arch-blueprint",
+      "path": "factory/library/skills/nexu_open_design/html-ppt-knowledge-arch-blueprint/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-html-ppt-obsidian-claude-gradient",
+      "path": "factory/library/skills/nexu_open_design/html-ppt-obsidian-claude-gradient/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-html-ppt-pitch-deck",
+      "path": "factory/library/skills/nexu_open_design/html-ppt-pitch-deck/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-html-ppt-presenter-mode-reveal",
+      "path": "factory/library/skills/nexu_open_design/html-ppt-presenter-mode-reveal/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-html-ppt-product-launch",
+      "path": "factory/library/skills/nexu_open_design/html-ppt-product-launch/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-html-ppt-tech-sharing",
+      "path": "factory/library/skills/nexu_open_design/html-ppt-tech-sharing/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-html-ppt-testing-safety-alert",
+      "path": "factory/library/skills/nexu_open_design/html-ppt-testing-safety-alert/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-html-ppt-weekly-report",
+      "path": "factory/library/skills/nexu_open_design/html-ppt-weekly-report/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-html-ppt-xhs-pastel-card",
+      "path": "factory/library/skills/nexu_open_design/html-ppt-xhs-pastel-card/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-html-ppt-xhs-post",
+      "path": "factory/library/skills/nexu_open_design/html-ppt-xhs-post/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-html-ppt-xhs-white-editorial",
+      "path": "factory/library/skills/nexu_open_design/html-ppt-xhs-white-editorial/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-hyperframes",
+      "path": "factory/library/skills/nexu_open_design/hyperframes/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-image-poster",
+      "path": "factory/library/skills/nexu_open_design/image-poster/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-invoice",
+      "path": "factory/library/skills/nexu_open_design/invoice/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-kanban-board",
+      "path": "factory/library/skills/nexu_open_design/kanban-board/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-magazine-poster",
+      "path": "factory/library/skills/nexu_open_design/magazine-poster/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-meeting-notes",
+      "path": "factory/library/skills/nexu_open_design/meeting-notes/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-mobile-app",
+      "path": "factory/library/skills/nexu_open_design/mobile-app/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-mobile-onboarding",
+      "path": "factory/library/skills/nexu_open_design/mobile-onboarding/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-motion-frames",
+      "path": "factory/library/skills/nexu_open_design/motion-frames/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-pm-spec",
+      "path": "factory/library/skills/nexu_open_design/pm-spec/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-pptx-html-fidelity-audit",
+      "path": "factory/library/skills/nexu_open_design/pptx-html-fidelity-audit/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-pricing-page",
+      "path": "factory/library/skills/nexu_open_design/pricing-page/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-replit-deck",
+      "path": "factory/library/skills/nexu_open_design/replit-deck/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-saas-landing",
+      "path": "factory/library/skills/nexu_open_design/saas-landing/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-simple-deck",
+      "path": "factory/library/skills/nexu_open_design/simple-deck/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-social-carousel",
+      "path": "factory/library/skills/nexu_open_design/social-carousel/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-sprite-animation",
+      "path": "factory/library/skills/nexu_open_design/sprite-animation/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-team-okrs",
+      "path": "factory/library/skills/nexu_open_design/team-okrs/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-tweaks",
+      "path": "factory/library/skills/nexu_open_design/tweaks/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-video-shortform",
+      "path": "factory/library/skills/nexu_open_design/video-shortform/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-web-prototype",
+      "path": "factory/library/skills/nexu_open_design/web-prototype/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-weekly-update",
+      "path": "factory/library/skills/nexu_open_design/weekly-update/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
+      "id": "nexu-open-design-wireframe-sketch",
+      "path": "factory/library/skills/nexu_open_design/wireframe-sketch/skill.md",
+      "source": "workspace",
+      "version": "1.0.0",
+      "status": "active",
+      "meta": {}
+    },
+    {
       "id": "non-developer-guided-intake",
       "path": "factory/library/skills/non_developer_guided_intake/skill.md",
       "source": "workspace",

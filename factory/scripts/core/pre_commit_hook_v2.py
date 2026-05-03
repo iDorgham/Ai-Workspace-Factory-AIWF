@@ -73,6 +73,8 @@ def check_snake_case() -> bool:
         "factory/library/rules/workspace_imports/",
         # Vendored third-party skills/agents from public GitHub repos (upstream kebab-case).
         "factory/library/skills/github_imports/",
+        # Nexu Open Design bundle (upstream HTML/CSS/JS and doc stems use kebab-case).
+        "factory/library/skills/nexu_open_design/",
         "factory/library/agents/github_imports/",
         # Curated awesome-list snapshots (hyphenated upstream filenames).
         "factory/library/reference/github_curated/",

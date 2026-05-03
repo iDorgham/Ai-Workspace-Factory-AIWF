@@ -171,29 +171,44 @@ def collect_subagent_candidates(repo_dir: Path, source: dict[str, Any], license_
 
 
 def collect_design_candidates(repo_dir: Path, source: dict[str, Any], license_detected: str) -> list[Candidate]:
+    """Collect provider packs from VoltAgent-style ``design-md/`` or nexu-io ``design-systems/`` (``DESIGN.md``)."""
     out: list[Candidate] = []
-    design_root = repo_dir / "design-md"
-    if not design_root.exists():
+    roots: list[Path] = []
+    for name in ("design-md", "design-systems"):
+        r = repo_dir / name
+        if r.is_dir():
+            roots.append(r)
+    if not roots:
         return out
-    for provider in sorted([p for p in design_root.iterdir() if p.is_dir()]):
-        candidate_file = provider / "design.md"
-        if not candidate_file.exists():
-            candidate_file = provider / "README.md"
-        if not candidate_file.exists():
-            continue
-        content = candidate_file.read_text(encoding="utf-8", errors="ignore")
-        out.append(
-            Candidate(
-                key=provider.name,
-                category="design",
-                relative_name="design.md",
-                content=content,
-                source_id=source["id"],
-                source_url=source["url"],
-                tier=source["tier"],
-                license_detected=license_detected,
+
+    seen_keys: set[str] = set()
+    for design_root in roots:
+        for provider in sorted([p for p in design_root.iterdir() if p.is_dir()]):
+            key = provider.name
+            if key in seen_keys:
+                continue
+            candidate_file: Path | None = None
+            for fname in ("design.md", "DESIGN.md", "README.md"):
+                p = provider / fname
+                if p.is_file():
+                    candidate_file = p
+                    break
+            if candidate_file is None:
+                continue
+            content = candidate_file.read_text(encoding="utf-8", errors="ignore")
+            out.append(
+                Candidate(
+                    key=key,
+                    category="design",
+                    relative_name="design.md",
+                    content=content,
+                    source_id=source["id"],
+                    source_url=source["url"],
+                    tier=source["tier"],
+                    license_detected=license_detected,
+                )
             )
-        )
+            seen_keys.add(key)
     return out
 
 

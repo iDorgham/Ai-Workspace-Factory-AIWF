@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-30T19:54:37.461331+00:00",
+  "timestamp": "2026-05-03T01:20:30.770030+00:00",
   "manifest": "factory/library/registry/external_sources.registry.json",
   "imported_sources": [
     {
@@ -30,7 +30,7 @@
       "tier": "curated",
       "status": "processed",
       "detected_license": "MIT",
-      "items": 59
+      "items": 70
     },
     {
       "id": "awesome-claude-design",
@@ -41,6 +41,16 @@
       "status": "processed",
       "detected_license": "MIT",
       "items": 0
+    },
+    {
+      "id": "nexu-open-design",
+      "kind": "design_catalog",
+      "url": "https://github.com/nexu-io/open-design",
+      "target": "factory/library/design",
+      "tier": "community",
+      "status": "processed",
+      "detected_license": "Apache-2.0",
+      "items": 137
     },
     {
       "id": "getdesign-md",
@@ -72,9 +82,9 @@
     },
     "factory/library/design": {
       "kind": "design_catalog",
-      "selected_count": 59,
+      "selected_count": 144,
       "summary": {
-        "count": 59
+        "count": 144
       }
     }
   },

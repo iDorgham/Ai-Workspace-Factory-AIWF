@@ -31,6 +31,8 @@ def skill_entry_id(skill_file: Path, skills_root: Path) -> str:
     parts = rel.parts
     if parts[0] == "github_imports":
         return "github-imports-" + kebab(parts[-2])
+    if parts[0] == "nexu_open_design" and len(parts) >= 2:
+        return "nexu-open-design-" + kebab(parts[1])
     return kebab(skill_file.parent.name)
 
 
