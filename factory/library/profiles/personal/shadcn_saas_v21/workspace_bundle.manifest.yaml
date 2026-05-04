@@ -1,0 +1,99 @@
+# shadcn SaaS v21 — Neural Fabric profile (library + local profile docs).
+template_id: shadcn_saas_v21
+summary: "Next.js 15 + shadcn/ui SaaS — tripartite SDD, Turborepo-ready; curated library mirrors."
+canonical_source: factory/library
+
+agents:
+  - Master Guide
+  - Spec Architect
+  - Contract Guardian
+  - CI Specialist
+  - Security Auditor
+  - Integrity Auditor
+  - Deployment Specialist
+  - Factory Scaffolder
+  - Healing Bot v2
+
+skills:
+  - guide_sdd_mastery
+  - guide_teaching
+  - official_vercel_use_ai_sdk
+  - design_design_system
+  - design_accessibility
+  - official_github_github_issues
+  - engineering_documentation
+
+commands:
+  - /plan blueprint
+  - /plan status
+  - /dev init
+  - /dev implement
+  - /dev test
+  - /audit health
+  - /audit security
+  - /git auto
+  - /mat
+  - /guide
+  - /help
+  - /design list
+  - /design use [pack]
+
+library:
+  agents_registry_yaml: factory/library/agents/workspace_imports/ai/agents/registry/registry.yaml
+  subagents_registry_json: factory/library/subagents/registry.json
+  subagent_ids:
+    - blueprint-architect
+    - content-generator
+    - brand-voice-applier
+    - quality-checker
+    - approval-gate
+    - keyword-auditor
+    - technical-auditor
+  commands_merged_md: factory/library/commands/commands.md
+  commands_registry_yaml: factory/library/commands/registry.yaml
+  commands_support_md:
+    - factory/library/commands/guide.md
+    - factory/library/commands/plan.md
+    - factory/library/commands/dev.md
+    - factory/library/commands/audit.md
+    - factory/library/commands/git.md
+    - factory/library/commands/create.md
+    - factory/library/commands/mat.md
+    - factory/library/commands/factory.md
+    - factory/library/commands/library.md
+    - factory/library/commands/do.md
+  command_templates_dir: factory/library/commands/templates
+  subcommands_md:
+    - factory/library/subcommands/guide.md
+    - factory/library/subcommands/develop.md
+    - factory/library/subcommands/test.md
+    - factory/library/subcommands/security.md
+    - factory/library/subcommands/docs.md
+    - factory/library/subcommands/perf.md
+    - factory/library/subcommands/ide-commands/workspace.md
+    - factory/library/subcommands/ide-commands/budget.md
+  rules_workspace_mirror_mdc:
+    - factory/library/rules/workspace_imports/ai/rules/guide-response-style.mdc
+    - factory/library/rules/workspace_imports/ai/rules/guide-handoff-footer.mdc
+  templates_design_readme: factory/library/templates/design/README.md
+  templates_design_catalog_json: factory/library/templates/design/catalog.json
+  templates_design_packs_md:
+    - factory/library/templates/design/shadcn/design.md
+    - factory/library/templates/design/vercel/design.md
+    - factory/library/templates/design/dashboard/design.md
+  templates_core_dir: factory/library/templates/core
+  scripts_workspace_imports:
+    - factory/library/scripts/workspace_imports/ai/scripts/factory_materialize.sh
+    - factory/library/scripts/workspace_imports/ai/scripts/paths.py
+    - factory/library/scripts/core/sync_master_memory.py
+  skill_mirror_base: factory/library/skills
+  additional_skill_paths:
+    - factory/library/skills/github_imports/nextjs-app-router-patterns
+  profile_operator_docs:
+    - factory/library/profiles/personal/shadcn_saas_v21/agents/master_guide.md
+    - factory/library/profiles/personal/shadcn_saas_v21/agents/spec_architect_v2.md
+    - factory/library/profiles/personal/shadcn_saas_v21/agents/integrity_auditor.md
+    - factory/library/profiles/personal/shadcn_saas_v21/agents/sub_agents_registry.md
+    - factory/library/profiles/personal/shadcn_saas_v21/skills/nextjs_shadcn_architecture.md
+    - factory/library/profiles/personal/shadcn_saas_v21/skills/shadcn_ui_design_system.md
+    - factory/library/profiles/personal/shadcn_saas_v21/templates/web_saas_project_blueprint_template.md

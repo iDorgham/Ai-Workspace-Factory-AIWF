@@ -1,0 +1,89 @@
+template_id: MENA_OS_BILINGUAL
+summary: "MENA / bilingual product — regional compliance, RTL, payments, locale-aware content."
+canonical_source: factory/library
+
+agents:
+  - Master Guide
+  - Regional Adapter
+  - Spec Architect
+  - Contract Guardian
+  - Security Auditor
+  - Integrity Auditor
+  - Creator Agent
+  - Deployment Specialist
+  - Healing Bot v2
+
+skills:
+  - guide_instructor_domains
+  - guide_sdd_mastery
+  - guide_teaching
+  - marketing_brand_voice
+  - brand_voice_enforcement
+  - brand_voice_guideline_generation
+  - engineering_documentation
+
+commands:
+  - /plan blueprint
+  - /plan content
+  - /create blog posts about [topic]
+  - /create website pages
+  - /polish content in content/
+  - /review
+  - /dev implement
+  - /audit security
+  - /guide
+  - /help
+
+library:
+  agents_registry_yaml: factory/library/agents/workspace_imports/ai/agents/registry/registry.yaml
+  subagents_registry_json: factory/library/subagents/registry.json
+  subagent_ids:
+    - brand-consultant
+    - tone-analyzer
+    - drift-detector
+    - rule-updater
+    - brand-voice-applier
+    - content-generator
+    - blueprint-architect
+    - quality-checker
+    - approval-gate
+    - discovery-engine
+    - profile-builder
+  commands_merged_md: factory/library/commands/commands.md
+  commands_registry_yaml: factory/library/commands/registry.yaml
+  commands_support_md:
+    - factory/library/commands/guide.md
+    - factory/library/commands/plan.md
+    - factory/library/commands/dev.md
+    - factory/library/commands/audit.md
+    - factory/library/commands/create.md
+    - factory/library/commands/git.md
+    - factory/library/commands/library.md
+  command_templates_dir: factory/library/commands/templates
+  subcommands_md:
+    - factory/library/subcommands/guide.md
+    - factory/library/subcommands/develop.md
+    - factory/library/subcommands/ide-commands/brand.md
+    - factory/library/subcommands/ide-commands/voice.md
+    - factory/library/subcommands/ide-commands/polish.md
+    - factory/library/subcommands/ide-commands/create.md
+    - factory/library/subcommands/ide-commands/review.md
+    - factory/library/subcommands/ide-commands/approve.md
+    - factory/library/subcommands/ide-commands/revise.md
+    - factory/library/subcommands/docs.md
+  rules_workspace_mirror_mdc:
+    - factory/library/rules/workspace_imports/ai/rules/guide-response-style.mdc
+    - factory/library/rules/workspace_imports/ai/rules/guide-handoff-footer.mdc
+  templates_design_readme: factory/library/templates/design/README.md
+  templates_design_catalog_json: factory/library/templates/design/catalog.json
+  templates_design_packs_md:
+    - factory/library/templates/design/warm-editorial/design.md
+    - factory/library/templates/design/vodafone/design.md
+    - factory/library/templates/design/corporate/design.md
+  templates_core_dir: factory/library/templates/core
+  scripts_workspace_imports:
+    - factory/library/scripts/workspace_imports/ai/scripts/factory_materialize.sh
+    - factory/library/scripts/brand/brand_consultant.py
+    - factory/library/scripts/brand/voice_validator.py
+    - factory/library/scripts/creator/content_generator.py
+  skill_mirror_base: factory/library/skills

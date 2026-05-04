@@ -1,0 +1,26 @@
+%%{init: {"theme": "default"}}%%
+C4Context
+  title System context — portfolio website (content phase)
+
+  Person(visitor, "Site visitor", "Reads portfolio, may submit contact intent")
+  Person_Ext(editor, "Content editor", "Client or agency staff")
+
+  System_Boundary(portfolio, "Portfolio system") {
+    System(web, "Public portfolio site", "Marketing pages, case studies, contact")
+    System(cms, "CMS / content service", "Drafts, workflow, publish to web")
+  }
+
+  System_Ext(github, "GitHub", "Source of truth for app + infra as code")
+  System_Ext(hosting, "Hosting / CDN", "TLS, edge cache, deploy target")
+  System_Ext(analytics, "Analytics (optional)", "Privacy-respecting usage metrics")
+
+  Rel(visitor, web, "Browses", "HTTPS")
+  Rel(editor, cms, "Authors content", "HTTPS / app UI")
+  Rel(cms, web, "Publishes approved content", "API / webhook / build")
+  Rel(web, hosting, "Served from", "HTTPS")
+  Rel(github, hosting, "Deploy pipeline", "CI/CD")
+  Rel(web, analytics, "Emits events if consented", "HTTPS")
+
+  UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")
+
+%% Law 151/2020: annotate flows that carry personal data (e.g. forms, analytics).

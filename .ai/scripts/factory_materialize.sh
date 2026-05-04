@@ -13,14 +13,41 @@ while [[ "$FACTORY_ROOT" != "/" ]]; do
     fi
     FACTORY_ROOT="$(cd "$FACTORY_ROOT/.." && pwd)"
 done
-CANON_TEMPLATES="$FACTORY_ROOT/factory/shards"
-if [[ ! -d "$CANON_TEMPLATES" ]] || [[ -z "$(find "$CANON_TEMPLATES" -mindepth 1 -maxdepth 1 -type d 2>/dev/null | head -1)" ]]; then
-    echo "❌ No industrial OS template directories under:"
-    echo "   $CANON_TEMPLATES"
+
+# Template source: MAT_TEMPLATES_DIR overrides; else factory/shards, else workspaces/templates.
+_templates_dir_has_trees() {
+    local base="$1"
+    [[ -d "$base" ]] || return 1
+    local cnt
+    cnt="$(find "$base" -mindepth 1 -maxdepth 1 -type d 2>/dev/null | wc -l | tr -d '[:space:]')"
+    [[ "${cnt:-0}" -gt 0 ]]
+}
+
+TEMPLATE_DIR=""
+if [[ -n "${MAT_TEMPLATES_DIR:-}" ]]; then
+    if [[ ! -d "$MAT_TEMPLATES_DIR" ]]; then
+        echo "❌ MAT_TEMPLATES_DIR is not a directory: $MAT_TEMPLATES_DIR"
+        exit 1
+    fi
+    if ! _templates_dir_has_trees "$MAT_TEMPLATES_DIR"; then
+        echo "❌ MAT_TEMPLATES_DIR contains no template subdirectories: $MAT_TEMPLATES_DIR"
+        exit 1
+    fi
+    TEMPLATE_DIR="$MAT_TEMPLATES_DIR"
+elif _templates_dir_has_trees "$FACTORY_ROOT/factory/shards"; then
+    TEMPLATE_DIR="$FACTORY_ROOT/factory/shards"
+elif _templates_dir_has_trees "$FACTORY_ROOT/workspaces/templates"; then
+    TEMPLATE_DIR="$FACTORY_ROOT/workspaces/templates"
+else
+    echo "❌ No industrial OS template directories found."
+    echo "   Checked (in order):"
+    echo "     - $FACTORY_ROOT/factory/shards"
+    echo "     - $FACTORY_ROOT/workspaces/templates"
     echo "   Add trees such as CORE_OS_SAAS, WEB_OS_TITAN, … — see factory/shards/README.md"
+    echo "   Or: export MAT_TEMPLATES_DIR=/path/to/dir   # dir contains CORE_OS_SAAS, …"
     exit 1
 fi
-TEMPLATE_DIR="$CANON_TEMPLATES"
+
 CLIENTS_DIR="$FACTORY_ROOT/workspaces/clients"
 PERSONAL_DIR="$FACTORY_ROOT/workspaces/personal"
 
@@ -28,13 +55,9 @@ tolower() { printf '%s' "$1" | tr '[:upper:]' '[:lower:]'; }
 
 echo "🪐 AIWF INDUSTRIAL MATERIALIZATION ENGINE"
 echo "----------------------------------------"
+echo "📁 Template source: $TEMPLATE_DIR"
 
 # --- Build template list (sorted for stable indices) ---
-if [[ ! -d "$TEMPLATE_DIR" ]]; then
-    echo "❌ Missing template directory: $TEMPLATE_DIR"
-    exit 1
-fi
-
 templates=()
 while IFS= read -r d; do
     [[ -n "$d" ]] && templates+=("$d")

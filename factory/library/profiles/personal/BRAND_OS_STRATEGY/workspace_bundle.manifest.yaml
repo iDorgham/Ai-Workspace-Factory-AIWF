@@ -1,0 +1,99 @@
+template_id: BRAND_OS_STRATEGY
+summary: "Brand system and narrative — discovery, voice, competitive intel, approvals."
+canonical_source: factory/library
+
+agents:
+  - Master Guide
+  - Creator Agent
+  - Scraper Agent
+  - Spec Architect
+  - Integrity Auditor
+  - Repository Agent
+  - Healing Bot v2
+
+skills:
+  - marketing_brand_voice
+  - marketing_brand_review
+  - brand_voice_guideline_generation
+  - brand_voice_enforcement
+  - marketing_competitive_analysis
+  - marketing_campaign_planning
+  - guide_teaching
+
+commands:
+  - /brand
+  - /brand workshop
+  - /extract brand voice from [source]
+  - /refine brand voice
+  - /research competitors
+  - /intel competitor [name]
+  - /review
+  - /approve
+  - /plan content
+  - /guide
+  - /help
+
+library:
+  agents_registry_yaml: factory/library/agents/workspace_imports/ai/agents/registry/registry.yaml
+  subagents_registry_json: factory/library/subagents/registry.json
+  subagent_ids:
+    - brand-consultant
+    - tone-analyzer
+    - drift-detector
+    - rule-updater
+    - discovery-engine
+    - profile-builder
+    - trend-miner
+    - opportunity-scorer
+    - intel-synthesizer
+    - brand-voice-applier
+    - content-generator
+    - comparison-analyst
+    - quality-checker
+    - approval-gate
+    - export-packager
+    - archive-manager
+  commands_merged_md: factory/library/commands/commands.md
+  commands_registry_yaml: factory/library/commands/registry.yaml
+  commands_support_md:
+    - factory/library/commands/guide.md
+    - factory/library/commands/plan.md
+    - factory/library/commands/create.md
+    - factory/library/commands/git.md
+    - factory/library/commands/library.md
+    - factory/library/commands/do.md
+  command_templates_dir: factory/library/commands/templates
+  subcommands_md:
+    - factory/library/subcommands/guide.md
+    - factory/library/subcommands/ide-commands/brand.md
+    - factory/library/subcommands/ide-commands/voice.md
+    - factory/library/subcommands/ide-commands/research.md
+    - factory/library/subcommands/ide-commands/intel.md
+    - factory/library/subcommands/ide-commands/compare.md
+    - factory/library/subcommands/ide-commands/revise.md
+    - factory/library/subcommands/ide-commands/review.md
+    - factory/library/subcommands/ide-commands/approve.md
+    - factory/library/subcommands/ide-commands/export.md
+    - factory/library/subcommands/ide-commands/archive.md
+    - factory/library/subcommands/ide-commands/memory.md
+    - factory/library/subcommands/develop.md
+    - factory/library/subcommands/docs.md
+  rules_workspace_mirror_mdc:
+    - factory/library/rules/workspace_imports/ai/rules/guide-response-style.mdc
+    - factory/library/rules/workspace_imports/ai/rules/guide-handoff-footer.mdc
+  templates_design_readme: factory/library/templates/design/README.md
+  templates_design_catalog_json: factory/library/templates/design/catalog.json
+  templates_design_packs_md:
+    - factory/library/templates/design/storytelling/design.md
+    - factory/library/templates/design/bold/design.md
+    - factory/library/templates/design/premium/design.md
+  templates_core_dir: factory/library/templates/core
+  scripts_workspace_imports:
+    - factory/library/scripts/workspace_imports/ai/scripts/factory_materialize.sh
+    - factory/library/scripts/brand/brand_consultant.py
+    - factory/library/scripts/brand/voice_validator.py
+    - factory/library/scripts/research/enrich_competitor_info.py
+    - factory/library/scripts/workflow/quality_checker.py
+    - factory/library/scripts/workflow/export_packager.py
+    - factory/library/scripts/workflow/archive_manager.py
+  skill_mirror_base: factory/library/skills

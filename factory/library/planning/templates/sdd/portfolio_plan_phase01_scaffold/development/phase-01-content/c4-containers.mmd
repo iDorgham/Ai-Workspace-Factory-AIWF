@@ -1,0 +1,31 @@
+%%{init: {"theme": "default"}}%%
+C4Container
+  title Container architecture — portfolio website (draft)
+
+  Person(visitor, "Site visitor", "Reads public pages")
+  Person(editor, "Content editor", "Uses CMS UI")
+
+  System_Boundary(portfolio, "Portfolio system") {
+
+    Container(ui, "Public web app", "TBD e.g. Next.js", "SSR/SSG pages, i18n, SEO")
+    Container(cms_core, "CMS core", "TBD vendor", "Schemas, roles, draft/review/publish")
+    Container(media, "Media / assets", "TBD CDN", "Images, transforms, caching")
+
+    Container(plan_store, "Plan store", "Markdown + JSON", "This .ai/plan folder + traceability")
+  }
+
+  System_Ext(git, "GitHub", "Repo + Actions")
+  System_Ext(edge, "Edge / CDN", "Cache + TLS termination")
+
+  Rel(visitor, ui, "Uses", "HTTPS")
+  Rel(editor, cms_core, "CRUD content", "HTTPS")
+  Rel(cms_core, ui, "Triggers publish / revalidate", "HTTPS / signed webhook")
+  Rel(cms_core, media, "Stores asset refs", "API")
+  Rel(ui, media, "Loads images", "HTTPS")
+  Rel(ui, edge, "Served via", "HTTPS")
+  Rel(git, ui, "Builds deploy", "CI/CD")
+  Rel(plan_store, cms_core, "Informs content model (human process)", "manual")
+
+  UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")
+
+%% Replace TBD with chosen stack after onboarding step 2–3.

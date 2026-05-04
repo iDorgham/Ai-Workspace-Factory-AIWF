@@ -1,0 +1,315 @@
+# Ezzat Gamaly — photography portfolio & Ezzat Portfolio CMS (WEB_OS_TITAN-derived bundle).
+# Human specs: docs/README.md, docs/product/PRD.md, docs/guides/ONBOARDING.md, docs/profile/*.
+# Rematerialize from AIWF root: python3 factory/scripts/core/materialize_workspace_from_bundle.py ezzat-gamaly portfolio-website --manifest workspaces/clients/ezzat-gamaly/001_portfolio-website/.ai/workspace_bundle.manifest.yaml
+template_id: EZZAT_PORTFOLIO_CMS
+summary: "Ezzat Gamaly photographer portfolio + CMS website — MENA-aware product (Law 151/2020 per PRD), tripartite SDD tracks (development / content / seo_compliance), Next.js + PostgreSQL + Redis baseline, bilingual and Egyptian Arabic content skills prioritized. Delivery order matches docs/guides/ONBOARDING.md: GitHub → design.md pack → docs/product + overview/context → .ai/plan phases + density gate. Same library spine as WEB_OS_TITAN; bundle adds Regional Adapter, /onboard commands, client onboarding rule, health scorer script note, design packs ordered for premium editorial + Vercel/shadcn stack."
+canonical_source: factory/library
+parent_profile: WEB_OS_TITAN
+
+agents:
+  - Master Guide
+  - Spec Architect
+  - Contract Guardian
+  - Regional Adapter
+  - Scraper Agent
+  - Creator Agent
+  - Integrity Auditor
+  - Security Auditor
+  - CI Specialist
+  - Repository Agent
+  - Deployment Specialist
+  - Profile Auditor
+  - Healing Bot v2
+
+skills:
+  # ═══ SDD SPINE — comprehensive planning · plan preparation · ADR (load first) ═══
+  - guide_sdd_mastery
+  - guide_teaching
+  - guide_instructor_domains
+  - official_vercel_adr_skill
+  - official_github_project_workflow_analysis_blueprint_generator
+  - official_github_folder_structure_blueprint_generator
+  # ═══ (1) CONTENT — copy, IA, SEO/AEO, locale ═══
+  - marketing_content_creation
+  - content_architecture
+  - content_synthesis
+  - marketing_seo_audit
+  - marketing_campaign_planning
+  - marketing_competitive_brief
+  - marketing_competitive_analysis
+  - data_statistical_analysis
+  - official_sanity_io_content_modeling_best_practices
+  - official_sanity_io_seo_aeo_best_practices
+  - egyptian_arabic_content_master
+  - bilingual_content
+  - legal_content_mena
+  # ═══ (2) DESIGN SYSTEM — tokens, a11y, Figma ↔ code, component quality ═══
+  - design_design_system
+  - design_accessibility
+  - design_critique
+  - design_ux_copy
+  - official_anthropics_frontend_design
+  - official_figma_figma_create_design_system_rules
+  - official_figma_figma_generate_design
+  - official_figma_figma_implement_design
+  - official_google_labs_code_shadcn_ui
+  - official_vercel_labs_web_design_guidelines
+  - official_github_web_design_reviewer
+  - official_google_labs_code_stitch_design
+  - official_google_labs_code_react_components
+  - official_vercel_labs_composition_patterns
+  - component_deduplication
+  # ═══ (3) MVP — smallest shippable slice: stack, ship, test, perf smoke ═══
+  - official_github_technology_stack_blueprint_generator
+  - official_github_architecture_blueprint_generator
+  - official_github_acquire_codebase_knowledge
+  - official_github_web_coder
+  - engineering_documentation
+  - official_github_javascript_typescript_jest
+  - official_vercel_labs_react_best_practices
+  - official_github_react18_lifecycle_patterns
+  - official_github_webapp_testing
+  - official_github_quality_playbook
+  - official_github_chrome_devtools
+  - official_github_github_issues
+  - official_callstackincubator_github_actions
+  - official_github_gh_cli
+  - official_vercel_use_ai_sdk
+  - official_vercel_labs_deploy_to_vercel
+  - official_vercel_labs_vercel_cli_with_tokens
+  - official_sanity_io_sanity_best_practices
+  - official_supabase_supabase
+  - official_supabase_supabase_postgres_best_practices
+  - official_prisma_prisma_postgres
+  - official_prisma_prisma_cli
+  # ═══ (4) EXTENDED — brand, motion, APIs, security, CMS depth, AI tooling, dashboards ═══
+  - marketing_brand_review
+  - marketing_brand_voice
+  - brand_voice_enforcement
+  - official_anthropics_brand_guidelines
+  - official_vercel_labs_react_view_transitions
+  - official_github_gsap_framer_scroll_animation
+  - official_remotion_dev_remotion
+  - official_github_oo_component_documentation
+  - dependency_resolution_for_components
+  - library_quality_audit
+  - official_apollographql_apollo_client
+  - official_apollographql_apollo_server
+  - official_apollographql_graphql_schema
+  - official_github_openapi_to_application_code
+  - official_github_typespec_api_operations
+  - official_neondatabase_neon_postgres
+  - official_neondatabase_neon_postgres_egress_optimizer
+  - official_wordpress_wp_rest_api
+  - official_wordpress_wp_plugin_development
+  - official_automattic_wp_block_development
+  - official_automattic_wp_plugin_development
+  - official_automattic_wp_performance
+  - official_wordpress_wp_performance
+  - official_github_agent_owasp_compliance
+  - official_github_agent_supply_chain
+  - official_github_ai_prompt_engineering_safety_review
+  - official_github_mcp_security_audit
+  - official_github_security_review
+  - official_semgrep_semgrep
+  - official_semgrep_code_security
+  - official_semgrep_llm_security
+  - official_browserbase_ui_test
+  - official_browserbase_functions
+  - official_github_playwright_automation_fill_in_form
+  - official_github_agentic_eval
+  - official_cloudflare_web_perf
+  - official_langfuse_langfuse
+  - official_google_labs_code_enhance_prompt
+  - official_github_arize_prompt_optimization
+  - official_github_prompt_builder
+  - official_github_boost_prompt
+  - official_anthropics_claude_api
+  - official_google_gemini_vertex_ai_api_dev
+  - official_google_gemini_gemini_api_dev
+  - official_anthropics_skill_creator
+  - official_anthropics_mcp_builder
+  - official_github_typescript_mcp_server_generator
+  - official_tinybirdco_tinybird_typescript_sdk_guidelines
+  - official_callstackincubator_github
+  - official_github_cli_mastery
+  - official_github_mcp_deploy_manage_agents
+  - sovereign_deploy_router
+  - official_vercel_develop_ai_functions_example
+  - official_github_create_github_action_workflow_specification
+  - official_github_git_flow_branch_creator
+  - official_github_create_github_pull_request_from_specification
+  - official_github_my_pull_requests
+  - official_github_github_copilot_starter
+  - official_github_copilot_cli_quickstart
+  - official_github_copilot_instructions_blueprint_generator
+  - official_github_copilot_sdk
+  - official_github_suggest_awesome_github_copilot_skills
+  - official_google_gemini_gemini_interactions_api
+  - official_google_gemini_gemini_live_api_dev
+  - multi_tool_orchestration
+  - workspace_audit_orchestrator
+  - data_interactive_dashboard_builder
+  - official_axiomhq_building_dashboards
+
+commands:
+  # SDD — planning & plan preparation (order = fast path)
+  - /plan discovery
+  - /plan blueprint
+  - /plan status
+  - /plan review
+  - /plan adr
+  - /plan content
+  # Client onboarding (see docs/guides/ONBOARDING.md + .ai/onboarding/state.yaml)
+  - /onboard status
+  - /onboard step
+  - /onboard complete
+  - /onboard reset
+  # SDD — development & verify
+  - /dev init
+  - /dev implement
+  - /dev test
+  - /dev build
+  - /dev fix
+  - /audit health
+  - /audit security
+  - /audit seo
+  - /git auto
+  - /git release
+  - /git review
+  - /git rollback
+  - /mat
+  # Design + content router
+  - /design list
+  - /design use [pack]
+  - /design install [pack]
+  - /research competitors
+  - /scrape all competitors blog
+  - /scrape all competitors all website
+  - /sync
+  - /create blog posts about [topic]
+  - /create website pages
+  - /create landing pages for [campaign]
+  - /polish content in content/
+  - /review
+  - /approve
+  - /guide
+  - /guide plan status
+  - /help
+
+library:
+  agents_registry_yaml: factory/library/agents/workspace_imports/ai/agents/registry/registry.yaml
+  subagents_registry_json: factory/library/subagents/registry.json
+  # Operator focus: research + crawl → content/brand generation → SEO + image SEO → workflow QA (see docs/profile/command_system.md)
+  subagent_ids:
+    - discovery-engine
+    - profile-builder
+    - ethical-crawler
+    - content-parser
+    - content-generator
+    - brand-voice-applier
+    - blueprint-architect
+    - comparison-analyst
+    - keyword-auditor
+    - technical-auditor
+    - image-seo-auditor
+    - quality-checker
+    - approval-gate
+    - export-packager
+    - archive-manager
+  commands_merged_md: factory/library/commands/commands.md
+  commands_registry_yaml: factory/library/commands/registry.yaml
+  commands_support_md:
+    - factory/library/commands/guide.md
+    - factory/library/commands/onboard.md
+    - factory/library/commands/plan.md
+    - factory/library/commands/dev.md
+    - factory/library/commands/audit.md
+    - factory/library/commands/git.md
+    - factory/library/commands/create.md
+    - factory/library/commands/factory.md
+    - factory/library/commands/library.md
+    - factory/library/commands/do.md
+  command_templates_dir: factory/library/commands/templates
+  subcommands_md:
+    - factory/library/subcommands/guide.md
+    - factory/library/subcommands/develop.md
+    - factory/library/subcommands/test.md
+    - factory/library/subcommands/security.md
+    - factory/library/subcommands/docs.md
+    - factory/library/subcommands/perf.md
+    - factory/library/subcommands/automate.md
+    - factory/library/subcommands/github.md
+    - factory/library/subcommands/ide-commands/scrape.md
+    - factory/library/subcommands/ide-commands/sync.md
+    - factory/library/subcommands/ide-commands/create.md
+    - factory/library/subcommands/ide-commands/polish.md
+    - factory/library/subcommands/ide-commands/review.md
+    - factory/library/subcommands/ide-commands/approve.md
+    - factory/library/subcommands/ide-commands/revise.md
+    - factory/library/subcommands/ide-commands/research.md
+    - factory/library/subcommands/ide-commands/intel.md
+    - factory/library/subcommands/ide-commands/compare.md
+    - factory/library/subcommands/ide-commands/brand.md
+    - factory/library/subcommands/ide-commands/voice.md
+    - factory/library/subcommands/ide-commands/export.md
+    - factory/library/subcommands/ide-commands/archive.md
+    - factory/library/subcommands/ide-commands/memory.md
+    - factory/library/subcommands/ide-commands/optimize.md
+    - factory/library/subcommands/ide-commands/workspace.md
+    - factory/library/subcommands/ide-commands/budget.md
+  rules_workspace_mirror_mdc:
+    - factory/library/rules/workspace_imports/ai/rules/guide-response-style.mdc
+    - factory/library/rules/workspace_imports/ai/rules/guide-handoff-footer.mdc
+    - factory/library/rules/workspace_imports/ai/rules/workspace-client-onboarding-gate.mdc
+  templates_design_readme: factory/library/templates/design/README.md
+  templates_design_catalog_json: factory/library/templates/design/catalog.json
+  # Order tuned for premium photography + editorial CMS (see docs/profile/design_onboarding.md)
+  templates_design_packs_md:
+    - factory/library/templates/design/premium/design.md
+    - factory/library/templates/design/editorial/design.md
+    - factory/library/templates/design/figma/design.md
+    - factory/library/templates/design/vercel/design.md
+    - factory/library/templates/design/shadcn/design.md
+    - factory/library/templates/design/sanity/design.md
+    - factory/library/templates/design/dashboard/design.md
+    - factory/library/templates/design/stripe/design.md
+    - factory/library/templates/design/semrush/design.md
+    - factory/library/templates/design/framer/design.md
+    - factory/library/templates/design/webflow/design.md
+    - factory/library/templates/design/notion/design.md
+  templates_core_dir: factory/library/templates/core
+  profile_operator_docs:
+    - factory/library/profiles/personal/WEB_OS_TITAN/command_system.md
+    - factory/library/profiles/personal/WEB_OS_TITAN/guide/recommendations.md
+    - factory/library/profiles/personal/WEB_OS_TITAN/design/design_onboarding.md
+    - factory/library/profiles/personal/WEB_OS_TITAN/scripts/git_workflow.md
+    - factory/library/profiles/personal/WEB_OS_TITAN/hooks/README.md
+  scripts_workspace_imports:
+    - factory/library/scripts/workspace_imports/ai/scripts/factory_materialize.sh
+    - factory/library/scripts/scraper/scraper_engine.py
+    - factory/library/scripts/scraper/sync_state_writer.py
+    - factory/library/scripts/research/enrich_competitor_info.py
+    - factory/library/scripts/workflow/quality_checker.py
+    - factory/library/scripts/workflow/export_packager.py
+    - factory/library/scripts/workflow/archive_manager.py
+    - factory/library/scripts/core/silent_phase_release.py
+    - factory/library/scripts/maintenance/audit_path_integrity.py
+  profile_scripts:
+    - factory/library/profiles/personal/WEB_OS_TITAN/scripts/list_design_packs.sh
+  factory_repo_scripts_note:
+    - "factory/scripts/core/spec_density_gate_v2.py  # SDD density — run from AIWF repo root (docs/product/PRD.md §11)"
+    - "factory/scripts/maintenance/health_scorer.py  # PRD health audit step — run from AIWF repo root"
+  hooks_operator_readme:
+    - factory/library/profiles/personal/WEB_OS_TITAN/hooks/README.md
+  skill_mirror_base: factory/library/skills
+
+notes:
+  - "Product docs hub: workspaces/clients/ezzat-gamaly/001_portfolio-website/docs/README.md — PRD, ROADMAP, CONTEXT, profile playbooks."
+  - "Onboarding gate: docs/guides/ONBOARDING.md + .ai/onboarding/state.yaml — finish before heavy /plan blueprint and /dev implement (workspace-client-onboarding-gate.mdc)."
+  - "Skill priority: (1) content + Arabic/MENA → (2) design system → (3) Next/Vercel/Supabase/Prisma MVP → (4) security/perf extended; SDD spine skills listed first."
+  - "SDD development: /dev init|implement|test|build|fix after phase specs pass density gate — python3 factory/scripts/core/spec_density_gate_v2.py --phase <path>"
+  - "List design packs: bash factory/library/profiles/personal/WEB_OS_TITAN/scripts/list_design_packs.sh"
+  - "Production deploy: explicit /deploy only (docs/profile/command_system.md + workspace AGENTS.md)."
+  - "/guide: factory/library/commands/guide.md — layered teaching + SDD guardian; see docs/profile/recommendations.md."
+  - "Phase 01 scaffold reference: factory/library/planning/templates/sdd/portfolio_plan_phase01_scaffold/README.md"

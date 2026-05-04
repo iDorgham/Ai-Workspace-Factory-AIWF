@@ -1,0 +1,22 @@
+%%{init: {"theme": "default"}}%%
+gantt
+  title Task graph — phase 01 content (portfolio website)
+  dateFormat  YYYY-MM-DD
+  axisFormat  %b %d
+
+  section GitHub and design
+    Create GitHub repo + baseline README   :t1, 2026-05-05, 2d
+    Select design pack + design.md baseline :t2, after t1, 3d
+
+  section Product docs
+    Fill PRD roadmap context               :t3, after t2, 4d
+
+  section SDD phase
+    Complete C4 + contracts + tasks        :t4, after t3, 5d
+    Regional compliance + prompts          :t5, after t4, 3d
+
+  section Gates
+    Spec density gate                      :gate1, after t5, 1d
+    Phase review handoff                   :milestone, after gate1, 0d
+
+%% Align dates with phase.spec.json; update when schedule slips.

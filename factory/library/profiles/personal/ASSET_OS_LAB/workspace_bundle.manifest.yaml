@@ -1,0 +1,71 @@
+template_id: ASSET_OS_LAB
+summary: "Visual and motion asset factory — design fidelity, renders, media pipelines."
+canonical_source: factory/library
+
+agents:
+  - Master Guide
+  - Visualize Agent
+  - Creator Agent
+  - Spec Architect
+  - Integrity Auditor
+  - Profile Auditor
+  - Healing Bot v2
+
+skills:
+  - design_critique
+  - design_design_system
+  - official_figma_figma_generate_design
+  - official_remotion_dev_remotion
+  - marketing_content_creation
+  - guide_teaching
+
+commands:
+  - /create image
+  - /design list
+  - /design use [pack]
+  - /review
+  - /plan blueprint
+  - /guide
+  - /help
+
+library:
+  agents_registry_yaml: factory/library/agents/workspace_imports/ai/agents/registry/registry.yaml
+  subagents_registry_json: factory/library/subagents/registry.json
+  subagent_ids:
+    - asset-handler
+    - content-generator
+    - image-seo-auditor
+    - quality-checker
+    - approval-gate
+    - comparison-analyst
+  commands_merged_md: factory/library/commands/commands.md
+  commands_registry_yaml: factory/library/commands/registry.yaml
+  commands_support_md:
+    - factory/library/commands/guide.md
+    - factory/library/commands/plan.md
+    - factory/library/commands/create.md
+    - factory/library/commands/library.md
+    - factory/library/commands/do.md
+  command_templates_dir: factory/library/commands/templates
+  subcommands_md:
+    - factory/library/subcommands/guide.md
+    - factory/library/subcommands/develop.md
+    - factory/library/subcommands/ide-commands/create.md
+    - factory/library/subcommands/ide-commands/review.md
+    - factory/library/subcommands/ide-commands/optimize.md
+    - factory/library/subcommands/perf.md
+  rules_workspace_mirror_mdc:
+    - factory/library/rules/workspace_imports/ai/rules/guide-response-style.mdc
+    - factory/library/rules/workspace_imports/ai/rules/guide-handoff-footer.mdc
+  templates_design_readme: factory/library/templates/design/README.md
+  templates_design_catalog_json: factory/library/templates/design/catalog.json
+  templates_design_packs_md:
+    - factory/library/templates/design/figma/design.md
+    - factory/library/templates/design/framer/design.md
+    - factory/library/templates/design/runwayml/design.md
+    - factory/library/templates/design/premium/design.md
+  templates_core_dir: factory/library/templates/core
+  scripts_workspace_imports:
+    - factory/library/scripts/workspace_imports/ai/scripts/factory_materialize.sh
+    - factory/library/scripts/creator/content_generator.py
+  skill_mirror_base: factory/library/skills

@@ -1,0 +1,78 @@
+template_id: MOBILE_OS_FORGE
+summary: "Mobile product delivery — specs, app UX, test and release hygiene."
+canonical_source: factory/library
+
+agents:
+  - Master Guide
+  - Spec Architect
+  - Contract Guardian
+  - Security Auditor
+  - Integrity Auditor
+  - CI Specialist
+  - Deployment Specialist
+  - Healing Bot v2
+
+skills:
+  - guide_sdd_mastery
+  - engineering_documentation
+  - official_github_react18_lifecycle_patterns
+  - official_github_webapp_testing
+  - design_accessibility
+  - official_github_agent_owasp_compliance
+  - design_ux_copy
+
+commands:
+  - /plan blueprint
+  - /plan status
+  - /dev init
+  - /dev implement
+  - /dev test
+  - /audit security
+  - /audit health
+  - /git auto
+  - /guide
+  - /help
+
+library:
+  agents_registry_yaml: factory/library/agents/workspace_imports/ai/agents/registry/registry.yaml
+  subagents_registry_json: factory/library/subagents/registry.json
+  subagent_ids:
+    - blueprint-architect
+    - quality-checker
+    - approval-gate
+    - technical-auditor
+    - keyword-auditor
+  commands_merged_md: factory/library/commands/commands.md
+  commands_registry_yaml: factory/library/commands/registry.yaml
+  commands_support_md:
+    - factory/library/commands/guide.md
+    - factory/library/commands/plan.md
+    - factory/library/commands/dev.md
+    - factory/library/commands/audit.md
+    - factory/library/commands/git.md
+    - factory/library/commands/mat.md
+    - factory/library/commands/factory.md
+    - factory/library/commands/library.md
+  command_templates_dir: factory/library/commands/templates
+  subcommands_md:
+    - factory/library/subcommands/guide.md
+    - factory/library/subcommands/develop.md
+    - factory/library/subcommands/test.md
+    - factory/library/subcommands/security.md
+    - factory/library/subcommands/perf.md
+    - factory/library/subcommands/docs.md
+    - factory/library/subcommands/ide-commands/workspace.md
+  rules_workspace_mirror_mdc:
+    - factory/library/rules/workspace_imports/ai/rules/guide-response-style.mdc
+    - factory/library/rules/workspace_imports/ai/rules/guide-handoff-footer.mdc
+  templates_design_readme: factory/library/templates/design/README.md
+  templates_design_catalog_json: factory/library/templates/design/catalog.json
+  templates_design_packs_md:
+    - factory/library/templates/design/expo/design.md
+  templates_core_dir: factory/library/templates/core
+  scripts_workspace_imports:
+    - factory/library/scripts/workspace_imports/ai/scripts/factory_materialize.sh
+    - factory/library/scripts/workspace_imports/ai/scripts/paths.py
+    - factory/library/scripts/maintenance/run_smoke_tests.py
+    - factory/library/scripts/maintenance/smoke_test.sh
+  skill_mirror_base: factory/library/skills

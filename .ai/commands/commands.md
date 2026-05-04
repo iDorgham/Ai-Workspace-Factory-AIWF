@@ -89,6 +89,8 @@
 | | `dashboard` | orchestrator | Real-time KPI/Health UI |
 | | `tutor` | guide-agent | Interactive pedagogy and onboarding |
 | **`/help`** | | guide-agent | usage reference and sovereignty info |
+| **`/onboard`** | `status` | guide-agent | Client onboarding checklist (`.ai/onboarding/state.yaml`) | No |
+| | `step`, `complete`, `reset` | guide-agent | Mark steps or close onboarding per `.ai/commands/onboard.md` | No |
 | **`/mat`** | | factory-manager | Interactive workspace materialization — run `bash .ai/scripts/factory_materialize.sh` (or `bash .ai/scripts/bin/materialize.sh`) from repo root | No |
 
 ---
@@ -117,6 +119,7 @@ The guide-agent must resolve these ambiguities before routing:
 | No competitor data for `/create` | Generate from brand positioning + keyword research alone |
 | No keyword map for `/polish` | Mine keywords from content topic + market positioning |
 | No images for `/optimize images` | Report: "No images found in content/. Add images to your draft files first." |
+| Under `workspaces/clients/**` and `.ai/onboarding/state.yaml` has `onboarding_complete: false` | For `/plan blueprint`, full `/plan discovery`, `/dev implement`, `/dev build`, or heavy `/guide` modes: refuse and respond: "Finish onboarding first — open `docs/guides/ONBOARDING.md` and run `/onboard status`." Allow `/onboard …`, `/guide help`, `/guide ping`, `/guide onboarding`, `/guide explain`, `/guide understand`, `/plan status`, `/dev init`. |
 
 ### Plural vs Singular
 - `/create blog posts about [topic]` → generate 3 posts by default (short, medium, long-form variants)

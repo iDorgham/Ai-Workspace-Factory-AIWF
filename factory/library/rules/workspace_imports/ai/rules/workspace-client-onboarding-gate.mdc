@@ -1,0 +1,20 @@
+---
+description: Enforce client workspace onboarding before deep plan/dev/guide modes when under workspaces/clients/.
+globs: workspaces/clients/**/*
+alwaysApply: false
+---
+
+# Client workspace onboarding gate
+
+When any open or referenced file path is under **`workspaces/clients/`**:
+
+1. **Read** `.ai/onboarding/state.yaml` in that workspace root (the folder that contains `.ai/`). If the file is missing, treat `onboarding_complete` as **false** and tell the user to add it from `.ai/commands/onboard.md` template or re-run workspace materialize.
+
+2. If **`onboarding_complete`** is **not** `true`:
+   - **`/guide`** (except `help`, `ping`, `onboarding`, `explain`, `understand`) — **first** output the onboarding checklist (from `state.yaml` + `docs/guides/ONBOARDING.md`); do **not** run heavy tutor/brainstorm/heal/chaos/dashboard/spec/gate flows in the same turn. End with **`/onboard status`** or one **`/onboard step …`** suggestion.
+   - **`/plan blueprint`**, **`/plan discovery`** (full), **`/dev implement`**, **`/dev build`** — **refuse**; reply with a one-paragraph redirect + **`/onboard status`**.
+   - **`/plan status`**, **`/dev init`**, **`/guide help`**, **`/guide ping`**, **`/onboard …`**, **`/guide onboarding`** — **allowed**.
+
+3. If all steps in `state.yaml` are done and the user asks to finish, run the **`/onboard complete`** rules from `.ai/commands/onboard.md` (set `onboarding_complete: true` only when all `steps.*.done` are true).
+
+4. **`/guide onboarding`** behaves like **`/onboard status`** (teach-first onboarding).

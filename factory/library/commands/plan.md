@@ -35,3 +35,7 @@ The planning engine now operates across three distinct industrial streams in `.a
 - **Gate**: Omega Gate v2
 - **Traceability**: Appends Reasoning Hash to .ai/logs/factory.jsonl
 - **Compliance**: Egyptian Law 151/2020 Certified
+
+## Client workspace onboarding gate
+
+Under **`workspaces/clients/**`**, if **`.ai/onboarding/state.yaml`** has **`onboarding_complete: false`**, **refuse** **`blueprint`**, full **`discovery`**, and any phase generation that replaces the onboarding order — respond with a short redirect to **`docs/guides/ONBOARDING.md`** and **`/onboard status`**. **`status`**, **`review`** (read-only alignment), and **`adr`** (single doc) may still run if they do not skip onboarding steps.

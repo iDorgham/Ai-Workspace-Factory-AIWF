@@ -1,6 +1,10 @@
 # Factory Library Organization
 
-This directory is the **global component library** for AIWF: agents, skills, templates, design packs, registries, and mirrored planning artifacts. Workspaces consume from here; they do not fork the library as a competing source of truth.
+**`factory/library/` is the canonical source** for shared **agents**, **subagents** (registry + packs), **skills**, **commands**, **subcommands**, **rules**, **templates** (including `templates/design/**/design.md`), **design/** catalog helpers, **scripts** scoped to the library, and **registry/** aggregates. Workspaces and `.ai/` trees **consume via mirror/sync** (`python3 factory/scripts/core/industrial_mirror_sync.py`, `bash factory/scripts/core/sync_ide_triple_layer.sh` per `AGENTS.md`); do not treat a materialized shard as the long-term editor of truth for these assets.
+
+This directory is the **global component library** for AIWF. Workspaces consume from here; they do not fork the library as a competing source of truth.
+
+**Canonical map (agents, subagents, skills, commands, rules, templates, scripts):** [canonical_source.md](canonical_source.md).
 
 **See also:** [docs/overview/CONTEXT.md](../../docs/overview/CONTEXT.md) (orientation), [docs/product/PRD.md](../../docs/product/PRD.md) §3.3 and §4.8 (full protocol). **Industrial OS shard sources** (not under `library/`): sibling **`../shards/`** + **`bash .ai/scripts/factory_materialize.sh`**.
 
